@@ -94381,6 +94381,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			zenheadbutt: ["9M"],
 		},
 	},
+	basiney: {
+		learnset: {
+			leafstorm: ["9E"],
+			mirrorcoat: ["9L1"],
+			scald: ["9M"],
+			calmmind: ["9M"],
+		},
+	},
 	pokestarsmeargle: {
 		eventData: [
 			{generation: 5, level: 60, gender: "M", abilities: ["owntempo"], moves: ["mindreader", "guillotine", "tailwhip", "gastroacid"]},
