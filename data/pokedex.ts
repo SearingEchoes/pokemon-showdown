@@ -19078,17 +19078,17 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Monster", "Fairy"],
 		gen: 9,
 	},
-		basiney: {
-		num: 9600,
+	basiney: {
+		num: -72,
 		name: "Basiney",
 		types: ["Water"],
-		genderRatio: "F",
+		gender: "F",
 		baseStats: {hp: 250, atk: 5, def: 65, spa: 35, spd: 65, spe: 35},
 		abilities: {0: "Rain Dish"},
-		heightm: 1.4,
-		weightkg: 85,
+		heightm: 1.1,
+		weightkg: 34.6,
 		color: "Blue",
-		eggGroups: ["Monster", "Fairy"],
+		eggGroups: ["Fairy"],
 		gen: 9,
 	},
 	// NOTE: PokeStar "formes" are not actually formes and thus do not have a formeOrder
