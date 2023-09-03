@@ -20845,7 +20845,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			volatileStatus: 'flinch',
 		},
 		target: "normal",
-		type: "Water",
+		type: "Normal",
 		contestType: "Tough",
 	},
 	watergun: {
