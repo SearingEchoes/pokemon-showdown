@@ -3787,13 +3787,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (type === 'sandstorm' || type === 'hail') return false;
 			},
 			onInvulnerability(target, source, move) {
-				if (['surf', 'whirlpool'].includes(move.id)) {
+				if (['surf1', 'whirlpool'].includes(move.id)) {
 					return;
 				}
 				return false;
 			},
 			onSourceModifyDamage(damage, source, target, move) {
-				if (move.id === 'surf' || move.id === 'whirlpool') {
+				if (move.id === 'surf1' || move.id === 'whirlpool') {
 					return this.chainModify(2);
 				}
 			},
@@ -18417,13 +18417,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {effect: 'heal'},
 		contestType: "Tough",
 	},
-	stokedsparksurfer: {
+	stokedsparksurf1er: {
 		num: 700,
 		accuracy: true,
 		basePower: 175,
 		category: "Special",
 		isNonstandard: "Past",
-		name: "Stoked Sparksurfer",
+		name: "Stoked Sparksurf1er",
 		pp: 1,
 		priority: 0,
 		flags: {},
@@ -18941,12 +18941,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Flying",
 		contestType: "Cool",
 	},
-	surf: {
+	surf1: {
 		num: 57,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
-		name: "Surf",
+		name: "surf1",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, nonsky: 1},
@@ -20831,12 +20831,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fighting",
 		contestType: "Tough",
 	},
-	waterfall: {
+	surf2: {
 		num: 127,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		name: "Surf",
+		name: "surf1",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
