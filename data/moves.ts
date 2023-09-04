@@ -3787,13 +3787,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (type === 'sandstorm' || type === 'hail') return false;
 			},
 			onInvulnerability(target, source, move) {
-				if (['surf1', 'whirlpool'].includes(move.id)) {
+				if (['surf', 'whirlpool'].includes(move.id)) {
 					return;
 				}
 				return false;
 			},
 			onSourceModifyDamage(damage, source, target, move) {
-				if (move.id === 'surf1' || move.id === 'whirlpool') {
+				if (move.id === 'surf' || move.id === 'whirlpool') {
 					return this.chainModify(2);
 				}
 			},
@@ -18941,7 +18941,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Flying",
 		contestType: "Cool",
 	},
-	surf1: {
+	surf: {
 		num: 57,
 		accuracy: 100,
 		basePower: 90,
@@ -20831,7 +20831,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fighting",
 		contestType: "Tough",
 	},
-	surf2: {
+	waterfall: {
 		num: 127,
 		accuracy: 100,
 		basePower: 80,
