@@ -20836,7 +20836,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		name: "Surf",
+		name: "Waterfall",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
@@ -20845,7 +20845,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			volatileStatus: 'flinch',
 		},
 		target: "normal",
-		type: "Normal",
+		type: "Water",
 		contestType: "Tough",
 	},
 	watergun: {
