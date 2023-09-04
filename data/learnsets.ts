@@ -94407,7 +94407,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			protect: ["9M"],
 			safeguard: ["9M"],
 			return: ["9M"],
-			surf: ["9M"],
 			flash: ["9M"],
 			rocksmash: ["9M"],
 			waterfall: ["9M"],
