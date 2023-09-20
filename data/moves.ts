@@ -21605,4 +21605,7935 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+//touhoumon moves begin here
+	absorb2: {
+		num: 1199,
+		accuracy: 100,
+		basePower: 20,
+		category: "Special",
+		isNonstandard: "Purple",
+		name: "Absorb 2",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Clever",
+	},
+	aeroblast2: {
+		num: 1200,
+		accuracy: 90,
+		basePower: 100,
+		category: "Special",
+		isNonstandard: "Purple",
+		name: "Aeroblast 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "any",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	agility2: {
+		num: 1201,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Agility 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spe: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Aero",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cool",
+	},
+	airslash2: {
+		num: 1202,
+		accuracy: 90,
+		basePower: 75,
+		category: "Special",
+		name: "Air Slash 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	amnesia2: {
+		num: 1203,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Amnesia 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spd: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	ancientpower2: {
+		num: 1204,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "Ancient Power 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Earth",
+		contestType: "Tough",
+	},
+	aquajet2: {
+		num: 1205,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Aqua Jet 2",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aqua",
+		contestType: "Cool",
+	},
+	aquashower: {
+		num: 1206,
+		accuracy: 100,
+		basePower: 150,
+		basePowerCallback(pokemon, target, move) {
+			const bp = move.basePower * pokemon.hp / pokemon.maxhp;
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Special",
+		name: "Aqua Shower",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	aromatherapy2: {
+		num: 1207,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Aromatherapy 2",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, distance: 1},
+		onHit(target, source, move) {
+			this.add('-activate', source, 'move: Aromatherapy 2');
+			let success = false;
+			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
+			for (const ally of allies) {
+				if (ally !== source && ((ally.hasAbility('sapsipper')) ||
+						(ally.volatiles['substitute'] && !move.infiltrates))) {
+					continue;
+				}
+				if (ally.cureStatus()) success = true;
+			}
+			return success;
+		},
+		target: "allyTeam",
+		type: "Nature",
+		zMove: {effect: 'heal'},
+		contestType: "Clever",
+	},
+	assist2: {
+		num: 1208,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Assist 2",
+		pp: 20,
+		priority: 0,
+		flags: {failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1},
+		onHit(target) {
+			const moves = [];
+			for (const pokemon of target.side.pokemon) {
+				if (pokemon === target) continue;
+				for (const moveSlot of pokemon.moveSlots) {
+					const moveid = moveSlot.id;
+					const move = this.dex.moves.get(moveid);
+					if (move.flags['noassist'] || move.isZ || move.isMax) {
+						continue;
+					}
+					moves.push(moveid);
+				}
+			}
+			let randomMove = '';
+			if (moves.length) randomMove = this.sample(moves);
+			if (!randomMove) {
+				return false;
+			}
+			this.actions.useMove(randomMove, target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		contestType: "Cute",
+	},
+	astonish2: {
+		num: 1209,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "Astonish 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Nether",
+		contestType: "Cute",
+	},
+	attract2: {
+		num: 1210,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Attract 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		volatileStatus: 'attract',
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(pokemon, source, effect) {
+				if (!(pokemon.gender === 'M' && source.gender === 'F') && !(pokemon.gender === 'F' && source.gender === 'M')) {
+					this.debug('incompatible gender');
+					return false;
+				}
+				if (!this.runEvent('Attract 2', pokemon, source)) {
+					this.debug('Attract event failed');
+					return false;
+				}
+
+				if (effect.name === 'Cute Charm') {
+					this.add('-start', pokemon, 'Attract 2', '[from] ability: Cute Charm', '[of] ' + source);
+				} else if (effect.name === 'Destiny Knot') {
+					this.add('-start', pokemon, 'Attract 2', '[from] item: Destiny Knot', '[of] ' + source);
+				} else {
+					this.add('-start', pokemon, 'Attract 2');
+				}
+			},
+			onUpdate(pokemon) {
+				if (this.effectState.source && !this.effectState.source.isActive && pokemon.volatiles['attract']) {
+					this.debug('Removing Attract volatile on ' + pokemon);
+					pokemon.removeVolatile('attract');
+				}
+			},
+			onBeforeMovePriority: 2,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-activate', pokemon, 'move: Attract 2', '[of] ' + this.effectState.source);
+				if (this.randomChance(1, 2)) {
+					this.add('cant', pokemon, 'Attract 2');
+					return false;
+				}
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Attract', '[silent]');
+			},
+		},
+		onTryImmunity(target, source) {
+			return (target.gender === 'M' && source.gender === 'F') || (target.gender === 'F' && source.gender === 'M');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	aurorabeam2: {
+		num: 1211,
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		name: "Aurora Beam 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				atk: -1,
+			},
+		},
+		target: "normal",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	barrage2: {
+		num: 1212,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Barrage 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 120},
+		contestType: "Cool",
+	},
+	barrier2: {
+		num: 1213,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Barrier 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cool",
+	},
+	batonpass2: {
+		num: 1214,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Baton Pass 2",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		onHit(target) {
+			if (!this.canSwitch(target.side) || target.volatiles['commanded']) {
+				this.attrLastMove('[still]');
+				this.add('-fail', target);
+				return this.NOT_FAIL;
+			}
+		},
+		self: {
+			onHit(source) {
+				source.skipBeforeSwitchOutEventFlag = true;
+			},
+		},
+		selfSwitch: 'copyvolatile',
+		secondary: null,
+		target: "self",
+		type: "Heart",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	batterycharge: {
+		num: 1215,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Battery Charge",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Wind",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Beautiful",
+	},
+	battlechant: {
+		num: 1216,
+		accuracy: 85,
+		basePower: 100,
+		category: "Physical",
+		name: "Battle Chant",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	beatup2: {
+		num: 1217,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target, move) {
+			const currentSpecies = move.allies!.shift()!.species;
+			const bp = 5 + Math.floor(currentSpecies.baseStats.atk / 10);
+			this.debug('BP for ' + currentSpecies.name + ' hit: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Beat Up 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, allyanim: 1},
+		onModifyMove(move, pokemon) {
+			move.allies = pokemon.side.pokemon.filter(ally => ally === pokemon || !ally.fainted && !ally.status);
+			move.multihit = move.allies.length;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	bellydrum2: {
+		num: 1218,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Belly Drum 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(target) {
+			if (target.hp <= target.maxhp / 2 || target.boosts.atk >= 6 || target.maxhp === 1) { // Shedinja clause
+				return false;
+			}
+			this.directDamage(target.maxhp / 2);
+			this.boost({atk: 12}, target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {effect: 'heal'},
+		contestType: "Cute",
+	},
+	bind2: {
+		num: 1219,
+		accuracy: 90,
+		basePower: 60,
+		category: "Physical",
+		name: "Bind 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		contestType: "Tough",
+	},
+	bindingvoice: {
+		num: 1220,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Binding Voice",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, sound: 1, mirror: 1, distance: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Beast",
+		contestType: "Cool",
+	},
+	bite2: {
+		num: 1221,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Bite 2",
+		pp: 25,
+		priority: 0,
+		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Beast",
+		contestType: "Tough",
+	},
+	blackripple: {
+		num: 1222,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Black Ripple",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Umbral",
+		contestType: "Cool",
+	},
+	bladeflash: {
+		num: 1223,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Blade Flash",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	blastburn2: {
+		num: 1224,
+		accuracy: 90,
+		basePower: 140,
+		category: "Special",
+		name: "Blast Burn 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	blazekick2: {
+		num: 1225,
+		accuracy: 90,
+		basePower: 90,
+		category: "Physical",
+		name: "Blaze Kick 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Pyro",
+		contestType: "Cool",
+	},
+	blizzard2: {
+		num: 1226,
+		accuracy: 75,
+		basePower: 120,
+		category: "Special",
+		name: "Blizzard 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, wind: 1},
+		onModifyMove(move) {
+			if (this.field.isWeather(['hail', 'snow'])) move.accuracy = true;
+		},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "allAdjacentFoes",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	block2: {
+		num: 1227,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Block 2",
+		pp: 5,
+		priority: 0,
+		flags: {reflectable: 1, mirror: 1},
+		onHit(target, source, move) {
+			return target.addVolatile('trapped', source, move, 'trapper');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	bodyslam2: {
+		num: 1228,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Body Slam 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Tough",
+	},
+	boneclub2: {
+		num: 1229,
+		accuracy: 90,
+		basePower: 40,
+		category: "Physical",
+		name: "Bone Club 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 120},
+		contestType: "Cool",
+	},
+	bonerush2: {
+		num: 1230,
+		accuracy: 80,
+		basePower: 25,
+		category: "Physical",
+		name: "Bone Rush 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	bonemerang2: {
+		num: 1231,
+		accuracy: 90,
+		basePower: 50,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Bonemerang 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	bounce2: {
+		num: 1232,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Bounce 2",
+		pp: 10,
+		priority: 0,
+		flags: {
+			contact: 1, charge: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1,
+		},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		condition: {
+			duration: 2,
+			onInvulnerability(target, source, move) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+					return;
+				}
+				return false;
+			},
+			onSourceBasePower(basePower, target, source, move) {
+				if (move.id === 'gust' || move.id === 'twister') {
+					return this.chainModify(2);
+				}
+			},
+		},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "any",
+		type: "Aero",
+		contestType: "Cute",
+	},
+	bravebird2: {
+		num: 1233,
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		name: "Brave Bird 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		recoil: [33, 100],
+		secondary: null,
+		target: "any",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	braver: {
+		num: 1234,
+		accuracy: 80,
+		basePower: 120,
+		category: "Physical",
+		name: "Braver",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Tough",
+	},
+	brickbreak2: {
+		num: 1235,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Brick Break 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTryHit(pokemon) {
+			// will shatter screens through sub, before you hit
+			pokemon.side.removeSideCondition('reflect');
+			pokemon.side.removeSideCondition('lightscreen');
+			pokemon.side.removeSideCondition('auroraveil');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	bubble2: {
+		num: 1236,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Bubble 2",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Aqua",
+		contestType: "Cute",
+	},
+	bubblebeam2: {
+		num: 1237,
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		name: "Bubble Beam 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "normal",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	bulkup2: {
+		num: 1238,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Bulk Up 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			atk: 1,
+			def: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {boost: {atk: 1}},
+		contestType: "Cool",
+	},
+	bulletseed2: {
+		num: 1239,
+		accuracy: 95,
+		basePower: 25,
+		category: "Physical",
+		name: "Bullet Seed 2",
+		pp: 15,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 130},
+		contestType: "Cool",
+	},
+	burnpowder: {
+		num: 1240,
+		accuracy: 75,
+		basePower: 0,
+		category: "Status",
+		name: "Burn Powder",
+		pp: 15,
+		priority: 0,
+		flags: {powder: 1, protect: 1, reflectable: 1, mirror: 1},
+		status: 'brn',
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {boost: {atk: 1}},
+		contestType: "Beautiful",
+	},
+	calmmind2: {
+		num: 1241,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Calm Mind 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 1,
+			spd: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Faith",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	camouflage2: {
+		num: 1242,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Camouflage 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(target) {
+			let newType = 'Illusion';
+			if (this.field.isTerrain('electricterrain')) {
+				newType = 'Wind';
+			} else if (this.field.isTerrain('grassyterrain')) {
+				newType = 'Nature';
+			} else if (this.field.isTerrain('mistyterrain')) {
+				newType = 'Heart';
+			} else if (this.field.isTerrain('psychicterrain')) {
+				newType = 'Reason';
+			}
+
+			if (target.getTypes().join() === newType || !target.setType(newType)) return false;
+			this.add('-start', target, 'typechange', newType);
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {boost: {evasion: 1}},
+		contestType: "Clever",
+	},
+	chargebeam2: {
+		num: 1243,
+		accuracy: 90,
+		basePower: 50,
+		category: "Special",
+		name: "Charge Beam 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 70,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Beautiful",
+	},
+	charminglook: {
+		num: 1244,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Charming Look",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		volatileStatus: 'taunt',
+		condition: {
+			duration: 3,
+			onStart(target) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration++;
+				}
+				this.add('-start', target, 'move: Charming Look');
+			},
+			onResidualOrder: 15,
+			onEnd(target) {
+				this.add('-end', target, 'move: Charming Look');
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.id);
+					if (move.category === 'Status' && move.id !== 'mefirst') {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+			onBeforeMovePriority: 5,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && !move.isMax && move.category === 'Status' && move.id !== 'mefirst') {
+					this.add('cant', attacker, 'move: Charming Look', move);
+					return false;
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {boost: {atk: 1}},
+		contestType: "Clever",
+	},
+	coerce: {
+		num: 1245,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Coerce",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		onHit(target) {
+			let move: Move | ActiveMove | null = target.lastMove;
+			if (!move || move.isZ) return false;
+			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
+
+			const ppDeducted = target.deductPP(move.id, 4);
+			if (!ppDeducted) return false;
+			this.add("-activate", target, 'move: Spite', move.name, ppDeducted);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {effect: 'heal'},
+		contestType: "Tough",
+	},
+	cometpunch2: {
+		num: 1246,
+		accuracy: 95,
+		basePower: 25,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Comet Punch 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		maxMove: {basePower: 100},
+		contestType: "Tough",
+	},
+	confuseray2: {
+		num: 1247,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Confuse Ray 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'confusion',
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		zMove: {boost: {spa: 1}},
+		contestType: "Clever",
+	},
+	constrict2: {
+		num: 1248,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "Constrict 2",
+		pp: 30,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Nature",
+		contestType: "Tough",
+	},
+	conversionb: {
+		num: 1249,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Conversion B",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(target) {
+			const type = this.dex.moves.get(target.moveSlots[0].id).type;
+			if (target.hasType(type) || !target.setType(type)) return false;
+			this.add('-start', target, 'typechange', type);
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {boost: {atk: 1, def: 1, spa: 1, spd: 1, spe: 1}},
+		contestType: "Beautiful",
+	},
+	conversion2b: {
+		num: 1250,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Conversion 2B",
+		pp: 30,
+		priority: 0,
+		flags: {bypasssub: 1},
+		onHit(target, source) {
+			if (!target.lastMoveUsed) {
+				return false;
+			}
+			const possibleTypes = [];
+			const attackType = target.lastMoveUsed.type;
+			for (const type of this.dex.types.names()) {
+				if (source.hasType(type)) continue;
+				const typeCheck = this.dex.types.get(type).damageTaken[attackType];
+				if (typeCheck === 2 || typeCheck === 3) {
+					possibleTypes.push(type);
+				}
+			}
+			if (!possibleTypes.length) {
+				return false;
+			}
+			const randomType = this.sample(possibleTypes);
+
+			if (!source.setType(randomType)) return false;
+			this.add('-start', source, 'typechange', randomType);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {effect: 'heal'},
+		contestType: "Beautiful",
+	},
+	cottonspore2: {
+		num: 1251,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Cotton Spore 2",
+		pp: 40,
+		priority: 0,
+		flags: {powder: 1, protect: 1, reflectable: 1, mirror: 1},
+		boosts: {
+			spe: -2,
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Nature",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Beautiful",
+	},
+	counter2: {
+		num: 1252,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback(pokemon) {
+			if (!pokemon.volatiles['counter']) return 0;
+			return pokemon.volatiles['counter'].damage || 1;
+		},
+		category: "Physical",
+		name: "Counter 2",
+		pp: 20,
+		priority: -5,
+		flags: {contact: 1, protect: 1, failmefirst: 1, noassist: 1, failcopycat: 1},
+		beforeTurnCallback(pokemon) {
+			pokemon.addVolatile('counter');
+		},
+		onTry(source) {
+			if (!source.volatiles['counter'] && !source.volatiles['counter2']) return false;
+			if ((source.volatiles['counter'].slot === null) && (source.volatiles['counter2'].slot === null)) return false;
+		},
+		condition: {
+			duration: 1,
+			noCopy: true,
+			onStart(target, source, move) {
+				this.effectState.slot = null;
+				this.effectState.damage = 0;
+			},
+			onRedirectTargetPriority: -1,
+			onRedirectTarget(target, source, source2, move) {
+				if ((move.id !== 'counter') && (move.id !== 'counter2')) return;
+				if (source !== this.effectState.target || !this.effectState.slot) return;
+				return this.getAtSlot(this.effectState.slot);
+			},
+			onDamagingHit(damage, target, source, move) {
+				if (!source.isAlly(target) && this.getCategory(move) === 'Physical') {
+					this.effectState.slot = source.getSlot();
+					this.effectState.damage = 2 * damage;
+				}
+			},
+		},
+		secondary: null,
+		target: "scripted",
+		type: "Dream",
+		maxMove: {basePower: 75},
+		contestType: "Tough",
+	},
+	crosschop2: {
+		num: 1253,
+		accuracy: 80,
+		basePower: 100,
+		category: "Physical",
+		name: "Cross Chop 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	crosspoison2: {
+		num: 1254,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Cross Poison 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		secondary: {
+			chance: 10,
+			status: 'psn',
+		},
+		critRatio: 2,
+		target: "normal",
+		type: "Miasma",
+		contestType: "Cool",
+	},
+	crunch2: {
+		num: 1255,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Crunch 2",
+		pp: 15,
+		priority: 0,
+		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Beast",
+		contestType: "Tough",
+	},
+	crushclaw2: {
+		num: 1256,
+		accuracy: 95,
+		basePower: 75,
+		category: "Physical",
+		name: "Crush Claw 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 50,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Beast",
+		contestType: "Cool",
+	},
+	curse2: {
+		num: 1257,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Curse 2",
+		pp: 10,
+		priority: 0,
+		flags: {bypasssub: 1},
+		volatileStatus: 'curse',
+		onModifyMove(move, source, target) {
+			if (!source.hasType('Ghost') && !source.hasType('Nether')) {
+				move.target = move.nonGhostTarget as MoveTarget;
+			} else if (source.isAlly(target)) {
+				move.target = 'randomNormal';
+			}
+		},
+		onTryHit(target, source, move) {
+			if (!source.hasType('Ghost') && !source.hasType('Nether')) {
+				delete move.volatileStatus;
+				delete move.onHit;
+				move.self = {boosts: {spe: -1, atk: 1, def: 1}};
+			} else if (move.volatileStatus && target.volatiles['curse']) {
+				return false;
+			}
+		},
+		onHit(target, source) {
+			this.directDamage(source.maxhp / 2, source, source);
+		},
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Curse', '[of] ' + source);
+			},
+			onResidualOrder: 12,
+			onResidual(pokemon) {
+				this.damage(pokemon.baseMaxhp / 4);
+			},
+		},
+		secondary: null,
+		target: "normal",
+		nonGhostTarget: "self",
+		type: "Nether",
+		zMove: {effect: 'curse'},
+		contestType: "Tough",
+	},
+	cut2: {
+		num: 1258,
+		accuracy: true,
+		basePower: 60,
+		category: "Physical",
+		name: "Cut 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	darkpulse2: {
+		num: 1259,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Dark Pulse 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, pulse: 1, mirror: 1, distance: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Umbral",
+		contestType: "Cool",
+	},
+	decision: {
+		num: 1260,
+		accuracy: true,
+		basePower: 60,
+		category: "Special",
+		name: "Decision",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		contestType: "Cool",
+	},
+	defensecurl2: {
+		num: 1261,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Defense Curl 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 1,
+		},
+		volatileStatus: 'defensecurl2',
+		condition: {
+			noCopy: true,
+			onRestart: () => null,
+		},
+		secondary: null,
+		target: "self",
+		type: "Heart",
+		zMove: {boost: {accuracy: 1}},
+		contestType: "Cute",
+	},
+	destinybond2: {
+		num: 1262,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Destiny Bond 2",
+		pp: 5,
+		priority: 0,
+		flags: {bypasssub: 1, noassist: 1, failcopycat: 1},
+		volatileStatus: 'destinybond',
+		onPrepareHit(pokemon) {
+			return !pokemon.removeVolatile('destinybond');
+		},
+		condition: {
+			onStart(pokemon) {
+				this.add('-singlemove', pokemon, 'Destiny Bond');
+			},
+			onFaint(target, source, effect) {
+				if (!source || !effect || target.isAlly(source)) return;
+				if (effect.effectType === 'Move' && !effect.flags['futuremove']) {
+					if (source.volatiles['dynamax']) {
+						this.add('-hint', "Dynamaxed Pokémon are immune to Destiny Bond.");
+						return;
+					}
+					this.add('-activate', target, 'move: Destiny Bond');
+					source.faint();
+				}
+			},
+			onBeforeMovePriority: -1,
+			onBeforeMove(pokemon, target, move) {
+				if (move.id === 'destinybond') return;
+				this.debug('removing Destiny Bond before attack');
+				pokemon.removeVolatile('destinybond');
+			},
+			onMoveAborted(pokemon, target, move) {
+				pokemon.removeVolatile('destinybond');
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Nether",
+		zMove: {effect: 'redirect'},
+		contestType: "Clever",
+	},
+	detect2: {
+		num: 1263,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Detect 2",
+		pp: 10,
+		priority: 3,
+		flags: {noassist: 1, failcopycat: 1},
+		stallingMove: true,
+		volatileStatus: 'protect',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {boost: {evasion: 1}},
+		contestType: "Cool",
+	},
+	dig2: {
+		num: 1264,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Dig 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, nonsky: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		condition: {
+			duration: 2,
+			onImmunity(type, pokemon) {
+				if (type === 'sandstorm' || type === 'hail') return false;
+			},
+			onInvulnerability(target, source, move) {
+				if (['earthquake', 'magnitude'].includes(move.id)) {
+					return;
+				}
+				return false;
+			},
+			onSourceModifyDamage(damage, source, target, move) {
+				if (move.id === 'earthquake' || move.id === 'magnitude') {
+					return this.chainModify(2);
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		contestType: "Tough",
+	},
+	disable2: {
+		num: 1265,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Disable 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		volatileStatus: 'disable',
+		onTryHit(target) {
+			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
+				return false;
+			}
+		},
+		condition: {
+			duration: 5,
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(pokemon, source, effect) {
+				// The target hasn't taken its turn, or Cursed Body activated and the move was not used through Dancer or Instruct
+				if (
+					this.queue.willMove(pokemon) ||
+					(pokemon === this.activePokemon && this.activeMove && !this.activeMove.isExternal)
+				) {
+					this.effectState.duration--;
+				}
+				if (!pokemon.lastMove) {
+					this.debug(`Pokemon hasn't moved yet`);
+					return false;
+				}
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.id === pokemon.lastMove.id) {
+						if (!moveSlot.pp) {
+							this.debug('Move out of PP');
+							return false;
+						}
+					}
+				}
+				if (effect.effectType === 'Ability') {
+					this.add('-start', pokemon, 'Disable', pokemon.lastMove.name, '[from] ability: Cursed Body', '[of] ' + source);
+				} else {
+					this.add('-start', pokemon, 'Disable', pokemon.lastMove.name);
+				}
+				this.effectState.move = pokemon.lastMove.id;
+			},
+			onResidualOrder: 17,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Disable');
+			},
+			onBeforeMovePriority: 7,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && move.id === this.effectState.move) {
+					this.add('cant', attacker, 'Disable', move);
+					return false;
+				}
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.id === this.effectState.move) {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	discharge2: {
+		num: 1266,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Discharge 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "allAdjacent",
+		type: "Wind",
+		contestType: "Beautiful",
+	},
+	disperse: {
+		num: 1267,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Disperse",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Miasma",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Tough",
+	},
+	disturbance: {
+		num: 1268,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Disturbance",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		boosts: {
+			accuracy: -1,
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Heart",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	dizzypunch2: {
+		num: 1269,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Dizzy Punch 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Cute",
+	},
+	doubleedge2: {
+		num: 1270,
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		name: "Double-Edge 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [33, 100],
+		secondary: null,
+		target: "normal",
+		type: "Beast",
+		contestType: "Tough",
+	},
+	doublekick2: {
+		num: 1271,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Double Kick 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	doubleteam2: {
+		num: 1272,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Double Team 2",
+		pp: 15,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			evasion: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cool",
+	},
+	meteorstorm: {
+		num: 1273,
+		accuracy: 90,
+		basePower: 140,
+		category: "Special",
+		name: "Meteor Storm",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Beautiful",
+	},
+	drainpunch2: {
+		num: 1274,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Drain Punch",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	drawnline: {
+		num: 1275,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Slash",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	dreameater2: {
+		num: 1276,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Dream Eater 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	dynamicpunch2: {
+		num: 1277,
+		accuracy: 80,
+		basePower: 120,
+		category: "Physical",
+		name: "Dynamic Punch 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	earthpower2: {
+		num: 1278,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Earth Power 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spa: -1,
+			},
+		},
+		target: "normal",
+		type: "Earth",
+		contestType: "Beautiful",
+	},
+	earthquake2: {
+		num: 1279,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Earthquake 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Earth",
+		contestType: "Tough",
+	},
+	ember2: {
+		num: 1280,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Ember 2",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Pyro",
+		contestType: "Cute",
+	},
+	encore2: {
+		num: 1281,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Encore 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, failencore: 1},
+		volatileStatus: 'encore',
+		condition: {
+			duration: 3,
+			noCopy: true, // doesn't get copied by Z-Baton Pass
+			onStart(target) {
+				let move: Move | ActiveMove | null = target.lastMove;
+				if (!move || target.volatiles['dynamax']) return false;
+
+				if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
+				const moveIndex = target.moves.indexOf(move.id);
+				if (move.isZ || move.flags['failencore'] || !target.moveSlots[moveIndex] || target.moveSlots[moveIndex].pp <= 0) {
+					// it failed
+					return false;
+				}
+				this.effectState.move = move.id;
+				this.add('-start', target, 'Encore');
+				if (!this.queue.willMove(target)) {
+					this.effectState.duration++;
+				}
+			},
+			onOverrideAction(pokemon, target, move) {
+				if (move.id !== this.effectState.move) return this.effectState.move;
+			},
+			onResidualOrder: 16,
+			onResidual(target) {
+				if (target.moves.includes(this.effectState.move) &&
+					target.moveSlots[target.moves.indexOf(this.effectState.move)].pp <= 0) {
+					// early termination if you run out of PP
+					target.removeVolatile('encore');
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'Encore');
+			},
+			onDisableMove(pokemon) {
+				if (!this.effectState.move || !pokemon.hasMove(this.effectState.move)) {
+					return;
+				}
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.id !== this.effectState.move) {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {boost: {spe: 1}},
+		contestType: "Cute",
+	},
+	endeavor2: {
+		num: 1282,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback(pokemon, target) {
+			return target.getUndynamaxedHP() - pokemon.hp;
+		},
+		category: "Physical",
+		name: "Endeavor 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, noparentalbond: 1},
+		onTryImmunity(target, pokemon) {
+			return pokemon.hp < target.hp;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Aero",
+		zMove: {basePower: 160},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	endure2: {
+		num: 1283,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Endure 2",
+		pp: 10,
+		priority: 4,
+		flags: {noassist: 1, failcopycat: 1},
+		stallingMove: true,
+		volatileStatus: 'endure',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'move: Endure');
+			},
+			onDamagePriority: -10,
+			onDamage(damage, target, source, effect) {
+				if (effect?.effectType === 'Move' && damage >= target.hp) {
+					this.add('-activate', target, 'move: Endure');
+					return target.hp - 1;
+				}
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Tough",
+	},
+	energyball2: {
+		num: 1284,
+		accuracy: 75,
+		basePower: 120,
+		category: "Special",
+		name: "Energy Ball 2",
+		pp: 5,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	energylight: {
+		num: 1285,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Energy Light",
+		pp: 15,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Nature",
+		contestType: "Beautiful",
+	},
+	eruption2: {
+		num: 1286,
+		accuracy: 100,
+		basePower: 150,
+		basePowerCallback(pokemon, target, move) {
+			const bp = move.basePower * pokemon.hp / pokemon.maxhp;
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Special",
+		name: "Eruption 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	explosion2: {
+		num: 1287,
+		accuracy: 100,
+		basePower: 250,
+		category: "Physical",
+		name: "Explosion 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noparentalbond: 1},
+		selfdestruct: "always",
+		secondary: null,
+		target: "allAdjacent",
+		type: "Illusion",
+		contestType: "Beautiful",
+	},
+	extrasensory2: {
+		num: 1288,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Extrasensory 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Faith",
+		contestType: "Cool",
+	},
+	extremespeed2: {
+		num: 1289,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Extreme Speed 2",
+		pp: 5,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Cool",
+	},
+	facade2: {
+		num: 1290,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Facade 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePower(basePower, pokemon) {
+			if (pokemon.status && pokemon.status !== 'slp') {
+				return this.chainModify(2);
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Cute",
+	},
+	feintattack2: {
+		num: 1291,
+		accuracy: true,
+		basePower: 60,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Feint Attack 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	fakeout2: {
+		num: 1292,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Fake Out",
+		pp: 10,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTry(source) {
+			if (source.activeMoveActions > 1) {
+				this.hint("Fake Out only works on your first turn out.");
+				return false;
+			}
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Cute",
+	},
+	faketears2: {
+		num: 1293,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Fake Tears 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		boosts: {
+			spa: -2,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {boost: {spa: 1}},
+		contestType: "Cute",
+	},
+	falseswipe2: {
+		num: 1294,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "False Swipe 2",
+		pp: 40,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onDamagePriority: -20,
+		onDamage(damage, target, source, effect) {
+			if (damage >= target.hp) return target.hp - 1;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Cool",
+	},
+	feint2: {
+		num: 1295,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "Feint 2",
+		pp: 10,
+		priority: 2,
+		flags: {contact: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		breaksProtect: true,
+		// Breaking protection implemented in scripts.js
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Clever",
+	},
+	fireblast2: {
+		num: 1296,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "Fire Blast 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	firepunch2: {
+		num: 1297,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Fire Punch 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Pyro",
+		contestType: "Tough",
+	},
+	firespin2: {
+		num: 1298,
+		accuracy: 90,
+		basePower: 60,
+		category: "Special",
+		name: "Fire Spin 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	fissure2: {
+		num: 1299,
+		accuracy: 30,
+		basePower: 0,
+		category: "Physical",
+		name: "Fissure",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		ohko: true,
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		zMove: {basePower: 180},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	flail2: {
+		num: 1300,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const ratio = Math.max(Math.floor(pokemon.hp * 48 / pokemon.maxhp), 1);
+			let bp;
+			if (ratio < 2) {
+				bp = 200;
+			} else if (ratio < 5) {
+				bp = 150;
+			} else if (ratio < 10) {
+				bp = 100;
+			} else if (ratio < 17) {
+				bp = 80;
+			} else if (ratio < 33) {
+				bp = 40;
+			} else {
+				bp = 20;
+			}
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Flail 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {basePower: 160},
+		maxMove: {basePower: 130},
+		contestType: "Cute",
+	},
+	flamewheel2: {
+		num: 1301,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Flame Wheel 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1},
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	flamethrower2: {
+		num: 1302,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Flamethrower 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	flareblitz2: {
+		num: 1303,
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		name: "Flare Blitz 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [33, 100],
+		secondary: null,
+		target: "normal",
+		type: "Pyro",
+		contestType: "Cool",
+	},
+	flash2: {
+		num: 1304,
+		accuracy: 90,
+		basePower: 65,
+		category: "Special",
+		name: "Flash 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "normal",
+		type: "Faith",
+		contestType: "Cute",
+	},
+	fly2: {
+		num: 1305,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Fly 2",
+		pp: 15,
+		priority: 0,
+		flags: {
+			contact: 1, charge: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1,
+		},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		condition: {
+			duration: 2,
+			onInvulnerability(target, source, move) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+					return;
+				}
+				return false;
+			},
+			onSourceModifyDamage(damage, source, target, move) {
+				if (move.id === 'gust' || move.id === 'twister') {
+					return this.chainModify(2);
+				}
+			},
+		},
+		secondary: null,
+		target: "any",
+		type: "Aero",
+		contestType: "Clever",
+	},
+	focusenergy2: {
+		num: 1306,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Focus Energy 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		volatileStatus: 'focusenergy',
+		condition: {
+			onStart(target, source, effect) {
+				if (effect?.id === 'zpower') {
+					this.add('-start', target, 'move: Focus Energy', '[zeffect]');
+				} else if (effect && (['costar', 'imposter', 'psychup', 'transform'].includes(effect.id))) {
+					this.add('-start', target, 'move: Focus Energy', '[silent]');
+				} else {
+					this.add('-start', target, 'move: Focus Energy');
+				}
+			},
+			onModifyCritRatio(critRatio) {
+				return critRatio + 1;
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {boost: {accuracy: 1}},
+		contestType: "Cool",
+	},
+	focuspunch2: {
+		num: 1307,
+		accuracy: 100,
+		basePower: 150,
+		category: "Physical",
+		name: "Focus Punch 2",
+		pp: 20,
+		priority: -3,
+		flags: {contact: 1, protect: 1, punch: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
+		priorityChargeCallback(pokemon) {
+			pokemon.addVolatile('focuspunch');
+		},
+		beforeMoveCallback(pokemon) {
+			if (pokemon.volatiles['focuspunch']?.lostFocus) {
+				this.add('cant', pokemon, 'Focus Punch', 'Focus Punch');
+				return true;
+			}
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-singleturn', pokemon, 'move: Focus Punch');
+			},
+			onHit(pokemon, source, move) {
+				if (move.category !== 'Status') {
+					this.effectState.lostFocus = true;
+				}
+			},
+			onTryAddVolatile(status, pokemon) {
+				if (status.id === 'flinch') return null;
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	forcepalm2: {
+		num: 1308,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Force Palm 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Faith",
+		contestType: "Cool",
+	},
+	foresight2: {
+		num: 1309,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Foresight 2",
+		pp: 40,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		volatileStatus: 'foresight',
+		onTryHit(target) {
+			if (target.volatiles['miracleeye']) return false;
+		},
+		condition: {
+			noCopy: true,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Foresight');
+			},
+			onNegateImmunity(pokemon, type) {
+				if (pokemon.hasType('Ghost') && ['Normal', 'Fighting'].includes(type)) return false;
+			},
+			onModifyBoost(boosts) {
+				if (boosts.evasion && boosts.evasion > 0) {
+					boosts.evasion = 0;
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		zMove: {effect: 'crit2'},
+		contestType: "Clever",
+	},
+	frenzyplant2: {
+		num: 1310,
+		accuracy: 90,
+		basePower: 140,
+		category: "Special",
+		name: "Frenzy Plant 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Beautiful",
+	},
+	frustration2: {
+		num: 1311,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon) {
+			return Math.floor(((255 - pokemon.happiness) * 10) / 25) || 1;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Frustration 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {basePower: 160},
+		maxMove: {basePower: 130},
+		contestType: "Cute",
+	},
+	furycutter2: {
+		num: 1312,
+		accuracy: 90,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			if (!pokemon.volatiles['furycutter'] || move.hit === 1) {
+				pokemon.addVolatile('furycutter');
+			}
+			const bp = this.clampIntRange(move.basePower * pokemon.volatiles['furycutter'].multiplier, 1, 160);
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Fury Cutter 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		condition: {
+			duration: 2,
+			onStart() {
+				this.effectState.multiplier = 1;
+			},
+			onRestart() {
+				if (this.effectState.multiplier < 4) {
+					this.effectState.multiplier <<= 1;
+				}
+				this.effectState.duration = 2;
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	furyswipes2: {
+		num: 1313,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		name: "Fury Swipes 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Beast",
+		maxMove: {basePower: 100},
+		contestType: "Tough",
+	},
+	gale: {
+		num: 1314,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Gale",
+		pp: 30,
+		priority: 1,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	gigadrain2: {
+		num: 1315,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Giga Drain 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Clever",
+	},
+	gigaimpact2: {
+		num: 1316,
+		accuracy: 85,
+		basePower: 130,
+		category: "Physical",
+		name: "Giga Impact 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Cool",
+	},
+	growl2: {
+		num: 1317,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Growl 2",
+		pp: 40,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1},
+		boosts: {
+			atk: -1,
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Illusion",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	growth2: {
+		num: 1318,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Growth 2",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Nature",
+		zMove: {boost: {spa: 1}},
+		contestType: "Beautiful",
+	},
+	guard: {
+		num: 1319,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Guard",
+		pp: 20,
+		priority: 3,
+		flags: {noassist: 1, failcopycat: 1},
+		volatileStatus: 'followme',
+		onTry(source) {
+			return this.activePerHalf > 1;
+		},
+		condition: {
+			duration: 1,
+			onStart(target, source, effect) {
+				if (effect?.id === 'zpower') {
+					this.add('-singleturn', target, 'move: Follow Me', '[zeffect]');
+				} else {
+					this.add('-singleturn', target, 'move: Follow Me');
+				}
+			},
+			onFoeRedirectTargetPriority: 1,
+			onFoeRedirectTarget(target, source, source2, move) {
+				if (!this.effectState.target.isSkyDropped() && this.validTarget(this.effectState.target, source, move.target)) {
+					if (move.smartTarget) move.smartTarget = false;
+					this.debug("Follow Me redirected target of move");
+					return this.effectState.target;
+				}
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	gunkshot2: {
+		num: 1320,
+		accuracy: 75,
+		basePower: 120,
+		category: "Physical",
+		name: "Gunk Shot 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Miasma",
+		contestType: "Tough",
+	},
+	gust2: {
+		num: 1321,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Gust 2",
+		pp: 35,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
+		secondary: null,
+		target: "any",
+		type: "Wind",
+		contestType: "Clever",
+	},
+	hail2: {
+		num: 1322,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Hail 2",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		weather: 'hail',
+		secondary: null,
+		target: "all",
+		type: "Frost",
+		zMove: {boost: {spe: 1}},
+		contestType: "Beautiful",
+	},
+	harden2: {
+		num: 1323,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Harden 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 1,
+		},
+		volatileStatus: 'defensecurl2',
+		condition: {
+			noCopy: true,
+			onRestart: () => null,
+		},
+		secondary: null,
+		target: "self",
+		type: "Metal",
+		zMove: {boost: {accuracy: 1}},
+		contestType: "Cute",
+	},
+	haze2: {
+		num: 1324,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Haze 2",
+		pp: 30,
+		priority: 0,
+		flags: {bypasssub: 1},
+		onHitField() {
+			this.add('-clearallboost');
+			for (const pokemon of this.getAllActive()) {
+				pokemon.clearBoosts();
+			}
+		},
+		secondary: null,
+		target: "all",
+		type: "Frost",
+		zMove: {effect: 'heal'},
+		contestType: "Beautiful",
+	},
+	headrush: {
+		num: 1325,
+		accuracy: 100,
+		basePower: 35,
+		category: "Special",
+		name: "Head Rush",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	headsmash2: {
+		num: 1326,
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		name: "Head Smash 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [33, 100],
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		contestType: "Tough",
+	},
+	headbutt2: {
+		num: 1327,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Headbutt 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Tough",
+	},
+	healbell2: {
+		num: 1328,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Heal Bell 2",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, sound: 1, distance: 1, bypasssub: 1},
+		onHit(target, source) {
+			this.add('-activate', source, 'move: Heal Bell');
+			let success = false;
+			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
+			for (const ally of allies) {
+				if (ally !== source && ally.hasAbility('soundproof')) continue;
+				if (ally.cureStatus()) success = true;
+			}
+			return success;
+		},
+		target: "allyTeam",
+		type: "Heart",
+		zMove: {effect: 'heal'},
+		contestType: "Beautiful",
+	},
+	heartbreak: {
+		num: 1329,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Heart Break",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Tough",
+	},
+	heartseye: {
+		num: 1330,
+		accuracy: 85,
+		basePower: 0,
+		category: "Status",
+		name: "Heart's Eye",
+		pp: 40,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, allyanim: 1},
+		boosts: {
+			spd: -2,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {boost: {spa: 1}},
+		contestType: "Clever",
+	},
+	beastclaw: {
+		num: 1331,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const targetWeight = target.getWeight();
+			let bp;
+			if (targetWeight >= 2000) {
+				bp = 120;
+			} else if (targetWeight >= 1000) {
+				bp = 100;
+			} else if (targetWeight >= 500) {
+				bp = 80;
+			} else if (targetWeight >= 250) {
+				bp = 60;
+			} else if (targetWeight >= 100) {
+				bp = 40;
+			} else {
+				bp = 20;
+			}
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Beast Claw",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTryHit(target, pokemon, move) {
+			if (target.volatiles['dynamax']) {
+				this.add('-fail', pokemon, 'Dynamax');
+				this.attrLastMove('[still]');
+				return null;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Beast",
+		zMove: {basePower: 160},
+		contestType: "Tough",
+	},
+	heatwave2: {
+		num: 1332,
+		accuracy: 90,
+		basePower: 100,
+		category: "Special",
+		name: "Heat Wave 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, wind: 1},
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+		target: "allAdjacentFoes",
+		type: "Pyro",
+		contestType: "Beautiful",
+	},
+	helpinghand2: {
+		num: 1333,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Helping Hand 2",
+		pp: 20,
+		priority: 5,
+		flags: {bypasssub: 1, noassist: 1, failcopycat: 1},
+		volatileStatus: 'helpinghand',
+		onTryHit(target) {
+			if (!target.newlySwitched && !this.queue.willMove(target)) return false;
+		},
+		condition: {
+			duration: 1,
+			onStart(target, source) {
+				this.effectState.multiplier = 1.5;
+				this.add('-singleturn', target, 'Helping Hand', '[of] ' + source);
+			},
+			onRestart(target, source) {
+				this.effectState.multiplier *= 1.5;
+				this.add('-singleturn', target, 'Helping Hand', '[of] ' + source);
+			},
+			onBasePowerPriority: 10,
+			onBasePower(basePower) {
+				this.debug('Boosting from Helping Hand: ' + this.effectState.multiplier);
+				return this.chainModify(this.effectState.multiplier);
+			},
+		},
+		secondary: null,
+		target: "adjacentAlly",
+		type: "Heart",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	highjumpkick2: {
+		num: 1334,
+		accuracy: 90,
+		basePower: 110,
+		category: "Physical",
+		name: "High Jump Kick 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	howl2: {
+		num: 1335,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Howl 2",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1, sound: 1},
+		boosts: {
+			atk: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Beast",
+		zMove: {boost: {atk: 1}},
+		contestType: "Cool",
+	},
+	hydrocannon2: {
+		num: 1336,
+		accuracy: 90,
+		basePower: 140,
+		category: "Special",
+		name: "Hydro Cannon 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	hydropump2: {
+		num: 1337,
+		accuracy: 85,
+		basePower: 120,
+		category: "Special",
+		name: "Hydro Pump 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	hyperbeam2: {
+		num: 1338,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "Hyper Beam 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	hypervoice2: {
+		num: 1339,
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
+		name: "Hyper Voice 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	hypnosis2: {
+		num: 1340,
+		accuracy: 60,
+		basePower: 0,
+		category: "Status",
+		name: "Hypnosis 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'slp',
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
+	iceball2: {
+		num: 1341,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Hyper Beam 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Frost",
+		contestType: "Clever",
+	},
+	icebeam2: {
+		num: 1342,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Ice Beam 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	icepunch2: {
+		num: 1343,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Ice Punch 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	iceshard2: {
+		num: 1344,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Ice Shard 2",
+		pp: 30,
+		priority: 1,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	icywind2: {
+		num: 1345,
+		accuracy: 90,
+		basePower: 55,
+		category: "Special",
+		name: "Icy Wind 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, wind: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	imprison2: {
+		num: 1346,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Imprison 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, bypasssub: 1, mustpressure: 1},
+		volatileStatus: 'imprison',
+		condition: {
+			noCopy: true,
+			onStart(target) {
+				this.add('-start', target, 'move: Imprison');
+			},
+			onFoeDisableMove(pokemon) {
+				for (const moveSlot of this.effectState.source.moveSlots) {
+					if (moveSlot.id === 'struggle') continue;
+					pokemon.disableMove(moveSlot.id, 'hidden');
+				}
+				pokemon.maybeDisabled = true;
+			},
+			onFoeBeforeMovePriority: 4,
+			onFoeBeforeMove(attacker, defender, move) {
+				if (move.id !== 'struggle' && this.effectState.source.hasMove(move.id) && !move.isZ && !move.isMax) {
+					this.add('cant', attacker, 'move: Imprison', move);
+					return false;
+				}
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Faith",
+		zMove: {boost: {spd: 2}},
+		contestType: "Clever",
+	},
+	ingrain2: {
+		num: 1347,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Ingrain 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, nonsky: 1},
+		volatileStatus: 'ingrain',
+		condition: {
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'move: Ingrain');
+			},
+			onResidualOrder: 7,
+			onResidual(pokemon) {
+				this.heal(pokemon.baseMaxhp / 16);
+			},
+			onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+			},
+			// groundedness implemented in battle.engine.js:BattlePokemon#isGrounded
+			onDragOut(pokemon) {
+				this.add('-activate', pokemon, 'move: Ingrain');
+				return null;
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Nature",
+		zMove: {boost: {spd: 1}},
+		contestType: "Clever",
+	},
+	irondefense2: {
+		num: 1348,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Iron Defense 2",
+		pp: 15,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Metal",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Tough",
+	},
+	jamming: {
+		num: 1349,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Jamming",
+		pp: 5,
+		priority: 0,
+		flags: {reflectable: 1, mirror: 1, sound: 1},
+		onHit(target, source, move) {
+			return target.addVolatile('trapped', source, move, 'trapper');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	judgement: {
+		num: 1350,
+		accuracy: 30,
+		basePower: 0,
+		category: "Special",
+		name: "Judgement",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		ohko: true,
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		zMove: {basePower: 180},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	jumpkick2: {
+		num: 1351,
+		accuracy: 95,
+		basePower: 85,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Jump Kick 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Jump Kick'));
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	karatechop2: {
+		num: 1352,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Karate Chop 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	killingbite: {
+		num: 1353,
+		accuracy: 80,
+		basePower: 100,
+		category: "Physical",
+		name: "Killing Bite",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Beast",
+		contestType: "Tough",
+	},
+	knifethrow: {
+		num: 1354,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Knife Throw",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Tough",
+	},
+	knockoff2: {
+		num: 1355,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Knock Off 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePower(basePower, source, target, move) {
+			const item = target.getItem();
+			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
+			if (item.id) {
+				return this.chainModify(1.5);
+			}
+		},
+		onAfterHit(target, source) {
+			if (source.hp) {
+				const item = target.takeItem();
+				if (item) {
+					this.add('-enditem', target, item.name, '[from] move: Knock Off', '[of] ' + source);
+				}
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	lavaplume2: {
+		num: 1356,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Lava Plume 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
+		target: "allAdjacent",
+		type: "Pyro",
+		contestType: "Tough",
+	},
+	leafblade2: {
+		num: 1357,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Leaf Blade 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Cool",
+	},
+	leechlife2: {
+		num: 1358,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Leech Life 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	leechseed2: {
+		num: 1359,
+		accuracy: 90,
+		basePower: 0,
+		category: "Status",
+		name: "Leech Seed 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'leechseed',
+		condition: {
+			onStart(target) {
+				this.add('-start', target, 'move: Leech Seed');
+			},
+			onResidualOrder: 8,
+			onResidual(pokemon) {
+				const target = this.getAtSlot(pokemon.volatiles['leechseed'].sourceSlot);
+				if (!target || target.fainted || target.hp <= 0) {
+					this.debug('Nothing to leech into');
+					return;
+				}
+				const damage = this.damage(pokemon.baseMaxhp / 8, pokemon, target);
+				if (damage) {
+					this.heal(damage, target, pokemon);
+				}
+			},
+		},
+		onTryImmunity(target) {
+			return !target.hasType('Grass');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	leer2: {
+		num: 1360,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Leer 2",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		boosts: {
+			def: -1,
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Illusion",
+		zMove: {boost: {atk: 1}},
+		contestType: "Cool",
+	},
+	lick2: {
+		num: 1361,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "Lick 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Nether",
+		contestType: "Cute",
+	},
+	lightscreen2: {
+		num: 1362,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Light Screen 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		sideCondition: 'lightscreen',
+		condition: {
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasItem('lightclay')) {
+					return 8;
+				}
+				return 5;
+			},
+			onAnyModifyDamage(damage, source, target, move) {
+				if (target !== source && this.effectState.target.hasAlly(target) && this.getCategory(move) === 'Special') {
+					if (!target.getMoveHitData(move).crit && !move.infiltrates) {
+						this.debug('Light Screen weaken');
+						if (this.activePerHalf > 1) return this.chainModify([2732, 4096]);
+						return this.chainModify(0.5);
+					}
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: Light Screen');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 2,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'move: Light Screen');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Faith",
+		zMove: {boost: {spd: 1}},
+		contestType: "Beautiful",
+	},
+	lockon2: {
+		num: 1363,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Lock-On 2",
+		pp: 15,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			accuracy: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	lovelykiss2: {
+		num: 1364,
+		accuracy: 70,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Lovely Kiss 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'slp',
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {boost: {spe: 1}},
+		contestType: "Beautiful",
+	},
+	lowkick2: {
+		num: 1365,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const targetWeight = target.getWeight();
+			let bp;
+			if (targetWeight >= 2000) {
+				bp = 120;
+			} else if (targetWeight >= 1000) {
+				bp = 100;
+			} else if (targetWeight >= 500) {
+				bp = 80;
+			} else if (targetWeight >= 250) {
+				bp = 60;
+			} else if (targetWeight >= 100) {
+				bp = 40;
+			} else {
+				bp = 20;
+			}
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Low Kick 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTryHit(target, pokemon, move) {
+			if (target.volatiles['dynamax']) {
+				this.add('-fail', pokemon, 'Dynamax');
+				this.attrLastMove('[still]');
+				return null;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		zMove: {basePower: 160},
+		contestType: "Tough",
+	},
+	luckychant: {
+		num: 1366,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Lucky Chant",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spd: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Faith",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	lunatic: {
+		num: 1367,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "LUNATIC",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				spa: -1,
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Clever",
+	},
+	lusterpurge2: {
+		num: 1368,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "Luster Purge 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Reason",
+		contestType: "Clever",
+	},
+	machpunch2: {
+		num: 1369,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Mach Punch 2",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	magiccoat2: {
+		num: 1370,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Magic Coat 2",
+		pp: 15,
+		priority: 4,
+		flags: {},
+		volatileStatus: 'magiccoat',
+		condition: {
+			duration: 1,
+			onStart(target, source, effect) {
+				this.add('-singleturn', target, 'move: Magic Coat');
+				if (effect?.effectType === 'Move') {
+					this.effectState.pranksterBoosted = effect.pranksterBoosted;
+				}
+			},
+			onTryHitPriority: 2,
+			onTryHit(target, source, move) {
+				if (target === source || move.hasBounced || !move.flags['reflectable']) {
+					return;
+				}
+				const newMove = this.dex.getActiveMove(move.id);
+				newMove.hasBounced = true;
+				newMove.pranksterBoosted = this.effectState.pranksterBoosted;
+				this.actions.useMove(newMove, target, source);
+				return null;
+			},
+			onAllyTryHitSide(target, source, move) {
+				if (target.isAlly(source) || move.hasBounced || !move.flags['reflectable']) {
+					return;
+				}
+				const newMove = this.dex.getActiveMove(move.id);
+				newMove.hasBounced = true;
+				newMove.pranksterBoosted = false;
+				this.actions.useMove(newMove, this.effectState.target, source);
+				return null;
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {boost: {spd: 2}},
+		contestType: "Beautiful",
+	},
+	magicknife: {
+		num: 1371,
+		accuracy: 95,
+		basePower: 25,
+		category: "Physical",
+		name: "Magic Knife",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		maxMove: {basePower: 100},
+		contestType: "Tough",
+	},
+	magicalleaf2: {
+		num: 1372,
+		accuracy: true,
+		basePower: 60,
+		category: "Special",
+		name: "Magical Leaf 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Beautiful",
+	},
+	magnitude2: {
+		num: 1373,
+		accuracy: 100,
+		basePower: 0,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Magnitude 2",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		onModifyMove(move, pokemon) {
+			const i = this.random(100);
+			if (i < 5) {
+				move.magnitude = 4;
+				move.basePower = 10;
+			} else if (i < 15) {
+				move.magnitude = 5;
+				move.basePower = 30;
+			} else if (i < 35) {
+				move.magnitude = 6;
+				move.basePower = 50;
+			} else if (i < 65) {
+				move.magnitude = 7;
+				move.basePower = 70;
+			} else if (i < 85) {
+				move.magnitude = 8;
+				move.basePower = 90;
+			} else if (i < 95) {
+				move.magnitude = 9;
+				move.basePower = 110;
+			} else {
+				move.magnitude = 10;
+				move.basePower = 150;
+			}
+		},
+		onUseMoveMessage(pokemon, target, move) {
+			this.add('-activate', pokemon, 'move: Magnitude', move.magnitude);
+		},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Earth",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 140},
+		contestType: "Tough",
+	},
+	manaburst: {
+		num: 1374,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Mana Burst",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Reason",
+		contestType: "Clever",
+	},
+	manacharge: {
+		num: 1375,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Mana Charge",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 1,
+			spd: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	manashield: {
+		num: 1376,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Mana Shield",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spd: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	megadrain2: {
+		num: 1377,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Mega Drain 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {basePower: 120},
+		contestType: "Clever",
+	},
+	memento2: {
+		num: 1378,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Memento 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		boosts: {
+			atk: -2,
+			spa: -2,
+		},
+		selfdestruct: "ifHit",
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		zMove: {effect: 'healreplacement'},
+		contestType: "Tough",
+	},
+	metalclaw2: {
+		num: 1379,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Metal Claw 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	meteormash2: {
+		num: 1380,
+		accuracy: 80,
+		basePower: 120,
+		category: "Physical",
+		name: "Meteor Mash 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Clever",
+	},
+	metronome2: {
+		num: 1381,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Metronome 2",
+		pp: 10,
+		priority: 0,
+		flags: {failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1},
+		noMetronome: [
+			"After You", "Apple Acid", "Armor Cannon", "Assist", "Astral Barrage", "Aura Wheel", "Baneful Bunker", "Beak Blast", "Behemoth Bash", "Behemoth Blade", "Belch", "Bestow", "Blazing Torque", "Body Press", "Branch Poke", "Breaking Swipe", "Celebrate", "Chatter", "Chilling Water", "Chilly Reception", "Clangorous Soul", "Collision Course", "Combat Torque", "Comeuppance", "Copycat", "Counter", "Covet", "Crafty Shield", "Decorate", "Destiny Bond", "Detect", "Diamond Storm", "Doodle", "Double Iron Bash", "Double Shock", "Dragon Ascent", "Dragon Energy", "Drum Beating", "Dynamax Cannon", "Electro Drift", "Endure", "Eternabeam", "False Surrender", "Feint", "Fiery Wrath", "Fillet Away", "Fleur Cannon", "Focus Punch", "Follow Me", "Freeze Shock", "Freezing Glare", "Glacial Lance", "Grav Apple", "Helping Hand", "Hold Hands", "Hyper Drill", "Hyperspace Fury", "Hyperspace Hole", "Ice Burn", "Instruct", "Jet Punch", "Jungle Healing", "King's Shield", "Life Dew", "Light of Ruin", "Magical Torque", "Make It Rain", "Mat Block", "Me First", "Meteor Assault", "Metronome", "Mimic", "Mind Blown", "Mirror Coat", "Mirror Move", "Moongeist Beam", "Nature Power", "Nature's Madness", "Noxious Torque", "Obstruct", "Order Up", "Origin Pulse", "Overdrive", "Photon Geyser", "Plasma Fists", "Population Bomb", "Pounce", "Power Shift", "Precipice Blades", "Protect", "Pyro Ball", "Quash", "Quick Guard", "Rage Fist", "Rage Powder", "Raging Bull", "Raging Fury", "Relic Song", "Revival Blessing", "Ruination", "Salt Cure", "Secret Sword", "Shed Tail", "Shell Trap", "Silk Trap", "Sketch", "Sleep Talk", "Snap Trap", "Snarl", "Snatch", "Snore", "Snowscape", "Spectral Thief", "Spicy Extract", "Spiky Shield", "Spirit Break", "Spotlight", "Springtide Storm", "Steam Eruption", "Steel Beam", "Strange Steam", "Struggle", "Sunsteel Strike", "Surging Strikes", "Switcheroo", "Techno Blast", "Thief", "Thousand Arrows", "Thousand Waves", "Thunder Cage", "Thunderous Kick", "Tidy Up", "Trailblaze", "Transform", "Trick", "Twin Beam", "V-create", "Wicked Blow", "Wicked Torque", "Wide Guard",
+		],
+		onHit(target, source, effect) {
+			const moves = this.dex.moves.all().filter(move => (
+				(![2, 4].includes(this.gen) || !source.moves.includes(move.id)) &&
+				!move.realMove && !move.isZ && !move.isMax &&
+				(!move.isNonstandard || move.isNonstandard === 'Unobtainable') &&
+				!effect.noMetronome!.includes(move.name)
+			));
+			let randomMove = '';
+			if (moves.length) {
+				moves.sort((a, b) => a.num - b.num);
+				randomMove = this.sample(moves).id;
+			}
+			if (!randomMove) return false;
+			source.side.lastSelectedMove = this.toID(randomMove);
+			this.actions.useMove(randomMove, target);
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		contestType: "Cute",
+	},
+	milkdrink2: {
+		num: 1382,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Milk Drink 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1, protect: 1,},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	mimic2: {
+		num: 1383,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Mimic 2",
+		pp: 10,
+		priority: 0,
+		flags: {
+			protect: 1, bypasssub: 1, allyanim: 1,
+			failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1,
+		},
+		onHit(target, source) {
+			const move = target.lastMove;
+			if (source.transformed || !move || move.flags['failmimic'] || source.moves.includes(move.id)) {
+				return false;
+			}
+			if (move.isZ || move.isMax) return false;
+			const mimicIndex = source.moves.indexOf('mimic');
+			if (mimicIndex < 0) return false;
+
+			source.moveSlots[mimicIndex] = {
+				move: move.name,
+				id: move.id,
+				pp: move.pp,
+				maxpp: move.pp,
+				target: move.target,
+				disabled: false,
+				used: false,
+				virtual: true,
+			};
+			this.add('-start', source, 'Mimic', move.name);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {boost: {accuracy: 1}},
+		contestType: "Cute",
+	},
+	mindbomb: {
+		num: 1384,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const targetWeight = target.getWeight();
+			let bp;
+			if (targetWeight >= 2000) {
+				bp = 120;
+			} else if (targetWeight >= 1000) {
+				bp = 100;
+			} else if (targetWeight >= 500) {
+				bp = 80;
+			} else if (targetWeight >= 250) {
+				bp = 60;
+			} else if (targetWeight >= 100) {
+				bp = 40;
+			} else {
+				bp = 20;
+			}
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Mind Bomb",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onTryHit(target, pokemon, move) {
+			if (target.volatiles['dynamax']) {
+				this.add('-fail', pokemon, 'Dynamax');
+				this.attrLastMove('[still]');
+				return null;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {basePower: 160},
+		contestType: "Tough",
+	},
+	minimize2: {
+		num: 1385,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Minimize 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		volatileStatus: 'minimize',
+		condition: {
+			noCopy: true,
+			onRestart: () => null,
+			onSourceModifyDamage(damage, source, target, move) {
+				const boostedMoves = [
+					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragonrush', 'heatcrash', 'heavyslam', 'maliciousmoonsault',
+				];
+				if (boostedMoves.includes(move.id)) {
+					return this.chainModify(2);
+				}
+			},
+			onAccuracy(accuracy, target, source, move) {
+				const boostedMoves = [
+					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragonrush', 'heatcrash', 'heavyslam', 'maliciousmoonsault',
+				];
+				if (boostedMoves.includes(move.id)) {
+					return true;
+				}
+				return accuracy;
+			},
+		},
+		boosts: {
+			evasion: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Earth",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	mirrorcoat2: {
+		num: 1386,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback(pokemon) {
+			if (!pokemon.volatiles['mirrorcoat']) return 0;
+			return pokemon.volatiles['mirrorcoat'].damage || 1;
+		},
+		category: "Special",
+		name: "Mirror Coat 2",
+		pp: 20,
+		priority: -5,
+		flags: {protect: 1, failmefirst: 1, noassist: 1},
+		beforeTurnCallback(pokemon) {
+			pokemon.addVolatile('mirrorcoat');
+		},
+		onTry(source) {
+			if (!source.volatiles['mirrorcoat']) return false;
+			if (source.volatiles['mirrorcoat'].slot === null) return false;
+		},
+		condition: {
+			duration: 1,
+			noCopy: true,
+			onStart(target, source, move) {
+				this.effectState.slot = null;
+				this.effectState.damage = 0;
+			},
+			onRedirectTargetPriority: -1,
+			onRedirectTarget(target, source, source2, move) {
+				if (move.id !== 'mirrorcoat') return;
+				if (source !== this.effectState.target || !this.effectState.slot) return;
+				return this.getAtSlot(this.effectState.slot);
+			},
+			onDamagingHit(damage, target, source, move) {
+				if (!source.isAlly(target) && this.getCategory(move) === 'Special') {
+					this.effectState.slot = source.getSlot();
+					this.effectState.damage = 2 * damage;
+				}
+			},
+		},
+		secondary: null,
+		target: "scripted",
+		type: "Heart",
+		contestType: "Beautiful",
+	},
+	mirrorshot2: {
+		num: 1387,
+		accuracy: 90,
+		basePower: 65,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Mirror Shot 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Beautiful",
+	},
+	mist2: {
+		num: 1388,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Mist 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		sideCondition: 'mist',
+		condition: {
+			duration: 5,
+			onTryBoost(boost, target, source, effect) {
+				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
+				if (source && target !== source) {
+					let showMsg = false;
+					let i: BoostID;
+					for (i in boost) {
+						if (boost[i]! < 0) {
+							delete boost[i];
+							showMsg = true;
+						}
+					}
+					if (showMsg && !(effect as ActiveMove).secondaries) {
+						this.add('-activate', target, 'move: Mist');
+					}
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Mist');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 4,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Mist');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Frost",
+		zMove: {effect: 'heal'},
+		contestType: "Beautiful",
+	},
+	mistball2: {
+		num: 1389,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Mist Ball 2",
+		pp: 5,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Clever",
+	},
+	mudshot2: {
+		num: 1390,
+		accuracy: 90,
+		basePower: 65,
+		category: "Special",
+		name: "Mud Shot 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "normal",
+		type: "Earth",
+		contestType: "Tough",
+	},
+	mudslap2: {
+		num: 1391,
+		accuracy: 100,
+		basePower: 30,
+		category: "Special",
+		name: "Mud-Slap 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Earth",
+		contestType: "Cute",
+	},
+	muddywater2: {
+		num: 1392,
+		accuracy: 90,
+		basePower: 80,
+		category: "Special",
+		name: "Muddy Water 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Aqua",
+		contestType: "Tough",
+	},
+	mysticwater: {
+		num: 1393,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Mystic Water",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, nonsky: 1},
+		volatileStatus: 'ingrain',
+		condition: {
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'move: Ingrain');
+			},
+			onResidualOrder: 7,
+			onResidual(pokemon) {
+				this.heal(pokemon.baseMaxhp / 16);
+			},
+			onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+			},
+			// groundedness implemented in battle.engine.js:BattlePokemon#isGrounded
+			onDragOut(pokemon) {
+				this.add('-activate', pokemon, 'move: Ingrain');
+				return null;
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Aqua",
+		zMove: {boost: {spd: 1}},
+		contestType: "Clever",
+	},
+	nastyplot2: {
+		num: 1394,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Nasty Plot 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Umbral",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	naturepower2: {
+		num: 1395,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const targetWeight = target.getWeight();
+			let bp;
+			if (targetWeight >= 2000) {
+				bp = 120;
+			} else if (targetWeight >= 1000) {
+				bp = 100;
+			} else if (targetWeight >= 500) {
+				bp = 80;
+			} else if (targetWeight >= 250) {
+				bp = 60;
+			} else if (targetWeight >= 100) {
+				bp = 40;
+			} else {
+				bp = 20;
+			}
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Special",
+		name: "Nature Power",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onTryHit(target, pokemon, move) {
+			if (target.volatiles['dynamax']) {
+				this.add('-fail', pokemon, 'Dynamax');
+				this.attrLastMove('[still]');
+				return null;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {basePower: 160},
+		contestType: "Tough",
+	},
+	naturesound: {
+		num: 1396,
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
+		name: "Nature Sound",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Clever",
+	},
+	needlearm2: {
+		num: 1397,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Needle Arm 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Nature",
+		contestType: "Clever",
+	},
+	nightshade2: {
+		num: 1398,
+		accuracy: 100,
+		basePower: 0,
+		damage: 'level',
+		category: "Special",
+		name: "Night Shade 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		contestType: "Clever",
+	},
+	nightslash2: {
+		num: 1399,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Night Slash 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Cool",
+	},
+	nightmare2: {
+		num: 1400,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Nightmare 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'slp',
+		},
+		target: "normal",
+		type: "Nether",
+		contestType: "Cute",
+	},
+	ominouswind2: {
+		num: 1401,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Ominous Wind 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 1,
+					def: 1,
+					spa: 1,
+					spd: 1,
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Nether",
+		contestType: "Beautiful",
+	},
+	outrage2: {
+		num: 1402,
+		accuracy: 80,
+		basePower: 120,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Outrage 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	painsplit2: {
+		num: 1403,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Pain Split 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, allyanim: 1},
+		onHit(target, pokemon) {
+			const targetHP = target.getUndynamaxedHP();
+			const averagehp = Math.floor((targetHP + pokemon.hp) / 2) || 1;
+			const targetChange = targetHP - averagehp;
+			target.sethp(target.hp - targetChange);
+			this.add('-sethp', target, target.getHealth, '[from] move: Pain Split', '[silent]');
+			pokemon.sethp(averagehp);
+			this.add('-sethp', pokemon, pokemon.getHealth, '[from] move: Pain Split');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	payday2: {
+		num: 1404,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Pay Day 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Clever",
+	},
+	peck2: {
+		num: 1405,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Peck 2",
+		pp: 35,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		secondary: null,
+		target: "any",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	performance: {
+		num: 1406,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Performance",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, dance: 1, failinstruct: 1},
+		self: {
+			volatileStatus: 'lockedmove',
+		},
+		onTryHit(target) {
+			const activeTeam = target.side.activeTeam();
+			const foeActiveTeam = target.side.foe.activeTeam();
+			for (const [i, allyActive] of activeTeam.entries()) {
+				if (allyActive && allyActive.status === 'slp') allyActive.cureStatus();
+				const foeActive = foeActiveTeam[i];
+				if (foeActive && foeActive.status === 'slp') foeActive.cureStatus();
+			}
+		},
+		onAfterMove(pokemon) {
+			if (pokemon.volatiles['lockedmove'] && pokemon.volatiles['lockedmove'].duration === 1) {
+				pokemon.removeVolatile('lockedmove');
+			}
+		},
+		secondary: null,
+		target: "randomNormal",
+		type: "Nether",
+		contestType: "Beautiful",
+	},
+	perishsong2: {
+		num: 1407,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Perish Song 2",
+		pp: 5,
+		priority: 0,
+		flags: {sound: 1, distance: 1, bypasssub: 1},
+		onHitField(target, source, move) {
+			let result = false;
+			let message = false;
+			for (const pokemon of this.getAllActive()) {
+				if (this.runEvent('Invulnerability', pokemon, source, move) === false) {
+					this.add('-miss', source, pokemon);
+					result = true;
+				} else if (this.runEvent('TryHit', pokemon, source, move) === null) {
+					result = true;
+				} else if (!pokemon.volatiles['perishsong']) {
+					pokemon.addVolatile('perishsong');
+					this.add('-start', pokemon, 'perish3', '[silent]');
+					result = true;
+					message = true;
+				}
+			}
+			if (!result) return false;
+			if (message) this.add('-fieldactivate', 'move: Perish Song');
+		},
+		condition: {
+			duration: 4,
+			onEnd(target) {
+				this.add('-start', target, 'perish0');
+				target.faint();
+			},
+			onResidualOrder: 24,
+			onResidual(pokemon) {
+				const duration = pokemon.volatiles['perishsong'].duration;
+				this.add('-start', pokemon, 'perish' + duration);
+			},
+		},
+		secondary: null,
+		target: "all",
+		type: "Nether",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Beautiful",
+	},
+	pinmissile2: {
+		num: 1408,
+		accuracy: 95,
+		basePower: 25,
+		category: "Physical",
+		name: "Pin Missile 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 130},
+		contestType: "Cool",
+	},
+	poisonbomb: {
+		num: 1409,
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
+		name: "Poison Bomb",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Miasma",
+		contestType: "Tough",
+	},
+	poisonjab2: {
+		num: 1410,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Poison Jab 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Miasma",
+		contestType: "Tough",
+	},
+	poisonsting2: {
+		num: 1411,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "Poison Sting 2",
+		pp: 30,
+		priority: 0,
+		flags: {contac: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Miasma",
+		contestType: "Clever",
+	},
+	poisontears: {
+		num: 1412,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Poison Tears",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Miasma",
+		contestType: "Clever",
+	},
+	poisonpowder2: {
+		num: 1413,
+		accuracy: 75,
+		basePower: 0,
+		category: "Status",
+		name: "Poison Powder 2",
+		pp: 35,
+		priority: 0,
+		flags: {powder: 1, protect: 1, reflectable: 1, mirror: 1},
+		status: 'psn',
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	pound2: {
+		num: 1414,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Pound 2",
+		pp: 40,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		contestType: "Tough",
+	},
+	powdersnow2: {
+		num: 1415,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Powder Snow 2",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "allAdjacentFoes",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	powerwhip2: {
+		num: 1416,
+		accuracy: 85,
+		basePower: 120,
+		category: "Physical",
+		name: "Power Whip 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Tough",
+	},
+	prank: {
+		num: 1417,
+		accuracy: 90,
+		basePower: 0,
+		damageCallback(pokemon, target) {
+			return this.clampIntRange(Math.floor(target.getUndynamaxedHP() / 2), 1);
+		},
+		category: "Physical",
+		name: "Prank",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Tough",
+	},
+	protect2: {
+		num: 1418,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Protect 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 1,
+			spd: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {boost: {spd: 1}},
+		contestType: "Beautiful",
+	},
+	psybeam2: {
+		num: 1419,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Psybeam 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Reason",
+		contestType: "Beautiful",
+	},
+	psychup2: {
+		num: 1420,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Psych Up 2",
+		pp: 10,
+		priority: 0,
+		flags: {bypasssub: 1, allyanim: 1},
+		onHit(target, source) {
+			let i: BoostID;
+			for (i in target.boosts) {
+				source.boosts[i] = target.boosts[i];
+			}
+			const volatilesToCopy = ['focusenergy', 'gmaxchistrike', 'laserfocus'];
+			for (const volatile of volatilesToCopy) {
+				if (target.volatiles[volatile]) {
+					source.addVolatile(volatile);
+					if (volatile === 'gmaxchistrike') source.volatiles[volatile].layers = target.volatiles[volatile].layers;
+				} else {
+					source.removeVolatile(volatile);
+				}
+			}
+			this.add('-copyboost', source, target, '[from] move: Psych Up');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		zMove: {effect: 'heal'},
+		contestType: "Clever",
+	},
+	psychoboost2: {
+		num: 1421,
+		accuracy: 90,
+		basePower: 140,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Psycho Boost 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				spa: -2,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		contestType: "Clever",
+	},
+	psychocut2: {
+		num: 1422,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Psycho Cut 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		contestType: "Cool",
+	},
+	psyshot: {
+		num: 1423,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Psyshot",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Reason",
+		contestType: "Beautiful",
+	},
+	psywave2: {
+		num: 1424,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback(pokemon) {
+			return (this.random(50, 151) * pokemon.level) / 100;
+		},
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Psywave 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		contestType: "Clever",
+	},
+	pursuit2: {
+		num: 1425,
+		accuracy: 100,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			// You can't get here unless the pursuit succeeds
+			if (target.beingCalledBack || target.switchFlag) {
+				this.debug('Pursuit damage boost');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Pursuit 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		beforeTurnCallback(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('pursuit');
+		},
+		condition: {
+			duration: 1,
+			onBeforeSwitchOut(pokemon) {
+				this.debug('Pursuit start');
+				let alreadyAdded = false;
+				pokemon.removeVolatile('destinybond');
+				for (const source of this.effectState.sources) {
+					if (!source.isAdjacent(pokemon) || !this.queue.cancelMove(source) || !source.hp) continue;
+					if (!alreadyAdded) {
+						this.add('-activate', pokemon, 'move: Pursuit');
+						alreadyAdded = true;
+					}
+					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
+					// If it is, then Mega Evolve before moving.
+					if (source.canMegaEvo || source.canUltraBurst) {
+						for (const [actionIndex, action] of this.queue.entries()) {
+							if (action.pokemon === source && action.choice === 'megaEvo') {
+								this.actions.runMegaEvo(source);
+								this.queue.list.splice(actionIndex, 1);
+								break;
+							}
+						}
+					}
+					this.actions.runMove('pursuit', source, source.getLocOf(pokemon));
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Clever",
+	},
+	quickattack2: {
+		num: 1426,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Quick Attack 2",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	rage2: {
+		num: 1427,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Rage 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 100,
+			self: {
+					volatileStatus: 'brn',
+				},
+			},
+		},
+		target: "normal",
+		type: "Umbral",
+		contestType: "Tough",
+	},
+	raindance2: {
+		num: 1428,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Rain Dance 2",
+		pp: 5,
+		priority: 0,
+		flags: {},
+		weather: 'RainDance',
+		secondary: null,
+		target: "all",
+		type: "Aqua",
+		zMove: {boost: {spe: 1}},
+		contestType: "Beautiful",
+	},
+	rapidspin2: {
+		num: 1429,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Rapid Spin 2",
+		pp: 30,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onAfterHit(target, pokemon, move) {
+			if (!move.hasSheerForce) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon, move) {
+			if (!move.hasSheerForce) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Miasma",
+		contestType: "Cool",
+	},
+	razorleaf2: {
+		num: 1430,
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		name: "Razor Leaf 2",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Nature",
+		contestType: "Cool",
+	},
+	razorwind2: {
+		num: 1431,
+		accuracy: true,
+		basePower: 60,
+		category: "Physical",
+		name: "Razor Wind 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1},
+		secondary: null,
+		target: "any",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	recollection: {
+		num: 1432,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Recollection",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, failencore: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1},
+		onHit(target, pokemon) {
+			if (!pokemon.transformInto(target)) {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {effect: 'heal'},
+		contestType: "Clever",
+	},
+	recover2: {
+		num: 1433,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Recover 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	recycle2: {
+		num: 1434,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Recycle 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(pokemon) {
+			if (pokemon.item || !pokemon.lastItem) return false;
+			const item = pokemon.lastItem;
+			pokemon.lastItem = '';
+			this.add('-item', pokemon, this.dex.items.get(item), '[from] move: Recycle');
+			pokemon.setItem(item);
+		},
+		secondary: null,
+		target: "self",
+		type: "Aqua",
+		zMove: {boost: {spe: 2}},
+		contestType: "Clever",
+	},
+	reflect2: {
+		num: 1435,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Reflect 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		sideCondition: 'reflect',
+		condition: {
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasItem('lightclay')) {
+					return 8;
+				}
+				return 5;
+			},
+			onAnyModifyDamage(damage, source, target, move) {
+				if (target !== source && this.effectState.target.hasAlly(target) && this.getCategory(move) === 'Physical') {
+					if (!target.getMoveHitData(move).crit && !move.infiltrates) {
+						this.debug('Reflect weaken');
+						if (this.activePerHalf > 1) return this.chainModify([2732, 4096]);
+						return this.chainModify(0.5);
+					}
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Reflect');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 1,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Reflect');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Dream",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	refresh2: {
+		num: 1436,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Refresh 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		onHit(pokemon) {
+			if (['', 'slp', 'frz'].includes(pokemon.status)) return false;
+			pokemon.cureStatus();
+		},
+		secondary: null,
+		target: "self",
+		type: "Aqua",
+		zMove: {effect: 'heal'},
+		contestType: "Cute",
+	},
+	rest2: {
+		num: 1437,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Rest 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onTry(source) {
+			if (source.status === 'slp' || source.hasAbility('comatose')) return false;
+
+			if (source.hp === source.maxhp) {
+				this.add('-fail', source, 'heal');
+				return null;
+			}
+			if (source.hasAbility(['insomnia', 'vitalspirit'])) {
+				this.add('-fail', source, '[from] ability: ' + source.getAbility().name, '[of] ' + source);
+				return null;
+			}
+		},
+		onHit(target, source, move) {
+			const result = target.setStatus('slp', source, move);
+			if (!result) return result;
+			target.statusState.time = 3;
+			target.statusState.startTime = 3;
+			this.heal(target.maxhp); // Aesthetic only as the healing happens after you fall asleep in-game
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	return2: {
+		num: 1438,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon) {
+			return Math.floor((pokemon.happiness * 10) / 25) || 1;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Return 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {basePower: 160},
+		maxMove: {basePower: 130},
+		contestType: "Cute",
+	},
+	revenge2: {
+		num: 1439,
+		accuracy: 100,
+		basePower: 60,
+		basePowerCallback(pokemon, target, move) {
+			const damagedByTarget = pokemon.attackedBy.some(
+				p => p.source === target && p.damage > 0 && p.thisTurn
+			);
+			if (damagedByTarget) {
+				this.debug('BP doubled for getting hit by ' + target);
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Revenge 2",
+		pp: 10,
+		priority: -4,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	reversal2: {
+		num: 1440,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const ratio = Math.max(Math.floor(pokemon.hp * 48 / pokemon.maxhp), 1);
+			let bp;
+			if (ratio < 2) {
+				bp = 200;
+			} else if (ratio < 5) {
+				bp = 150;
+			} else if (ratio < 10) {
+				bp = 100;
+			} else if (ratio < 17) {
+				bp = 80;
+			} else if (ratio < 33) {
+				bp = 40;
+			} else {
+				bp = 20;
+			}
+			this.debug('BP: ' + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Reversal 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		zMove: {basePower: 160},
+		contestType: "Cool",
+	},
+	roar2: {
+		num: 1441,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Roar 2",
+		pp: 20,
+		priority: -6,
+		flags: {reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1, noassist: 1, failcopycat: 1},
+		forceSwitch: true,
+		secondary: null,
+		target: "normal",
+		type: "Beast",
+		zMove: {boost: {def: 1}},
+		contestType: "Cool",
+	},
+	rockblast2: {
+		num: 1442,
+		accuracy: 95,
+		basePower: 25,
+		category: "Physical",
+		name: "Rock Blast 2",
+		pp: 15,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	rockbullet: {
+		num: 1443,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Rock Bullet",
+		pp: 30,
+		priority: 1,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		contestType: "Cool",
+	},
+	rockslide2: {
+		num: 1444,
+		accuracy: 90,
+		basePower: 75,
+		category: "Physical",
+		name: "Rock Slide 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "allAdjacentFoes",
+		type: "Earth",
+		contestType: "Tough",
+	},
+	rocksmash2: {
+		num: 1445,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Rock Smash 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 50,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	rocktomb2: {
+		num: 1446,
+		accuracy: 90,
+		basePower: 55,
+		category: "Physical",
+		name: "Rock Tomb 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Earth",
+		contestType: "Clever",
+	},
+	rockwrecker2: {
+		num: 1447,
+		accuracy: 80,
+		basePower: 120,
+		category: "Physical",
+		name: "Rock Wrecker 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Earth",
+		contestType: "Cool",
+	},
+	rollingkick2: {
+		num: 1448,
+		accuracy: 90,
+		basePower: 80,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Rolling Kick 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	roost2: {
+		num: 1449,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Roost 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		self: {
+			volatileStatus: 'roost',
+		},
+		condition: {
+			duration: 1,
+			onResidualOrder: 25,
+			onStart(target) {
+				if (!target.terastallized) {
+					this.add('-singleturn', target, 'move: Roost');
+				} else if (target.terastallized === "Flying") {
+					this.add('-hint', "If a Flying Terastallized Pokemon uses Roost, it remains Flying-type.");
+				}
+			},
+			onTypePriority: -1,
+			onType(types, pokemon) {
+				this.effectState.typeWas = types;
+				return types.filter(type => type !== 'Aero');
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Aero",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	sacredfire2: {
+		num: 1450,
+		accuracy: 85,
+		basePower: 100,
+		category: "Physical",
+		name: "Sacred Fire 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Faith",
+		contestType: "Cool",
+	},
+	safeguard2: {
+		num: 1451,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Safeguard 2",
+		pp: 25,
+		priority: 0,
+		flags: {snatch: 1},
+		sideCondition: 'safeguard',
+		condition: {
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasAbility('persistent')) {
+					this.add('-activate', source, 'ability: Persistent', '[move] Safeguard');
+					return 7;
+				}
+				return 5;
+			},
+			onSetStatus(status, target, source, effect) {
+				if (!effect || !source) return;
+				if (effect.id === 'yawn') return;
+				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
+				if (target !== source) {
+					this.debug('interrupting setStatus');
+					if (effect.name === 'Synchronize' || (effect.effectType === 'Move' && !effect.secondaries)) {
+						this.add('-activate', target, 'move: Safeguard');
+					}
+					return null;
+				}
+			},
+			onTryAddVolatile(status, target, source, effect) {
+				if (!effect || !source) return;
+				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
+				if ((status.id === 'confusion' || status.id === 'yawn') && target !== source) {
+					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Safeguard');
+					return null;
+				}
+			},
+			onSideStart(side, source) {
+				if (source?.hasAbility('persistent')) {
+					this.add('-sidestart', side, 'Safeguard', '[persistent]');
+				} else {
+					this.add('-sidestart', side, 'Safeguard');
+				}
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 3,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Safeguard');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Faith",
+		zMove: {boost: {spe: 1}},
+		contestType: "Beautiful",
+	},
+	lunadial: {
+		num: 1452,
+		accuracy: 55,
+		basePower: 40,
+		category: "Special",
+		name: "Luna Dial",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Frost",
+		contestType: "Beautiful",
+	},
+	sandattack2: {
+		num: 1453,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Sand Attack 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		boosts: {
+			accuracy: -1,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		zMove: {boost: {evasion: 1}},
+		contestType: "Cute",
+	},
+	sandtomb2: {
+		num: 1454,
+		accuracy: 90,
+		basePower: 360
+		category: "Special",
+		name: "Sand Tomb 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		contestType: "Clever",
+	},
+	sandstorm2: {
+		num: 1455,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Sandstorm 2",
+		pp: 10,
+		priority: 0,
+		flags: {wind: 1},
+		weather: 'Sandstorm',
+		secondary: null,
+		target: "all",
+		type: "Earth",
+		zMove: {boost: {spe: 1}},
+		contestType: "Tough",
+	},
+	scaryface2: {
+		num: 1456,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Scary Face 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		boosts: {
+			spe: -2,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {boost: {spe: 1}},
+		contestType: "Tough",
+	},
+	scratch2: {
+		num: 1457,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Scratch 2",
+		pp: 40,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Tough",
+	},
+	screech2: {
+		num: 1458,
+		accuracy: 90,
+		basePower: 0,
+		category: "Status",
+		name: "Screech 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1},
+		boosts: {
+			def: -2,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		zMove: {boost: {atk: 1}},
+		contestType: "Clever",
+	},
+	sculpture: {
+		num: 1459,
+		accuracy: true,
+		basePower: 95,
+		category: "Physical",
+		name: "Sculpture",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, mirror: 1},
+		breaksProtect: true,
+		// Breaking protection implemented in scripts.js
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Clever",
+	},
+	sealingneedle: {
+		num: 1460,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Sealing Needle",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Faith",
+		contestType: "Cute",
+	},
+	secretpower2: {
+		num: 1461,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Secret Power 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (this.field.isTerrain('')) return;
+			move.secondaries = [];
+			if (this.field.isTerrain('electricterrain')) {
+				move.secondaries.push({
+					chance: 30,
+					status: 'par',
+				});
+			} else if (this.field.isTerrain('grassyterrain')) {
+				move.secondaries.push({
+					chance: 30,
+					status: 'slp',
+				});
+			} else if (this.field.isTerrain('mistyterrain')) {
+				move.secondaries.push({
+					chance: 30,
+					boosts: {
+						spa: -1,
+					},
+				});
+			} else if (this.field.isTerrain('psychicterrain')) {
+				move.secondaries.push({
+					chance: 30,
+					boosts: {
+						spe: -1,
+					},
+				});
+			}
+		},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Illusion",
+		contestType: "Clever",
+	},
+	seismictoss2: {
+		num: 1462,
+		accuracy: 100,
+		basePower: 0,
+		damage: 'level',
+		category: "Physical",
+		name: "Seismic Toss 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		maxMove: {basePower: 75},
+		contestType: "Tough",
+	},
+	selfdestruct2: {
+		num: 1463,
+		accuracy: 100,
+		basePower: 200,
+		category: "Physical",
+		name: "Self-Destruct 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noparentalbond: 1},
+		selfdestruct: "always",
+		secondary: null,
+		target: "allAdjacent",
+		type: "Illusion",
+		contestType: "Beautiful",
+	},
+	shadowball2: {
+		num: 1464,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Shadow Ball 2",
+		pp: 15,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Nether",
+		contestType: "Clever",
+	},
+	shadowdance: {
+		num: 1465,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Shadow Dance",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, dance: 1, failinstruct: 1},
+		self: {
+			volatileStatus: 'lockedmove',
+		},
+		onAfterMove(pokemon) {
+			if (pokemon.volatiles['lockedmove'] && pokemon.volatiles['lockedmove'].duration === 1) {
+				pokemon.removeVolatile('lockedmove');
+			}
+		},
+		secondary: null,
+		target: "randomNormal",
+		type: "Nether",
+		contestType: "Beautiful",
+	},
+	shadowdive: {
+		num: 1466,
+		accuracy: 100,
+		basePower: 140,
+		category: "Physical",
+		name: "Shadow Dive",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, charge: 1, mirror: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1},
+		breaksProtect: true,
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		condition: {
+			duration: 2,
+			onInvulnerability: false,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		contestType: "Cool",
+	},
+	shadowhit: {
+		num: 1467,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Shadow Hit",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		contestType: "Cool",
+	},
+	shadowpunch2: {
+		num: 1468,
+		accuracy: true,
+		basePower: 60,
+		category: "Physical",
+		name: "Shadow Punch 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		contestType: "Clever",
+	},
+	sharpen2: {
+		num: 1469,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Sharpen 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			atk: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Metal",
+		zMove: {boost: {atk: 1}},
+		contestType: "Cute",
+	},
+	sheercold2: {
+		num: 1470,
+		accuracy: 30,
+		basePower: 0,
+		category: "Special",
+		name: "Sheer Cold 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		ohko: 'Ice',
+		target: "normal",
+		type: "Frost",
+		zMove: {basePower: 180},
+		maxMove: {basePower: 130},
+		contestType: "Beautiful",
+	},
+	shockwave2: {
+		num: 1471,
+		accuracy: true,
+		basePower: 60,
+		category: "Special",
+		name: "Shock Wave 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	signalbeam2: {
+		num: 1472,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Signal Beam 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Beautiful",
+	},
+	silverwind2: {
+		num: 1473,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		isNonstandard: "Past",
+		name: "Silver Wind 2",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+				boosts: {
+					spe: -1,
+				},
+		},
+		target: "normal",
+		type: "Faith",
+		contestType: "Beautiful",
+	},
+	sing2: {
+		num: 1474,
+		accuracy: 60,
+		basePower: 0,
+		category: "Status",
+		name: "Sing 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1},
+		status: 'slp',
+		secondary: null,
+		target: "normal",
+		type: "Aero",
+		zMove: {boost: {spe: 1}},
+		contestType: "Cute",
+	},
+	sketch2: {
+		num: 1475,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Sketch 2",
+		pp: 1,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {
+			bypasssub: 1, allyanim: 1, failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1,
+		},
+		onHit(target, source) {
+			const disallowedMoves = ['chatter', 'sketch', 'struggle'];
+			const move = target.lastMove;
+			if (source.transformed || !move || source.moves.includes(move.id)) return false;
+			if (disallowedMoves.includes(move.id) || move.isZ || move.isMax) return false;
+			const sketchIndex = source.moves.indexOf('sketch');
+			if (sketchIndex < 0) return false;
+			const sketchedMove = {
+				move: move.name,
+				id: move.id,
+				pp: move.pp,
+				maxpp: move.pp,
+				target: move.target,
+				disabled: false,
+				used: false,
+			};
+			source.moveSlots[sketchIndex] = sketchedMove;
+			source.baseMoveSlots[sketchIndex] = sketchedMove;
+			this.add('-activate', source, 'move: Sketch', move.name);
+		},
+		noSketch: true,
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {boost: {atk: 1, def: 1, spa: 1, spd: 1, spe: 1}},
+		contestType: "Clever",
+	},
+	skillswap2: {
+		num: 1476,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Skill Swap 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, bypasssub: 1, allyanim: 1},
+		onTryHit(target, source) {
+			const additionalBannedAbilities = ['hungerswitch', 'illusion', 'neutralizinggas', 'wonderguard'];
+			const targetAbility = target.getAbility();
+			const sourceAbility = source.getAbility();
+			// TODO: research in what order these should be checked
+			if (
+				target.volatiles['dynamax'] ||
+				targetAbility.isPermanent || sourceAbility.isPermanent ||
+				additionalBannedAbilities.includes(target.ability) || additionalBannedAbilities.includes(source.ability)
+			) {
+				return false;
+			}
+			const sourceCanBeSet = this.runEvent('SetAbility', source, source, this.effect, targetAbility);
+			if (!sourceCanBeSet) return sourceCanBeSet;
+			const targetCanBeSet = this.runEvent('SetAbility', target, source, this.effect, sourceAbility);
+			if (!targetCanBeSet) return targetCanBeSet;
+		},
+		onHit(target, source, move) {
+			const targetAbility = target.getAbility();
+			const sourceAbility = source.getAbility();
+			if (target.isAlly(source)) {
+				this.add('-activate', source, 'move: Skill Swap', '', '', '[of] ' + target);
+			} else {
+				this.add('-activate', source, 'move: Skill Swap', targetAbility, sourceAbility, '[of] ' + target);
+			}
+			this.singleEvent('End', sourceAbility, source.abilityState, source);
+			this.singleEvent('End', targetAbility, target.abilityState, target);
+			source.ability = targetAbility.id;
+			target.ability = sourceAbility.id;
+			source.abilityState = {id: this.toID(source.ability), target: source};
+			target.abilityState = {id: this.toID(target.ability), target: target};
+			if (!target.isAlly(source)) target.volatileStaleness = 'external';
+			this.singleEvent('Start', targetAbility, source.abilityState, source);
+			this.singleEvent('Start', sourceAbility, target.abilityState, target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
+	skullbash2: {
+		num: 1477,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Skull Bash 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, nosleeptalk: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			this.boost({def: 1}, attacker, attacker, move);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Metal",
+		contestType: "Tough",
+	},
+	skyattack2: {
+		num: 1478,
+		accuracy: 90,
+		basePower: 160,
+		category: "Physical",
+		name: "Sky Attack 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, distance: 1, nosleeptalk: 1, failinstruct: 1},
+		critRatio: 2,
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: {
+			chance: 80,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	slackoff2: {
+		num: 1479,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Slack Off 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Dream",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	slash2: {
+		num: 1480,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Slash 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Beast",
+		contestType: "Cool",
+	},
+	sleeppowder2: {
+		num: 1481,
+		accuracy: 75,
+		basePower: 0,
+		category: "Status",
+		name: "Sleep Powder",
+		pp: 15,
+		priority: 0,
+		flags: {powder: 1, protect: 1, reflectable: 1, mirror: 1},
+		status: 'slp',
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
+	sleeptalk2: {
+		num: 1482,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Sleep Talk 2",
+		pp: 10,
+		priority: 0,
+		flags: {failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1},
+		sleepUsable: true,
+		onTry(source) {
+			return source.status === 'slp' || source.hasAbility('comatose');
+		},
+		onHit(pokemon) {
+			const moves = [];
+			for (const moveSlot of pokemon.moveSlots) {
+				const moveid = moveSlot.id;
+				if (!moveid) continue;
+				const move = this.dex.moves.get(moveid);
+				if (move.flags['nosleeptalk'] || move.flags['charge'] || (move.isZ && move.basePower !== 1) || move.isMax) {
+					continue;
+				}
+				moves.push(moveid);
+			}
+			let randomMove = '';
+			if (moves.length) randomMove = this.sample(moves);
+			if (!randomMove) {
+				return false;
+			}
+			this.actions.useMove(randomMove, pokemon);
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'crit2'},
+		contestType: "Cute",
+	},
+	smellingsalts2: {
+		num: 1483,
+		accuracy: 100,
+		basePower: 75,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status === 'par') {
+				this.debug('BP doubled on paralyzed target');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Smelling Salts 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onHit(target) {
+			if (target.status === 'par') target.cureStatus();
+		},
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		contestType: "Tough",
+	},
+	smile: {
+		num: 1484,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Smile",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		boosts: {
+			atk: -2,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	smokescreen2: {
+		num: 1485,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Smokescreen 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		boosts: {
+			accuracy: -1,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Pyro",
+		zMove: {boost: {evasion: 1}},
+		contestType: "Clever",
+	},
+	snatch2: {
+		num: 1486,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Snatch 2",
+		pp: 10,
+		priority: 4,
+		flags: {bypasssub: 1, mustpressure: 1, noassist: 1, failcopycat: 1},
+		volatileStatus: 'snatch',
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-singleturn', pokemon, 'Snatch');
+			},
+			onAnyPrepareHitPriority: -1,
+			onAnyPrepareHit(source, target, move) {
+				const snatchUser = this.effectState.source;
+				if (snatchUser.isSkyDropped()) return;
+				if (!move || move.isZ || move.isMax || !move.flags['snatch'] || move.sourceEffect === 'snatch') {
+					return;
+				}
+				snatchUser.removeVolatile('snatch');
+				this.add('-activate', snatchUser, 'move: Snatch', '[of] ' + source);
+				this.actions.useMove(move.id, snatchUser);
+				return null;
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Umbral",
+		zMove: {boost: {spe: 2}},
+		contestType: "Clever",
+	},
+	snore2: {
+		num: 1487,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Snore 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
+		sleepUsable: true,
+		onTry(source) {
+			return source.status === 'slp' || source.hasAbility('comatose');
+		},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Dream",
+		contestType: "Cute",
+	},
+	soar: {
+		num: 1488,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Soar",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	softboiled2: {
+		num: 1489,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Soft-Boiled 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	solarbeam2: {
+		num: 1490,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Solar Beam 2",
+		pp: 10,
+		priority: 0,
+		flags: {charge: 1, protect: 1, mirror: 1, nosleeptalk: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather())) {
+				this.attrLastMove('[still]');
+				this.addMove('-anim', attacker, move.name, defender);
+				return;
+			}
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		onBasePower(basePower, pokemon, target) {
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snow'];
+			if (weakWeathers.includes(pokemon.effectiveWeather())) {
+				this.debug('weakened by weather');
+				return this.chainModify(0.5);
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Cool",
+	},
+	sonicboom2: {
+		num: 1491,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Sonic Boom 2",
+		pp: 10,
+		priority: 0,
+		flags: {sound: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Clever",
+	},
+	spiderweb2: {
+		num: 1492,
+		accuracy: 100,
+		basePower: 50,
+		category: "Special",
+		name: "Spider Web 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Nature",
+		contestType: "Cute",
+	},
+	spikes2: {
+		num: 1493,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Spikes 2",
+		pp: 20,
+		priority: 0,
+		flags: {reflectable: 1, nonsky: 1, mustpressure: 1},
+		sideCondition: 'spikes',
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Spikes');
+				this.effectState.layers = 1;
+			},
+			onSideRestart(side) {
+				if (this.effectState.layers >= 3) return false;
+				this.add('-sidestart', side, 'Spikes');
+				this.effectState.layers++;
+			},
+			onEntryHazard(pokemon) {
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
+				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
+			},
+		},
+		secondary: null,
+		target: "foeSide",
+		type: "Earth",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	spite2: {
+		num: 1494,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Spite 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		onHit(target) {
+			let move: Move | ActiveMove | null = target.lastMove;
+			if (!move || move.isZ) return false;
+			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
+
+			const ppDeducted = target.deductPP(move.id, 4);
+			if (!ppDeducted) return false;
+			this.add("-activate", target, 'move: Spite', move.name, ppDeducted);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Nether",
+		zMove: {effect: 'heal'},
+		contestType: "Tough",
+	},
+	splash2: {
+		num: 1495,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Splash 2",
+		pp: 40,
+		priority: 0,
+		flags: {gravity: 1},
+		onTry(source, target, move) {
+			// Additional Gravity check for Z-move variant
+			if (this.field.getPseudoWeather('Gravity')) {
+				this.add('cant', source, 'move: Gravity', move);
+				return null;
+			}
+		},
+		onTryHit(target, source) {
+			this.add('-nothing');
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {boost: {atk: 3}},
+		contestType: "Cute",
+	},
+	splashing: {
+		num: 1496,
+		accuracy: 100,
+		basePower: 60,
+		basePowerCallback(pokemon, target, move) {
+			const damagedByTarget = pokemon.attackedBy.some(
+				p => p.source === target && p.damage > 0 && p.thisTurn
+			);
+			if (damagedByTarget) {
+				this.debug('BP doubled for getting hit by ' + target);
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Splashing",
+		pp: 10,
+		priority: -4,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aqua",
+		contestType: "Tough",
+	},
+	steelfist: {
+		num: 1497,
+		accuracy: 80,
+		basePower: 100,
+		category: "Physical",
+		name: "Steel Fist",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Tough",
+	},
+	steelwing2: {
+		num: 1498,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Steel Wing 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	stomp2: {
+		num: 1499,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Stomp 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Beast",
+		contestType: "Tough",
+	},
+	strength2: {
+		num: 1500,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Strength 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Dream",
+		contestType: "Cool",
+	},
+	stunspore2: {
+		num: 1501,
+		accuracy: 75,
+		basePower: 0,
+		category: "Status",
+		name: "Stun Spore 2",
+		pp: 30,
+		priority: 0,
+		flags: {powder: 1, protect: 1, reflectable: 1, mirror: 1},
+		status: 'par',
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		zMove: {boost: {spd: 1}},
+		contestType: "Clever",
+	},
+	submission2: {
+		num: 1502,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Submission 2",
+		pp: 20,
+		priority: -6,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	substitute2: {
+		num: 1503,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Substitute 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, nonsky: 1},
+		volatileStatus: 'substitute',
+		onTryHit(source) {
+			if (source.volatiles['substitute']) {
+				this.add('-fail', source, 'move: Substitute');
+				return this.NOT_FAIL;
+			}
+			if (source.hp <= source.maxhp / 4 || source.maxhp === 1) { // Shedinja clause
+				this.add('-fail', source, 'move: Substitute', '[weak]');
+				return this.NOT_FAIL;
+			}
+		},
+		onHit(target) {
+			this.directDamage(target.maxhp / 4);
+		},
+		condition: {
+			onStart(target, source, effect) {
+				if (effect?.id === 'shedtail') {
+					this.add('-start', target, 'Substitute', '[from] move: Shed Tail');
+				} else {
+					this.add('-start', target, 'Substitute');
+				}
+				this.effectState.hp = Math.floor(target.maxhp / 4);
+				if (target.volatiles['partiallytrapped']) {
+					this.add('-end', target, target.volatiles['partiallytrapped'].sourceEffect, '[partiallytrapped]', '[silent]');
+					delete target.volatiles['partiallytrapped'];
+				}
+			},
+			onTryPrimaryHitPriority: -1,
+			onTryPrimaryHit(target, source, move) {
+				if (target === source || move.flags['bypasssub'] || move.infiltrates) {
+					return;
+				}
+				let damage = this.actions.getDamage(source, target, move);
+				if (!damage && damage !== 0) {
+					this.add('-fail', source);
+					this.attrLastMove('[still]');
+					return null;
+				}
+				damage = this.runEvent('SubDamage', target, source, move, damage);
+				if (!damage) {
+					return damage;
+				}
+				if (damage > target.volatiles['substitute'].hp) {
+					damage = target.volatiles['substitute'].hp as number;
+				}
+				target.volatiles['substitute'].hp -= damage;
+				source.lastDamage = damage;
+				if (target.volatiles['substitute'].hp <= 0) {
+					if (move.ohko) this.add('-ohko');
+					target.removeVolatile('substitute');
+				} else {
+					this.add('-activate', target, 'move: Substitute', '[damage]');
+				}
+				if (move.recoil || move.id === 'chloroblast') {
+					this.damage(this.actions.calcRecoilDamage(damage, move, source), source, target, 'recoil');
+				}
+				if (move.drain) {
+					this.heal(Math.ceil(damage * move.drain[0] / move.drain[1]), source, target, 'drain');
+				}
+				this.singleEvent('AfterSubDamage', move, null, target, source, move, damage);
+				this.runEvent('AfterSubDamage', target, source, move, damage);
+				return this.HIT_SUBSTITUTE;
+			},
+			onEnd(target) {
+				this.add('-end', target, 'Substitute');
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Illusion",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	sunnyday2: {
+		num: 1504,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Sunny Day 2",
+		pp: 5,
+		priority: 0,
+		flags: {},
+		weather: 'sunnyday',
+		secondary: null,
+		target: "all",
+		type: "Pyro",
+		zMove: {boost: {spe: 1}},
+		contestType: "Beautiful",
+	},
+	superpower2: {
+		num: 1505,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Superpower 2",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				atk: -1,
+				def: -1,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		contestType: "Tough",
+	},
+	surf2: {
+		num: 1506,
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
+		name: "Surf 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	swagger2: {
+		num: 1507,
+		accuracy: 90,
+		basePower: 0,
+		category: "Status",
+		name: "Swagger 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		volatileStatus: 'confusion',
+		boosts: {
+			atk: 2,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cute",
+	},
+	sweetkiss2: {
+		num: 1508,
+		accuracy: 90,
+		basePower: 0,
+		category: "Status",
+		name: "Sweet Kiss 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'confusion',
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		zMove: {boost: {spa: 1}},
+		contestType: "Cute",
+	},
+	swift2: {
+		num: 1509,
+		accuracy: true,
+		basePower: 60,
+		category: "Special",
+		name: "Swift 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Illusion",
+		contestType: "Cool",
+	},
+	swordsdance2: {
+		num: 1510,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Swords Dance 2",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1, dance: 1},
+		boosts: {
+			atk: 2,
+		},
+		secondary: null,
+		target: "self",
+		type: "Metal",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Beautiful",
+	},
+	synthesis2: {
+		num: 1511,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Synthesis 2",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		onHit(pokemon) {
+			let factor = 0.5;
+			switch (pokemon.effectiveWeather()) {
+			case 'sunnyday':
+			case 'desolateland':
+				factor = 0.667;
+				break;
+			case 'raindance':
+			case 'primordialsea':
+			case 'sandstorm':
+			case 'hail':
+			case 'snow':
+				factor = 0.25;
+				break;
+			}
+			const success = !!this.heal(this.modify(pokemon.maxhp, factor));
+			if (!success) {
+				this.add('-fail', pokemon, 'heal');
+				return this.NOT_FAIL;
+			}
+			return success;
+		},
+		secondary: null,
+		target: "self",
+		type: "Nature",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
+	tackle2: {
+		num: 1512,
+		accuracy: 100,
+		basePower: 35,
+		category: "Physical",
+		name: "Tackle 2",
+		pp: 35,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Beast",
+		contestType: "Tough",
+	},
+	tailwhip2: {
+		num: 1513,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Tail Whip 2",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		boosts: {
+			def: -1,
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Beast",
+		zMove: {boost: {atk: 1}},
+		contestType: "Cute",
+	},
+	tailwind2: {
+		num: 1514,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Tailwind 2",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, dance: 1},
+		boosts: {
+			atk: 1,
+			spe: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Wind",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cool",
+	},
+	taunt2: {
+		num: 1515,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Taunt 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, bypasssub: 1},
+		volatileStatus: 'taunt',
+		condition: {
+			duration: 3,
+			onStart(target) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration++;
+				}
+				this.add('-start', target, 'move: Taunt');
+			},
+			onResidualOrder: 15,
+			onEnd(target) {
+				this.add('-end', target, 'move: Taunt');
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.id);
+					if (move.category === 'Status' && move.id !== 'mefirst') {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+			onBeforeMovePriority: 5,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && !move.isMax && move.category === 'Status' && move.id !== 'mefirst') {
+					this.add('cant', attacker, 'move: Taunt', move);
+					return false;
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {boost: {atk: 1}},
+		contestType: "Clever",
+	},
+	teeterdance2: {
+		num: 1516,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Teeter Dance 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, dance: 1},
+		volatileStatus: 'confusion',
+		secondary: null,
+		target: "allAdjacent",
+		type: "Heart",
+		zMove: {boost: {spa: 1}},
+		contestType: "Cute",
+	},
+	teleport2: {
+		num: 1517,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Teleport 2",
+		pp: 20,
+		priority: 0,
+		flags: {gravity: 1},
+		onTry(source, target, move) {
+			// Additional Gravity check for Z-move variant
+			if (this.field.getPseudoWeather('Gravity')) {
+				this.add('cant', source, 'move: Gravity', move);
+				return null;
+			}
+		},
+		onTryHit(target, source) {
+			this.add('-nothing');
+		},
+		secondary: null,
+		target: "self",
+		type: "Reason",
+		zMove: {boost: {atk: 3}},
+		contestType: "Cute",
+	},
+	thief2: {
+		num: 1518,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Thief 2",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, failmefirst: 1, noassist: 1, failcopycat: 1},
+		onAfterHit(target, source, move) {
+			if (source.item || source.volatiles['gem']) {
+				return;
+			}
+			const yourItem = target.takeItem(source);
+			if (!yourItem) {
+				return;
+			}
+			if (!this.singleEvent('TakeItem', yourItem, target.itemState, source, target, move, yourItem) ||
+				!source.setItem(yourItem)) {
+				target.item = yourItem.id; // bypass setItem so we don't break choicelock or anything
+				return;
+			}
+			this.add('-enditem', target, yourItem, '[silent]', '[from] move: Thief', '[of] ' + source);
+			this.add('-item', source, yourItem, '[from] move: Thief', '[of] ' + target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Tough",
+	},
+	thrash2: {
+		num: 1519,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Thrash 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		self: {
+			boosts: {
+				def: -1,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		contestType: "Tough",
+	},
+	thunder2: {
+		num: 1520,
+		accuracy: 70,
+		basePower: 120,
+		category: "Special",
+		name: "Thunder 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			switch (target?.effectiveWeather()) {
+			case 'raindance':
+			case 'primordialsea':
+				move.accuracy = true;
+				break;
+			case 'sunnyday':
+			case 'desolateland':
+				move.accuracy = 50;
+				break;
+			}
+		},
+		secondary: {
+			chance: 30,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	thunderwave2: {
+		num: 1521,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Thunder Wave 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'par',
+		ignoreImmunity: false,
+		secondary: null,
+		target: "normal",
+		type: "Wind",
+		zMove: {boost: {spd: 1}},
+		contestType: "Cool",
+	},
+	thunderbolt2: {
+		num: 1522,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Thunderbolt 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	thunderpunch2: {
+		num: 1523,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Thunder Punch 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	thundershock2: {
+		num: 1524,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Thunder Shock 2",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	tickle2: {
+		num: 1525,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Tickle 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		boosts: {
+			atk: -1,
+			def: -1,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	torment2: {
+		num: 1526,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Torment 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		volatileStatus: 'torment',
+		condition: {
+			noCopy: true,
+			onStart(pokemon, source, effect) {
+				if (pokemon.volatiles['dynamax']) {
+					delete pokemon.volatiles['torment'];
+					return false;
+				}
+				if (effect?.id === 'gmaxmeltdown') this.effectState.duration = 3;
+				this.add('-start', pokemon, 'Torment');
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Torment');
+			},
+			onDisableMove(pokemon) {
+				if (pokemon.lastMove && pokemon.lastMove.id !== 'struggle') pokemon.disableMove(pokemon.lastMove.id);
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Umbral",
+		zMove: {boost: {def: 1}},
+		contestType: "Tough",
+	},
+	toxic2: {
+		num: 1527,
+		accuracy: 85,
+		basePower: 0,
+		category: "Status",
+		name: "Toxic 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		// No Guard-like effect for Poison-type users implemented in Scripts#tryMoveHit
+		status: 'tox',
+		secondary: null,
+		target: "normal",
+		type: "Miasma",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	toxicgas: {
+		num: 1528,
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		name: "Toxic Gas",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 40,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Miasma",
+		contestType: "Tough",
+	},
+	transform2: {
+		num: 1529,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Transform 2",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, failencore: 1, noassist: 1, failcopycat: 1, failinstruct: 1, failmimic: 1},
+		onHit(target, pokemon) {
+			if (!pokemon.transformInto(target)) {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {effect: 'heal'},
+		contestType: "Clever",
+	},
+	tremors: {
+		num: 1530,
+		accuracy: 90,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			let bp = move.basePower;
+			const rolloutData = pokemon.volatiles['rollout'];
+			if (rolloutData?.hitCount) {
+				bp *= Math.pow(2, rolloutData.contactHitCount);
+			}
+			if (rolloutData && pokemon.status !== 'slp') {
+				rolloutData.hitCount++;
+				rolloutData.contactHitCount++;
+				if (rolloutData.hitCount < 5) {
+					rolloutData.duration = 2;
+				}
+			}
+			if (pokemon.volatiles['defensecurl']) {
+				bp *= 2;
+			}
+			this.debug("BP: " + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Tremors",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, noparentalbond: 1, failinstruct: 1},
+		onModifyMove(move, pokemon, target) {
+			if (pokemon.volatiles['rollout'] || pokemon.status === 'slp' || !target) return;
+			pokemon.addVolatile('rollout');
+			// @ts-ignore
+			// TS thinks pokemon.volatiles['rollout'] doesn't exist because of the condition on the return above
+			// but it does exist now because addVolatile created it
+			pokemon.volatiles['rollout'].targetSlot = move.sourceEffect ? pokemon.lastMoveTargetLoc : pokemon.getLocOf(target);
+		},
+		onAfterMove(source, target, move) {
+			const rolloutData = source.volatiles["rollout"];
+			if (
+				rolloutData &&
+				rolloutData.hitCount === 5 &&
+				rolloutData.contactHitCount < 5
+				// this conditions can only be met in gen7 and gen8dlc1
+				// see `disguise` and `iceface` abilities in the resp mod folders
+			) {
+				source.addVolatile("rolloutstorage");
+				source.volatiles["rolloutstorage"].contactHitCount =
+					rolloutData.contactHitCount;
+			}
+		},
+		condition: {
+			duration: 1,
+			onLockMove: 'rollout',
+			onStart() {
+				this.effectState.hitCount = 0;
+				this.effectState.contactHitCount = 0;
+			},
+			onResidual(target) {
+				if (target.lastMove && target.lastMove.id === 'struggle') {
+					// don't lock
+					delete target.volatiles['rollout'];
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Earth",
+		contestType: "Cute",
+	},
+	triattack2: {
+		num: 1531,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Tri Attack 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			onHit(target, source) {
+				const result = this.random(3);
+				if (result === 0) {
+					target.trySetStatus('brn', source);
+				} else if (result === 1) {
+					target.trySetStatus('par', source);
+				} else {
+					target.trySetStatus('frz', source);
+				}
+			},
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Beautiful",
+	},
+	trick2: {
+		num: 1532,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Trick 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, allyanim: 1, noassist: 1, failcopycat: 1},
+		onTryImmunity(target) {
+			return !target.hasAbility('stickyhold');
+		},
+		onHit(target, source, move) {
+			const yourItem = target.takeItem(source);
+			const myItem = source.takeItem();
+			if (target.item || source.item || (!yourItem && !myItem)) {
+				if (yourItem) target.item = yourItem.id;
+				if (myItem) source.item = myItem.id;
+				return false;
+			}
+			if (
+				(myItem && !this.singleEvent('TakeItem', myItem, source.itemState, target, source, move, myItem)) ||
+				(yourItem && !this.singleEvent('TakeItem', yourItem, target.itemState, source, target, move, yourItem))
+			) {
+				if (yourItem) target.item = yourItem.id;
+				if (myItem) source.item = myItem.id;
+				return false;
+			}
+			this.add('-activate', source, 'move: Trick', '[of] ' + target);
+			if (myItem) {
+				target.setItem(myItem);
+				this.add('-item', target, myItem, '[from] move: Trick');
+			} else {
+				this.add('-enditem', target, yourItem, '[silent]', '[from] move: Trick');
+			}
+			if (yourItem) {
+				source.setItem(yourItem);
+				this.add('-item', source, yourItem, '[from] move: Trick');
+			} else {
+				this.add('-enditem', source, myItem, '[silent]', '[from] move: Trick');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Reason",
+		zMove: {boost: {spe: 2}},
+		contestType: "Clever",
+	},
+	triplekick2: {
+		num: 1533,
+		accuracy: 100,
+		basePower: 10,
+		basePowerCallback(pokemon, target, move) {
+			return 10 * move.hit;
+		},
+		category: "Physical",
+		isNonstandard: "Past",
+		name: "Triple Kick 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Dream",
+		zMove: {basePower: 120},
+		maxMove: {basePower: 80},
+		contestType: "Cool",
+	},
+	twister2: {
+		num: 1534,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Twister 2",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onAfterHit(target, pokemon, move) {
+			if (!move.hasSheerForce) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon, move) {
+			if (!move.hasSheerForce) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	vinewhip2: {
+		num: 1535,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Vine Whip 2",
+		pp: 35,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Cool",
+	},
+	vitalthrow2: {
+		num: 1536,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Vital Throw 2",
+		pp: 10,
+		priority: -1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onAfterHit(target, source) {
+			if (source.hp) {
+				const item = target.takeItem();
+				if (item) {
+					this.add('-enditem', target, item.name, '[from] move: Knock Off', '[of] ' + source);
+				}
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		contestType: "Clever",
+	},
+	volttackle2: {
+		num: 1537,
+		accuracy: 90,
+		basePower: 120,
+		category: "Physical",
+		name: "Volt Tackle 2",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [33, 100],
+		secondary: null,
+		target: "normal",
+		type: "Wind",
+		contestType: "Tough",
+	},
+	wanting: {
+		num: 1538,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Wanting",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, failmefirst: 1, noassist: 1, failcopycat: 1},
+		onAfterHit(target, source, move) {
+			if (source.item || source.volatiles['gem']) {
+				return;
+			}
+			const yourItem = target.takeItem(source);
+			if (!yourItem) {
+				return;
+			}
+			if (
+				!this.singleEvent('TakeItem', yourItem, target.itemState, source, target, move, yourItem) ||
+				!source.setItem(yourItem)
+			) {
+				target.item = yourItem.id; // bypass setItem so we don't break choicelock or anything
+				return;
+			}
+			this.add('-item', source, yourItem, '[from] move: Covet', '[of] ' + target);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Heart",
+		contestType: "Cute",
+	},
+	watergun2: {
+		num: 1539,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Water Gun 2",
+		pp: 30,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Aqua",
+		contestType: "Cute",
+	},
+	waterpulse2: {
+		num: 1540,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Water Pulse 2",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, pulse: 1, mirror: 1, distance: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion',
+		},
+		target: "any",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	waterfall2: {
+		num: 1541,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Waterfall 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Aqua",
+		contestType: "Tough",
+	},
+	weatherball2: {
+		num: 1542,
+		accuracy: 100,
+		basePower: 50,
+		category: "Special",
+		name: "Weather Ball 2",
+		pp: 10,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		onModifyType(move, pokemon) {
+			switch (pokemon.effectiveWeather()) {
+			case 'sunnyday':
+			case 'desolateland':
+				move.type = 'Pyro';
+				break;
+			case 'raindance':
+			case 'primordialsea':
+				move.type = 'Aqua';
+				break;
+			case 'sandstorm':
+				move.type = 'Beast';
+				break;
+			case 'hail':
+			case 'snow':
+				move.type = 'Cryo';
+				break;
+			}
+		},
+		onModifyMove(move, pokemon) {
+			switch (pokemon.effectiveWeather()) {
+			case 'sunnyday':
+			case 'desolateland':
+				move.basePower *= 2;
+				break;
+			case 'raindance':
+			case 'primordialsea':
+				move.basePower *= 2;
+				break;
+			case 'sandstorm':
+				move.basePower *= 2;
+				break;
+			case 'hail':
+			case 'snow':
+				move.basePower *= 2;
+				break;
+			}
+			this.debug('BP: ' + move.basePower);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {basePower: 160},
+		maxMove: {basePower: 130},
+		contestType: "Beautiful",
+	},
+	whirlpool2: {
+		num: 1543,
+		accuracy: 90,
+		basePower: 60,
+		category: "Special",
+		name: "Whirlpool 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Aqua",
+		contestType: "Beautiful",
+	},
+	whirlwind2: {
+		num: 1544,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Whirlwind 2",
+		pp: 20,
+		priority: -6,
+		flags: {reflectable: 1, mirror: 1, bypasssub: 1, allyanim: 1, wind: 1, noassist: 1, failcopycat: 1},
+		forceSwitch: true,
+		secondary: null,
+		target: "normal",
+		type: "Wind",
+		zMove: {boost: {spd: 1}},
+		contestType: "Clever",
+	},
+	willowisp2: {
+		num: 1545,
+		accuracy: 75,
+		basePower: 0,
+		category: "Status",
+		name: "Will-O-Wisp 2",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'brn',
+		secondary: null,
+		target: "normal",
+		type: "Pyro",
+		zMove: {boost: {atk: 1}},
+		contestType: "Beautiful",
+	},
+	wingattack2: {
+		num: 1546,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Wing Attack 2",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		secondary: null,
+		target: "any",
+		type: "Aero",
+		contestType: "Cool",
+	},
+	wireweb: {
+		num: 1547,
+		accuracy: 85,
+		basePower: 0,
+		category: "Status",
+		name: "Wire Web",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1},
+		boosts: {
+			spe: -2,
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Nature",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	wish2: {
+		num: 1548,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Wish 2",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		slotCondition: 'Wish',
+		condition: {
+			duration: 2,
+			onStart(pokemon, source) {
+				this.effectState.hp = source.maxhp / 2;
+			},
+			onResidualOrder: 4,
+			onEnd(target) {
+				if (target && !target.fainted) {
+					const damage = this.heal(this.effectState.hp, target, target);
+					if (damage) {
+						this.add('-heal', target, target.getHealth, '[from] move: Wish', '[wisher] ' + this.effectState.source.name);
+					}
+				}
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Faith",
+		zMove: {boost: {spd: 1}},
+		contestType: "Cute",
+	},
+	withdraw2: {
+		num: 1549,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Withdraw 2",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Heart",
+		zMove: {boost: {spd: 1}},
+		contestType: "Beautiful",
+	},
+	wrap2: {
+		num: 1550,
+		accuracy: 90,
+		basePower: 60,
+		category: "Physical",
+		name: "Wrap 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Nature",
+		contestType: "Beautiful",
+	},
+	yawn2: {
+		num: 1551,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Yawn 2",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'yawn',
+		onTryHit(target) {
+			if (target.status || !target.runStatusImmunity('slp')) {
+				return false;
+			}
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			duration: 2,
+			onStart(target, source) {
+				this.add('-start', target, 'move: Yawn', '[of] ' + source);
+			},
+			onResidualOrder: 23,
+			onEnd(target) {
+				this.add('-end', target, 'move: Yawn', '[silent]');
+				target.trySetStatus('slp', this.effectState.source);
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Illusion",
+		zMove: {boost: {spe: 1}},
+		contestType: "Cute",
+	},
+	zenheadbutt2: {
+		num: 1552,
+		accuracy: 90,
+		basePower: 80,
+		category: "Physical",
+		name: "Zen Headbutt 2",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Reason",
+		contestType: "Clever",
+	},
+	checkmaid: {
+		num: 1553,
+		accuracy: true,
+		basePower: 100,
+		category: "Special",
+		name: "Checkmaid",
+		pp: 60,
+		priority: -3,
+		flags: {contact: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		breaksProtect: true,
+		// Breaking protection implemented in scripts.js
+		secondary: null,
+		target: "normal",
+		type: "unknown",
+		contestType: "Clever",
+	},
 };
