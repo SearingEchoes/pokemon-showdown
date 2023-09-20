@@ -23747,7 +23747,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibikyouko: {
 		num: -468,
-		name: "Chibi Kyouko (Purple)",
+		name: "Chibi Kyouko",
 		types: ["Umbral"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 55, atk: 50, def: 55, spa: 60, spd: 65, spe: 60},
@@ -23759,7 +23759,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  kyouko: {
 		num: -469,
-		name: "Kyouko (Purple)",
+		name: "Kyouko",
 		types: ["Umbral", "Beast"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 85, atk: 65, def: 80, spa: 90, spd: 95, spe: 60},
@@ -23771,7 +23771,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibiyoshika: {
 		num: -470,
-		name: "Chibi Yoshika (Purple)",
+		name: "Chibi Yoshika",
 		types: ["Miasma"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 105, atk: 40, def: 85, spa: 25, spd: 65, spe: 20},
@@ -23783,7 +23783,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  yoshika: {
 		num: -471,
-		name: "Yoshika (Purple)",
+		name: "Yoshika",
 		types: ["Miasma"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 140, atk: 65, def: 120, spa: 45, spd: 95, spe: 35},
@@ -23795,7 +23795,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibiseiga: {
 		num: -472,
-		name: "Chibi Seiga (Purple)",
+		name: "Chibi Seiga",
 		types: ["Dream", "Reason"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 60, atk: 45, def: 40, spa: 85, spd: 55, spe: 65},
@@ -23807,7 +23807,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  seiga: {
 		num: -473,
-		name: "Seiga (Purple)",
+		name: "Seiga",
 		types: ["Dream", "Reason"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 90, atk: 65, def: 70, spa: 115, spd: 80, spe: 95},
@@ -23819,7 +23819,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibitojiko: {
 		num: -474,
-		name: "Chibi Tojiko (Purple)",
+		name: "Chibi Tojiko",
 		types: ["Nether", "Wind"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 65, atk: 35, def: 50, spa: 75, spd: 45, spe: 90},
@@ -23831,7 +23831,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  tojiko: {
 		num: -475,
-		name: "Tojiko (Purple)",
+		name: "Tojiko",
 		types: ["Nether", "Wind"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 90, atk: 60, def: 80, spa: 95, spd: 75, spe: 120},
@@ -23843,7 +23843,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibifuto: {
 		num: -476,
-		name: "Chibi Futo (Purple)",
+		name: "Chibi Futo",
 		types: ["Faith"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 70, atk: 75, def: 60, spa: 60, spd: 50, spe: 60},
@@ -23855,7 +23855,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  futo: {
 		num: -477,
-		name: "Futo (Purple)",
+		name: "Futo",
 		types: ["Faith", "Aqua"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 95, atk: 105, def: 90, spa: 85, spd: 70, spe: 85},
@@ -23867,7 +23867,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibimiko: {
 		num: -478,
-		name: "Chibi Miko (Purple)",
+		name: "Chibi Miko",
 		types: ["Faith", "Reason"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 65, atk: 70, def: 55, spa: 70, spd: 65, spe: 75},
@@ -23879,7 +23879,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  miko: {
 		num: -479,
-		name: "Miko (Purple)",
+		name: "Miko",
 		types: ["Faith", "Reason"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 85, atk: 100, def: 70, spa: 100, spd: 85, spe: 110},
@@ -23891,7 +23891,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  chibimamizou: {
 		num: -480,
-		name: "Chibi Mamizou (Purple)",
+		name: "Chibi Mamizou",
 		types: ["Beast", "Nature"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 70, atk: 55, def: 50, spa: 75, spd: 90, spe: 70},
@@ -23903,7 +23903,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  mamizou: {
 		num: -481,
-		name: "Mamizou (Purple)",
+		name: "Mamizou",
 		types: ["Beast", "Nature"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 100, atk: 75, def: 70, spa: 90, spd: 120, spe: 105},
@@ -24035,7 +24035,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  xtenshi: {
 		num: -492,
-		name: "X Utsuho",
+		name: "X Tenshi",
 		types: ["Earth"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 150, atk: 90, def: 160, spa: 90, spd: 160, spe: 30},
