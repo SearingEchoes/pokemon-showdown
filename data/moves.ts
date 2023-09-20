@@ -26626,7 +26626,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 					volatileStatus: 'brn',
 				},
 			},
-		},
 		target: "normal",
 		type: "Umbral",
 		contestType: "Tough",
@@ -26688,7 +26687,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			}
 		},
-		secondary: null,
 		target: "normal",
 		type: "Miasma",
 		contestType: "Cool",
