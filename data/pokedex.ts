@@ -20079,7 +20079,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Frost"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 50, atk: 45, def: 55, spa: 85, spd: 55, spe: 60},
-		abilities: {0: "Ice Wall, 1: "Damp"},
+		abilities: {0: "Ice Wall", 1: "Damp"},
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
