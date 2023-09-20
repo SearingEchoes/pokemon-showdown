@@ -6145,6 +6145,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "CAP",
 		tier: "CAP",
 	},
+	blissea: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	},
 	pokestarsmeargle: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
@@ -6221,4 +6225,1573 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	chibisanae: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  sanae: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibialice: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  alice: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibireisen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  reisen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibililywhite: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  lilywhite: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibililyblack: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  lilyblack: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimomiji: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  momiji: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibishizuha: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shizuha: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimedicine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  medicine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikoakuma: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  koakuma: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibinazrin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  nazrin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibitokiko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tokiko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiremilia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  remilia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibicirno: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  cirno: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibirumia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  rumia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shanghai: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiflandre: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  flandre: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  hourai: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyoumu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  youmu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyukari: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yukari: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisuika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  suika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimystia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mystia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiminoriko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  minoriko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikeine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  keine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackkeine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiiku: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  iku: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikoishi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  koishi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyamame: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yamame: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibichen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyorihime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yorihime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikaguya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kaguya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimokou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mokou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibihatate: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  hatate: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiletty: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  letty: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibipatchouli: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  patchouli: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyuugi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yuugi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibitenshi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tenshi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiparsee: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  parsee: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimurasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  murasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikisume: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kisume: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikogasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kogasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisatori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  satori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibieirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  eirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiran: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  ran: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibidaiyousei: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  daiyousei: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibinitori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  nitori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibihina: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  hina: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikomachi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  komachi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyuyuko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yuyuko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimeiling: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  meiling: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisakuya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  sakuya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibilunasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  lunasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimerlin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  merlin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibilyrica: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  lyrica: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibilayla: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  layla: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikanako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kanako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  rin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiutsuho: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  utsuho: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiichirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  ichirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisunnymilk: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  sunnymilk: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibilunachild: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  lunachild: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibistarsapphire: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  starsapphire: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyuuka: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yuuka: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiaya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  aya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibieiki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  eiki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibishou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiwriggle: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  wriggle: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibitewi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tewi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kedama: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibinue: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  nue: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisuwako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  suwako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  reisenii: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimarisa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  marisa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibireimu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  reimu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibibyakuren: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  byakuren: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  konngara: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kikuri: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yuugenmagan: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibitoyohime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  toyohime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  goliathdoll: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  sariel: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  akyuu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  genji: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  namazu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibielly: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  elly: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiorange: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  orange: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  youki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibichiyuri: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chiyuri: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyumemi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yumemi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiellen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  ellen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikazami: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kazami: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimeira: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  meira: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisara: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  sara: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibilouise: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  louise: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimargatroid: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  margatroid: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikana: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kana: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibihakurei: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  hakurei: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikirisame: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kirisame: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikotohime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kotohime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyumeko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yumeko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibishinki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shinki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mimichan: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  ruukoto: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibirika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  rika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimugetsu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mugetsu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibigengetsu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  gengetsu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikurumi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kurumi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibirikako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  rikako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyuki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yuki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimai: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mai: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensesunnymilk: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicallunachild: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperstarsapphire: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacknitori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalnitori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackmokou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensemokou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensereisen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalreisen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalsakuya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helpersakuya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackrumia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedrumia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helpermystia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackmystia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackchen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalchen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseyoumu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedyoumu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackyuuka: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalyuuka: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedaya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalaya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacktenshi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensetenshi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseparsee: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalparsee: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackkoishi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedkoishi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensebyakuren: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalbyakuren: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseichirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalichirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackkanako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensekanako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackkaguya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensekaguya: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shingyokuorb: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shingyokupriest: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  shingyokupriestess: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackutsuho: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedutsuho: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensemomiji: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  elis: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mima: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedkomachi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackkomachi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackeirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helpereirin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseyukari: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalyukari: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackalice: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalalice: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackreimu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensereimu: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedcirno: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalcirno: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseyuyuko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackyuyuko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperlunasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helpermerlin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperlyrica: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackran: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperran: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackmedicine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalmedicine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackhina: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensehina: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedshizuha: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedrin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackrin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  zombiefairy: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helpershizuha: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacksuwako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackshou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalshou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacktokiko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensesuwako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedyamame: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedkogasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalkogasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseremilia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedflandre: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensewriggle: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensemeiling: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tensoku: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacksunnymilk: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacklunachild: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedwriggle: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperkoakuma: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedmeiling: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibielis: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibisariel: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventmystia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalhatate: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensehatate: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  akisisters: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenselayla: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensekeine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackremilia: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensetewi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacktewi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseeiki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseminoriko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalsuika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacksanae: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalsanae: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackflandre: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackdaiyousei: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackeiki: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicaltoyohime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikonngara: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyuugenmagan: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacksuika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperlilywhite: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedlilyblack: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacknue: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalnue: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensepatchouli: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseletty: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperletty: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedyorihime: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibishingyoku: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacklilyblack: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseyuugi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalnazrin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helpernazrin: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalkisume: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackyuugi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  helperkeine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defenseiku: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicaliku: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackminoriko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  rinnosuke: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventcirno: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventreisen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedsariel: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attacklilywhite: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimima: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikikuri: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventmeiling: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackpatchouli: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedmarisa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackmarisa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensemurasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackmurasa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackstarsapphire: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  attackkazami: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  speedmedicine: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensedaiyousei: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalyamame: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  technicalsatori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  defensesatori: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventletty: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventtewi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventmarisa: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventalice: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventmokou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventyukari: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventran: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  adventchen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  darkalice: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tenma: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  sendai: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikyouko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kyouko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiyoshika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  yoshika: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibiseiga: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  seiga: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibitojiko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tojiko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibifuto: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  futo: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimiko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  miko: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibimamizou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  mamizou: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  "2hu": {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  jksanae: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  magistones: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  chibikasen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  kasen: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  scarletwitch: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  swordmaster: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  tinyghost: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  xsuwako: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  xutsuho: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+	  xtenshi: {
+		isNonstandard: "CAP",
+		tier: "CAP",
+	  },
+
 };
