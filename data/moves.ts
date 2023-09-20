@@ -27246,7 +27246,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	sandtomb2: {
 		num: 1454,
 		accuracy: 90,
-		basePower: 360
+		basePower: 60,
 		category: "Special",
 		name: "Sand Tomb 2",
 		pp: 15,
