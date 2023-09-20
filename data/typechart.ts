@@ -1569,4 +1569,5 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
-	};
+	},
+};
