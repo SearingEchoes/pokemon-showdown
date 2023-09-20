@@ -99546,7 +99546,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	  substitute2: ["3L1"],
       forcepalm2: ["3L1"],
       bulkup2: ["3L1"],
-      scaryface2: ["3L1"],,
+      scaryface2: ["3L1"],
       bellydrum2: ["3L1"],
       crosschop2: ["3L1"],
       reflect2: ["3L1"],
