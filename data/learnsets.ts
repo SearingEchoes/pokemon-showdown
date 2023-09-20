@@ -112682,7 +112682,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       beastclaw: ["3E"],
 		},
 	},
-	2hu: {
+	'2hu': {
 	learnset: {
       metronome2: ["3L5"],
       conversionb: ["3L5"],
