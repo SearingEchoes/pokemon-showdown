@@ -25205,12 +25205,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 160},
 		contestType: "Tough",
 	},
-	luckychant: {
+	luckychant2: {
 		num: 1366,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Lucky Chant",
+		name: "Lucky Chant 2",
 		pp: 20,
 		priority: 0,
 		flags: {snatch: 1},
