@@ -842,6 +842,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	nether: {
 		damageTaken: {
 			trapped: 3,
@@ -884,6 +885,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	aero: {
 		damageTaken: {
 			Bug: 0,
@@ -925,6 +927,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	beast: {
 		damageTaken: {
 			sandstorm: 3,
@@ -967,6 +970,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	miasma: {
 		damageTaken: {
 			psn: 3,
@@ -1010,6 +1014,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	metal: {
 		damageTaken: {
 			psn: 3,
@@ -1054,6 +1059,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	umbral: {
 		damageTaken: {
 			prankster: 3,
@@ -1096,6 +1102,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	earth: {
 		damageTaken: {
 			sandstorm: 3,
@@ -1138,6 +1145,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	pyro: {
 		damageTaken: {
 			brn: 3,
@@ -1180,6 +1188,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	aqua: {
 		damageTaken: {
 			Bug: 0,
@@ -1221,6 +1230,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	wind: {
 		damageTaken: {
 			Bug: 0,
@@ -1262,6 +1272,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	nature: {
 		damageTaken: {
 			powder: 3,
@@ -1304,6 +1315,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	frost: {
 		damageTaken: {
 			hail: 3,
@@ -1347,6 +1359,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	faith: {
 		damageTaken: {
 			Bug: 0,
@@ -1388,6 +1401,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	reason: {
 		damageTaken: {
 			Bug: 1,
@@ -1429,6 +1443,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	heart: {
 		damageTaken: {
 			Bug: 0,
@@ -1470,6 +1485,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	illusion: {
 		damageTaken: {
 			Bug: 0,
@@ -1511,6 +1527,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
+	},
 	unknown: {
 		damageTaken: {
 			Bug: 0,
@@ -1552,4 +1569,4 @@ export const TypeChart: {[k: string]: TypeData} = {
 			
 			Unknown: 0,
 		},
-};
+	},
