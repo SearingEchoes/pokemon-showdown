@@ -1,38 +1,7 @@
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen4',
 	gen: 3,
-	init() {
-		const specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Dark', 'Psychic', 'Dragon'];
-		let newCategory = '';
-		for (const i in this.data.Moves) {
-			if (!this.data.Moves[i]) console.log(i);
-			if (
-				this.data.Moves[i].category === 'Status' || 
-				this.data.Moves[i].type === 'Dream' || 
-				this.data.Moves[i].type === 'Nether' || 
-				this.data.Moves[i].type === 'Aero' || 
-				this.data.Moves[i].type === 'Beast' || 
-				this.data.Moves[i].type === 'Miasma' || 
-				this.data.Moves[i].type === 'Metal' || 
-				this.data.Moves[i].type === 'Umbral' || 
-				this.data.Moves[i].type === 'Earth' || 
-				this.data.Moves[i].type === 'Pyro' || 
-				this.data.Moves[i].type === 'Aqua' || 
-				this.data.Moves[i].type === 'Wind' || 
-				this.data.Moves[i].type === 'Nature' || 
-				this.data.Moves[i].type == 'Frost' || 
-				this.data.Moves[i].type === 'Faith' || 
-				this.data.Moves[i].type === 'Reason' || 
-				this.data.Moves[i].type === 'Heart' || 
-				this.data.Moves[i].type === 'Illusion' || 			
-				this.data.Moves[i].type === 'Unknown' 
-				) continue; 
-			newCategory = specialTypes.includes(this.data.Moves[i].type) ? 'Special' : 'Physical';
-			if (newCategory !== this.data.Moves[i].category) {
-				this.modData('Moves', i).category = newCategory;
-			}
-		}
-	},
+
 	pokemon: {
 		inherit: true,
 		getActionSpeed() {
