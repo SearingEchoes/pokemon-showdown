@@ -20,7 +20,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.data.Moves[i].type === 'Aqua' || 
 				this.data.Moves[i].type === 'Wind' || 
 				this.data.Moves[i].type === 'Nature' || 
-				this.data.Moves[i].type == 'Frost' || 
+				this.data.Moves[i].type === 'Frost' || 
 				this.data.Moves[i].type === 'Faith' || 
 				this.data.Moves[i].type === 'Reason' || 
 				this.data.Moves[i].type === 'Heart' || 
