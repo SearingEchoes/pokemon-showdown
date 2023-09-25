@@ -5227,14 +5227,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Advent",
 		rating: 2,
-		num: -100,
+		num: -99,
 	},
 	guardarmor: {
 		onCriticalHit: false,
 		isBreakable: true,
 		name: "Guard Armor",
 		rating: 1,
-		num: -101,
+		num: -100,
 	},
 	collector: {
 		onTakeItem(item, pokemon, source) {
@@ -5248,12 +5248,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Collector",
 		rating: 1.5,
-		num: -102,
+		num: -101,
 	},
 	diva: {
 		name: "Diva",
 		rating: 0,
-		num: -103,
+		num: -102,
 	},
 	dollwall: {
 		onDamagingHitOrder: 1,
@@ -5264,7 +5264,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Doll Wall",
 		rating: 2.5,
-		num: -104,
+		num: -103,
 	},
 	fireveil: {
 		onUpdate(pokemon) {
@@ -5279,7 +5279,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Fire Veil",
 		rating: 0.5,
-		num: -105,
+		num: -104,
 	},
 	focus: {
 		onSourceModifyAccuracyPriority: -1,
@@ -5290,7 +5290,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Focus",
 		rating: 3,
-		num: -106,
+		num: -105,
 	},
 	fretful: {
 		onStart(pokemon) {
@@ -5310,7 +5310,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		condition: {},
 		name: "Fretful",
 		rating: -1,
-		num: -107,
+		num: -106,
 	},
 	gatekeeper: {
 		onDragOutPriority: 1,
@@ -5321,7 +5321,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Gate Keeper",
 		rating: 1,
-		num: -108,
+		num: -107,
 	},
 	hakureimiko: {
 		onTryBoost(boost, target, source, effect) {
@@ -5341,7 +5341,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Hakurei Miko",
 		rating: 2,
-		num: -109,
+		num: -108,
 	},
 	hisouten: {
 		onSwitchIn(pokemon) {
@@ -5361,7 +5361,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		suppressWeather: true,
 		name: "Hisouten",
 		rating: 1.5,
-		num: -110,
+		num: -109,
 	},
 	infectious: {
 		onDamagingHit(damage, target, source, move) {
@@ -5378,7 +5378,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Infectious",
 		rating: 2,
-		num: -111,
+		num: -110,
 	},
 	innerpower: {
 		onModifyAtkPriority: 5,
@@ -5397,11 +5397,31 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Inner Power",
 		rating: 2,
-		num: -112,
+		num: -111,
 	},
 	jealousy: {
 		name: "Jealousy",
 		rating: 0,
+		num: -112,
+	},
+		magicbarrier: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Magic Barrier", "[of] " + target);
+			}
+		},
+		isBreakable: true,
+		name: "Magic Barrier",
+		rating: 2,
 		num: -113,
 	},
 	maintenance: {
