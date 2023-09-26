@@ -4222,7 +4222,7 @@ export const Formats: FormatList = [
 		column: 7,
 	},
 	{
-		name: "[1.8] Touhoumon Purple",
+		name: "[Gen 3] Touhoumon Purple (1.8)",
 		threads: [
 
 		],
