@@ -6946,14 +6946,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
 	},
-	basiney: {
-		isNonstandard: "Unobtainable",
-		tier: "Illegal",
-	},
-	blissea: {
-		isNonstandard: "Unobtainable",
-		tier: "Illegal",
-	},
 	pokestarsmeargle: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
