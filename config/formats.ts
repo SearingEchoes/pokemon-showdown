@@ -4222,6 +4222,16 @@ export const Formats: FormatList = [
 		column: 7,
 	},
 	{
+		name: "[1.8] Touhoumon Purple",
+		threads: [
+
+		],
+
+		mod: 'gen3purple',
+		ruleset: ['Standard', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		banlist: ['Defense Satori', 'Sendai', 'Speed Aya', 'X Utsuho', 'X Suwako', 'X Tenshi', "Scarlet Witch", "JK Sanae"],
+	},
+	{
 		name: "[Gen 3] Ubers",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/posts/8286280/">ADV Ubers</a>`,
