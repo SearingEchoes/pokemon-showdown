@@ -2353,7 +2353,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	beholdereye: {
 		name: "Beholder Eye",
-		desc: desc: "Prevents opponents from choosing to switch out unless they are airborne or holding a Shed Shell.",
+		desc:"Prevents opponents from choosing to switch out unless they are airborne or holding a Shed Shell.",
 		shortDesc: "Prevents opponents from choosing to switch out unless they are airborne.",
 		gen3: {
 			desc: "Prevents opponents from choosing to switch out unless they are airborne.",
