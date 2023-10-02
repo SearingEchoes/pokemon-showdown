@@ -2220,4 +2220,172 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	
+	//Touhoumon 1.8 Abilities Start Here
+	
+	advent: {
+		name: "Advent",
+		shortDesc: "Unaffected by the secondary effects of attacks.",
+	},
+	guardarmor: {
+		name: "Guard Armor",
+		shortDesc: "Prevents critical hits from landing on this character.",
+	},
+	collector: {
+		name: "Collector",
+		desc: "Protects held item from being lost by abilities or moves, unless the move knocks the character out. A Sticky Barb will be transferred to others regardless of this Ability.",
+		shortDesc: "Protects held item from being lost by abilities or moves.",
+		gen4: {
+			desc: "Protects held item from being lost by abilities or moves, even if the move knocks the character out. A Sticky Barb will be transferred to others regardless of this Ability.",
+		},
+
+		block: "  [POKEMON]'s item cannot be removed!",
+	},
+	diva: {
+		name: "Diva",
+		shortDesc: "No competitive use.",
+	},
+	dollwall: {
+		name: "Doll Wall",
+		desc: "Attackers making contact with this character lose 1/8 of their maximum HP, rounded down.",
+		shortDesc: "Attackers making contact with this character lose 1/8 of their maximum HP.",
+		gen4: {
+			desc: "Attackers making contact with this character lose 1/8 of their maximum HP, rounded down. This effect does not happen if this character did not lose HP from the attack.",
+		},
+
+		damage: "  [POKEMON] was hurt!",
+	},
+	fireveil: {
+		name: "Fire Veil",
+		shortDesc: "This character cannot be frozen. Gaining this Ability while frozen cures it.",
+	},
+	focus: {
+		name: "Focus",
+		shortDesc: "This character's moves have their accuracy multiplied by 1.3.",
+	},
+	fretful: {
+		name: "Fretful",
+		shortDesc: "This character skips every other turn instead of using a move.",
+		gen3: {
+			desc: "This character skips every other turn instead of using a move. If this character replaces a character that fainted during end-of-turn effects, its first turn will be skipped.",
+		},
+
+		cant: "[POKEMON] is loafing around!",
+	},
+	gatekeeper: {
+		name: "Gatekeeper",
+		shortDesc: "This character cannot be forced to switch out by incoming attacks or items.",
+
+		block: "  [POKEMON] is anchored in place!",
+	},
+	hakureimiko: {
+		name: "Hakurei Miko",
+		shortDesc: "Prevents others from lowering this character's stat stages.",
+	},
+	hisouten: {
+		name: "Hisouten",
+		shortDesc: "The effects of weather conditions are disabled.",
+
+		start: "  The effects of the weather disappeared.",
+	},
+	infectious: {
+		name: "Infectious",
+		desc: "30% chance that making contact with this character will be poisoned, paralyzed, or fall asleep.",
+		shortDesc: "30% chance of poison/paralysis/sleep on others making contact.",
+		gen4: {
+			desc: "30% chance that making contact with this character will be poisoned, paralyzed, or fall asleep. This effect does not happen if this character did not lose HP from the attack.",
+		},
+		gen3: {
+			desc: "10% chance that making contact with this character will be poisoned, paralyzed, or fall asleep. This effect does not happen if this character did not lose HP from the attack.",
+			shortDesc: "10% chance of poison/paralysis/sleep on others making contact.",
+		},
+	},
+	innerpower: {
+		name: "Inner Power",
+		desc: "When at 1/3 or less of maximum HP, rounded down, the offensive stat used is multiplied by 1.5 while using Dream or Fighting-type attacks.",
+		shortDesc: "At 1/3 or less max HP, offensive stat is 1.5x with Dream/Fighting attacks.",
+		gen4: {
+			desc: "When at 1/3 or less of maximum HP, rounded down, Dream and Fighting-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/3 or less of max HP, Dream and Fighting-type attacks have 1.5x power.",
+		},
+	},
+	jealousy: {
+		name: "Jealousy",
+		shortDesc: "No competitive use.",
+	},
+	magicbarrier: {
+		name: "Magic Barrier",
+		shortDesc: "Prevents others from lowering this character's stat stages.",
+	},
+	maintenance: {
+		name: "Maintenance",
+		desc: "This character has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
+		shortDesc: "This character has a 33% chance to have its status cured at the end of each turn.",
+	},
+	mysterious: {
+		name: "Mysterious",
+		desc: "This character's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+		shortDesc: "This character's type changes to the type of a move it's hit by, unless it is already that type.",
+		gen4: {
+			desc: "This character's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after each hit from a multi-hit move. This effect does not happen if this character did not lose HP from the attack.",
+		},
+	},
+	playghost: {
+		name: "Play Ghost",
+		shortDesc: "This character can only be damaged by supereffective moves, indirect, or self-inflicted damage.",
+		gen4: {
+			shortDesc: "This character is only damaged by supereffective moves and indirect damage.",
+		},
+		gen3: {
+			shortDesc: "This character is only damaged by supereffective moves and indirect damage.",
+		},
+	},
+	poisonbody: {
+		name: "Poison Body",
+		shortDesc: "30% chance that making contact with this character will cause poisoning.",
+		gen4: {
+			desc: "30% chance that making contact with this character will cause poisoning. This effect does not happen if this character did not lose HP from the attack.",
+		},
+		gen3: {
+			desc: "1/3 chance that making contact with this character will cause poisoning. This effect does not happen if this character did not lose HP from the attack.",
+			shortDesc: "1/3 chance that making contact with this character will cause poisoning.",
+		},
+	},
+	beholdereye: {
+		name: "Beholder Eye",
+		desc: desc: "Prevents opponents from choosing to switch out unless they are airborne or holding a Shed Shell.",
+		shortDesc: "Prevents opponents from choosing to switch out unless they are airborne.",
+		gen3: {
+			desc: "Prevents opponents from choosing to switch out unless they are airborne.",
+		},
+	},
+	springcharm: {
+		name: "Spring Charm",
+		shortDesc: "If this character has a non-volatile status condition, its Defense is multiplied by 1.5.",
+	},
+	strangemist: {
+		name: "Strange Mist",
+		shortDesc: "This character damages those draining HP from it for as much as they would heal.",
+
+		damage: "  [POKEMON] sucked up the strange mist!",
+	},
+	unconscious: {
+		name: "Unconscious",
+		shortDesc: "The effects of weather conditions are disabled.",
+
+		start: "  The effects of the weather disappeared.",
+	},
+	unnaturalstrength: {
+		name: "Unnatural Strength",
+		shortDesc: "Prevents others from lowering this character's Attack stat stage.",
+	},
+	unzan: {
+		name: "Unzan",
+		shortDesc: "This Pokemon's Attack is doubled.",
+	},
+	icewall: {
+		name: "Ice Wall",
+		desc: "Fire, Ice, Pyro, and Frost attacks against this character are made with 1/2 the relevant offensive stat when calculating damage.",
+		shortDesc: "Fire/Ice/Pyro/Frost-type moves against this character deal damage with a halved offensive stat.",
+	},
 };
