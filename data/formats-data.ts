@@ -7679,7 +7679,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "CAP",
 		tier: "CAP",
 	  },
-	  magistones: {
+	  magicstones: {
 		isNonstandard: "CAP",
 		tier: "CAP",
 	  },
