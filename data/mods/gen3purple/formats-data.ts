@@ -1531,7 +1531,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 	  },
-	magistones: {
+	magicstones: {
 		tier: "OU",
 		doublesTier: "DOU",
 	  },
