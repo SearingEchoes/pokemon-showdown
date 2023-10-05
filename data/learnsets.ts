@@ -113875,7 +113875,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       rocksmash2: ["3M"],
 		},
 	},
-	magistones: {
+	magicstones: {
     learnset: {
       hyperbeam2: ["3L1"],
       recover2: ["3L1"],

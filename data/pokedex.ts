@@ -24204,7 +24204,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Purple",
 		eggGroups: ["Monster", "Water 1"],
 	  },
-	  magistones: {
+	  magicstones: {
 		num: -484,
 		name: "Magic Stones",
 		types: ["Reason"],
