@@ -21578,8 +21578,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  },
 	  ellen: {
 		num: -265,
-		name: "Heart",
-		types: ["Umbral"],
+		name: "Ellen",
+		types: ["Heart"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 120, atk: 60, def: 85, spa: 100, spd: 55, spe: 70},
 		abilities: {0: "Own Tempo", 1: "Spring Charm"},
