@@ -19592,7 +19592,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		evos: ["Blissea"],
 		eggGroups: ["Fairy"],
-		gen: 9,
 	},
 	blissea: {
 		num: -73,
@@ -19605,7 +19604,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 46.8,
 		color: "Blue",
 		eggGroups: ["Fairy"],
-		gen: 9,
 	},
 	chibisanae: {
 		num: -101,
