@@ -7631,4 +7631,334 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 8,
 		isNonstandard: "CAP",
 	},
+	
+	//Touhoumon/etc items start here
+	
+	powerribbon: {
+		name: "Power Ribbon",
+		spritenum: 768,
+		fling: {
+			basePower: 10,
+		},
+		onStart(pokemon) {
+			if (pokemon.volatiles['choicelock']) {
+				this.debug('removing choicelock: ' + pokemon.volatiles['choicelock']);
+			}
+			pokemon.removeVolatile('choicelock');
+		},
+		onModifyMove(move, pokemon) {
+			pokemon.addVolatile('choicelock');
+		},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.volatiles['dynamax']) return;
+			return this.chainModify(1.5);
+		},
+		isChoice: true,
+		num: -100,
+		gen: 3,
+	},
+	staminaribbon: {
+		name: "Stamina Ribbon",
+		spritenum: 769,
+		fling: {
+			basePower: 10,
+		},
+		onDamagePriority: -40,
+		onDamage(damage, target, source, effect) {
+			if (this.randomChance(1, 10) && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add("-activate", target, "item: Stamina Ribbon");
+				return target.hp - 1;
+			}
+		},
+		num: -101,
+		gen: 3,
+	},
+	chinesedress: {
+		name: "Chinese Dress",
+		spritenum: 770,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Dream') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -102,
+		gen: 3,
+	},
+	kimono: {
+		name: "Kimono",
+		spritenum: 771,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Nether') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -103,
+		gen: 3,
+	},
+	airlineuniform: {
+		name: "Airline Uniform",
+		spritenum: 772,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Aero') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -104,
+		gen: 3,
+	},
+	bunnycostume: {
+		name: "Bunny Costume",
+		spritenum: 773,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Beast') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -105,
+		gen: 3,
+	},
+	nurseuniform: {
+		name: "Nurse Uniform",
+		spritenum: 774,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Miasma') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -106,
+		gen: 3,
+	},
+	maiduniform: {
+		name: "Maid Uniform",
+		spritenum: 775,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Metal') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -107,
+		gen: 3,
+	},
+	mistressoutfit: {
+		name: "Mistress Outfit",
+		spritenum: 776,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Umbral') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -108,
+		gen: 3,
+	},
+	sportssweater: {
+		name: "Sports Sweater",
+		spritenum: 777,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Earth') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -109,
+		gen: 3,
+	},
+	gothicoutfit: {
+		name: "Gothic Outfit",
+		spritenum: 778,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Pyro') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -110,
+		gen: 3,
+	},
+	swimsuit: {
+		name: "Swimsuit",
+		spritenum: 779,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Aqua') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -111,
+		gen: 3,
+	},
+	ninjacostume: {
+		name: "Ninja Costume",
+		spritenum: 780,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Wind') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -112,
+		gen: 3,
+	},
+	camouflage: {
+		name: "Camouflage",
+		spritenum: 781,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Nature') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -113,
+		gen: 3,
+	},
+	thickfur: {
+		name: "Thick Fur",
+		spritenum: 782,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Frost') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -114,
+		gen: 3,
+	},
+	priestgarb: {
+		name: "Priest Garb",
+		spritenum: 783,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Faith') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -115,
+		gen: 3,
+	},
+	witchcostume: {
+		name: "Witch Costume",
+		spritenum: 784,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Reason') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -116,
+		gen: 3,
+	},
+	blazer: {
+		name: "Blazer",
+		spritenum: 785,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Heart') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -117,
+		gen: 3,
+	},
+	weddingdress: {
+		name: "Wedding Dress",
+		spritenum: 786,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Illusion') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -118,
+		gen: 3,
+	},
+	kusanagi: {
+		name: "Kusanagi",
+		spritenum: 787,
+		fling: {
+			basePower: 90,
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(atk, pokemon) {
+			if (pokemon.baseSpecies.name === 'Rinnosuke') {
+				return this.chainModify(2);
+			}
+		},
+		itemUser: ["Rinnosuke"],
+		num: -119,
+		gen: 3,
+	},
+	yatamirror: {
+		name: "Yata Mirror",
+		spritenum: 788,
+		fling: {
+			basePower: 90,
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(def, pokemon) {
+			if (pokemon.baseSpecies.name === 'Rinnosuke') {
+				return this.chainModify(2);
+			}
+		},
+		itemUser: ["Rinnosuke"],
+		num: -120,
+		gen: 3,
+	},
 };
