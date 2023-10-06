@@ -2421,4 +2421,93 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Vile Vial",
 		desc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	
+	//new items
+	
+	powerribbon: {
+		name: "Power Ribbon",
+		desc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+	},
+	staminaribbon: {
+		name: "Stamina Ribbon",
+		desc: "Holder has a 10% chance to survive an attack that would KO it with 1 HP.",
+		
+		activate: "  [POKEMON] hung on using its Stamina Ribbon!",
+	},
+	chinesedress: {
+		name: "Chinese Dress",
+		desc: "Holder's Dream-type attacks have 1.2x power.",
+	},
+	kimono: {
+		name: "Kimono",
+		desc: "Holder's Nether-type attacks have 1.2x power.",
+	},
+	airlineuniform: {
+		name: "Airline Uniform",
+		desc: "Holder's Aero-type attacks have 1.2x power.",
+	},
+	bunnycostume: {
+		name: "Bunny Costume",
+		desc: "Holder's Beast-type attacks have 1.2x power.",
+	},
+	nurseuniform: {
+		name: "Nurse Uniform",
+		desc: "Holder's Miasma-type attacks have 1.2x power.",
+	},
+	maiduniform: {
+		name: "Maid Uniform",
+		desc: "Holder's Metal-type attacks have 1.2x power.",
+	},
+	mistressoutfit: {
+		name: "Mistress Outfit",
+		desc: "Holder's Umbral-type attacks have 1.2x power.",
+	},
+	sportssweater: {
+		name: "Sports Sweater",
+		desc: "Holder's Earth-type attacks have 1.2x power.",
+	},
+	gothicoutfit: {
+		name: "Gothic Outfit",
+		desc: "Holder's Pyro-type attacks have 1.2x power.",
+	},
+	swimsuit: {
+		name: "Swimsuit",
+		desc: "Holder's Aqua-type attacks have 1.2x power.",
+	},
+	ninjacostume: {
+		name: "Ninja Costume",
+		desc: "Holder's Wind-type attacks have 1.2x power.",
+	},
+	camouflage: {
+		name: "Camouflage",
+		desc: "Holder's Nature-type attacks have 1.2x power.",
+	},
+	thickfur: {
+		name: "Thick Fur",
+		desc: "Holder's Frost-type attacks have 1.2x power.",
+	},
+	priestgarb: {
+		name: "Priest Garb",
+		desc: "Holder's Faith-type attacks have 1.2x power.",
+	},
+	witchcostume: {
+		name: "Witch Costume",
+		desc: "Holder's Reason-type attacks have 1.2x power.",
+	},
+	blazer: {
+		name: "Blazer",
+		desc: "Holder's Heart-type attacks have 1.2x power.",
+	},
+	weddingdress: {
+		name: "Wedding Dress",
+		desc: "Holder's Illusion-type attacks have 1.2x power.",
+	},
+	kusanagi: {
+		name: "Kusanagi",
+		desc: "If held by Rinnosuke, their Attack is doubled."
+	},
+	yatamirror: {
+		name: "Yata Mirror",
+		desc: "If held by Rinnosuke, their Defense is doubled."
+	},
 };
