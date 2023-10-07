@@ -2359,8 +2359,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	chansey: {
-		tier: "OU",
-		doublesTier: "DOU",
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
 	},
 	blissey: {
 		isNonstandard: "Unobtainable",
