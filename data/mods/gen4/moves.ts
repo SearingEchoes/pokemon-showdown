@@ -222,7 +222,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {},
 		onModifyMove(move, source, target) {
-			if (!source.hasType('Ghost')) {
+			if (!source.hasType('Ghost')) || (!source.hasType('Nether')) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {atk: 1, def: 1, spe: -1}};
@@ -1824,5 +1824,34 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				target.trySetStatus('slp', this.effectState.source);
 			},
 		},
+	},
+
+	//customs
+
+	curse2: {
+		inherit: true,
+		flags: {},
+		onModifyMove(move, source, target) {
+			if (!source.hasType('Ghost')) || (!source.hasType('Nether')) {
+				delete move.volatileStatus;
+				delete move.onHit;
+				move.self = {boosts: {atk: 1, def: 1, spe: -1}};
+				move.target = move.nonGhostTarget as MoveTarget;
+			} else if (target?.volatiles['substitute']) {
+				delete move.volatileStatus;
+				delete move.onHit;
+			}
+		},
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Curse', '[of] ' + source);
+			},
+			onResidualOrder: 10,
+			onResidualSubOrder: 8,
+			onResidual(pokemon) {
+				this.damage(pokemon.baseMaxhp / 4);
+			},
+		},
+		type: "???",
 	},
 };
