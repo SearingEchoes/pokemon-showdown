@@ -22900,7 +22900,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Nature", "Aero"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 1, atk: 70, def: 40, spa: 80, spd: 40, spe: 50},
-		abilities: {0: "Playing Ghost"},
+		abilities: {0: "Play Ghost"},
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
