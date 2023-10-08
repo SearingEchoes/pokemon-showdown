@@ -108738,6 +108738,27 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       feintattack2: ["3E"],
       wish2: ["3E"],
       faketears2: ["3E"],
+	  
+	  substitute2: ["3L1"],
+	  crunch2: ["3L1"],
+	  agility2: ["3L1"],
+	  extremespeed2: ["3L1"],
+	  smile: ["3L1"],
+	  flareblitz2: ["3L1"],
+	  
+	  crushclaw2: ["3L1"],
+	  disable2: ["3L1"],
+	  bindingvoice: ["3L1"],
+	  tickle2: ["3L1"],
+	  painsplit2: ["3L1"],
+	  blastburn2: ["3L1"],
+	  eruption2: ["3L1"],
+	  
+	  extrasensory2: ["3L1"],
+	  screech2: ["3L1"],
+	  blazekick2: ["3L1"],
+	  heatwave2: ["3L1"],
+	  
     },
   },
   helpershizuha: {
