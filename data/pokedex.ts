@@ -19616,7 +19616,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 25.0,
 		color: "Blue",
 		evos: ["Sanae", "Attack Sanae","Technical Sanae"],
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  sanae: {
 		num: -102,
@@ -19628,7 +19628,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Blue",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibialice: {
 		num: -103,
@@ -19640,7 +19640,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Blue",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  alice: {
 		num: -104,
@@ -19652,7 +19652,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Blue",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibireisen: {
 		num: -105,
@@ -19664,7 +19664,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  reisen: {
 		num: -106,
@@ -19676,7 +19676,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  chibililywhite: {
 		num: -107,
@@ -19688,7 +19688,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "White",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  lilywhite: {
 		num: -108,
@@ -19700,7 +19700,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "White",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  chibililyblack: {
 		num: -109,
@@ -19712,7 +19712,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Black",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  lilyblack: {
 		num: -110,
@@ -19724,7 +19724,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  chibimomiji: {
 		num: -111,
@@ -19736,7 +19736,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  momiji: {
 		num: -112,
@@ -19748,7 +19748,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibishizuha: {
 		num: -113,
@@ -19760,7 +19760,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  shizuha: {
 		num: -114,
@@ -19772,7 +19772,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  chibimedicine: {
 		num: -115,
@@ -19784,7 +19784,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  medicine: {
 		num: -116,
@@ -19796,7 +19796,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  chibikoakuma: {
 		num: -117,
@@ -19808,7 +19808,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  koakuma: {
 		num: -118,
@@ -19820,7 +19820,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibinazrin: {
 		num: -119,
@@ -19832,7 +19832,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  nazrin: {
 		num: -120,
@@ -19844,7 +19844,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibitokiko: {
 		num: -121,
@@ -19856,7 +19856,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  tokiko: {
 		num: -122,
@@ -19868,7 +19868,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibiremilia: {
 		num: -123,
@@ -19880,7 +19880,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  remilia: {
 		num: -124,
@@ -19892,7 +19892,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibicirno: {
 		num: -125,
@@ -19904,7 +19904,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  cirno: {
 		num: -126,
@@ -19916,7 +19916,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  chibirumia: {
 		num: -127,
@@ -19928,7 +19928,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  rumia: {
 		num: -128,
@@ -19940,7 +19940,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  shanghai: {
 		num: -129,
@@ -19952,7 +19952,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiflandre: {
 		num: -130,
@@ -19964,7 +19964,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  flandre: {
 		num: -131,
@@ -19976,7 +19976,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  hourai: {
 		num: -132,
@@ -19988,7 +19988,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyoumu: {
 		num: -133,
@@ -20000,7 +20000,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  youmu: {
 		num: -134,
@@ -20012,7 +20012,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibiyukari: {
 		num: -135,
@@ -20024,7 +20024,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  yukari: {
 		num: -136,
@@ -20036,7 +20036,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibisuika: {
 		num: -137,
@@ -20048,7 +20048,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  suika: {
 		num: -138,
@@ -20060,7 +20060,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibimystia: {
 		num: -139,
@@ -20072,7 +20072,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  mystia: {
 		num: -140,
@@ -20084,7 +20084,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibiminoriko: {
 		num: -141,
@@ -20096,7 +20096,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  minoriko: {
 		num: -142,
@@ -20108,7 +20108,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  chibikeine: {
 		num: -143,
@@ -20120,7 +20120,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  keine: {
 		num: -144,
@@ -20132,7 +20132,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackkeine: {
 		num: -145,
@@ -20144,7 +20144,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  chibiiku: {
 		num: -146,
@@ -20156,7 +20156,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  iku: {
 		num: -147,
@@ -20168,7 +20168,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  chibikoishi: {
 		num: -148,
@@ -20180,7 +20180,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  koishi: {
 		num: -149,
@@ -20192,7 +20192,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyamame: {
 		num: -150,
@@ -20204,7 +20204,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  yamame: {
 		num: -151,
@@ -20216,7 +20216,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  chibichen: {
 		num: -152,
@@ -20228,7 +20228,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chen: {
 		num: -153,
@@ -20240,7 +20240,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibiyorihime: {
 		num: -154,
@@ -20252,7 +20252,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  yorihime: {
 		num: -155,
@@ -20264,7 +20264,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikaguya: {
 		num: -156,
@@ -20276,7 +20276,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  kaguya: {
 		num: -157,
@@ -20288,7 +20288,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimokou: {
 		num: -158,
@@ -20300,7 +20300,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  mokou: {
 		num: -159,
@@ -20312,7 +20312,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibihatate: {
 		num: -160,
@@ -20324,7 +20324,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  hatate: {
 		num: -161,
@@ -20336,7 +20336,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibiletty: {
 		num: -162,
@@ -20348,7 +20348,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  letty: {
 		num: -163,
@@ -20360,7 +20360,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibipatchouli: {
 		num: -164,
@@ -20372,7 +20372,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  patchouli: {
 		num: -165,
@@ -20384,7 +20384,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyuugi: {
 		num: -166,
@@ -20396,7 +20396,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  yuugi: {
 		num: -167,
@@ -20408,7 +20408,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibitenshi: {
 		num: -168,
@@ -20420,7 +20420,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Mineral"],
 	  },
 	  tenshi: {
 		num: -169,
@@ -20432,7 +20432,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Mineral"],
 	  },
 	  chibiparsee: {
 		num: -170,
@@ -20444,7 +20444,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  parsee: {
 		num: -171,
@@ -20456,7 +20456,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimurasa: {
 		num: -172,
@@ -20468,7 +20468,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  murasa: {
 		num: -173,
@@ -20480,7 +20480,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  chibikisume: {
 		num: -174,
@@ -20492,7 +20492,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  kisume: {
 		num: -175,
@@ -20504,7 +20504,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibikogasa: {
 		num: -176,
@@ -20516,7 +20516,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"]],
 	  },
 	  kogasa: {
 		num: -177,
@@ -20528,7 +20528,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"]],
 	  },
 	  chibisatori: {
 		num: -178,
@@ -20540,7 +20540,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  satori: {
 		num: -179,
@@ -20552,7 +20552,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibieirin: {
 		num: -180,
@@ -20564,7 +20564,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  eirin: {
 		num: -181,
@@ -20576,7 +20576,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiran: {
 		num: -182,
@@ -20588,7 +20588,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  ran: {
 		num: -183,
@@ -20600,7 +20600,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibidaiyousei: {
 		num: -184,
@@ -20612,7 +20612,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  daiyousei: {
 		num: -185,
@@ -20624,7 +20624,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  chibinitori: {
 		num: -186,
@@ -20636,7 +20636,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  nitori: {
 		num: -187,
@@ -20648,7 +20648,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  chibihina: {
 		num: -188,
@@ -20660,7 +20660,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  hina: {
 		num: -189,
@@ -20672,7 +20672,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikomachi: {
 		num: -190,
@@ -20684,7 +20684,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  komachi: {
 		num: -191,
@@ -20696,7 +20696,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  chibiyuyuko: {
 		num: -192,
@@ -20708,7 +20708,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  yuyuko: {
 		num: -193,
@@ -20720,7 +20720,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibimeiling: {
 		num: -194,
@@ -20732,7 +20732,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  meiling: {
 		num: -195,
@@ -20744,7 +20744,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibisakuya: {
 		num: -196,
@@ -20756,7 +20756,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  sakuya: {
 		num: -197,
@@ -20768,7 +20768,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibilunasa: {
 		num: -198,
@@ -20780,7 +20780,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  lunasa: {
 		num: -199,
@@ -20792,7 +20792,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimerlin: {
 		num: -200,
@@ -20804,7 +20804,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  merlin: {
 		num: -201,
@@ -20816,7 +20816,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibilyrica: {
 		num: -202,
@@ -20828,7 +20828,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  lyrica: {
 		num: -203,
@@ -20840,7 +20840,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibilayla: {
 		num: -204,
@@ -20852,7 +20852,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  layla: {
 		num: -205,
@@ -20864,7 +20864,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikanako: {
 		num: -206,
@@ -20876,7 +20876,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  kanako: {
 		num: -207,
@@ -20888,7 +20888,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibirin: {
 		num: -208,
@@ -20900,7 +20900,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  rin: {
 		num: -209,
@@ -20912,7 +20912,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"," Field"],
 	  },
 	  chibiutsuho: {
 		num: -210,
@@ -20924,7 +20924,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  utsuho: {
 		num: -211,
@@ -20936,7 +20936,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibiichirin: {
 		num: -212,
@@ -20948,7 +20948,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  ichirin: {
 		num: -213,
@@ -20960,7 +20960,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibisunnymilk: {
 		num: -214,
@@ -20972,7 +20972,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  sunnymilk: {
 		num: -215,
@@ -20984,7 +20984,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibilunachild: {
 		num: -216,
@@ -20996,7 +20996,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  lunachild: {
 		num: -217,
@@ -21008,7 +21008,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibistarsapphire: {
 		num: -218,
@@ -21020,7 +21020,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  starsapphire: {
 		num: -219,
@@ -21032,7 +21032,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyuuka: {
 		num: -220,
@@ -21044,7 +21044,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  yuuka: {
 		num: -221,
@@ -21056,7 +21056,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  chibiaya: {
 		num: -222,
@@ -21068,7 +21068,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  aya: {
 		num: -223,
@@ -21080,7 +21080,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibieiki: {
 		num: -224,
@@ -21092,7 +21092,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  eiki: {
 		num: -225,
@@ -21104,7 +21104,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibishou: {
 		num: -226,
@@ -21116,7 +21116,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  shou: {
 		num: -227,
@@ -21128,7 +21128,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibiwriggle: {
 		num: -228,
@@ -21140,7 +21140,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  wriggle: {
 		num: -229,
@@ -21152,7 +21152,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  chibitewi: {
 		num: -230,
@@ -21164,7 +21164,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  tewi: {
 		num: -231,
@@ -21176,7 +21176,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  kedama: {
 		num: -232,
@@ -21188,7 +21188,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Ditto"],
 	  },
 	  chibinue: {
 		num: -233,
@@ -21200,7 +21200,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  nue: {
 		num: -234,
@@ -21212,7 +21212,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibisuwako: {
 		num: -235,
@@ -21224,7 +21224,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  suwako: {
 		num: -236,
@@ -21236,7 +21236,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  reisenii: {
 		num: -237,
@@ -21248,7 +21248,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimarisa: {
 		num: -238,
@@ -21260,7 +21260,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  marisa: {
 		num: -239,
@@ -21272,7 +21272,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibireimu: {
 		num: -240,
@@ -21284,7 +21284,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  reimu: {
 		num: -241,
@@ -21296,7 +21296,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibibyakuren: {
 		num: -242,
@@ -21308,7 +21308,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  byakuren: {
 		num: -243,
@@ -21320,7 +21320,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  konngara: {
 		num: -244,
@@ -21332,7 +21332,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  kikuri: {
 		num: -245,
@@ -21344,7 +21344,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Amorphous"],
 	  },
 	  yuugenmagan: {
 		num: -246,
@@ -21356,7 +21356,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Amorphous"],
 	  },
 	  chibitoyohime: {
 		num: -247,
@@ -21368,7 +21368,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  toyohime: {
 		num: -248,
@@ -21380,7 +21380,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  goliathdoll: {
 		num: -249,
@@ -21392,7 +21392,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Undiscovered"],
 	  },
 	  sariel: {
 		num: -250,
@@ -21404,7 +21404,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  akyuu: {
 		num: -251,
@@ -21416,7 +21416,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  genji: {
 		num: -252,
@@ -21428,7 +21428,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Field", "Flying"],
 	  },
 	  tori: {
 		num: -253,
@@ -21440,7 +21440,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Flying"],
 	  },
 	  namazu: {
 		num: -254,
@@ -21452,7 +21452,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Field", "Water 1"],
 	  },
 	  chibielly: {
 		num: -255,
@@ -21464,7 +21464,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  elly: {
 		num: -256,
@@ -21476,7 +21476,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibiorange: {
 		num: -257,
@@ -21488,7 +21488,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  orange: {
 		num: -258,
@@ -21500,7 +21500,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  youki: {
 		num: -259,
@@ -21512,7 +21512,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibichiyuri: {
 		num: -260,
@@ -21524,7 +21524,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chiyuri: {
 		num: -261,
@@ -21536,7 +21536,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyumemi: {
 		num: -262,
@@ -21548,7 +21548,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  yumemi: {
 		num: -263,
@@ -21560,7 +21560,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiellen: {
 		num: -264,
@@ -21572,7 +21572,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  ellen: {
 		num: -265,
@@ -21584,7 +21584,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikazami: {
 		num: -266,
@@ -21596,7 +21596,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  kazami: {
 		num: -267,
@@ -21608,7 +21608,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  chibimeira: {
 		num: -268,
@@ -21620,7 +21620,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  meira: {
 		num: -269,
@@ -21632,7 +21632,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibisara: {
 		num: -270,
@@ -21644,7 +21644,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  sara: {
 		num: -271,
@@ -21656,7 +21656,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibilouise: {
 		num: -272,
@@ -21668,7 +21668,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  louise: {
 		num: -273,
@@ -21680,7 +21680,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimargatroid: {
 		num: -274,
@@ -21692,7 +21692,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  margatroid: {
 		num: -275,
@@ -21704,7 +21704,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikana: {
 		num: -276,
@@ -21716,7 +21716,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  kana: {
 		num: -277,
@@ -21728,7 +21728,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibihakurei: {
 		num: -278,
@@ -21740,7 +21740,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  hakurei: {
 		num: -279,
@@ -21752,7 +21752,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibikirisame: {
 		num: -280,
@@ -21764,7 +21764,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  kirisame: {
 		num: -281,
@@ -21776,7 +21776,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibikotohime: {
 		num: -282,
@@ -21788,7 +21788,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  kotohime: {
 		num: -283,
@@ -21800,7 +21800,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyumeko: {
 		num: -284,
@@ -21812,7 +21812,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  yumeko: {
 		num: -285,
@@ -21824,7 +21824,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibishinki: {
 		num: -286,
@@ -21836,7 +21836,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  shinki: {
 		num: -287,
@@ -21848,7 +21848,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  mimichan: {
 		num: -288,
@@ -21860,7 +21860,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Undiscovered"],
 	  },
 	  ruukoto: {
 		num: -289,
@@ -21872,7 +21872,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Undiscovered"],
 	  },
 	  chibirika: {
 		num: -290,
@@ -21884,7 +21884,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Mineral"],
 	  },
 	  rika: {
 		num: -291,
@@ -21896,7 +21896,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Mineral"],
 	  },
 	  chibimugetsu: {
 		num: -292,
@@ -21908,7 +21908,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  mugetsu: {
 		num: -293,
@@ -21920,7 +21920,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibigengetsu: {
 		num: -294,
@@ -21932,7 +21932,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  gengetsu: {
 		num: -295,
@@ -21944,7 +21944,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibikurumi: {
 		num: -296,
@@ -21956,7 +21956,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  kurumi: {
 		num: -297,
@@ -21968,7 +21968,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  chibirikako: {
 		num: -298,
@@ -21980,7 +21980,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  rikako: {
 		num: -299,
@@ -21992,7 +21992,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibiyuki: {
 		num: -300,
@@ -22004,7 +22004,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  yuki: {
 		num: -301,
@@ -22016,7 +22016,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimai: {
 		num: -302,
@@ -22028,7 +22028,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  mai: {
 		num: -303,
@@ -22040,7 +22040,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensesunnymilk: {
 		num: -304,
@@ -22052,7 +22052,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  technicallunachild: {
 		num: -305,
@@ -22064,7 +22064,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  helperstarsapphire: {
 		num: -306,
@@ -22076,7 +22076,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  attacknitori: {
 		num: -307,
@@ -22088,7 +22088,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  technicalnitori: {
 		num: -308,
@@ -22100,7 +22100,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  attackmokou: {
 		num: -309,
@@ -22112,7 +22112,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensemokou: {
 		num: -310,
@@ -22124,7 +22124,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensereisen: {
 		num: -311,
@@ -22136,7 +22136,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  technicalreisen: {
 		num: -312,
@@ -22148,7 +22148,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  technicalsakuya: {
 		num: -313,
@@ -22160,7 +22160,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  helpersakuya: {
 		num: -314,
@@ -22172,7 +22172,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackrumia: {
 		num: -315,
@@ -22184,7 +22184,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  speedrumia: {
 		num: -316,
@@ -22196,7 +22196,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  helpermystia: {
 		num: -317,
@@ -22208,7 +22208,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  attackmystia: {
 		num: -318,
@@ -22220,7 +22220,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  attackchen: {
 		num: -319,
@@ -22232,7 +22232,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  technicalchen: {
 		num: -320,
@@ -22244,7 +22244,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  defenseyoumu: {
 		num: -321,
@@ -22256,7 +22256,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  speedyoumu: {
 		num: -322,
@@ -22268,7 +22268,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attackyuuka: {
 		num: -323,
@@ -22280,7 +22280,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  technicalyuuka: {
 		num: -324,
@@ -22292,7 +22292,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  speedaya: {
 		num: -325,
@@ -22304,7 +22304,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  technicalaya: {
 		num: -326,
@@ -22316,7 +22316,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  attacktenshi: {
 		num: -327,
@@ -22328,7 +22328,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Mineral"],
 	  },
 	  defensetenshi: {
 		num: -328,
@@ -22340,7 +22340,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Mineral"],
 	  },
 	  defenseparsee: {
 		num: -329,
@@ -22352,7 +22352,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  technicalparsee: {
 		num: -330,
@@ -22364,7 +22364,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackkoishi: {
 		num: -331,
@@ -22376,7 +22376,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  speedkoishi: {
 		num: -332,
@@ -22388,7 +22388,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensebyakuren: {
 		num: -333,
@@ -22400,7 +22400,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  technicalbyakuren: {
 		num: -334,
@@ -22412,7 +22412,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defenseichirin: {
 		num: -335,
@@ -22424,7 +22424,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  technicalichirin: {
 		num: -336,
@@ -22436,7 +22436,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackkanako: {
 		num: -337,
@@ -22448,7 +22448,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  defensekanako: {
 		num: -338,
@@ -22460,7 +22460,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attackkaguya: {
 		num: -339,
@@ -22472,7 +22472,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensekaguya: {
 		num: -340,
@@ -22484,7 +22484,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  shingyokuorb: {
 		num: -341,
@@ -22496,7 +22496,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  shingyokupriest: {
 		num: -341,
@@ -22508,7 +22508,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  shingyokupriestess: {
 		num: -342,
@@ -22520,7 +22520,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  attackutsuho: {
 		num: -344,
@@ -22532,7 +22532,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  speedutsuho: {
 		num: -345,
@@ -22544,7 +22544,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  defensemomiji: {
 		num: -346,
@@ -22556,7 +22556,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  elis: {
 		num: -347,
@@ -22568,7 +22568,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  mima: {
 		num: -348,
@@ -22580,7 +22580,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  speedkomachi: {
 		num: -349,
@@ -22592,7 +22592,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  attackkomachi: {
 		num: -350,
@@ -22604,7 +22604,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  attackeirin: {
 		num: -351,
@@ -22616,7 +22616,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  helpereirin: {
 		num: -352,
@@ -22628,7 +22628,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defenseyukari: {
 		num: -353,
@@ -22640,7 +22640,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  technicalyukari: {
 		num: -354,
@@ -22652,7 +22652,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  attackalice: {
 		num: -355,
@@ -22664,7 +22664,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  technicalalice: {
 		num: -356,
@@ -22676,7 +22676,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackreimu: {
 		num: -357,
@@ -22688,7 +22688,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  defensereimu: {
 		num: -358,
@@ -22700,7 +22700,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  speedcirno: {
 		num: -359,
@@ -22712,7 +22712,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  technicalcirno: {
 		num: -360,
@@ -22724,7 +22724,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  defenseyuyuko: {
 		num: -361,
@@ -22736,7 +22736,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  attackyuyuko: {
 		num: -362,
@@ -22748,7 +22748,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  helperlunasa: {
 		num: -363,
@@ -22760,7 +22760,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  helpermerlin: {
 		num: -364,
@@ -22772,7 +22772,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  helperlyrica: {
 		num: -365,
@@ -22784,7 +22784,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackran: {
 		num: -366,
@@ -22796,7 +22796,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  helperran: {
 		num: -367,
@@ -22808,7 +22808,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attackmedicine: {
 		num: -368,
@@ -22820,7 +22820,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  technicalmedicine: {
 		num: -369,
@@ -22832,7 +22832,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  attackhina: {
 		num: -370,
@@ -22844,7 +22844,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensehina: {
 		num: -371,
@@ -22856,7 +22856,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  speedshizuha: {
 		num: -372,
@@ -22868,7 +22868,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  speedrin: {
 		num: -373,
@@ -22880,7 +22880,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Field"],
 	  },
 	  attackrin: {
 		num: -374,
@@ -22892,7 +22892,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  zombiefairy: {
 		num: -375,
@@ -22904,7 +22904,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Undiscovered"],
 	  },
 	  helpershizuha: {
 		num: -376,
@@ -22916,7 +22916,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  attacksuwako: {
 		num: -377,
@@ -22928,7 +22928,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  attackshou: {
 		num: -378,
@@ -22940,7 +22940,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  technicalshou: {
 		num: -379,
@@ -22952,7 +22952,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attacktokiko: {
 		num: -380,
@@ -22964,7 +22964,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  defensesuwako: {
 		num: -381,
@@ -22976,7 +22976,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  speedyamame: {
 		num: -382,
@@ -22988,7 +22988,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  speedkogasa: {
 		num: -383,
@@ -23000,7 +23000,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  technicalkogasa: {
 		num: -384,
@@ -23012,7 +23012,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  defenseremilia: {
 		num: -385,
@@ -23024,7 +23024,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  speedflandre: {
 		num: -386,
@@ -23036,7 +23036,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  defensewriggle: {
 		num: -387,
@@ -23048,7 +23048,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  defensemeiling: {
 		num: -388,
@@ -23060,7 +23060,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  tensoku: {
 		num: -389,
@@ -23072,7 +23072,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attacksunnymilk: {
 		num: -390,
@@ -23084,7 +23084,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  attacklunachild: {
 		num: -391,
@@ -23096,7 +23096,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  speedwriggle: {
 		num: -392,
@@ -23108,7 +23108,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  helperkoakuma: {
 		num: -393,
@@ -23120,7 +23120,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  speedmeiling: {
 		num: -394,
@@ -23132,7 +23132,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibielis: {
 		num: -395,
@@ -23144,7 +23144,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibisariel: {
 		num: -396,
@@ -23156,7 +23156,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  adventmystia: {
 		num: -397,
@@ -23168,7 +23168,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  technicalhatate: {
 		num: -398,
@@ -23180,7 +23180,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  defensehatate: {
 		num: -399,
@@ -23192,7 +23192,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  akisisters: {
 		num: -400,
@@ -23204,7 +23204,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  defenselayla: {
 		num: -401,
@@ -23216,7 +23216,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensekeine: {
 		num: -402,
@@ -23228,7 +23228,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  attackremilia: {
 		num: -403,
@@ -23240,7 +23240,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  defensetewi: {
 		num: -404,
@@ -23252,7 +23252,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attacktewi: {
 		num: -405,
@@ -23264,7 +23264,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  defenseeiki: {
 		num: -406,
@@ -23276,7 +23276,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defenseminoriko: {
 		num: -407,
@@ -23288,7 +23288,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  technicalsuika: {
 		num: -408,
@@ -23300,7 +23300,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attacksanae: {
 		num: -409,
@@ -23312,7 +23312,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  technicalsanae: {
 		num: -410,
@@ -23324,7 +23324,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  attackflandre: {
 		num: -411,
@@ -23336,7 +23336,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Monster"],
 	  },
 	  attackdaiyousei: {
 		num: -412,
@@ -23348,7 +23348,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  attackeiki: {
 		num: -413,
@@ -23360,7 +23360,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  technicaltoyohime: {
 		num: -414,
@@ -23372,7 +23372,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikonngara: {
 		num: -415,
@@ -23384,7 +23384,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibiyuugenmagan: {
 		num: -416,
@@ -23396,7 +23396,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Amorphous"],
 	  },
 	  attacksuika: {
 		num: -417,
@@ -23408,7 +23408,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  helperlilywhite: {
 		num: -418,
@@ -23420,7 +23420,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  speedlilyblack: {
 		num: -419,
@@ -23432,7 +23432,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  attacknue: {
 		num: -420,
@@ -23444,7 +23444,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  technicalnue: {
 		num: -421,
@@ -23456,7 +23456,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  defensepatchouli: {
 		num: -422,
@@ -23468,7 +23468,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defenseletty: {
 		num: -423,
@@ -23480,7 +23480,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  helperletty: {
 		num: -424,
@@ -23492,7 +23492,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  speedyorihime: {
 		num: -425,
@@ -23504,7 +23504,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibishingyoku: {
 		num: -426,
@@ -23516,7 +23516,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Flying", "Dragon"],
 	  },
 	  attacklilyblack: {
 		num: -427,
@@ -23528,7 +23528,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  defenseyuugi: {
 		num: -428,
@@ -23540,7 +23540,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  technicalnazrin: {
 		num: -429,
@@ -23552,7 +23552,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  helpernazrin: {
 		num: -430,
@@ -23564,7 +23564,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  technicalkisume: {
 		num: -431,
@@ -23576,7 +23576,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  attackyuugi: {
 		num: -432,
@@ -23588,7 +23588,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  helperkeine: {
 		num: -433,
@@ -23600,7 +23600,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defenseiku: {
 		num: -434,
@@ -23612,7 +23612,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  technicaliku: {
 		num: -435,
@@ -23624,7 +23624,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  attackminoriko: {
 		num: -436,
@@ -23636,7 +23636,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  rinnosuke: {
 		num: -437,
@@ -23648,7 +23648,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  adventcirno: {
 		num: -438,
@@ -23660,7 +23660,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventreisen: {
 		num: -439,
@@ -23672,7 +23672,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  speedsariel: {
 		num: -440,
@@ -23684,7 +23684,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  attacklilywhite: {
 		num: -441,
@@ -23696,7 +23696,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  chibimima: {
 		num: -442,
@@ -23708,7 +23708,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibikikuri: {
 		num: -443,
@@ -23720,7 +23720,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Amorphous"],
 	  },
 	  adventmeiling: {
 		num: -444,
@@ -23732,7 +23732,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  attackpatchouli: {
 		num: -445,
@@ -23744,7 +23744,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  speedmarisa: {
 		num: -446,
@@ -23756,7 +23756,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  attackmarisa: {
 		num: -447,
@@ -23768,7 +23768,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  defensemurasa: {
 		num: -448,
@@ -23780,7 +23780,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  attackmurasa: {
 		num: -449,
@@ -23792,7 +23792,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Water 1"],
 	  },
 	  attackstarsapphire: {
 		num: -450,
@@ -23804,7 +23804,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  attackkazami: {
 		num: -451,
@@ -23816,7 +23816,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  speedmedicine: {
 		num: -452,
@@ -23828,7 +23828,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Plant"],
 	  },
 	  defensedaiyousei: {
 		num: -453,
@@ -23840,7 +23840,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  technicalyamame: {
 		num: -454,
@@ -23852,7 +23852,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Bug"],
 	  },
 	  technicalsatori: {
 		num: -455,
@@ -23864,7 +23864,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  defensesatori: {
 		num: -456,
@@ -23876,7 +23876,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  adventletty: {
 		num: -457,
@@ -23888,7 +23888,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventtewi: {
 		num: -458,
@@ -23900,7 +23900,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventmarisa: {
 		num: -459,
@@ -23912,7 +23912,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventalice: {
 		num: -460,
@@ -23924,7 +23924,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventmokou: {
 		num: -461,
@@ -23936,7 +23936,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventyukari: {
 		num: -462,
@@ -23948,7 +23948,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventran: {
 		num: -463,
@@ -23960,7 +23960,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventchen: {
 		num: -464,
@@ -23972,7 +23972,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  darkalice: {
 		num: -465,
@@ -23984,7 +23984,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  tenma: {
 		num: -466,
@@ -23996,7 +23996,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  sendai: {
 		num: -467,
@@ -24008,7 +24008,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibikyouko: {
 		num: -468,
@@ -24020,7 +24020,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  kyouko: {
 		num: -469,
@@ -24032,7 +24032,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  chibiyoshika: {
 		num: -470,
@@ -24044,7 +24044,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  yoshika: {
 		num: -471,
@@ -24056,7 +24056,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibiseiga: {
 		num: -472,
@@ -24068,7 +24068,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  seiga: {
 		num: -473,
@@ -24080,7 +24080,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibitojiko: {
 		num: -474,
@@ -24092,7 +24092,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  tojiko: {
 		num: -475,
@@ -24104,7 +24104,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibifuto: {
 		num: -476,
@@ -24116,7 +24116,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  futo: {
 		num: -477,
@@ -24128,7 +24128,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimiko: {
 		num: -478,
@@ -24140,7 +24140,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  miko: {
 		num: -479,
@@ -24152,7 +24152,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  chibimamizou: {
 		num: -480,
@@ -24164,7 +24164,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  mamizou: {
 		num: -481,
@@ -24176,7 +24176,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  "2hu": {
 		num: -482,
@@ -24188,7 +24188,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Undiscovered"],
 	  },
 	  jksanae: {
 		num: -483,
@@ -24200,7 +24200,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Undiscovered"],
 	  },
 	  magicstones: {
 		num: -484,
@@ -24212,7 +24212,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Amorphous", "Mineral"],
 	  },
 	  chibikasen: {
 		num: -485,
@@ -24224,7 +24224,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  kasen: {
 		num: -486,
@@ -24236,7 +24236,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  scarletwitch: {
 		num: -487,
@@ -24248,7 +24248,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Dragon"],
 	  },
 	  swordmaster: {
 		num: -488,
@@ -24260,7 +24260,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Field"],
 	  },
 	  tinyghost: {
 		num: -489,
@@ -24272,7 +24272,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  xsuwako: {
 		num: -490,
@@ -24284,7 +24284,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like", "Flying"],
 	  },
 	  xutsuho: {
 		num: -491,
@@ -24296,7 +24296,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 	  xtenshi: {
 		num: -492,
@@ -24308,6 +24308,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 210.0,
 		color: "Purple",
-		eggGroups: ["Monster", "Water 1"],
+		eggGroups: ["Human-Like"],
 	  },
 };
