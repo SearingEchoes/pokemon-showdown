@@ -222,7 +222,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {},
 		onModifyMove(move, source, target) {
-			if (!source.hasType('Ghost') || (!source.hasType('Nether')) {
+			if ((!source.hasType('Ghost')) || (!source.hasType('Nether'))) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {atk: 1, def: 1, spe: -1}};
