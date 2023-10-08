@@ -20516,7 +20516,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
-		eggGroups: ["Human-Like", "Amorphous"]],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  kogasa: {
 		num: -177,
@@ -20528,7 +20528,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
-		eggGroups: ["Human-Like", "Amorphous"]],
+		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibisatori: {
 		num: -178,
