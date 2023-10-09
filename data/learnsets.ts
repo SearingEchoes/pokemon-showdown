@@ -97938,12 +97938,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       rest2: ["3M"],
       attract2: ["3M"],
       cut2: ["3M"],
-      sleeptalk2: ["3E"],
-      thrash2: ["3E"],
-      dreameater2: ["3E"],
-      slackoff2: ["3E"],
-      tickle2: ["3E"],
-      shadowdive: ["3E"],
     },
   },
   chibiflandre: {
@@ -98048,10 +98042,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       snatch2: ["3M"],
       strength2: ["3M"],
       rocksmash2: ["3M"],
-      dynamicpunch2: ["3E"],
-      psywave2: ["3E"],
-      bind2: ["3E"],
-      frustration2: ["3E"],
     },
   },
   chibiyoumu: {
