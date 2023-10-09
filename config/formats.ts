@@ -4911,7 +4911,7 @@ export const Formats: FormatList = [
 		],
 
 		mod: 'gen3purple',
-		ruleset: ['Standard', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
 		banlist: ['Defense Satori', 'Sendai', 'Speed Aya', 'X Utsuho', 'X Suwako', 'X Tenshi', "Scarlet Witch", "JK Sanae"],
 	},
 	{
