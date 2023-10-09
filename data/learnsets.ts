@@ -103069,7 +103069,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
   },
   akyuu: {
     learnset: {
-      sketch: ["3L1", "3L11", "3L21", "3L31", "3L41", "3L51", "3L61", "3L71"],
+      sketch2: ["3L1", "3L11", "3L21", "3L31", "3L41", "3L51", "3L61", "3L71"],
     },
   },
   genji: {
