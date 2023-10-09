@@ -103035,12 +103035,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       cut2: ["3M"],
       strength2: ["3M"],
       rocksmash2: ["3M"],
-      shockwave2: ["3E"],
-      teleport2: ["3E"],
-      yawn2: ["3E"],
-      bind2: ["3E"],
-      iceshard2: ["3E"],
-      jamming: ["3E"],
     },
   },
   sariel: {
