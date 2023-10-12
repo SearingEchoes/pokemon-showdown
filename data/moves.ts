@@ -29544,7 +29544,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		// Breaking protection implemented in scripts.js
 		secondary: null,
 		target: "normal",
-		type: "unknown",
+		type: "Unknown",
 		contestType: "Clever",
 	},
 };
