@@ -471,11 +471,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (defender.hasItem('utilityumbrella')) return;
-			if (move.type === 'Water') {
+			if ((move.type === 'Water') || (move.type === 'Aqua')) {
 				this.debug('rain water boost');
 				return this.chainModify(1.5);
 			}
-			if (move.type === 'Fire') {
+			if ((move.type === 'Fire') || (move.type === 'Pyro')) {
 				this.debug('rain fire suppress');
 				return this.chainModify(0.5);
 			}
@@ -503,7 +503,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		duration: 0,
 		onTryMovePriority: 1,
 		onTryMove(attacker, defender, move) {
-			if (move.type === 'Fire' && move.category !== 'Status') {
+			if ((move.type === 'Fire' && move.category !== 'Status') || (move.type === 'Pyro' && move.category !== 'Status')){
 				this.debug('Primordial Sea fire suppress');
 				this.add('-fail', attacker, move, '[from] Primordial Sea');
 				this.attrLastMove('[still]');
@@ -512,7 +512,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (defender.hasItem('utilityumbrella')) return;
-			if (move.type === 'Water') {
+			if ((move.type === 'Water') || (move.type === 'Aqua')) {
 				this.debug('Rain water boost');
 				return this.chainModify(1.5);
 			}
@@ -545,11 +545,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 				return this.chainModify(1.5);
 			}
 			if (defender.hasItem('utilityumbrella')) return;
-			if (move.type === 'Fire') {
+			if ((move.type === 'Fire') || (move.type === 'Pyro')) {
 				this.debug('Sunny Day fire boost');
 				return this.chainModify(1.5);
 			}
-			if (move.type === 'Water') {
+			if ((move.type === 'Water') || (move.type === 'Aqua')) {
 				this.debug('Sunny Day water suppress');
 				return this.chainModify(0.5);
 			}
@@ -581,7 +581,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		duration: 0,
 		onTryMovePriority: 1,
 		onTryMove(attacker, defender, move) {
-			if (move.type === 'Water' && move.category !== 'Status') {
+			if ((move.type === 'Water' && move.category !== 'Status') || (move.type === 'Aqua' && move.category !== 'Status')){
 				this.debug('Desolate Land water suppress');
 				this.add('-fail', attacker, move, '[from] Desolate Land');
 				this.attrLastMove('[still]');
@@ -590,7 +590,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (defender.hasItem('utilityumbrella')) return;
-			if (move.type === 'Fire') {
+			if ((move.type === 'Fire') || (move.type === 'Pyro')) {
 				this.debug('Sunny Day fire boost');
 				return this.chainModify(1.5);
 			}
@@ -625,7 +625,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		// So we give it increased priority.
 		onModifySpDPriority: 10,
 		onModifySpD(spd, pokemon) {
-			if (pokemon.hasType('Rock') && this.field.isWeather('sandstorm')) {
+			if ((pokemon.hasType('Rock') && this.field.isWeather('sandstorm')) || (pokemon.hasType('Beast') && this.field.isWeather('sandstorm'))) {
 				return this.modify(spd, 1.5);
 			}
 		},
@@ -691,7 +691,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onModifyDefPriority: 10,
 		onModifyDef(def, pokemon) {
-			if (pokemon.hasType('Ice') && this.field.isWeather('snow')) {
+			if ((pokemon.hasType('Ice') && this.field.isWeather('snow')) || (pokemon.hasType('Cryo') && this.field.isWeather('snow'))) {
 				return this.modify(def, 1.5);
 			}
 		},
