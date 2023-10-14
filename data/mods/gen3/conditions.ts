@@ -52,7 +52,7 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 	sandstorm: {
 		inherit: true,
 		onModifySpD() {
-			if ((pokemon.hasType('Beast') && this.field.isWeather('sandstorm')) {
+			if (pokemon.hasType('Beast') && this.field.isWeather('sandstorm')) {
 				return this.modify(spd, 1.5);
 			}
 		},
