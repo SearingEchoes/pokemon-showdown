@@ -825,6 +825,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	blizzard2: {
 		inherit: true,
+		onModifyMove() { },
 		gen: 3,
 	},
 	block2: {
