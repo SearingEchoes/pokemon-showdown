@@ -10372,7 +10372,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		onTryImmunity(target) {
-			return !target.hasType('Grass') || target.hasType('Nature');
+			return !target.hasType('Grass') || !target.hasType('Nature');
 		},
 		secondary: null,
 		target: "normal",
@@ -25107,7 +25107,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		onTryImmunity(target) {
-			return !target.hasType('Grass') || target.hasType('Nature');
+			return !target.hasType('Grass') || !target.hasType('Nature');
 		},
 		secondary: null,
 		target: "normal",
