@@ -2087,7 +2087,7 @@ export class Pokemon {
 		if (this.fainted) return false;
 
 		const negateImmunity = !this.battle.runEvent('NegateImmunity', this, type);
-		const notImmune = type === 'Ground' ?
+		const notImmune = type === 'Ground' || type === 'Earth' ?
 			this.isGrounded(negateImmunity) :
 			negateImmunity || this.battle.dex.getImmunity(type, this);
 		if (notImmune) return true;
