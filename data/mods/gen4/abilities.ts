@@ -96,7 +96,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	flashfire: {
 		inherit: true,
 		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Fire') {
+			if ((target !== source && move.type === 'Fire') || (target !== source && move.type === 'Pyro')){
 				if (target.status === 'frz') {
 					return;
 				}
@@ -295,7 +295,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	overgrow: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 3)) {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
 			}
@@ -489,7 +489,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	torrent: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 3) {
+			if ((move.type === 'Water' && attacker.hp <= attacker.maxhp / 3) || (move.type === 'Aqua' && attacker.hp <= attacker.maxhp / 3)) {
 				this.debug('Torrent boost');
 				return this.chainModify(1.5);
 			}
