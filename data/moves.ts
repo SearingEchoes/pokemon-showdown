@@ -26562,7 +26562,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	pursuit2: {
 		num: 1425,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		basePowerCallback(pokemon, target, move) {
 			// You can't get here unless the pursuit2 succeeds
 			if (target.beingCalledBack || target.switchFlag) {
