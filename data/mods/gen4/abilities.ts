@@ -23,7 +23,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	blaze: {
 		onBasePowerPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
+			if ((move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) || (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3)) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
 			}
