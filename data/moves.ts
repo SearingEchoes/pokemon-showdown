@@ -29177,12 +29177,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: -1,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onAfterHit(target, source) {
-			if (source.hp) {
+			if (this.randomChance(1, 2)) {
+				if (source.hp) {
 				const item = target.takeItem();
-				if (item) {
-					this.add('-enditem', target, item.name, '[from] move: Knock Off', '[of] ' + source);
+					if (item) {
+					this.add('-enditem', target, item.name, '[from] move: Vital Throw', '[of] ' + source);
+					}
 				}
 			}
+			
 		},
 		secondary: null,
 		target: "normal",
