@@ -10372,7 +10372,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		onTryImmunity(target) {
-			return !target.hasType('Grass') || !target.hasType('Nature');
+			return !target.hasType('Nature') && !target.hasType('Grass');
 		},
 		secondary: null,
 		target: "normal",
@@ -25107,7 +25107,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		onTryImmunity(target) {
-			return !target.hasType('Grass') || !target.hasType('Nature');
+			return !target.hasType('Nature') && !target.hasType('Grass');
 		},
 		secondary: null,
 		target: "normal",
@@ -26602,7 +26602,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				for (const source of this.effectState.sources) {
 					if (!source.isAdjacent(pokemon) || !this.queue.cancelMove(source) || !source.hp) continue;
 					if (!alreadyAdded) {
-						this.add('-activate', pokemon, 'move: Pursuit');
+						this.add('-activate', pokemon, 'move: Pursuit2');
 						alreadyAdded = true;
 					}
 					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
