@@ -1860,7 +1860,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		condition: {
 			duration: 1,
 			onBeforeSwitchOut(pokemon) {
-				this.debug('Pursuit start');
+				this.debug('Pursuit2 start');
 				let alreadyAdded = false;
 				for (const source of this.effectState.sources) {
 					if (!this.queue.cancelMove(source) || !source.hp) continue;
@@ -1868,7 +1868,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 						this.add('-activate', pokemon, 'move: Pursuit2');
 						alreadyAdded = true;
 					}
-					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
+					// Run through each action in queue to check if the Pursuit2 user is supposed to Mega Evolve this turn.
 					// If it is, then Mega Evolve before moving.
 					if (source.canMegaEvo || source.canUltraBurst) {
 						for (const [actionIndex, action] of this.queue.entries()) {
