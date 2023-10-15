@@ -26652,8 +26652,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (this.randomChance(70, 100)) {
 				self: {
 					status: 'brn',
-				}
-			}
+				},
+			},
 			
 		},
 		secondary: null
