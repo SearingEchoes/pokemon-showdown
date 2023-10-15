@@ -24061,7 +24061,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  chibiseiga: {
 		num: -472,
 		name: "Chibi Seiga",
-		types: ["Dream", "Reason"],
+		types: ["Umbral", "Faith"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 60, atk: 45, def: 40, spa: 85, spd: 55, spe: 65},
 		abilities: {0: "Levitate", 1: "Plus"},
@@ -24073,7 +24073,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  seiga: {
 		num: -473,
 		name: "Seiga",
-		types: ["Dream", "Reason"],
+		types: ["Umbral", "Faith"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 90, atk: 65, def: 70, spa: 115, spd: 80, spe: 95},
 		abilities: {0: "Levitate", 1: "Plus"},
