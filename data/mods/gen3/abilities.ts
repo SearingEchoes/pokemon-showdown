@@ -37,8 +37,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	flashfire: {
 		inherit: true,
 		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Fire') {
-				if (move.id === 'willowisp' && (target.hasType('Fire') || target.status || target.volatiles['substitute'])) {
+			if ((target !== source && move.type === 'Fire') || (target !== source && move.type === 'Pyro')) {
+				if (move.id === 'willowisp' && (target.hasType('Fire') || move.id === 'willowisp' && (target.hasType('Pyro') || target.status || target.volatiles['substitute'])) {
 					return;
 				}
 				if (target.status === 'frz') {
@@ -79,7 +79,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	lightningrod: {
 		onFoeRedirectTarget(target, source, source2, move) {
-			if (move.type !== 'Electric') return;
+			if ((move.type !== 'Electric') || (move.type !== 'Wind')) return;
 			if (this.validTarget(this.effectState.target, source, move.target)) {
 				return this.effectState.target;
 			}
@@ -196,7 +196,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	voltabsorb: {
 		inherit: true,
 		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Electric' && move.id !== 'thunderwave') {
+			if ((target !== source && move.type === 'Electric' && move.id !== 'thunderwave') || (target !== source && move.type === 'Wind' && move.id !== 'thunderwave2')){
 				if (!this.heal(target.baseMaxhp / 4)) {
 					this.add('-immune', target, '[from] ability: Volt Absorb');
 				}
