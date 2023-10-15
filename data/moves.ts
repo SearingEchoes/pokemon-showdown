@@ -26564,9 +26564,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 40,
 		basePowerCallback(pokemon, target, move) {
-			// You can't get here unless the pursuit succeeds
+			// You can't get here unless the pursuit2 succeeds
 			if (target.beingCalledBack || target.switchFlag) {
-				this.debug('Pursuit damage boost');
+				this.debug('Pursuit2 damage boost');
 				return move.basePower * 2;
 			}
 			return move.basePower;
@@ -26579,8 +26579,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		beforeTurnCallback(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('pursuit', pokemon);
-				const data = side.getSideConditionData('pursuit');
+				side.addSideCondition('pursuit2', pokemon);
+				const data = side.getSideConditionData('pursuit2');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -26591,12 +26591,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
 		},
 		onTryHit(target, pokemon) {
-			target.side.removeSideCondition('pursuit');
+			target.side.removeSideCondition('pursuit2');
 		},
 		condition: {
 			duration: 1,
 			onBeforeSwitchOut(pokemon) {
-				this.debug('Pursuit start');
+				this.debug('Pursuit2 start');
 				let alreadyAdded = false;
 				pokemon.removeVolatile('destinybond');
 				for (const source of this.effectState.sources) {
@@ -26605,7 +26605,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 						this.add('-activate', pokemon, 'move: Pursuit2');
 						alreadyAdded = true;
 					}
-					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
+					// Run through each action in queue to check if the Pursuit2 user is supposed to Mega Evolve this turn.
 					// If it is, then Mega Evolve before moving.
 					if (source.canMegaEvo || source.canUltraBurst) {
 						for (const [actionIndex, action] of this.queue.entries()) {
