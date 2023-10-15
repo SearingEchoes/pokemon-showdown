@@ -1722,6 +1722,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	starfberry: {
 		name: "Starf Berry",
 		desc: "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
+		gen3purple: {
+			desc: "Raises a random stat by 2 when at 1/2 max HP or less (not acc/eva). Single use.",
+		},
 	},
 	starsweet: {
 		name: "Star Sweet",
