@@ -1730,13 +1730,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 2,
 			onInvulnerability(target, source, move) {
-				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows', 'gust2', 'thunder2', 'soar'].includes(move.id)) {
 					return;
 				}
 				return false;
 			},
-			onSourceBasePower(basePower, target, source, move) {
-				if (move.id === 'gust' || move.id === 'twister') {
+			onSourceModifyDamage(damage, source, target, move) {
+				if (move.id === 'gust' || move.id === 'twister' || move.id === 'gust2') {
 					return this.chainModify(2);
 				}
 			},
@@ -5931,13 +5931,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 2,
 			onInvulnerability(target, source, move) {
-				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows', 'gust2', 'thunder2', 'soar'].includes(move.id)) {
 					return;
 				}
 				return false;
 			},
 			onSourceModifyDamage(damage, source, target, move) {
-				if (move.id === 'gust' || move.id === 'twister') {
+				if (move.id === 'gust' || move.id === 'twister' || move.id === 'gust2') {
 					return this.chainModify(2);
 				}
 			},
@@ -22376,13 +22376,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 2,
 			onInvulnerability(target, source, move) {
-				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows', 'gust2', 'thunder2', 'soar'].includes(move.id)) {
 					return;
 				}
 				return false;
 			},
-			onSourceBasePower(basePower, target, source, move) {
-				if (move.id === 'gust' || move.id === 'twister') {
+			onSourceModifyDamage(damage, source, target, move) {
+				if (move.id === 'gust' || move.id === 'twister' || move.id === 'gust2') {
 					return this.chainModify(2);
 				}
 			},
@@ -23982,13 +23982,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 2,
 			onInvulnerability(target, source, move) {
-				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows'].includes(move.id)) {
+				if (['gust', 'twister', 'skyuppercut', 'thunder', 'hurricane', 'smackdown', 'thousandarrows', 'gust2', 'thunder2', 'soar'].includes(move.id)) {
 					return;
 				}
 				return false;
 			},
 			onSourceModifyDamage(damage, source, target, move) {
-				if (move.id === 'gust' || move.id === 'twister') {
+				if (move.id === 'gust' || move.id === 'twister' || move.id === 'gust2') {
 					return this.chainModify(2);
 				}
 			},
