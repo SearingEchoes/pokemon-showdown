@@ -50,18 +50,7 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 		},
 	},
 	sandstorm:  {
-		name: 'Sandstorm',
-		effectType: 'Weather',
-		duration: 5,
-		durationCallback(source, effect) {
-			if (source?.hasItem('smoothrock')) {
-				return 8;
-			}
-			return 5;
-		},
-		// This should be applied directly to the stat before any of the other modifiers are chained
-		// So we give it increased priority.
-		onModifySpDPriority: 10,
+		inherit: true,
 		onModifySpD(spd, pokemon) {
 			if (pokemon.hasType('Beast') && this.field.isWeather('sandstorm')) {
 				return this.modify(spd, 1.5);
