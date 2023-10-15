@@ -26648,14 +26648,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
-		onAfterHit(target, source) {
-			if (this.randomChance(70, 100)) {
-				self: {
+		secondary: {
+			chance: 70,
+			self: {
 					status: 'brn',
-				}	
-			}
-		}
-		secondary: null
+				},
+			},
 		target: "normal",
 		type: "Umbral",
 		contestType: "Tough",
