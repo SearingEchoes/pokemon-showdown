@@ -67,4 +67,5 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 				return this.modify(spd, 1.5);
 			}
 		},
+	},
 };
