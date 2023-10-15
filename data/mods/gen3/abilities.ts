@@ -196,7 +196,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	voltabsorb: {
 		inherit: true,
 		onTryHit(target, source, move) {
-			if ((target !== source && move.type === 'Electric' && move.id !== 'thunderwave') || (target !== source && move.type === 'Wind' && move.id !== 'thunderwave2')){
+			if ((target !== source && move.type === 'Electric' && move.id !== 'thunderwave') || (target !== source && move.type === 'Wind' && move.id !== 'thunderwave2') || (target !== source && move.type === 'Wind' && move.id !== 'whirlwind2')) {
 				if (!this.heal(target.baseMaxhp / 4)) {
 					this.add('-immune', target, '[from] ability: Volt Absorb');
 				}
