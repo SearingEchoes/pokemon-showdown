@@ -38,7 +38,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		inherit: true,
 		onTryHit(target, source, move) {
 			if ((target !== source && move.type === 'Fire') || (target !== source && move.type === 'Pyro')) {
-				if (move.id === 'willowisp' && (target.hasType('Fire') || move.id === 'willowisp' && (target.hasType('Pyro') || target.status || target.volatiles['substitute'])) {
+				if (move.id === 'willowisp' && (target.hasType('Fire') || move.id === 'willowisp' && target.hasType('Pyro') || target.status || target.volatiles['substitute'])) {
 					return;
 				}
 				if (target.status === 'frz') {
