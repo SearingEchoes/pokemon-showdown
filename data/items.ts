@@ -7961,4 +7961,21 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -120,
 		gen: 3,
 	},
+	darkribbon: {
+		name: "Dark Ribbon",
+		spritenum: 789,
+		fling: {
+			basePower: 90,
+		},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'chibihina' || pokemon.baseSpecies.baseSpecies === 'hina') {
+				return this.chainModify(2);
+			}
+		},
+		itemUser: ["Chibi Hina", "Hina"],
+		num: -121,
+		gen: 3,
+		isNonstandard: "Past",
+	},
 };
