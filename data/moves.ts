@@ -26650,7 +26650,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		onAfterHit(target, source) {
 			if (this.randomChance(70, 100)) {
-				self.status : {
+				self: {
 					status: 'brn',
 				}	
 			}
