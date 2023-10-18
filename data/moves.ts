@@ -22805,8 +22805,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 0,
 		damageCallback(pokemon) {
-			if (!pokemon.volatiles['counter']) return 0;
-			return pokemon.volatiles['counter'].damage || 1;
+			if (!pokemon.volatiles['counter2']) return 0;
+			return pokemon.volatiles['counter2'].damage || 1;
 		},
 		category: "Physical",
 		name: "Counter 2",
@@ -22814,11 +22814,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: -5,
 		flags: {contact: 1, protect: 1, failmefirst: 1, noassist: 1, failcopycat: 1},
 		beforeTurnCallback(pokemon) {
-			pokemon.addVolatile('counter');
+			pokemon.addVolatile('counter2');
 		},
 		onTry(source) {
-			if (!source.volatiles['counter'] && !source.volatiles['counter2']) return false;
-			if ((source.volatiles['counter'].slot === null) && (source.volatiles['counter2'].slot === null)) return false;
+			if (!source.volatiles['counter2']) return false;
+			if (source.volatiles['counter2'].slot === null) return false;
 		},
 		condition: {
 			duration: 1,
@@ -22829,7 +22829,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			onRedirectTargetPriority: -1,
 			onRedirectTarget(target, source, source2, move) {
-				if ((move.id !== 'counter') && (move.id !== 'counter2')) return;
+				if (move.id !== 'counter2') return;
 				if (source !== this.effectState.target || !this.effectState.slot) return;
 				return this.getAtSlot(this.effectState.slot);
 			},
@@ -24735,7 +24735,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
-		name: "Hyper Beam 2",
+		name: "Ice Ball 2",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
@@ -26562,7 +26562,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	pursuit2: {
 		num: 1425,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 40,
 		basePowerCallback(pokemon, target, move) {
 			// You can't get here unless the pursuit2 succeeds
 			if (target.beingCalledBack || target.switchFlag) {
@@ -26648,12 +26648,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
-		secondary: {
-			chance: 70,
-			self: {
+		onAfterHit(target, source) {
+			if (this.randomChance(70, 100)) {
+				self.status : {
 					status: 'brn',
-				},
-			},
+				}	
+			}
+		}
+		secondary: null
 		target: "normal",
 		type: "Umbral",
 		contestType: "Tough",
