@@ -2513,4 +2513,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Yata Mirror",
 		desc: "If held by Rinnosuke, their Defense is doubled."
 	},
+	darkribbon: {
+		name: "Dark Ribbon",
+		desc: "If held by Chibi Hina or regular Hina, their Attack is doubled.",
+	},
 };
