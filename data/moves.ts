@@ -24735,7 +24735,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
-		name: "Ice Ball 2",
+		name: "Hyper Beam 2",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
@@ -26562,7 +26562,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	pursuit2: {
 		num: 1425,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		basePowerCallback(pokemon, target, move) {
 			// You can't get here unless the pursuit2 succeeds
 			if (target.beingCalledBack || target.switchFlag) {
@@ -26648,14 +26648,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
-		onAfterHit(target, source) {
-			if (this.randomChance(70, 100)) {
-				self: {
+		secondary: {
+			chance: 70,
+			self: {
 					status: 'brn',
 				},
 			},
-		},
-		secondary: null
 		target: "normal",
 		type: "Umbral",
 		contestType: "Tough",
