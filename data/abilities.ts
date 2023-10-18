@@ -2346,14 +2346,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	magnetpull: {
 		onFoeTrapPokemon(pokemon) {
-			if (pokemon.hasType('Steel') && pokemon.isAdjacent(this.effectState.target)) {
+			if ((pokemon.hasType('Steel') && pokemon.isAdjacent(this.effectState.target)) || (pokemon.hasType('Metal') && pokemon.isAdjacent(this.effectState.target))) {
 				pokemon.tryTrap(true);
 			}
 		},
 		onFoeMaybeTrapPokemon(pokemon, source) {
 			if (!source) source = this.effectState.target;
 			if (!source || !pokemon.isAdjacent(source)) return;
-			if (!pokemon.knownType || pokemon.hasType('Steel')) {
+			if (!pokemon.knownType || pokemon.hasType('Steel') || pokemon.hasType('Metal')) {
 				pokemon.maybeTrapped = true;
 			}
 		},
