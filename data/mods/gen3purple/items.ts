@@ -99,6 +99,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.eatItem();
 			}
 		},
+		desc: "Raises a random stat by 2 when at 1/2 max HP or less (not acc/eva). Single use.",
 	},
 	wikiberry: {
 		inherit: true,
