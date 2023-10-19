@@ -7976,6 +7976,5 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Chibi Hina", "Hina"],
 		num: -121,
 		gen: 3,
-		isNonstandard: "Past",
 	},
 };
