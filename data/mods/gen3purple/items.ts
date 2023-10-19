@@ -15,6 +15,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
+		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
 	},
 	figyberry: {
 		inherit: true,
@@ -32,6 +33,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
+		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
 	},
 	iapapaberry: {
 		inherit: true,
@@ -49,6 +51,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
+		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
 	},
 	magoberry: {
 		inherit: true,
@@ -66,6 +69,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
+		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
 	},
 	shellbell: {
 		inherit: true,
@@ -74,6 +78,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				this.heal(move.totalDamage / 5, pokemon);
 			}
 		},
+		desc: "After an attack, holder gains 20% of the damage in HP dealt to other Pokemon.",
 	},
 	sitrusberry: {
 		inherit: true,
@@ -117,5 +122,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
+		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 	},
 };
