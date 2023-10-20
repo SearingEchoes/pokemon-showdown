@@ -108894,6 +108894,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       attract2: ["3M"],
       thief2: ["3M"],
       snatch2: ["3M"],
+	  shadowdive: ["3M"],
       sandstorm2: ["3E"],
       feintattack2: ["3E"],
       wish2: ["3E"],
