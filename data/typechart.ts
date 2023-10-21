@@ -83,7 +83,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Heart: 1,
 			Illusion: 0,
 			
-			Unknown: 0,
+			Unknown: 1,
 		},
 		HPivs: {},
 	},
@@ -659,7 +659,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Heart: 1,
 			Illusion: 0,
 			
-			Unknown: 0,
+			Unknown: 1,
 		},
 		HPivs: {atk: 30, spe: 30},
 		HPdvs: {def: 12},
@@ -1100,7 +1100,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Heart: 1,
 			Illusion: 2,
 			
-			Unknown: 0,
+			Unknown: 1,
 		},
 	},
 	earth: {
@@ -1441,7 +1441,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Heart: 1,
 			Illusion: 0,
 			
-			Unknown: 0,
+			Unknown: 1,
 		},
 	},
 	heart: {
@@ -1528,6 +1528,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Unknown: 0,
 		},
 	},
+	//update resistances if dlruukoto is added
 	unknown: {
 		damageTaken: {
 			Bug: 0,
@@ -1557,7 +1558,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Metal: 0,
 			Umbral: 0,
 			Earth: 0,
-			Pyro: 3,
+			Pyro: 0,
 			Aqua: 0,
 			Wind: 0,
 			Nature: 0,
