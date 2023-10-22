@@ -19917,6 +19917,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
+		prevo: "Chibi Cirno",
 		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  chibirumia: {
@@ -20770,6 +20771,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
+		prevo: "Chibi Sakuya",
 		eggGroups: ["Human-Like"],
 	  },
 	  chibilunasa: {
@@ -21827,6 +21829,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
+		prevo: "Chibi Yumeko",
 		eggGroups: ["Human-Like"],
 	  },
 	  chibishinki: {
@@ -21924,6 +21927,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 150.0,
 		color: "Purple",
+		prevo: "Chibi Mugetsu",
 		eggGroups: ["Human-Like"],
 	  },
 	  chibigengetsu: {
@@ -22164,6 +22168,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
+		prevo: "Chibi Sakuya",
 		eggGroups: ["Human-Like"],
 	  },
 	  helpersakuya: {
@@ -22176,6 +22181,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
+		prevo: "Chibi Sakuya",
 		eggGroups: ["Human-Like"],
 	  },
 	  attackrumia: {
@@ -22716,6 +22722,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
+		prevo: "Chibi Cirno",
 		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  technicalcirno: {
@@ -22728,6 +22735,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
+		prevo: "Chibi Cirno",
 		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  defenseyuyuko: {
@@ -23664,6 +23672,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
+		prevo: "Chibi Cirno",
 		eggGroups: ["Human-Like", "Field"],
 	  },
 	  adventreisen: {
@@ -24061,6 +24070,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
+		prevo: "Chibi Yoshika",
 		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  chibiseiga: {
