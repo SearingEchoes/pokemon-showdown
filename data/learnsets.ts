@@ -103427,7 +103427,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       airslash2: ["3L1"],
       manaburst: ["3L1","3M","3S0"],
       aeroblast2: ["3L1","3E","3S0"],
-      blastburn2: ["3L1"],"3S0"],
+      blastburn2: ["3L1","3S0"],
       skyattack2: ["3L1"],
       razorwind2: ["3M"],
       sunnyday2: ["3M"],
