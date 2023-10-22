@@ -7977,4 +7977,37 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -121,
 		gen: 3,
 	},
+	iceball: {
+		name: "Ice Ball",
+		spritenum: 790,
+		fling: {
+			basePower: 30,
+			status: 'frz',
+		},
+
+		onModifySpAPriority: 1,
+		onModifySpA(spa, pokemon) {
+			if ((pokemon.baseSpecies.baseSpecies === 'Chibi Cirno') || (pokemon.baseSpecies.baseSpecies === 'Cirno')){
+				return this.chainModify(2);
+			}
+		},
+		itemUser: ["Chibi Cirno", "Cirno"],
+		num: -122,
+		gen: 3,
+	},
+	bigcloud: {
+		name: "Big Cloud",
+		spritenum: 791,
+		fling: {
+			basePower: 40,
+		},
+		onModifyCritRatio(critRatio, user) {
+			if (user.baseSpecies.name === 'Ichirin') {
+				return critRatio + 2;
+			}
+		},
+		itemUser: ["Ichirin"],
+		num: -123,
+		gen: 3,
+	},
 };
