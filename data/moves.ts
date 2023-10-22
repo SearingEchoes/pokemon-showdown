@@ -25581,7 +25581,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onHit(target, source, effect) {
 			const moves = this.dex.moves.all().filter(move => (
 				(![2, 4].includes(this.gen) || !source.moves.includes(move.id)) &&
-				!move.realMove && !move.isZ && move.num < 1553 && !move.isMax &&
+				!move.realMove && !move.isZ && move.num > 1552 && !move.isMax &&
 				(!move.isNonstandard || move.isNonstandard === 'Unobtainable') &&
 				!effect.noMetronome!.includes(move.name)
 			));
