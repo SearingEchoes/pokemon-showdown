@@ -97765,7 +97765,14 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       defensecurl2: ["3E"],
       skullbash2: ["3E"],
       sonicboom2: ["3M","3E"],
+	  volttackle2: ["3S0"],
+	  blastburn2: ["3S0"],
+	  frenzyplant2: ["3S0"],
+	  hydrocannon2: ["3S0"],
     },
+	eventData: [
+			{generation: 3, level: 5, gender: "M", nature: "Rash", ivs: {hp: 31, atk: 31, def: 9, spa: 31, spd: 9, spe: 31}, abilities: ["vitalspirit"], moves: ["volttackle2", "blastburn2", "frenzyplant2", "hydrocannon2"], pokeball: "pokeball"},
+	],
   },
   cirno: {
     learnset: {
@@ -100681,8 +100688,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
   },
   chibisakuya: {
     learnset: {
-      knifethrow: ["3L1"],
-      leer2: ["3L1"],
+      knifethrow: ["3L1", "3S0"],
+      leer2: ["3L1", "3S0"],
       doublekick2: ["3L1"],
       foresight2: ["3L1"],
       detect2: ["3L1","3M"],
@@ -100717,7 +100724,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       fakeout2: ["3E"],
       torment2: ["3E"],
       iceshard2: ["3E"],
+	  checkmaid: ["3S0"],
     },
+	eventData: [
+			{generation: 3, level: 5, gender: "F", nature: "Naive", ivs: {hp: 25, atk: 30, def: 20, spa: 30, spd: 10, spe: 31}, abilities: ["focus"], moves: ["knifethrow", "leer2", "checkmaid"], pokeball: "pokeball"},
+	],
   },
   sakuya: {
     learnset: {
@@ -103414,9 +103425,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       softboiled2: ["3L1"],
       quickattack2: ["3L1"],
       airslash2: ["3L1"],
-      manaburst: ["3L1","3M"],
-      aeroblast2: ["3L1","3E"],
-      blastburn2: ["3L1"],
+      manaburst: ["3L1","3M","3S0"]],
+      aeroblast2: ["3L1","3E","3S0"]],
+      blastburn2: ["3L1"],"3S0"],
       skyattack2: ["3L1"],
       razorwind2: ["3M"],
       sunnyday2: ["3M"],
@@ -103447,7 +103458,10 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       twister2: ["3E"],
       mimic2: ["3E"],
       beatup2: ["3E"],
-    },
+	  meteorstorm: ["3S0"],
+	eventData: [
+			{generation: 3, level: 5, gender: "M", nature: "Jolly", ivs: {hp: 31, atk: 31, def: 5, spa: 20, spd: 5, spe: 25}, abilities: ["immunity"], moves: ["meteorstorm", "manaburst", "aeroblast2", "blastburn2"], pokeball: "pokeball"},
+	],
   },
   namazu: {
     learnset: {
@@ -104656,8 +104670,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
   },
   chibiyumeko: {
     learnset: {
-      knifethrow: ["3L1"],
-      sharpen2: ["3L1"],
+      knifethrow: ["3L1", "3S0"],
+      sharpen2: ["3L1", "3S0"],
       knockoff2: ["3L1"],
       taunt2: ["3L1","3E"],
       bladeflash: ["3L1"],
@@ -104689,7 +104703,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       psychup2: ["3E"],
       torment2: ["3E"],
       swagger2: ["3E"],
+	  checkmaid: ["3S0"],
     },
+	eventData: [
+			{generation: 3, level: 5, gender: "M", nature: "Brave", ivs: {hp: 25, atk: 25, def: 25, spa: 25, spd: 25, spe: 25}, abilities: ["guardarmor"], moves: ["knifethrow", "sharpen2", "checkmaid"], pokeball: "pokeball"},
+	],
   },
   yumeko: {
     learnset: {
@@ -104874,8 +104892,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       bodyslam2: ["3L1"],
       selfdestruct2: ["3L1"],
       doubleedge2: ["3L1"],
-      pound2: ["3L1"],
-      irondefense2: ["3L1"],
+      pound2: ["3L1", "3S0"],
+      irondefense2: ["3L1", "3S0"],
       luckychant2: ["3L1"],
       wish2: ["3L1"],
       fakeout2: ["3L1"],
@@ -104902,7 +104920,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       swagger2: ["3E"],
       rockwrecker2: ["3E"],
       smellingsalts2: ["3E"],
+	  checkmaid: ["3S0"],
     },
+	eventData: [
+			{generation: 3, level: 5, nature: "Calm", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["sturdy"], moves: ["knifethrow", "leer2", "checkmaid"], pokeball: "pokeball"},
+	],
   },
   chibirika: {
     learnset: {
@@ -104976,8 +104998,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
   },
   chibimugetsu: {
     learnset: {
-      poisontears: ["3L1"],
-      helpinghand2: ["3L1"],
+      poisontears: ["3L1", "3S0"],
+      helpinghand2: ["3L1", "3S0"],
       swift2: ["3L1"],
       feintattack2: ["3L1"],
       blackripple: ["3L1"],
@@ -105005,7 +105027,12 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       substitute2: ["3E"],
       safeguard2: ["3E"],
       sculpture: ["3E"],
+	  checkmaid: ["3S0"],
+	  milkdrink2: ["3S0"],
     },
+	eventData: [
+			{generation: 3, level: 5, gender: "M", nature: "Calm", ivs: {hp: 31, atk: 0, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["minus"], moves: ["poisontears", "helpinghand2", "checkmaid", "milkdrink2"], pokeball: "pokeball"},
+	],
   },
   mugetsu: {
     learnset: {
@@ -113518,8 +113545,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
   chibiyoshika: {
     learnset: {
       tackle2: ["3L1"],
-      leer2: ["3L1"],
-      poisonsting2: ["3L1"],
+      leer2: ["3L1","3S0"],
+      poisonsting2: ["3L1","3S0"],
       lick2: ["3L1"],
       leechlife2: ["3L1"],
       furyswipes2: ["3L1"],
@@ -113549,7 +113576,12 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       skullbash2: ["3E"],
       coerce: ["3E"],
       ominouswind2: ["3E"],
+	  agility2: ["3S0"],
     },
+	eventData: [
+			{generation: 3, level: 5, gender: "M", nature: "Adamant", ivs: {hp: 31, atk: 25, def: 20, spa: 20, spd: 20, spe: 20}, abilities: ["gatekeeper"], moves: ["poisonsting2", "leer2", "agility2"], pokeball: "pokeball"},
+	],
+  },
   },
   yoshika: {
     learnset: {

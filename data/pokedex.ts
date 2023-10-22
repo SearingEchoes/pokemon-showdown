@@ -19904,6 +19904,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
+		evos: ["Cirno", "Speed Cirno", "Technical Cirno", "Advent Cirno"],
 		eggGroups: ["Human-Like", "Fairy"],
 	  },
 	  cirno: {
@@ -20756,6 +20757,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
+		evos: ["Sakuya", "Technical Sakuya", "Helper Sakuya"],
 		eggGroups: ["Human-Like"],
 	  },
 	  sakuya: {
@@ -21812,6 +21814,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
+		evos: ["Yumeko"],
 		eggGroups: ["Human-Like"],
 	  },
 	  yumeko: {
@@ -21908,6 +21911,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 50.0,
 		color: "Purple",
+		evos: ["Mugetsu"],
 		eggGroups: ["Human-Like"],
 	  },
 	  mugetsu: {
@@ -24044,6 +24048,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 10.0,
 		color: "Purple",
+		evos: ["Yoshika"],
 		eggGroups: ["Human-Like", "Amorphous"],
 	  },
 	  yoshika: {
