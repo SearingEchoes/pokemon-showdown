@@ -25581,7 +25581,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onHit(target, source, effect) {
 			const moves = this.dex.moves.all().filter(move => (
 				(![2, 4].includes(this.gen) || !source.moves.includes(move.id)) &&
-				!move.realMove && !move.isZ && !move.isMax &&
+				!move.realMove && !move.isZ && move.num < 1553 && !move.isMax &&
 				(!move.isNonstandard || move.isNonstandard === 'Unobtainable') &&
 				!effect.noMetronome!.includes(move.name)
 			));
@@ -25633,7 +25633,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return false;
 			}
 			if (move.isZ || move.isMax) return false;
-			const mimicIndex = source.moves.indexOf('mimic');
+			const mimicIndex = source.moves.indexOf('mimic2');
 			if (mimicIndex < 0) return false;
 
 			source.moveSlots[mimicIndex] = {
@@ -25646,7 +25646,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				used: false,
 				virtual: true,
 			};
-			this.add('-start', source, 'Mimic', move.name);
+			this.add('-start', source, 'Mimic2', move.name);
 		},
 		secondary: null,
 		target: "normal",
