@@ -103459,6 +103459,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       mimic2: ["3E"],
       beatup2: ["3E"],
 	  meteorstorm: ["3S0"],
+	  }
 	eventData: [
 			{generation: 3, level: 5, gender: "M", nature: "Jolly", ivs: {hp: 31, atk: 31, def: 5, spa: 20, spd: 5, spe: 25}, abilities: ["immunity"], moves: ["meteorstorm", "manaburst", "aeroblast2", "blastburn2"], pokeball: "pokeball"},
 	],
