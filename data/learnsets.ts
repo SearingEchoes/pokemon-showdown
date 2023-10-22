@@ -97771,7 +97771,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  hydrocannon2: ["3S0"],
     },
 	eventData: [
-			{generation: 3, level: 5, gender: "M", nature: "Rash", ivs: {hp: 31, atk: 31, def: 9, spa: 31, spd: 9, spe: 31}, abilities: ["vitalspirit"], moves: ["volttackle2", "blastburn2", "frenzyplant2", "hydrocannon2"], pokeball: "pokeball"},
+			{generation: 3, level: 9, gender: "M", nature: "Rash", ivs: {hp: 31, atk: 31, def: 9, spa: 31, spd: 9, spe: 31}, abilities: ["vitalspirit"], moves: ["volttackle2", "blastburn2", "frenzyplant2", "hydrocannon2"], pokeball: "pokeball"},
 	],
   },
   cirno: {
