@@ -2517,4 +2517,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Dark Ribbon",
 		desc: "If held by Chibi Hina or regular Hina, their Attack is doubled.",
 	},
+	iceball: {
+		name: "Ice Ball",
+		desc: "If held by Chibi Cirno or regular Cirno, their Sp. Atk is doubled.",
+	},
+	bigcloud: {
+		name: "Big Cloud",
+		desc: "If held by regular Ichirin, their critical hit ratio is raised by 2 stages.",
+	},
 };
