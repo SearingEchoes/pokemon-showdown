@@ -2523,6 +2523,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	bigcloud: {
 		name: "Big Cloud",
-		desc: "If held by regular Ichirin, their critical hit ratio is raised by 2 stages.",
+		desc: "If held by regular Ichirin, their critical hit ratio is raised by 2 stages. test",
 	},
 };
