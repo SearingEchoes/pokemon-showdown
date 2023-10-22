@@ -113583,7 +113583,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			{generation: 3, level: 5, gender: "M", nature: "Adamant", ivs: {hp: 31, atk: 25, def: 20, spa: 20, spd: 20, spe: 20}, abilities: ["gatekeeper"], moves: ["poisonsting2", "leer2", "agility2"], pokeball: "pokeball"},
 	],
   },
-  },
   yoshika: {
     learnset: {
       tackle2: ["3L1"],
