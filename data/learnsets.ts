@@ -105940,7 +105940,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  spikes2: ["3L1"],
 	  swordsdance2: ["3L1"],
 	  beastclaw: ["3L1"],
-	  feint2: ["3L1"],
+	  lusterpurge2: ["3L1"],
       furycutter2: ["3L1"],
       nightslash2: ["3L1"],
       psychocut2: ["3L1","3M"],
