@@ -29425,16 +29425,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		slotCondition: 'Wish 2',
 		condition: {
 			duration: 2,
-			onStart(pokemon, source) {
-				this.effectState.hp = source.maxhp / 2;
-			},
-			onResidualOrder: 4,
+			onResidualOrder: 7,
 			onEnd(target) {
-				if (target && !target.fainted) {
-					const damage = this.heal(this.effectState.hp, target, target);
-					if (damage) {
-						this.add('-heal', target, target.getHealth, '[from] move: Wish', '[wisher] ' + this.effectState.source.name);
-					}
+				if (!target.fainted) {
+					const source = this.effectState.source;
+					const damage = this.heal(target.baseMaxhp / 2, target, target);
+					if (damage) this.add('-heal', target, target.getHealth, '[from] move: Wish', '[wisher] ' + source.name);
 				}
 			},
 		},
