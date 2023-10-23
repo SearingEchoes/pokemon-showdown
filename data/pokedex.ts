@@ -21245,7 +21245,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  reisenii: {
 		num: -237,
 		name: "Reisen II",
-		types: ["Heart", "Fire"],
+		types: ["Heart", "Pyro"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 65, atk: 60, def: 80, spa: 130, spd: 65, spe: 85},
 		abilities: {0: "Magnet Pull", 1: "Pick Up"},
