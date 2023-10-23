@@ -9145,7 +9145,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	twister2: {
 		name: "Twister 2",
 		desc: "If this move is successful, the effects of Leech Seed and binding moves end for the user, and Spikes are removed from the user's side of the field.",
-		shortDesc: "Free user from hazards/bind/Leech Seed; +1 Spe.",
+		shortDesc: "Free user from hazards/bind/Leech Seed.",
 	},
 	vinewhip2: {
 		name: "Vine Whip 2",
