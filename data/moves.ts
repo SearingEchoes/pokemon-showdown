@@ -23147,7 +23147,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Disable 2",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
+		flags: {protect: 1, mirror: 1, bypasssub: 1},
 		volatileStatus: 'disable',
 		onTryHit(target) {
 			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
@@ -23155,42 +23155,38 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		condition: {
-			duration: 5,
-			noCopy: true, // doesn't get copied by Baton Pass
-			onStart(pokemon, source, effect) {
-				// The target hasn't taken its turn, or Cursed Body activated and the move was not used through Dancer or Instruct
-				if (
-					this.queue.willMove(pokemon) ||
-					(pokemon === this.activePokemon && this.activeMove && !this.activeMove.isExternal)
-				) {
-					this.effectState.duration--;
+			durationCallback() {
+				return this.random(4, 8);
+			},
+			noCopy: true,
+			onStart(pokemon) {
+				if (!this.queue.willMove(pokemon)) {
+					this.effectState.duration++;
 				}
 				if (!pokemon.lastMove) {
-					this.debug(`Pokemon hasn't moved yet`);
 					return false;
 				}
 				for (const moveSlot of pokemon.moveSlots) {
 					if (moveSlot.id === pokemon.lastMove.id) {
 						if (!moveSlot.pp) {
-							this.debug('Move out of PP');
 							return false;
+						} else {
+							this.add('-start', pokemon, 'Disable', moveSlot.move);
+							this.effectState.move = pokemon.lastMove.id;
+							return;
 						}
 					}
 				}
-				if (effect.effectType === 'Ability') {
-					this.add('-start', pokemon, 'Disable', pokemon.lastMove.name, '[from] ability: Cursed Body', '[of] ' + source);
-				} else {
-					this.add('-start', pokemon, 'Disable', pokemon.lastMove.name);
-				}
-				this.effectState.move = pokemon.lastMove.id;
+				return false;
 			},
-			onResidualOrder: 17,
+			onResidualOrder: 10,
+			onResidualSubOrder: 13,
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Disable');
+				this.add('-end', pokemon, 'move: Disable');
 			},
 			onBeforeMovePriority: 7,
 			onBeforeMove(attacker, defender, move) {
-				if (!move.isZ && move.id === this.effectState.move) {
+				if (move.id === this.effectState.move) {
 					this.add('cant', attacker, 'Disable', move);
 					return false;
 				}
@@ -28610,7 +28606,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, bypasssub: 1},
 		volatileStatus: 'taunt',
 		condition: {
-			duration: 3,
+			duration: 2,
 			onStart(target) {
 				if (target.activeTurns && !this.queue.willMove(target)) {
 					this.effectState.duration++;
