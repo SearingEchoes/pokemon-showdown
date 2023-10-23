@@ -21740,15 +21740,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	airslash2: {
 		num: 1202,
-		accuracy: 90,
-		basePower: 75,
+		accuracy: 100,
+		basePower: 80,
 		category: "Special",
 		name: "Air Slash 2",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1},
 		secondary: {
-			chance: 30,
+			chance: 20,
 			volatileStatus: 'flinch',
 		},
 		target: "any",
@@ -22397,7 +22397,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	bravebird2: {
 		num: 1233,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		name: "Brave Bird 2",
@@ -23281,7 +23281,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	doubleedge2: {
 		num: 1270,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		name: "Double-Edge 2",
@@ -23925,7 +23925,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	flareblitz2: {
 		num: 1303,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		name: "Flare Blitz 2",
@@ -24433,7 +24433,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	headsmash2: {
 		num: 1326,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		name: "Head Smash 2",
@@ -26020,7 +26020,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	needlearm2: {
 		num: 1397,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Needle Arm 2",
 		pp: 15,
@@ -27020,15 +27020,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	rockslide2: {
 		num: 1444,
-		accuracy: 90,
-		basePower: 75,
+		accuracy: 100,
+		basePower: 80,
 		category: "Physical",
 		name: "Rock Slide 2",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 20,
 			volatileStatus: 'flinch',
 		},
 		target: "allAdjacentFoes",
@@ -27096,7 +27096,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	rollingkick2: {
 		num: 1448,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		name: "Rolling Kick 2",
@@ -29187,7 +29187,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	volttackle2: {
 		num: 1537,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		name: "Volt Tackle 2",
