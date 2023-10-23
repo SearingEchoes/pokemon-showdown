@@ -2519,7 +2519,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	iceball: {
 		name: "Ice Ball",
-		desc: "If held by Chibi Cirno or regular Cirno, their Sp. Atk is doubled.",
+		desc: "If held by Chibi Cirno, their Sp. Atk is doubled.",
 	},
 	bigcloud: {
 		name: "Big Cloud",
