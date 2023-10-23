@@ -44,7 +44,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
 		},
 		gen6: {
-			desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
 		},
 	},
 	airballoon: {
@@ -548,7 +548,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
 		},
 		gen6: {
-			desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
+			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
 		},
 	},
 	firegem: {
@@ -814,7 +814,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
 		},
 		gen6: {
-			desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
+			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
 		},
 	},
 	icegem: {
@@ -1063,7 +1063,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
 		},
 		gen6: {
-			desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
 		},
 	},
 	magostberry: {
@@ -2337,7 +2337,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
 		},
 		gen6: {
-			desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
+			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 		},
 	},
 	wiseglasses: {
