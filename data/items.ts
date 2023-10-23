@@ -7987,11 +7987,11 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if ((pokemon.baseSpecies.baseSpecies === 'Chibi Cirno') || (pokemon.baseSpecies.baseSpecies === 'Cirno')){
+			if (user.baseSpecies.name === 'Chibi Cirno'){
 				return this.chainModify(2);
 			}
 		},
-		itemUser: ["Chibi Cirno", "Cirno"],
+		itemUser: ["Chibi Cirno"],
 		num: -122,
 		gen: 3,
 	},
