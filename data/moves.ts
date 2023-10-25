@@ -26692,26 +26692,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			}
 		},
-		onAfterSubDamage(damage, target, pokemon, move) {
+		onAfterSubDamage(damage, target, pokemon) {
 			this.add("inside aftersubdamage");
-			if (!move.hasSheerForce) {
+			//if (!move.hasSheerForce) {
 				this.add("Passed sheerforce check");
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
 					this.add("Inside Leech seed check");
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
+					//this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
 					this.add("Inside condition loop. Condition: " + condition);
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add("Inside condition check");
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
+						//this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
 					pokemon.removeVolatile('partiallytrapped');
 				}
-			}
+			//}
 		},
 		secondary: null,
 		target: "normal",
