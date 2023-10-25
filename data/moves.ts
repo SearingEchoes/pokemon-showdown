@@ -26690,12 +26690,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		onAfterSubDamage(damage, target, pokemon, move) {
 			if (!move.hasSheerForce) {
+				this.debug("Passed sheerforce check");
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.debug("Inside Leech seed check");
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
+					this.debug("Inside condition loop. Condition: " + condition);
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.debug("Inside condition check");
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
