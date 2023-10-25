@@ -28107,12 +28107,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			// this is a side condition
 			onSideStart(side) {
-				this.add('-sidestart', side, 'Spikes');
+				this.add('-sidestart', side, 'Spikes 2');
 				this.effectState.layers = 1;
 			},
 			onSideRestart(side) {
 				if (this.effectState.layers >= 3) return false;
-				this.add('-sidestart', side, 'Spikes');
+				this.add('-sidestart', side, 'Spikes 2');
 				this.effectState.layers++;
 			},
 			onEntryHazard(pokemon) {
