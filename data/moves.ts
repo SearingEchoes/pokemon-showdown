@@ -15020,7 +15020,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		target: "normal",
-		type: "Miasma",
+		type: "Normal",
 		contestType: "Cool",
 	},
 	razorleaf: {
@@ -26715,7 +26715,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Miasma",
 		contestType: "Cool",
 	},
 	razorleaf2: {
