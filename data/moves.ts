@@ -28320,11 +28320,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'substitute',
 		onTryHit(source) {
 			if (source.volatiles['substitute']) {
-				this.add('-fail', source, 'move: Substitute');
+				this.add('-fail', source, 'move: Substitute 2');
 				return this.NOT_FAIL;
 			}
 			if (source.hp <= source.maxhp / 4 || source.maxhp === 1) { // Shedinja clause
-				this.add('-fail', source, 'move: Substitute', '[weak]');
+				this.add('-fail', source, 'move: Substitute 2', '[weak]');
 				return this.NOT_FAIL;
 			}
 		},
