@@ -26693,7 +26693,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		onAfterSubDamage(damage, target, pokemon, move) {
-			this.add("inside subdamage function");
+			this.add("inside aftersubdamage");
 			if (!move.hasSheerForce) {
 				this.add("Passed sheerforce check");
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
