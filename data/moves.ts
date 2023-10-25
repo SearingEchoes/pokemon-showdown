@@ -15020,7 +15020,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		target: "normal",
-		type: "Miasma",
+		type: "Normal",
 		contestType: "Cool",
 	},
 	razorleaf: {
@@ -26690,12 +26690,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		onAfterSubDamage(damage, target, pokemon, move) {
 			if (!move.hasSheerForce) {
+				console.log("Passed sheerforce check");
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					console.log("Inside Leech seed check");
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
+					console.log("Inside condition loop. Condition: " + condition);
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						console.log("Inside condition check");
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
@@ -26706,7 +26710,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Miasma",
 		contestType: "Cool",
 	},
 	razorleaf2: {
