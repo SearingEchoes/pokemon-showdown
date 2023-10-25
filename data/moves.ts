@@ -3272,14 +3272,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {bypasssub: 1},
 		volatileStatus: 'curse',
 		onModifyMove(move, source, target) {
-			if ((!source.hasType('Ghost')) || (!source.hasType('Nether'))) {
+			if ((!source.hasType('Ghost')) && (!source.hasType('Nether'))) {
 				move.target = move.nonGhostTarget as MoveTarget;
 			} else if (source.isAlly(target)) {
 				move.target = 'randomNormal';
 			}
 		},
 		onTryHit(target, source, move) {
-			if ((!source.hasType('Ghost')) || (!source.hasType('Nether'))) {
+			if ((!source.hasType('Ghost')) && (!source.hasType('Nether'))) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {spe: -1, atk: 1, def: 1}};
@@ -21744,7 +21744,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 80,
 		category: "Special",
 		name: "Air Slash 2",
-		pp: 10,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1},
 		secondary: {
@@ -22620,7 +22620,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
 		volatileStatus: 'taunt',
 		condition: {
-			duration: 3,
+			duration: 2,
 			onStart(target) {
 				if (target.activeTurns && !this.queue.willMove(target)) {
 					this.effectState.duration++;
@@ -22928,14 +22928,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {bypasssub: 1},
 		volatileStatus: 'curse',
 		onModifyMove(move, source, target) {
-			if (!source.hasType('Ghost') || !source.hasType('Nether')) {
+			if (!source.hasType('Ghost') && !source.hasType('Nether')) {
 				move.target = move.nonGhostTarget as MoveTarget;
 			} else if (source.isAlly(target)) {
 				move.target = 'randomNormal';
 			}
 		},
 		onTryHit(target, source, move) {
-			if (!source.hasType('Ghost') || !source.hasType('Nether')) {
+			if (!source.hasType('Ghost') && !source.hasType('Nether')) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {spe: -1, atk: 1, def: 1}};
@@ -24445,7 +24445,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	headbutt2: {
 		num: 1327,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Physical",
 		name: "Headbutt 2",
 		pp: 15,

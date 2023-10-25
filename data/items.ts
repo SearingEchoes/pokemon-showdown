@@ -7935,8 +7935,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 90,
 		},
-		onModifySpAPriority: 1,
-		onModifySpA(atk, pokemon) {
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, pokemon) {
 			if (pokemon.baseSpecies.name === 'Rinnosuke') {
 				return this.chainModify(2);
 			}
@@ -7951,8 +7951,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 90,
 		},
-		onModifySpAPriority: 1,
-		onModifySpA(def, pokemon) {
+		onModifyDefPriority: 1,
+		onModifyDef(def, pokemon) {
 			if (pokemon.baseSpecies.name === 'Rinnosuke') {
 				return this.chainModify(2);
 			}
@@ -7969,7 +7969,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'chibihina' || pokemon.baseSpecies.baseSpecies === 'hina') {
+			if (pokemon.baseSpecies.baseSpecies === 'Chibi Hina' || pokemon.baseSpecies.baseSpecies === 'Hina') {
 				return this.chainModify(2);
 			}
 		},
@@ -7987,7 +7987,7 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (user.baseSpecies.name === 'Chibi Cirno'){
+			if (pokemon.baseSpecies.baseSpecies === 'Chibi Cirno'){
 				return this.chainModify(2);
 			}
 		},
@@ -8002,7 +8002,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 40,
 		},
 		onModifyCritRatio(critRatio, user) {
-			if (user.baseSpecies.name === 'Ichirin') {
+			if (pokemon.baseSpecies.baseSpecies === 'Ichirin') {
 				return critRatio + 2;
 			}
 		},
