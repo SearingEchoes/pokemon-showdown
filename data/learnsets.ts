@@ -103383,9 +103383,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		milkdrink2: ["3L1"],
 		triplekick2: ["3L1"],
 		checkmaid: ["3L1"],
-		
-		spikes: ["3L1"],
-		rapidspin: ["3L1"],
     },
   },
   genji: {

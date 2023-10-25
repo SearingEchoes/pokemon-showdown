@@ -18841,9 +18841,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (move.drain) {
 					this.heal(Math.ceil(damage * move.drain[0] / move.drain[1]), source, target, 'drain');
 				}
-				this.add("before singleevent");
 				this.singleEvent('AfterSubDamage', move, null, target, source, move, damage);
-				this.add("after singleevent");
 				this.runEvent('AfterSubDamage', target, source, move, damage);
 				return this.HIT_SUBSTITUTE;
 			},
@@ -26676,16 +26674,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
-				this.add("Passed sheerforce check");
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add("Inside Leech seed check");
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
-					this.add("Inside condition loop. Condition: " + condition);
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add("Inside condition check");
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
@@ -26695,18 +26689,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		onAfterSubDamage(damage, target, pokemon, move) {
-			this.add("inside aftersubdamage");
 			if (!move.hasSheerForce) {
-				this.add("Passed sheerforce check");
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add("Inside Leech seed check");
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
-					this.add("Inside condition loop. Condition: " + condition);
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add("Inside condition check");
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
