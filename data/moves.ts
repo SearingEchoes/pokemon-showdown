@@ -22928,14 +22928,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {bypasssub: 1},
 		volatileStatus: 'curse',
 		onModifyMove(move, source, target) {
-			if (!source.hasType('Ghost') && !source.hasType('Nether')) {
+			if (!source.hasType('Nether')) {
 				move.target = move.nonGhostTarget as MoveTarget;
 			} else if (source.isAlly(target)) {
 				move.target = 'randomNormal';
 			}
 		},
 		onTryHit(target, source, move) {
-			if (!source.hasType('Ghost') && !source.hasType('Nether')) {
+			if (!source.hasType('Nether')) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {spe: -1, atk: 1, def: 1}};
@@ -29440,7 +29440,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	zenheadbutt2: {
 		num: 1552,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		name: "Zen Headbutt 2",
