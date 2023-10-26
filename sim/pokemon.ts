@@ -942,7 +942,7 @@ export class Pokemon {
 			let target = moveSlot.target;
 			if ((moveSlot.id === 'curse') || (moveSlot.id === 'curse2')){
 				if (!this.hasType('Ghost') && !this.hasType('Nether')) {
-					target = this.battle.dex.moves.get('curse').nonGhostTarget || moveSlot.target;
+					target = this.battle.dex.moves.get('curse2').nonGhostTarget || moveSlot.target;
 				}
 			// Heal Block only prevents Pollen Puff from targeting an ally when the user has Heal Block
 			} else if (moveSlot.id === 'pollenpuff' && this.volatiles['healblock']) {
