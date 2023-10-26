@@ -940,8 +940,8 @@ export class Pokemon {
 				moveName += ' ' + basePowerCallback(this);
 			}
 			let target = moveSlot.target;
-			if (moveSlot.id === 'curse') {
-				if (!this.hasType('Ghost')) {
+			if ((moveSlot.id === 'curse') || (moveSlot.id === 'curse2')){
+				if (!this.hasType('Ghost') && !this.hasType('Nether')) {
 					target = this.battle.dex.moves.get('curse').nonGhostTarget || moveSlot.target;
 				}
 			// Heal Block only prevents Pollen Puff from targeting an ally when the user has Heal Block
