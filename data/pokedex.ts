@@ -21897,7 +21897,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Rika",
 		types: ["Metal", "Umbral"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 85, atk: 110, def: 110, spa: 80, spd: 70, spe: 75},
+		baseStats: {hp: 85, atk: 80, def: 110, spa: 110, spd: 70, spe: 75},
 		abilities: {0: "Sturdy", 1: "Pressure"},
 		heightm: 9001,
 		weightkg: 150.0,
