@@ -3272,14 +3272,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {bypasssub: 1},
 		volatileStatus: 'curse',
 		onModifyMove(move, source, target) {
-			if ((!source.hasType('Ghost')) || (!source.hasType('Nether'))) {
+			if ((!source.hasType('Ghost')) && (!source.hasType('Nether'))) {
 				move.target = move.nonGhostTarget as MoveTarget;
 			} else if (source.isAlly(target)) {
 				move.target = 'randomNormal';
 			}
 		},
 		onTryHit(target, source, move) {
-			if ((!source.hasType('Ghost')) || (!source.hasType('Nether'))) {
+			if ((!source.hasType('Ghost')) && (!source.hasType('Nether'))) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {spe: -1, atk: 1, def: 1}};
@@ -21744,7 +21744,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 80,
 		category: "Special",
 		name: "Air Slash 2",
-		pp: 10,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1},
 		secondary: {
@@ -22620,7 +22620,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
 		volatileStatus: 'taunt',
 		condition: {
-			duration: 3,
+			duration: 2,
 			onStart(target) {
 				if (target.activeTurns && !this.queue.willMove(target)) {
 					this.effectState.duration++;
@@ -22928,14 +22928,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {bypasssub: 1},
 		volatileStatus: 'curse',
 		onModifyMove(move, source, target) {
-			if (!source.hasType('Ghost') || !source.hasType('Nether')) {
+			if (!source.hasType('Nether')) {
 				move.target = move.nonGhostTarget as MoveTarget;
 			} else if (source.isAlly(target)) {
 				move.target = 'randomNormal';
 			}
 		},
 		onTryHit(target, source, move) {
-			if (!source.hasType('Ghost') || !source.hasType('Nether')) {
+			if (!source.hasType('Nether')) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {spe: -1, atk: 1, def: 1}};
@@ -24445,7 +24445,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	headbutt2: {
 		num: 1327,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Physical",
 		name: "Headbutt 2",
 		pp: 15,
@@ -26675,12 +26675,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
@@ -26691,12 +26691,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAfterSubDamage(damage, target, pokemon, move) {
 			if (!move.hasSheerForce) {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
@@ -26704,6 +26704,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				}
 			}
 		},
+		secondary: null,
 		target: "normal",
 		type: "Miasma",
 		contestType: "Cool",
@@ -28104,23 +28105,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {reflectable: 1, nonsky: 1, mustpressure: 1},
 		sideCondition: 'spikes',
-		condition: {
-			// this is a side condition
-			onSideStart(side) {
-				this.add('-sidestart', side, 'Spikes');
-				this.effectState.layers = 1;
-			},
-			onSideRestart(side) {
-				if (this.effectState.layers >= 3) return false;
-				this.add('-sidestart', side, 'Spikes');
-				this.effectState.layers++;
-			},
-			onEntryHazard(pokemon) {
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
-				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
-				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
-			},
-		},
+
 		secondary: null,
 		target: "foeSide",
 		type: "Earth",
@@ -28320,69 +28305,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'substitute',
 		onTryHit(source) {
 			if (source.volatiles['substitute']) {
-				this.add('-fail', source, 'move: Substitute');
+				this.add('-fail', source, 'move: Substitute 2');
 				return this.NOT_FAIL;
 			}
 			if (source.hp <= source.maxhp / 4 || source.maxhp === 1) { // Shedinja clause
-				this.add('-fail', source, 'move: Substitute', '[weak]');
+				this.add('-fail', source, 'move: Substitute 2', '[weak]');
 				return this.NOT_FAIL;
 			}
 		},
 		onHit(target) {
 			this.directDamage(target.maxhp / 4);
-		},
-		condition: {
-			onStart(target, source, effect) {
-				if (effect?.id === 'shedtail') {
-					this.add('-start', target, 'Substitute', '[from] move: Shed Tail');
-				} else {
-					this.add('-start', target, 'Substitute');
-				}
-				this.effectState.hp = Math.floor(target.maxhp / 4);
-				if (target.volatiles['partiallytrapped']) {
-					this.add('-end', target, target.volatiles['partiallytrapped'].sourceEffect, '[partiallytrapped]', '[silent]');
-					delete target.volatiles['partiallytrapped'];
-				}
-			},
-			onTryPrimaryHitPriority: -1,
-			onTryPrimaryHit(target, source, move) {
-				if (target === source || move.flags['bypasssub'] || move.infiltrates) {
-					return;
-				}
-				let damage = this.actions.getDamage(source, target, move);
-				if (!damage && damage !== 0) {
-					this.add('-fail', source);
-					this.attrLastMove('[still]');
-					return null;
-				}
-				damage = this.runEvent('SubDamage', target, source, move, damage);
-				if (!damage) {
-					return damage;
-				}
-				if (damage > target.volatiles['substitute'].hp) {
-					damage = target.volatiles['substitute'].hp as number;
-				}
-				target.volatiles['substitute'].hp -= damage;
-				source.lastDamage = damage;
-				if (target.volatiles['substitute'].hp <= 0) {
-					if (move.ohko) this.add('-ohko');
-					target.removeVolatile('substitute');
-				} else {
-					this.add('-activate', target, 'move: Substitute', '[damage]');
-				}
-				if (move.recoil || move.id === 'chloroblast') {
-					this.damage(this.actions.calcRecoilDamage(damage, move, source), source, target, 'recoil');
-				}
-				if (move.drain) {
-					this.heal(Math.ceil(damage * move.drain[0] / move.drain[1]), source, target, 'drain');
-				}
-				this.singleEvent('AfterSubDamage', move, null, target, source, move, damage);
-				this.runEvent('AfterSubDamage', target, source, move, damage);
-				return this.HIT_SUBSTITUTE;
-			},
-			onEnd(target) {
-				this.add('-end', target, 'Substitute');
-			},
 		},
 		secondary: null,
 		target: "self",
@@ -29108,12 +29040,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Twister 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Twister 2', '[of] ' + pokemon);
 					}
 				}
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
@@ -29124,12 +29056,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onAfterSubDamage(damage, target, pokemon, move) {
 			if (!move.hasSheerForce) {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Twister 2', '[of] ' + pokemon);
 				}
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Twister 2', '[of] ' + pokemon);
 					}
 				}
 				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
@@ -29508,7 +29440,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	zenheadbutt2: {
 		num: 1552,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		name: "Zen Headbutt 2",
