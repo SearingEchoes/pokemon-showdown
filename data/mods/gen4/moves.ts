@@ -1884,4 +1884,25 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			},
 		},
 	},
+	
+	highjumpkick2: {
+		inherit: true,
+		onMoveFail(target, source, move) {
+			if (target.runImmunity('Dream')) {
+				const damage = this.actions.getDamage(source, target, move, true);
+				if (typeof damage !== 'number') throw new Error("HJK recoil failed");
+				this.damage(this.clampIntRange(damage / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
+			}
+		},
+	},
+	jumpkick2: {
+		inherit: true,
+		onMoveFail(target, source, move) {
+			if (target.runImmunity('Dream')) {
+				const damage = this.actions.getDamage(source, target, move, true);
+				if (typeof damage !== 'number') throw new Error("Jump Kick didn't recoil");
+				this.damage(this.clampIntRange(damage / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
+			}
+		},
+	},
 };
