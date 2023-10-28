@@ -272,8 +272,8 @@ export class Roomlog {
 	}
 	truncate() {
 		if (this.noAutoTruncate) return;
-		if (this.log.length > 100) {
-			const truncationLength = this.log.length - 100;
+		if (this.log.length > 300) {
+			const truncationLength = this.log.length - 300;
 			this.log.splice(0, truncationLength);
 			this.numTruncatedLines += truncationLength;
 		}
