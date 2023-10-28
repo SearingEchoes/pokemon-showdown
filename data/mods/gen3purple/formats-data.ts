@@ -896,7 +896,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	speedaya: {
-		tier: "UUBL",
+		tier: "UUbers",
 		doublesTier: "DOU",
 	  },
 	technicalaya: {
@@ -1464,7 +1464,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sendai: {
-		tier: "UUBL",
+		tier: "UUbers",
 		doublesTier: "DOU",
 	  },
 	chibikyouko: {
@@ -1528,7 +1528,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	jksanae: {
-		tier: "UUBL",
+		tier: "UUbers",
 		doublesTier: "DOU",
 	  },
 	magicstones: {
@@ -1544,7 +1544,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	scarletwitch: {
-		tier: "UUBL",
+		tier: "UUbers",
 		doublesTier: "DOU",
 	  },
 	swordmaster: {
@@ -1568,11 +1568,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	basiney: {
-		tier: "UUBL",
+		tier: "UUbers",
 		doublesTier: "DOU",
 	  },
 	blissea: {
-		tier: "UUBL",
+		tier: "UUbers",
 		doublesTier: "DOU",
 	  },
 	  
