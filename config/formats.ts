@@ -23,13 +23,43 @@ export const Formats: FormatList = [
 		section: "Touhoumon 1.8",
 	},
 	{
-		name: "[Gen 3] Purple",
+		name: "[Gen 3] Purple Ubers",
 		threads: [
 
 		],
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Defense Satori', 'Sendai', 'Speed Aya', 'X Utsuho', 'X Suwako', 'X Tenshi', "Scarlet Witch", "JK Sanae"],
+		banlist: ['King\'s Rock', 'Sand Veil'],
+	},
+	{
+		name: "[Gen 3] Purple UUBL",
+		threads: [
+
+		],
+
+		mod: 'gen3purple',
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		banlist: ['UUBL', 'King\'s Rock', 'Sand Veil'],
+	},
+	{
+		name: "[Gen 3] Purple OU",
+		threads: [
+
+		],
+
+		mod: 'gen3purple',
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		banlist: ['Uber', 'UUBL', 'King\'s Rock', 'Sand Veil'],
+	},
+	{
+		name: "[Gen 3] Purple UU",
+		threads: [
+
+		],
+
+		mod: 'gen3purple',
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		banlist: ['Uber', 'UUBL', 'OU', 'King\'s Rock', 'Sand Veil'],
 	},
 ];
