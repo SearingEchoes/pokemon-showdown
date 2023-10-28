@@ -1420,7 +1420,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	defensesatori: {
-		tier: "Illegal",
+		tier: "Uber",
 		doublesTier: "Illegal",
 	  },
 	adventletty: {
