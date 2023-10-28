@@ -33,14 +33,14 @@ export const Formats: FormatList = [
 		banlist: ['King\'s Rock', 'Sand Veil'],
 	},
 	{
-		name: "[Gen 3] Purple UUBL",
+		name: "[Gen 3] Purple UUbers",
 		threads: [
 
 		],
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['UUBL', 'King\'s Rock', 'Sand Veil'],
+		banlist: ['UUbers', 'King\'s Rock', 'Sand Veil'],
 	},
 	{
 		name: "[Gen 3] Purple OU",
@@ -50,7 +50,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'UUBL', 'King\'s Rock', 'Sand Veil'],
+		banlist: ['Uber', 'UUbers', 'King\'s Rock', 'Sand Veil'],
 	},
 	{
 		name: "[Gen 3] Purple UU",
@@ -60,6 +60,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'UUBL', 'OU', 'King\'s Rock', 'Sand Veil'],
+		banlist: ['Uber', 'UUbers', 'OU', 'King\'s Rock', 'Sand Veil'],
 	},
 ];
