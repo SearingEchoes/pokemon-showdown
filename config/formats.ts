@@ -60,6 +60,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'OU', 'King\'s Rock', 'Sand Veil' 'Basiney', 'Blissea', 'JK Sanae', 'Scarlet Witch', 'Sendai', 'Speed Aya'],
+		banlist: ['Uber', 'OU', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'JK Sanae', 'Scarlet Witch', 'Sendai', 'Speed Aya'],
 	},
 ];
