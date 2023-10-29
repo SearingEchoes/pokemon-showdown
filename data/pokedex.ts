@@ -24216,7 +24216,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Undiscovered"],
+		eggGroups: ["Human-Like"],
 	  },
 	  magicstones: {
 		num: -484,
