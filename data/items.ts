@@ -7965,7 +7965,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Dark Ribbon",
 		spritenum: 789,
 		fling: {
-			basePower: 90,
+			basePower: 20,
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
@@ -8008,6 +8008,28 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		itemUser: ["Ichirin"],
 		num: -123,
+		gen: 3,
+	},
+	doublesoul: {
+		name: "Double Soul",
+		spritenum: 792,
+		fling: {
+			basePower: 30,
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(spa, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priest' || pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priestess') {
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpDPriority: 1,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priest' || pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priestess') {
+				return this.chainModify(1.5);
+			}
+		},
+		itemUser: ["Shingyoku-Priest", "Shingyoku-Priestess"],
+		num: -124,
 		gen: 3,
 	},
 };
