@@ -1,102 +1,102 @@
 export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	chibisanae: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	sanae: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibialice: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	alice: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibireisen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	reisen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibililywhite: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	lilywhite: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibililyblack: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	lilyblack: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimomiji: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	momiji: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibishizuha: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	shizuha: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimedicine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	medicine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikoakuma: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	koakuma: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibinazrin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	nazrin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibitokiko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	tokiko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiremilia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	remilia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibicirno: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	cirno: {
@@ -104,47 +104,47 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibirumia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	rumia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	shanghai: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiflandre: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	flandre: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	hourai: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyoumu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	youmu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyukari: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yukari: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibisuika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	suika: {
@@ -152,75 +152,75 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibimystia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mystia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiminoriko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	minoriko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikeine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	keine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackkeine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiiku: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	iku: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikoishi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	koishi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyamame: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yamame: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibichen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyorihime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yorihime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikaguya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kaguya: {
@@ -228,207 +228,207 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibimokou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mokou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibihatate: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	hatate: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiletty: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	letty: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibipatchouli: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	patchouli: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyuugi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yuugi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibitenshi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	tenshi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiparsee: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	parsee: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimurasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	murasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikisume: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kisume: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikogasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kogasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibisatori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	satori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibieirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	eirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiran: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	ran: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibidaiyousei: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	daiyousei: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibinitori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	nitori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibihina: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	hina: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikomachi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	komachi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyuyuko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yuyuko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimeiling: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	meiling: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibisakuya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	sakuya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibilunasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	lunasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimerlin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	merlin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibilyrica: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	lyrica: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibilayla: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	layla: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikanako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kanako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	rin: {
@@ -436,55 +436,55 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibiutsuho: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	utsuho: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiichirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	ichirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibisunnymilk: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	sunnymilk: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibilunachild: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	lunachild: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibistarsapphire: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	starsapphire: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyuuka: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yuuka: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiaya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	aya: {
@@ -492,43 +492,43 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibieiki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	eiki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibishou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	shou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiwriggle: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	wriggle: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibitewi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	tewi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kedama: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibinue: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	nue: {
@@ -536,63 +536,63 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibisuwako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	suwako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	reisenii: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimarisa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	marisa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibireimu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	reimu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibibyakuren: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	byakuren: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	konngara: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kikuri: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yuugenmagan: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibitoyohime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	toyohime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	goliathdoll: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	sariel: {
@@ -600,35 +600,35 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	akyuu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	genji: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	tori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	namazu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibielly: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	elly: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiorange: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	orange: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	youki: {
@@ -636,47 +636,47 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibichiyuri: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chiyuri: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyumemi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yumemi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiellen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	ellen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikazami: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kazami: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimeira: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	meira: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibisara: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	sara: {
@@ -684,55 +684,55 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibilouise: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	louise: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimargatroid: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	margatroid: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikana: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kana: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibihakurei: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	hakurei: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikirisame: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kirisame: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikotohime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kotohime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyumeko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yumeko: {
@@ -740,11 +740,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibishinki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	shinki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mimichan: {
@@ -752,151 +752,151 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	ruukoto: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibirika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	rika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimugetsu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mugetsu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibigengetsu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	gengetsu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikurumi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kurumi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibirikako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	rikako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyuki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yuki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimai: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mai: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensesunnymilk: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicallunachild: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperstarsapphire: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacknitori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalnitori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackmokou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensemokou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensereisen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalreisen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalsakuya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helpersakuya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackrumia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedrumia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helpermystia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackmystia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackchen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalchen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseyoumu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedyoumu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackyuuka: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalyuuka: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedaya: {
-		tier: "OU",
+		tier: "UUber",
 		doublesTier: "DOU",
 	  },
 	technicalaya: {
@@ -904,55 +904,55 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	attacktenshi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensetenshi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseparsee: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalparsee: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackkoishi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedkoishi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensebyakuren: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalbyakuren: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseichirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalichirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackkanako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensekanako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackkaguya: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensekaguya: {
@@ -960,35 +960,35 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	shingyokuorb: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	shingyokupriest: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	shingyokupriestess: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackutsuho: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedutsuho: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensemomiji: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	elis: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mima: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedkomachi: {
@@ -996,11 +996,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	attackkomachi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackeirin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helpereirin: {
@@ -1008,135 +1008,135 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	defenseyukari: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalyukari: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackalice: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalalice: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackreimu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensereimu: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedcirno: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalcirno: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseyuyuko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackyuyuko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperlunasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helpermerlin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperlyrica: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackran: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperran: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackmedicine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalmedicine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackhina: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensehina: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedshizuha: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedrin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackrin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	zombiefairy: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helpershizuha: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacksuwako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackshou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalshou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacktokiko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensesuwako: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedyamame: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedkogasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalkogasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseremilia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedflandre: {
@@ -1144,99 +1144,99 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	defensewriggle: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensemeiling: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	tensoku: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacksunnymilk: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacklunachild: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedwriggle: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperkoakuma: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedmeiling: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibielis: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibisariel: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventmystia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalhatate: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensehatate: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	akisisters: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenselayla: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensekeine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackremilia: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensetewi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacktewi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseeiki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseminoriko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalsuika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacksanae: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalsanae: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackflandre: {
@@ -1244,111 +1244,111 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	attackdaiyousei: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackeiki: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicaltoyohime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikonngara: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyuugenmagan: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacksuika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperlilywhite: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedlilyblack: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacknue: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalnue: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensepatchouli: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseletty: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperletty: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedyorihime: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibishingyoku: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacklilyblack: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseyuugi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalnazrin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helpernazrin: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalkisume: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackyuugi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	helperkeine: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defenseiku: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicaliku: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackminoriko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	rinnosuke: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventcirno: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventreisen: {
@@ -1356,19 +1356,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	speedsariel: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attacklilywhite: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimima: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibikikuri: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventmeiling: {
@@ -1380,19 +1380,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	speedmarisa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackmarisa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensemurasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackmurasa: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	attackstarsapphire: {
@@ -1400,7 +1400,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	attackkazami: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	speedmedicine: {
@@ -1408,27 +1408,27 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	defensedaiyousei: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalyamame: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	technicalsatori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	defensesatori: {
-		tier: "OU",
-		doublesTier: "DOU",
+		tier: "Uber",
+		doublesTier: "Illegal",
 	  },
 	adventletty: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventtewi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventmarisa: {
@@ -1436,7 +1436,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	adventalice: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventmokou: {
@@ -1444,15 +1444,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	adventyukari: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventran: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	adventchen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	darkalice: {
@@ -1464,27 +1464,27 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sendai: {
-		tier: "OU",
+		tier: "UUber",
 		doublesTier: "DOU",
 	  },
 	chibikyouko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kyouko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiyoshika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	yoshika: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibiseiga: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	seiga: {
@@ -1492,31 +1492,31 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibitojiko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	tojiko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibifuto: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	futo: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimiko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	miko: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	chibimamizou: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	mamizou: {
@@ -1524,11 +1524,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	"2hu": {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	jksanae: {
-		tier: "OU",
+		tier: "UUber",
 		doublesTier: "DOU",
 	  },
 	magicstones: {
@@ -1536,15 +1536,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chibikasen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	kasen: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	scarletwitch: {
-		tier: "OU",
+		tier: "UUber",
 		doublesTier: "DOU",
 	  },
 	swordmaster: {
@@ -1552,27 +1552,27 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	tinyghost: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	xsuwako: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	  },
 	xutsuho: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	  },
 	xtenshi: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	  },
 	basiney: {
-		tier: "OU",
+		tier: "UUber",
 		doublesTier: "DOU",
 	  },
 	blissea: {
-		tier: "OU",
+		tier: "UUber",
 		doublesTier: "DOU",
 	  },
 	  
