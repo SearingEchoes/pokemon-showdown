@@ -2525,4 +2525,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Big Cloud",
 		desc: "If held by regular Ichirin, their critical hit ratio is raised by 2 stages.",
 	},
+	doublesoul: {
+		name: "Double Soul",
+		desc: "If held by Priest/Priestess Shingyoku, their Sp. Atk & Sp. Def rise by 50%.",
+	},
 };

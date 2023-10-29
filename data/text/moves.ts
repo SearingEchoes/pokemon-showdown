@@ -7484,8 +7484,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	airslash2: {
 		name: "Air Slash 2",
-		desc: "Has a 30% chance of causing the target to flinch.",
-		shortDesc: "30% flinch chance.",
+		desc: "Has a 20% chance of causing the target to flinch.",
+		shortDesc: "20% flinch chance.",
 	},
 	amnesia2: {
 		name: "Amnesia 2",
@@ -8107,8 +8107,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	headbutt2: {
 		name: "Headbutt 2",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
 	},
 	healbell2: {
 		name: "Heal Bell 2",
@@ -8694,8 +8694,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	rockslide2: {
 		name: "Rock Slide 2",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the foe(s) flinch.",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the foe(s) flinch.",
 	},
 	rocksmash2: {
 		name: "Rock Smash 2",
