@@ -7935,8 +7935,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 90,
 		},
-		onModifySpAPriority: 1,
-		onModifySpA(atk, pokemon) {
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, pokemon) {
 			if (pokemon.baseSpecies.name === 'Rinnosuke') {
 				return this.chainModify(2);
 			}
@@ -7951,8 +7951,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 90,
 		},
-		onModifySpAPriority: 1,
-		onModifySpA(def, pokemon) {
+		onModifyDefPriority: 1,
+		onModifyDef(def, pokemon) {
 			if (pokemon.baseSpecies.name === 'Rinnosuke') {
 				return this.chainModify(2);
 			}
@@ -7965,11 +7965,11 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Dark Ribbon",
 		spritenum: 789,
 		fling: {
-			basePower: 90,
+			basePower: 20,
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'chibihina' || pokemon.baseSpecies.baseSpecies === 'hina') {
+			if (pokemon.baseSpecies.baseSpecies === 'Chibi Hina' || pokemon.baseSpecies.baseSpecies === 'Hina') {
 				return this.chainModify(2);
 			}
 		},
@@ -7987,7 +7987,7 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (user.baseSpecies.name === 'Chibi Cirno'){
+			if (pokemon.baseSpecies.baseSpecies === 'Chibi Cirno'){
 				return this.chainModify(2);
 			}
 		},
@@ -8002,12 +8002,34 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 40,
 		},
 		onModifyCritRatio(critRatio, user) {
-			if (user.baseSpecies.name === 'Ichirin') {
+			if (pokemon.baseSpecies.baseSpecies === 'Ichirin') {
 				return critRatio + 2;
 			}
 		},
 		itemUser: ["Ichirin"],
 		num: -123,
+		gen: 3,
+	},
+	doublesoul: {
+		name: "Double Soul",
+		spritenum: 792,
+		fling: {
+			basePower: 30,
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(spa, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priest' || pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priestess') {
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpDPriority: 1,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priest' || pokemon.baseSpecies.baseSpecies === 'Shingyoku-Priestess') {
+				return this.chainModify(1.5);
+			}
+		},
+		itemUser: ["Shingyoku-Priest", "Shingyoku-Priestess"],
+		num: -124,
 		gen: 3,
 	},
 };
