@@ -8369,8 +8369,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	meteormash2: {
 		name: "Meteor Mash 2",
-		desc: "Has a 20% chance to raise the user's Attack by 1 stage.",
-		shortDesc: "20% chance to raise the user's Attack by 1.",
+		desc: "Has a 30% chance to lower the foe's Speed by 1 stage.",
+		shortDesc: "30% chance to lower the foe's Speed by 1.",
 	},
 	metronome2: {
 		name: "Metronome 2",
