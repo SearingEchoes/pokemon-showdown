@@ -23763,7 +23763,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  speedmarisa: {
 		num: -446,
 		name: "Speed Marisa",
-		types: ["Wind", "Reason"],
+		types: ["Wind", "Heart"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 70, atk: 85, def: 70, spa: 105, spd: 70, spe: 130},
 		abilities: {0: "Collector", 1: "Hustle"},
@@ -24216,7 +24216,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 9001,
 		weightkg: 100.0,
 		color: "Purple",
-		eggGroups: ["Undiscovered"],
+		eggGroups: ["Human-Like"],
 	  },
 	  magicstones: {
 		num: -484,
