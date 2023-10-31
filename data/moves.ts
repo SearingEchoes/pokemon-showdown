@@ -26674,37 +26674,21 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 30,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		onAfterHit(target, pokemon, move) {
-			if (!move.hasSheerForce) {
-				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+		self: {
+			onHit(pokemon) {
+				if (pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
 				for (const condition of sideConditions) {
-					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					if (pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
 					}
 				}
-				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				if (pokemon.volatiles['partiallytrapped']) {
 					pokemon.removeVolatile('partiallytrapped');
 				}
-			}
-		},
-		onAfterSubDamage(damage, target, pokemon, move) {
-			if (!move.hasSheerForce) {
-				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin 2', '[of] ' + pokemon);
-				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				for (const condition of sideConditions) {
-					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin 2', '[of] ' + pokemon);
-					}
-				}
-				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
-					pokemon.removeVolatile('partiallytrapped');
-				}
-			}
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -29039,37 +29023,21 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onAfterHit(target, pokemon, move) {
-			if (!move.hasSheerForce) {
-				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+		self: {
+			onHit(pokemon) {
+				if (pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Twister 2', '[of] ' + pokemon);
 				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
 				for (const condition of sideConditions) {
-					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					if (pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Twister 2', '[of] ' + pokemon);
 					}
 				}
-				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				if (pokemon.volatiles['partiallytrapped']) {
 					pokemon.removeVolatile('partiallytrapped');
 				}
-			}
-		},
-		onAfterSubDamage(damage, target, pokemon, move) {
-			if (!move.hasSheerForce) {
-				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
-					this.add('-end', pokemon, 'Leech Seed', '[from] move: Twister 2', '[of] ' + pokemon);
-				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				for (const condition of sideConditions) {
-					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Twister 2', '[of] ' + pokemon);
-					}
-				}
-				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
-					pokemon.removeVolatile('partiallytrapped');
-				}
-			}
+			},
 		},
 		secondary: null,
 		target: "normal",

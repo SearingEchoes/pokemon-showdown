@@ -8002,7 +8002,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 40,
 		},
 		onModifyCritRatio(critRatio, user) {
-			if (pokemon.baseSpecies.baseSpecies === 'Ichirin') {
+			if (user.species.name === 'Ichirin') {
 				return critRatio + 2;
 			}
 		},
