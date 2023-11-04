@@ -74,6 +74,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		ruleset: ['Little Cup Limit', 'Inherit Move Rule', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'OU', 'UU', 'Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'Sendai', 'Speed Aya'],
+		banlist: ['Uber', 'OU', 'UU', 'Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'Sendai', 'Speed Aya', 'Ice Ball'],
 	},
 ];
