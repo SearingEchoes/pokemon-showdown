@@ -19611,7 +19611,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Faith"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 65, atk: 35, def: 90, spa: 55, spd: 90, spe: 45},
-		abilities: {0: "Serene Grace"},
+		abilities: {0: "Serene Grace", 1: "Oblivious"},
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Blue",
