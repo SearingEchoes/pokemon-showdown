@@ -1528,7 +1528,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	jksanae: {
-		tier: "UUber",
+		tier: "UU",
 		doublesTier: "DOU",
 	  },
 	magicstones: {
@@ -1544,7 +1544,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	scarletwitch: {
-		tier: "UUber",
+		tier: "OU",
 		doublesTier: "DOU",
 	  },
 	swordmaster: {
