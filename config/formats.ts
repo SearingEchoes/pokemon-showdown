@@ -52,7 +52,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'OU', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'JK Sanae + Drizzle', 'Double Soul'],
+		banlist: ['Uber', 'OU', 'UUber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'JK Sanae + Drizzle', 'Double Soul'],
 	},
 	
 	
@@ -73,9 +73,9 @@ export const Formats: FormatList = [
 		// name: "[Gen 3] Purple LC",
 		// threads: [],
 
-		// mod: 'gen3',
+		// mod: 'gen3purple',
 		// searchShow: false,
-		// ruleset: ['Standard', 'Little Cup', 'Inherit Move Rule', 'Freeze Clause Mod'],
+		// ruleset: ['Little Cup', 'Inherit Move Rule', 'Freeze Clause Mod'],
 		// banlist: ['Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock'],
 	// },
 ];
