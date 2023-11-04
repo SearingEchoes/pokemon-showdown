@@ -65,7 +65,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		gameType: 'doubles',
-		searchShow: false,
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
 		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'JK Sanae + Drizzle', 'Scarlet Witch + Drought', 'Sendai', 'Speed Aya', 'Double Soul'],
 	},
@@ -74,8 +73,7 @@ export const Formats: FormatList = [
 		threads: [],
 
 		mod: 'gen3purple',
-		searchShow: false,
-		ruleset: ['Little Cup', 'Inherit Move Rule', 'Freeze Clause Mod'],
-		banlist: ['Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock'],
+		ruleset: ['Little Cup Limit', 'Inherit Move Rule', 'Freeze Clause Mod'],
+		banlist: ['Uber', 'OU', 'UU', 'Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'Sendai', 'Speed Aya'],
 	},
 ];
