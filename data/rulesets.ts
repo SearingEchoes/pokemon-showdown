@@ -997,11 +997,11 @@ export const Rulesets: {[k: string]: FormatData} = {
 			const boostingEffects = [
 				'acidarmor', 'agility', 'amnesia', 'apicotberry', 'barrier', 'bellydrum', 'bulkup', 'calmmind', 'cosmicpower', 'curse',
 				'defensecurl', 'dragondance', 'ganlonberry', 'growth', 'harden', 'howl', 'irondefense', 'liechiberry', 'meditate',
-				'petayaberry', 'salacberry', 'sharpen', 'speedboost', 'starfberry', 'swordsdance', 'tailglow', 'withdraw',
+				'petayaberry', 'salacberry', 'sharpen', 'speedboost', 'starfberry', 'swordsdance', 'tailglow', 'withdraw', 'agility2', 'amnesia2', 'curse2', 'barrier2', 'bulkup2', 'calmmind2', 'defensecurl2', 'disperse', 'growth2', 'harden2', 'howl2', 'irondefense2', 'lockon2', 'luckychant2', 'manacharge', 'manashield', 'nastyplot2', 'protect2', 'sharpen2', 'swordsdance2', 'tailwind2', 'withdraw2', 
 			];
 			let passers = 0;
 			for (const set of team) {
-				if (!set.moves.includes('Baton Pass')) continue;
+				if (!set.moves.includes('Baton Pass') && !set.moves.includes('Baton Pass 2')) continue;
 				let passableBoosts = 0;
 				const item = this.toID(set.item);
 				const ability = this.toID(set.ability);

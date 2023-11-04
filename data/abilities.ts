@@ -760,7 +760,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	damp: {
 		onAnyTryMove(target, source, effect) {
-			if (['explosion', 'mindblown', 'mistyexplosion', 'selfdestruct'].includes(effect.id)) {
+			if (['explosion', 'mindblown', 'mistyexplosion', 'selfdestruct', 'explosion2', 'selfdestruct2'].includes(effect.id)) {
 				this.attrLastMove('[still]');
 				this.add('cant', this.effectState.target, 'ability: Damp', effect, '[of] ' + target);
 				return false;
@@ -5731,5 +5731,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Ice Wall",
 		rating: 3.5,
 		num: -124,
+	},
+	solardrive: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Solar Drive",
+		rating: 3,
+		num: -125,
 	},
 };
