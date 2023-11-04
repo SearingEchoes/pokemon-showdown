@@ -7977,8 +7977,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -121,
 		gen: 3,
 	},
-	iceball: {
-		name: "Ice Ball",
+	icyball: {
+		name: "Icy Ball",
 		spritenum: 790,
 		fling: {
 			basePower: 30,

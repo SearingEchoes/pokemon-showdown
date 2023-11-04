@@ -24036,18 +24036,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: -3,
 		flags: {contact: 1, protect: 1, punch: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
 		priorityChargeCallback(pokemon) {
-			pokemon.addVolatile('focuspunch');
+			pokemon.addVolatile('focuspunch2');
 		},
 		beforeMoveCallback(pokemon) {
-			if (pokemon.volatiles['focuspunch']?.lostFocus) {
-				this.add('cant', pokemon, 'Focus Punch', 'Focus Punch');
+			if (pokemon.volatiles['focuspunch2']?.lostFocus) {
+				this.add('cant', pokemon, 'Focus Punch 2', 'Focus Punch 2');
 				return true;
 			}
 		},
 		condition: {
 			duration: 1,
 			onStart(pokemon) {
-				this.add('-singleturn', pokemon, 'move: Focus Punch');
+				this.add('-singleturn', pokemon, 'move: Focus Punch 2');
 			},
 			onHit(pokemon, source, move) {
 				if (move.category !== 'Status') {
@@ -27752,7 +27752,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	skyattack2: {
 		num: 1478,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
 		name: "Sky Attack 2",
@@ -28431,7 +28431,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 0,
 		category: "Status",
 		name: "Synthesis 2",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {snatch: 1, heal: 1},
 		onHit(pokemon) {
