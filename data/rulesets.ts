@@ -604,6 +604,12 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
+	littlecuplimit: {
+		effectType: 'ValidatorRule',
+		name: 'Little Cup Limit',
+		desc: "Caps level to 5.",
+		ruleset: ['Max Level = 5'],
+	},
 	blitz: {
 		effectType: 'Rule',
 		name: 'Blitz',
