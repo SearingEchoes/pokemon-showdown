@@ -2517,8 +2517,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Dark Ribbon",
 		desc: "If held by Chibi Hina or regular Hina, their Attack is doubled.",
 	},
-	iceball: {
-		name: "Ice Ball",
+	icyball: {
+		name: "Icy Ball",
 		desc: "If held by Chibi Cirno, their Sp. Atk is doubled.",
 	},
 	bigcloud: {
