@@ -27752,7 +27752,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	skyattack2: {
 		num: 1478,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 160,
 		category: "Physical",
 		name: "Sky Attack 2",
