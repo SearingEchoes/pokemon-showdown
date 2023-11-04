@@ -54,23 +54,28 @@ export const Formats: FormatList = [
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
 		banlist: ['Uber', 'OU', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'JK Sanae + Drizzle', 'Double Soul'],
 	},
-	{
-		name: "[Gen 3] Purple Doubles",
-		threads: [],
+	
+	
+	// {
+		// section: "1.8 Misc",
+	// },
+	// {
+		// name: "[Gen 3] Purple Doubles",
+		// threads: [],
 
-		mod: 'gen3purple',
-		gameType: 'doubles',
-		searchShow: false,
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'JK Sanae + Drizzle', 'Scarlet Witch + Drought', 'Sendai', 'Speed Aya', 'Double Soul'],
-	},
-	{
-		name: "[Gen 3] Purple LC",
-		threads: [],
+		// mod: 'gen3purple',
+		// gameType: 'doubles',
+		// searchShow: false,
+		// ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		// banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'JK Sanae + Drizzle', 'Scarlet Witch + Drought', 'Sendai', 'Speed Aya', 'Double Soul'],
+	// },
+	// {
+		// name: "[Gen 3] Purple LC",
+		// threads: [],
 
-		mod: 'gen3',
-		searchShow: false,
-		ruleset: ['Standard', 'Little Cup', 'Inherit Move Rule', 'Freeze Clause Mod'],
-		banlist: ['Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock'],
-	},
+		// mod: 'gen3',
+		// searchShow: false,
+		// ruleset: ['Standard', 'Little Cup', 'Inherit Move Rule', 'Freeze Clause Mod'],
+		// banlist: ['Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock'],
+	// },
 ];
