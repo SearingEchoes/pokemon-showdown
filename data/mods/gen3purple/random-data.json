@@ -1,0 +1,1105 @@
+{
+    "2hu": {
+        "level": 100,
+        "moves": ["flamethrower2","icebeam2","manaburst","meteorstorm","poisonbomb","signalbeam2","triattack2","calmmind2","recover2","secretpower2"]
+    },
+    "adventalice": {
+        "level": 100,
+        "moves": ["icebeam2","manaburst","mistball2","signalbeam2","triattack2","batonpass2","healbell2","lightscreen2","mirrorcoat2","reflect2","toxic2","willowisp2","wish2"]
+    },
+    "adventchen": {
+        "level": 100,
+        "moves": ["slash2","volttackle2","crosspoison2","destinybond2","encore2","fakeout2","prank","pursuit2","quickattack2","rapidspin2","rockbullet","substitute2","toxic2"]
+    },
+    "adventcirno": {
+        "level": 100,
+        "moves": ["braver","iceball2","doubleedge2","poisonjab2","superpower2","waterfall2","flail2","reversal2","swordsdance2","tailwind2"]
+    },
+    "adventletty": {
+        "level": 100,
+        "moves": ["braver","bodyslam2","extremespeed2","earthquake2","icepunch2","poisonjab2","selfdestruct2","waterfall2","bladeflash2","iceshard2","spikes2","swordsdance2"]
+    },
+    "adventmarisa": {
+        "level": 100,
+        "moves": ["doubleedge2","extremespeed2","poisonjab2","volttackle2","magicknife","swordsdance2","thunderwave2","wish2","trick2"]
+    },
+    "adventmeiling": {
+        "level": 100,
+        "moves": ["blazekick2","brickbreak2","dynamicpunch2","earthquake2","forcepalm2","highjumpkick2","icepunch2","meteormash2","poisonjab2","vitalthrow2","bulkup2","fakeout2","healbell2","revenge2","slackoff2"]
+    },
+    "adventmokou": {
+        "level": 100,
+        "moves": ["blazekick2","dynamicpunch2","earthquake2","flareblitz2","superpower2","bulkup2","machpunch2","pursuit2","recover2","willowisp2"]
+    },
+    "adventmystia": {
+        "level": 100,
+        "moves": ["airslash2","roost2","toxic2","substitute2"]
+    },
+    "adventran": {
+        "level": 100,
+        "moves": ["earthquake2","extremespeed2","flareblitz2","killingbite","superpower2","tailwind2"]
+    },
+    "adventreisen": {
+        "level": 100,
+        "moves": ["dreameater2","energyball2","gigadrain2","icebeam2","lusterpurge2","manaburst","poisonbomb","signalbeam2","lightscreen2","substitute2"]
+    },
+    "adventtewi": {
+        "level": 100,
+        "moves": ["prank","raindance2","spikes","lightscreen","burnpowder","toxic2"]
+    },
+    "adventyukari": {
+        "level": 100,
+        "moves": ["meteorstorm","poisonbomb","dreameater2","energyball2","calmmind2","rest2","sleeptalk2","thunderwave2","yawn2"]
+    },
+    "akisisters": {
+        "level": 100,
+        "moves": ["earthquake2","highjumpkick2","leafblade2","powerwhip2","sunnyday2","memento2"]
+    },
+    "akyuu": {
+        "level": 100,
+        "moves": ["lunadial","sleeppowder2","spikes2","explosion2","encore2","memento2"]
+    },
+    "alice": {
+        "level": 100,
+        "moves": ["manaburst","signalbeam2","icebeam2","thunderbolt2","manacharge2","knockoff2","spikes2"]
+    },
+    "attackalice": {
+        "level": 100,
+        "moves": ["explosion2","manaburst","signalbeam2","icebeam2","thunderbolt2","manacharge","substitute2"]
+    },
+    "attackchen": {
+        "level": 100,
+        "moves": ["doubleedge2","slash2","soar","crosspoison2","fakeout2","flail2","pursuit2","rapidspin2","swordsdance2","tailwind2"]
+    },
+    "attackdaiyousei": {
+        "level": 100,
+        "moves": ["airslash2","blizzard2","gigadrain2","selfdestruct2","signalbeam2","silverwind2","sonicboom2","barrier2","batompass2","encore2","manacharge","mysticwater","perishsong2","smile","wish2"]
+    },
+    "attackeiki": {
+        "level": 100,
+        "moves": ["extrasensory2","manaburst","calmmind2","rest2"]
+    },
+    "attackeirin": {
+        "level": 100,
+        "moves": ["zenheadbutt2","gunkshot2","stunspore2","recover2"]
+    },
+    "attackflandre": {
+        "level": 100,
+        "moves": ["gigaimpact2","dynamicpunch2","killingbite2","outrage2"]
+    },
+    "attackhina": {
+        "level": 100,
+        "moves": ["explosion2","extrasensory2","poisonbomb","surf2","rapidspin2"]
+    },
+    "attackkaguya": {
+        "level": 100,
+        "moves": ["earthpower2","earthquake2","blastburn2","fireblast2","energyball2","flamethrower2","manaburst","cottonspore2","recover2","solarbeam2"]
+    },
+    "attackkanako": {
+        "level": 100,
+        "moves": ["earthpower2","extrasensory2","thunderbolt2","thunder2","solarbeam2","sunnyday2","weatherball2"]
+    },
+    "attackkazami": {
+        "level": 100,
+        "moves": ["earthquake2","frenzyplant2","gigadrain2","hyperbeam2","poisonbomb","powerwhip2","soar","sunnyday2","solarbeam2"]
+    },
+    "attackkeine": {
+        "level": 100,
+        "moves": ["doubleedge2","headsmash2","poisonjab2","pursuit2","thunderwave2","sharpen2"]
+    },
+    "attackkoishi": {
+        "level": 100,
+        "moves": ["dreameater2","energyball2","flamethrower2","icebeam2","selfdestruct2","signalbeam2","thunderbolt2","heartseye","substitute2"]
+    },
+    "attackkomachi": {
+        "level": 100,
+        "moves": ["drawnline","waterfall2","slackoff2","swordsdance2","shadowdance","aquajet2","knockoff2"]
+    },
+    "attacklilyblack": {
+        "level": 100,
+        "moves": ["doubleedge2","extremespeed2","gigaimpact2","selfdestruct2","waterfall2","swordsdance2"]
+    },
+    "attacklilywhite": {
+        "level": 100,
+        "moves": ["bodyslam2","selfdestruct2","fakeout2","tailwind2","wish2","steelfist"]
+    },
+    "attacklunachild": {
+        "level": 100,
+        "moves": ["gigadrain2","lunatic","poisonbomb","naturesound","signalbeam2","sonicboom2","thunderbolt2","agility2"]
+    },
+    "attackmarisa": {
+        "level": 100,
+        "moves": ["blastburn2","flamethrower2","hyperbeam2","thunderbolt2","thunder2","nastyplot2"]
+    },
+    "attackmedicine": {
+        "level": 100,
+        "moves": ["poisonbomb","gigadrain2","sunnyday2","substitute2"]
+    },
+    "attackminoriko": {
+        "level": 100,
+        "moves": ["earthpower2","heatwave2","solarbeam2","sunnyday2"]
+    },
+    "attackmokou": {
+        "level": 100,
+        "moves": ["eruption2","flamethrower2","earthquake2","superpower2","pursuit2","recover2","solarbeam2","sunnyday2"]
+    },
+    "attackmurasa": {
+        "level": 100,
+        "moves": ["surf2","shadowball2","raindance2","hydrocannon2","destinybond2"]
+    },
+    "attackmystia": {
+        "level": 100,
+        "moves": ["airslash2","bindingvoice","energylight","icebeam2","performance","hypervoice2","perishsong2","sing2"]
+    },
+    "attacknitori": {
+        "level": 100,
+        "moves": ["waterfall2","thunderpunch2","icepunch2","raindance2"]
+    },
+    "attacknue": {
+        "level": 100,
+        "moves": ["poisonjab2","bravebird2","selfdestruct2","swordsdance2","shadowdive"]
+    },
+    "attackpatchouli": {
+        "level": 100,
+        "moves": ["fireblast2","hydropump2","icebeam2","icywind2","manacharge"]
+    },
+    "attackran": {
+        "level": 100,
+        "moves": ["bindingvoice","extrasensory2","earthpower2","flamethrower2","lusterpurge2","agility2","calmmind2"]
+    },
+    "attackreimu": {
+        "level": 100,
+        "moves": ["brickbreak2","forcepalm2","highjumpkick2","outrage2","soar","strength2","tailwind2"]
+    },
+    "attackremilia": {
+        "level": 100,
+        "moves": ["thrash2","superpower2","poisonjab2","soar","skyattack2"]
+    },
+    "attackrin": {
+        "level": 100,
+        "moves": ["bindingvoice","blastburn2","eruption2","flamethrower2","shadowball2","confuseray2","painsplit2"]
+    },
+    "attackrumia": {
+        "level": 100,
+        "moves": ["braver","crunch2","thrash2","poisonjab2","swordsdance2","beastclaw"]
+    },
+    "attacksanae": {
+        "level": 100,
+        "moves": ["extrasensory2","muddywater2","thunderwave2","waterpulse2"]
+    },
+    "attackshou": {
+        "level": 100,
+        "moves": ["earthquake2","doubleedge2","tailwind2","icepunch2"]
+    },
+    "attackstarsapphire": {
+        "level": 100,
+        "moves": ["bodyslam2","powerwhip2","waterfall2","aquajet2","hypnosis2"]
+    },
+    "attacksuika": {
+        "level": 100,
+        "moves": ["earthquake2","firepunch2","steelfist","superpower2","bulkup2","spikes2"]
+    },
+    "attacksunnymilk": {
+        "level": 100,
+        "moves": ["flareblitz2","frenzyplant2","powerwhip2","blastburn2"]
+    },
+    "attacksuwako": {
+        "level": 100,
+        "moves": ["earthquake2","meteormash2","poisonjab2","waterfall2","wish2","curse2"]
+    },
+    "attacktenshi": {
+        "level": 100,
+        "moves": ["bodyslam2","drawnline","earthquake2","needlearm2","rockbullet2","swordsdance2","bellydrum2"]
+    },
+    "attacktewi": {
+        "level": 100,
+        "moves": ["bindingvoice","darkpulse2","earthpower2","energyball2","gigadrain2","icebeam2","manaburst","poisonbomb","shadowball2","surf2","thunderbolt2","nastyplot2"]
+    },
+    "attacktokiko": {
+        "level": 100,
+        "moves": ["bravebird2","slash2","steelwing2","zenheadbutt2","agility2","endeavor2","skyattack2"]
+    },
+    "attackutsuho": {
+        "level": 100,
+        "moves": ["airslash2","fireblast2","blastburn2","explosion2","pursuit2"]
+    },
+    "attackyuugi": {
+        "level": 100,
+        "moves": ["headsmash2","meteormash2","superpower2","vitalthrow2"]
+    },
+    "attackyuuka": {
+        "level": 100,
+        "moves": ["naturesound","earthpower2","powerwhip2","superpower2"]
+    },
+    "attackyuyuko": {
+        "level": 100,
+        "moves": ["dreameater2","gigadrain2","lusterpurge2","shadowball2"]
+    },
+    "aya": {
+        "level": 100,
+        "moves": ["soar","highjumpkick2","spikes2","tailwind2","toxic2","twister2","skyattack2"]
+    },
+    "byakuren": {
+        "level": 100,
+        "moves": ["manaburst","extrasensory2","calmmind2","lusterpurge2","thunderbolt2"]
+    },
+    "chen": {
+        "level": 100,
+        "moves": ["slash2","soar","rapidspin2","pursuit2","flail2","tailwind2"]
+    },
+    "chiyuri": {
+        "level": 100,
+        "moves": ["surf2","lightscreen2","spikes2","thunderwave2"]
+    },
+    "cirno": {
+        "level": 100,
+        "moves": ["icebeam2","airslash2","surf2","superpower2","doubleedge2"]
+    },
+    "daiyousei": {
+        "level": 100,
+        "moves": ["selfdestruct2","icebeam2","silverwind2","energylight","airslash2","signalbeam2","substitute2","wish2"]
+    },
+    "darkalice": {
+        "level": 100,
+        "moves": ["manaburst","hyperbeam2","energyball2","fireblast2","blizzard2","signalbeam2","heartseye"]
+    },
+    "defensebyakuren": {
+        "level": 100,
+        "moves": ["wrap2","reflect2","perishsong2","wish2"]
+    },
+    "defensedaiyousei": {
+        "level": 100,
+        "moves": ["leechseed2","encore2","detect2","wish2"]
+    },
+    "defenseeiki": {
+        "level": 100,
+        "moves": ["extrasensory2","manaburst","calmmind2","imprison2"]
+    },
+    "defensehatate": {
+        "level": 100,
+        "moves": ["hypnosis2","roost2","toxic2","fly2"]
+    },
+    "defensehina": {
+        "level": 100,
+        "moves": ["explosion2","willowisp2","icywind2","rapidspin2"]
+    },
+    "defenseichirin": {
+        "level": 100,
+        "moves": ["dynamicpunch2","forcepalm2","meteormash2","substitute2","tickle2","focuspunch2"]
+    },
+    "defenseiku": {
+        "level": 100,
+        "moves": ["thunder2","raindance2","encore2","knockoff2"]
+    },
+    "defensekaguya": {
+        "level": 100,
+        "moves": ["muddywater2","energylight","rest2","sleeptalk2"]
+    },
+    "defensekanako": {
+        "level": 100,
+        "moves": ["spikes2","thunderwave2","ancientpower2","naturepower2"]
+    },
+    "defensekeine": {
+        "level": 100,
+        "moves": ["earthquake2","thunderwave2","pursuit2","safeguard2"]
+    },
+    "defenselayla": {
+        "level": 100,
+        "moves": ["wish2","signalbeam2","ingrain2","hypnosis2"]
+    },
+    "defenseletty": {
+        "level": 100,
+        "moves": ["rest2","sleeptalk2","fissure2","sheercold2"]
+    },
+    "defensemeiling": {
+        "level": 100,
+        "moves": ["drainpunch2","steelfist","bulkup2","magicknife"]
+    },
+    "defenseminoriko": {
+        "level": 100,
+        "moves": ["leechseed2","smile","substitute2","yawn2"]
+    },
+    "defensemokou": {
+        "level": 100,
+        "moves": ["bulkup2","recover2","firepunch2","strength2"]
+    },
+    "defensemomiji": {
+        "level": 100,
+        "moves": ["braver","crunch2","rest2","swordsdance2","","","","","","","","","","","","",""]
+    },
+    "defensemurasa": {
+        "level": 100,
+        "moves": ["raindance2","yawn2","shadowdive","destinybond2","surf2","","","","","","","","","","","",""]
+    },
+    "defenseparsee": {
+        "level": 100,
+        "moves": ["toxic2","block2","confuseray2","faketears2"]
+    },
+    "defensepatchouli": {
+        "level": 100,
+        "moves": ["aromatherapy2","reflect2","toxic2","firespin2","icywind2"]
+    },
+    "defensereimu": {
+        "level": 100,
+        "moves": ["reflect2","lightscreen2","knockoff2","extrasensory2"]
+    },
+    "defensereisen": {
+        "level": 100,
+        "moves": ["hypnosis2","agility2","signalbeam2","heartseye"]
+    },
+    "defenseremilia": {
+        "level": 100,
+        "moves": ["outrage2","firespin2","roost2","faketears2"]
+    },
+    "defensesunnymilk": {
+        "level": 100,
+        "moves": ["prank","lavaplume2","recover2","manacharge"]
+    },
+    "defensesuwako": {
+        "level": 100,
+        "moves": ["calmmind2","reflect2","surf2","extrasensory2"]
+    },
+    "defensetenshi": {
+        "level": 100,
+        "moves": ["earthquake2","sleeptalk2","swordsdance2","rest2","","","","","","","","","","","","",""]
+    },
+    "defensetewi": {
+        "level": 100,
+        "moves": ["bindingvoice","toxic2","wish2","icywind2"]
+    },
+    "defensewriggle": {
+        "level": 100,
+        "moves": ["tickle2","twister2","healbell2","gigadrain2"]
+    },
+    "defenseyoumu": {
+        "level": 100,
+        "moves": ["drawnline","shadowdance","swordsdance2","rest2"]
+    },
+    "defenseyukari": {
+        "level": 100,
+        "moves": ["dreameater2","manaburst","calmmind2","yawn2"]
+    },
+    "defenseyuugi": {
+        "level": 100,
+        "moves": ["earthquake2","brickbreak2","vitalthrow2","encore2"]
+    },
+    "defenseyuyuko": {
+        "level": 100,
+        "moves": ["sleeptalk2","shadowdive","toxic2","rest2"]
+    },
+    "defensesatori": {
+        "level": 100,
+        "moves": ["counter2","destinybond2","encore2","mirrorcoat2","recollection","smile"]
+    },
+    "eiki": {
+        "level": 100,
+        "moves": ["manaburst","silverwind2","scaryface2","wish2","calmmind2","energylight","extrasensory2","thunderbolt2"]
+    },
+    "eirin": {
+        "level": 100,
+        "moves": ["gigadrain2","hydropump2","manaburst","poisonbomb","psychoboost2","burnpowder","mirrorcoat2","recover2"]
+    },
+    "elis": {
+        "level": 100,
+        "moves": ["agility2","painsplit2","airslash2","hyperbeam2","outrage2","shadowball2","sonicboom2","thunderbolt2","thunder2"]
+    },
+    "ellen": {
+        "level": 100,
+        "moves": ["signalbeam2","mistball2","thunderbolt2","gigadrain2","burnpowder2","cottonspore2","encore2","hypnosis2","raindance2","smile"]
+    },
+    "elly": {
+        "level": 100,
+        "moves": ["brickbreak2","crushclaw2","drawnline","firepunch2","icepunch2","poisonjab2","superpower2","thunderpunch2","swordsdance2","furycutter2","magicknife2"]
+    },
+    "flandre": {
+        "level": 100,
+        "moves": ["flamethrower2","darkpulse2","heartseye","scaryface2","brickbreak2","firepunch2","steelwing2"]
+    },
+    "futo": {
+        "level": 100,
+        "moves": ["bodyslam2","brickbreak2","forcepalm2","sacredfire2","waterfall2","aquajet2","bulkup2","mysticwater","raindance","willowisp"]
+    },
+    "gengetsu": {
+        "level": 100,
+        "moves": ["aeroblast2","airslash2","darkpulse2","energyball2","hyperbeam2","icebeam2","memento2","charminglook"]
+    },
+    "genji": {
+        "level": 100,
+        "moves": ["fly2","toxic2","slackoff2","detect2"]
+    },
+    "goliathdoll": {
+        "level": 100,
+        "moves": ["bodyslam2","braver","earthquake2","explosion2","gigaimpact2","poisonjab2","strength2","superpower2","tailwind2","swordsdance2","agility2"]
+    },
+    "hakurei": {
+        "level": 100,
+        "moves": ["ancientpower2","brickbreak2","earthquake2","energyball2","extrasensory2","focuspunch2","forcepalm2","highjumpkick2","sacredfire2","strength2","steelfist","lightscreen2","reflect2","curse2","calmmind2","shadowball2","rocktomb2"]
+    },
+    "hatate": {
+        "level": 100,
+        "moves": ["airslash2","manaburst","lusterpurge2","sonicboom2","triattack2","agility2","nastyplot2","roost2"]
+    },
+    "helpereirin": {
+        "level": 100,
+        "moves": ["aquashower","manaburst","poisonbomb","burnpowder","recover2","hypnosis2"]
+    },
+    "helperkeine": {
+        "level": 100,
+        "moves": ["extrasensory2","manaburst","signalbeam2","thunderbolt2","calmmind2","reflect2","recover2","mysticwater","toxic2","wish2"]
+    },
+    "helperkoakuma": {
+        "level": 100,
+        "moves": ["batonpass2","manacharge2","lovelykiss2","manaburst"]
+    },
+    "helperletty": {
+        "level": 100,
+        "moves": ["selfdestruct2","encore2","icywind2","trick2","wish2"]
+    },
+    "helperlilywhite": {
+        "level": 100,
+        "moves": ["batonpass2","substitute2","wish2","selfdestruct2"]
+    },
+    "helperlunasa": {
+        "level": 100,
+        "moves": ["batonpass2","barrier2","willowisp2","nightmare2"]
+    },
+    "helperlyrica": {
+        "level": 100,
+        "moves": ["batonpass2","agility2","sing2","nightshade2"]
+    },
+    "helpermerlin": {
+        "level": 100,
+        "moves": ["batonpass2","nastyplot2","tickle2","shadowball2"]
+    },
+    "helpermystia": {
+        "level": 100,
+        "moves": ["healbell2","perishsong2","roost2","toxic2"]
+    },
+    "helpernazrin": {
+        "level": 100,
+        "moves": ["batonpass2","lockon2","chargebeam2","knockoff2"]
+    },
+    "helperran": {
+        "level": 100,
+        "moves": ["batonpass2","calmmind2","manaburst","memento"]
+    },
+    "helpersakuya": {
+        "level": 100,
+        "moves": ["batonpass2","swordsdance2","lunadial","sculpture"]
+    },
+    "helpershizuha": {
+        "level": 100,
+        "moves": ["batonpass2","tailwind2","leechseed","leafblade2"]
+    },
+    "helperstarsapphire": {
+        "level": 100,
+        "moves": ["gigadrain2","hydropump2","icebeam2","surf2","encore2","hypnosis2","nastyplot2","prank","raindance2","recover2","substitute2"]
+    },
+    "ichirin": {
+        "level": 100,
+        "moves": ["brickbreak2","crosschop2","earthquake2","forcepalm2","bellydrum2","bulkup2","machpunch2","substitute2","tickle2"]
+    },
+    "iku": {
+        "level": 100,
+        "moves": ["signalbeam2","surf2","thunderbolt2","thunder2","raindance2","reflect2","skillswap2","thunderwave2"]
+    },
+    "kaguya": {
+        "level": 100,
+        "moves": ["frenzyplant2","gigadrain2","manaburst","ingrain2","recover2","torment2"]
+    },
+    "kana": {
+        "level": 100,
+        "moves": ["nightshade2","memento2","perishsong2","tickle2","toxic2","willowisp2","yawn2","spikes2","prank2"]
+    },
+    "kanako": {
+        "level": 100,
+        "moves": ["extrasensory2","energylight","frenzyplant2","silverwind2","thunder2","thunderbolt2","thunderwave2"]
+    },
+    "kasen": {
+        "level": 100,
+        "moves": ["doubleedge2","drainpunch2","earthquake2","forcepalm2","outrage2","powerwhip2","sacredfire2","steelfist","agility2","curse2","reversal2"]
+    },
+    "kazami": {
+        "level": 100,
+        "moves": ["darkpulse2","earthquake2","frenzyplant2","gigadrain2","leafblade2","poisonjab2","poisonbomb","thrash2","aromatherapy2","ingrain2","skillswap2","solarbeam2","sunnyday2","toxic2","yawn2"]
+    },
+    "keine": {
+        "level": 100,
+        "moves": ["extrasensory2","sonicboom2","manaburst","lusterpurge2","lunatic","thunderbolt2","calmmind2"]
+    },
+    "kikuri": {
+        "level": 100,
+        "moves": ["explosion2","hypnosis2","lusterpurge2","lockon2","recover2","blizzard2"]
+    },
+    "kirisame": {
+        "level": 100,
+        "moves": ["aeroblast2","darkpulse2","energyball2","manaburst","psychoboost2","shadowball2","signalbeam2","thunder2","thunderbolt2","agility2","ominouswind2"]
+    },
+    "kisume": {
+        "level": 100,
+        "moves": ["firespin2","prank2","willowisp2","confuseray2","whirlpool2","nightshade2","rapidspin2"]
+    },
+    "koakuma": {
+        "level": 100,
+        "moves": ["manaburst","chargebeam2","lovelykiss2","selfdestruct2","memento2","lightscreen2","raindance2","thunderwave2"]
+    },
+    "kogasa": {
+        "level": 100,
+        "moves": ["shadowball2","hydropump2","selfdestruct2","fakeout2","toxic2","shadowdive"]
+    },
+    "koishi": {
+        "level": 100,
+        "moves": ["dreameater2","flamethrower2","icebeam2","thunderbolt2","selfdestruct2","signalbeam2","energyball2","heartseye","nightshade2","smile","trick2","haze2"]
+    },
+    "komachi": {
+        "level": 100,
+        "moves": ["surf2","icebeam2","painsplit2","confuseray2","knockoff2"]
+    },
+    "konngara": {
+        "level": 100,
+        "moves": ["braver","poisonjab2","strength2","counter2","furycutter2","recover2","harden2"]
+    },
+    "kotohime": {
+        "level": 100,
+        "moves": ["signalbeam2","chargebeam2","encore2","lightscreen2","reflect2","wish2","smile2","screech2","thunderwave2","toxic2","wanting"]
+    },
+    "kurumi": {
+        "level": 100,
+        "moves": ["dreameater2","gigadrain2","thunderbolt2","selfdestruct2","faketears2","lovelykiss2","ominouswind2","perishsong2","tickle2","toxic2","willowisp2"]
+    },
+    "kyouko": {
+        "level": 100,
+        "moves": ["bindingvoice","hypervoice2","naturesound","performance","counter2","fakeout2","healbell2","knockoff2","mirrorcoat2","yawn2"]
+    },
+    "layla": {
+        "level": 100,
+        "moves": ["shadowball2","manaburst","calmmind2","gigadrain2","dreameater2"]
+    },
+    "letty": {
+        "level": 100,
+        "moves": ["blizzard2","earthpower2","gigadrain2","icebeam2","mistball2","selfdestruct2","lightscreen2","rest2","sleeptalk2"]
+    },
+    "lilyblack": {
+        "level": 100,
+        "moves": ["heartbreak","soar","selfdestruct2","doubleedge2","waterfall2","batonpass2","nastyplot2","swordsdance2","taunt2"]
+    },
+    "lilywhite": {
+        "level": 100,
+        "moves": ["signalbeam2","encore2","fly2","roost2","toxic2","sweetkiss2","selfdestruct2","detect2","jamming2"]
+    },
+    "louise": {
+        "level": 100,
+        "moves": ["signalbeam2","mistball2","healbell2","hypnosis2","lightscreen2","memento2","mysticwater2","ominouswind2","toxic2","wish2"]
+    },
+    "lunachild": {
+        "level": 100,
+        "moves": ["gigadrain2","thunderbolt2","encore2","nastyplot2","twister2","wish2"]
+    },
+    "lunasa": {
+        "level": 100,
+        "moves": ["nightshade2","toxic2","shadowdive","disable2","destinybond2"]
+    },
+    "lyrica": {
+        "level": 100,
+        "moves": ["spikes2","taunt2","prank","memento2"]
+    },
+    "magicstones": {
+        "level": 100,
+        "moves": ["manaburst","signalbeam2","extrasensory2","icebeam2","flamethrower2","recover2","manacharge"]
+    },
+    "mai": {
+        "level": 100,
+        "moves": ["icebeam2","darkpulse2","surf2","lovelykiss2","nastyplot2","raindance2"]
+    },
+    "mamizou": {
+        "level": 100,
+        "moves": ["doubleedge2","hydropump2","killingbite2","waterfall2","batonpass2","bellydrum2","hypnosis2","spikes2","transform2","trick2"]
+    },
+    "margatroid": {
+        "level": 100,
+        "moves": ["signalbeam2","manacharge2","thunderbolt2","flamethrower2","icebeam2","darkpulse2","substitute2","yawn2"]
+    },
+    "marisa": {
+        "level": 100,
+        "moves": ["thunderbolt2","manaburst","flamethrower2","psychoboost2","agility2"]
+    },
+    "medicine": {
+        "level": 100,
+        "moves": ["leechseed2","memento2","ominouswind2","gigadrain2","poisonbomb","substitute2","synthesis2","toxic2","stunspore2","spite2"]
+    },
+    "meiling": {
+        "level": 100,
+        "moves": ["brickbreak2","dynamicpunch2","focuspunch2","forcepalm2","meteormash2","vitalthrow2","bulkup2","machpunch2","magicknife2","revenge2","reversal2","slackoff2"]
+    },
+    "meira": {
+        "level": 100,
+        "moves": ["drawnline","extremespeed2","leafblade2","rollingkick2","agility2","bladeflash2","endeavor2","nightslash2","pursuit2","swordsdance2","tailwind2"]
+    },
+    "merlin": {
+        "level": 100,
+        "moves": ["signalbeam2","shadowball2","nastyplot2","flamethrower2","energylight"]
+    },
+    "miko": {
+        "level": 100,
+        "moves": ["battlechant","extrasensory2","manaburst","psychoboost2","sacredfire2","slash2","calmmind2","psychocut2","swordsdance2","recover2"]
+    },
+    "mima": {
+        "level": 100,
+        "moves": ["hyperbeam2","shadowball2","thunderbolt2","scaryface2","memento2"]
+    },
+    "mimichan": {
+        "level": 100,
+        "moves": ["doubleedge2","explosion2","flareblitz2","headsmash2","skyattack2","energylight","bodyslam2","memento2","sunnyday2"]
+    },
+    "minoriko": {
+        "level": 100,
+        "moves": ["gigadrain2","earthpower2","extrasensory2","heatwave2","sunnyday2","solarbeam2","leechseed2","calmmind2"]
+    },
+    "mokou": {
+        "level": 100,
+        "moves": ["blazekick2","earthquake2","flareblitz2","rollingkick2","superpower2","bulkup2","pursuit2","recover2"]
+    },
+    "momiji": {
+        "level": 100,
+        "moves": ["braver","crunch2","earthquake2","swordsdance2","tailwind2","rage2","pursuit2"]
+    },
+    "mugetsu": {
+        "level": 100,
+        "moves": ["signalbeam2","batonpass2","jamming2","wish2","willowisp2"]
+    },
+    "murasa": {
+        "level": 100,
+        "moves": ["waterfall2","shadowpunch2","raindance2","shadowdive","yawn2"]
+    },
+    "mystia": {
+        "level": 100,
+        "moves": ["soar","bravebird2","agility2","furyswipes2","sing2"]
+    },
+    "namazu": {
+        "level": 100,
+        "moves": ["bodyslam2","earthquake2","waterfall2","strength2","curse2","rest2"]
+    },
+    "nazrin": {
+        "level": 100,
+        "moves": ["bodyslam2","slash2","knockoff2","quickattack2","tailwind2"]
+    },
+    "nitori": {
+        "level": 100,
+        "moves": ["aquashower","surf2","thunder2","raindance2"]
+    },
+    "nue": {
+        "level": 100,
+        "moves": ["bravebird2","gunkshot2","selfdestruct2","poisonjab2","disable2","recover2","skillswap2","swordsdance2","willowisp2","taunt2","toxic2"]
+    },
+    "orange": {
+        "level": 100,
+        "moves": ["submission2","superpower2","pursuit2","poisonjab2"]
+    },
+    "parsee": {
+        "level": 100,
+        "moves": ["signalbeam2","dreameater2","poisonbomb","destinybond2","icywind2","wanting"]
+    },
+    "patchouli": {
+        "level": 100,
+        "moves": ["manaburst","psychoboost2","earthpower2","manacharge","thunderbolt2","flamethrower2","muddywater2","aromatherapy2","mirrorcoat2"]
+    },
+    "ran": {
+        "level": 100,
+        "moves": ["bindingvoice","doubleedge2","flamethrower2","manaburst","thunderbolt2","calmmind2","tailwind2","superpower2","zenheadbutt2"]
+    },
+    "reimu": {
+        "level": 100,
+        "moves": ["forcepalm2","soar2","knockoff2","reflect2","tailwind2"]
+    },
+    "reisen": {
+        "level": 100,
+        "moves": ["signalbeam2","manaburst","poisonbomb","dreameater2","hypnosis2","agility2","manacharge2"]
+    },
+    "reisenii": {
+        "level": 100,
+        "moves": ["signalbeam2","flamethrower2","icebeam2","manaburst","shadowball2","sonicboom2","thunderbolt2"]
+    },
+    "remilia": {
+        "level": 100,
+        "moves": ["airslash2","bravebird2","gigadrain2","thrash2","poisonjab2","superpower2","tailwind2"]
+    },
+    "rika": {
+        "level": 100,
+        "moves": ["hyperbeam2","lunatic2","selfdestruct2","thunderbolt2"]
+    },
+    "rikako": {
+        "level": 100,
+        "moves": ["manaburst","psychoboost2","thunderbolt2","selfdestruct2","ominouswind2","reflect2","trick2"]
+    },
+    "rin": {
+        "level": 100,
+        "moves": ["crunch2","firepunch2","perishsong2","willowisp2","wish2"]
+    },
+    "rinnosuke": {
+        "level": 100,
+        "moves": ["drawnline","strength2","mindbomb","shadowhit2","substitute2","swordsdance2"]
+    },
+    "rumia": {
+        "level": 100,
+        "moves": ["slackoff2","nightshade2","toxic2","jamming"]
+    },
+    "ruukoto": {
+        "level": 100,
+        "moves": ["cottonspore2","detect2","wish2","toxic2","memento2","lightscreen2"]
+    },
+    "jksanae": {
+        "level": 100,
+        "moves": ["surf2","aquashower","extrasensory2","gigadrain2","thunder2","calmmind2","prank","tailwind2","bodyslam2","forcepalm2","waterfall2","wish2"]
+    },
+    "sakyua": {
+        "level": 100,
+        "moves": ["sculpture","brickbreak2","lunadial","magicknife","swordsdance2"]
+    },
+    "sanae": {
+        "level": 100,
+        "moves": ["extrasensory2","thunder2","mysticwater","silverwind2"]
+    },
+    "sara": {
+        "level": 100,
+        "moves": ["strength2","icepunch2","machpunch2","bulkup2","bellydrum2","earthquake2","steelfist","focuspunch"]
+    },
+    "sariel": {
+        "level": 100,
+        "moves": ["darkpulse2","extrasensory2","recover2","calmmind2","charminglook","twister2"]
+    },
+    "seiga": {
+        "level": 100,
+        "moves": ["darkpulse2","hyperbeam2","extrasensory2","silverwind2","substitute2","disable2","taunt2","nastyplot2","destinybond2"]
+    },
+    "shingyokuorb": {
+        "level": 100,
+        "moves": ["silverwind2","earthquake2","thunder2","poisonjab2","explosion2"]
+    },
+    "shingyokupriest": {
+        "level": 100,
+        "moves": ["calmmind2","extrasensory2","icebeam2","ancientpower2","rest2","sleeptalk2","detect2","mirrorcoat2"]
+    },
+    "shingyokupriestess": {
+        "level": 100,
+        "moves": ["calmmind2","extrasensory2","flamethrower2","rest2","sleeptalk2","detect2","willowisp2"]
+    },
+    "shinki": {
+        "level": 100,
+        "moves": ["hyperbeam2","extrasensory2","heartbreak","powerwhip2","recover2","whirlwind2"]
+    },
+    "shizuha": {
+        "level": 100,
+        "moves": ["naturesound","earthpower2","frenzyplant2","calmmind2","leechseed2","sleeppowder2","synthesis2","twister2","aromatherapy2"]
+    },
+    "shou": {
+        "level": 100,
+        "moves": ["thunderbolt2","extrasensory2","silverwind2","manaburst","calmmind2","agility2","energylight"]
+    },
+    "speedcirno": {
+        "level": 100,
+        "moves": ["icebeam2","iceball2","waterfall2","surf2","superpower2","poisonjab2","naturepower2","taunt2"]
+    },
+    "speedflandre": {
+        "level": 100,
+        "moves": ["fireblast2","thrash2","charminglook","selfdestruct2"]
+    },
+    "speedkogasa": {
+        "level": 100,
+        "moves": ["aquashower","shadowball2","surf2","icebeam2","sonicboom2","nastyplot2","destinybond2","twister2","selfdestruct2"]
+    },
+    "speedkoishi": {
+        "level": 100,
+        "moves": ["signalbeam2","energyball2","mistball2","outrage2","dreameater2","icebeam2","flamethrower2","thunderbolt2","selfdestruct2","heartseye","trick2"]
+    },
+    "speedkomachi": {
+        "level": 100,
+        "moves": ["waterfall2","aquajet2","shadowdance","willowisp2","slackoff2","taunt2"]
+    },
+    "speedlilyblack": {
+        "level": 100,
+        "moves": ["darkpulse2","shadowball2","naturepower2","nastyplot2","detect2","bindingvoice"]
+    },
+    "speedmarisa": {
+        "level": 100,
+        "moves": ["thunderbolt2","triattack2","flamethrower2","volttackle2","manaburst","mindbomb2","spikes2","taunt2","focuspunch2"]
+    },
+    "speedmedicine": {
+        "level": 100,
+        "moves": ["gigadrain2","poisonbomb","leechseed2","sleeppowder2","burnpowder","detect2","spikes2","taunt2"]
+    },
+    "speedrin": {
+        "level": 100,
+        "moves": ["flareblitz2","beastclaw","fireblast2","endeavor2","substitute2","perishsong2","blazekick2"]
+    },
+    "speedrumia": {
+        "level": 100,
+        "moves": ["dreameater2","poisonbomb","gigadrain2","flamethrower2","hyperbeam2","destinybond2","haze2","toxic2"]
+    },
+    "speedsariel": {
+        "level": 100,
+        "moves": ["hyperbeam2","airslash2","manaburst","shadowball2","thunderbolt2","energyball2","gale"]
+    },
+    "speedshizuha": {
+        "level": 100,
+        "moves": ["naturesound","earthpower2","extrasensory2","frenzyplant2","calmmind2","leechseed2","sleeppowder2","twister2","substitute2"]
+    },
+    "speedutsuho": {
+        "level": 100,
+        "moves": ["fireblast2","aeroblast2","razorwind2","gale","explosion2","twister2"]
+    },
+    "speedwriggle": {
+        "level": 100,
+        "moves": ["naturesound","aeroblast2","heatwave2","poisonbomb","substitute2"]
+    },
+    "speedyamame": {
+        "level": 100,
+        "moves": ["earthquake2","poisonjab2","gunkshot2","rockbullet","tailwind2","spikes2","spiderweb2","pursuit2"]
+    },
+    "speedyorihime": {
+        "level": 100,
+        "moves": ["sonicboom2","extrasensory2","flamethrower2","thunderbolt2","calmmind2"]
+    },
+    "speedyoumu": {
+        "level": 100,
+        "moves": ["shadowdance","battlechant","drawnline","highjumpkick2","swordsdance2","slash2"]
+    },
+    "speedaya": {
+        "level": 100,
+        "moves": ["soar","bravebird2","highjumpkick2","toxic2","aeroblast2","batonpass2"]
+    },
+    "starsapphire": {
+        "level": 100,
+        "moves": ["gigadrain2","hydropump2","icebeam2","surf2","encore2","hypnosis2","nastyplot2","prank","raindance2","recover2","substitute2"]
+    },
+    "suika": {
+        "level": 100,
+        "moves": ["earthquake2","steelfist","spikes2","toxic2","counter2","detect2"]
+    },
+    "sunnymilk": {
+        "level": 100,
+        "moves": ["fireblast2","gigadrain2","nastyplot2","recover2","earthpower2","lavaplume2","energyball2","willowisp2"]
+    },
+    "suwako": {
+        "level": 100,
+        "moves": ["aquashower","surf2","manaburst","earthpower2","calmmind2","raindance2"]
+    },
+    "swordmaster": {
+        "level": 100,
+        "moves": ["swordsdance2","battlechant","extremespeed2","slash2","waterfall2","frenzyplant2","fireblast2","thunder2","sacredfire2","calmmind2","sonicboom2","bladeflash"]
+    },
+    "scarletwitch": {
+        "level": 100,
+        "moves": ["lavaplume2","meteorstorm","thunderbolt2","icywind2","explosion2","blastburn2"]
+    },
+    "technicalalice": {
+        "level": 100,
+        "moves": ["magicknife","spikes2","explosion2","icepunch2","firepunch2","thunderpunch2","powerwhip2","swordsdance2","knockoff2","substitute2","focuspunch2","hypnosis2"]
+    },
+    "technicalaya": {
+        "level": 100,
+        "moves": ["bravebird2","soar2","highjumpkick2","extremespeed2","detect2","nastyplot2","silverwind2","airslash2","heatwave2","spikes2"]
+    },
+    "technicalbyakuren": {
+        "level": 100,
+        "moves": ["swordsdance2","bulkup2","sacredfire2","forcepalm2","zenheadbutt2","psychocut2","extremespeed2","earthquake2","superpower2"]
+    },
+    "technicalchen": {
+        "level": 100,
+        "moves": ["doubleedge2","aeroblast2","tailwind2","batonpass2","slash2"]
+    },
+    "technicalcirno": {
+        "level": 100,
+        "moves": ["icebeam2","energylight","flamethrower2","nastyplot2","naturepower2","icywind2","surf2","blizzard2","sunnyday2"]
+    },
+    "technicalhatate": {
+        "level": 100,
+        "moves": ["airslash2","manaburst","heatwave2","lusterpurge2","nastyplot2","manacharge","roost2","agility2","batonpass2"]
+    },
+    "technicalichirin": {
+        "level": 100,
+        "moves": ["extrasensory2","energyball2","thunder2","shadowball2","superpower2","earthquake2","meteormash2","poisonjab2","smellingsalts2","bulkup2","calmmind2","machpunch2","knockoff2","tickle2"]
+    },
+    "technicaliku": {
+        "level": 100,
+        "moves": ["volttackle2","thunderpunch2","powerwhip2","waterfall2","tailwind2","thunderwave2","curse2"]
+    },
+    "technicalkisume": {
+        "level": 100,
+        "moves": ["fireblast2","flamethrower2","surf2","hydropump2","willowisp2","gigadrain2","shadowball2","prank","confuseray2","firespin2","mirrorcoat2"]
+    },
+    "technicalkogasa": {
+        "level": 100,
+        "moves": ["shadowball2","rockslide2","ominouswind2","rapidspin2","lick2","stomp2","waterpulse2","whirlwind2","icywind2"]
+    },
+    "technicallunachild": {
+        "level": 100,
+        "moves": ["discharge2","gigadrain2","poisonbomb","encore2","manacharge","naturepower2","roost2","thunderwave2","wish2","detect2"]
+    },
+    "technicalmedicine": {
+        "level": 100,
+        "moves": ["poisonbomb","naturesound","shadowball2","spikes2","disable2","substitute2","leechseed2","toxic2","stunspore2","synthesis2"]
+    },
+    "technicalnazrin": {
+        "level": 100,
+        "moves": ["bindingvoice","mistball2","signalbeam2","sonicboom2","thunderbolt2","agility2","chargebeam2","spikes2","substitute2"]
+    },
+    "technicalnitori": {
+        "level": 100,
+        "moves": ["surf2","discharge2","irondefense2","mysticwater","icebeam2","rest2","rapidspin2","whirlpool2"]
+    },
+    "technicalnue": {
+        "level": 100,
+        "moves": ["poisonbomb","airslash2","flamethrower2","thunderbolt2","icebeam2","nastyplot2","gunkshot2","bravebird2","quickattack2","icepunch2","thunderpunch2","crosspoison2","selfdestruct2"]
+    },
+    "technicalparsee": {
+        "level": 100,
+        "moves": ["signalbeam2","poisonbomb","nastyplot2","willowisp2","destinybond2","icebeam2","surf2","confuseray2","reflect2"]
+    },
+    "technicalreisen": {
+        "level": 100,
+        "moves": ["signalbeam2","hypnosis2","charminglook","manaburst","mistball2","mirrorcoat2","poisonbomb","icebeam2"]
+    },
+    "technicalsakuya": {
+        "level": 100,
+        "moves": ["lusterpurge2","manaburst","sonicboom2","blizzard2","sculpture","spikes2","crosspoison2","psychocut2","trick2"]
+    },
+    "technicalsanae": {
+        "level": 100,
+        "moves": ["extrasensory2","silverwind2","gigadrain2","surf2","waterpulse2","thunder2","icywind2","calmmind2","wish2","detect2","encore2","thunderwave2"]
+    },
+    "technicalsatori": {
+        "level": 100,
+        "moves": ["mistball2","signalbeam2","lusterpurge2","darkpulse2","earthquake2","mindbomb2","counter2","mirrorcoat2","recollection","selfdestruct2","calmmind2","curse2"]
+    },
+    "technicalshou": {
+        "level": 100,
+        "moves": ["silverwind2","extrasensory2","bindingvoice","thunderwave2","calmmind2","energylight","thunderbolt2","manaburst","","","","","","","","",""]
+    },
+    "technicalsuika": {
+        "level": 100,
+        "moves": ["earthquake2","rockwrecker2","earthpower2","fireblast2","firepunch2","thunderpunch2","willowisp2","fissure2","spikes2","detect2"]
+    },
+    "technicaltoyohime": {
+        "level": 100,
+        "moves": ["surf2","earthpower2","manaburst","calmmind2","whirlwind2","encore2","iceshard2"]
+    },
+    "technicalyamame": {
+        "level": 100,
+        "moves": ["earthpower2","poisonbomb","gigadrain2","shadowball2","nastyplot2","spikes2","substitute2","spiderweb2","encore2"]
+    },
+    "technicalyukari": {
+        "level": 100,
+        "moves": ["gunkshot2","poisonjab2","poisonbomb","zenheadbutt2","manaburst","psychoboost2","earthquake2","shadowball2","dreameater2","haze2","agility2","trick2","toxic2"]
+    },
+    "technicalyuuka": {
+        "level": 100,
+        "moves": ["frenzyplant2","gigadrain2","ancientpower2","earthpower2","leechseed2","stunspore2","aromatherapy2","taunt2"]
+    },
+    "tenma": {
+        "level": 100,
+        "moves": ["airslash2","ancientpower2","heatwave2","sonicboom2","thunderwave2","agility2","roost2","spikes2"]
+    },
+    "tenshi": {
+        "level": 100,
+        "moves": ["earthquake2","drawnline2","swordsdance2","rockbullet2","rockwrecker2","fissure2"]
+    },
+    "tensoku": {
+        "level": 100,
+        "moves": ["blazekick2","meteormash2","earthquake2","explosion2","bulkup2","thunderwave2","thunderpunch2","surf2","blastburn2"]
+    },
+    "tewi": {
+        "level": 100,
+        "moves": ["crushclaw2","doubleedge2","heartbreak2","taunt2","torment2","toxic2","poisonjab2","encore2","rapidspin2","metronome2"]
+    },
+    "tinyghost": {
+        "level": 100,
+        "moves": ["shadowball2","surf2","icebeam2","gigadrain2","manaburst","facade2","aromatherapy2","rapidspin2","perishsong2","willowisp2","yawn2","curse2","painsplit2"]
+    },
+    "tojiko": {
+        "level": 100,
+        "moves": ["thunderbolt2","thunder2","shadowball2","nastyplot2","willowisp2","thunderwave2","taunt2"]
+    },
+    "tori": {
+        "level": 100,
+        "moves": ["meteorstorm","aeroblast2","blastburn2","blizzard2"]
+    },
+    "toyohime": {
+        "level": 100,
+        "moves": ["surf2","ancientpower2","manaburst","shadowball2","yawn2","whirlwind2","calmmind2"]
+    },
+    "utsuho": {
+        "level": 100,
+        "moves": ["fireblast2","blazekick2","bravebird2","airslash2","thunderpunch2","selfdestruct2","roost2","willowisp2","twister2","pursuit2"]
+    },
+    "wriggle": {
+        "level": 100,
+        "moves": ["powerwhip2","needlearm2","soar","highjumpkick2","tailwind2","toxic2","substitute2","quickattack2"]
+    },
+    "xsuwako": {
+        "level": 100,
+        "moves": ["waterfall2","aquajet2","earthquake2","meteormash2"]
+    },
+    "xtenshi": {
+        "level": 100,
+        "moves": ["spikes2","toxic2","earthquake2","drawnline"]
+    },
+    "xutsuho": {
+        "level": 100,
+        "moves": ["blastburn2","skyattack2","solarbeam2","explosion2"]
+    },
+    "yamame": {
+        "level": 100,
+        "moves": ["earthquake2","poisonjab2","rockbullet2","spikes2","spiderweb2","curse2"]
+    },
+    "yorihime": {
+        "level": 100,
+        "moves": ["sacredfire2","drawnline2","extremespeed2","thunder2","fireblast2","extrasensory2","sonicboom2","calmmind2","bladeflash2"]
+    },
+    "yoshika": {
+        "level": 100,
+        "moves": ["crosspoison2","nightshade2","curse2","toxic2","willowisp2","recover","rest"]
+    },
+    "youki": {
+        "level": 100,
+        "moves": ["drawnline","shadowhit","bladeflash","swordsdance2","spikes2","curse2"]
+    },
+    "youmu": {
+        "level": 100,
+        "moves": ["battlechant","shadowdance","swordsdance","highjumpkick2","vitalthrow2","bladeflash"]
+    },
+    "yukari": {
+        "level": 100,
+        "moves": ["manaburst","nightshade2","dreameater2","calmmind2","rest2","sleeptalk2"]
+    },
+    "yuki": {
+        "level": 100,
+        "moves": ["fireblast2","eruption2","beastclaw","sunnyday2","solarbeam2","bellydrum2","blazekick2","earthquake2"]
+    },
+    "yumeko": {
+        "level": 100,
+        "moves": ["sculpture","bladeflash","meteormash2","pursuit2","outrage2","superpower2","swordsdance2","spikes2"]
+    },
+    "yumemi": {
+        "level": 100,
+        "moves": ["icebeam2","blizzard2","manaburst","lusterpurge2","energyball2","fireblast2","substitute2"]
+    },
+    "yuugenmagan": {
+        "level": 100,
+        "moves": ["poisonbomb","toxic2","heartseye","detect2","rest2","explosion2","confuseray2"]
+    },
+    "yuugi": {
+        "level": 100,
+        "moves": ["earthquake2","rockwrecker2","steelfist","icepunch2","thunderpunch2","bulkup2","bellydrum2","superpower2"]
+    },
+    "yuuka": {
+        "level": 100,
+        "moves": ["needlearm2","powerwhip2","stunspore2","synthesis2","curse2","aromatherapy2","ingrain2"]
+    },
+    "yuyuko": {
+        "level": 100,
+        "moves": ["shadowball2","gigadrain2","frenzyplant2","icebeam2","manaburst","perishsong2","willowisp2"]
+    },
+    "zombiefairy": {
+        "level": 100,
+        "moves": ["painsplit2","airslash2","firespin2","nastyplot2"]
+}
