@@ -626,7 +626,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 			if (baseFormes[species.baseSpecies]) continue;
 
 			// Limit to one Wobbuffet per battle (not just per team)
-			if (species.name === 'Wobbuffet' && this.battleHasWobbuffet) continue;
+			if (species.name === 'Defense Satori' && this.battleHasWobbuffet) continue;
 			// Limit to one Ditto per battle in Gen 2
 			if (this.dex.gen < 3 && species.name === 'Ditto' && this.battleHasDitto) continue;
 
@@ -639,7 +639,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 				const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
 
 				// Limit two Pokemon per tier
-				if (tierCount[tier] >= 2 * limitFactor) continue;
+				// if (tierCount[tier] >= 2 * limitFactor) continue;
 
 				// Limit two of any type
 				let skip = false;
