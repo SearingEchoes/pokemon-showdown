@@ -1102,4 +1102,5 @@
     "zombiefairy": {
         "level": 100,
         "moves": ["painsplit2","airslash2","firespin2","nastyplot2"]
+	},
 }
