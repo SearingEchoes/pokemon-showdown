@@ -24,15 +24,13 @@ export const Formats: FormatList = [
 	},
 		{
 		name: "[Gen 3] Purple OU",
-		threads: [],
-
+		
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
 		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'JK Sanae + Drizzle', 'Scarlet Witch + Drought', 'Sendai', 'Speed Aya', 'Double Soul'],
 	},
 	{
 		name: "[Gen 3] Purple Ubers",
-		threads: [],
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
@@ -40,7 +38,6 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 3] Purple UUbers",
-		threads: [],
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
@@ -48,7 +45,6 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 3] Purple UU",
-		threads: [],
 
 		mod: 'gen3purple',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
@@ -61,7 +57,6 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 3] Purple Doubles",
-		threads: [],
 
 		mod: 'gen3purple',
 		gameType: 'doubles',
@@ -70,10 +65,17 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 3] Purple LC",
-		threads: [],
 
 		mod: 'gen3purple',
 		ruleset: ['Little Cup Limit', 'Inherit Move Rule', 'Freeze Clause Mod'],
 		banlist: ['Uber', 'OU', 'UU', 'Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'Sendai', 'Speed Aya', 'Icy Ball', 'Dark Ribbon'],
+	},
+	
+	{
+		name: "[Gen 3] Purple Random",
+
+		mod: 'gen3purple',
+		team: 'random',
+		ruleset: ['Inherit Move Rule', 'Freeze Clause Mod'],
 	},
 ];
