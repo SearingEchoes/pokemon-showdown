@@ -8052,8 +8052,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	gigaimpact2: {
 		name: "Giga Impact 2",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this attack is not successful, the takes damage proportional to the damage that would have been dealt as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
+		shortDesc: "User is hurt if it misses or is blocked.",
 	},
 	growl2: {
 		name: "Growl 2",
