@@ -409,7 +409,7 @@
     },
     "elly": {
         "level": 100,
-        "moves": ["brickbreak2","crushclaw2","drawnline","firepunch2","icepunch2","poisonjab2","superpower2","thunderpunch2","swordsdance2","furycutter2","magicknife2"]
+        "moves": ["brickbreak2","crushclaw2","drawnline","firepunch2","icepunch2","poisonjab2","superpower2","thunderpunch2","swordsdance2","furycutter2","magicknife"]
     },
     "flandre": {
         "level": 100,
@@ -589,7 +589,7 @@
     },
     "louise": {
         "level": 100,
-        "moves": ["signalbeam2","mistball2","healbell2","hypnosis2","lightscreen2","memento2","mysticwater2","ominouswind2","toxic2","wish2"]
+        "moves": ["signalbeam2","mistball2","healbell2","hypnosis2","lightscreen2","memento2","mysticwater","ominouswind2","toxic2","wish2"]
     },
     "lunachild": {
         "level": 100,
@@ -629,7 +629,7 @@
     },
     "meiling": {
         "level": 100,
-        "moves": ["brickbreak2","dynamicpunch2","focuspunch2","forcepalm2","meteormash2","vitalthrow2","bulkup2","machpunch2","magicknife2","revenge2","reversal2","slackoff2"]
+        "moves": ["brickbreak2","dynamicpunch2","focuspunch2","forcepalm2","meteormash2","vitalthrow2","bulkup2","machpunch2","magicknife","revenge2","reversal2","slackoff2"]
     },
     "meira": {
         "level": 100,
