@@ -405,7 +405,7 @@
     },
     "ellen": {
         "level": 100,
-        "moves": ["signalbeam2","mistball2","thunderbolt2","gigadrain2","burnpowder2","cottonspore2","encore2","hypnosis2","raindance2","smile"]
+        "moves": ["signalbeam2","mistball2","thunderbolt2","gigadrain2","burnpowder","cottonspore2","encore2","hypnosis2","raindance2","smile"]
     },
     "elly": {
         "level": 100,
@@ -509,7 +509,7 @@
     },
     "kana": {
         "level": 100,
-        "moves": ["nightshade2","memento2","perishsong2","tickle2","toxic2","willowisp2","yawn2","spikes2","prank2"]
+        "moves": ["nightshade2","memento2","perishsong2","tickle2","toxic2","willowisp2","yawn2","spikes2","prank"]
     },
     "kanako": {
         "level": 100,
@@ -537,7 +537,7 @@
     },
     "kisume": {
         "level": 100,
-        "moves": ["firespin2","prank2","willowisp2","confuseray2","whirlpool2","nightshade2","rapidspin2"]
+        "moves": ["firespin2","prank","willowisp2","confuseray2","whirlpool2","nightshade2","rapidspin2"]
     },
     "koakuma": {
         "level": 100,
@@ -737,7 +737,7 @@
     },
     "rinnosuke": {
         "level": 100,
-        "moves": ["drawnline","strength2","mindbomb","shadowhit2","substitute2","swordsdance2"]
+        "moves": ["drawnline","strength2","mindbomb","shadowhit","substitute2","swordsdance2"]
     },
     "rumia": {
         "level": 100,
@@ -825,7 +825,7 @@
     },
     "speedmarisa": {
         "level": 100,
-        "moves": ["thunderbolt2","triattack2","flamethrower2","volttackle2","manaburst","mindbomb2","spikes2","taunt2","focuspunch2"]
+        "moves": ["thunderbolt2","triattack2","flamethrower2","volttackle2","manaburst","mindbomb","spikes2","taunt2","focuspunch2"]
     },
     "speedmedicine": {
         "level": 93,
@@ -973,7 +973,7 @@
     },
     "technicalsatori": {
         "level": 100,
-        "moves": ["mistball2","signalbeam2","lusterpurge2","darkpulse2","earthquake2","mindbomb2","counter2","mirrorcoat2","recollection","selfdestruct2","calmmind2","curse2"]
+        "moves": ["mistball2","signalbeam2","lusterpurge2","darkpulse2","earthquake2","mindbomb","counter2","mirrorcoat2","recollection","selfdestruct2","calmmind2","curse2"]
     },
     "technicalshou": {
         "level": 100,

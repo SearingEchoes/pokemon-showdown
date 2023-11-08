@@ -255,24 +255,35 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Pikachu') return 'Light Ball';
 		if (species.name === 'Shedinja') return 'Lum Berry';
 		if (species.name === 'Unown') return 'Twisted Spoon';
-
+		
+		if (species.name === 'Hina') return 'Dark Ribbon';
+		if (species.name === 'Ichirin') return 'Big Cloud';
+		if (species.name === 'Zombie Fairy') return 'Lum Berry';
+		if (species.name === 'Rinnosuke') {
+		  if (Math.random() < 0.5) {
+			return 'Kusanagi';
+		  } else {
+			return 'Yata Mirror';
+		  }
+		}
+		
 		if (moves.has('trick2')) return 'Choice Band';
 		if (moves.has('rest2') && !moves.has('sleeptalk2') && !['Early Bird', 'Natural Cure', 'Shed Skin', 'Maintenance'].includes(ability)) {
 			return 'Chesto Berry';
 		}
 
 		// Medium priority items
-		if (moves.has('dragondance') && ability !== 'Natural Cure') return 'Lum Berry';
-		if ((moves.has('bellydrum') && counter.get('Physical') - counter.get('priority') > 1) || (
-			((moves.has('swordsdance') && counter.get('Status') < 2) || (moves.has('bulkup') && moves.has('substitute'))) &&
+		if (moves.has('tailwind2') && ability !== 'Natural Cure') return 'Lum Berry';
+		if ((moves.has('bellydrum2') && counter.get('Physical') - counter.get('priority') > 1) || (
+			((moves.has('swordsdance2') && counter.get('Status') < 2) || (moves.has('bulkup2') && moves.has('substitute2'))) &&
 			!counter.get('priority') &&
 			species.baseStats.spe >= 60 && species.baseStats.spe <= 95
 		)) {
 			return 'Salac Berry';
 		}
-		if (moves.has('endure') || (
-			moves.has('substitute') &&
-			['bellydrum', 'endeavor', 'flail', 'reversal'].some(m => moves.has(m))
+		if (moves.has('endure2') || (
+			moves.has('substitute2') &&
+			['bellydrum2', 'endeavor2', 'flail2', 'reversal2'].some(m => moves.has(m))
 		)) {
 			return (
 				species.baseStats.spe <= 100 && ability !== 'Speed Boost' && !counter.get('speedsetup') && !moves.has('focuspunch')
@@ -290,7 +301,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		)) {
 			return 'Choice Band';
 		}
-		if (moves.has('psychoboost')) return 'White Herb';
+		if (moves.has('psychoboost2')) return 'White Herb';
 
 		// Default to Leftovers
 		return 'Leftovers';
