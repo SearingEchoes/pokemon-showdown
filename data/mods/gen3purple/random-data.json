@@ -17,18 +17,18 @@
     },
     "adventletty": {
         "level": 100,
-        "moves": ["braver","bodyslam2","extremespeed2","earthquake2","icepunch2","poisonjab2","selfdestruct2","waterfall2","bladeflash2","iceshard2","spikes2","swordsdance2"]
+        "moves": ["braver","bodyslam2","extremespeed2","earthquake2","icepunch2","poisonjab2","selfdestruct2","waterfall2","bladeflash","iceshard2","spikes2","swordsdance2"]
     },
     "adventmarisa": {
-        "level": 100,
+        "level": 95,
         "moves": ["doubleedge2","extremespeed2","poisonjab2","volttackle2","magicknife","swordsdance2","thunderwave2","wish2","trick2"]
     },
     "adventmeiling": {
-        "level": 100,
+        "level": 95,
         "moves": ["blazekick2","brickbreak2","dynamicpunch2","earthquake2","forcepalm2","highjumpkick2","icepunch2","meteormash2","poisonjab2","vitalthrow2","bulkup2","fakeout2","healbell2","revenge2","slackoff2"]
     },
     "adventmokou": {
-        "level": 100,
+        "level": 95,
         "moves": ["blazekick2","dynamicpunch2","earthquake2","flareblitz2","superpower2","bulkup2","machpunch2","pursuit2","recover2","willowisp2"]
     },
     "adventmystia": {
@@ -40,7 +40,7 @@
         "moves": ["earthquake2","extremespeed2","flareblitz2","killingbite","superpower2","tailwind2"]
     },
     "adventreisen": {
-        "level": 100,
+        "level": 95,
         "moves": ["dreameater2","energyball2","gigadrain2","icebeam2","lusterpurge2","manaburst","poisonbomb","signalbeam2","lightscreen2","substitute2"]
     },
     "adventtewi": {
@@ -61,7 +61,7 @@
     },
     "alice": {
         "level": 100,
-        "moves": ["manaburst","signalbeam2","icebeam2","thunderbolt2","manacharge2","knockoff2","spikes2"]
+        "moves": ["manaburst","signalbeam2","icebeam2","thunderbolt2","manacharge","knockoff2","spikes2"]
     },
     "attackalice": {
         "level": 100,
@@ -84,7 +84,7 @@
         "moves": ["zenheadbutt2","gunkshot2","stunspore2","recover2"]
     },
     "attackflandre": {
-        "level": 100,
+        "level": 95,
         "moves": ["gigaimpact2","dynamicpunch2","killingbite2","outrage2"]
     },
     "attackhina": {
@@ -160,7 +160,7 @@
         "moves": ["poisonjab2","bravebird2","selfdestruct2","swordsdance2","shadowdive"]
     },
     "attackpatchouli": {
-        "level": 100,
+        "level": 95,
         "moves": ["fireblast2","hydropump2","icebeam2","icywind2","manacharge"]
     },
     "attackran": {
@@ -192,7 +192,7 @@
         "moves": ["earthquake2","doubleedge2","tailwind2","icepunch2"]
     },
     "attackstarsapphire": {
-        "level": 100,
+        "level": 95,
         "moves": ["bodyslam2","powerwhip2","waterfall2","aquajet2","hypnosis2"]
     },
     "attacksuika": {
@@ -209,7 +209,7 @@
     },
     "attacktenshi": {
         "level": 100,
-        "moves": ["bodyslam2","drawnline","earthquake2","needlearm2","rockbullet2","swordsdance2","bellydrum2"]
+        "moves": ["bodyslam2","drawnline","earthquake2","needlearm2","rockbullet","swordsdance2","bellydrum2"]
     },
     "attacktewi": {
         "level": 100,
@@ -236,7 +236,7 @@
         "moves": ["dreameater2","gigadrain2","lusterpurge2","shadowball2"]
     },
     "aya": {
-        "level": 100,
+        "level": 93,
         "moves": ["soar","highjumpkick2","spikes2","tailwind2","toxic2","twister2","skyattack2"]
     },
     "byakuren": {
@@ -252,7 +252,7 @@
         "moves": ["surf2","lightscreen2","spikes2","thunderwave2"]
     },
     "cirno": {
-        "level": 100,
+        "level": 99,
         "moves": ["icebeam2","airslash2","surf2","superpower2","doubleedge2"]
     },
     "daiyousei": {
@@ -260,7 +260,7 @@
         "moves": ["selfdestruct2","icebeam2","silverwind2","energylight","airslash2","signalbeam2","substitute2","wish2"]
     },
     "darkalice": {
-        "level": 100,
+        "level": 95,
         "moves": ["manaburst","hyperbeam2","energyball2","fireblast2","blizzard2","signalbeam2","heartseye"]
     },
     "defensebyakuren": {
@@ -292,7 +292,7 @@
         "moves": ["thunder2","raindance2","encore2","knockoff2"]
     },
     "defensekaguya": {
-        "level": 100,
+        "level": 95,
         "moves": ["muddywater2","energylight","rest2","sleeptalk2"]
     },
     "defensekanako": {
@@ -325,11 +325,11 @@
     },
     "defensemomiji": {
         "level": 100,
-        "moves": ["braver","crunch2","rest2","swordsdance2","","","","","","","","","","","","",""]
+        "moves": ["braver","crunch2","rest2","swordsdance2"]
     },
     "defensemurasa": {
         "level": 100,
-        "moves": ["raindance2","yawn2","shadowdive","destinybond2","surf2","","","","","","","","","","","",""]
+        "moves": ["raindance2","yawn2","shadowdive","destinybond2","surf2"]
     },
     "defenseparsee": {
         "level": 100,
@@ -361,7 +361,7 @@
     },
     "defensetenshi": {
         "level": 100,
-        "moves": ["earthquake2","sleeptalk2","swordsdance2","rest2","","","","","","","","","","","","",""]
+        "moves": ["earthquake2","sleeptalk2","swordsdance2","rest2"]
     },
     "defensetewi": {
         "level": 100,
@@ -388,7 +388,7 @@
         "moves": ["sleeptalk2","shadowdive","toxic2","rest2"]
     },
     "defensesatori": {
-        "level": 100,
+        "level": 92,
         "moves": ["counter2","destinybond2","encore2","mirrorcoat2","recollection","smile"]
     },
     "eiki": {
@@ -440,7 +440,7 @@
         "moves": ["airslash2","manaburst","lusterpurge2","sonicboom2","triattack2","agility2","nastyplot2","roost2"]
     },
     "helpereirin": {
-        "level": 100,
+        "level": 95,
         "moves": ["aquashower","manaburst","poisonbomb","burnpowder","recover2","hypnosis2"]
     },
     "helperkeine": {
@@ -449,7 +449,7 @@
     },
     "helperkoakuma": {
         "level": 100,
-        "moves": ["batonpass2","manacharge2","lovelykiss2","manaburst"]
+        "moves": ["batonpass2","manacharge","lovelykiss2","manaburst"]
     },
     "helperletty": {
         "level": 100,
@@ -504,7 +504,7 @@
         "moves": ["signalbeam2","surf2","thunderbolt2","thunder2","raindance2","reflect2","skillswap2","thunderwave2"]
     },
     "kaguya": {
-        "level": 100,
+        "level": 95,
         "moves": ["frenzyplant2","gigadrain2","manaburst","ingrain2","recover2","torment2"]
     },
     "kana": {
@@ -561,7 +561,7 @@
     },
     "kotohime": {
         "level": 100,
-        "moves": ["signalbeam2","chargebeam2","encore2","lightscreen2","reflect2","wish2","smile2","screech2","thunderwave2","toxic2","wanting"]
+        "moves": ["signalbeam2","chargebeam2","encore2","lightscreen2","reflect2","wish2","smile","screech2","thunderwave2","toxic2","wanting"]
     },
     "kurumi": {
         "level": 100,
@@ -604,7 +604,7 @@
         "moves": ["spikes2","taunt2","prank","memento2"]
     },
     "magicstones": {
-        "level": 100,
+        "level": 95,
         "moves": ["manaburst","signalbeam2","extrasensory2","icebeam2","flamethrower2","recover2","manacharge"]
     },
     "mai": {
@@ -612,12 +612,12 @@
         "moves": ["icebeam2","darkpulse2","surf2","lovelykiss2","nastyplot2","raindance2"]
     },
     "mamizou": {
-        "level": 100,
+        "level": 95,
         "moves": ["doubleedge2","hydropump2","killingbite2","waterfall2","batonpass2","bellydrum2","hypnosis2","spikes2","transform2","trick2"]
     },
     "margatroid": {
         "level": 100,
-        "moves": ["signalbeam2","manacharge2","thunderbolt2","flamethrower2","icebeam2","darkpulse2","substitute2","yawn2"]
+        "moves": ["signalbeam2","manacharge","thunderbolt2","flamethrower2","icebeam2","darkpulse2","substitute2","yawn2"]
     },
     "marisa": {
         "level": 100,
@@ -633,7 +633,7 @@
     },
     "meira": {
         "level": 100,
-        "moves": ["drawnline","extremespeed2","leafblade2","rollingkick2","agility2","bladeflash2","endeavor2","nightslash2","pursuit2","swordsdance2","tailwind2"]
+        "moves": ["drawnline","extremespeed2","leafblade2","rollingkick2","agility2","bladeflash","endeavor2","nightslash2","pursuit2","swordsdance2","tailwind2"]
     },
     "merlin": {
         "level": 100,
@@ -648,7 +648,7 @@
         "moves": ["hyperbeam2","shadowball2","thunderbolt2","scaryface2","memento2"]
     },
     "mimichan": {
-        "level": 100,
+        "level": 93,
         "moves": ["doubleedge2","explosion2","flareblitz2","headsmash2","skyattack2","energylight","bodyslam2","memento2","sunnyday2"]
     },
     "minoriko": {
@@ -688,7 +688,7 @@
         "moves": ["aquashower","surf2","thunder2","raindance2"]
     },
     "nue": {
-        "level": 100,
+        "level": 94,
         "moves": ["bravebird2","gunkshot2","selfdestruct2","poisonjab2","disable2","recover2","skillswap2","swordsdance2","willowisp2","taunt2","toxic2"]
     },
     "orange": {
@@ -709,11 +709,11 @@
     },
     "reimu": {
         "level": 100,
-        "moves": ["forcepalm2","soar2","knockoff2","reflect2","tailwind2"]
+        "moves": ["forcepalm2","soar","knockoff2","reflect2","tailwind2"]
     },
     "reisen": {
         "level": 100,
-        "moves": ["signalbeam2","manaburst","poisonbomb","dreameater2","hypnosis2","agility2","manacharge2"]
+        "moves": ["signalbeam2","manaburst","poisonbomb","dreameater2","hypnosis2","agility2","manacharge"]
     },
     "reisenii": {
         "level": 100,
@@ -725,14 +725,14 @@
     },
     "rika": {
         "level": 100,
-        "moves": ["hyperbeam2","lunatic2","selfdestruct2","thunderbolt2"]
+        "moves": ["hyperbeam2","lunatic","selfdestruct2","thunderbolt2"]
     },
     "rikako": {
         "level": 100,
         "moves": ["manaburst","psychoboost2","thunderbolt2","selfdestruct2","ominouswind2","reflect2","trick2"]
     },
     "rin": {
-        "level": 100,
+        "level": 93,
         "moves": ["crunch2","firepunch2","perishsong2","willowisp2","wish2"]
     },
     "rinnosuke": {
@@ -751,7 +751,7 @@
         "level": 100,
         "moves": ["surf2","aquashower","extrasensory2","gigadrain2","thunder2","calmmind2","prank","tailwind2","bodyslam2","forcepalm2","waterfall2","wish2"]
     },
-    "sakyua": {
+    "sakuya": {
         "level": 100,
         "moves": ["sculpture","brickbreak2","lunadial","magicknife","swordsdance2"]
     },
@@ -760,16 +760,20 @@
         "moves": ["extrasensory2","thunder2","mysticwater","silverwind2"]
     },
     "sara": {
-        "level": 100,
+        "level": 95,
         "moves": ["strength2","icepunch2","machpunch2","bulkup2","bellydrum2","earthquake2","steelfist","focuspunch"]
     },
     "sariel": {
-        "level": 100,
+        "level": 94,
         "moves": ["darkpulse2","extrasensory2","recover2","calmmind2","charminglook","twister2"]
     },
     "seiga": {
-        "level": 100,
+        "level": 94,
         "moves": ["darkpulse2","hyperbeam2","extrasensory2","silverwind2","substitute2","disable2","taunt2","nastyplot2","destinybond2"]
+    },
+    "sendai": {
+        "level": 90,
+        "moves": ["sacredfire2","rockbullet","steelfist","earthquake2","barrage2","focuspunch2"]
     },
     "shingyokuorb": {
         "level": 100,
@@ -800,7 +804,7 @@
         "moves": ["icebeam2","iceball2","waterfall2","surf2","superpower2","poisonjab2","naturepower2","taunt2"]
     },
     "speedflandre": {
-        "level": 100,
+        "level": 94,
         "moves": ["fireblast2","thrash2","charminglook","selfdestruct2"]
     },
     "speedkogasa": {
@@ -824,7 +828,7 @@
         "moves": ["thunderbolt2","triattack2","flamethrower2","volttackle2","manaburst","mindbomb2","spikes2","taunt2","focuspunch2"]
     },
     "speedmedicine": {
-        "level": 100,
+        "level": 93,
         "moves": ["gigadrain2","poisonbomb","leechseed2","sleeppowder2","burnpowder","detect2","spikes2","taunt2"]
     },
     "speedrin": {
@@ -864,7 +868,7 @@
         "moves": ["shadowdance","battlechant","drawnline","highjumpkick2","swordsdance2","slash2"]
     },
     "speedaya": {
-        "level": 100,
+        "level": 90,
         "moves": ["soar","bravebird2","highjumpkick2","toxic2","aeroblast2","batonpass2"]
     },
     "starsapphire": {
@@ -884,11 +888,11 @@
         "moves": ["aquashower","surf2","manaburst","earthpower2","calmmind2","raindance2"]
     },
     "swordmaster": {
-        "level": 100,
+        "level": 95,
         "moves": ["swordsdance2","battlechant","extremespeed2","slash2","waterfall2","frenzyplant2","fireblast2","thunder2","sacredfire2","calmmind2","sonicboom2","bladeflash"]
     },
     "scarletwitch": {
-        "level": 100,
+        "level": 95,
         "moves": ["lavaplume2","meteorstorm","thunderbolt2","icywind2","explosion2","blastburn2"]
     },
     "technicalalice": {
@@ -896,8 +900,8 @@
         "moves": ["magicknife","spikes2","explosion2","icepunch2","firepunch2","thunderpunch2","powerwhip2","swordsdance2","knockoff2","substitute2","focuspunch2","hypnosis2"]
     },
     "technicalaya": {
-        "level": 100,
-        "moves": ["bravebird2","soar2","highjumpkick2","extremespeed2","detect2","nastyplot2","silverwind2","airslash2","heatwave2","spikes2"]
+        "level": 94,
+        "moves": ["bravebird2","soar","highjumpkick2","extremespeed2","detect2","nastyplot2","silverwind2","airslash2","heatwave2","spikes2"]
     },
     "technicalbyakuren": {
         "level": 100,
@@ -973,7 +977,7 @@
     },
     "technicalshou": {
         "level": 100,
-        "moves": ["silverwind2","extrasensory2","bindingvoice","thunderwave2","calmmind2","energylight","thunderbolt2","manaburst","","","","","","","","",""]
+        "moves": ["silverwind2","extrasensory2","bindingvoice","thunderwave2","calmmind2","energylight","thunderbolt2","manaburst"]
     },
     "technicalsuika": {
         "level": 100,
@@ -996,12 +1000,12 @@
         "moves": ["frenzyplant2","gigadrain2","ancientpower2","earthpower2","leechseed2","stunspore2","aromatherapy2","taunt2"]
     },
     "tenma": {
-        "level": 100,
+        "level": 93,
         "moves": ["airslash2","ancientpower2","heatwave2","sonicboom2","thunderwave2","agility2","roost2","spikes2"]
     },
     "tenshi": {
         "level": 100,
-        "moves": ["earthquake2","drawnline2","swordsdance2","rockbullet2","rockwrecker2","fissure2"]
+        "moves": ["earthquake2","drawnline","swordsdance2","rockbullet","rockwrecker2","fissure2"]
     },
     "tensoku": {
         "level": 100,
@@ -1009,7 +1013,7 @@
     },
     "tewi": {
         "level": 100,
-        "moves": ["crushclaw2","doubleedge2","heartbreak2","taunt2","torment2","toxic2","poisonjab2","encore2","rapidspin2","metronome2"]
+        "moves": ["crushclaw2","doubleedge2","heartbreak","taunt2","torment2","toxic2","poisonjab2","encore2","rapidspin2","metronome2"]
     },
     "tinyghost": {
         "level": 100,
@@ -1036,31 +1040,31 @@
         "moves": ["powerwhip2","needlearm2","soar","highjumpkick2","tailwind2","toxic2","substitute2","quickattack2"]
     },
     "xsuwako": {
-        "level": 100,
+        "level": 88,
         "moves": ["waterfall2","aquajet2","earthquake2","meteormash2"]
     },
     "xtenshi": {
-        "level": 100,
+        "level": 88,
         "moves": ["spikes2","toxic2","earthquake2","drawnline"]
     },
     "xutsuho": {
-        "level": 100,
+        "level": 88,
         "moves": ["blastburn2","skyattack2","solarbeam2","explosion2"]
     },
     "yamame": {
         "level": 100,
-        "moves": ["earthquake2","poisonjab2","rockbullet2","spikes2","spiderweb2","curse2"]
+        "moves": ["earthquake2","poisonjab2","rockbullet","spikes2","spiderweb2","curse2"]
     },
     "yorihime": {
         "level": 100,
-        "moves": ["sacredfire2","drawnline2","extremespeed2","thunder2","fireblast2","extrasensory2","sonicboom2","calmmind2","bladeflash2"]
+        "moves": ["sacredfire2","drawnline","extremespeed2","thunder2","fireblast2","extrasensory2","sonicboom2","calmmind2","bladeflash"]
     },
     "yoshika": {
         "level": 100,
         "moves": ["crosspoison2","nightshade2","curse2","toxic2","willowisp2","recover","rest"]
     },
     "youki": {
-        "level": 100,
+        "level": 94,
         "moves": ["drawnline","shadowhit","bladeflash","swordsdance2","spikes2","curse2"]
     },
     "youmu": {
@@ -1076,7 +1080,7 @@
         "moves": ["fireblast2","eruption2","beastclaw","sunnyday2","solarbeam2","bellydrum2","blazekick2","earthquake2"]
     },
     "yumeko": {
-        "level": 100,
+        "level": 94,
         "moves": ["sculpture","bladeflash","meteormash2","pursuit2","outrage2","superpower2","swordsdance2","spikes2"]
     },
     "yumemi": {
