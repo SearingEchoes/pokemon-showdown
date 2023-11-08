@@ -76,6 +76,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen3purple',
 		team: 'random',
-		ruleset: ['Inherit Move Rule', 'Freeze Clause Mod'],
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
 	},
 ];
