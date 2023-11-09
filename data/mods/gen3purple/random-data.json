@@ -393,7 +393,7 @@
     },
     "eiki": {
         "level": 100,
-        "moves": ["manaburst","silverwind2","scaryface2","wish2","calmmind2","energylight","extrasensory2","thunderbolt2",'judgement']
+        "moves": ["manaburst","silverwind2","scaryface2","wish2","calmmind2","energylight","extrasensory2","thunderbolt2","judgement"]
     },
     "eirin": {
         "level": 100,
