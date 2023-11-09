@@ -365,6 +365,15 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.id === 'snorlax') return 'Immunity';
 		if (species.id === 'blissey') return 'Natural Cure';
 
+		if (species.id === 'Scarlet Witch') return 'Drought';
+		if (species.id === 'JK Sanae') return 'Drizzle';
+		if (species.id === 'Mystia') return 'Cute Charm';
+		if (species.id === 'Attack Mystia') return 'Cute Charm';
+		if (species.id === 'Helper Mystia') return 'Cute Charm';
+		if (species.id === 'Parsee') return 'Insomnia';
+		if (species.id === 'Defense Parsee') return 'Insomnia';
+		if (species.id === 'Technical Parsee') return 'Insomnia';
+
 		let abilityAllowed: Ability[] = [];
 		// Obtain a list of abilities that are allowed (not culled)
 		for (const ability of abilityData) {

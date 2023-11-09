@@ -85,7 +85,7 @@
     },
     "attackflandre": {
         "level": 95,
-        "moves": ["gigaimpact2","dynamicpunch2","killingbite2","outrage2"]
+        "moves": ["gigaimpact2","dynamicpunch2","killingbite","outrage2"]
     },
     "attackhina": {
         "level": 100,
@@ -273,7 +273,7 @@
     },
     "defenseeiki": {
         "level": 100,
-        "moves": ["extrasensory2","manaburst","calmmind2","imprison2"]
+        "moves": ["extrasensory2","manaburst","calmmind2","imprison2","judgement","coerce"]
     },
     "defensehatate": {
         "level": 100,
@@ -393,7 +393,7 @@
     },
     "eiki": {
         "level": 100,
-        "moves": ["manaburst","silverwind2","scaryface2","wish2","calmmind2","energylight","extrasensory2","thunderbolt2"]
+        "moves": ["manaburst","silverwind2","scaryface2","wish2","calmmind2","energylight","extrasensory2","thunderbolt2",'judgement']
     },
     "eirin": {
         "level": 100,
@@ -613,7 +613,7 @@
     },
     "mamizou": {
         "level": 95,
-        "moves": ["doubleedge2","hydropump2","killingbite2","waterfall2","batonpass2","bellydrum2","hypnosis2","spikes2","transform2","trick2"]
+        "moves": ["doubleedge2","hydropump2","killingbite","waterfall2","batonpass2","bellydrum2","hypnosis2","spikes2","transform2","trick2"]
     },
     "margatroid": {
         "level": 100,
@@ -748,7 +748,7 @@
         "moves": ["cottonspore2","detect2","wish2","toxic2","memento2","lightscreen2"]
     },
     "jksanae": {
-        "level": 100,
+        "level": 95,
         "moves": ["surf2","aquashower","extrasensory2","gigadrain2","thunder2","calmmind2","prank","tailwind2","bodyslam2","forcepalm2","waterfall2","wish2"]
     },
     "sakuya": {
