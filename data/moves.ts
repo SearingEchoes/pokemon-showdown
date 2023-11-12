@@ -29441,4 +29441,102 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Unknown",
 		contestType: "Clever",
 	},
+	//super illegal customs
+	specialbeamcannon: {
+		num: 3000,
+		accuracy: 50,
+		basePower: 0,
+		category: "Special",
+		name: "Special Beam Cannon",
+		pp: 5,
+		priority: -3,
+		flags: {protect: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
+		ohko: true,
+		priorityChargeCallback(pokemon) {
+			pokemon.addVolatile('specialbeamcannon');
+		},
+		beforeMoveCallback(pokemon) {
+			if (pokemon.volatiles['specialbeamcannon']?.lostFocus) {
+				this.add('cant', pokemon, 'Special Beam Cannon', 'Special Beam Cannon');
+				return true;
+			}
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-singleturn', pokemon, 'move: Special Beam Cannon');
+			},
+			onHit(pokemon, source, move) {
+				if (move.category !== 'Status') {
+					this.effectState.lostFocus = true;
+				}
+			},
+			onTryAddVolatile(status, pokemon) {
+				if (status.id === 'flinch') return null;
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Saiyan",
+		contestType: "Tough",
+	},
+	chaoswave: {
+		num: 3001,
+		accuracy: 100,
+		basePower: 0,
+		damageCallback(pokemon) {
+			return (this.random(1, 251) * pokemon.level) / 100;
+		},
+		category: "Special",
+		name: "Chaos Wave",
+		pp: 25,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	kakarot: {
+		num: 3002,
+		accuracy: true,
+		basePower: 30,
+		category: "Physical",
+		name: "KAKAROT!!!",
+		pp: 2,
+		priority: 1,
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		forceSwitch: true,
+		target: "normal",
+		type: "Saiyan",
+		contestType: "Tough",
+	},
+	bustershell: {
+		num: 3003,
+		accuracy: 100,
+		basePower: 170,
+		category: "Special",
+		name: "Buster Shell",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Saiyan",
+		contestType: "Tough",
+	},
+	killdriver: {
+		num: 3004,
+		accuracy: 95,
+		basePower: 120,
+		category: "Special",
+		name: "Kill Driver",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Saiyan",
+		contestType: "Tough",
+	},
 };

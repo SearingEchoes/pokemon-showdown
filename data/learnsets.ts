@@ -103385,6 +103385,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		milkdrink2: ["3L1"],
 		triplekick2: ["3L1"],
 		checkmaid: ["3L1"],
+		specialbeamcannon: ["3L1"],
+		chaoswave: ["3L1"],
+		kakarot: ["3L1"],
+		bustershell: ["3L1"],
+		killdriver: ["3L1"],
     },
   },
   genji: {
