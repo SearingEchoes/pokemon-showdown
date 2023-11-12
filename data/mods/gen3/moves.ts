@@ -2136,5 +2136,25 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	specialbeamcannon: {
+		inherit: true,
+		gen: 3,
+	},
+	kakarot: {
+		inherit: true,
+		gen: 3,
+	},
+	chaoswave: {
+		inherit: true,
+		gen: 3,
+	},
+	bustershell: {
+		inherit: true,
+		gen: 3,
+	},
+	killdriver: {
+		inherit: true,
+		gen: 3,
+	},
 
 };
