@@ -39,6 +39,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {atk: 30, def: 30, spd: 30},
 		HPdvs: {atk: 13, def: 13},
@@ -84,6 +85,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 1,
+			Saiyan: 0,
 		},
 		HPivs: {},
 	},
@@ -127,6 +129,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {atk: 30},
 		HPdvs: {def: 14},
@@ -172,6 +175,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {spa: 30},
 		HPdvs: {atk: 14},
@@ -216,6 +220,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	fighting: {
@@ -258,6 +263,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {def: 30, spa: 30, spd: 30, spe: 30},
 		HPdvs: {atk: 12, def: 12},
@@ -303,6 +309,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {atk: 30, spa: 30, spe: 30},
 		HPdvs: {atk: 14, def: 12},
@@ -347,6 +354,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30},
 		HPdvs: {atk: 12, def: 13},
@@ -392,6 +400,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 3,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {def: 30, spd: 30},
 		HPdvs: {atk: 13, def: 14},
@@ -437,6 +446,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {atk: 30, spa: 30},
 		HPdvs: {atk: 14, def: 14},
@@ -482,6 +492,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {spa: 30, spd: 30},
 		HPdvs: {atk: 12},
@@ -528,6 +539,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {atk: 30, def: 30},
 		HPdvs: {def: 13},
@@ -572,6 +584,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	poison: {
@@ -616,6 +629,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {def: 30, spa: 30, spd: 30},
 		HPdvs: {atk: 12, def: 14},
@@ -660,6 +674,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 1,
+			Saiyan: 0,
 		},
 		HPivs: {atk: 30, spe: 30},
 		HPdvs: {def: 12},
@@ -705,6 +720,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 2,
 		},
 		HPivs: {def: 30, spd: 30, spe: 30},
 		HPdvs: {atk: 13, def: 12},
@@ -752,6 +768,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 		HPivs: {spd: 30},
 		HPdvs: {atk: 13},
@@ -796,6 +813,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 2,
 		},
 		HPivs: {atk: 30, def: 30, spa: 30},
 		HPdvs: {atk: 14, def: 13},
@@ -841,6 +859,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 2,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	nether: {
@@ -884,6 +903,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 3,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	aero: {
@@ -926,6 +946,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	beast: {
@@ -969,6 +990,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	miasma: {
@@ -1013,6 +1035,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	metal: {
@@ -1058,6 +1081,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	umbral: {
@@ -1101,6 +1125,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 2,
 			
 			Unknown: 1,
+			Saiyan: 0,
 		},
 	},
 	earth: {
@@ -1144,6 +1169,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	pyro: {
@@ -1187,6 +1213,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	aqua: {
@@ -1229,6 +1256,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 2,
 		},
 	},
 	wind: {
@@ -1271,6 +1299,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	nature: {
@@ -1314,6 +1343,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	frost: {
@@ -1358,6 +1388,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	faith: {
@@ -1400,6 +1431,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	reason: {
@@ -1442,6 +1474,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 1,
+			Saiyan: 0,
 		},
 	},
 	heart: {
@@ -1484,6 +1517,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	illusion: {
@@ -1526,6 +1560,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 	//update resistances if dlruukoto is added
@@ -1537,7 +1572,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Electric: 0,
 			Fairy: 0,
 			Fighting: 0,
-			Fire: 3,
+			Fire: 0,
 			Flying: 0,
 			Ghost: 0,
 			Grass: 0,
@@ -1569,6 +1604,51 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Illusion: 0,
 			
 			Unknown: 0,
+			Saiyan: 0,
+		},
+	},
+	
+	saiyan: {
+		damageTaken: {
+			Bug: 0,
+			Dark: 0,
+			Dragon: 0,
+			Electric: 0,
+			Fairy: 0,
+			Fighting: 0,
+			Fire: 0,
+			Flying: 0,
+			Ghost: 0,
+			Grass: 0,
+			Ground: 0,
+			Ice: 0,
+			Normal: 0,
+			Poison: 0,
+			Psychic: 0,
+			Rock: 0,
+			Steel: 0,
+			Water: 0,
+			
+			Dream: 0,
+			Nether: 0,
+			Aero: 0,
+			Beast: 0,
+			Miasma: 0,
+			Metal: 0,
+			Umbral: 0,
+			Earth: 0,
+			Pyro: 0,
+			Aqua: 0,
+			Wind: 0,
+			Nature: 0,
+			Frost: 0,
+			Faith: 0,
+			Reason: 0,
+			Heart: 0,
+			Illusion: 0,
+			
+			Unknown: 0,
+			Saiyan: 0,
 		},
 	},
 };
