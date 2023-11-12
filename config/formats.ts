@@ -42,7 +42,7 @@ export const Formats: FormatList = [
 		name: "[Gen 3] Purple Ubers",
 
 		mod: 'gen3purple',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		ruleset: ['One Boost Passer Clause', 'Freeze Clause Mod'],
 		banlist: ['King\'s Rock', 'Sand Veil'],
 	},
 	{
