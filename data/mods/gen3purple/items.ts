@@ -124,23 +124,4 @@ export const Items: {[k: string]: ModdedItemData} = {
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 	},
-	tamatoberry: {
-		inherit: true,
-		onUpdate() {},
-		onResidualOrder: 10,
-		onResidualSubOrder: 4,
-		onResidual(pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 20) {
-				pokemon.eatItem();
-			}
-		},
-		onEat(pokemon) {
-			this.heal(pokemon.baseMaxhp);
-			this.boost({atk: 4});
-			this.boost({def: 4});
-			this.boost({spa: 4});
-			this.boost({spd: 4});
-			this.boost({spe: 4});
-		},
-	},
 };
