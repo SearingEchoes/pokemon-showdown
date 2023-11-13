@@ -29502,7 +29502,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 3002,
 		accuracy: true,
 		basePower: 30,
-		category: "Physical",
+		category: "Special",
 		name: "KAKAROT!!!",
 		pp: 3,
 		noPPBoosts: true,
