@@ -7965,7 +7965,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Dark Ribbon",
 		spritenum: 789,
 		fling: {
-			basePower: 20,
+			basePower: 1,
+			volatileStatus: 'curse',
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
