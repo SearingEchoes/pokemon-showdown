@@ -14,6 +14,10 @@ export const Scripts: ModdedBattleScriptsData = {
 		}
 		
 		this.modData('Learnsets', 'speedkoishi').learnset.fling = ['3L1'];
+		this.modData('Learnsets', 'satori').learnset.photongeyser = ['3L1'];
+		this.modData('Learnsets', 'satori').learnset.takeheart = ['3L1'];
+		this.modData('Learnsets', 'satori').learnset.magmastorm = ['3L1'];
+		
 	},
 	
 	

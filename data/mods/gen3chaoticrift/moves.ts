@@ -84,4 +84,24 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	takeheart: {
+		inherit: true,
+		gen: 3,
+	},
+	magmastorm: {
+		inherit: true,
+		gen: 3,
+	},
+	photongeyser: {
+		inherit: true,
+		gen: 3,
+	},
+	roost: {
+		inherit: true,
+		gen: 3,
+	},
+	ironhead: {
+		inherit: true,
+		gen: 3,
+	},
 };

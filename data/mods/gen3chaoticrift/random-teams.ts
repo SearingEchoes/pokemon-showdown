@@ -262,7 +262,19 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Ichirin') return 'Big Cloud';
 		if (species.name === 'Zombie Fairy') return 'Lum Berry';
 		if (species.name === 'Turles') return 'Tamato Berry';
-		if (species.name === 'Speed Koishi') return 'Dark Ribbon';
+		if (species.name === 'Satori') return 'Elder Pain';
+		if (species.name === 'Dugtrio') return 'Choice Band';
+		if (species.name === 'Regirock') return 'Vinto Tie';
+		if (species.name === 'Regice') return 'Psycho Wand';
+		if (species.name === 'Registeel') return 'Elder Pain';
+		if (species.name === 'Bellibolt') return 'Elder Pain';
+		if (species.name === 'Speed Koishi') {
+		  if (Math.random() < 0.5) {
+			return 'Dark Ribbon';
+		  } else {
+			return 'Icy Ball';
+		  }
+		}
 		if (species.name === 'Rinnosuke') {
 		  if (Math.random() < 0.5) {
 			return 'Kusanagi';
@@ -390,6 +402,12 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		// Hard-code abilities here
 		if (species.id === 'snorlax') return 'Immunity';
 		if (species.id === 'blissey') return 'Natural Cure';
+		if (species.id === 'dugtrio') return 'Arena Trap';
+		if (species.id === 'electivire') return 'Motor Drive';
+		if (species.id === 'dialga') return 'Pressure';
+		if (species.id === 'palkia') return 'Pressure';
+		if (species.id === 'zapdos') return 'Pressure';
+		if (species.id === 'bellibolt') return 'Electromorphosis';
 
 		if (species.id === 'Scarlet Witch') return 'Drought';
 		if (species.id === 'JK Sanae') return 'Drizzle';
