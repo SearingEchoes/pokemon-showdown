@@ -8032,4 +8032,57 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -124,
 		gen: 3,
 	},
+	elderpain: {
+		name: "Elder Pain",
+		spritenum: 793,
+		fling: {
+			basePower: 200,
+		},
+		onAfterMoveSecondarySelfPriority: -1,
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (move.totalDamage && !pokemon.forceSwitchFlag) {
+				this.heal(move.totalDamage / 2, pokemon);
+			}
+		},
+		num: -125,
+		gen: 9,
+	},
+	psychowand: {
+		name: "Psycho Wand",
+		spritenum: 794,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if ((move && move.type === 'Fire') ||
+			(move && move.type === 'Ice') ||
+			(move && move.type === 'Electric') || 
+			(move && move.type === 'Pyro') ||
+			(move && move.type === 'Frost') ||
+			(move && move.type === 'Wind'))
+			{
+				return this.chainModify([16, 10]);
+			}
+		},
+		num: -126,
+		gen: 9,
+	},
+	vintotie: {
+		onFractionalPriorityPriority: -2,
+		onFractionalPriority(priority, pokemon, target, move) {
+			if (move.category === "Status" && pokemon.hasAbility("myceliummight")) return;
+			if (priority <= 0) {
+				this.add('-activate', pokemon, 'item: Vinto Tie');
+				return 0.1;
+			}
+		},
+		name: "Vinto Tie",
+		spritenum: 795,
+		fling: {
+			basePower: 1,
+		},
+		num: -127,
+		gen: 9,
+	},
 };

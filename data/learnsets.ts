@@ -114560,6 +114560,63 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  rocksmash2: ["3M"],
 		},
 	},
+//super illegal customs
+  dlruukoto: {
+    learnset: {
+      checkmaid: ["3L1"],
+      recover2: ["3L1"],
+	  calmmind2: ["3L1"],
+	  sonicboom2: ["3L1"],
+    },
+  },
+  turles: {
+    learnset: {
+      killdriver: ["3L1"],
+      bulkup: ["3L1"],
+	  headbutt: ["3L1"],
+	  skyuppercut: ["3L1"],
+    },
+  },
+   lssjbroly: {
+    learnset: {
+      kakarot: ["3L1"],
+      bustershell: ["3L1"],
+	  extremespeed: ["3L1"],
+	  drainpunch: ["3L1"],
+    },
+  },
+   superpiccolo: {
+    learnset: {
+      specialbeamcannon: ["3L1"],
+      recover: ["3L1"],
+	  cosmicpower: ["3L1"],
+	  aurasphere: ["3L1"],
+    },
+  },
+   saibaman: {
+    learnset: {
+      explode: ["3L1"],
+      agility: ["3L1"],
+	  headbutt: ["3L1"],
+	  furyswipes: ["3L1"],
+    },
+  },
+   craziney: {
+    learnset: {
+      chaoswave: ["3L1"],
+      chaosplit: ["3L1"],
+	  recover: ["3L1"],
+	  confuseray: ["3L1"],
+    },
+  },
+   miku: {
+    learnset: {
+      sing: ["3L1"],
+      thunderbolt: ["3L1"],
+	  boomburst: ["3L1"],
+	  sparklingaria: ["3L1"],
+    },
+  },
 };
 
 
