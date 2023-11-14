@@ -1,0 +1,30 @@
+{
+    "dlruukoto": {
+        "level": 100,
+        "moves": ["checkmaid","recover2","calmmind2","sonicboom2"]
+    },
+    "turles": {
+        "level": 100,
+        "moves": ["killdriver","bulkup","headbutt","skyuppercut"]
+    },
+    "lssjbroly": {
+        "level": 100,
+        "moves": ["kakarot","bustershell","extremespeed","drainpunch"]
+    },
+    "superpiccolo": {
+        "level": 100,
+        "moves": ["specialbeamcannon","recover","cosmicpower","aurasphere"]
+    },
+    "saibaman": {
+        "level": 100,
+        "moves": ["explode","agility","headbutt","furyswipes"]
+    },
+    "craziney": {
+        "level": 100,
+        "moves": ["chaoswave","chaosplit","recover","confuseray"]
+    },
+    "miku": {
+        "level": 100,
+        "moves": ["sing","thunderbolt","boomburst","sparklingaria"]
+    },
+}
