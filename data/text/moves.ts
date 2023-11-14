@@ -9255,7 +9255,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	kakarot: {
 		name: "KAKAROT!!!",
-		desc: "An earth-shattering roar born of an unfathomable rage that send the foe flying. Usually goes first, and is unaffected by Protect and the like. Can be blocked by Soundproof.",
+		desc: "An earth-shattering roar born of an unfathomable rage that sends the foe flying. Usually goes first, and is unaffected by Protect and the like. Can be blocked by Soundproof.",
 		shortDesc: "Forces out the enemy on hit.",
 	},
 	bustershell: {
