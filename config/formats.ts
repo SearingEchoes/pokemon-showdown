@@ -83,5 +83,12 @@ export const Formats: FormatList = [
 	{
 		section: "????",
 	},
+	{
+		name: "[Gen 3] Chaos, Render of Tranquility",
+
+		mod: 'gen3chaoticrift',
+		team: 'random',
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
+	},
 
 ];
