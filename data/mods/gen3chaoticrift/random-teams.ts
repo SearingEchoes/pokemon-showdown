@@ -255,11 +255,14 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Pikachu') return 'Light Ball';
 		if (species.name === 'Shedinja') return 'Lum Berry';
 		if (species.name === 'Unown') return 'Twisted Spoon';
+		if (species.name === 'Dialga') return 'Expert Belt';
+		if (species.name === 'Palkia') return 'Expert Belt';
 		
 		if (species.name === 'Hina') return 'Dark Ribbon';
 		if (species.name === 'Ichirin') return 'Big Cloud';
 		if (species.name === 'Zombie Fairy') return 'Lum Berry';
 		if (species.name === 'Turles') return 'Tamato Berry';
+		if (species.name === 'Speed Koishi') return 'Dark Ribbon';
 		if (species.name === 'Rinnosuke') {
 		  if (Math.random() < 0.5) {
 			return 'Kusanagi';

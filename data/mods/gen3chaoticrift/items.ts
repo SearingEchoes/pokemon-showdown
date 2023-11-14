@@ -173,4 +173,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 		isNonstandard: null,
 		gen: 3,
 	},
+	expertbelt: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
 };

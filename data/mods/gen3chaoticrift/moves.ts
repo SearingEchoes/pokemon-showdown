@@ -76,4 +76,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	dracometeor: {
+		inherit: true,
+		gen: 3,
+	},
+	spacialrend: {
+		inherit: true,
+		gen: 3,
+	},
 };

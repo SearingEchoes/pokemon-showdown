@@ -3,6 +3,22 @@
         "level": 100,
         "moves": ["checkmaid","recover2","calmmind2","sonicboom2"]
     },
+    "basiney": {
+        "level": 100,
+        "moves": ["scald","recover","mirrorcoat","calmmind"]
+    },
+    "dialga": {
+        "level": 100,
+        "moves": ["dracometeor","fireblast","outrage","thunder"]
+    },
+    "palkia": {
+        "level": 100,
+        "moves": ["focuspunch","spacialrend","substitute","thunder"]
+    },
+    "speedkoishi": {
+        "level": 100,
+        "moves": ["fling","energyball2","wanting","signalbeam2"]
+    },
     "turles": {
         "level": 100,
         "moves": ["killdriver","endure","headbutt","skyuppercut"]
