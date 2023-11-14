@@ -24330,7 +24330,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  dlruukoto: {
 		num: -493,
 		name: "DL Ruukoto",
-		types: ["Steel", "Unknown"],
+		types: ["Metal", "Unknown"],
 		genderRatio: "N",
 		baseStats: {hp: 150, atk: 50, def: 160, spa: 120, spd: 160, spe: 120},
 		abilities: {0: "Guard Armor"},
