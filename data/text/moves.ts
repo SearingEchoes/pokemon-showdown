@@ -9243,4 +9243,39 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Maid's secret technique. Does not miss and ignores Protect.",
 		shortDesc: "Always hits and ignores Protect.",
 	},
+	specialbeamcannon: {
+		name: "Special Beam Cannon",
+		desc: "An attack that requires focus. Will be stopped if hit mid-turn. A One-hit KO if it connects.",
+		shortDesc: "Loses focus when hit. One-hit KO.",
+	},
+	chaoswave: {
+		name: "Chaos Wave",
+		desc: "A strange wave that does anywhere from 1 ~ (2.5x the user's level) in damage.",
+		shortDesc: "Does wildly random damage.",
+	},
+	kakarot: {
+		name: "KAKAROT!!!",
+		desc: "An earth-shattering roar born of an unfathomable rage that send the foe flying. Usually goes first, and is unaffected by Protect and the like. Can be blocked by Soundproof.",
+		shortDesc: "Forces out the enemy on hit.",
+	},
+	bustershell: {
+		name: "Buster Shell",
+		desc: "A green ball of intense energy. No additional effect.",
+		shortDesc: "No extra effect.",
+	},
+	killdriver: {
+		name: "Kill Driver",
+		desc: "Throws a ring of energy. No additional effect.",
+		shortDesc: "No extra effect.",
+	},
+	chaosplit: {
+		name: "Chaosplit",
+		desc: "Averages the base Attack, Defense, Sp. Attack, and Sp. Defense of the user and the target.",
+		shortDesc: "Averages many stats between user and target.",
+	},
+	explode: {
+		name: "Explode",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active character has the Damp Ability.",
+		shortDesc: "Hits adjacent characters. The user faints.",
+	},
 };
