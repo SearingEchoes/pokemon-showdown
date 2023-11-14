@@ -5,7 +5,7 @@
     },
     "turles": {
         "level": 100,
-        "moves": ["killdriver","bulkup","headbutt","skyuppercut"]
+        "moves": ["killdriver","endure","headbutt","skyuppercut"]
     },
     "lssjbroly": {
         "level": 100,
