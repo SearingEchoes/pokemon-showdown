@@ -91,6 +91,7 @@ export const TypeChart: {[k: string]: ModdedTypeData | null} = {
 	
 		saiyan: {
 		damageTaken: {
+			brn: 3,
 			Bug: 0,
 			Dark: 0,
 			Dragon: 0,
