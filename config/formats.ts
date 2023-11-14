@@ -79,5 +79,16 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup Limit', 'Inherit Move Rule', 'Freeze Clause Mod'],
 		banlist: ['Uber', 'OU', 'UU', 'Baton Pass', 'Baton Pass 2', 'Chibi Rikako', 'Chibi Yumemi', 'Chibi Kasen', 'Brightpowder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'Sendai', 'Speed Aya', 'Icy Ball', 'Dark Ribbon'],
 	},
+	
+	{
+		section: "Extreme VR Training",
+	},
+	{
+		name: "[Gen 3] Towards The Future",
+
+		mod: 'gen3chaoticrift',
+		team: 'random',
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
+	},
 
 ];
