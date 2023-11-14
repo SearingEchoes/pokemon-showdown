@@ -1,0 +1,82 @@
+{
+    "dlruukoto": {
+        "level": 100,
+        "moves": ["checkmaid","recover2","calmmind2","sonicboom2"]
+    },
+    "basiney": {
+        "level": 100,
+        "moves": ["scald","recover","mirrorcoat","calmmind"]
+    },
+    "dialga": {
+        "level": 100,
+        "moves": ["dracometeor","fireblast","outrage","thunder"]
+    },
+    "palkia": {
+        "level": 100,
+        "moves": ["focuspunch","spacialrend","substitute","thunder"]
+    },
+    "zapdos": {
+        "level": 100,
+        "moves": ["thunderbolt","pluck","roost","substitute"]
+    },
+    "dusclops": {
+        "level": 100,
+        "moves": ["painsplit","willowisp","curse","nightshade"]
+	},
+    "regirock": {
+        "level": 100,
+        "moves": ["explosion","rockblast","superpower","curse"]
+	},
+    "regice": {
+        "level": 100,
+        "moves": ["icebeam","thunderbolt","rest","sleeptalk"]
+	},
+    "registeel": {
+        "level": 100,
+        "moves": ["fling","ironhead","rest","curse"]
+	},
+    "dugtrio": {
+        "level": 100,
+        "moves": ["earthquake","aerialace","rockslide","hiddenpowerbug"]
+	},
+    "electivire": {
+        "level": 100,
+        "moves": ["thunderbolt","icepunch","crosschop","flamethrower"]
+	},
+    "bellibolt": {
+        "level": 100,
+        "moves": ["paraboliccharge","muddywater","toxic","slackoff"]
+	},
+    "speedkoishi": {
+        "level": 100,
+        "moves": ["fling","energyball2","wanting","signalbeam2"]
+    },
+    "satori": {
+        "level": 100,
+        "moves": ["takeheart","manaburst","photongeyser","magmastorm"]
+    },
+    "turles": {
+        "level": 100,
+        "moves": ["killdriver","endure","headbutt","skyuppercut"]
+    },
+    "lssjbroly": {
+        "level": 100,
+        "moves": ["kakarot","bustershell","extremespeed","drainpunch"]
+    },
+    "superpiccolo": {
+        "level": 100,
+        "moves": ["specialbeamcannon","recover","cosmicpower","aurasphere"]
+    },
+    "saibaman": {
+        "level": 100,
+        "moves": ["explode","agility","headbutt","furyswipes"]
+    },
+    "craziney": {
+        "level": 100,
+        "moves": ["chaoswave","chaosplit","recover","confuseray"]
+    },
+    "miku": {
+        "level": 100,
+        "moves": ["sing","thunderbolt","boomburst","sparklingaria"]
+    }
+}
