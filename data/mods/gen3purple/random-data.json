@@ -585,7 +585,7 @@
     },
     "lilywhite": {
         "level": 100,
-        "moves": ["signalbeam2","encore2","fly2","roost2","toxic2","sweetkiss2","selfdestruct2","detect2","jamming2"]
+        "moves": ["signalbeam2","encore2","fly2","roost2","toxic2","sweetkiss2","selfdestruct2","detect2","jamming"]
     },
     "louise": {
         "level": 100,
@@ -665,7 +665,7 @@
     },
     "mugetsu": {
         "level": 100,
-        "moves": ["signalbeam2","batonpass2","jamming2","wish2","willowisp2"]
+        "moves": ["signalbeam2","batonpass2","jamming","wish2","willowisp2"]
     },
     "murasa": {
         "level": 100,
