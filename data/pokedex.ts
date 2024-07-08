@@ -24345,7 +24345,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Turles",
 		types: ["Fighting"],
 		genderRatio: "M",
-		baseStats: {hp: 45, atk: 50, def: 52, spa: 55, spd: 45, spe: 46},
+		baseStats: {hp: 75, atk: 70, def: 72, spa: 75, spd: 65, spe: 66},
 		abilities: {0: "Guard Armor"},
 		heightm: 9001,
 		weightkg: 210.0,
