@@ -112088,6 +112088,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  substitute2: ["3L1"],
 	  batterycharge: ["3L1"],
 	  mirrorcoat2: ["3L1"],
+	  chargebeam2: ["3L1"],
       psybeam2: ["3L1","3E"],
       pursuit2: ["3L1","3E"],
       gale: ["3L1"],
