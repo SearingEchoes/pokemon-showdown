@@ -114601,6 +114601,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  boomburst: ["3L1"],
 	  sparklingaria: ["3L1"],
     },
+	},
 	tztokjad: {
     learnset: {
       gigarockfall: ["3L1"],

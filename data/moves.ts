@@ -29591,7 +29591,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		damageCallback(pokemon) {
-			return (this.random(1, 480);
+			return (this.random(1, 480));
 		},
 		category: "Physical",
 		name: "Giga Rockfall",
@@ -29609,7 +29609,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		damageCallback(pokemon) {
-			return (this.random(1, 480);
+			return (this.random(1, 480));
 		},
 		category: "Special",
 		name: "Giga Fireball",
