@@ -9278,4 +9278,24 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active character has the Damp Ability.",
 		shortDesc: "Hits adjacent characters. The user faints.",
 	},
+	gigarockfall: {
+		name: "Giga Rockfall",
+		desc: "Deals 1-480 damage. Not affected by defensive values or alterations.",
+		shortDesc: "Potentially does a very high amount of damage. Unaffected by defense.",
+	},
+	gigafireball: {
+		name: "Giga Fireball",
+		desc: "Deals 1-480 damage. Not affected by defensive values or alterations.",
+		shortDesc: "Potentially does a very high amount of damage. Unaffected by defense.",
+	},
+	gigacrunch: {
+		name: "Giga Crunch",
+		desc: "Very powerful melee attack that can only be used after being hit by a contact move.",
+		shortDesc: "Only hits if the opponent attempts a contact move.",
+	},
+	megid: {
+		name: "Megid",
+		desc: "OHKO move. Accuracy increases by +/- 30 for every effective/resisted type against Dark moves. The Sp. Def of the target also affects the move's accuracy, with 300 being neutral.",
+		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and Sp. Def.",
+	},
 };
