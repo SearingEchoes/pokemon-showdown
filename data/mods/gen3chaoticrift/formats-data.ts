@@ -7049,4 +7049,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
   },
+   tztokjad: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
 };

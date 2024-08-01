@@ -304,6 +304,15 @@ export class RandomGen3Teams extends RandomGen4Teams {
 			return 'Leftovers';
 		  }
 		}
+		if (species.name === 'TzTok-Jad') {
+		  if (Math.random() < 0.2) {
+			return 'Power Herb';
+		  } else if (Math.random() < 0.5) {
+			return 'Assault Vest';
+		  } else {
+			return 'Leftovers';
+		  }
+		}
 		
 		if (moves.has('trick2')) return 'Choice Band';
 		if (moves.has('rest2') && !moves.has('sleeptalk2') && !['Early Bird', 'Natural Cure', 'Shed Skin', 'Maintenance'].includes(ability)) {
