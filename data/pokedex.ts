@@ -24412,4 +24412,16 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
 	  },
+	  tztokjad: {
+		num: -3006,
+		name: "TzTok-Jad",
+		types: ["Fire", "Rock"],
+		genderRatio: "N",
+		baseStats: {hp: 100, atk: 110, def: 120, spa: 105, spd: 65, spe: 70},
+		abilities: {0: "Magma Armor"},
+		heightm: 9001,
+		weightkg: 210.0,
+		color: "Purple",
+		eggGroups: ["Undiscovered"],
+	  },
 };
