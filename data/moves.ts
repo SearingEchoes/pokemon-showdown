@@ -29598,6 +29598,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 60,
 		priority: 0,
 		flags: {charge: 1, protect: 1, mirror: 1, distance: 1, nosleeptalk: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
 		noSketch: true,
 		secondary: null,
 		target: "any",
@@ -29616,6 +29627,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 60,
 		priority: 0,
 		flags: {charge: 1, protect: 1, mirror: 1, nosleeptalk: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
 		noSketch: true,
 		secondary: null,
 		target: "any",
