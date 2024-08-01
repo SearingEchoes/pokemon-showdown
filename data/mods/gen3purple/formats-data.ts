@@ -7050,4 +7050,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
   },
+   tztokjad: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
 };
