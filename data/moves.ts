@@ -29654,17 +29654,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: -3,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
-			const onTryHit = (target, pokemon) => {
-				const move = target.lastMove;
-				if (!move?.flags['contact']) {
-					return;
-				}
-			};
-
-			onTryHit(target, pokemon); // Call onTryHit function here
-			
-			move.accuracy = true; // This will only execute if the move makes contact
-		}
+		  const lastMove = target.lastMove;
+		  if (lastMove?.flags['contact']) {
+			  move.accuracy = true;
+		  }
+		},
 		noSketch: true,
 		secondary: null,
 		target: "normal",
