@@ -9282,11 +9282,15 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Giga Rockfall",
 		desc: "Deals 1-480 damage. Not affected by defensive values or alterations.",
 		shortDesc: "Potentially does a very high amount of damage. Unaffected by defense.",
+		
+		prepare: "[POKEMON] slammed the ground!",
 	},
 	gigafireball: {
 		name: "Giga Fireball",
 		desc: "Deals 1-480 damage. Not affected by defensive values or alterations.",
 		shortDesc: "Potentially does a very high amount of damage. Unaffected by defense.",
+		
+		prepare: "[POKEMON] begins charging a fireball!",
 	},
 	gigacrunch: {
 		name: "Giga Crunch",
@@ -9296,6 +9300,6 @@ export const MovesText: {[k: string]: MoveText} = {
 	megid: {
 		name: "Megid",
 		desc: "OHKO move. Accuracy increases by +/- 30 for every effective/resisted type against Dark moves. The Sp. Def of the target also affects the move's accuracy, with 300 being neutral.",
-		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and Sp. Def.",
+		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and target Sp. Def.",
 	},
 };
