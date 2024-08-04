@@ -29702,8 +29702,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (target.hasType('Reason')) {
 				move.accuracy += 50;
 			}
-
-			move.accuracy -= ((target.getStat('spd') - 250) / 5);
+			//enemy spdef affects hit rate
+			if (target.getStat('spd') >= 250) {
+			   move.accuracy -= ((target.getStat('spd') - 250) / 10);
+			} else {
+			   move.accuracy -= ((target.getStat('spd') - 250) / 5);
+			}
 			
 			this.debug(move.accuracy);
 			
