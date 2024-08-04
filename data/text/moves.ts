@@ -9302,4 +9302,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "OHKO move. Accuracy increases by +/- 30 for every effective/resisted type against Dark moves. The Sp. Def of the target also affects the move's accuracy, with 300 being neutral.",
 		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and target Sp. Def.",
 	},
+	rapidpeck: {
+		name: "Rapid Peck",
+		desc: "Pecks the target very quickly 3 times. Each hit rolls accuracy independently and has a very high critical rate.",
+		shortDesc: "Attacks and rolls accuracy 3 times. Very high critical rate.",
+	},
 };
