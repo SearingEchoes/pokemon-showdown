@@ -357,7 +357,7 @@ export const Scripts: ModdedBattleScriptsData = {
 					}
 				}
 			}
-			if (move.ohko) { // bypasses accuracy modifiers
+			if (move.ohko && move.id !== 'megid') { // bypasses accuracy modifiers
 				if (!target.isSemiInvulnerable()) {
 					accuracy = 30;
 					if (pokemon.level >= target.level && (move.ohko === true || !target.hasType(move.ohko))) {
