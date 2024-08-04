@@ -29574,7 +29574,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	explode: {
 		num: 3006,
 		accuracy: 100,
-		basePower: 250,
+		basePower: 350,
 		category: "Physical",
 		name: "Explode",
 		pp: 5,
@@ -29585,5 +29585,154 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacent",
 		type: "Saiyan",
 		contestType: "Beautiful",
+	},
+	gigarockfall: {
+		num: 3007,
+		accuracy: true,
+		basePower: 0,
+		damageCallback(pokemon) {
+			return (this.random(1, 480));
+		},
+		category: "Physical",
+		name: "Giga Rockfall",
+		pp: 60,
+		priority: 0,
+		flags: {charge: 1, protect: 1, mirror: 1, distance: 1, nosleeptalk: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		noSketch: true,
+		secondary: null,
+		target: "any",
+		type: "Rock",
+		contestType: "Cool",
+	},
+	gigafireball: {
+		num: 3008,
+		accuracy: true,
+		basePower: 0,
+		damageCallback(pokemon) {
+			return (this.random(1, 480));
+		},
+		category: "Special",
+		name: "Giga Fireball",
+		pp: 60,
+		priority: 0,
+		flags: {charge: 1, protect: 1, mirror: 1, nosleeptalk: 1, failinstruct: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		noSketch: true,
+		secondary: null,
+		target: "any",
+		type: "Fire",
+		contestType: "Cool",
+	},
+	gigacrunch: {
+		num: 3009,
+		accuracy: 0,
+		basePower: 480,
+		category: "Physical",
+		name: "Giga Crunch",
+		pp: 60,
+		priority: -3,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+		  const lastMove = target.lastMove;
+		  if (lastMove?.flags['contact']) {
+			  move.accuracy = true;
+		  }
+		},
+		noSketch: true,
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		contestType: "Cool",
+	},
+	megid: {
+		num: 3010,
+		accuracy: 20,
+		basePower: 0,
+		category: "Special",
+		name: "Megid",
+		pp: 40,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			this.debug(move.accuracy);
+			//reduce accuracy for resisted types
+			if (pokemon.hasType('Dark')) {
+				move.accuracy -= 50;
+			}
+			if (pokemon.hasType('Umbral')) {
+				move.accuracy -= 50;
+			}
+			if (pokemon.hasType('Fairy')) {
+				move.accuracy -= 30;
+			}
+			if (pokemon.hasType('Fighting')) {
+				move.accuracy -= 30;
+			}
+			//increase accuracy against effective types
+			if (pokemon.hasType('Ghost')) {
+				move.accuracy += 50;
+			}
+			if (pokemon.hasType('Psychic')) {
+				move.accuracy += 50;
+			}
+			if (pokemon.hasType('Dream')) {
+				move.accuracy += 50;
+			}
+			if (pokemon.hasType('Reason')) {
+				move.accuracy += 50;
+			}
+			//enemy spdef affects hit rate
+			if (target.getStat('spd') >= 250) {
+			   move.accuracy -= ((target.getStat('spd') - 250) / 5);
+			} else {
+			   move.accuracy += ((target.getStat('spd') - 250) / -5);
+			}
+			
+			this.debug(move.accuracy);
+		},
+		noSketch: true,
+		ohko: true,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
+	},
+	rapidpeck: {
+		num: 3011,
+		accuracy: 90,
+		basePower: 25,
+		category: "Physical",
+		name: "Rapid Peck",
+		pp: 40,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		critRatio: 3,
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		contestType: "Cool",
 	},
 };
