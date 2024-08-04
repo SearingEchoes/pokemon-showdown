@@ -677,7 +677,7 @@ export class BattleActions {
 			this.battle.activeTarget = target;
 			// calculate true accuracy
 			let accuracy = move.accuracy;
-			if (move.ohko && (!move.id === 'megid')) { // bypasses accuracy modifiers
+			if (move.ohko && move.id == 'megid') { // bypasses accuracy modifiers
 				if (!target.isSemiInvulnerable()) {
 					
 						accuracy = 30;
