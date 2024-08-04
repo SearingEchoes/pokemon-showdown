@@ -24424,4 +24424,16 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
 	  },
+	  oblily: {
+		num: -3007,
+		name: "Ob Lily",
+		types: ["Dark", "Grass"],
+		genderRatio: "N",
+		baseStats: {hp: 50, atk: 100, def: 45, spa: 0, spd: 90, spe: 80},
+		abilities: {0: "Suction Cups"},
+		heightm: 9001,
+		weightkg: 210.0,
+		color: "Purple",
+		eggGroups: ["Undiscovered"],
+	  },
 };

@@ -114601,12 +114601,20 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  boomburst: ["3L1"],
 	  sparklingaria: ["3L1"],
     },
-	},
+  },
 	tztokjad: {
     learnset: {
       gigarockfall: ["3L1"],
       gigafireball: ["3L1"],
 	  gigacrunch: ["3L1"],
+    },
+  },
+	oblily: {
+	learnset: {
+      megid: ["3L1"],
+      rapidpeck: ["3L1"],
+	  thunderwave: ["3L1"],
+	  memento: ["3L1"],
     },
   },
 };

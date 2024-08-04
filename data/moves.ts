@@ -29574,7 +29574,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	explode: {
 		num: 3006,
 		accuracy: 100,
-		basePower: 250,
+		basePower: 350,
 		category: "Physical",
 		name: "Explode",
 		pp: 5,
@@ -29667,7 +29667,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	megid: {
 		num: 3010,
-		accuracy: 30,
+		accuracy: 20,
 		basePower: 0,
 		category: "Special",
 		name: "Megid",
@@ -29677,10 +29677,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon, target) {
 			//reduce accuracy for resisted types
 			if (pokemon.hasType('Dark')) {
-				move.accuracy -= 30;
+				move.accuracy -= 50;
 			}
 			if (pokemon.hasType('Umbral')) {
-				move.accuracy -= 30;
+				move.accuracy -= 50;
 			}
 			if (pokemon.hasType('Fairy')) {
 				move.accuracy -= 30;
@@ -29690,22 +29690,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			//increase accuracy against effective types
 			if (pokemon.hasType('Ghost')) {
-				move.accuracy += 30;
+				move.accuracy += 50;
 			}
 			if (pokemon.hasType('Psychic')) {
-				move.accuracy += 30;
+				move.accuracy += 50;
 			}
 			if (pokemon.hasType('Dream')) {
-				move.accuracy += 30;
+				move.accuracy += 50;
 			}
 			if (pokemon.hasType('Reason')) {
-				move.accuracy += 30;
+				move.accuracy += 50;
 			}
 			//enemy spdef affects hit rate
-			if (target.getStat('spd') >= 300) {
-			   move.accuracy -= ((target.getStat('spd') - 300) / 10);
+			if (target.getStat('spd') >= 250) {
+			   move.accuracy -= ((target.getStat('spd') - 250) / 5);
 			} else {
-			   move.accuracy += ((target.getStat('spd') - 300) / -10);
+			   move.accuracy += ((target.getStat('spd') - 250) / -5);
 			}
 		},
 		noSketch: true,
@@ -29713,6 +29713,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Dark",
+		contestType: "Cool",
+	},
+	rapidpeck: {
+		num: 3011,
+		accuracy: 90,
+		basePower: 25,
+		category: "Physical",
+		name: "Rapid Peck",
+		pp: 40,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		critRatio: 3,
+		secondary: null,
+		target: "normal",
+		type: "Flying",
 		contestType: "Cool",
 	},
 };
