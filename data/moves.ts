@@ -29709,6 +29709,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			   move.accuracy += ((target.getStat('spd') - 250) / 5);
 			}
 			
+			if (move.accuracy < 0) {
+				move.accuracy = 0;
+			}
+			
 			this.debug(move.accuracy);
 		},
 		noSketch: true,
