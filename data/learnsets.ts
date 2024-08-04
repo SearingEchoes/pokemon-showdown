@@ -114616,7 +114616,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  thunderwave: ["3L1"],
 	  memento: ["3L1"],
     },
-  },
+  }
 };
 
 
