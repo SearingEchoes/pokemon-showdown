@@ -375,6 +375,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			} else {
 				accuracy = this.battle.runEvent('Accuracy', target, pokemon, move, accuracy);
 			}
+			this.debug(accuracy);
 			if (accuracy !== true && !this.battle.randomChance(accuracy, 100)) {
 				accPass = false;
 			}
