@@ -26,5 +26,9 @@
     "tztokjad": {
         "level": 100,
         "moves": ["gigarockfall","gigafireball","gigacrunch"]
+    },
+    "oblily": {
+        "level": 100,
+        "moves": ["megid","rapidpeck","thunderwave","memento"]
     }
 }
