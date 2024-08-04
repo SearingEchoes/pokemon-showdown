@@ -29677,29 +29677,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon, target) {
 			this.debug(move.accuracy);
 			//reduce accuracy for resisted types
-			if (pokemon.hasType('Dark')) {
+			if (target.hasType('Dark')) {
 				move.accuracy -= 50;
 			}
-			if (pokemon.hasType('Umbral')) {
+			if (target.hasType('Umbral')) {
 				move.accuracy -= 50;
 			}
-			if (pokemon.hasType('Fairy')) {
+			if (target.hasType('Fairy')) {
 				move.accuracy -= 30;
 			}
-			if (pokemon.hasType('Fighting')) {
+			if (target.hasType('Fighting')) {
 				move.accuracy -= 30;
 			}
 			//increase accuracy against effective types
-			if (pokemon.hasType('Ghost')) {
+			if (target.hasType('Ghost')) {
 				move.accuracy += 50;
 			}
-			if (pokemon.hasType('Psychic')) {
+			if (target.hasType('Psychic')) {
 				move.accuracy += 50;
 			}
-			if (pokemon.hasType('Dream')) {
+			if (target.hasType('Dream')) {
 				move.accuracy += 50;
 			}
-			if (pokemon.hasType('Reason')) {
+			if (target.hasType('Reason')) {
 				move.accuracy += 50;
 			}
 			//enemy spdef affects hit rate
@@ -29715,7 +29715,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.accuracy = 0;
 			}
 			
-
+			this.debug(move.accuracy);
 		},
 		noSketch: true,
 		ohko: true,
