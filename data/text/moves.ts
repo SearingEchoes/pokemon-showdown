@@ -9299,8 +9299,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	megid: {
 		name: "Megid",
-		desc: "OHKO move. Accuracy increases by +/- 30 for every effective/resisted type against Dark moves. The Sp. Def of the target also affects the move's accuracy, with 300 being neutral.",
-		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and target Sp. Def.",
+		desc: "OHKO move. Accuracy changes depending on target's resistance to Dark moves. The Sp. Def of the target also affects the move's accuracy, with 250 being neutral.",
+		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and target's Sp. Def.",
 	},
 	rapidpeck: {
 		name: "Rapid Peck",
