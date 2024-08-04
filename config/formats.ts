@@ -88,6 +88,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3chaoticrift',
 		team: 'random',
+		debug: true,
 		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
 	},
 
