@@ -7054,4 +7054,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
   },
+   oblily: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
 };
