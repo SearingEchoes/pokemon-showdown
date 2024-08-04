@@ -29675,6 +29675,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
+			this.debug(move.accuracy);
 			//reduce accuracy for resisted types
 			if (pokemon.hasType('Dark')) {
 				move.accuracy -= 50;
@@ -29705,8 +29706,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (target.getStat('spd') >= 250) {
 			   move.accuracy -= ((target.getStat('spd') - 250) / 5);
 			} else {
-			   move.accuracy += ((target.getStat('spd') - 250) / -5);
+			   move.accuracy += ((target.getStat('spd') - 250) / 5);
 			}
+			
+			this.debug(move.accuracy);
 		},
 		noSketch: true,
 		ohko: true,
