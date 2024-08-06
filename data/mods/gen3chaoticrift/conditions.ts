@@ -23,7 +23,7 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
                 this.add('-end', pokemon, this.effectState.sourceEffect, '[partiallytrapped]', '[silent]');
                 return;
             }
-            if (this.effectState.sourceEffect === 'Ice Blitz') {
+            if (this.effectState.sourceEffect.id === 'iceblitz') {
                 return;
             }
 			
