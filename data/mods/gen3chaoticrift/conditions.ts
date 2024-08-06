@@ -23,6 +23,16 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 				return;
 			}
 			
+			const source = this.effectState.source;
+            if (source && (!source.isActive || source.hp <= 0 || !source.activeTurns)) {
+                delete pokemon.volatiles['partiallytrapped'];
+                this.add('-end', pokemon, this.effectState.sourceEffect, '[partiallytrapped]', '[silent]');
+                return;
+            }
+            if (this.effectState.sourceEffect === 'iceblitz') {
+                return;
+            }
+			
 			this.damage(pokemon.baseMaxhp / this.effectState.boundDivisor);
 		},
 	},
