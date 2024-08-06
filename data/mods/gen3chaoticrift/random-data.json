@@ -30,5 +30,17 @@
     "oblily": {
         "level": 100,
         "moves": ["megid","rapidpeck","thunderwave","memento"]
+    },
+    "rubi": {
+        "level": 100,
+        "moves": ["puncture"]
+    },
+    "emmi": {
+        "level": 100,
+        "moves": ["descentofdragons"]
+    },
+    "saffi": {
+        "level": 100,
+        "moves": ["iceblitz"]
     }
 }
