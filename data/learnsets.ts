@@ -114617,6 +114617,21 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  memento: ["3L1"],
     },
   },
+ 	rubi: {
+	learnset: {
+      puncture: ["3L1"],
+    },
+  },
+  	emmi: {
+	learnset: {
+      descentofdragons: ["3L1"],
+    },
+  },
+ 	saffi: {
+	learnset: {
+      iceblitz: ["3L1"],
+    },
+  },
 };
 
 

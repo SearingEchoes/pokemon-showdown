@@ -29691,16 +29691,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			//increase accuracy against effective types
 			if (target.hasType('Ghost')) {
-				move.accuracy += 50;
+				move.accuracy += 30;
 			}
 			if (target.hasType('Psychic')) {
-				move.accuracy += 50;
+				move.accuracy += 30;
 			}
 			if (target.hasType('Dream')) {
-				move.accuracy += 50;
+				move.accuracy += 30;
 			}
 			if (target.hasType('Reason')) {
-				move.accuracy += 50;
+				move.accuracy += 30;
 			}
 			//enemy spdef affects hit rate
 			if (target.getStat('spd') >= 250) {
@@ -29740,5 +29740,68 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Flying",
 		contestType: "Cool",
+	},
+	puncture: {
+		num: 3012,
+		accuracy: 90,
+		basePower: 46,
+		category: "Physical",
+		name: "Puncture",
+		pp: 4,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 2,
+		multiaccuracy: true,
+		secondary: {
+			chance: 25,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	descentofdragons: {
+		num: 3013,
+		accuracy: true,
+		basePower: 90,
+		category: "Physical",
+		name: "Descent of Dragons",
+		pp: 2,
+		noPPBoosts: true,
+		priority: 1,
+		flags: {protect: 1, mirror: 1, cantusetwice: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dragon' || type === 'Faith') return 1;
+		},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
+	},
+	iceblitz: {
+		num: 3014,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Ice Blitz",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			//enemy spdef affects hit rate
+			if (target.getStat('spd') >= 150) {
+			   move.accuracy -= ((target.getStat('spd') - 150) / 10);
+			}
+			
+			this.debug(move.accuracy);
+		},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		contestType: "Clever",
 	},
 };

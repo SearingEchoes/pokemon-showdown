@@ -5742,4 +5742,67 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -125,
 	},
+	playwarrior: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Play Warrior immunity: ' + move.id);
+			
+			if (!move.flags['contact'] && move.category === 'Special') return;
+			
+			if (move.smartTarget) {
+				move.smartTarget = false;
+			} else {
+				this.add('-immune', target, '[from] ability: Play Warrior');
+			}
+				
+			return null;
+		},
+		isBreakable: true,
+		name: "Play Warrior",
+		rating: 5,
+		num: -126,
+	},
+	playarcher: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Play Archer immunity: ' + move.id);
+			
+			if (!move.flags['contact']) return;
+			
+			if (move.smartTarget) {
+				move.smartTarget = false;
+			} else {
+				this.add('-immune', target, '[from] ability: Play Archer');
+			}
+				
+			return null;
+		},
+		isBreakable: true,
+		name: "Play Archer",
+		rating: 5,
+		num: -127,
+	},
+	playwizard: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Play Wizard immunity: ' + move.id);
+			
+			if (!move.flags['contact'] && move.category === 'Physical') return;
+			
+			if (move.smartTarget) {
+				move.smartTarget = false;
+			} else {
+				this.add('-immune', target, '[from] ability: Play Wizard');
+			}
+				
+			return null;
+		},
+		isBreakable: true,
+		name: "Play Wizard",
+		rating: 5,
+		num: -128,
+	},
 };
