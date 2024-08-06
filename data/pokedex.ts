@@ -24439,8 +24439,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  rubi: {
 		num: -3008,
 		name: "Rubi",
-		types: ["Miasma", "Aero"],
-		baseStats: {hp: 1, atk: 150, def: 40, spa: 80, spd: 40, spe: 99},
+		types: ["Metal", "Aero"],
+		baseStats: {hp: 1, atk: 120, def: 40, spa: 60, spd: 40, spe: 120},
 		maxHP: 1,
 		abilities: {0: "Play Warrior"},
 		heightm: 9001,
