@@ -13,20 +13,19 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 		},
 		onStart(pokemon, source, sourceEffect) {
 			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
-			
-			if (sourceEffect.id == 'iceblitz') {
-				this.effectState.boundDivisor = 1;
-			} else {
-				this.effectState.boundDivisor = source.hasItem('bindingband') ? 8 : 16;
-			}
+
+			this.effectState.boundDivisor = source.hasItem('bindingband') ? 8 : 16;
 		},
-		onResidual(pokemon) {
+		onResidual(pokemon, sourceEffect) {
 			const trapper = this.effectState.source;
 			if (trapper && (!trapper.isActive || trapper.hp <= 0 || !trapper.activeTurns)) {
 				delete pokemon.volatiles['partiallytrapped'];
 				return;
 			}
-			this.damage(pokemon.baseMaxhp / this.effectState.boundDivisor);
+			
+			if (sourceEffect.id !== 'iceblitz') {
+				this.damage(pokemon.baseMaxhp / this.effectState.boundDivisor);
+			}
 		},
 	},
 

@@ -268,6 +268,9 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Regice') return 'Psycho Wand';
 		if (species.name === 'Registeel') return 'Elder Pain';
 		if (species.name === 'Bellibolt') return 'Elder Pain';
+		if (species.name === 'Rubi') return 'Choice Band';
+		if (species.name === 'Emmi') return 'Choice Band';
+		if (species.name === 'Saffi') return 'Choice Specs';
 		if (species.name === 'Speed Koishi') {
 		  if (Math.random() < 0.5) {
 			return 'Dark Ribbon';
