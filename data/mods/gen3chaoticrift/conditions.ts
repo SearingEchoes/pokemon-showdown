@@ -16,13 +16,7 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 
 			this.effectState.boundDivisor = source.hasItem('bindingband') ? 8 : 16;
 		},
-		onResidual(pokemon) {
-			const trapper = this.effectState.source;
-			if (trapper && (!trapper.isActive || trapper.hp <= 0 || !trapper.activeTurns)) {
-				delete pokemon.volatiles['partiallytrapped'];
-				return;
-			}
-			
+		onResidual(pokemon) {		
 			const source = this.effectState.source;
             if (source && (!source.isActive || source.hp <= 0 || !source.activeTurns)) {
                 delete pokemon.volatiles['partiallytrapped'];
