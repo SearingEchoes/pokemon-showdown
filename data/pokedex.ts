@@ -24463,7 +24463,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  saffi: {
 		num: -3010,
 		name: "Saffi",
-		types: ["Cryo", "Aero"],
+		types: ["Frost", "Aero"],
 		baseStats: {hp: 1, atk: 50, def: 40, spa: 150, spd: 40, spe: 99},
 		maxHP: 1,
 		abilities: {0: "Play Wizard"},

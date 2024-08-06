@@ -5769,7 +5769,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
 			this.debug('Play Archer immunity: ' + move.id);
 			
-			if (!move.flags['contact']) return;
+			if (move.flags['contact']) return;
 			
 			if (move.smartTarget) {
 				move.smartTarget = false;
