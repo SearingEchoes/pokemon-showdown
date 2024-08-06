@@ -16,16 +16,14 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 
 			this.effectState.boundDivisor = source.hasItem('bindingband') ? 8 : 16;
 		},
-		onResidual(pokemon, sourceEffect) {
+		onResidual(pokemon) {
 			const trapper = this.effectState.source;
 			if (trapper && (!trapper.isActive || trapper.hp <= 0 || !trapper.activeTurns)) {
 				delete pokemon.volatiles['partiallytrapped'];
 				return;
 			}
 			
-			if (sourceEffect.id !== 'iceblitz') {
-				this.damage(pokemon.baseMaxhp / this.effectState.boundDivisor);
-			}
+			this.damage(pokemon.baseMaxhp / this.effectState.boundDivisor);
 		},
 	},
 
