@@ -9307,4 +9307,19 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Pecks the target very quickly 3 times. Each hit rolls accuracy independently and has a very high critical rate.",
 		shortDesc: "Attacks and rolls accuracy 3 times. Very high critical rate.",
 	},
+	puncture: {
+		name: "Puncture",
+		desc: "Performs two slashes with different accuracy rolls. 25% chance to poison.",
+		shortDesc: "Hits twice. 25% chance to poison",
+	},
+	descentofdragons: {
+		name: "Descent of Dragons",
+		desc: "Shoots two dark arrows with perfect accuracy at the target. Has +1 Priority and cannot be used twice in a row. The attack also carries increased effectiveness against Dragon and Faith-types as if it was Dragon-type.",
+		shortDesc: "Hits twice, +1 Priority, and cannot miss. Cannot be used consecutively.",
+	},
+	iceblitz: {
+		name: "Ice Blitz",
+		desc: "Target can't switch out for 3 turns if hit. Higher Sp. Def lowers the accuracy of this move slightly.",
+		shortDesc: "Prevents switching out for 3 turns on hit.",
+	},
 };

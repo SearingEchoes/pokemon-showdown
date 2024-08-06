@@ -2381,11 +2381,34 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	unzan: {
 		name: "Unzan",
-		shortDesc: "This Pokemon's Attack is doubled.",
+		shortDesc: "This character's Attack is doubled.",
 	},
 	icewall: {
 		name: "Ice Wall",
 		desc: "Fire, Ice, Pyro, and Frost attacks against this character are made with 1/2 the relevant offensive stat when calculating damage.",
 		shortDesc: "Fire/Ice/Pyro/Frost-type moves against this character deal damage with a halved offensive stat.",
+	},
+	solardrive: {
+		name: "Solar Drive",
+		desc: "If Sunny Day is active, this character's Speed is doubled. This effect is prevented if this character is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this character's Speed is doubled.",
+		gen7: {
+			desc: "If Sunny Day is active, this character's Speed is doubled.",
+		},
+	},
+	playwarrior: {
+		name: "Play Warrior",
+		desc: "Nullifies Physical attacks, and Special moves that make contact.",
+		shortDesc: "Nullifies Physical attacks, and Special moves that make contact.",
+	},
+	playarcher: {
+		name: "Play Archer",
+		desc: "Nullifies attacking moves that don't make contact.",
+		shortDesc: "Nullifies attacks that don't make contact.",
+	},
+	playwizard: {
+		name: "Play Wizard",
+		desc: "Nullifies close-range Physical attacks, and all Special attacks.",
+		shortDesc: "Nullifies close-range Physical attacks, and all Special attacks.",
 	},
 };
