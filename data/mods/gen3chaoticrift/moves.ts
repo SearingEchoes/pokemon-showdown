@@ -104,4 +104,47 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	charge: {
+		flags: {snatch: 1},
+		volatileStatus: 'charge',
+		condition: {
+			onStart(pokemon, source, effect) {
+				if (effect && ['Electromorphosis', 'Wind Power'].includes(effect.name)) {
+					this.add('-start', pokemon, 'Charge', this.activeMove!.name, '[from] ability: ' + effect.name);
+				} else {
+					this.add('-start', pokemon, 'Charge');
+				}
+			},
+			onRestart(pokemon, source, effect) {
+				if (effect && ['Electromorphosis', 'Wind Power'].includes(effect.name)) {
+					this.add('-start', pokemon, 'Charge', this.activeMove!.name, '[from] ability: ' + effect.name);
+				} else {
+					this.add('-start', pokemon, 'Charge');
+				}
+			},
+			onBasePowerPriority: 9,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === 'Electric') {
+					this.debug('charge boost');
+					return this.chainModify(2);
+				}
+			},
+			onMoveAborted(pokemon, target, move) {
+				if (move.type === 'Electric' && move.id !== 'charge') {
+					pokemon.removeVolatile('charge');
+				}
+			},
+			onAfterMove(pokemon, target, move) {
+				if (move.type === 'Electric' && move.id !== 'charge') {
+					pokemon.removeVolatile('charge');
+				}
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Charge', '[silent]');
+			},
+		},
+		boosts: {
+			spd: 1,
+		},
+	},
 };
