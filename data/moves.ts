@@ -29829,7 +29829,7 @@ export const Moves: {[moveid: string]: MoveData} = {
                     // target.deductPP(moveSlot.id, 1);
                 }
                 if (!ppDeducted) return;
-                this.add('-activate', target, 'move: Saradomin Strike, target, ppDeducted);
+                this.add('-activate', target, 'move: Saradomin Strike', target, ppDeducted);
             },
         },
 		target: "normal",
