@@ -5853,7 +5853,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onResidual(pokemon) {
 			if (pokemon.hp && 
 			(pokemon.status || (pokemon.volatiles['confusion'])) && 
-			((pokemon.hp <= pokemon.maxhp / 2) || ['sunnyday', 'desolateland'].includes(target.effectiveWeather()))) {
+			((pokemon.hp <= pokemon.maxhp / 2) || ['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather()))) {
 				this.debug('status clear');
 				this.add('-activate', pokemon, 'ability: Natural Blessing');
 				pokemon.cureStatus();
