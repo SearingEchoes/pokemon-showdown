@@ -5851,13 +5851,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 3,
 		onResidual(pokemon) {
-			if (pokemon.hp && 
-			(pokemon.status || (pokemon.volatiles['confusion'])) && 
-			((pokemon.hp <= pokemon.maxhp / 2) || ['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather()))) {
+			if ( pokemon.hp && 
+			(pokemon.status || (pokemon.volatiles['confusion']) || (pokemon.volatiles['partiallytrapped']) ) && 
+			((pokemon.hp <= pokemon.maxhp / 2) || ['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) ) {
 				this.debug('status clear');
 				this.add('-activate', pokemon, 'ability: Natural Blessing');
 				pokemon.cureStatus();
 				pokemon.removeVolatile('confusion');
+				pokemon.removeVolatile('partiallytrapped');
 			}
 		},
 		isBreakable: true,
@@ -5871,9 +5872,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-ability', pokemon, 'Unnerve');
 			this.effectState.unnerved = true;
 		},
-		onEnd() {
-			this.effectState.unnerved = false;
-		},
+
 		onFoeTryEatItem() {
 			return !this.effectState.unnerved;
 		},
@@ -5889,6 +5888,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		onEnd(pokemon) {
 			pokemon.removeVolatile('hellfire');
+			this.effectState.unnerved = false;
 		},
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
