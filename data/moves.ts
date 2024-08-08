@@ -29824,6 +29824,8 @@ export const Moves: {[moveid: string]: MoveData} = {
                 for (const moveSlot of target.moveSlots) {
                     if (moveSlot.pp >= 1) {
                         ppDeducted = true;
+                    } else {
+                        continue;
                     }
                     moveSlot.pp--;
                     // target.deductPP(moveSlot.id, 1);
