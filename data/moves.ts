@@ -29816,19 +29816,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Dark' || type === 'Fairy' || type === 'Umbral' || type === 'Heart') return 1;
 		},
-		secondary: {
-			chance: 100,
-			onHit(target) {
-				if (!target.hp) return;
+		onHit(target) {
+			if (!target.hp) return;
+			
+			for (const moveSlot of target.moveSlots) {
 				
-				for (const moveSlot of target.moveSlots) {
-					
-					if (moveslot.pp > 0) {
-						target.deductPP(move.id, 1);
-					}
+				if (moveslot.pp > 0) {
+					moveSlot.pp--;
 				}
-			},
+			}
 		},
+		secondary: null,
 		target: "normal",
 		type: "Electric",
 	},
