@@ -29824,10 +29824,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				for (const moveSlot of target.moveSlots) {
 					
 					if (moveslot.pp > 0) {
-						moveSlot.pp--;
+						target.deductPP(move.id, 1);
 					}
 				}
-				this.add('SStrike pp reduction');
 			},
 		},
 		target: "normal",
