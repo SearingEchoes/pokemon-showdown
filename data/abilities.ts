@@ -5822,14 +5822,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	naturalblessing: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
-			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass')) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass') || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
 				this.debug('Natural Blessing boost');
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
-			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass')) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass') || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
 				this.debug('Natural Blessing boost');
 				return this.chainModify(1.5);
 			}
