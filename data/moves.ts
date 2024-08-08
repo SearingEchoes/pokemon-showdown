@@ -29813,9 +29813,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Dark' || type === 'Fairy' || type === 'Umbral' || type === 'Heart') return 1;
-		},
 		onHit(target) {
 			if (!target.hp) return;
 			
