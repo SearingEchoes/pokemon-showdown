@@ -9319,7 +9319,22 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	iceblitz: {
 		name: "Ice Blitz",
-		desc: "Target can't switch out for 3 turns if hit. Higher Sp. Def lowers the accuracy of this move slightly.",
+		desc: "Target can't switch out for 3 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
 		shortDesc: "Prevents switching out for 3 turns on hit.",
+	},
+	saradominstrike: {
+		name: "Saradomin Strike",
+		desc: "Lowers the PP of all the target's moves by 1 on hit. Also deals double damage if the target possesses any Type weak to Faith.",
+		shortDesc: "Lowers 1 PP to moves on hit. Deals 2x damage on targets weak to Faith.",
+	},
+	clawsofguthix: {
+		name: "Claws of Guthix",
+		desc: "Lowers Def. and Sp.Def by 1 stage on hit. Also deals double damage if the target possesses any Type weak to Earth.",
+		shortDesc: "Lowers Def and Sp.Def by 1 Stage. Deals 2x damage on targets weak to Earth.",
+	},
+	flamesofzamorak: {
+		name: "Flames of Zamorak",
+		desc: "Lowers Sp.Atk and Sp.Def by 1 stage on hit. Also deals double damage if the target possesses any Type weak to Dark.",
+		shortDesc: "Lowers Sp.Atk and Sp.Def by 1 Stage. Deals 2x damage on targets weak to Dark.",
 	},
 };

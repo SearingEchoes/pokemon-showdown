@@ -2411,4 +2411,20 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "Nullifies close-range Physical attacks, and all Special attacks.",
 		shortDesc: "Nullifies close-range Physical attacks, and all Special attacks.",
 	},
+	holyshock: {
+		name: "Holy Shock",
+		desc: "Combines the effects of Electromorphosis and Static. The Static effect is increased to a 50% chance on contact.",
+		shortDesc: "When hit, gain the Charge status, and may paralyze at a 1/2 rate if it made contact.",
+		
+		start: "  Being hit by [MOVE] charged [POKEMON] with power!",
+	},
+	naturalblessing: {
+		name: "Natural Blessing",
+		desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass or Nature-type attack. It also becomes immune to, and attempts to clear negative statuses. The status prevention also comes into effect in Sunny weather.",
+		shortDesc: "At half HP or less, gain 1.5x Grass/Nature offensive power, and status immunity.",
+	},
+	hellfire: {
+		name: "Hellfire",
+		shortdesc: "Combines the effects of Flash Fire and Unnerve.",
+	},
 };
