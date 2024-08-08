@@ -29813,17 +29813,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onHit(target) {
-			if (!target.hp) return;
-			
-			for (const moveSlot of target.moveSlots) {
-				
-				if (moveslot.pp > 0) {
-					moveSlot.pp--;
-				}
-			}
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dark' || type === 'Fairy' || type === 'Umbral' || type === 'Heart') return 1;
 		},
-		secondary: null,
+		secondary: {
+            chance: 100,
+            onHit(target) {
+                if (!target.hp) return;
+                let ppDeducted = false;
+                for (const moveSlot of target.moveSlots) {
+                    if (moveSlot.pp >= 1) {
+                        ppDeducted = true;
+                    }
+                    moveSlot.pp--;
+                    // target.deductPP(moveSlot.id, 1);
+                }
+                if (!ppDeducted) return;
+                this.add('-activate', target, 'move: Saradomin Strike, target, ppDeducted);
+            },
+        },
 		target: "normal",
 		type: "Electric",
 	},
