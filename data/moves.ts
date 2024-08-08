@@ -29792,8 +29792,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
 			//enemy spdef affects hit rate
-			if (target.getStat('spd') >= 150) {
-			   move.accuracy -= ((target.getStat('spd') - 150) / 10);
+			if (target.getStat('spd') >= 200) {
+			   move.accuracy -= ((target.getStat('spd') - 190) / 10);
 			}
 			
 			this.debug(move.accuracy);
@@ -29803,5 +29803,78 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ice",
 		contestType: "Clever",
+	},
+	saradominstrike: {
+		num: 3015,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Saradomin Strike",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dark' || type === 'Fairy' || type === 'Umbral' || type === 'Heart') return 1;
+		},
+		secondary: {
+			chance: 100,
+			onHit(target) {
+				if (!target.hp) return;
+				
+				for (const moveSlot of target.moveSlots) {
+					
+					if (moveslot.pp > 0) {
+						moveSlot.pp--;
+					}
+				}
+				this.add('SStrike pp reduction');
+			},
+		},
+		target: "normal",
+		type: "Electric",
+	},
+	clawsofguthix: {
+		num: 3016,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Claws of Guthix",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Rock' || type === 'Steel' || type === 'Miasma' || type === 'Metal' || type === 'Pyro' || type === 'Wind' || type === 'Electric' || type === 'Fire' || type === 'Poison') return 1;
+		},
+		secondary: {
+			chance: 100,
+			boosts: {
+				def: -1.
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Grass",
+	},
+	flamesofzamorak: {
+		num: 3017,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Flames of Zamorak",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dream' || type === 'Reason' || type === 'Ghost' || type === 'Psychic') return 1;
+		},
+		secondary: {
+			chance: 100,
+			boosts: {
+				spa: -1.
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Fire",
 	},
 };

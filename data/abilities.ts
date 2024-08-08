@@ -5805,4 +5805,114 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: -128,
 	},
+	holyshock: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			target.addVolatile('charge');
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(5, 10)) {
+					source.trySetStatus('par', target);
+				}
+			}
+		},
+		name: "Holy Shock",
+		rating: 4,
+		num: 280,
+	},
+	naturalblessing: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass')) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
+				this.debug('Natural Blessing boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass')) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
+				this.debug('Natural Blessing boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather()) || (target.hp <= target.maxhp / 2) ) {
+				if ((effect as Move)?.status) {
+					this.add('-immune', target, '[from] ability: Natural Blessing');
+				}
+				return false;
+			}
+		},
+		onTryAddVolatile(status, target) {
+			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather()) || (target.hp <= target.maxhp / 2) ) {
+				this.add('-immune', target, '[from] ability: Natural Blessing');
+				return null;
+			}
+		},
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.hp && pokemon.status && (pokemon.hp <= pokemon.maxhp / 2)) {
+				this.debug('status clear');
+				this.add('-activate', pokemon, 'ability: Natural Blessing');
+				pokemon.cureStatus();
+			}
+		},
+		isBreakable: true,
+		name: "Natural Blessing",
+		rating: 4,
+		num: 65,
+	},
+	hellfire: {
+	
+		onPreStart(pokemon) {
+			this.add('-ability', pokemon, 'Unnerve');
+			this.effectState.unnerved = true;
+		},
+		onEnd() {
+			this.effectState.unnerved = false;
+		},
+		onFoeTryEatItem() {
+			return !this.effectState.unnerved;
+		},
+	
+		onTryHit(target, source, move) {
+			if ((target !== source && move.type === 'Fire')||(target !== source && move.type === 'Pyro')) {
+				move.accuracy = true;
+				if (!target.addVolatile('hellfire')) {
+					this.add('-immune', target, '[from] ability: Flash Fire');
+				}
+				return null;
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('hellfire');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Flash Fire');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if ((move.type === 'Fire' && attacker.hasAbility('hellfire'))||(move.type === 'Pyro' && attacker.hasAbility('hellfire'))) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if ((move.type === 'Fire' && attacker.hasAbility('hellfire'))||(move.type === 'Pyro' && attacker.hasAbility('hellfire'))) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Flash Fire', '[silent]');
+			},
+		},
+		isBreakable: true,
+		name: "Hellfire",
+		rating: 3.5,
+		num: 18,
+	},
 };

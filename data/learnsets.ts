@@ -114632,6 +114632,30 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       iceblitz: ["3L1"],
     },
   },
+  	bellibolts: {
+	learnset: {
+      saradominstrike: ["3L1"],
+	  slackoff: ["3L1"],
+	  muddywater: ["3L1"],
+	  soak: ["3L1"],
+    },
+  },
+   	meganiumg: {
+	learnset: {
+      clawsofguthix: ["3L1"],
+	  synthesis: ["3L1"],
+	  sunnyday: ["3L1"],
+	  bodyslam: ["3L1"],
+    },
+  },
+   	houndoomz: {
+	learnset: {
+      flamesofzamorak: ["3L1"],
+	  nastyplot: ["3L1"],
+	  sludgebomb: ["3L1"],
+	  substitute: ["3L1"],
+    },
+  },
 };
 
 
