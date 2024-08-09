@@ -29831,7 +29831,7 @@ export const Moves: {[moveid: string]: MoveData} = {
                     // target.deductPP(moveSlot.id, 1);
                 }
                 if (!ppDeducted) return;
-                this.add('-activate', target, 'move: Saradomin Strike', target, ppDeducted);
+                this.add("Saradomin Strike cut the target's PP!");
             },
         },
 		target: "normal",
