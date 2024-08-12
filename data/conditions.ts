@@ -885,12 +885,16 @@ export const Conditions: {[k: string]: ConditionData} = {
 		duration: 6,
 		
 		onStart(pokemon) {
-			this.add('-start', pokemon, 'regen');
+			this.add('-start', pokemon, 'Regeneration');
 		},		
 		
 		onResidualOrder: 7,
 		onResidual(pokemon) {
 			this.heal(pokemon.baseMaxhp / 5);
+		},
+		
+		onEnd(pokemon) {
+			this.add('-end', pokemon, 'Regeneration');
 		},
 	},
 };
