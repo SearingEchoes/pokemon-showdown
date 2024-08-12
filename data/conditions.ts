@@ -882,7 +882,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 	},
 	regen: {
 		name: 'regen',
-		duration: 5,
+		duration: 6,
+		
+		onStart(pokemon) {
+			this.add('-start', pokemon, 'regen');
+		},		
 		
 		onResidualOrder: 7,
 		onResidual(pokemon) {
