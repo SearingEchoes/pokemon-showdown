@@ -880,4 +880,13 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return bp;
 		},
 	},
+	regen: {
+		name: 'regen',
+		duration: 5,
+		
+		onResidualOrder: 7,
+		onResidual(pokemon) {
+			this.heal(pokemon.baseMaxhp / 5);
+		},
+	},
 };

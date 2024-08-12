@@ -114656,6 +114656,14 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  substitute: ["3L1"],
     },
   },
+    beesiney: {
+	learnset: {
+      honeyboiled: ["3L1"],
+	  batonpass: ["3L1"],
+	  stockpile: ["3L1"],
+	  madhoney: ["3L1"],
+    },
+  },
 };
 
 
