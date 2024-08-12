@@ -2529,4 +2529,24 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Double Soul",
 		desc: "If held by Priest/Priestess Shingyoku, their Sp. Atk & Sp. Def rise by 50%.",
 	},
+	elderpain: {
+		name: "Elder Pain",
+		desc: "After an attack, holder gains 1/2 of the damage in HP dealt.",
+
+		heal: "  [POKEMON] absorbed HP using the Elder Pain!",
+	},
+	psychowand: {
+		name: "Psycho Wand",
+		desc: "An ultimate cane that boosts the power of Fire, Ice, Electric, Pyro, Frost, and Wind techniques by 60%.",
+	},
+	vintotie: {
+		name: "Vinto Tie",
+		desc: "The holder will ALWAYS move first in their priority bracket.",
+
+		activate: "  [POKEMON]'s Vinto Tie increased their speed drastically!",
+	},
+	honey: {
+		name: "Honey",
+		desc: "A jar of honey.",
+	},
 };
