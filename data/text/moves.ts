@@ -9337,4 +9337,14 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers Sp.Atk and Sp.Def by 1 stage on hit. Also deals double damage if the target possesses any Type weak to Dark.",
 		shortDesc: "Lowers Sp.Atk and Sp.Def by 1 Stage. Deals 2x damage on targets weak to Dark.",
 	},
+	honeyboiled: {
+		name: "Honeyboiled",
+		desc: "The user recovers 35% HP. If the user is holding a Honey, it will be consumed and the Regen status will be applied, recovering 1/5th of Max HP per turn, for 5 turns.",
+		shortDesc: "Heals the user for 35% of Max HP. Regenerates HP further if holding Honey.",
+	},
+	madhoney: {
+		name: "Mad Honey",
+		desc: "Partially traps the target for 2-5 turns. If the user has a Honey, it will consume it to apply Toxic status to the enemy as well.",
+		shortDesc: "Traps the target for 2-5 turns. Badly poisons if a Honey is held.",
+	},
 };
