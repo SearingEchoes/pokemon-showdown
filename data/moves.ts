@@ -29894,7 +29894,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onHit(pokemon) {
 			if (pokemon.item === "honey") {
 				this.debug("using honey");
-				this.volatileStatus = 'regen';
+				pokemon.addVolatile('regen');
+				pokemon.setItem('');
 			}
 		},
 		secondary: null,
