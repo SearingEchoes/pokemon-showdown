@@ -262,7 +262,10 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		block: "  The move was blocked by the power of Dynamax!",
 		fail: "  [POKEMON] shook its head. It seems like it can't use this move...",
 	},
-
+	regen: {
+		start: "  [POKEMON] is regenerating health!",
+		end: "  [POKEMON]'s regeneration ended!",
+	},
 	// weather
 	sandstorm: {
 		weatherName: "Sandstorm",
