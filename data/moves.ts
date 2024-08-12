@@ -29915,6 +29915,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
 		onModifyMove(move, pokemon) {
 			if (pokemon.item == "honey") {
 				move.secondaries.push({
