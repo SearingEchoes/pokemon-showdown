@@ -29891,14 +29891,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {snatch: 1, heal: 1},
 		heal: [35, 100],
-		volatileStatus: 'regen',
 		onHit(pokemon) {
-			if (!pokemon.item == "honey") {
-				this.debug("regen disabled");
-				this.volatileStatus = null;
-			} else {
+			if (pokemon.item === "honey") {
 				this.debug("using honey");
-				pokemon.setItem('');
+				this.volatileStatus = 'regen';
 			}
 		},
 		secondary: null,
