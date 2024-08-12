@@ -29927,7 +29927,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Fire",
+		type: "Bug",
 	},
 	phantomdance: {
 		num: 3020,
