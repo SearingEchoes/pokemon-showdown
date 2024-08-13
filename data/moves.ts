@@ -29913,12 +29913,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		volatileStatus: 'partiallytrapped',
-		onModifyMove(move, pokemon) {
+		onHit(target, source, move) {
 			if (pokemon.item == "honey") {
-				move.secondaries.push({
-					chance: 100,
-					status: 'tox',
-				});
+				source.trySetStatus('tox', target);
 				this.debug("using honey");
 				pokemon.setItem('');
 			}
