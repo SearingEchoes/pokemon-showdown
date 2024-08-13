@@ -29915,7 +29915,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'partiallytrapped',
 		onHit(target, source, move) {
 			if (source.item == "honey") {
-				source.trySetStatus('tox', target);
+				target.trySetStatus('tox', source, move);
 				this.debug("using honey");
 				source.setItem('');
 			}
