@@ -882,7 +882,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 	},
 	regen: {
 		name: 'regen',
-		duration: 6,
+		duration: 5,
 		
 		onStart(pokemon) {
 			this.add('-start', pokemon, 'regen');
@@ -894,6 +894,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		
 		onEnd(pokemon) {
+			this.heal(pokemon.baseMaxhp / 5);
 			this.add('-end', pokemon, 'regen');
 		},
 	},
