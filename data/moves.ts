@@ -29912,12 +29912,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-
+		volatileStatus: 'partiallytrapped',
 		onHit(target, source, move) {
-			if (pokemon.item == "honey") {
+			if (source.item == "honey") {
 				source.trySetStatus('tox', target);
 				this.debug("using honey");
-				pokemon.setItem('');
+				source.setItem('');
 			}
 		},
 		secondary: null,
