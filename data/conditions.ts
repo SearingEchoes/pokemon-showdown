@@ -885,7 +885,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		duration: 6,
 		
 		onStart(pokemon) {
-			this.add('-start', pokemon, 'Regeneration');
+			this.add('-start', pokemon, 'regen');
 		},		
 		
 		onResidualOrder: 7,
@@ -894,7 +894,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		
 		onEnd(pokemon) {
-			this.add('-end', pokemon, 'Regeneration');
+			this.add('-end', pokemon, 'regen');
 		},
 	},
 };
