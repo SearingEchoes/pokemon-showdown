@@ -29913,7 +29913,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		volatileStatus: 'partiallytrapped',
-
+		onHit(target, source, move) {
+			if (source.item == "honey") {
+				target.trySetStatus('tox', source, move);
+				this.debug("using honey");
+				source.setItem('');
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Bug",
