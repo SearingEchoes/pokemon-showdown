@@ -9321,6 +9321,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Ice Blitz",
 		desc: "Target can't switch out for 3 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
 		shortDesc: "Prevents switching out for 3 turns on hit.",
+		
+		start: "  [POKEMON] was bound in ice!",
 	},
 	saradominstrike: {
 		name: "Saradomin Strike",
@@ -9346,5 +9348,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Mad Honey",
 		desc: "Partially traps the target for 2-5 turns. If the user has a Honey, it will consume it to apply Toxic status to the enemy as well.",
 		shortDesc: "Traps the target for 2-5 turns. Badly poisons if a Honey is held.",
+		
+		start: "  [POKEMON] became trapped in poisonous honey!",
 	},
 };
