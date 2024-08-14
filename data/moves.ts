@@ -29962,7 +29962,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onFoeSwitchIn(target, source, move) {
 			this.debug("test snapback");
 			if (target.newlySwitched) {
-				target.addVolatile('partiallytrapped');
+				target.addVolatile('partiallytrapped', source, move, 'trapper');
 			}
 		},
 		forceSwitch: true,
