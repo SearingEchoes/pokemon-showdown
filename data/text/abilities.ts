@@ -2427,4 +2427,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Hellfire",
 		shortdesc: "Combines the effects of Flash Fire and Unnerve.",
 	},
+	gunteleport: {
+		name: "Gun Teleport",
+		shortdesc: "Fires one shot of Samurai Edge when switching in.",
+	},
 };

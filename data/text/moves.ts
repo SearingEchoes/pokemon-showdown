@@ -9351,4 +9351,14 @@ export const MovesText: {[k: string]: MoveText} = {
 		
 		start: "  [POKEMON] became trapped in poisonous honey!",
 	},
+	phantomdance: {
+		name: "Phantom Dance",
+		desc: "Hits up to 8 times. If the user was not directly hit the previous turn, the attack doubles in Power and has its Accuracy increased to 100. It may still miss due to Accuracy drops, and it cannot be used twice in succession.",
+		shortDesc: "Powers up if not hit the previous turn. Can't be used consecutively.",
+	},
+	samuraiedge: {
+		name: "Samurai Edge",
+		desc: "This move cannot be used normally, and is called from the Gun Teleport ability.",
+		shortDesc: "No additional effect.",
+	},
 };
