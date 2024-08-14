@@ -137,6 +137,9 @@ export class BattleActions {
 		this.battle.runEvent('BeforeSwitchIn', pokemon);
 		if (sourceEffect) {
 			this.battle.add(isDrag ? 'drag' : 'switch', pokemon, pokemon.getDetails, '[from] ' + sourceEffect);
+			this.battle.debug(sourceEffect.name + " caused switch!");
+			this.battle.add("-message", sourceEffect.name + " caused switch!");
+
 		} else {
 			this.battle.add(isDrag ? 'drag' : 'switch', pokemon, pokemon.getDetails);
 		}
@@ -148,8 +151,7 @@ export class BattleActions {
 			// runSwitch happens immediately so that Mold Breaker can make hazards bypass Clear Body and Levitate
 			this.battle.singleEvent('PreStart', pokemon.getAbility(), pokemon.abilityState, pokemon);
 			this.runSwitch(pokemon);
-			this.battle.add("-message", sourceEffect.id + " caused switch!");
-			this.battle.debug(sourceEffect.id + " caused switch!");
+			
 		} else {
 			this.battle.queue.insertChoice({choice: 'runUnnerve', pokemon});
 			this.battle.queue.insertChoice({choice: 'runSwitch', pokemon});
