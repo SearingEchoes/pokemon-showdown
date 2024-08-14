@@ -137,7 +137,6 @@ export class BattleActions {
 		this.battle.runEvent('BeforeSwitchIn', pokemon);
 		if (sourceEffect) {
 			this.battle.add(isDrag ? 'drag' : 'switch', pokemon, pokemon.getDetails, '[from] ' + sourceEffect);
-			this.battle.add("-message", sourceEffect.id + " caused switch!");
 		} else {
 			this.battle.add(isDrag ? 'drag' : 'switch', pokemon, pokemon.getDetails);
 		}
@@ -154,7 +153,7 @@ export class BattleActions {
 			this.battle.queue.insertChoice({choice: 'runSwitch', pokemon});
 		}
 		
-
+		this.battle.add("-message", sourceEffect.id + " caused switch!");
 
 		return true;
 	}
