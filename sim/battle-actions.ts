@@ -153,11 +153,7 @@ export class BattleActions {
 			this.battle.queue.insertChoice({choice: 'runUnnerve', pokemon});
 			this.battle.queue.insertChoice({choice: 'runSwitch', pokemon});
 		}
-		
-			if (sourceEffect) {
-				this.battle.debug(sourceEffect.name + " caused switch!");
-				this.battle.add("-message", sourceEffect.name + " caused switch!");
-			}		
+			
 
 		return true;
 	}
@@ -185,6 +181,10 @@ export class BattleActions {
 
 		if (this.battle.gen <= 4) {
 			this.battle.runEvent('SwitchIn', pokemon);
+				if (poke.lastMove) {
+				this.battle.debug(poke.lastMove.name + " caused switch!");
+				this.battle.add("-message", poke.lastMove.name + " caused switch!");
+			}	
 		}
 
 		if (this.battle.gen <= 2) {
