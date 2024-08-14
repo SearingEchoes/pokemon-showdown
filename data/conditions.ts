@@ -905,7 +905,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (source?.hasItem('gripclaw')) return 8;
 		},
 		onStart(pokemon, source) {
-			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
+			this.add('-start', pokemon, 'bound');
 		},
 		onResidualOrder: 13,
 		onResidual(pokemon) {
@@ -919,7 +919,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 		},
 		onEnd(pokemon) {
-			this.add('-end', pokemon, this.effectState.sourceEffect, '[bound]');
+			this.add('-end', target, 'bound');
 		},
 		onTrapPokemon(pokemon) {
 			const gmaxEffect = ['gmaxcentiferno', 'gmaxsandblast'].includes(this.effectState.sourceEffect.id);
