@@ -181,9 +181,10 @@ export class BattleActions {
 
 		if (this.battle.gen <= 4) {
 			this.battle.runEvent('SwitchIn', pokemon);
-			if (this.battle.lastSuccessfulMoveThisTurn) {
-				this.battle.debug(this.battle.lastSuccessfulMoveThisTurn + " caused switch!");
-				this.battle.add("-message", this.battle.lastSuccessfulMoveThisTurn + " caused switch!");
+			if (this.battle.lastSuccessfulMoveThisTurn === 'snapback') {
+				pokemon.addVolatile('iceblitz');
+				// this.battle.debug(this.battle.lastSuccessfulMoveThisTurn + " caused switch!");
+				// this.battle.add("-message", this.battle.lastSuccessfulMoveThisTurn + " caused switch!");
 			}	
 		}
 
