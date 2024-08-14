@@ -181,9 +181,9 @@ export class BattleActions {
 
 		if (this.battle.gen <= 4) {
 			this.battle.runEvent('SwitchIn', pokemon);
-				if (poke.lastMove) {
-				this.battle.debug(poke.lastMove.name + " caused switch!");
-				this.battle.add("-message", poke.lastMove.name + " caused switch!");
+			if (pokemon.lastMove) {
+				this.battle.debug(pokemon.lastMove.name + " caused switch!");
+				this.battle.add("-message", pokemon.lastMove.name + " caused switch!");
 			}	
 		}
 
