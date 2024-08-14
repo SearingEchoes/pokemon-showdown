@@ -114664,6 +114664,14 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  madhoney: ["3L1"],
     },
   },
+    wesker: {
+	learnset: {
+      phantomdance: ["3L1"],
+	  snapback: ["3L1"],
+	  suckerpunch: ["3L1"],
+	  axekick: ["3L1"],
+    },
+  },
 };
 
 

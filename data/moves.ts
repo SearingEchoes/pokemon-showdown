@@ -29907,7 +29907,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 3019,
 		accuracy: 100,
 		basePower: 20,
-		category: "Special",
+		category: "Physical",
 		name: "Mad Honey",
 		pp: 10,
 		priority: 0,
@@ -29933,13 +29933,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		noPPBoosts: true,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, cantusetwice: 1},
 		onModifyMove(move, pokemon, target) {
 			const damagedByTarget = pokemon.attackedBy.some(
 				p => p.source === target && p.damage > 0 && p.thisTurn
 			);
 			if (!damagedByTarget) {
-				move.accuracy = true;
+				move.accuracy = 100;
 				move.basePower = 30;
 			}
 		},
@@ -29949,5 +29949,37 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 	},
-
+	snapback: {
+		num: 3021,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Snap Back",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		onAfterHit(target, source, move) {
+			if (target.newlySwitched) {
+				target.addVolatile('partiallytrapped');
+			}
+		},
+		forceSwitch: true,
+		target: "normal",
+		type: "Dark",
+		contestType: "Tough",
+	},
+	samuraiedge: {
+		num: 3022,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Samurai Edge",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		target: "normal",
+		type: "Steel",
+		contestType: "Tough",
+	},
 };

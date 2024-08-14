@@ -5918,4 +5918,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 18,
 	},
+	gunteleport: {
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Gun Teleport');
+			this.actions.useMove('Samurai Edge', pokemon);
+		},
+		name: "Gun Teleport",
+		rating: 2.5,
+		num: 46,
+	},
 };
