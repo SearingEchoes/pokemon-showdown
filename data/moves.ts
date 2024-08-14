@@ -29938,7 +29938,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			const damagedByTarget = pokemon.attackedBy.some(
 				p => p.source === target && p.damage > 0 && p.thisTurn
 			);
-			if (!damagedByTarget) {
+			if (!damagedByTarget && pokemon.activeMoveActions > 1) {
 				move.accuracy = 100;
 				move.basePower = 30;
 			}
@@ -29955,7 +29955,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 40,
 		category: "Physical",
 		name: "Snap Back",
-		pp: 5,
+		pp: 3,
 		noPPBoosts: true,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, noassist: 1, failcopycat: 1},

@@ -24523,7 +24523,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Wesker",
 		types: ["Dark"],
 		genderRatio: "M",
-		baseStats: {hp: 90, atk: 115, def: 90, spa: 115, spd: 90, spe: 120},
+		baseStats: {hp: 90, atk: 115, def: 90, spa: 115, spd: 90, spe: 110},
 		abilities: {0: "Gun Teleport"},
 		heightm: 1.83,
 		weightkg: 84.5,
