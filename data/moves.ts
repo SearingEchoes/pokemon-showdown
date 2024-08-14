@@ -29959,7 +29959,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		noPPBoosts: true,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
-		onAfterHit(target, source, move) {
+		onFoeSwitchIn(target, source, move) {
 			if (target.newlySwitched) {
 				target.addVolatile('partiallytrapped');
 			}
