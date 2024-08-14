@@ -152,6 +152,8 @@ export class BattleActions {
 			this.battle.queue.insertChoice({choice: 'runUnnerve', pokemon});
 			this.battle.queue.insertChoice({choice: 'runSwitch', pokemon});
 		}
+		
+		this.add("-message", source.id + " caused switch!");
 
 		return true;
 	}
