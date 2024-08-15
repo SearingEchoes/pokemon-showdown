@@ -8116,7 +8116,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyDamage(damage, source, target, move) {
 			if(move.category === 'Physical' && move.flags['contact']) {
-				const dhmod = (1 + ((source.maxhp - source.hp) / 4 ));
+				const dhmod = (1 + ((source.maxhp - source.hp) / 400 ));
 				this.add('-message', dhmod);
 				return this.chainModify(dhmod);
 			}
