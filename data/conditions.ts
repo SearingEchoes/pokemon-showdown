@@ -905,26 +905,14 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (source?.hasItem('gripclaw')) return 8;
 		},
 		onStart(pokemon) {
-			this.add('-activate', pokemon, 'move');
-		},
-		onResidualOrder: 13,
-		onResidual(pokemon) {
-			const source = this.effectState.source;
-
-			if (source && (!source.isActive || source.hp <= 0 || !source.activeTurns) ) {
-				delete pokemon.volatiles['bound'];
-				this.add('-end', pokemon, this.effectState.sourceEffect, '[bound]', '[silent]');
-				return;
-			}
-		},
-		
-		onEnd(pokemon) {
-			this.add('-end', pokemon, this.effectState.sourceEffect, 'bound');
+			this.add('-start', pokemon, 'bound');
 		},
 		onTrapPokemon(pokemon) {
-			if (this.effectState.source?.isActive) { 
 				pokemon.tryTrap();
-			}
+		},		
+		onEnd(pokemon) {
+			this.add('-end', pokemon, 'bound');
 		},
+
 	},
 };
