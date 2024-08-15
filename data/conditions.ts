@@ -909,6 +909,18 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-start', pokemon, 'bound');
 		},
 
+		onResidualOrder: 13,
+		onResidual(pokemon) {
+			const source = this.effectState.source;
+			// G-Max Centiferno and G-Max Sandblast continue even after the user leaves the field
+			const gmaxEffect = ['gmaxcentiferno', 'gmaxsandblast'].includes(this.effectState.sourceEffect.id);
+			if (source && (!source.isActive || source.hp <= 0 || !source.activeTurns) && !gmaxEffect) {
+				delete pokemon.volatiles['partiallytrapped'];
+				this.add('-end', pokemon, this.effectState.sourceEffect, '[partiallytrapped]', '[silent]');
+				return;
+			}
+		},
+		
 		onEnd(pokemon) {
 			this.add('-end', target, 'bound');
 		},
