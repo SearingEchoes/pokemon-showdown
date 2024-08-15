@@ -266,6 +266,10 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		start: "  [POKEMON] is regenerating health!",
 		end: "  [POKEMON]'s regeneration ended!",
 	},
+	bound: {
+		start: "  [POKEMON] was bound to the spot!",
+		end: "  [POKEMON] was freed of its bindings!",
+	},
 	// weather
 	sandstorm: {
 		weatherName: "Sandstorm",

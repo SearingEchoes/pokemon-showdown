@@ -9319,8 +9319,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	iceblitz: {
 		name: "Ice Blitz",
-		desc: "Target can't switch out for 3 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
-		shortDesc: "Prevents switching out for 3 turns on hit.",
+		desc: "Target can't switch out for 2 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
+		shortDesc: "Prevents switching out for 2 turns on hit.",
 		
 		start: "  [POKEMON] was bound in ice!",
 	},
@@ -9360,5 +9360,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Samurai Edge",
 		desc: "This move cannot be used normally, and is called from the Gun Teleport ability.",
 		shortDesc: "No additional effect.",
+	},
+	snapback: {
+		name: "Snap Back",
+		desc: "If successful, the target is forced out, and the new target cannot switch for 2 turns unless they have trapping protection. Cannot be used twice in succession.",
+		shortDesc: "Switches the target out on hit, and prevents new switches for 2 turns.",
 	},
 };
