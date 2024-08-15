@@ -905,7 +905,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (source?.hasItem('gripclaw')) return 8;
 		},
 		onStart(pokemon, source) {
-			this.add('-start', pokemon, 'bound');
+			this.add('-activate', pokemon, 'bound');
 		},
 
 		onResidualOrder: 13,
@@ -923,7 +923,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-end', target, 'bound');
 		},
 		onTrapPokemon(pokemon) {
-			pokemon.tryTrap();
+			if (this.effectState.source?.isActive) { 
+				pokemon.tryTrap();
+			}
 		},
 	},
 };
