@@ -29798,7 +29798,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			
 			this.debug(move.accuracy);
 		},
-		volatileStatus: 'partiallytrapped',
+		volatileStatus: 'bound',
 		secondary: null,
 		target: "normal",
 		type: "Ice",
@@ -29959,12 +29959,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		noPPBoosts: true,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, noassist: 1, failcopycat: 1, cantusetwice: 1},
-		onFoeSwitchIn(target, source, move) {
-			this.debug("test snapback");
-			if (target.newlySwitched) {
-				target.addVolatile('partiallytrapped', source, move, 'trapper');
-			}
-		},
+		//Go to battle-actions.ts #runSwitch to handle switch lock
 		forceSwitch: true,
 		target: "normal",
 		type: "Dark",

@@ -901,9 +901,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 	bound: {
 		name: 'bound',
 		duration: 3,
-		durationCallback(target, source) {
-			if (source?.hasItem('gripclaw')) return 8;
-		},
+
 		onStart(pokemon) {
 			this.add('-start', pokemon, 'bound');
 		},
@@ -913,6 +911,5 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onEnd(pokemon) {
 			this.add('-end', pokemon, 'bound');
 		},
-
 	},
 };
