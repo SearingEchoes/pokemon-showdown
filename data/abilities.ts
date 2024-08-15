@@ -5920,9 +5920,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	gunteleport: {
 		onStart(pokemon) {
-		if (this.turn > 1)
+		if (this.turn > 0) {
 			this.add('-ability', pokemon, 'Gun Teleport');
 			this.actions.useMove('Samurai Edge', pokemon);
+			}
 		},
 		name: "Gun Teleport",
 		rating: 2.5,
