@@ -8110,7 +8110,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	dharoksgreataxe: {
 		name: "Dharok's Greataxe",
-		spritenum: 798,
+		spritenum: 799,
 		fling: {
 			basePower: 210,
 		},
