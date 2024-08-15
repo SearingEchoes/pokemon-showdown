@@ -2549,4 +2549,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Honey",
 		desc: "A jar of honey.",
 	},
+	violetfear: {
+		name: "Violet Fear",
+		desc: "",
+	},
+	dharoksgreataxe: {
+		name: "Dharok's Greataxe",
+		desc: "A heavy axe that has slain countless foes. Increases the damage of Physical attacks that make contact the more HP is missing. Damage is increased by 1% for every 4 HP lost.",
+	},
 };
