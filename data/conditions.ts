@@ -904,10 +904,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 		durationCallback(target, source) {
 			if (source?.hasItem('gripclaw')) return 8;
 		},
-		onStart(pokemon, source) {
-			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
-			this.battle.add("-message", "sourceeffect" + this.effectState.sourceEffect);
-			this.battle.add("-message", "source" + source);
+		onStart(pokemon) {
+			this.add('-activate', pokemon, 'move');
 		},
 		onResidualOrder: 13,
 		onResidual(pokemon) {
