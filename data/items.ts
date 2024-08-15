@@ -8095,4 +8095,33 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -128,
 		gen: 4,
 	},
+	violetfear: {
+		name: "Violet Fear",
+		spritenum: 797,
+		fling: {
+			basePower: 30,
+		},
+		onModifyDamage(damage, source, target, move) {
+			return this.chainModify([5324, 4096]);
+		},
+
+		num: -129,
+		gen: 4,
+	},
+	dharoksgreataxe: {
+		name: "Dharok's Greataxe",
+		spritenum: 798,
+		fling: {
+			basePower: 210,
+		},
+		onModifyDamage(damage, source, target, move) {
+			if(move.category === 'Physical' && move.flags['contact']) {
+				const dhmod = (1 + ((source.maxhp - source.hp) / 4 ));
+				return this.chainModify(dhmod);
+			}
+		},
+
+		num: -130,
+		gen: 4,
+	},
 };
