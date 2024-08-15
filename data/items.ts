@@ -8123,6 +8123,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 
 		num: -130,
-		gen: 4,
+		gen: 3,
 	},
 };
