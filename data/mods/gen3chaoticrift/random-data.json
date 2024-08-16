@@ -1,4 +1,8 @@
 {
+    "reisen": {
+        "level": 100,
+        "moves": ["signalbeam2","manaburst","poisonbomb","dreameater2","hypnosis2","agility2","manacharge"]
+    },
     "turles": {
         "level": 100,
         "moves": ["killdriver","endure","headbutt","skyuppercut"]
