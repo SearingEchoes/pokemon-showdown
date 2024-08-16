@@ -8138,7 +8138,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			(pokemon.baseSpecies.name === 'Advent Tewi') )
 			) {
 				this.add("-message", pokemon.name + "'s Bunny Amulet activated!");
-				this.actions.runMove('Autobomb', pokemon);
+				this.actions.useMove('Autobomb', pokemon);
 				pokemon.useItem();
 			}
 		},
