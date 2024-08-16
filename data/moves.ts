@@ -29986,12 +29986,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
-		secondary: {
-			chance: 100,
-			status: 'par',
-		},
+		secondary: null,
 		target: "allAdjacentFoes",
-		type: "Heart",
+		type: "???",
 		contestType: "Tough",
 	},
 };
