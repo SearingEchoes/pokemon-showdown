@@ -8141,7 +8141,6 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.actions.useMove('Autobomb', defender);
 				defender.useItem();
 				
-				return null;
 			}
 		},
 		num: -129,
