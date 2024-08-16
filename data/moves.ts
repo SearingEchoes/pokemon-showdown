@@ -29893,7 +29893,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		heal: [35, 100],
 		onHit(pokemon) {
 			if (pokemon.item === "honey") {
-				this.debug("using honey");
 				pokemon.addVolatile('regen');
 				pokemon.setItem('');
 			}
@@ -29916,7 +29915,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onHit(target, source, move) {
 			if (source.item == "honey") {
 				target.trySetStatus('tox', source, move);
-				this.debug("using honey");
 				source.setItem('');
 			}
 		},
@@ -29926,7 +29924,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	phantomdance: {
 		num: 3020,
-		accuracy: 20,
+		accuracy: 60,
 		basePower: 15,
 		category: "Physical",
 		name: "Phantom Dance",
@@ -29974,8 +29972,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		secondary: null,
 		target: "normal",
 		type: "Steel",
+		contestType: "Tough",
+	},
+	autobomb: {
+		num: 3023,
+		accuracy: true,
+		basePower: 30,
+		category: "Special",
+		name: "Autobomb",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "allAdjacentFoes",
+		type: "Heart",
 		contestType: "Tough",
 	},
 };

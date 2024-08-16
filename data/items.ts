@@ -8108,6 +8108,43 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -129,
 		gen: 4,
 	},
+	bunnyamulet: {
+		name: "Bunny Amulet",
+		spritenum: 798,
+		fling: {
+			basePower: 1,
+		},
+		onFoeTryHit(pokemon, source, move) {
+			if (
+			(move.category === 'Physical' || move.category === 'Special')
+			&& ( (this.toID(user.baseSpecies.baseSpecies) === 'nidoranm') || 
+			(this.toID(user.baseSpecies.baseSpecies) === 'nidoranf') || 
+			(this.toID(user.baseSpecies.baseSpecies) === 'igglybuff') || 
+			(this.toID(user.baseSpecies.baseSpecies) === 'azurill') || 
+			(this.toID(user.baseSpecies.baseSpecies) === 'buneary') || 
+			(this.toID(user.baseSpecies.baseSpecies) === 'bunnelby') || 
+			(this.toID(user.baseSpecies.baseSpecies) === 'scorbunny') || 
+			(user.baseSpecies.name === 'Magearna') || 
+			(user.baseSpecies.name === 'Chibi Reisen') || 
+			(user.baseSpecies.name === 'Reisen') || 
+			(user.baseSpecies.name === 'Defense Reisen') || 
+			(user.baseSpecies.name === 'Technical Reisen') || 
+			(user.baseSpecies.name === 'Advent Reisen') || 
+			(user.baseSpecies.name === 'Reisen II') || 
+			(user.baseSpecies.name === 'Chibi Tewi') || 
+			(user.baseSpecies.name === 'Tewi') || 
+			(user.baseSpecies.name === 'Attack Tewi') || 
+			(user.baseSpecies.name === 'Defense Tewi') || 
+			(user.baseSpecies.name === 'Advent Tewi') )
+			) {
+				this.add("-message", pokemon.name + "'s Bunny Amulet activated!");
+				this.actions.runMove('Autobomb', pokemon);
+				pokemon.useItem();
+			}
+		},
+		num: -129,
+		gen: 4,
+	},
 	dharoksgreataxe: {
 		name: "Dharok's Greataxe",
 		spritenum: 799,
@@ -8122,6 +8159,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 
 		num: -130,
-		gen: 3,
+		gen: 4,
 	},
 };
