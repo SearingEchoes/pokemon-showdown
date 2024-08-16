@@ -8099,12 +8099,32 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Violet Fear",
 		spritenum: 797,
 		fling: {
-			basePower: 30,
+			basePower: 220,
+		},
+		onAnyModifyBoost(boosts, pokemon) {
+			const itemUser = this.effectState.target;
+			if (itemUser === pokemon) return;
+			if (itemUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
+			}
 		},
 		onModifyDamage(damage, source, target, move) {
-			return this.chainModify([5324, 4096]);
+			if(move.category === 'Physical' && move.flags['contact']) {
+				return this.chainModify(1.275);
+			}
 		},
-
+		onFoeHit(target, source, move) {
+			if(move.category === 'Physical' && move.flags['contact']) {
+				if (Math.random() < 0.3) {
+				  this.add("-message", source.name + "'s Violet Fear lets out a howl!");
+				  this.actions.useMove('Meteor Storm Lv3', source);
+				}
+				if (Math.random() < 0.5) {
+					this.add("-message", source.name + "'s Violet Fear lets out a howl!");
+				  this.actions.useMove('Frost Nova Lv5', source);
+				}
+			}
+		},
 		num: -129,
 		gen: 4,
 	},

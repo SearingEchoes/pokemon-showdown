@@ -29991,4 +29991,43 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "???",
 		contestType: "Tough",
 	},
+	meteorstormlv3: {
+		num: 3024,
+		accuracy: 75,
+		basePower: 30,
+		category: "Special",
+		name: "Meteor Storm Lv3",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: null,
+		target: "randomNormal",
+		type: "Fire",
+	},
+	frostnovalv5: {
+		num: 3025,
+		accuracy: 0,
+		basePower: 30,
+		category: "Special",
+		name: "Frost Nova Lv5",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+		  const lastMove = target.lastMove;
+		  if (lastMove?.flags['contact']) {
+			  move.accuracy = 100;
+		  }
+		},
+		secondary: {
+			chance: 58,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Ice",
+	},
 };
