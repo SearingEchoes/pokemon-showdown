@@ -8114,32 +8114,34 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 1,
 		},
-		onTryHit(pokemon, source, move) {
+		onFoeBeforeMove(attacker, defender, move) {
 			if (
 			(move.category === 'Physical' || move.category === 'Special')
-			&& ( (this.toID(pokemon.baseSpecies.baseSpecies) === 'nidoranm') || 
-			(this.toID(pokemon.baseSpecies.baseSpecies) === 'nidoranf') || 
-			(this.toID(pokemon.baseSpecies.baseSpecies) === 'igglybuff') || 
-			(this.toID(pokemon.baseSpecies.baseSpecies) === 'azurill') || 
-			(this.toID(pokemon.baseSpecies.baseSpecies) === 'buneary') || 
-			(this.toID(pokemon.baseSpecies.baseSpecies) === 'bunnelby') || 
-			(this.toID(pokemon.baseSpecies.baseSpecies) === 'scorbunny') || 
-			(pokemon.baseSpecies.name === 'Magearna') || 
-			(pokemon.baseSpecies.name === 'Chibi Reisen') || 
-			(pokemon.baseSpecies.name === 'Reisen') || 
-			(pokemon.baseSpecies.name === 'Defense Reisen') || 
-			(pokemon.baseSpecies.name === 'Technical Reisen') || 
-			(pokemon.baseSpecies.name === 'Advent Reisen') || 
-			(pokemon.baseSpecies.name === 'Reisen II') || 
-			(pokemon.baseSpecies.name === 'Chibi Tewi') || 
-			(pokemon.baseSpecies.name === 'Tewi') || 
-			(pokemon.baseSpecies.name === 'Attack Tewi') || 
-			(pokemon.baseSpecies.name === 'Defense Tewi') || 
-			(pokemon.baseSpecies.name === 'Advent Tewi') )
+			&& ( (this.toID(defender.baseSpecies.baseSpecies) === 'nidoranm') || 
+			(this.toID(defender.baseSpecies.baseSpecies) === 'nidoranf') || 
+			(this.toID(defender.baseSpecies.baseSpecies) === 'igglybuff') || 
+			(this.toID(defender.baseSpecies.baseSpecies) === 'azurill') || 
+			(this.toID(defender.baseSpecies.baseSpecies) === 'buneary') || 
+			(this.toID(defender.baseSpecies.baseSpecies) === 'bunnelby') || 
+			(this.toID(defender.baseSpecies.baseSpecies) === 'scorbunny') || 
+			(defender.baseSpecies.name === 'Magearna') || 
+			(defender.baseSpecies.name === 'Chibi Reisen') || 
+			(defender.baseSpecies.name === 'Reisen') || 
+			(defender.baseSpecies.name === 'Defense Reisen') || 
+			(defender.baseSpecies.name === 'Technical Reisen') || 
+			(defender.baseSpecies.name === 'Advent Reisen') || 
+			(defender.baseSpecies.name === 'Reisen II') || 
+			(defender.baseSpecies.name === 'Chibi Tewi') || 
+			(defender.baseSpecies.name === 'Tewi') || 
+			(defender.baseSpecies.name === 'Attack Tewi') || 
+			(defender.baseSpecies.name === 'Defense Tewi') || 
+			(defender.baseSpecies.name === 'Advent Tewi') )
 			) {
-				this.add("-message", pokemon.name + "'s Bunny Amulet activated!");
-				this.actions.useMove('Autobomb', pokemon);
-				pokemon.useItem();
+				this.add("-message", defender.name + "'s Bunny Amulet activated!");
+				this.actions.useMove('Autobomb', defender);
+				defender.useItem();
+				
+				return null;
 			}
 		},
 		num: -129,
