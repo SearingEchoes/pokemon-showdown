@@ -9369,6 +9369,16 @@ export const MovesText: {[k: string]: MoveText} = {
 	autobomb: {
 		name: "Autobomb",
 		desc: "This move cannot be used normally, and is called from the Bunny Amulet item.",
-		shortDesc: "Flinches the enemy.",
+		shortDesc: "This move cannot be used normally.",
+	},
+	meteorstormlv3: {
+		name: "Meteor Storm Lv3",
+		desc: "This move cannot be used normally, and is called from hitting melee attacks with the Violet Fear item. Hits up to 3 times.",
+		shortDesc: "This move cannot be used normally. Hits up to 3 times.",
+	},
+	frostnovalv5: {
+		name: "Frost Nova Lv5",
+		desc: "This move cannot be used normally, and is called from hitting melee attacks with the Violet Fear item. Hits up to 3 times.",
+		shortDesc: "This move cannot be used normally. May Freeze the target.",
 	},
 };

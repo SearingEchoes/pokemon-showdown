@@ -2551,7 +2551,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	violetfear: {
 		name: "Violet Fear",
-		desc: "",
+		desc: "A fused two-handed sword containing unimaginable power. Physical melee attacks bypass enemy Defensive boosts and have their power increased by 1.275x. They also have a 30% chance to cast Meteor Storm Lv3, and a 50% chance to cast Frost Nova Lv5.",
+		shortDesc: "Grants several benefits to Physical contact attacks.",
 	},
 	bunnyamulet: {
 		name: "Bunny Amulet",
