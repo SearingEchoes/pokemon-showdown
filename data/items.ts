@@ -8138,7 +8138,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			(defender.baseSpecies.name === 'Advent Tewi') )
 			) {
 				this.add("-message", defender.name + "'s Bunny Amulet activated!");
-				this.actions.runMove('Autobomb', defender);
+				this.actions.useMove('Autobomb', defender);
 				defender.useItem();
 				
 			}

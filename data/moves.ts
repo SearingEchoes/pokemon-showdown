@@ -29988,7 +29988,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
 		secondary: {
 			chance: 100,
-			volatileStatus: 'flinch',
+			status: 'par',
 		},
 		target: "allAdjacentFoes",
 		type: "Heart",
