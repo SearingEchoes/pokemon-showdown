@@ -9353,8 +9353,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	phantomdance: {
 		name: "Phantom Dance",
-		desc: "Hits up to 8 times. If the user was not directly hit the previous turn, the attack doubles in Power and has its Accuracy increased to 100. It may still miss due to Accuracy drops, and it cannot be used twice in succession.",
-		shortDesc: "Powers up if not hit the previous turn. Can't be used consecutively.",
+		desc: "Hits up to 8 times. If it is not the first turn out, and the user was not directly hit the previous turn, the attack doubles in Power and has its Accuracy increased to 100. It may still miss due to Accuracy drops, and it cannot be used twice in succession.",
+		shortDesc: "Powers up if not hit the previous turn or the first turn. Can't be used consecutively.",
 	},
 	samuraiedge: {
 		name: "Samurai Edge",
@@ -9365,5 +9365,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Snap Back",
 		desc: "If successful, the target is forced out, and the new target cannot switch for 2 turns unless they have trapping protection. Cannot be used twice in succession.",
 		shortDesc: "Switches the target out on hit, and prevents new switches for 2 turns.",
+	},
+	autobomb: {
+		name: "Autobomb",
+		desc: "This move cannot be used normally, and is called from the Bunny Amulet item.",
+		shortDesc: "Flinches the enemy.",
 	},
 };

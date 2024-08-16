@@ -2553,6 +2553,11 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Violet Fear",
 		desc: "",
 	},
+	bunnyamulet: {
+		name: "Bunny Amulet",
+		desc: "Casts Autobomb if an incoming attack is attempted on the holder. Does not activate against Status moves. Autobomb is a 30 BP Special move that always Flinches the enemy, unless they are immune.",
+		shortDesc: "Attempts to autobomb an incoming damaging attack.",
+	},
 	dharoksgreataxe: {
 		name: "Dharok's Greataxe",
 		desc: "A heavy axe that has slain countless foes. Increases the damage of Physical attacks that make contact the more HP is missing. Damage is increased by 1% for every 4 HP lost.",
