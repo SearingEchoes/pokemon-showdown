@@ -8189,9 +8189,11 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 10,
 		},
 		onSwitchOut(pokemon) {
-			this.add("-message", source.name + " used their Mixed Herbs!");
-			pokemon.heal(pokemon.baseMaxhp);
-			pokemon.useItem();
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				this.add("-message", pokemon.name + " used their Mixed Herbs!");
+				pokemon.heal(pokemon.baseMaxhp);
+				pokemon.useItem();
+			}
 		},
 
 		num: -130,
