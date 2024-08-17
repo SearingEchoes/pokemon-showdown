@@ -29939,6 +29939,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (!damagedByTarget && pokemon.activeMoveActions > 1) {
 				move.accuracy = 100;
 				move.basePower = 30;
+				this.add("-message", "You are NOTHING to me!!!");
 			}
 		},
 		multihit: 8,

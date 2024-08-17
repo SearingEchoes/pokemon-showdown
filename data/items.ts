@@ -8182,4 +8182,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -130,
 		gen: 4,
 	},
+	mixedherbs: {
+		name: "Mixed Herbs",
+		spritenum: 800,
+		fling: {
+			basePower: 10,
+		},
+		onSwitchOut(pokemon) {
+			this.add("-message", source.name + " used their Mixed Herbs!");
+			pokemon.heal(pokemon.baseMaxhp);
+			pokemon.useItem();
+		},
+
+		num: -130,
+		gen: 4,
+	},
 };
