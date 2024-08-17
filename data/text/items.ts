@@ -2564,4 +2564,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 		desc: "A heavy axe that has slain countless foes. Increases the damage of Physical attacks that make contact the more HP is missing. Damage is increased by 1% for every 4 HP lost.",
 		shortDesc: "Increases Physical contact damage by 0.25% for every 1 HP missing.",
 	},
+	mixedherbs: {
+		name: "Mixed Herbs",
+		desc: "This blend of 2 different herbs will fully restore your health. Use it when running away to a safe place.",
+		shortDesc: "Fully restores health once when switching out.",
+	},
 };
