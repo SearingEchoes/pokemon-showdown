@@ -8274,12 +8274,12 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-				move.willCrit: true,
+				move.willCrit: true;
 				target.item = '';
 				this.add("-message", "Zerker's power fades.");
 				this.add('-end', pokemon, 'typechange', '[silent]');
 			} else if (move.type === 'Grass' || move.type === 'Nature') {
-				move.willCrit: true,
+				move.willCrit: true;
 				target.item = '';
 				this.add("-message", "Zerker's power fades.");
 				this.add('-end', pokemon, 'typechange', '[silent]');
