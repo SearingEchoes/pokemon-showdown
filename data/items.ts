@@ -8235,8 +8235,10 @@ export const Items: {[itemid: string]: ItemData} = {
 					move.type === 'Fairy') 
 				{
 					move.type = 'Electric';
+					this.debug(move.type);
 				} else {
 					move.type = 'Wind';
+					this.debug(move.type);
 				}
 			}
 
@@ -8245,8 +8247,10 @@ export const Items: {[itemid: string]: ItemData} = {
 		onModifyDamage(damage, source, target, move) {
 			if(move.type === 'Electric') {
 				return this.chainModify(1.2);
+				this.debug('Elec boost');
 			} else if (move.type === 'Wind') {
 				return this.chainModify(1.8);
+				this.debug('Wind boost');
 			}
 		},
 
