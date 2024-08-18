@@ -2569,4 +2569,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 		desc: "This blend of 2 different herbs will fully restore your health. Use it when running away to a safe place.",
 		shortDesc: "Fully restores health once when switching out.",
 	},
+	swordofzerker: {
+		name: "Sword of Zerker",
+		desc: "The user will Zerker Tribe On upon entry. This overwrites their types and makes them Electric, but they will have a 1.8x boost to both Electric and Wind as if they had STAB with an additional +20% increase. Slicing moves of all kinds will also become Electric or Wind type depending on if their original type is a Pokémon or Touhoumon type. They will now also have a 30% chance to Paralyze. Being hit by a weakness will also attempt to force a critical hit on the holder, and cause this item to be lost. For Zerker only - Grass/Nature moves become a weakness to reference MMSF's weakness chart, and to balance Electric only having a single weakness.",
+		shortDesc: "User and slicing moves are electrified. Is lost if hit with weakness or Grass.",
+	},
 };
