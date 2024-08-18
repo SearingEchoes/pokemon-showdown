@@ -8206,9 +8206,9 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 130,
 		},
 		onStart(pokemon) {
-			if (!target.getTypes().join() === 'Electric' || target.setType('Electric')) {
+			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add("-message", "Tribe On! Zerker!");
-				this.add('-start', target, 'typechange', 'Electric');
+				this.add('-start', pokemon, 'typechange', 'Electric');
 			}
 		},
 		num: -131,
