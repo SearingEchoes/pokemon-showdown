@@ -8202,18 +8202,85 @@ export const Items: {[itemid: string]: ItemData} = {
 	swordofzerker: {
 		name: "Sword of Zerker",
 		spritenum: 801,
-		fling: {
-			basePower: 130,
-		},
+		onTakeItem: false,
 		onStart(pokemon) {
 			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add("-message", "Tribe On! Zerker!");
-				BattleOtherAnims.ultraburst.anim(scene, [this]);
 				this.add('-start', pokemon, 'typechange', 'Electric');
 			}
 		},
+		
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if(move.flags['slicing']) {
+				if (move.type === 'Normal' || 
+					move.type === 'Fighting' ||
+					move.type === 'Flying' ||
+					move.type === 'Poison' ||
+					move.type === 'Ground' ||
+					move.type === 'Rock' ||
+					move.type === 'Bug' ||
+					move.type === 'Ghost' ||
+					move.type === 'Steel' ||
+					move.type === 'Fire' ||
+					move.type === 'Water' ||
+					move.type === 'Grass' ||
+					move.type === 'Electric' ||
+					move.type === 'Psychic' ||
+					move.type === 'Ice' ||
+					move.type === 'Dragon' ||
+					move.type === 'Dark' ||
+					move.type === 'Fairy' ||
+					) {
+					move.type = 'Electric';
+				} else {
+					move.type = 'Wind';
+				}
+			}
+
+		},
+		
+		onModifyDamage(damage, source, target, move) {
+			if(move.type === 'Electric') {
+				return this.chainModify(1.2);
+			} else if (move.type === 'Wind') {
+				return this.chainModify(1.8);
+			}
+		},
+
+		onModifyMove(move) {
+			if (move.flags['slicing']) {
+				if (!move.secondaries) move.secondaries = [];
+				for (const secondary of move.secondaries) {
+					if (secondary.Status === 'par') return;
+				}
+				move.secondaries.push({
+					chance: 30,
+					status: 'par',
+				});
+			}
+		},
+
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.type === 'Grass' || move.type === 'Nature') {
+					return this.chainModify(2);
+			}
+		},
+
+		onHit(target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				onCriticalHit: true,
+				target.item = '';
+			} else if (move.type === 'Grass' || move.type === 'Nature') {
+				onCriticalHit: true,
+				target.item = '';
+			}
+		},
+		
 		onEnd(pokemon) {
-			this.add("-message", "The item was removed.");
+			this.add("-message", "Zerker's power fades.");
 			this.add('-end', pokemon, 'typechange', '[silent]');
 		},
 		num: -131,
