@@ -8206,6 +8206,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onStart(pokemon) {
 			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add("-message", "Tribe On! Zerker!");
+				this.add('-anim', pokemon, "Muddy Water", pokemon);
 				this.add('-start', pokemon, 'typechange', 'Electric');
 			}
 		},
@@ -8273,11 +8274,15 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-				onCriticalHit: true,
+				move.willCrit: true,
 				target.item = '';
+				this.add("-message", "Zerker's power fades.");
+				this.add('-end', pokemon, 'typechange', '[silent]');
 			} else if (move.type === 'Grass' || move.type === 'Nature') {
-				onCriticalHit: true,
+				move.willCrit: true,
 				target.item = '';
+				this.add("-message", "Zerker's power fades.");
+				this.add('-end', pokemon, 'typechange', '[silent]');
 			}
 		},
 		
