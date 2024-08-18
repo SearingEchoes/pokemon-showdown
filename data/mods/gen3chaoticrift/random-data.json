@@ -19,18 +19,6 @@
         "level": 100,
         "moves": ["chaoswave","chaosplit","recover","confuseray"]
     },
-    "miku": {
-        "level": 100,
-        "moves": ["sing","thunderbolt","boomburst","sparklingaria"]
-    },
-    "tztokjad": {
-        "level": 100,
-        "moves": ["gigarockfall","gigafireball","gigacrunch"]
-    },
-    "oblily": {
-        "level": 100,
-        "moves": ["megid","rapidpeck","thunderwave","memento"]
-    },
     "rubi": {
         "level": 100,
         "moves": ["puncture"]
