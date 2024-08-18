@@ -8232,8 +8232,8 @@ export const Items: {[itemid: string]: ItemData} = {
 					move.type === 'Ice' ||
 					move.type === 'Dragon' ||
 					move.type === 'Dark' ||
-					move.type === 'Fairy' ||
-					) {
+					move.type === 'Fairy') 
+				{
 					move.type = 'Electric';
 				} else {
 					move.type = 'Wind';
