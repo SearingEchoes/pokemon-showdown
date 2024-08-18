@@ -3,6 +3,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	bloomdoom: {
+		inherit: true,
+		gen: 3,
+	},
 	scald: {
 		inherit: true,
 		gen: 3,
