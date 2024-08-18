@@ -8210,11 +8210,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
-			const noModifyType = [
-				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
-			];
+		onFoeTryHit(target, source, move) {
+
 			if(move.flags['slicing']) {
 				if (move.type === 'Normal' || 
 					move.type === 'Fighting' ||
@@ -8233,7 +8230,7 @@ export const Items: {[itemid: string]: ItemData} = {
 					move.type === 'Ice' ||
 					move.type === 'Dragon' ||
 					move.type === 'Dark' ||
-					move.type === 'Metal') 
+					move.type === 'Fairy')
 				{
 					move.type = 'Electric';
 					this.debug(move.type);
