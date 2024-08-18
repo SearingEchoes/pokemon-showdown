@@ -1,7 +1,7 @@
 {
     "basiney": {
         "level": 100,
-        "moves": ["scald","recover","mirrorcoat","calmmind"]
+        "moves": ["scald","recover","mirrorcoat","calmmind","leafstorm"]
     },
     "youmu": {
         "level": 100,
