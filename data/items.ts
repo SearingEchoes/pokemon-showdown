@@ -8199,4 +8199,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -130,
 		gen: 4,
 	},
+	swordofzerker: {
+		name: "Sword of Zerker",
+		spritenum: 801,
+		fling: {
+			basePower: 130,
+		},
+		onStart(pokemon) {
+			if (!target.getTypes().join() === 'Electric' || target.setType('Electric')) {
+				this.add("-message", "Tribe On! Zerker!");
+				this.add('-start', target, 'typechange', 'Electric');
+			}
+		},
+		num: -131,
+		gen: 4,
+	},
 };
