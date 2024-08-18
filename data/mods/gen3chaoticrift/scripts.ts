@@ -135,6 +135,6 @@ export const Scripts: ModdedBattleScriptsData = {
 
 
 
-	};
+	},
 	
 };
