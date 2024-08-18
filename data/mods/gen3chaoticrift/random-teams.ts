@@ -274,6 +274,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Beesiney') return 'Honey';
 		if (species.name === 'Wesker') return "Mixed Herbs";
 		if (species.name === 'Reisen') return 'Bunny Amulet';
+		if (species.name === 'Youmu') return 'Sword of Zerker';
 		
 		if (species.name === 'Speed Koishi') {
 		  if (Math.random() < 0.5) {
