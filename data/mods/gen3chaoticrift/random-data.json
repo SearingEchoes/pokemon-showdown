@@ -1,4 +1,8 @@
 {
+    "youmu": {
+        "level": 100,
+        "moves": ["battlechant","shadowdance","swordsdance","highjumpkick2","vitalthrow2","bladeflash"]
+    },
     "reisen": {
         "level": 100,
         "moves": ["signalbeam2","manaburst","poisonbomb","dreameater2","hypnosis2","agility2","manacharge"]
