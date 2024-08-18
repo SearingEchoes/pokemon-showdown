@@ -1,4 +1,8 @@
 {
+    "basiney": {
+        "level": 100,
+        "moves": ["scald","recover","mirrorcoat","calmmind"]
+    },
     "youmu": {
         "level": 100,
         "moves": ["battlechant","shadowdance","swordsdance","highjumpkick2","vitalthrow2","bladeflash"]
