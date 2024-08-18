@@ -8211,6 +8211,10 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.add('-start', pokemon, 'typechange', 'Electric');
 			}
 		},
+		onEnd(pokemon) {
+			this.add("-message", "The item was removed.");
+			this.add('-end', pokemon, 'typechange', '[silent]');
+		},
 		num: -131,
 		gen: 4,
 	},
