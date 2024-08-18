@@ -8210,6 +8210,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
+		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [
 				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
@@ -8232,7 +8233,7 @@ export const Items: {[itemid: string]: ItemData} = {
 					move.type === 'Ice' ||
 					move.type === 'Dragon' ||
 					move.type === 'Dark' ||
-					move.type === 'Fairy') 
+					move.type === 'Metal') 
 				{
 					move.type = 'Electric';
 					this.debug(move.type);
