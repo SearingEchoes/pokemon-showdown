@@ -178,4 +178,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 		isNonstandard: null,
 		gen: 3,
 	},
+	grassiumz: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
 };
