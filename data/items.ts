@@ -8208,7 +8208,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onStart(pokemon) {
 			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add("-message", "Tribe On! Zerker!");
-				this.add('-anim', pokemon, 'zerkertribeon', pokemon);
+				BattleOtherAnims.ultraburst.anim(scene, [this]);
 				this.add('-start', pokemon, 'typechange', 'Electric');
 			}
 		},
