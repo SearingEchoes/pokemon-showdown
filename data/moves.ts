@@ -30031,17 +30031,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ice",
 	},
-	"thunderboltblade": {
+	thunderboltblade: {
 		num: 3026,
 		accuracy: true,
-		basePower: 80,
+		basePower: 70,
 		category: "Physical",
 		name: "Thunderbolt Blade",
 		pp: 1,
 		priority: 0,
-		flags: {slicing: 1},
+		flags: {protect: 1, slicing: 1},
 		onAfterMove(pokemon) {
-			pokemon.item = '';
+			pokemon.setItem('');
 		},
 		multihit: 3,
 		multiaccuracy: true,
