@@ -88,7 +88,8 @@ export const Scripts: ModdedBattleScriptsData = {
 				zMove.isZOrMaxPowered = true;
 				return zMove;
 			} else if (item.id === 'swordofzerker') {
-				const zMove = 'Thunderbolt Blade';
+				const zMove = this.dex.getActiveMove(item.zMove as string);
+				zMove.isZOrMaxPowered = true;
 				return zMove;	
 			}
 		}
