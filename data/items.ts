@@ -8203,6 +8203,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Sword of Zerker",
 		spritenum: 801,
 		onTakeItem: false,
+		zMove: true,
+		zMoveFrom: "tbblade",
 		onStart(pokemon) {
 			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add("-message", "Tribe On! Zerker!");
@@ -8274,12 +8276,10 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-				move.willCrit = true;
 				target.item = '';
 				this.add("-message", "Zerker's power fades.");
 				this.add('-end', target, 'typechange', '[silent]');
 			} else if (move.type === 'Grass' || move.type === 'Nature') {
-				move.willCrit = true;
 				target.item = '';
 				this.add("-message", "Zerker's power fades.");
 				this.add('-end', target, 'typechange', '[silent]');
