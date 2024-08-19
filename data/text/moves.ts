@@ -9381,4 +9381,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "This move cannot be used normally, and is called from hitting melee attacks with the Violet Fear item. Hits up to 3 times.",
 		shortDesc: "This move cannot be used normally. May Freeze the target.",
 	},
+	thunderboltblade: {
+		name: "Thunderbolt Blade",
+		desc: "Never misses if used against a Paralyzed target. Consumes the Sword of Zerker after use.",
+		shortDesc: "Always hits on Paralyzed targets.",
+	},
 };
