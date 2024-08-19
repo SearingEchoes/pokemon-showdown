@@ -8203,7 +8203,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Sword of Zerker",
 		spritenum: 801,
 		onTakeItem: false,
-		zMove: true,
+		zMove: 'Thunderbolt Blade',
 		zMoveFrom: "tbblade",
 		onStart(pokemon) {
 			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
