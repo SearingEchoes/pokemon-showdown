@@ -3,10 +3,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
-	bloomdoom: {
-		inherit: true,
-		gen: 3,
-	},
 	scald: {
 		inherit: true,
 		gen: 3,
@@ -149,6 +145,29 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		},
 		boosts: {
 			spd: 1,
+		},
+	},
+	stockpile: {
+		inherit: true,
+		condition: {
+			noCopy: true,
+			onStart(target) {
+				this.effectState.layers = 1;
+				this.add('-start', target, 'stockpile' + this.effectState.layers);
+				this.boost({def: 1, spd: 1}, target, target);
+			},
+			onRestart(target) {
+				if (this.effectState.layers >= 3) return false;
+				this.effectState.layers++;
+				this.add('-start', target, 'stockpile' + this.effectState.layers);
+				this.boost({def: 1, spd: 1}, target, target);
+			},
+			onEnd(target) {
+				const layers = this.effectState.layers * -1;
+				this.effectState.layers = 0;
+				this.boost({def: layers, spd: layers}, target, target);
+				this.add('-end', target, 'Stockpile');
+			},
 		},
 	},
 };
