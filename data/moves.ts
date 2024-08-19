@@ -30040,6 +30040,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		priority: 0,
 		flags: {slicing: 1},
+		onAfterMove(pokemon) {
+			pokemon.item = '';
+		},
 		multihit: 3,
 		multiaccuracy: true,
 		isZ: "swordofzerker",
