@@ -30033,13 +30033,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	thunderboltblade: {
 		num: 3026,
-		accuracy: true,
+		accuracy: 70,
 		basePower: 70,
 		category: "Physical",
 		name: "Thunderbolt Blade",
 		pp: 1,
 		priority: 0,
 		flags: {protect: 1, slicing: 1},
+		onModifyMove(move, pokemon, target) {
+			if (target.status === 'par') {
+				move.accuracy = true;
+			}
+		},
 		onAfterMove(pokemon) {
 			pokemon.setItem('');
 		},
