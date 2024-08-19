@@ -69,6 +69,8 @@ export const Scripts: ModdedBattleScriptsData = {
 
 				if (move.name === item.zMoveFrom) {
 					return item.zMove as string;
+				} else if {item.zMoveFrom === 'tbblade' && move.flags['slicing'])
+					return item.zMove as string;
 				} else if (item.zMove === true && move.type === item.zMoveType) {
 					if (move.category === "Status") {
 						return move.name;
