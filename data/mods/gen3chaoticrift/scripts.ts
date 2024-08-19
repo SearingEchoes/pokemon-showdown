@@ -108,7 +108,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		zMove.priority = move.priority;
 		zMove.isZOrMaxPowered = true;
 		return zMove;
-	}
+	},
 			
 	runMove(
 		moveOrMoveName: Move | string, pokemon: Pokemon, targetLoc: number, sourceEffect?: Effect | null,
@@ -246,12 +246,12 @@ export const Scripts: ModdedBattleScriptsData = {
 			// In gen 4, the outermost move is considered the last move for Copycat
 			this.battle.activeMove = oldActiveMove;
 		}
-	}
-
-
-
-
-
 	},
+
+
+
+
+
+},
 	
 };
