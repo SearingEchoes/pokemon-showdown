@@ -1,7 +1,7 @@
 {
-    "basiney": {
+    "alice": {
         "level": 100,
-        "moves": ["scald","recover","mirrorcoat","calmmind","leafstorm"]
+        "moves": ["manaburst","manacharge","wish2","spikes2"]
     },
     "youmu": {
         "level": 100,
