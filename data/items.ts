@@ -8297,7 +8297,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Alice Card",
 		spritenum: 805,
 		onSourceModifyDamage(damage, source, target, move) {
-			const bstat = target.species.baseStats.hp;
+			let bstat = target.species.baseStats.hp;
 			bstat += target.species.baseStats.atk;
 			bstat += target.species.baseStats.def;
 			bstat += target.species.baseStats.spa;
