@@ -8293,4 +8293,26 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -131,
 		gen: 4,
 	},
+	alicecard: {
+		name: "Alice Card",
+		spritenum: 805,
+		onSourceModifyDamage(damage, source, target, move) {
+			const bstat = target.currentSpecies.baseStats.hp;
+			bstat += target.currentSpecies.baseStats.atk;
+			bstat += target.currentSpecies.baseStats.def;
+			bstat += target.currentSpecies.baseStats.spa;
+			bstat += target.currentSpecies.baseStats.spd;
+			bstat += target.currentSpecies.baseStats.spe;
+			this.debug(bstat);
+			if (bstat >= 550) {
+				this.debug('Alice Card boss reduction');
+				return this.chainModify(0.6);
+			} else {
+				this.debug('Alice Card normal enemy increase');
+				return this.chainModify(1.4);
+			}
+		},
+		num: -135,
+		gen: 4,
+	},
 };
