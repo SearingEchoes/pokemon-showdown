@@ -1549,10 +1549,10 @@ export class Pokemon {
 		if (d <= 0) return false;
 		if (this.hp >= this.maxhp) return false;
 		this.hp += d;
-		if (this.hp > this.maxhp) {
-			d -= this.hp - this.maxhp;
-			this.hp = this.maxhp;
-		}
+		// if (this.hp > this.maxhp) {
+			// d -= this.hp - this.maxhp;
+			// this.hp = this.maxhp;
+		// }
 		return d;
 	}
 
