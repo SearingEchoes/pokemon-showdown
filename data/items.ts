@@ -8297,12 +8297,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Alice Card",
 		spritenum: 805,
 		onSourceModifyDamage(damage, source, target, move) {
-			const bstat = target.currentSpecies.baseStats.hp;
-			bstat += target.currentSpecies.baseStats.atk;
-			bstat += target.currentSpecies.baseStats.def;
-			bstat += target.currentSpecies.baseStats.spa;
-			bstat += target.currentSpecies.baseStats.spd;
-			bstat += target.currentSpecies.baseStats.spe;
+			const bstat = target.species.baseStats.hp;
+			bstat += target.species.baseStats.atk;
+			bstat += target.species.baseStats.def;
+			bstat += target.species.baseStats.spa;
+			bstat += target.species.baseStats.spd;
+			bstat += target.species.baseStats.spe;
 			this.debug(bstat);
 			if (bstat >= 550) {
 				this.debug('Alice Card boss reduction');
