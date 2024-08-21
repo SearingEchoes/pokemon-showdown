@@ -2574,9 +2574,15 @@ export const ItemsText: {[k: string]: ItemText} = {
 		desc: "The user will Zerker Tribe On upon entry. This overwrites their types and makes them Electric, but they will have a 1.8x boost to both Electric and Wind as if they had STAB with an additional +20% increase. Slicing moves of all kinds will also become Electric or Wind type depending on if their original type is a Pokémon or Touhoumon type. They will now also have a 30% chance to Paralyze. Being hit by a weakness will cause this item to be lost. For Zerker only - Grass/Nature moves become a weakness to reference MMSF's weakness chart, and to balance Electric only having a single weakness.",
 		shortDesc: "User and slicing moves are electrified. Is lost if hit with weakness or Grass.",
 	},
+	rockofsaurian: {
+		name: "Rock of Saurian",
+		desc: "The user will Saurian Tribe On upon entry. This overwrites their types and makes them Fire, but they will have a 1.8x boost to both Fire and Pyro as if they had STAB with an additional +20% increase. Offensive charge moves will have their charge turn removed, but they now cannot be used consecutively. The user also becomes immune to flinching. The rock is lost if the user takes super-effective damage.",
+		shortDesc: "Become Fire, prevent flinch, and removes offensive charge move turns.",
+	},
 	alicecard: {
 		name: "Alice Card",
 		desc: "Cuts all incoming direct damage from strong targets by 40%. A strong target is defined by something that possesses 550 or more BST. If the target has 549 or less, the holder of this item takes 40% more damage instead.",
 		shortDesc: "Decreases the damage from strong foes by 40%. Otherwise, take 40% more.",
 	},
+
 };
