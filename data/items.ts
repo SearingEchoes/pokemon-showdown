@@ -8331,7 +8331,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (activeMove.flags['charge'] && activeMove === moveSlot.id) {
 				source.disableMove(activeMove);
 			}
-		}
+		},
 		
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'flinch') return null;
