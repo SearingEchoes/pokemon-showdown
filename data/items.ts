@@ -8326,7 +8326,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onFoeHit(target, source, move) {
-			const activeMove =  source.lastMove?.id;
+			const activeMove =  source.lastMove;
 			this.singleEvent('DisableMove', activeMove, null, source);
 			if (activeMove.flags['charge'] && activeMove === moveSlot.id) {
 				source.disableMove(activeMove);
