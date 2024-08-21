@@ -8322,13 +8322,16 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.debug('remove charge turn for ' + move.id);
 			this.attrLastMove('[still]');
 			this.addMove('-anim', pokemon, move.name, target);
-			const activeMove =  pokemon.lastMove?.id;
-			this.singleEvent('DisableMove', activeMove, null, pokemon);
-			if (activeMove.flags['charge'] && activeMove === moveSlot.id) {
-				pokemon.disableMove(activeMove);
-			}
 			return false; // skip charge turn
 		},
+		
+		onFoeHit(target, source, move) {
+			const activeMove =  source.lastMove?.id;
+			this.singleEvent('DisableMove', activeMove, null, source);
+			if (activeMove.flags['charge'] && activeMove === moveSlot.id) {
+				source.disableMove(activeMove);
+			}
+		}
 		
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'flinch') return null;
