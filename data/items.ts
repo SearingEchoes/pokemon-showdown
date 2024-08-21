@@ -8330,9 +8330,9 @@ export const Items: {[itemid: string]: ItemData} = {
 				for (const moveSlot of source.moveSlots) {
 					const activeMove = this.dex.getActiveMove(moveSlot.id);
 					this.singleEvent('DisableMove', activeMove, null, source);
-					this.debug(source.lastmove.id);
+					this.debug(source.lastmove);
 					if (activeMove.flags['cantusetwice'] && source.lastMove?.id === moveSlot.id) {
-						pokemon.disableMove(source.lastMove.id);
+						pokemon.disableMove(source.lastMove);
 					}
 				}
 		},
