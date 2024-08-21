@@ -8326,11 +8326,14 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onFoeHit(target, source, move) {
-			const activeMove =  source.lastMove;
-			this.singleEvent('DisableMove', activeMove, null, source);
-			if (activeMove.flags['charge'] && activeMove === moveSlot.id) {
-				source.disableMove(activeMove);
-			}
+				this.runEvent('DisableMove', source);
+				for (const moveSlot of source.moveSlots) {
+					const activeMove = this.dex.getActiveMove(moveSlot.id);
+					this.singleEvent('DisableMove', activeMove, null, source);
+					if (activeMove.flags['cantusetwice'] && source.lastMove?.id === moveSlot.id) {
+						pokemon.disableMove(source.lastMove.id);
+					}
+				}
 		},
 		
 		onTryAddVolatile(status, pokemon) {
