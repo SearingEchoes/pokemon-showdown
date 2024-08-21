@@ -8206,9 +8206,9 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: 'Thunderbolt Blade',
 		zMoveFrom: "tbblade",
 		onStart(pokemon) {
-			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add("-message", "Tribe On! Zerker!");
 				this.add('-anim', pokemon, "zerkertribeon", pokemon);
+			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
 				this.add('-start', pokemon, 'typechange', 'Electric');
 			}
 		},
@@ -8291,6 +8291,59 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.add('-end', pokemon, 'typechange', '[silent]');
 		},
 		num: -131,
+		gen: 4,
+	},
+	rockofsaurian: {
+		name: "Rock of Saurian",
+		spritenum: 802,
+		onTakeItem: false,
+		zMove: 'Genocide Blazer',
+		zMoveFrom: "gblazer",
+		onStart(pokemon) {
+				this.add("-message", "Tribe On! Saurian!");
+				this.add('-anim', pokemon, "sauriantribeon", pokemon);
+			if (!pokemon.getTypes().join() === 'Fire' || pokemon.setType('Fire')) {
+				this.add('-start', pokemon, 'typechange', 'Electric');
+			}
+		},
+
+		
+		onModifyDamage(damage, source, target, move) {
+			if(move.type === 'Fire') {
+				return this.chainModify(1.2);
+				this.debug('Fire boost');
+			} else if (move.type === 'Pyro') {
+				return this.chainModify(1.8);
+				this.debug('Pyro boost');
+			}
+		},
+		
+		onChargeMove(pokemon, target, move) {
+			this.debug('remove charge turn for ' + move.id);
+			this.attrLastMove('[still]');
+			this.addMove('-anim', pokemon, move.name, target);
+			pokemon.disableMove(pokemon.lastMove.id);
+			return false; // skip charge turn
+		},
+		
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'flinch') return null;
+		},
+		
+
+		onHit(target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				target.item = '';
+				this.add("-message", "Saurian's power fades.");
+				this.add('-end', target, 'typechange', '[silent]');
+			}
+		},
+		
+		onEnd(pokemon) {
+			this.add("-message", "Saurian's power fades.");
+			this.add('-end', pokemon, 'typechange', '[silent]');
+		},
+		num: -132,
 		gen: 4,
 	},
 	alicecard: {
