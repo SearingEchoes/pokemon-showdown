@@ -8303,7 +8303,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.add("-message", "Tribe On! Saurian!");
 				this.add('-anim', pokemon, "sauriantribeon", pokemon);
 			if (!pokemon.getTypes().join() === 'Fire' || pokemon.setType('Fire')) {
-				this.add('-start', pokemon, 'typechange', 'Electric');
+				this.add('-start', pokemon, 'typechange', 'Fire');
 			}
 		},
 
