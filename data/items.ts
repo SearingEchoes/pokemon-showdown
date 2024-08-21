@@ -8322,10 +8322,10 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.debug('remove charge turn for ' + move.id);
 			this.attrLastMove('[still]');
 			this.addMove('-anim', pokemon, move.name, target);
-			
+			const activeMove =  pokemon.lastMove?.id;
 			this.singleEvent('DisableMove', activeMove, null, pokemon);
-			if (activeMove.flags['charge'] && pokemon.lastMove?.id === moveSlot.id) {
-				pokemon.disableMove(pokemon.lastMove.id);
+			if (activeMove.flags['charge'] && activeMove === moveSlot.id) {
+				pokemon.disableMove(activeMove);
 			}
 			return false; // skip charge turn
 		},
