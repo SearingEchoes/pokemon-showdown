@@ -8318,7 +8318,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
-		onChargeMove(pokemon, target, move) {
+		onModifyMove(pokemon, target, move) {
 			const chMove = move.id;
 			this.debug('remove charge turn for ' + move.id);
 			this.attrLastMove('[still]');
@@ -8333,11 +8333,8 @@ export const Items: {[itemid: string]: ItemData} = {
 				if (chMove === moveSlot.id) {
 					pokemon.disableMove(chMove);
 				} else {
-					this.debug(moveSlot.id);
-					this.debug(pokemon.move);
 				}
 			}			
-			
 			return false; // skip charge turn
 		},
 		
