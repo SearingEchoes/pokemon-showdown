@@ -2576,8 +2576,13 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	rockofsaurian: {
 		name: "Rock of Saurian",
-		desc: "The user will Saurian Tribe On upon entry. This overwrites their types and makes them Fire, but they will have a 1.8x boost to both Fire and Pyro as if they had STAB with an additional +20% increase. Offensive charge moves will have their charge turn removed, but they now cannot be used consecutively. The user also becomes immune to flinching. The rock is lost if the user takes super-effective damage.",
+		desc: "The user will Saurian Tribe On upon entry. This overwrites their types and makes them Fire, but they will have a 1.8x boost to both Fire and Pyro as if they had STAB with an additional +20% increase. Offensive charge moves will have their charge turn removed, but they now lower Speed per use. The user also becomes immune to flinching. The rock is lost if the user takes super-effective damage.",
 		shortDesc: "Become Fire, prevent flinch, and removes offensive charge move turns.",
+	},
+	starofninja: {
+		name: "Star of Ninja",
+		desc: "The user will Ninja Tribe On upon entry. This overwrites their types and makes them Grass, but they will have a 1.8x boost to both Grass and Nature as if they had STAB with an additional +20% increase. Grass/Nature moves of all kinds will gain perfect accuracy if the holder is faster than the target. Additionally, if a move fails or misses against the holder for any reason, the holder will counter with AntiDamage, a 30BP Grass/Physical move. The star is lost if hit by super-effective damage.",
+		shortDesc: "Become Grass. Max out Grass/Nature move accuracy if faster, and counter misses.",
 	},
 	alicecard: {
 		name: "Alice Card",
