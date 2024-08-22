@@ -8349,7 +8349,8 @@ export const Items: {[itemid: string]: ItemData} = {
 					this.debug(move.type);
 				}
 				
-				pokemon.disableMove(pokemon.lastMove.id);
+				this.boost({spd: -1}, pokemon);
+				
 			}
 
 		},
