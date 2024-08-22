@@ -8400,7 +8400,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
-		onModifyMove(move, pokemon) {
+		onModifyMove(move, pokemon, target) {
 			if((move.type === 'Grass' || move.type === 'Nature') && (this.queue.willMove(target))) {
 				move.accuracy = true;
 			}
