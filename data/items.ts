@@ -8319,25 +8319,35 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onChargeMove(pokemon, target, move) {
-			this.debug(pokemon.move);
+
 			this.debug('remove charge turn for ' + move.id);
 			this.attrLastMove('[still]');
 			this.addMove('-anim', pokemon, move.name, target);
-			this.debug(pokemon.move);
-			pokemon.disableMove(pokemon.move);
+
+			const chMove = move.id;
+			
+				this.runEvent('DisableMove', pokemon);
+				for (const moveSlot of pokemon.moveSlots) {
+					this.singleEvent('DisableMove', move, null, source);
+					this.debug(chMove);
+					if (chMove === moveSlot.id) {
+						pokemon.disableMove(pokemon.move);
+					}
+				}			
+			
 			return false; // skip charge turn
 		},
 		
-		// onFoeHit(target, source, move) {
-				// this.runEvent('DisableMove', source);
-				// for (const moveSlot of source.moveSlots) {
-					// this.singleEvent('DisableMove', move, null, source);
-					// this.debug(source.move);
-					// if (move.flags['cantusetwice'] && source.move?.id === moveSlot.id) {
-						// pokemon.disableMove(source.move);
-					// }
-				// }
-		// },
+		onFoeHit(target, source, move) {
+				this.runEvent('DisableMove', source);
+				for (const moveSlot of source.moveSlots) {
+					this.singleEvent('DisableMove', move, null, source);
+					this.debug(source.move);
+					if (move.flags['cantusetwice'] && source.move?.id === moveSlot.id) {
+						pokemon.disableMove(source.move);
+					}
+				}
+		},
 		
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'flinch') return null;
