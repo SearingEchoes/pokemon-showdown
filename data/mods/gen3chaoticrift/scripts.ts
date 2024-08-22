@@ -91,7 +91,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				const zMove = this.dex.getActiveMove(item.zMove as string);
 				zMove.isZOrMaxPowered = true;
 				return zMove;
-			} else if (item.id === 'swordofzerker') {
+			} else if (item.id === 'swordofzerker' || item.id === 'rockofsaurian' || item.id === 'starofninja') {
 				const zMove = this.dex.getActiveMove(item.zMove as string);
 				zMove.isZOrMaxPowered = true;
 				return zMove;	
