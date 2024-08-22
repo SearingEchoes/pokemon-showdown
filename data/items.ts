@@ -8349,7 +8349,7 @@ export const Items: {[itemid: string]: ItemData} = {
 					this.debug(move.type);
 				}
 				
-				this.boost({spd: -1}, pokemon);
+				this.boost({spe: -1}, pokemon);
 				
 			}
 
@@ -8370,6 +8370,56 @@ export const Items: {[itemid: string]: ItemData} = {
 		
 		onEnd(pokemon) {
 			this.add("-message", "Saurian's power fades.");
+			this.add('-end', pokemon, 'typechange', '[silent]');
+		},
+		num: -132,
+		gen: 4,
+	},
+	starofninja: {
+		name: "Star of Ninja",
+		spritenum: 803,
+		onTakeItem: false,
+		zMove: 'Demon Flurry',
+		zMoveFrom: "dflurry",
+		onStart(pokemon) {
+				this.add("-message", "Tribe On! Ninja!");
+				this.add('-anim', pokemon, "ninjatribeon", pokemon);
+			if (!pokemon.getTypes().join() === 'Grass' || pokemon.setType('Grass')) {
+				this.add('-start', pokemon, 'typechange', 'Grass');
+			}
+		},
+
+		
+		onModifyDamage(damage, source, target, move) {
+			if(move.type === 'Grass') {
+				return this.chainModify(1.2);
+				this.debug('Grass boost');
+			} else if (move.type === 'Nature') {
+				return this.chainModify(1.8);
+				this.debug('Nature boost');
+			}
+		},
+		
+		onModifyMove(move, pokemon) {
+			if((move.type === 'Grass' || move.type === 'Nature') && (this.queue.willMove(target)) {
+				move.accuracy = true;
+			}
+		},
+		
+		onMoveFail(target, source, move) {
+			this.actions.useMove('AntiDamage', pokemon);
+		},
+
+		onHit(target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				target.item = '';
+				this.add("-message", "Ninja's power fades.");
+				this.add('-end', target, 'typechange', '[silent]');
+			}
+		},
+		
+		onEnd(pokemon) {
+			this.add("-message", "Ninja's power fades.");
 			this.add('-end', pokemon, 'typechange', '[silent]');
 		},
 		num: -132,

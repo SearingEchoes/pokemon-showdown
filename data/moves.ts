@@ -30034,7 +30034,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	thunderboltblade: {
 		num: 3026,
 		accuracy: 70,
-		basePower: 65,
+		basePower: 60,
 		category: "Physical",
 		name: "Thunderbolt Blade",
 		pp: 1,
@@ -30080,18 +30080,44 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fire",
 		contestType: "Cool",
 	},
-	gblazer: {
+	antidamage: {
 		num: 3028,
-		accuracy: 1,
-		basePower: 1,
+		accuracy: 100,
+		basePower: 30,
 		category: "Physical",
-		name: "gblazer",
-		pp: 35,
+		name: "AntiDamage",
+		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
 		secondary: null,
 		target: "normal",
-		type: "Fire",
+		type: "Grass",
 		contestType: "Tough",
+	},
+	demonflurry: {
+		num: 3029,
+		accuracy: 60,
+		basePower: 80,
+		category: "Physical",
+		name: "Demon Flurry",
+		pp: 1,
+		priority: 0,
+		flags: {protect: 1},
+		onModifyMove(move, pokemon, target) {
+			if (this.queue.willMove(target)) {
+				move.accuracy = true;
+				delete move.flags['protect'];
+			}
+		},
+		onAfterMove(pokemon) {
+			pokemon.setItem('');
+		},
+		multihit: 2,
+		multiaccuracy: true,
+		isZ: "starofninja",
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Cool",
 	},
 };
