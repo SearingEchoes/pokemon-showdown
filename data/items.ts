@@ -8322,13 +8322,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (move.flags['charge']) {
 				delete move.flags['charge'];
 				delete move.onTryMove;
-				pokemon.disableMove(pokemon.lastMove.id);
-			}
-
-		},
-		
-		onFoeTryHit(target, source, move) {
-
+				
 			if(move.flags['charge']) {
 				if (move.type === 'Normal' || 
 					move.type === 'Fighting' ||
@@ -8355,6 +8349,9 @@ export const Items: {[itemid: string]: ItemData} = {
 					move.type = 'Pyro';
 					this.debug(move.type);
 				}
+			}
+				
+				pokemon.disableMove(pokemon.lastMove.id);
 			}
 
 		},
