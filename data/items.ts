@@ -8331,7 +8331,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.singleEvent('DisableMove', move, null, pokemon);
 				this.debug(chMove);
 				if (chMove === moveSlot.id) {
-					pokemon.disableMove(moveSlot);
+					pokemon.disableMove(chMove);
 				} else {
 					this.debug(moveSlot.id);
 					this.debug(pokemon.move);
