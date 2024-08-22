@@ -8327,6 +8327,37 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		},
 		
+		onFoeTryHit(target, source, move) {
+
+			if(move.flags['charge']) {
+				if (move.type === 'Normal' || 
+					move.type === 'Fighting' ||
+					move.type === 'Flying' ||
+					move.type === 'Poison' ||
+					move.type === 'Ground' ||
+					move.type === 'Rock' ||
+					move.type === 'Bug' ||
+					move.type === 'Ghost' ||
+					move.type === 'Steel' ||
+					move.type === 'Fire' ||
+					move.type === 'Water' ||
+					move.type === 'Grass' ||
+					move.type === 'Electric' ||
+					move.type === 'Psychic' ||
+					move.type === 'Ice' ||
+					move.type === 'Dragon' ||
+					move.type === 'Dark' ||
+					move.type === 'Fairy')
+				{
+					move.type = 'Fire';
+					this.debug(move.type);
+				} else {
+					move.type = 'Pyro';
+					this.debug(move.type);
+				}
+			}
+
+		},
 		
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'flinch') return null;

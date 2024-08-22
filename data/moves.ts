@@ -26640,7 +26640,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
-			chance: 70,
+			chance: 100,
 			self: {
 					status: 'brn',
 				},
@@ -30054,6 +30054,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Electric",
+		contestType: "Cool",
+	},
+	genocideblazer: {
+		num: 3027,
+		accuracy: 100,
+		basePower: 250,
+		category: "Special",
+		name: "Genocide Blazer",
+		pp: 1,
+		priority: 0,
+		flags: {protect: 1},
+		basePowerCallback(pokemon, target, move) {
+			if (this.queue.willMove(target)) {
+				return move.basePower / 2;
+			}
+		},
+		onAfterMove(pokemon) {
+			pokemon.setItem('');
+		},
+		isZ: "rockofsaurian",
+		secondary: null,
+		target: "normal",
+		type: "Fire",
 		contestType: "Cool",
 	},
 };
