@@ -8323,7 +8323,11 @@ export const Items: {[itemid: string]: ItemData} = {
 				delete move.flags['charge'];
 				delete move.onTryMove;
 				move.flags.cantusetwice = 1;
+				if (move.flags['cantusetwice']) {
+				this.debug('you cant use this twice');
+				}
 			}
+
 		},
 		
 		// onFoeHit(target, source, move) {
