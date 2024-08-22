@@ -276,6 +276,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Reisen') return 'Bunny Amulet';
 		if (species.name === 'Youmu') return 'Sword of Zerker';
 		if (species.name === 'Marisa') return 'Rock of Saurian';
+		if (species.name === 'Technical Sanae') return 'Star of Ninja';
 		if (species.name === 'Alice') return 'Alice Card';
 		
 		if (species.name === 'Speed Koishi') {
