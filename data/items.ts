@@ -8324,8 +8324,15 @@ export const Items: {[itemid: string]: ItemData} = {
 				delete move.onTryMove;
 				move.flags.cantusetwice = 1;
 				if (move.flags['cantusetwice']) {
-				this.debug('you cant use this twice');
-				this.debug(pokemon.lastMove?.id);
+				
+				this.runEvent('DisableMove', pokemon);
+				for (const moveSlot of pokemon.moveSlots) {
+					const activeMove = this.dex.getActiveMove(moveSlot.id);
+					this.singleEvent('DisableMove', activeMove, null, pokemon);
+					if (activeMove.flags['cantusetwice'] && pokemon.lastMove?.id === moveSlot.id) {
+						pokemon.disableMove(pokemon.lastMove.id);
+					}
+				}
 				}
 			}
 
