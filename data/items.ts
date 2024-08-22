@@ -8319,23 +8319,11 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onModifyMove(pokemon, target, move) {
-			const chMove = move.id;
-			this.debug('remove charge turn for ' + move.id);
-			this.attrLastMove('[still]');
-			this.addMove('-anim', pokemon, move.name, target);
-
-
-			
-			this.runEvent('DisableMove', pokemon);
-			for (const moveSlot of pokemon.moveSlots) {
-				this.singleEvent('DisableMove', move, null, pokemon);
-				this.debug(chMove);
-				if (chMove === moveSlot.id) {
-					pokemon.disableMove(chMove);
-				} else {
-				}
-			}			
-			return false; // skip charge turn
+			if (move.flags['charge']) {
+				delete move.flags['charge'];
+				delete move.onTryMove;
+				move.flags.cantusetwice = 1;
+			}
 		},
 		
 		// onFoeHit(target, source, move) {
