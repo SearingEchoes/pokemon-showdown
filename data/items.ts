@@ -8322,19 +8322,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (move.flags['charge']) {
 				delete move.flags['charge'];
 				delete move.onTryMove;
-				move.flags.cantusetwice = 1;
-				if (move.flags['cantusetwice']) {
-				
-					this.runEvent('DisableMove', pokemon);
-					for (const moveSlot of pokemon.moveSlots) {
-						const activeMove = this.dex.getActiveMove(moveSlot.id);
-						this.debug(activeMove);
-						this.singleEvent('DisableMove', activeMove, null, pokemon);
-						
-							pokemon.disableMove(pokemon.lastMove.id);
-							this.debug('disablemove');
-					}
-				}
+				pokemon.disableMove(pokemon.lastMove.id);
 			}
 
 		},
