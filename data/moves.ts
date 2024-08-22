@@ -30069,6 +30069,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (this.queue.willMove(target)) {
 				return move.basePower / 2;
 			}
+			return move.basePower;
 		},
 		onAfterMove(pokemon) {
 			pokemon.setItem('');
