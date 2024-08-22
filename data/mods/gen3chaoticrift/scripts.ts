@@ -71,6 +71,10 @@ export const Scripts: ModdedBattleScriptsData = {
 			return item.zMove as string;
 		} else if (item.zMoveFrom === 'tbblade' && move.flags['slicing']) {
 			return item.zMove as string;
+		} else if (item.zMoveFrom === 'gblazer' && move.flags['charge']) {
+			return item.zMove as string;
+		} else if (item.zMoveFrom === 'dflurry' && (move.type === 'Grass' || move.type === 'Nature')) {
+			return item.zMove as string;
 		} else if (item.zMove === true && move.type === item.zMoveType) {
 			if (move.category === "Status") {
 				return move.name;
