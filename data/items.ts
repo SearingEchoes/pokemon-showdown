@@ -8325,6 +8325,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				move.flags.cantusetwice = 1;
 				if (move.flags['cantusetwice']) {
 				this.debug('you cant use this twice');
+				this.debug(pokemon.lastMove?.id);
 				}
 			}
 
