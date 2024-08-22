@@ -8325,29 +8325,20 @@ export const Items: {[itemid: string]: ItemData} = {
 				move.flags.cantusetwice = 1;
 				if (move.flags['cantusetwice']) {
 				
-				this.runEvent('DisableMove', pokemon);
-				for (const moveSlot of pokemon.moveSlots) {
-					const activeMove = this.dex.getActiveMove(moveSlot.id);
-					this.singleEvent('DisableMove', activeMove, null, pokemon);
-					if (activeMove.flags['cantusetwice'] && pokemon.lastMove?.id === moveSlot.id) {
-						pokemon.disableMove(pokemon.lastMove.id);
+					this.runEvent('DisableMove', pokemon);
+					for (const moveSlot of pokemon.moveSlots) {
+						const activeMove = this.dex.getActiveMove(moveSlot.id);
+						this.singleEvent('DisableMove', activeMove, null, pokemon);
+						if (activeMove.flags['cantusetwice'] && pokemon.lastMove?.id === moveSlot.id) {
+							pokemon.disableMove(pokemon.lastMove.id);
+							this.debug('disablemove');
+						}
 					}
-				}
 				}
 			}
 
 		},
 		
-		// onFoeHit(target, source, move) {
-				// this.runEvent('DisableMove', source);
-				// for (const moveSlot of source.moveSlots) {
-					// this.singleEvent('DisableMove', move, null, source);
-					// this.debug(source.move);
-					// if (move.flags['cantusetwice'] && source.move?.id === moveSlot.id) {
-						// pokemon.disableMove(source.move);
-					// }
-				// }
-		// },
 		
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'flinch') return null;
