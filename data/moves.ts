@@ -30080,4 +30080,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fire",
 		contestType: "Cool",
 	},
+	gblazer: {
+		num: 3028,
+		accuracy: 1,
+		basePower: 1,
+		category: "Physical",
+		name: "gblazer",
+		pp: 35,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+		contestType: "Tough",
+	},
 };
