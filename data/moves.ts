@@ -30034,7 +30034,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	thunderboltblade: {
 		num: 3026,
 		accuracy: 70,
-		basePower: 70,
+		basePower: 65,
 		category: "Physical",
 		name: "Thunderbolt Blade",
 		pp: 1,
@@ -30059,7 +30059,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	genocideblazer: {
 		num: 3027,
 		accuracy: 100,
-		basePower: 250,
+		basePower: 220,
 		category: "Special",
 		name: "Genocide Blazer",
 		pp: 1,
