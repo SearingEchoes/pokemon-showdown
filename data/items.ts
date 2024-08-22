@@ -8326,14 +8326,14 @@ export const Items: {[itemid: string]: ItemData} = {
 
 			const chMove = move.id;
 			
-				this.runEvent('DisableMove', pokemon);
-				for (const moveSlot of pokemon.moveSlots) {
-					this.singleEvent('DisableMove', move, null, source);
-					this.debug(chMove);
-					if (chMove === moveSlot.id) {
-						pokemon.disableMove(pokemon.move);
-					}
-				}			
+			this.runEvent('DisableMove', pokemon);
+			for (const moveSlot of pokemon.moveSlots) {
+				this.singleEvent('DisableMove', move, null, pokemon);
+				this.debug(chMove);
+				if (chMove === moveSlot.id) {
+					pokemon.disableMove(pokemon.move);
+				}
+			}			
 			
 			return false; // skip charge turn
 		},
