@@ -8318,7 +8318,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
-		onModifyMove(pokemon, target, move) {
+		onModifyMove(move, pokemon) {
 			if (move.flags['charge']) {
 				delete move.flags['charge'];
 				delete move.onTryMove;
