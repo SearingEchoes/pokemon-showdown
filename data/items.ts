@@ -8332,6 +8332,8 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.debug(chMove);
 				if (chMove === moveSlot.id) {
 					pokemon.disableMove(pokemon.move);
+				} else {
+					this.debug(moveSlot.id);
 				}
 			}			
 			
