@@ -8407,9 +8407,10 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onFoeAfterMove(pokemon, target, move) {
-			const hitResult = this.tryMoveHit(target, pokemon, move);
-			if (hitResult === 0 || hitResult === undefined) {
-				this.actions.useMove('AntiDamage', target);
+			if (pokemon.moveThisTurnResult) {
+				if (pokemon.moveThisTurnResult === false) {
+					this.actions.useMove('AntiDamage', target);
+				}	
 			}		
 		},
 		
