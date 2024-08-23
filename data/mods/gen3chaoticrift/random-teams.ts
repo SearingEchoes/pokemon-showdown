@@ -803,9 +803,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		}
 
 		if (pokemon.length < this.maxTeamSize && !isMonotype && !this.forceMonotype && pokemon.length < 12) {
-			throw new Error(`Could not build a random team for ${this.format} (seed=${seed})`);
-			throw new Error(`$(pokemon.length)`);
-			throw new Error(`$(isMonotype)`);
+			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${pokemon.length} ${isMonotype}`);
 		}
 
 		return pokemon;
