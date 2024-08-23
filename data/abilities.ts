@@ -5817,7 +5817,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Holy Shock",
 		rating: 4,
-		num: 280,
+		num: -129,
 	},
 	naturalblessing: {
 		onModifyAtkPriority: 5,
@@ -5864,7 +5864,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Natural Blessing",
 		rating: 4,
-		num: 65,
+		num: -130,
 	},
 	hellfire: {
 	
@@ -5916,17 +5916,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Hellfire",
 		rating: 3.5,
-		num: 18,
+		num: -131,
 	},
 	gunteleport: {
 		onStart(pokemon) {
 		if (this.turn > 0) {
 			this.add('-ability', pokemon, 'Gun Teleport');
-			this.actions.useMove('Samurai Edge', pokemon);
+			this.actions.runMove('Samurai Edge', pokemon);
 			}
 		},
 		name: "Gun Teleport",
 		rating: 2.5,
-		num: 46,
+		num: -132,
+	},
+	satsuinohado: {
+		onModifyMove(damage, source, target, move) {
+			if (source.hp <= (source.maxhp / 2)) {
+				if (target.getMoveHitData(move).typeMod < 1) {
+					target.move.typeMod = 1;
+				}
+			}
+		},
+		name: "Satsui no Hado",
+		rating: 4,
+		num: -133,
 	},
 };

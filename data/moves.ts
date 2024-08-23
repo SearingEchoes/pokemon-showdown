@@ -30120,4 +30120,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Grass",
 		contestType: "Cool",
 	},
+	ragingdemon: {
+		num: 3030,
+		accuracy: 999,
+		basePower: 150,
+		category: "Physical",
+		name: "Raging Demon",
+		pp: 1,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTry(source) {
+			if (source.hp <= (source.maxhp / 4) return false;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Cute",
+	},
 };
