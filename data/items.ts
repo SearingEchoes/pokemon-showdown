@@ -8407,7 +8407,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onFoeAfterMove(pokemon, target, move) {
-			if (target.moveLastTurnResult === false) {
+			if (pokemon.moveLastTurnResult === false) {
 				this.actions.useMove('AntiDamage', pokemon);
 			}		
 		},
