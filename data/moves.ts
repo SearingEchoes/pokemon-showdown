@@ -30131,7 +30131,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onTry(source) {
-			if (source.hp <= (source.maxhp / 4)) return false;
+			if (source.hp <= (source.maxhp / 4)) {
+				return true;
+			} else {
+				return false;
+			}
 		},
 		secondary: null,
 		target: "normal",
