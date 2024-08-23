@@ -8407,7 +8407,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		
 		onFoeAfterMove(pokemon, target, move) {
-			if (this.battle.attrLastMove('[miss]')) {
+			const hitResult = this.tryMoveHit(target, pokemon, move);
+			if (hitResult === 0 || hitResult === undefined) {
 				this.actions.useMove('AntiDamage', target);
 			}		
 		},
