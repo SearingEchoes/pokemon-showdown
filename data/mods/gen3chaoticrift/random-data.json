@@ -40,7 +40,7 @@
     "wesker": {
         "level": 100,
         "moves": ["phantomdance","snapback","suckerpunch","axekick"]
-    }
+    },
     "akuma": {
         "level": 100,
         "moves": ["ragingdemon","aurasphere","skyuppercut","shadowsneak"]
