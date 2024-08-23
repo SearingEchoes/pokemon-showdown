@@ -24533,7 +24533,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  akuma: {
 		num: -3016,
 		name: "Akuma",
-		types: ["Dark", "Fight"],
+		types: ["Dark", "Fighting"],
 		genderRatio: "M",
 		baseStats: {hp: 70, atk: 120, def: 70, spa: 120, spd: 70, spe: 90},
 		abilities: {0: "Satsui no Hado"},
