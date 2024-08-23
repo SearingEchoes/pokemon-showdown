@@ -29782,7 +29782,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	iceblitz: {
 		num: 3014,
-		accuracy: 100,
+		accuracy: 95,
 		basePower: 100,
 		category: "Special",
 		name: "Ice Blitz",
@@ -30104,6 +30104,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1},
 		onModifyMove(move, pokemon, target) {
+
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+
 			if (this.queue.willMove(target)) {
 				move.accuracy = true;
 				delete move.flags['protect'];
@@ -30141,5 +30144,47 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cute",
+	},
+	icebarrage: {
+		num: 3031,
+		accuracy: 95,
+		basePower: 120,
+		category: "Special",
+		name: "Ice Barrage",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			//enemy spdef affects hit rate
+			if (target.getStat('spd') >= 200) {
+			   move.accuracy -= ((target.getStat('spd') - 190) / 10);
+			}
+		},
+		volatileStatus: 'bound',
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		contestType: "Clever",
+	},
+	hellsrolling: {
+		num: 3032,
+		accuracy: 200,
+		basePower: 60,
+		category: "Special",
+		name: "Hell's Rolling",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			  move.accuracy -= ((target.getStat('spe') - 50) / 2);
+		},
+		multihit: 2,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 120},
+		contestType: "Cool",
 	},
 };

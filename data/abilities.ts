@@ -5963,4 +5963,60 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: -133,
 	},
+	blackbarrier: {
+		onDamagePriority: 1,
+		
+		onHit(target, source, move) {
+			if (move.type === 'Flying' || move.type === 'Aero' || move.id === 'whirlwind2' || move.id === 'twister2' || move.id === 'gust2' || move.id === 'aeroblast2') {
+				this.effectState.busted = true;
+			}
+		},
+		
+		onDamage(damage, target, source, effect) {
+			if (move.type === 'Flying' || move.type === 'Aero' || move.id === 'twister2' || move.id === 'gust2' || move.id === 'aeroblast2') {
+				this.effectState.busted = true;
+				return damage;
+			}
+		
+			if (effect && effect.effectType === 'Move' && !target.transformed) {
+				this.add('-activate', target, 'ability: Black Barrier');
+				//this.effectState.busted = true;
+				if (damage < 300) {
+					let newdamage = Math.floor(damage / 2);
+					return newdamage;
+				} else {
+					let newdamage = (damage - 150);
+					return newdamage;
+				}
+			}
+		},
+		onCriticalHit(target, source, move) {
+			if (!target) return;
+			if (target.transformed) {
+				return;
+			}
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move.type)) return;
+			return false;
+		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target || move.category === 'Status') return;
+			if (target.transformed) {
+				return;
+			}
+
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move.type)) return;
+			return 0;
+		},
+		isBreakable: true,
+		isPermanent: true,
+		name: "Black Barrier",
+		rating: 3.5,
+		num: -134,
+	},
 };
