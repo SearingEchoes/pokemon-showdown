@@ -8413,7 +8413,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.debug(move);
 			if (pokemon.moveThisTurnResult !== undefined) {
 				if (pokemon.moveThisTurnResult === false) {
-					this.actions.useMove('AntiDamage', pokemon);
+					this.actions.useMove('AntiDamage', target);
 				}	
 			}		
 		},
