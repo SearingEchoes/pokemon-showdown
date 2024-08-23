@@ -8406,9 +8406,12 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
-		onMoveFail(target, source, move) {
-			this.actions.useMove('AntiDamage', pokemon);
-		},
+		onAfterMove(pokemon, target, move) {
+			if (target.moveLastTurnResult === false) {
+				this.actions.useMove('AntiDamage', pokemon);
+			}		
+		}
+		
 
 		onHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
