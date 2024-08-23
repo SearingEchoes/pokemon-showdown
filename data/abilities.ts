@@ -5932,29 +5932,31 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	satsuinohado: {
 		onModifyMovePriority: -5,
 		onModifyMove(move, pokemon) {
-			if (pokemon.hp <= (pokemon.maxhp / 2)) {
-				if (!move.ignoreImmunity) move.ignoreImmunity = {};
-				if (move.ignoreImmunity !== true) {
-					move.ignoreImmunity['Fighting'] = true;
-					move.ignoreImmunity['Normal'] = true;
-				}
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Fighting'] = true;
+				move.ignoreImmunity['Normal'] = true;
+				move.ignoreImmunity['Ghost'] = true;
 			}
 		},
 	
 		onModifyDamage(damage, source, target, move) {
 			if (source.hp <= (source.maxhp / 2)) {
-				if (target.getMoveHitData(move).typeMod < 0) {
-					this.debug(target.getMoveHitData(move).typeMod);
+				this.add("-message", 'The Satsui no Hado made all attacks effective!');
+				if (target.getMoveHitData(move).typeMod === 0) {
+					return this.chainModify(2);
+				} else if (target.getMoveHitData(move).typeMod === -1) {
 					return this.chainModify(4);
+				} else if (target.getMoveHitData(move).typeMod <= -2) {
+					return this.chainModify(8);
 				}
 			}
 		},
 		
 		onSourceBasePower(basePower, attacker, defender, move) {
 			if (defender.hp <= (defender.maxhp / 2)) {
-				if (move.type === 'Fire') {
-					return this.chainModify(2);
-				}
+				this.debug('doubled damage taken');
+				return this.chainModify(2);
 			}
 		},		
 		name: "Satsui no Hado",
