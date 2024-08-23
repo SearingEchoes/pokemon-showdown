@@ -5933,7 +5933,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyMove(damage, source, target, move) {
 			if (source.hp <= (source.maxhp / 2)) {
 				if (target.getMoveHitData(move).typeMod < 1) {
-					target.move.typeMod = 1;
+					move.typeMod = 1;
 				}
 			}
 		},
