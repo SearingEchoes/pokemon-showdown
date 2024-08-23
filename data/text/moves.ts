@@ -9394,6 +9394,11 @@ export const MovesText: {[k: string]: MoveText} = {
 	demonflurry: {
 		name: "Demon Flurry",
 		desc: "Never misses and pierces Protect if you attack first. Consumes the Star of Ninja after use.",
-		shortDesc: "Never missed and pierces Protect if you attack first.",
+		shortDesc: "Never misses and pierces Protect if you go first.",
+	},
+	ragingdemon: {
+		name: "Raging Demon",
+		desc: "Only works at 25% or less HP.",
+		shortDesc: "Only works at 25% or less HP.",
 	},
 };
