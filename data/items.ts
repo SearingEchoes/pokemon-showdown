@@ -8410,7 +8410,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (target.moveLastTurnResult === false) {
 				this.actions.useMove('AntiDamage', pokemon);
 			}		
-		}
+		},
 		
 
 		onHit(target, source, move) {
