@@ -5968,12 +5968,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		
 		onHit(target, source, move) {
 			if (move.type === 'Flying' || move.type === 'Aero' || move.id === 'whirlwind2' || move.id === 'twister2' || move.id === 'gust2' || move.id === 'aeroblast2') {
+				this.add("-message", "The wind blew away the barrier!");
 				this.effectState.busted = true;
 			}
 		},
 		
 		onDamage(damage, target, source, effect) {
-			if (effect && effect.effectType === 'Move' && !target.transformed) {
+			if (effect && effect.effectType === 'Move' && !target.transformed && !this.effectState.busted) {
 				this.add('-activate', target, 'ability: Black Barrier');
 				//this.effectState.busted = true;
 				if (damage < 300) {
@@ -5985,29 +5986,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 		},
-		onCriticalHit(target, source, move) {
-			if (!target) return;
-			if (target.transformed) {
-				return;
-			}
-			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
-			if (hitSub) return;
+		// onCriticalHit(target, source, move) {
+			// if (!target) return;
+			// if (target.transformed) {
+				// return;
+			// }
+			// const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			// if (hitSub) return;
 
-			if (!target.runImmunity(move.type)) return;
-			return false;
-		},
-		onEffectiveness(typeMod, target, type, move) {
-			if (!target || move.category === 'Status') return;
-			if (target.transformed) {
-				return;
-			}
+			// if (!target.runImmunity(move.type)) return;
+			// return false;
+		// },
+		// onEffectiveness(typeMod, target, type, move) {
+			// if (!target || move.category === 'Status') return;
+			// if (target.transformed) {
+				// return;
+			// }
 
-			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
-			if (hitSub) return;
+			// const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			// if (hitSub) return;
 
-			if (!target.runImmunity(move.type)) return;
-			return 0;
-		},
+			// if (!target.runImmunity(move.type)) return;
+			// return 0;
+		// },
 		isBreakable: true,
 		isPermanent: true,
 		name: "Black Barrier",
