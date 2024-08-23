@@ -5973,11 +5973,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		
 		onDamage(damage, target, source, effect) {
-			if (move.type === 'Flying' || move.type === 'Aero' || move.id === 'twister2' || move.id === 'gust2' || move.id === 'aeroblast2') {
-				this.effectState.busted = true;
-				return damage;
-			}
-		
 			if (effect && effect.effectType === 'Move' && !target.transformed) {
 				this.add('-activate', target, 'ability: Black Barrier');
 				//this.effectState.busted = true;
