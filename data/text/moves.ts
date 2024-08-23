@@ -9386,4 +9386,14 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Never misses if used against a Paralyzed target. Consumes the Sword of Zerker after use.",
 		shortDesc: "Always hits on Paralyzed targets.",
 	},
+	genocideblazer: {
+		name: "Genocide Blazer",
+		desc: "Hits at half power if you move before the target. Consumes the Rock of Saurian after use.",
+		shortDesc: "Half power if you move first.",
+	},
+	demonflurry: {
+		name: "Demon Flurry",
+		desc: "Never misses and pierces Protect if you attack first. Consumes the Star of Ninja after use.",
+		shortDesc: "Never missed and pierces Protect if you attack first.",
+	},
 };
