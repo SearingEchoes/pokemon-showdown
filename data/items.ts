@@ -8406,14 +8406,14 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		
-		onAfterMove(pokemon, target, move) {
+		onFoeAfterMove(pokemon, target, move) {
 			this.debug(pokemon.moveThisTurnResult);
 			this.debug(pokemon);
 			this.debug(target);
 			this.debug(move);
-			if (pokemon.moveThisTurnResult !== undefined) {
-				if (pokemon.moveThisTurnResult === false) {
-					this.actions.useMove('AntiDamage', target);
+			if (target.moveThisTurnResult !== undefined) {
+				if (target.moveThisTurnResult === false) {
+					this.actions.useMove('AntiDamage', pokemon);
 				}	
 			}		
 		},
