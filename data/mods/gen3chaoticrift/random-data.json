@@ -1,4 +1,8 @@
 {
+    "dlruukoto": {
+        "level": 100,
+        "moves": ["checkmaid","tidyup","alicesbroom","sonicboom2"]
+    },
     "technicalsanae": {
         "level": 100,
         "moves": ["leaftornado","detect2","gigadrain2","surf2"]
