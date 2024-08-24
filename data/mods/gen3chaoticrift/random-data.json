@@ -91,7 +91,10 @@
         "level": 100,
         "moves": ["earthquake2","drawnline","swordsdance2","rockbullet","rockwrecker2","fissure2"]
     },
-	
+    "orange": {
+        "level": 100,
+        "moves": ["superpower2","icepunch2","poisonjab2","cometpunch2"]
+    },
     "dlruukoto": {
         "level": 100,
         "moves": ["checkmaid","tidyup","alicesbroom","sonicboom2"]

@@ -178,4 +178,49 @@ export const Items: {[k: string]: ModdedItemData} = {
 		isNonstandard: null,
 		gen: 3,
 	},
+	honey: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	violetfear: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	bunnyamulet: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	dharoksgreataxe: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	mixedherbs: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	swordofzerker: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	rockofsaurian: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	starofninja: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	alicecard: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
 };
