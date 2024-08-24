@@ -267,7 +267,39 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Regirock') return 'Vinto Tie';
 		if (species.name === 'Regice') return 'Psycho Wand';
 		if (species.name === 'Registeel') return 'Elder Pain';
-		if (species.name === 'Bellibolt') return 'Elder Pain';
+
+		if (species.name === 'Rubi') return 'Choice Band';
+		if (species.name === 'Emmi') return 'Choice Band';
+		if (species.name === 'Saffi') return 'Choice Specs';
+		if (species.name === 'Beesiney') return 'Honey';
+		if (species.name === 'Craziney') return 'Mixed Herbs';
+		if (species.name === 'Reisen') return 'Bunny Amulet';
+		if (species.name === 'Youmu') return 'Sword of Zerker';
+		if (species.name === 'Marisa') return 'Rock of Saurian';
+		if (species.name === 'Technical Sanae') return 'Star of Ninja';
+		if (species.name === 'Alice') return 'Alice Card';
+		if (species.name === 'Akuma') return 'Focus Sash';
+		
+		if (species.name === 'Wesker') {
+		  if (Math.random() < 0.33) {
+			return "Dharok's Greataxe";
+		  } else  if (Math.random() < 0.5) {
+			return 'Violet Fear';
+		  } else {
+			return 'Mixed Herbs';
+		  }
+		}
+		
+		if (species.name === 'DLRuukoto') {
+		  if (Math.random() < 0.2) {
+			return "Elder Pain";
+		  } else  if (Math.random() < 0.7) {
+			return 'Leftovers';
+		  } else {
+			return 'Alice Card';
+		  }
+		}
+		
 		if (species.name === 'Speed Koishi') {
 		  if (Math.random() < 0.5) {
 			return 'Dark Ribbon';
@@ -282,7 +314,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 			return 'Yata Mirror';
 		  }
 		}
-		if (species.name === 'Saibaman') {
+		if (species.name === 'Saibamen') {
 		  if (Math.random() < 0.1) {
 			return 'Vinto Tie';
 		  } else {
@@ -290,6 +322,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		  }
 		}
 		if (species.name === 'Miku') return 'Throat Spray';
+		
 		if (species.name === 'LSSJ Broly') {
 		  if (Math.random() < 0.05) {
 			return 'Berserk Gene';
@@ -300,6 +333,15 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		if (species.name === 'Super Piccolo') {
 		  if (Math.random() < 0.5) {
 			return 'Zoom Lens';
+		  } else {
+			return 'Leftovers';
+		  }
+		}
+		if (species.name === 'TzTok-Jad') {
+		  if (Math.random() < 0.2) {
+			return 'Power Herb';
+		  } else if (Math.random() < 0.5) {
+			return 'Assault Vest';
 		  } else {
 			return 'Leftovers';
 		  }
@@ -782,7 +824,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		}
 
 		if (pokemon.length < this.maxTeamSize && !isMonotype && !this.forceMonotype && pokemon.length < 12) {
-			throw new Error(`Could not build a random team for ${this.format} (seed=${seed})`);
+			throw new Error(`Could not build a random team for ${this.format} (seed=${seed}) ${pokemon.length} ${isMonotype}`);
 		}
 
 		return pokemon;

@@ -7022,7 +7022,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
   dlruukoto: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
   },
   turles: {
@@ -7047,6 +7047,54 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
   },
    miku: {
 		tier: "OU",
+		doublesTier: "DOU",
+  },
+   tztokjad: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+  oblily: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+   rubi: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+   emmi: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+	saffi: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+ 	bellibolts: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+ 	meganiumg: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+	houndoomz: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+	beesiney: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+	wesker: {
+		tier: "Uber",
+		doublesTier: "DOU",
+  },
+	akuma: {
+		tier: "OU",
+		doublesTier: "DOU",
+  },
+	koishixx: {
+		tier: "Uber",
 		doublesTier: "DOU",
   },
 };

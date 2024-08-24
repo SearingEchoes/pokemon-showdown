@@ -3,13 +3,13 @@
         "level": 100,
         "moves": ["forcepalm2","soar","knockoff2","reflect2","tailwind2"]
     },
-    "sanae": {
+    "technicalsanae": {
         "level": 100,
-        "moves": ["extrasensory2","thunder2","mysticwater","silverwind2"]
+        "moves": ["leaftornado","detect2","gigadrain2","surf2"]
     },
     "marisa": {
         "level": 100,
-        "moves": ["thunderbolt2","manaburst","flamethrower2","psychoboost2","agility2"]
+        "moves": ["thunderbolt2","flamethrower2","solarbeam2","agility2"]
     },
     "alice": {
         "level": 100,
@@ -57,7 +57,7 @@
     },
     "youmu": {
         "level": 100,
-        "moves": ["battlechant","shadowdance","swordsdance","highjumpkick2","vitalthrow2","bladeflash"]
+        "moves": ["battlechant","shadowdance","swordsdance","bladeflash"]
     },
     "yuyuko": {
         "level": 100,
@@ -94,7 +94,7 @@
 	
     "dlruukoto": {
         "level": 100,
-        "moves": ["checkmaid","recover2","calmmind2","sonicboom2"]
+        "moves": ["checkmaid","tidyup","alicesbroom","sonicboom2"]
     },
     "basiney": {
         "level": 100,
@@ -112,10 +112,6 @@
         "level": 100,
         "moves": ["thunderbolt","pluck","roost","substitute"]
     },
-    "dusclops": {
-        "level": 100,
-        "moves": ["painsplit","willowisp","curse","nightshade"]
-	},
     "regirock": {
         "level": 100,
         "moves": ["explosion","rockblast","superpower","curse"]
@@ -128,17 +124,13 @@
         "level": 100,
         "moves": ["fling","ironhead","rest","curse"]
 	},
+    "skarmory": {
+        "level": 100,
+        "moves": ["spikes","roar","roost","drillpeck"]
+	},
     "dugtrio": {
         "level": 100,
         "moves": ["earthquake","aerialace","rockslide","hiddenpowerbug"]
-	},
-    "electivire": {
-        "level": 100,
-        "moves": ["thunderbolt","icepunch","crosschop","flamethrower"]
-	},
-    "bellibolt": {
-        "level": 100,
-        "moves": ["paraboliccharge","muddywater","toxic","slackoff"]
 	},
     "speedkoishi": {
         "level": 100,
@@ -160,16 +152,64 @@
         "level": 100,
         "moves": ["specialbeamcannon","recover","cosmicpower","aurasphere"]
     },
-    "saibaman": {
+    "saibamen": {
         "level": 100,
-        "moves": ["explode","agility","headbutt","furyswipes"]
+        "moves": ["explode","acidspray","toxic","populationbomb"]
     },
     "craziney": {
         "level": 100,
-        "moves": ["chaoswave","chaosplit","recover","confuseray"]
+        "moves": ["psywave","chaosplit","recover","confuseray"]
     },
     "miku": {
         "level": 100,
         "moves": ["sing","thunderbolt","boomburst","sparklingaria"]
+    },
+    "tztokjad": {
+        "level": 100,
+        "moves": ["gigarockfall","gigafireball","gigacrunch"]
+    },
+    "oblily": {
+        "level": 100,
+        "moves": ["megid","rapidpeck","thunderwave","memento"]
+    },
+    "rubi": {
+        "level": 100,
+        "moves": ["puncture"]
+    },
+    "emmi": {
+        "level": 100,
+        "moves": ["descentofdragons"]
+    },
+    "saffi": {
+        "level": 100,
+        "moves": ["iceblitz"]
+    },
+    "bellibolts": {
+        "level": 100,
+        "moves": ["saradominstrike","slackoff","soak","muddywater"]
+    },
+    "meganiumg": {
+        "level": 100,
+        "moves": ["clawsofguthix","synthesis","sunnyday","bodyslam"]
+    },
+    "houndoomz": {
+        "level": 100,
+        "moves": ["flamesofzamorak","nastyplot","sludgebomb","substitute"]
+    },
+    "beesiney": {
+        "level": 100,
+        "moves": ["honeyboiled","madhoney","stockpile","batonpass"]
+    },
+    "wesker": {
+        "level": 100,
+        "moves": ["phantomdance","snapback","suckerpunch","axekick"]
+    },
+    "akuma": {
+        "level": 100,
+        "moves": ["ragingdemon","aurasphere","highjumpkick","shadowsneak"]
+    },
+    "koishixx": {
+        "level": 100,
+        "moves": ["icebarrage","hellsrolling","lordofvermilion","phantasmaltentacle"]
     }
 }

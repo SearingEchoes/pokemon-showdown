@@ -71,6 +71,10 @@ export const Scripts: ModdedBattleScriptsData = {
 			return item.zMove as string;
 		} else if (item.zMoveFrom === 'tbblade' && move.flags['slicing']) {
 			return item.zMove as string;
+		} else if (item.zMoveFrom === 'gblazer' && move.flags['charge']) {
+			return item.zMove as string;
+		} else if (item.zMoveFrom === 'dflurry' && (move.type === 'Grass' || move.type === 'Nature')) {
+			return item.zMove as string;
 		} else if (item.zMove === true && move.type === item.zMoveType) {
 			if (move.category === "Status") {
 				return move.name;
@@ -87,8 +91,9 @@ export const Scripts: ModdedBattleScriptsData = {
 				const zMove = this.dex.getActiveMove(item.zMove as string);
 				zMove.isZOrMaxPowered = true;
 				return zMove;
-			} else if (item.id === 'swordofzerker') {
-				const zMove = 'Thunderbolt Blade';
+			} else if (item.id === 'swordofzerker' || item.id === 'rockofsaurian' || item.id === 'starofninja') {
+				const zMove = this.dex.getActiveMove(item.zMove as string);
+				zMove.isZOrMaxPowered = true;
 				return zMove;	
 			}
 		}

@@ -7,4 +7,13 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			}
 		},
 	},
+	honeygather: {
+		inherit: true,
+		onStart(pokemon) {
+			if (!pokemon.item) {
+				this.add("-message", pokemon.name + " found some Honey!");
+				pokemon.setItem('honey');
+			}
+		},
+	},
 };
