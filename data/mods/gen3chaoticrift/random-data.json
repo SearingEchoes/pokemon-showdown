@@ -3,9 +3,9 @@
         "level": 100,
         "moves": ["specialbeamcannon","recover","cosmicpower","aurasphere"]
     },
-    "dlruukoto": {
+    "saibamen": {
         "level": 100,
-        "moves": ["checkmaid","tidyup","alicesbroom","sonicboom2"]
+        "moves": ["explode","acidspray","toxic","populationbomb"]
     },
     "technicalsanae": {
         "level": 100,
