@@ -8359,6 +8359,14 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (status.id === 'flinch') return null;
 		},
 		
+		onTryHit(target, source, move) {
+			if (move.id === 'soak') {
+				this.add('-immune', target, '[from] item: Rock of Saurian');
+				return null;
+			}
+				
+
+		},
 
 		onHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
