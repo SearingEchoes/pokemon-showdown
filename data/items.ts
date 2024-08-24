@@ -8086,4 +8086,393 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -127,
 		gen: 9,
 	},
+	honey: {
+		name: "Honey",
+		spritenum: 796,
+		fling: {
+			basePower: 10,
+		},
+		num: -128,
+		gen: 4,
+	},
+	violetfear: {
+		name: "Violet Fear",
+		spritenum: 797,
+		fling: {
+			basePower: 220,
+		},
+		onAnyModifyBoost(boosts, pokemon) {
+			const itemUser = this.effectState.target;
+			if (itemUser === pokemon) return;
+			if (itemUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
+			}
+		},
+		onModifyDamage(damage, source, target, move) {
+			if(move.category === 'Physical' && move.flags['contact']) {
+				return this.chainModify(1.275);
+			}
+		},
+		onFoeHit(target, source, move) {
+			if(move.category === 'Physical' && move.flags['contact']) {
+				if (Math.random() < 0.3) {
+				  this.add("-message", source.name + "'s Violet Fear lets out a howl!");
+				  this.actions.useMove('Meteor Storm Lv3', source);
+				}
+				if (Math.random() < 0.5) {
+					this.add("-message", source.name + "'s Violet Fear lets out a howl!");
+				  this.actions.useMove('Frost Nova Lv5', source);
+				}
+			}
+		},
+		num: -129,
+		gen: 4,
+	},
+	bunnyamulet: {
+		name: "Bunny Amulet",
+		spritenum: 798,
+		fling: {
+			basePower: 1,
+		},
+		onTryHit(pokemon, source, move) {
+			if (
+			(move.category === 'Physical' || move.category === 'Special')
+			&& ( (this.toID(pokemon.baseSpecies.baseSpecies) === 'nidoranm') || 
+			(this.toID(pokemon.baseSpecies.baseSpecies) === 'nidoranf') || 
+			(this.toID(pokemon.baseSpecies.baseSpecies) === 'igglybuff') || 
+			(this.toID(pokemon.baseSpecies.baseSpecies) === 'azurill') || 
+			(this.toID(pokemon.baseSpecies.baseSpecies) === 'buneary') || 
+			(this.toID(pokemon.baseSpecies.baseSpecies) === 'bunnelby') || 
+			(this.toID(pokemon.baseSpecies.baseSpecies) === 'scorbunny') || 
+			(pokemon.baseSpecies.name === 'Magearna') || 
+			(pokemon.baseSpecies.name === 'Chibi Reisen') || 
+			(pokemon.baseSpecies.name === 'Reisen') || 
+			(pokemon.baseSpecies.name === 'Defense Reisen') || 
+			(pokemon.baseSpecies.name === 'Technical Reisen') || 
+			(pokemon.baseSpecies.name === 'Advent Reisen') || 
+			(pokemon.baseSpecies.name === 'Reisen II') || 
+			(pokemon.baseSpecies.name === 'Chibi Tewi') || 
+			(pokemon.baseSpecies.name === 'Tewi') || 
+			(pokemon.baseSpecies.name === 'Attack Tewi') || 
+			(pokemon.baseSpecies.name === 'Defense Tewi') || 
+			(pokemon.baseSpecies.name === 'Advent Tewi') )
+			) {
+				this.add("-message", pokemon.name + "'s Bunny Amulet activated!");
+				this.actions.useMove('Autobomb', pokemon);
+				pokemon.useItem();
+				return null;
+			}
+		},
+		num: -129,
+		gen: 4,
+	},
+	dharoksgreataxe: {
+		name: "Dharok's Greataxe",
+		spritenum: 799,
+		fling: {
+			basePower: 210,
+		},
+		onModifyDamage(damage, source, target, move) {
+			if(move.category === 'Physical' && move.flags['contact']) {
+				const dhmod = (1 + ((source.maxhp - source.hp) / 400 ));
+				return this.chainModify(dhmod);
+			}
+		},
+
+		num: -130,
+		gen: 4,
+	},
+	mixedherbs: {
+		name: "Mixed Herbs",
+		spritenum: 800,
+		fling: {
+			basePower: 10,
+		},
+		onSwitchOut(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				this.add("-message", pokemon.name + " used their Mixed Herbs!");
+				pokemon.heal(pokemon.baseMaxhp);
+				pokemon.useItem();
+			}
+		},
+
+		num: -130,
+		gen: 4,
+	},
+	swordofzerker: {
+		name: "Sword of Zerker",
+		spritenum: 801,
+		onTakeItem: false,
+		zMove: 'Thunderbolt Blade',
+		zMoveFrom: "tbblade",
+		onStart(pokemon) {
+				this.add("-message", "Tribe On! Zerker!");
+				this.add('-anim', pokemon, "zerkertribeon", pokemon);
+			if (!pokemon.getTypes().join() === 'Electric' || pokemon.setType('Electric')) {
+				this.add('-start', pokemon, 'typechange', 'Electric');
+			}
+		},
+		
+		onFoeTryHit(target, source, move) {
+
+			if(move.flags['slicing']) {
+				if (move.type === 'Normal' || 
+					move.type === 'Fighting' ||
+					move.type === 'Flying' ||
+					move.type === 'Poison' ||
+					move.type === 'Ground' ||
+					move.type === 'Rock' ||
+					move.type === 'Bug' ||
+					move.type === 'Ghost' ||
+					move.type === 'Steel' ||
+					move.type === 'Fire' ||
+					move.type === 'Water' ||
+					move.type === 'Grass' ||
+					move.type === 'Electric' ||
+					move.type === 'Psychic' ||
+					move.type === 'Ice' ||
+					move.type === 'Dragon' ||
+					move.type === 'Dark' ||
+					move.type === 'Fairy')
+				{
+					move.type = 'Electric';
+					this.debug(move.type);
+				} else {
+					move.type = 'Wind';
+					this.debug(move.type);
+				}
+			}
+
+		},
+		
+		onModifyDamage(damage, source, target, move) {
+			if(move.type === 'Electric') {
+				return this.chainModify(1.2);
+				this.debug('Elec boost');
+			} else if (move.type === 'Wind') {
+				return this.chainModify(1.8);
+				this.debug('Wind boost');
+			}
+		},
+
+		onModifyMove(move) {
+			if (move.flags['slicing']) {
+				if (!move.secondaries) move.secondaries = [];
+				for (const secondary of move.secondaries) {
+					if (secondary.Status === 'par') return;
+				}
+				move.secondaries.push({
+					chance: 30,
+					status: 'par',
+				});
+			}
+		},
+
+		onTryHit(target, source, move) {
+			if (move.id === 'soak') {
+				this.add('-immune', target, '[from] item: Sword of Zerker');
+				return null;
+			}
+		},
+
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.type === 'Grass' || move.type === 'Nature') {
+					return this.chainModify(2);
+			}
+		},
+
+		onHit(target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				target.item = '';
+				this.add("-message", "Zerker's power fades.");
+				this.add('-end', target, 'typechange', '[silent]');
+			} else if (move.type === 'Grass' || move.type === 'Nature') {
+				target.item = '';
+				this.add("-message", "Zerker's power fades.");
+				this.add('-end', target, 'typechange', '[silent]');
+			}
+		},
+		
+		onEnd(pokemon) {
+			this.add("-message", "Zerker's power fades.");
+			this.add('-end', pokemon, 'typechange', '[silent]');
+		},
+		num: -131,
+		gen: 4,
+	},
+	rockofsaurian: {
+		name: "Rock of Saurian",
+		spritenum: 802,
+		onTakeItem: false,
+		zMove: 'Genocide Blazer',
+		zMoveFrom: "gblazer",
+		onStart(pokemon) {
+				this.add("-message", "Tribe On! Saurian!");
+				this.add('-anim', pokemon, "sauriantribeon", pokemon);
+			if (!pokemon.getTypes().join() === 'Fire' || pokemon.setType('Fire')) {
+				this.add('-start', pokemon, 'typechange', 'Fire');
+			}
+		},
+
+		
+		onModifyDamage(damage, source, target, move) {
+			if(move.type === 'Fire') {
+				return this.chainModify(1.2);
+				this.debug('Fire boost');
+			} else if (move.type === 'Pyro') {
+				return this.chainModify(1.8);
+				this.debug('Pyro boost');
+			}
+		},
+		
+		onModifyMove(move, pokemon) {
+			if (move.flags['charge']) {
+				delete move.flags['charge'];
+				delete move.onTryMove;
+				
+				if (move.type === 'Normal' || 
+					move.type === 'Fighting' ||
+					move.type === 'Flying' ||
+					move.type === 'Poison' ||
+					move.type === 'Ground' ||
+					move.type === 'Rock' ||
+					move.type === 'Bug' ||
+					move.type === 'Ghost' ||
+					move.type === 'Steel' ||
+					move.type === 'Fire' ||
+					move.type === 'Water' ||
+					move.type === 'Grass' ||
+					move.type === 'Electric' ||
+					move.type === 'Psychic' ||
+					move.type === 'Ice' ||
+					move.type === 'Dragon' ||
+					move.type === 'Dark' ||
+					move.type === 'Fairy')
+				{
+					move.type = 'Fire';
+					this.debug(move.type);
+				} else {
+					move.type = 'Pyro';
+					this.debug(move.type);
+				}
+				
+				this.boost({spe: -1}, pokemon);
+				
+			}
+
+		},
+		
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'flinch') return null;
+		},
+		
+		onTryHit(target, source, move) {
+			if (move.id === 'soak') {
+				this.add('-immune', target, '[from] item: Rock of Saurian');
+				return null;
+			}
+		},
+
+		onHit(target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				target.item = '';
+				this.add("-message", "Saurian's power fades.");
+				this.add('-end', target, 'typechange', '[silent]');
+			}
+		},
+		
+		onEnd(pokemon) {
+			this.add("-message", "Saurian's power fades.");
+			this.add('-end', pokemon, 'typechange', '[silent]');
+		},
+		num: -132,
+		gen: 4,
+	},
+	starofninja: {
+		name: "Star of Ninja",
+		spritenum: 803,
+		onTakeItem: false,
+		zMove: 'Demon Flurry',
+		zMoveFrom: "dflurry",
+		onStart(pokemon) {
+				this.add("-message", "Tribe On! Ninja!");
+				this.add('-anim', pokemon, "ninjatribeon", pokemon);
+			if (!pokemon.getTypes().join() === 'Grass' || pokemon.setType('Grass')) {
+				this.add('-start', pokemon, 'typechange', 'Grass');
+			}
+		},
+
+		
+		onModifyDamage(damage, source, target, move) {
+			if(move.type === 'Grass') {
+				return this.chainModify(1.2);
+				this.debug('Grass boost');
+			} else if (move.type === 'Nature') {
+				return this.chainModify(1.8);
+				this.debug('Nature boost');
+			}
+		},
+		
+		onModifyMove(move, pokemon, target) {
+			if((move.type === 'Grass' || move.type === 'Nature') && (this.queue.willMove(target))) {
+				move.accuracy = true;
+			}
+		},
+		
+		onFoeAfterMove(pokemon, target, move) {
+			this.debug(pokemon.moveThisTurnResult);
+			this.debug(pokemon);
+			this.debug(target);
+			this.debug(move);
+			if (pokemon.moveThisTurnResult !== undefined) {
+				if (pokemon.moveThisTurnResult === false) {
+					this.actions.useMove('AntiDamage', target);
+				}	
+			}		
+		},
+		
+		onTryHit(target, source, move) {
+			if (move.id === 'soak') {
+				this.add('-immune', target, '[from] item: Star of Ninja');
+				return null;
+			}
+		},
+
+		onHit(target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				target.item = '';
+				this.add("-message", "Ninja's power fades.");
+				this.add('-end', target, 'typechange', '[silent]');
+			}
+		},
+		
+		onEnd(pokemon) {
+			this.add("-message", "Ninja's power fades.");
+			this.add('-end', pokemon, 'typechange', '[silent]');
+		},
+		num: -132,
+		gen: 4,
+	},
+	alicecard: {
+		name: "Alice Card",
+		spritenum: 805,
+		onSourceModifyDamage(damage, source, target, move) {
+			let bstat = source.species.baseStats.hp;
+			bstat += source.species.baseStats.atk;
+			bstat += source.species.baseStats.def;
+			bstat += source.species.baseStats.spa;
+			bstat += source.species.baseStats.spd;
+			bstat += source.species.baseStats.spe;
+			this.debug(bstat);
+			if (bstat >= 550) {
+				this.debug('Alice Card boss reduction');
+				return this.chainModify(0.6);
+			} else {
+				this.debug('Alice Card normal enemy increase');
+				return this.chainModify(1.4);
+			}
+		},
+		num: -135,
+		gen: 4,
+	},
 };

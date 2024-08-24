@@ -880,4 +880,36 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return bp;
 		},
 	},
+	regen: {
+		name: 'regen',
+		duration: 5,
+		
+		onStart(pokemon) {
+			this.add('-start', pokemon, 'regen');
+		},		
+		
+		onResidualOrder: 7,
+		onResidual(pokemon) {
+			this.heal(pokemon.baseMaxhp / 5);
+		},
+		
+		onEnd(pokemon) {
+			this.heal(pokemon.baseMaxhp / 5);
+			this.add('-end', pokemon, 'regen');
+		},
+	},
+	bound: {
+		name: 'bound',
+		duration: 3,
+
+		onStart(pokemon) {
+			this.add('-start', pokemon, 'bound');
+		},
+		onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+		},		
+		onEnd(pokemon) {
+			this.add('-end', pokemon, 'bound');
+		},
+	},
 };

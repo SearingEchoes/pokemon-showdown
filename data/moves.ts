@@ -22070,7 +22070,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Battle Chant",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
 		secondary: {
 			chance: 20,
 			self: {
@@ -25225,7 +25225,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Low Kick 2",
 		pp: 25,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1, slicing: 1},
+		flags: {protect: 1, mirror: 1, distance: 1},
 		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
@@ -26640,7 +26640,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
-			chance: 70,
+			chance: 100,
 			self: {
 					status: 'brn',
 				},
@@ -29444,15 +29444,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 	//super illegal customs
 	specialbeamcannon: {
 		num: 3000,
-		accuracy: 50,
-		basePower: 0,
+		accuracy: 100,
+		basePower: 200,
 		category: "Special",
 		name: "Special Beam Cannon",
 		pp: 5,
 		noPPBoosts: true,
 		priority: -3,
 		flags: {protect: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
-		ohko: true,
 		priorityChargeCallback(pokemon) {
 			pokemon.addVolatile('specialbeamcannon');
 		},
@@ -29502,7 +29501,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 3002,
 		accuracy: true,
 		basePower: 30,
-		category: "Special",
+		category: "Physical",
 		name: "KAKAROT!!!",
 		pp: 3,
 		noPPBoosts: true,
@@ -29574,7 +29573,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	explode: {
 		num: 3006,
 		accuracy: 100,
-		basePower: 350,
+		basePower: 300,
 		category: "Physical",
 		name: "Explode",
 		pp: 5,
@@ -29677,36 +29676,42 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon, target) {
 			this.debug(move.accuracy);
 			//reduce accuracy for resisted types
-			if (pokemon.hasType('Dark')) {
+			if (target.hasType('Dark')) {
 				move.accuracy -= 50;
 			}
-			if (pokemon.hasType('Umbral')) {
+			if (target.hasType('Umbral')) {
 				move.accuracy -= 50;
 			}
-			if (pokemon.hasType('Fairy')) {
+			if (target.hasType('Fairy')) {
 				move.accuracy -= 30;
 			}
-			if (pokemon.hasType('Fighting')) {
+			if (target.hasType('Fighting')) {
 				move.accuracy -= 30;
 			}
 			//increase accuracy against effective types
-			if (pokemon.hasType('Ghost')) {
-				move.accuracy += 50;
+			if (target.hasType('Ghost')) {
+				move.accuracy += 30;
 			}
-			if (pokemon.hasType('Psychic')) {
-				move.accuracy += 50;
+			if (target.hasType('Psychic')) {
+				move.accuracy += 30;
 			}
-			if (pokemon.hasType('Dream')) {
-				move.accuracy += 50;
+			if (target.hasType('Dream')) {
+				move.accuracy += 30;
 			}
-			if (pokemon.hasType('Reason')) {
-				move.accuracy += 50;
+			if (target.hasType('Reason')) {
+				move.accuracy += 30;
 			}
 			//enemy spdef affects hit rate
 			if (target.getStat('spd') >= 250) {
-			   move.accuracy -= ((target.getStat('spd') - 250) / 5);
+			   move.accuracy -= ((target.getStat('spd') - 250) / 10);
 			} else {
-			   move.accuracy += ((target.getStat('spd') - 250) / -5);
+			   move.accuracy -= ((target.getStat('spd') - 250) / 5);
+			}
+			
+			this.debug(move.accuracy);
+			
+			if (move.accuracy < 0) {
+				move.accuracy = 0;
 			}
 			
 			this.debug(move.accuracy);
@@ -29734,5 +29739,525 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Flying",
 		contestType: "Cool",
+	},
+	puncture: {
+		num: 3012,
+		accuracy: 95,
+		basePower: 46,
+		category: "Physical",
+		name: "Puncture",
+		pp: 4,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		multihit: 2,
+		multiaccuracy: true,
+		secondary: {
+			chance: 25,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Metal",
+		contestType: "Cool",
+	},
+	descentofdragons: {
+		num: 3013,
+		accuracy: true,
+		basePower: 90,
+		category: "Physical",
+		name: "Descent of Dragons",
+		pp: 2,
+		noPPBoosts: true,
+		priority: 1,
+		flags: {protect: 1, mirror: 1, cantusetwice: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dragon' || type === 'Faith') return 1;
+		},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
+	},
+	iceblitz: {
+		num: 3014,
+		accuracy: 95,
+		basePower: 100,
+		category: "Special",
+		name: "Ice Blitz",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			//enemy spdef affects hit rate
+			if (target.getStat('spd') >= 200) {
+			   move.accuracy -= ((target.getStat('spd') - 190) / 10);
+			}
+			
+			this.debug(move.accuracy);
+		},
+		volatileStatus: 'bound',
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		contestType: "Clever",
+	},
+	saradominstrike: {
+		num: 3015,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Saradomin Strike",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dark' || type === 'Fairy' || type === 'Umbral' || type === 'Heart') return 1;
+		},
+		secondary: {
+            chance: 100,
+            onHit(target) {
+                if (!target.hp) return;
+                let ppDeducted = false;
+                for (const moveSlot of target.moveSlots) {
+                    if (moveSlot.pp >= 1) {
+                        ppDeducted = true;
+                    } else {
+                        continue;
+                    }
+                    moveSlot.pp--;
+                    // target.deductPP(moveSlot.id, 1);
+                }
+                if (!ppDeducted) return;
+                this.add("-message", target.name + " lost some PP!");
+            },
+        },
+		target: "normal",
+		type: "Electric",
+	},
+	clawsofguthix: {
+		num: 3016,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Claws of Guthix",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Rock' || type === 'Steel' || type === 'Miasma' || type === 'Metal' || type === 'Pyro' || type === 'Wind' || type === 'Electric' || type === 'Fire' || type === 'Poison') return 1;
+		},
+		secondary: {
+			chance: 100,
+			boosts: {
+				def: -1,
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Grass",
+	},
+	flamesofzamorak: {
+		num: 3017,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Flames of Zamorak",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Dream' || type === 'Reason' || type === 'Ghost' || type === 'Psychic') return 1;
+		},
+		secondary: {
+			chance: 100,
+			boosts: {
+				spa: -1,
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Fire",
+	},
+	honeyboiled: {
+		num: 3018,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Honeyboiled",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [35, 100],
+		onHit(pokemon) {
+			if (pokemon.item === "honey") {
+				pokemon.addVolatile('regen');
+				pokemon.setItem('');
+			}
+		},
+		secondary: null,
+		target: "self",
+		type: "Bug",
+		contestType: "Clever",
+	},
+	madhoney: {
+		num: 3019,
+		accuracy: 100,
+		basePower: 20,
+		category: "Physical",
+		name: "Mad Honey",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		onHit(target, source, move) {
+			if (source.item == "honey") {
+				target.trySetStatus('tox', source, move);
+				source.setItem('');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Bug",
+	},
+	phantomdance: {
+		num: 3020,
+		accuracy: 60,
+		basePower: 15,
+		category: "Physical",
+		name: "Phantom Dance",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, cantusetwice: 1},
+		onModifyMove(move, pokemon, target) {
+			const damagedByTarget = pokemon.attackedBy.some(
+				p => p.source === target && p.damage > 0 && p.thisTurn
+			);
+			if (!damagedByTarget && pokemon.activeMoveActions > 1) {
+				move.accuracy = 100;
+				move.basePower = 30;
+				this.add("-message", "You are NOTHING to me!!!");
+			}
+		},
+		multihit: 8,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	snapback: {
+		num: 3021,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Snap Back",
+		pp: 3,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, noassist: 1, failcopycat: 1, cantusetwice: 1},
+		//Go to battle-actions.ts #runSwitch to handle switch lock
+		forceSwitch: true,
+		target: "normal",
+		type: "Dark",
+		contestType: "Tough",
+	},
+	samuraiedge: {
+		num: 3022,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Samurai Edge",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		contestType: "Tough",
+	},
+	autobomb: {
+		num: 3023,
+		accuracy: true,
+		basePower: 30,
+		category: "Special",
+		name: "Autobomb",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "???",
+		contestType: "Tough",
+	},
+	meteorstormlv3: {
+		num: 3024,
+		accuracy: 75,
+		basePower: 30,
+		category: "Special",
+		name: "Meteor Storm Lv3",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: null,
+		target: "randomNormal",
+		type: "Fire",
+	},
+	frostnovalv5: {
+		num: 3025,
+		accuracy: 0,
+		basePower: 30,
+		category: "Special",
+		name: "Frost Nova Lv5",
+		pp: 5,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+		  const lastMove = target.lastMove;
+		  if (lastMove?.flags['contact']) {
+			  move.accuracy = 100;
+		  }
+		},
+		secondary: {
+			chance: 58,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Ice",
+	},
+	thunderboltblade: {
+		num: 3026,
+		accuracy: 70,
+		basePower: 60,
+		category: "Physical",
+		name: "Thunderbolt Blade",
+		pp: 1,
+		priority: 0,
+		flags: {protect: 1, slicing: 1},
+		onModifyMove(move, pokemon, target) {
+			if (target.status === 'par') {
+				move.accuracy = true;
+			}
+		},
+		onAfterMove(pokemon) {
+			pokemon.setItem('');
+		},
+		multihit: 3,
+		multiaccuracy: true,
+		isZ: "swordofzerker",
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},
+	genocideblazer: {
+		num: 3027,
+		accuracy: 100,
+		basePower: 220,
+		category: "Special",
+		name: "Genocide Blazer",
+		pp: 1,
+		priority: 0,
+		flags: {protect: 1},
+		basePowerCallback(pokemon, target, move) {
+			if (this.queue.willMove(target)) {
+				return move.basePower / 2;
+			}
+			return move.basePower;
+		},
+		onAfterMove(pokemon) {
+			pokemon.setItem('');
+		},
+		isZ: "rockofsaurian",
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+		contestType: "Cool",
+	},
+	antidamage: {
+		num: 3028,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "AntiDamage",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Tough",
+	},
+	demonflurry: {
+		num: 3029,
+		accuracy: 60,
+		basePower: 80,
+		category: "Physical",
+		name: "Demon Flurry",
+		pp: 1,
+		priority: 0,
+		flags: {protect: 1},
+		onModifyMove(move, pokemon, target) {
+
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+
+			if (this.queue.willMove(target)) {
+				move.accuracy = true;
+				delete move.flags['protect'];
+			}
+		},
+		onAfterMove(pokemon) {
+			pokemon.setItem('');
+		},
+		multihit: 2,
+		multiaccuracy: true,
+		isZ: "starofninja",
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Cool",
+	},
+	ragingdemon: {
+		num: 3030,
+		accuracy: 999,
+		basePower: 150,
+		category: "Physical",
+		name: "Raging Demon",
+		pp: 1,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTry(source) {
+			if (source.hp <= (source.maxhp / 4)) {
+				return true;
+			} else {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
+	},
+	icebarrage: {
+		num: 3031,
+		accuracy: 95,
+		basePower: 120,
+		category: "Special",
+		name: "Ice Barrage",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			//enemy spdef affects hit rate
+			if (target.getStat('spd') >= 200) {
+			   move.accuracy -= ((target.getStat('spd') - 190) / 10);
+			}
+		},
+		volatileStatus: 'bound',
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		contestType: "Clever",
+	},
+	hellsrolling: {
+		num: 3032,
+		accuracy: 200,
+		basePower: 60,
+		category: "Special",
+		name: "Hell's Rolling",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			  move.accuracy -= ((target.getStat('spe') - 50) / 2);
+		},
+		multihit: 2,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 120},
+		contestType: "Cool",
+	},
+	lordofvermilion: {
+		num: 3033,
+		accuracy: 100,
+		basePower: 30,
+		category: "Special",
+		name: "Lord of Vermilion",
+		pp: 5,
+		priority: -1,
+		flags: {protect: 1, mirror: 1, cantusetwice: 1},
+		multihit: 4,
+		secondary: {
+			chance: 10,
+			boosts: {
+				accuracy: -1,
+			},
+		},
+		target: "normal",
+		type: "Wind",
+		contestType: "Cool",
+	},
+	phantasmaltentacle: {
+		num: 3034,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Phantasmal Tentacle",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'healblock',
+		},
+		target: "normal",
+		type: "Heart",
+		contestType: "Cool",
+	},
+	alicesbroom: {
+		num: 3035,
+		accuracy: 100,
+		basePower: 150,
+		category: "Physical",
+		name: "Alice's Broom",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, futuremove: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: 3,
+				move: 'alicesbroom',
+				source: source,
+				moveData: {
+					id: 'alicesbroom',
+					name: "Alice's Broom",
+					accuracy: 100,
+					basePower: 150,
+					category: "Physical",
+					priority: 0,
+					flags: {allyanim: 1, futuremove: 1},
+					ignoreImmunity: false,
+					effectType: 'Move',
+					type: 'Psychic',
+				},
+			});
+			this.add('-start', source, "move: Alice's Broom");
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Unknown",
+		contestType: "Clever",
 	},
 };

@@ -5742,4 +5742,299 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -125,
 	},
+	playwarrior: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Play Warrior immunity: ' + move.id);
+			
+			if (!move.flags['contact'] && move.category === 'Special') return;
+			
+			if (move.smartTarget) {
+				move.smartTarget = false;
+			} else {
+				this.add('-immune', target, '[from] ability: Play Warrior');
+			}
+				
+			return null;
+		},
+		isBreakable: true,
+		name: "Play Warrior",
+		rating: 5,
+		num: -126,
+	},
+	playarcher: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Play Archer immunity: ' + move.id);
+			
+			if (move.flags['contact']) return;
+			
+			if (move.smartTarget) {
+				move.smartTarget = false;
+			} else {
+				this.add('-immune', target, '[from] ability: Play Archer');
+			}
+				
+			return null;
+		},
+		isBreakable: true,
+		name: "Play Archer",
+		rating: 5,
+		num: -127,
+	},
+	playwizard: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Play Wizard immunity: ' + move.id);
+			
+			if (!move.flags['contact'] && move.category === 'Physical') return;
+			
+			if (move.smartTarget) {
+				move.smartTarget = false;
+			} else {
+				this.add('-immune', target, '[from] ability: Play Wizard');
+			}
+				
+			return null;
+		},
+		isBreakable: true,
+		name: "Play Wizard",
+		rating: 5,
+		num: -128,
+	},
+	holyshock: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			target.addVolatile('charge');
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(5, 10)) {
+					source.trySetStatus('par', target);
+				}
+			}
+		},
+		name: "Holy Shock",
+		rating: 4,
+		num: -129,
+	},
+	naturalblessing: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass') || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
+				this.debug('Natural Blessing boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if ((move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) || (move.type === 'Nature' && attacker.hp <= attacker.maxhp / 2) || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Grass') || (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Nature')) {
+				this.debug('Natural Blessing boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather()) || (target.hp <= target.maxhp / 2) ) {
+				if ((effect as Move)?.status) {
+					this.add('-immune', target, '[from] ability: Natural Blessing');
+				}
+				return false;
+			}
+		},
+		onTryAddVolatile(status, target) {
+			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather()) || (target.hp <= target.maxhp / 2) ) {
+				this.add('-immune', target, '[from] ability: Natural Blessing');
+				return null;
+			}
+		},
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if ( pokemon.hp && 
+			(pokemon.status || (pokemon.volatiles['confusion']) || (pokemon.volatiles['partiallytrapped']) ) && 
+			((pokemon.hp <= pokemon.maxhp / 2) || ['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) ) {
+				this.debug('status clear');
+				this.add('-activate', pokemon, 'ability: Natural Blessing');
+				pokemon.cureStatus();
+				pokemon.removeVolatile('confusion');
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		isBreakable: true,
+		name: "Natural Blessing",
+		rating: 4,
+		num: -130,
+	},
+	hellfire: {
+	
+		onPreStart(pokemon) {
+			this.add('-ability', pokemon, 'Unnerve');
+			this.effectState.unnerved = true;
+		},
+
+		onFoeTryEatItem() {
+			return !this.effectState.unnerved;
+		},
+	
+		onTryHit(target, source, move) {
+			if ((target !== source && move.type === 'Fire')||(target !== source && move.type === 'Pyro')) {
+				move.accuracy = true;
+				if (!target.addVolatile('hellfire')) {
+					this.add('-immune', target, '[from] ability: Flash Fire');
+				}
+				return null;
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('hellfire');
+			this.effectState.unnerved = false;
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Flash Fire');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if ((move.type === 'Fire' && attacker.hasAbility('hellfire'))||(move.type === 'Pyro' && attacker.hasAbility('hellfire'))) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if ((move.type === 'Fire' && attacker.hasAbility('hellfire'))||(move.type === 'Pyro' && attacker.hasAbility('hellfire'))) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Flash Fire', '[silent]');
+			},
+		},
+		isBreakable: true,
+		name: "Hellfire",
+		rating: 3.5,
+		num: -131,
+	},
+	gunteleport: {
+		onStart(pokemon) {
+		if (this.turn > 0) {
+			this.add('-ability', pokemon, 'Gun Teleport');
+			this.actions.useMove('Samurai Edge', pokemon);
+			}
+		},
+		name: "Gun Teleport",
+		rating: 2.5,
+		num: -132,
+	},
+	satsuinohado: {
+		onModifyMovePriority: -5,
+		onModifyMove(move, pokemon) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Fighting'] = true;
+				move.ignoreImmunity['Normal'] = true;
+				move.ignoreImmunity['Ghost'] = true;
+			}
+		},
+	
+		onModifyDamage(damage, source, target, move) {
+			if (source.hp <= (source.maxhp / 2)) {
+				this.add("-message", 'The Satsui no Hado made all attacks effective!');
+				if (target.getMoveHitData(move).typeMod === 0) {
+					return this.chainModify(2);
+				} else if (target.getMoveHitData(move).typeMod === -1) {
+					return this.chainModify(4);
+				} else if (target.getMoveHitData(move).typeMod <= -2) {
+					return this.chainModify(8);
+				}
+			}
+		},
+		
+		onSourceBasePower(basePower, attacker, defender, move) {
+			if (defender.hp <= (defender.maxhp / 2)) {
+				this.debug('doubled damage taken');
+				return this.chainModify(2);
+			}
+		},		
+		name: "Satsui no Hado",
+		rating: 4,
+		num: -133,
+	},
+	blackbarrier: {
+		onDamagePriority: 1,
+		
+		onHit(target, source, move) {
+			if (move.type === 'Flying' || move.type === 'Aero' || move.id === 'whirlwind2' || move.id === 'twister2' || move.id === 'gust2' || move.id === 'aeroblast2') {
+				if (!this.effectState.busted) {
+					this.add("-message", "The wind blew away the barrier!");
+					this.effectState.busted = true;
+				}
+			}
+		},
+		
+		onDamage(damage, target, source, effect) {
+			if (effect && effect.effectType === 'Move' && !target.transformed && !this.effectState.busted) {
+				this.add('-activate', target, 'ability: Black Barrier');
+				//this.effectState.busted = true;
+				if (damage < 300) {
+					let newdamage = Math.floor(damage / 2);
+					return newdamage;
+				} else {
+					let newdamage = (damage - 150);
+					return newdamage;
+				}
+			}
+		},
+		// onCriticalHit(target, source, move) {
+			// if (!target) return;
+			// if (target.transformed) {
+				// return;
+			// }
+			// const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			// if (hitSub) return;
+
+			// if (!target.runImmunity(move.type)) return;
+			// return false;
+		// },
+		// onEffectiveness(typeMod, target, type, move) {
+			// if (!target || move.category === 'Status') return;
+			// if (target.transformed) {
+				// return;
+			// }
+
+			// const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			// if (hitSub) return;
+
+			// if (!target.runImmunity(move.type)) return;
+			// return 0;
+		// },
+		isBreakable: true,
+		isPermanent: true,
+		name: "Black Barrier",
+		rating: 3.5,
+		num: -134,
+	},
+	photonzolplating: {
+		onTryHit(pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[from] ability: Photonzol Plating');
+				return null;
+			}
+		},
+
+		onSetStatus(status, target, source, effect) {
+				if ((effect as Move)?.status) {
+					this.add('-immune', target, '[from] ability: Photonzol Plating');
+				}
+				return false;
+		},
+
+		onCriticalHit: false,
+		name: "Photonzol Plating",
+		rating: 1,
+		num: 4,
+	},
 };

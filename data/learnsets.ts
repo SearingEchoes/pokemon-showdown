@@ -102249,18 +102249,13 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       doubleteam2: ["3M"],
       energyball2: ["3M"],
       poisonbomb: ["3M"],
-      swagger2: ["3M","3E"],
+      swagger2: ["3M"],
       secretpower2: ["3M"],
       rest2: ["3M"],
       attract2: ["3M"],
       thief2: ["3M"],
       snatch2: ["3M"],
       mindbomb: ["3M"],
-      counter2: ["3E"],
-      reversal2: ["3E"],
-      endure2: ["3E"],
-      rockwrecker2: ["3E"],
-      smellingsalts2: ["3E"],
     },
   },
   chibinue: {
@@ -104874,16 +104869,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       solarbeam2: ["3M"],
       return2: ["3M"],
       doubleteam2: ["3M"],
-      swagger2: ["3M","3E"],
+      swagger2: ["3M"],
       facade2: ["3M"],
       secretpower2: ["3M"],
       rest2: ["3M"],
       attract2: ["3M"],
-      counter2: ["3E"],
-      reversal2: ["3E"],
-      endure2: ["3E"],
-      rockwrecker2: ["3E"],
-      smellingsalts2: ["3E"],
     },
   },
   ruukoto: {
@@ -104918,12 +104908,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       secretpower2: ["3M"],
       rest2: ["3M"],
       mindbomb: ["3M"],
-      counter2: ["3E"],
-      reversal2: ["3E"],
-      endure2: ["3E"],
-      swagger2: ["3E"],
-      rockwrecker2: ["3E"],
-      smellingsalts2: ["3E"],
 	  checkmaid: ["3S0"],
     },
 	eventData: [
@@ -106202,7 +106186,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	  endeavor2: ["3L1"],
 	  energylight: ["3L1"],
 	  chargebeam2: ["3L1"],
-	  shadowhit: ["3L1"],
+	  blastburn2: ["3L1"],
 	  substitute2: ["3L1"],
 	  faketears2: ["3L1"],
       jamming: ["3L1"],
@@ -111546,7 +111530,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       rockslide2: ["3L1"],
 	  icepunch2: ["3L1"],
 	  thunderpunch2: ["3L1"],
-	  rage2: ["3L1"],
+	  splashing: ["3L1"],
 	  superpower2: ["3L1"],
       brickbreak2: ["3L1","3M"],
       endure2: ["3L1"],
@@ -111560,6 +111544,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       roar2: ["3M"],
       taunt2: ["3M"],
       detect2: ["3M"],
+	  waterpulse2: ["3M"],
       steelfist: ["3M"],
       earthquake2: ["3M"],
       return2: ["3M"],
@@ -111568,6 +111553,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       secretpower2: ["3M"],
       rest2: ["3M"],
       attract2: ["3M"],
+      surf2: ["3M"],
+      waterfall2: ["3M"],
       strength2: ["3M"],
       rocksmash2: ["3M"],
       aurorabeam2: ["3E"],
@@ -114616,6 +114603,76 @@ export const Learnsets: {[k: string]: LearnsetData} = {
       thunderbolt: ["3L1"],
 	  boomburst: ["3L1"],
 	  sparklingaria: ["3L1"],
+    },
+  },
+	tztokjad: {
+    learnset: {
+      gigarockfall: ["3L1"],
+      gigafireball: ["3L1"],
+	  gigacrunch: ["3L1"],
+    },
+  },
+	oblily: {
+	learnset: {
+      megid: ["3L1"],
+      rapidpeck: ["3L1"],
+	  thunderwave: ["3L1"],
+	  memento: ["3L1"],
+    },
+  },
+ 	rubi: {
+	learnset: {
+      puncture: ["3L1"],
+    },
+  },
+  	emmi: {
+	learnset: {
+      descentofdragons: ["3L1"],
+    },
+  },
+ 	saffi: {
+	learnset: {
+      iceblitz: ["3L1"],
+    },
+  },
+  	bellibolts: {
+	learnset: {
+      saradominstrike: ["3L1"],
+	  slackoff: ["3L1"],
+	  muddywater: ["3L1"],
+	  soak: ["3L1"],
+    },
+  },
+   	meganiumg: {
+	learnset: {
+      clawsofguthix: ["3L1"],
+	  synthesis: ["3L1"],
+	  sunnyday: ["3L1"],
+	  bodyslam: ["3L1"],
+    },
+  },
+   	houndoomz: {
+	learnset: {
+      flamesofzamorak: ["3L1"],
+	  nastyplot: ["3L1"],
+	  sludgebomb: ["3L1"],
+	  substitute: ["3L1"],
+    },
+  },
+    beesiney: {
+	learnset: {
+      honeyboiled: ["3L1"],
+	  batonpass: ["3L1"],
+	  stockpile: ["3L1"],
+	  madhoney: ["3L1"],
+    },
+  },
+    wesker: {
+	learnset: {
+      phantomdance: ["3L1"],
+	  snapback: ["3L1"],
+	  suckerpunch: ["3L1"],
+	  axekick: ["3L1"],
     },
   },
 };
