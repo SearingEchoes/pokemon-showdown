@@ -24547,7 +24547,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Koishi XX",
 		types: ["Dark", "Heart"],
 		genderRatio: "N",
-		baseStats: {hp: 140, atk: 100, def: 120, spa: 100, spd: 120, spe: 100},
+		baseStats: {hp: 120, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
 		abilities: {0: "Black Barrier"},
 		heightm: 1.78,
 		weightkg: 89.8,
