@@ -7050,4 +7050,52 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
   },
+   tztokjad: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   oblily: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   rubi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   emmi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	saffi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+ 	bellibolts: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+ 	meganiumg: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	houndoomz: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	beesiney: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	wesker: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	akuma: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	koishixx: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
 };
