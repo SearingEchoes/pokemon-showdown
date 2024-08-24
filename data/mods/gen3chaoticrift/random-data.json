@@ -1,4 +1,8 @@
 {
+    "oblily": {
+        "level": 100,
+        "moves": ["megid","rapidpeck","thunderwave","memento"]
+    },
     "dlruukoto": {
         "level": 100,
         "moves": ["checkmaid","tidyup","alicesbroom","sonicboom2"]
