@@ -9401,4 +9401,34 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Only works at 25% or less HP.",
 		shortDesc: "Only works at 25% or less HP.",
 	},
+	icebarrage: {
+		name: "Ice Barrage",
+		desc: "Target can't switch out for 2 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
+		shortDesc: "Prevents switching out for 2 turns on hit.",
+		
+		start: "  [POKEMON] was bound in ice!",
+	},
+	hellsrolling: {
+		name: "Hell's Rolling",
+		desc: "The accuracy of this move is decreased depending on the target's Speed. Every 2 points of Speed past 50 decreases it by 1. Above 251 Speed, the Accuracy of this move begins to go below 100.",
+		shortDesc: "Less accurate on very fast enemies.",
+	},
+	lordofvermilion: {
+		name: "Lord of Vermilion",
+		desc: "Hits 4 times. 10% chance to lower Accuracy on each hit. Cannot be used twice.",
+		shortDesc: "4 hits, 10% chance to lower Acc. Can't use twice.",
+	},
+	phantasmaltentacle: {
+		name: "Phantasmal Tentacle",
+		desc: "Has a 30% chance to inflict Moon Bite on the target.",
+		shortDesc: "30% chance to Heal Block the target on hit.",
+	},
+	alicesbroom: {
+		name: "Alice's Broom",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the target at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or another future-hit move is already in effect for the target's position.",
+		shortDesc: "Hits two turns after being used.",
+
+		start: "  [POKEMON] swung a broom!",
+		activate: "  [TARGET] took 5000ms latency hit!",
+	},
 };
