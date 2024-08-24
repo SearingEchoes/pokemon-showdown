@@ -24379,7 +24379,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  saibamen: {
 		num: -3003,
 		name: "Saibamen",
-		types: ["Grass", "Ground"],
+		types: ["Grass", "Poison"],
 		genderRatio: "M",
 		baseStats: {hp: 70, atk: 72, def: 60, spa: 83, spd: 70, spe: 95},
 		abilities: {0: "Run Away"},
