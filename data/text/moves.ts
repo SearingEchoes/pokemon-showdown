@@ -9278,4 +9278,157 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active character has the Damp Ability.",
 		shortDesc: "Hits adjacent characters. The user faints.",
 	},
+	gigarockfall: {
+		name: "Giga Rockfall",
+		desc: "Deals 1-480 damage. Not affected by defensive values or alterations.",
+		shortDesc: "Potentially does a very high amount of damage. Unaffected by defense.",
+		
+		prepare: "[POKEMON] slammed the ground!",
+	},
+	gigafireball: {
+		name: "Giga Fireball",
+		desc: "Deals 1-480 damage. Not affected by defensive values or alterations.",
+		shortDesc: "Potentially does a very high amount of damage. Unaffected by defense.",
+		
+		prepare: "[POKEMON] begins charging a fireball!",
+	},
+	gigacrunch: {
+		name: "Giga Crunch",
+		desc: "Very powerful melee attack that can only be used after being hit by a contact move.",
+		shortDesc: "Only hits if the opponent attempts a contact move.",
+	},
+	megid: {
+		name: "Megid",
+		desc: "OHKO move. Accuracy changes depending on target's resistance to Dark moves. The Sp. Def of the target also affects the move's accuracy, with 250 being neutral.",
+		shortDesc: "Defeats target instantly. Accuracy based on type effectiveness and target's Sp. Def.",
+	},
+	rapidpeck: {
+		name: "Rapid Peck",
+		desc: "Pecks the target very quickly 3 times. Each hit rolls accuracy independently and has a very high critical rate.",
+		shortDesc: "Attacks and rolls accuracy 3 times. Very high critical rate.",
+	},
+	puncture: {
+		name: "Puncture",
+		desc: "Performs two slashes with different accuracy rolls. 25% chance to poison.",
+		shortDesc: "Hits twice. 25% chance to poison",
+	},
+	descentofdragons: {
+		name: "Descent of Dragons",
+		desc: "Shoots two dark arrows with perfect accuracy at the target. Has +1 Priority and cannot be used twice in a row. The attack also carries increased effectiveness against Dragon and Faith-types as if it was Dragon-type.",
+		shortDesc: "Hits twice, +1 Priority, and cannot miss. Cannot be used consecutively.",
+	},
+	iceblitz: {
+		name: "Ice Blitz",
+		desc: "Target can't switch out for 2 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
+		shortDesc: "Prevents switching out for 2 turns on hit.",
+		
+		start: "  [POKEMON] was bound in ice!",
+	},
+	saradominstrike: {
+		name: "Saradomin Strike",
+		desc: "Lowers the PP of all the target's moves by 1 on hit. Also deals double damage if the target possesses any Type weak to Faith.",
+		shortDesc: "Lowers 1 PP to moves on hit. Deals 2x damage on targets weak to Faith.",
+	},
+	clawsofguthix: {
+		name: "Claws of Guthix",
+		desc: "Lowers Def. and Sp.Def by 1 stage on hit. Also deals double damage if the target possesses any Type weak to Earth.",
+		shortDesc: "Lowers Def and Sp.Def by 1 Stage. Deals 2x damage on targets weak to Earth.",
+	},
+	flamesofzamorak: {
+		name: "Flames of Zamorak",
+		desc: "Lowers Sp.Atk and Sp.Def by 1 stage on hit. Also deals double damage if the target possesses any Type weak to Dark.",
+		shortDesc: "Lowers Sp.Atk and Sp.Def by 1 Stage. Deals 2x damage on targets weak to Dark.",
+	},
+	honeyboiled: {
+		name: "Honeyboiled",
+		desc: "The user recovers 35% HP. If the user is holding a Honey, it will be consumed and the Regen status will be applied, recovering 1/5th of Max HP per turn, for 5 turns.",
+		shortDesc: "Heals the user for 35% of Max HP. Regenerates HP further if holding Honey.",
+	},
+	madhoney: {
+		name: "Mad Honey",
+		desc: "Partially traps the target for 2-5 turns. If the user has a Honey, it will consume it to apply Toxic status to the enemy as well.",
+		shortDesc: "Traps the target for 2-5 turns. Badly poisons if a Honey is held.",
+		
+		start: "  [POKEMON] became trapped in poisonous honey!",
+	},
+	phantomdance: {
+		name: "Phantom Dance",
+		desc: "Hits up to 8 times. If it is not the first turn out, and the user was not directly hit the previous turn, the attack doubles in Power and has its Accuracy increased to 100. It may still miss due to Accuracy drops, and it cannot be used twice in succession.",
+		shortDesc: "Powers up if not hit the previous turn or the first turn. Can't be used consecutively.",
+	},
+	samuraiedge: {
+		name: "Samurai Edge",
+		desc: "This move cannot be used normally, and is called from the Gun Teleport ability.",
+		shortDesc: "No additional effect.",
+	},
+	snapback: {
+		name: "Snap Back",
+		desc: "If successful, the target is forced out, and the new target cannot switch for 2 turns unless they have trapping protection. Cannot be used twice in succession.",
+		shortDesc: "Switches the target out on hit, and prevents new switches for 2 turns.",
+	},
+	autobomb: {
+		name: "Autobomb",
+		desc: "This move cannot be used normally, and is called from the Bunny Amulet item.",
+		shortDesc: "This move cannot be used normally.",
+	},
+	meteorstormlv3: {
+		name: "Meteor Storm Lv3",
+		desc: "This move cannot be used normally, and is called from hitting melee attacks with the Violet Fear item. Hits up to 3 times.",
+		shortDesc: "This move cannot be used normally. Hits up to 3 times.",
+	},
+	frostnovalv5: {
+		name: "Frost Nova Lv5",
+		desc: "This move cannot be used normally, and is called from hitting melee attacks with the Violet Fear item. Hits up to 3 times.",
+		shortDesc: "This move cannot be used normally. May Freeze the target.",
+	},
+	thunderboltblade: {
+		name: "Thunderbolt Blade",
+		desc: "Never misses if used against a Paralyzed target. Consumes the Sword of Zerker after use.",
+		shortDesc: "Always hits on Paralyzed targets.",
+	},
+	genocideblazer: {
+		name: "Genocide Blazer",
+		desc: "Hits at half power if you move before the target. Consumes the Rock of Saurian after use.",
+		shortDesc: "Half power if you move first.",
+	},
+	demonflurry: {
+		name: "Demon Flurry",
+		desc: "Never misses and pierces Protect if you attack first. Consumes the Star of Ninja after use.",
+		shortDesc: "Never misses and pierces Protect if you go first.",
+	},
+	ragingdemon: {
+		name: "Raging Demon",
+		desc: "Only works at 25% or less HP.",
+		shortDesc: "Only works at 25% or less HP.",
+	},
+	icebarrage: {
+		name: "Ice Barrage",
+		desc: "Target can't switch out for 2 turns if hit. If the enemy has 200 or more Sp.Def, the Accuracy is decreased by 1, then 1 more for every 10 points after.",
+		shortDesc: "Prevents switching out for 2 turns on hit.",
+		
+		start: "  [POKEMON] was bound in ice!",
+	},
+	hellsrolling: {
+		name: "Hell's Rolling",
+		desc: "The accuracy of this move is decreased depending on the target's Speed. Every 2 points of Speed past 50 decreases it by 1. Above 251 Speed, the Accuracy of this move begins to go below 100.",
+		shortDesc: "Less accurate on very fast enemies.",
+	},
+	lordofvermilion: {
+		name: "Lord of Vermilion",
+		desc: "Hits 4 times. 10% chance to lower Accuracy on each hit. Cannot be used twice.",
+		shortDesc: "4 hits, 10% chance to lower Acc. Can't use twice.",
+	},
+	phantasmaltentacle: {
+		name: "Phantasmal Tentacle",
+		desc: "Has a 30% chance to inflict Moon Bite on the target.",
+		shortDesc: "30% chance to Heal Block the target on hit.",
+	},
+	alicesbroom: {
+		name: "Alice's Broom",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the target at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or another future-hit move is already in effect for the target's position.",
+		shortDesc: "Hits two turns after being used.",
+
+		start: "  [POKEMON] swung a broom!",
+		activate: "  [TARGET] took 5000ms latency hit!",
+	},
 };

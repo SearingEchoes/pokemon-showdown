@@ -2381,11 +2381,68 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	unzan: {
 		name: "Unzan",
-		shortDesc: "This Pokemon's Attack is doubled.",
+		shortDesc: "This character's Attack is doubled.",
 	},
 	icewall: {
 		name: "Ice Wall",
 		desc: "Fire, Ice, Pyro, and Frost attacks against this character are made with 1/2 the relevant offensive stat when calculating damage.",
 		shortDesc: "Fire/Ice/Pyro/Frost-type moves against this character deal damage with a halved offensive stat.",
+	},
+	solardrive: {
+		name: "Solar Drive",
+		desc: "If Sunny Day is active, this character's Speed is doubled. This effect is prevented if this character is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this character's Speed is doubled.",
+		gen7: {
+			desc: "If Sunny Day is active, this character's Speed is doubled.",
+		},
+	},
+	playwarrior: {
+		name: "Play Warrior",
+		desc: "Nullifies Physical attacks, and Special moves that make contact.",
+		shortDesc: "Nullifies Physical attacks, and Special moves that make contact.",
+	},
+	playarcher: {
+		name: "Play Archer",
+		desc: "Nullifies attacking moves that don't make contact.",
+		shortDesc: "Nullifies attacks that don't make contact.",
+	},
+	playwizard: {
+		name: "Play Wizard",
+		desc: "Nullifies close-range Physical attacks, and all Special attacks.",
+		shortDesc: "Nullifies close-range Physical attacks, and all Special attacks.",
+	},
+	holyshock: {
+		name: "Holy Shock",
+		desc: "Combines the effects of Electromorphosis and Static. The Static effect is increased to a 50% chance on contact.",
+		shortDesc: "When hit, gain the Charge status, and may paralyze at a 1/2 rate if it made contact.",
+		
+		start: "  Being hit by [MOVE] charged [POKEMON] with power!",
+	},
+	naturalblessing: {
+		name: "Natural Blessing",
+		desc: "When this Pokemon has 1/2 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass or Nature-type attack. It also becomes immune to, and attempts to clear negative statuses. The status prevention also comes into effect in Sunny weather.",
+		shortDesc: "At half HP or less, gain 1.5x Grass/Nature offensive power, and status immunity.",
+	},
+	hellfire: {
+		name: "Hellfire",
+		shortdesc: "Combines the effects of Flash Fire and Unnerve.",
+	},
+	gunteleport: {
+		name: "Gun Teleport",
+		shortdesc: "Fires one shot of Samurai Edge when switching in.",
+	},
+	satsuinohado: {
+		name: "Satsui no Hado",
+		desc: "At 50% or less HP, all attacks become super-effective. This also applies to attacks hitting the owner of this ability. Having this ability also allows almost any attack to bypass type immunities for normal 1x damage at all times.",
+		shortDesc: "All attacks become super-effective at 50% HP or less.",
+	},
+	blackbarrier: {
+		name: "Black Barrier",
+		desc: "The user gains a barrier that either reduces the damage of an incoming hit by 150 points, or by half - whichever is smaller. The barrier can be permanently removed by striking it with a move that is Flying, Aero, or some Wind moves.",
+		shortDesc: "Barrier greatly reduces damage. Weak to windy moves.",
+	},
+	photonzolplating: {
+		name: "Photonzol Plating",
+		shortdesc: "Null crits, NV statuses, and OHKOs.",
 	},
 };

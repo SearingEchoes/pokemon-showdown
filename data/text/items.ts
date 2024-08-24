@@ -2529,4 +2529,65 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Double Soul",
 		desc: "If held by Priest/Priestess Shingyoku, their Sp. Atk & Sp. Def rise by 50%.",
 	},
+	elderpain: {
+		name: "Elder Pain",
+		desc: "After an attack, holder gains 1/2 of the damage in HP dealt.",
+
+		heal: "  [POKEMON] absorbed HP using the Elder Pain!",
+	},
+	psychowand: {
+		name: "Psycho Wand",
+		desc: "An ultimate cane that boosts the power of Fire, Ice, Electric, Pyro, Frost, and Wind techniques by 60%.",
+	},
+	vintotie: {
+		name: "Vinto Tie",
+		desc: "The holder will ALWAYS move first in their priority bracket.",
+
+		activate: "  [POKEMON]'s Vinto Tie increased their speed drastically!",
+	},
+	honey: {
+		name: "Honey",
+		desc: "A jar of honey.",
+	},
+	violetfear: {
+		name: "Violet Fear",
+		desc: "A fused two-handed sword containing unimaginable power. Physical melee attacks bypass enemy Defensive boosts and have their power increased by 1.275x. They also have a 30% chance to cast Meteor Storm Lv3, and a 50% chance to cast Frost Nova Lv5.",
+		shortDesc: "Grants several benefits to Physical contact attacks.",
+	},
+	bunnyamulet: {
+		name: "Bunny Amulet",
+		desc: "Casts Autobomb if an incoming attack is attempted on the holder. Does not activate against Status moves. Autobomb is a 30 BP Special move that always Flinches the enemy, unless they are immune.",
+		shortDesc: "Attempts to autobomb an incoming damaging attack.",
+	},
+	dharoksgreataxe: {
+		name: "Dharok's Greataxe",
+		desc: "A heavy axe that has slain countless foes. Increases the damage of Physical attacks that make contact the more HP is missing. Damage is increased by 1% for every 4 HP lost.",
+		shortDesc: "Increases Physical contact damage by 0.25% for every 1 HP missing.",
+	},
+	mixedherbs: {
+		name: "Mixed Herbs",
+		desc: "This blend of 2 different herbs will fully restore your health. Use it when running away to a safe place.",
+		shortDesc: "Fully restores health once when switching out.",
+	},
+	swordofzerker: {
+		name: "Sword of Zerker",
+		desc: "The user will Zerker Tribe On upon entry. This overwrites their types and makes them Electric, but they will have a 1.8x boost to both Electric and Wind as if they had STAB with an additional +20% increase. Slicing moves of all kinds will also become Electric or Wind type depending on if their original type is a Pokémon or Touhoumon type. They will now also have a 30% chance to Paralyze. Being hit by a weakness will cause this item to be lost. For Zerker only - Grass/Nature moves become a weakness to reference MMSF's weakness chart, and to balance Electric only having a single weakness.",
+		shortDesc: "User and slicing moves are electrified. Is lost if hit with weakness or Grass.",
+	},
+	rockofsaurian: {
+		name: "Rock of Saurian",
+		desc: "The user will Saurian Tribe On upon entry. This overwrites their types and makes them Fire, but they will have a 1.8x boost to both Fire and Pyro as if they had STAB with an additional +20% increase. Offensive charge moves will have their charge turn removed, but they now lower Speed per use. The user also becomes immune to flinching. The rock is lost if the user takes super-effective damage.",
+		shortDesc: "Prevent flinch, and removes offensive charge move turns.",
+	},
+	starofninja: {
+		name: "Star of Ninja",
+		desc: "The user will Ninja Tribe On upon entry. This overwrites their types and makes them Grass, but they will have a 1.8x boost to both Grass and Nature as if they had STAB with an additional +20% increase. Grass/Nature moves of all kinds will gain perfect accuracy if the holder is faster than the target. Additionally, if a move fails or misses against the holder for any reason, the holder will counter with AntiDamage, a 30BP Grass/Physical move. The star is lost if hit by super-effective damage.",
+		shortDesc: "Max out Grass/Nature move accuracy if faster, and counter misses.",
+	},
+	alicecard: {
+		name: "Alice Card",
+		desc: "Cuts all incoming direct damage from strong targets by 40%. A strong target is defined by something that possesses 550 or more BST. If the target has 549 or less, the holder of this item takes 40% more damage instead.",
+		shortDesc: "Decreases the damage from strong foes by 40%. Otherwise, take 40% more.",
+	},
+
 };
