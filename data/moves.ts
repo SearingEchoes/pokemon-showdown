@@ -17624,7 +17624,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
 		onHit(target) {
-			if (target.getTypes().join() === 'Water' || !target.setType('Water')) {
+			if (target.getTypes().join() === 'Water' || !target.setType('Water') || target.item.id === 'swordofzerker' || target.item.id === 'rockofsaurian' || target.item.id === 'starofninja') {
 				// Soak should animate even when it fails.
 				// Returning false would suppress the animation.
 				this.add('-fail', target);
