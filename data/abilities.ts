@@ -5968,8 +5968,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		
 		onHit(target, source, move) {
 			if (move.type === 'Flying' || move.type === 'Aero' || move.id === 'whirlwind2' || move.id === 'twister2' || move.id === 'gust2' || move.id === 'aeroblast2') {
-				this.add("-message", "The wind blew away the barrier!");
-				this.effectState.busted = true;
+				if (!this.effectState.busted) {
+					this.add("-message", "The wind blew away the barrier!");
+					this.effectState.busted = true;
+				}
 			}
 		},
 		
