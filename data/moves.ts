@@ -17630,6 +17630,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-fail', target);
 				return null;
 			}
+			this.debug(target.item.name);
+			this.debug(item.name);
+			this.debug(target.item);
 			this.add('-start', target, 'typechange', 'Water');
 		},
 		secondary: null,
