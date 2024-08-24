@@ -8,6 +8,7 @@ import type {MoveCounter, OldRandomBattleSpecies} from '../gen8/random-teams';
 export class RandomGen3Teams extends RandomGen4Teams {
 	battleHasDitto: boolean;
 	battleHasWobbuffet: boolean;
+	battleHasFairy: boolean;
 
 	randomData: {[species: string]: OldRandomBattleSpecies} = require('./random-data.json');
 
@@ -15,6 +16,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 		super(format, prng);
 		this.battleHasDitto = false;
 		this.battleHasWobbuffet = false;
+		this.battleHasFairy = false;
 		this.moveEnforcementCheckers = {
 			Bug: (movePool, moves, abilities, types, counter, species) => (
 				movePool.includes('megahorn') || (!species.types[1] && movePool.includes('hiddenpowerbug'))
@@ -734,6 +736,9 @@ export class RandomGen3Teams extends RandomGen4Teams {
 
 			// Limit to one Wobbuffet per battle (not just per team)
 			if (species.name === 'Defense Satori' && this.battleHasWobbuffet) continue;
+			if (species.name === 'Rubi' && this.battleHasFairy) continue;
+			if (species.name === 'Emmi' && this.battleHasFairy) continue;
+			if (species.name === 'Saffi' && this.battleHasFairy) continue;
 			// Limit to one Ditto per battle in Gen 2
 			if (this.dex.gen < 3 && species.name === 'Ditto' && this.battleHasDitto) continue;
 
@@ -821,6 +826,7 @@ export class RandomGen3Teams extends RandomGen4Teams {
 			// In Gen 3, Shadow Tag users can prevent each other from switching out, possibly causing and endless battle or at least causing a long stall war
 			// To prevent this, we prevent more than one Wobbuffet in a single battle.
 			if (set.ability === 'Shadow Tag') this.battleHasWobbuffet = true;
+			if (set.ability === 'Play Warrior' || set.ability === 'Play Archer' || set.ability === 'Play Wizard') this.battleHasFairy = true;
 			if (species.id === 'ditto') this.battleHasDitto = true;
 		}
 
