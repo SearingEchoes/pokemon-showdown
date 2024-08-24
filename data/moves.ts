@@ -29444,15 +29444,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 	//super illegal customs
 	specialbeamcannon: {
 		num: 3000,
-		accuracy: 50,
-		basePower: 0,
+		accuracy: 100,
+		basePower: 200,
 		category: "Special",
 		name: "Special Beam Cannon",
 		pp: 5,
 		noPPBoosts: true,
 		priority: -3,
 		flags: {protect: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
-		ohko: true,
 		priorityChargeCallback(pokemon) {
 			pokemon.addVolatile('specialbeamcannon');
 		},
@@ -29574,7 +29573,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	explode: {
 		num: 3006,
 		accuracy: 100,
-		basePower: 350,
+		basePower: 300,
 		category: "Physical",
 		name: "Explode",
 		pp: 5,
@@ -30151,7 +30150,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 120,
 		category: "Special",
 		name: "Ice Barrage",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
@@ -30198,15 +30197,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, cantusetwice: 1},
 		multihit: 4,
 		secondary: {
-			chance: 20,
+			chance: 10,
 			boosts: {
 				accuracy: -1,
 			},
 		},
 		target: "normal",
 		type: "Wind",
-		zMove: {basePower: 140},
-		maxMove: {basePower: 120},
 		contestType: "Cool",
 	},
 	phantasmaltentacle: {
@@ -30225,5 +30222,42 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Heart",
 		contestType: "Cool",
+	},
+	alicesbroom: {
+		num: 3035,
+		accuracy: 100,
+		basePower: 150,
+		category: "Physical",
+		name: "Alice's Broom",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, futuremove: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: 3,
+				move: 'alicesbroom',
+				source: source,
+				moveData: {
+					id: 'alicesbroom',
+					name: "Alice's Broom",
+					accuracy: 100,
+					basePower: 150,
+					category: "Physical",
+					priority: 0,
+					flags: {allyanim: 1, futuremove: 1},
+					ignoreImmunity: false,
+					effectType: 'Move',
+					type: 'Psychic',
+				},
+			});
+			this.add('-start', source, "move: Alice's Broom");
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Unknown",
+		contestType: "Clever",
 	},
 };

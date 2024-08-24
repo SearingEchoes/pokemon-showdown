@@ -6017,4 +6017,24 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: -134,
 	},
+	photonzolplating: {
+		onTryHit(pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[from] ability: Photonzol Plating');
+				return null;
+			}
+		},
+
+		onSetStatus(status, target, source, effect) {
+				if ((effect as Move)?.status) {
+					this.add('-immune', target, '[from] ability: Photonzol Plating');
+				}
+				return false;
+		},
+
+		onCriticalHit: false,
+		name: "Photonzol Plating",
+		rating: 1,
+		num: 4,
+	},
 };
