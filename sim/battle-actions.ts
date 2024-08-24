@@ -148,10 +148,12 @@ export class BattleActions {
 			// runSwitch happens immediately so that Mold Breaker can make hazards bypass Clear Body and Levitate
 			this.battle.singleEvent('PreStart', pokemon.getAbility(), pokemon.abilityState, pokemon);
 			this.runSwitch(pokemon);
+			
 		} else {
 			this.battle.queue.insertChoice({choice: 'runUnnerve', pokemon});
 			this.battle.queue.insertChoice({choice: 'runSwitch', pokemon});
 		}
+			
 
 		return true;
 	}
@@ -179,6 +181,11 @@ export class BattleActions {
 
 		if (this.battle.gen <= 4) {
 			this.battle.runEvent('SwitchIn', pokemon);
+			if (this.battle.lastSuccessfulMoveThisTurn == 'snapback') {
+				pokemon.addVolatile('bound');
+				// this.battle.debug(this.battle.lastSuccessfulMoveThisTurn + " caused switch!");
+				// this.battle.add("-message", this.battle.lastSuccessfulMoveThisTurn + " caused switch!");
+			}	
 		}
 
 		if (this.battle.gen <= 2) {
@@ -677,9 +684,11 @@ export class BattleActions {
 			this.battle.activeTarget = target;
 			// calculate true accuracy
 			let accuracy = move.accuracy;
-			if (move.ohko) { // bypasses accuracy modifiers
+			if (move.ohko && move.id !== 'megid') { // bypasses accuracy modifiers
 				if (!target.isSemiInvulnerable()) {
-					accuracy = 30;
+					
+						accuracy = 30;
+						
 					if (move.ohko === 'Ice' && this.battle.gen >= 7 && !pokemon.hasType('Ice')) {
 						accuracy = 20;
 					}
