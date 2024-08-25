@@ -9245,8 +9245,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	specialbeamcannon: {
 		name: "Special Beam Cannon",
-		desc: "An attack that requires focus. Will be stopped if hit mid-turn. A One-hit KO if it connects.",
-		shortDesc: "Loses focus when hit. One-hit KO.",
+		desc: "An attack that requires focus. Will be stopped if hit mid-turn.",
+		shortDesc: "Loses focus when hit.",
 	},
 	chaoswave: {
 		name: "Chaos Wave",
