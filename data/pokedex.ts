@@ -24439,7 +24439,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  rubi: {
 		num: -3008,
 		name: "Rubi",
-		types: ["Metal", "Aero"],
+		types: ["Metal"],
 		baseStats: {hp: 1, atk: 150, def: 40, spa: 60, spd: 40, spe: 120},
 		maxHP: 1,
 		abilities: {0: "Play Warrior"},
@@ -24451,7 +24451,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  emmi: {
 		num: -3009,
 		name: "Emmi",
-		types: ["Nature", "Aero"],
+		types: ["Nature"],
 		baseStats: {hp: 1, atk: 150, def: 40, spa: 80, spd: 40, spe: 60},
 		maxHP: 1,
 		abilities: {0: "Play Archer"},
@@ -24463,7 +24463,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  saffi: {
 		num: -3010,
 		name: "Saffi",
-		types: ["Frost", "Aero"],
+		types: ["Frost"],
 		baseStats: {hp: 1, atk: 50, def: 40, spa: 150, spd: 40, spe: 99},
 		maxHP: 1,
 		abilities: {0: "Play Wizard"},
