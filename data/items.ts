@@ -8115,11 +8115,11 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onFoeHit(target, source, move) {
 			if(move.category === 'Physical' && move.flags['contact']) {
-				if (Math.random() < 0.3) {
+				if (Math.random() < 2) {
 				  this.add("-message", source.name + "'s Violet Fear lets out a howl!");
 				  this.actions.useMove('Meteor Storm Lv3', source);
 				}
-				if (Math.random() < 0.5) {
+				if (Math.random() < 2) {
 					this.add("-message", source.name + "'s Violet Fear lets out a howl!");
 				  this.actions.useMove('Frost Nova Lv5', source);
 				}
@@ -8268,6 +8268,13 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 
+		onTryHit(target, source, move) {
+			if (move.id === 'soak') {
+				this.add('-immune', target, '[from] item: Sword of Zerker');
+				return null;
+			}
+		},
+
 		onSourceModifyDamage(damage, source, target, move) {
 			if (move.type === 'Grass' || move.type === 'Nature') {
 					return this.chainModify(2);
@@ -8364,8 +8371,6 @@ export const Items: {[itemid: string]: ItemData} = {
 				this.add('-immune', target, '[from] item: Rock of Saurian');
 				return null;
 			}
-				
-
 		},
 
 		onHit(target, source, move) {
@@ -8426,6 +8431,12 @@ export const Items: {[itemid: string]: ItemData} = {
 			}		
 		},
 		
+		onTryHit(target, source, move) {
+			if (move.id === 'soak') {
+				this.add('-immune', target, '[from] item: Star of Ninja');
+				return null;
+			}
+		},
 
 		onHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
