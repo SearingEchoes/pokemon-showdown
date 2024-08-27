@@ -1,11 +1,11 @@
 {
-    "superpiccolo": {
+    "patchouli": {
         "level": 100,
-        "moves": ["specialbeamcannon","recover","cosmicpower","aurasphere"]
+        "moves": ["manaburst","surf2","reflect2","skillswap2"]
     },
-    "saibamen": {
+    "koakuma": {
         "level": 100,
-        "moves": ["explode","acidspray","toxic","populationbomb"]
+        "moves": ["ragingdemon","acidspray","toxic","populationbomb"]
     },
     "technicalsanae": {
         "level": 100,
