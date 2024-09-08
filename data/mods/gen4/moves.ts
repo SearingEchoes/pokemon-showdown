@@ -222,7 +222,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {},
 		onModifyMove(move, source, target) {
-			if ((!source.hasType('Ghost')) || (!source.hasType('Nether'))) {
+			if ((!source.hasType('Ghost')) && (!source.hasType('Nether'))) {
 				delete move.volatileStatus;
 				delete move.onHit;
 				move.self = {boosts: {atk: 1, def: 1, spe: -1}};
@@ -1901,6 +1901,16 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			if (target.runImmunity('Dream')) {
 				const damage = this.actions.getDamage(source, target, move, true);
 				if (typeof damage !== 'number') throw new Error("Jump Kick didn't recoil");
+				this.damage(this.clampIntRange(damage / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
+			}
+		},
+	},
+	gigaimpact2: {
+		inherit: true,
+		onMoveFail(target, source, move) {
+			if (target.runImmunity('Umbral')) {
+				const damage = this.actions.getDamage(source, target, move, true);
+				if (typeof damage !== 'number') throw new Error("HJK recoil failed");
 				this.damage(this.clampIntRange(damage / 2, 1, Math.floor(target.maxhp / 2)), source, source, move);
 			}
 		},
