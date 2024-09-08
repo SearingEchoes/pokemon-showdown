@@ -8115,11 +8115,11 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onFoeHit(target, source, move) {
 			if(move.category === 'Physical' && move.flags['contact']) {
-				if (Math.random() < 2) {
+				if (Math.random() < 0.3) {
 				  this.add("-message", source.name + "'s Violet Fear lets out a howl!");
 				  this.actions.useMove('Meteor Storm Lv3', source);
 				}
-				if (Math.random() < 2) {
+				if (Math.random() < 0.5) {
 					this.add("-message", source.name + "'s Violet Fear lets out a howl!");
 				  this.actions.useMove('Frost Nova Lv5', source);
 				}

@@ -5979,11 +5979,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect && effect.effectType === 'Move' && !target.transformed && !this.effectState.busted) {
 				this.add('-activate', target, 'ability: Black Barrier');
 				//this.effectState.busted = true;
-				if (damage < 300) {
+				if (damage < 200) {
 					let newdamage = Math.floor(damage / 2);
 					return newdamage;
 				} else {
-					let newdamage = (damage - 150);
+					let newdamage = (damage - 100);
 					return newdamage;
 				}
 			}

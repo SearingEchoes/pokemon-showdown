@@ -84,7 +84,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Heart: 1,
 			Illusion: 0,
 			
-			Unknown: 1,
+			Unknown: 0,
 			Saiyan: 0,
 		},
 		HPivs: {},
@@ -673,7 +673,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Heart: 1,
 			Illusion: 0,
 			
-			Unknown: 1,
+			Unknown: 0,
 			Saiyan: 0,
 		},
 		HPivs: {atk: 30, spe: 30},

@@ -30142,7 +30142,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Dark",
-		contestType: "Cute",
+		contestType: "Cool",
 	},
 	icebarrage: {
 		num: 3031,
@@ -30249,7 +30249,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 					flags: {allyanim: 1, futuremove: 1},
 					ignoreImmunity: false,
 					effectType: 'Move',
-					type: 'Psychic',
+					type: 'Unknown',
 				},
 			});
 			this.add('-start', source, "move: Alice's Broom");
