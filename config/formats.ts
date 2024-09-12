@@ -81,6 +81,17 @@ export const Formats: FormatList = [
 	},
 	
 	{
+		section: "Touhoumon 1.5",
+	},
+	{
+		name: "[Gen 3] Touhoumon Revised",
+
+		mod: 'gen3revised',
+		debug: true,
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
+	},
+	
+	{
 		section: "????",
 	},
 	{
