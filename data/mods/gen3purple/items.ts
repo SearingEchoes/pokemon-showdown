@@ -124,4 +124,24 @@ export const Items: {[k: string]: ModdedItemData} = {
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 	},
+	cursedtag: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	scarletrock: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	parasol: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	iceburngem: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	lunarvest: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
 };

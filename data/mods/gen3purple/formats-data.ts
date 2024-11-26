@@ -1575,7 +1575,640 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UUber",
 		doublesTier: "DOU",
 	  },
-	  
+	//1.5r
+	  exreimu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  adventreimu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmarisa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsakuya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  koumajousakuya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsanae: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exrumia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exdaiyousei: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  excirno: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmeiling: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkoakuma: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  expatchouli: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exremilia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastremilia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  adventremilia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exflandre: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastflandre: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  chibisatsuki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  satsuki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exletty: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  dolls: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exalice: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exlilywhite: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exlilyblack: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exlunasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exlyrica: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmerlin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyoumu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyuyuko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastyuyuko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exchen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exran: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastran: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyukari: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastyukari: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exwriggle: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmystia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkeine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  hakutakukeine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  extewi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exreisen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  spacelunatic: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exeirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lasteirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  adventeirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkaguya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastkaguya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmokou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastmokou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exaya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  chibihimawari: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  himawari: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmedicine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyuuka: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkomachi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exeiki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lasteiki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exshizuha: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exminoriko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exhina: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exnitori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmomiji: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkanako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastkanako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsuwako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastsuwako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkisume: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyamame: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exparsee: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyuugi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exrin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exutsuho: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastutsuho: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsatori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkoishi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastkoishi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exnazrin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkogasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exichirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  unzan: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmurasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exshou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exbyakuren: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exnue: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  shingyoku: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exrika: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  noroiko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmeira: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  matenshi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exellen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkotohime: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkana: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exrikako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exchiyuri: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyumemi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exorange: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkurumi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  ungaikyodevil: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exelly: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  hikariko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmugetsu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exgengetsu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  wayousei: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsara: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  ungaikyoangel: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exlouise: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyuki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmai: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  ayana: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyumeko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exshinki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsuika: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lastsuika: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exiku: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  extenshi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  lasttenshi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exhatate: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsunnymilk: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exlunachild: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exstarsapphire: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkasen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  extokiko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  kosuzu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsendai: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  chibimitori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  mitori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmitori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  chibisasha: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  sasha: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsasha: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  chibikaren: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  isami: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  vivit: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  angelvivit: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkyouko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyoshika: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exseiga: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  extojiko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exfuto: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmiko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exmamizou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exwakasagi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsekibanki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkagerou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exbenben: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exyatsuhashi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exseija: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exsukuna: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exraiko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkokoro: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  karen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  xreimu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  xmarisa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  xsakuya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  xsanae: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  xyoumu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  xreisen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  chibisendai: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	
 	//BAN EVERYTHING FROM THE OUTSIDE
 	  
 	bulbasaur: {
@@ -7055,6 +7688,46 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
   },
    oblily: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   rubi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   emmi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	saffi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+ 	bellibolts: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+ 	meganiumg: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	houndoomz: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	beesiney: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	wesker: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	akuma: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	koishixx: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
   },
