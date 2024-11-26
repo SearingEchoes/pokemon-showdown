@@ -6170,7 +6170,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		delete this.modData('Learnsets', 'tori').learnset.mimic2;
 		delete this.modData('Learnsets', 'tori').learnset.beatup2;
 		delete this.modData('Learnsets', 'tori').learnset.meteorstorm;
-		delete this.modData('Learnsets', 'tori').learnset.
 		delete this.modData('Learnsets', 'namazu').learnset.magnitude2;
 		delete this.modData('Learnsets', 'namazu').learnset.batterycharge;
 		delete this.modData('Learnsets', 'namazu').learnset.chargebeam2;
@@ -11160,14 +11159,12 @@ export const Scripts: ModdedBattleScriptsData = {
 		delete this.modData('Learnsets', 'zombiefairy').learnset.feintattack2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.wish2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.faketears2;
-		delete this.modData('Learnsets', 'zombiefairy').learnset.
 		delete this.modData('Learnsets', 'zombiefairy').learnset.substitute2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.crunch2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.agility2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.extremespeed2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.smile;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.flareblitz2;
-		delete this.modData('Learnsets', 'zombiefairy').learnset.
 		delete this.modData('Learnsets', 'zombiefairy').learnset.crushclaw2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.disable2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.bindingvoice;
@@ -11175,12 +11172,10 @@ export const Scripts: ModdedBattleScriptsData = {
 		delete this.modData('Learnsets', 'zombiefairy').learnset.painsplit2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.blastburn2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.eruption2;
-		delete this.modData('Learnsets', 'zombiefairy').learnset.
 		delete this.modData('Learnsets', 'zombiefairy').learnset.extrasensory2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.screech2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.blazekick2;
 		delete this.modData('Learnsets', 'zombiefairy').learnset.heatwave2;
-		delete this.modData('Learnsets', 'zombiefairy').learnset.
 		delete this.modData('Learnsets', 'helpershizuha').learnset.absorb2;
 		delete this.modData('Learnsets', 'helpershizuha').learnset.growl2;
 		delete this.modData('Learnsets', 'helpershizuha').learnset.leechseed2;

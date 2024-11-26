@@ -73,7 +73,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Early Bird", 1: "Run Away"},
 		baseStats: {hp: 40, atk: 30, def: 50, spa: 60, spd: 55, spe: 65},
 	},
-	chibidaiyousei: {
+	daiyousei: {
 		inherit: true,
 		types: ["Grass", "Bug"],
 		abilities: {0: "Early Bird", 1: "Run Away"},
