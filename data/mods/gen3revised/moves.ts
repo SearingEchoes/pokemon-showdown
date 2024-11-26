@@ -820,11 +820,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		category: "Special",
 		basePower: 70,
 	},
-	hiddenpowerdragon: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
 	hiddenpowerelectric: {
 		inherit: true,
 		category: "Special",
