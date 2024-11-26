@@ -285,7 +285,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Ghost"],
 		abilities: {0: "Inner Focus", 1: "Guard Armor"},
-		baseStats: {hp: , atk: , def: , spa: , spd: , spe: },
+		baseStats: {hp: 35, atk: 80, def: 45, spa: 40, spd: 30, spe: 70},
 	},
 	youmu: {
 		inherit: true,
@@ -1321,7 +1321,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Ground", "Faith"],
 		abilities: {0: "Sand Veil", 1: "Oni Strength"},
-		baseStats: {hp: , atk: , def: , spa: , spd: , spe: },
+		baseStats: {hp: 75, atk: 85, def: 60, spa: 50, spd: 60, spe: 70},
 	},
 	rinnosuke: {
 		inherit: true,

@@ -83,7 +83,7 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 	hail: {
 		inherit: true,
 		onModifyDef(def, pokemon) {
-			if ((pokemon.hasType('Ice') && this.field.isWeather('hail')) && this.field.isWeather('sandstorm'))) {
+			if (pokemon.hasType('Ice') && this.field.isWeather('hail')) {
 				return this.modify(def, 1.5);
 			}
 		},
