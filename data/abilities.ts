@@ -5579,7 +5579,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				type !== '???' && !target.hasType(type)
 			) {
 				if (!target.setType(type)) return false;
-				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
+				this.add('-start', target, 'typechange', type, '[from] ability: Mysterious');
 
 				if (target.side.active.length === 2 && target.position === 1) {
 					// Curse Glitch
@@ -5742,6 +5742,273 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -125,
 	},
+	//1.5 abils
+	flameabsorb: {
+		onTryHit(target, source, move) {
+			if ((target !== source && move.type === 'Fire')||(target !== source && move.type === 'Pyro')) {
+				if (!this.heal(target.baseMaxhp / 4)) {
+					this.add('-immune', target, '[from] ability: Flame Absorb');
+				}
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Flame Absorb",
+		rating: 3.5,
+		num: -1000,
+	},
+	darkness: {
+		onFoeTrapPokemon(pokemon) {
+			if (!pokemon.hasAbility('darkness') && pokemon.isAdjacent(this.effectState.target)) {
+				pokemon.tryTrap(true);
+			}
+		},
+		onFoeMaybeTrapPokemon(pokemon, source) {
+			if (!source) source = this.effectState.target;
+			if (!source || !pokemon.isAdjacent(source)) return;
+			if (!pokemon.hasAbility('darkness')) {
+				pokemon.maybeTrapped = true;
+			}
+		},
+		name: "Darkness",
+		rating: 5,
+		num: -1001,
+	},
+	onistrength: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost.atk && boost.atk < 0) {
+				delete boost.atk;
+				if (!(effect as ActiveMove).secondaries) {
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Oni Strength", "[of] " + target);
+				}
+			}
+		},
+		isBreakable: true,
+		name: "Oni Strength",
+		rating: 1.5,
+		num: -1002,
+	},
+	lazy: {
+		onStart(pokemon) {
+			pokemon.removeVolatile('lazy');
+			if (pokemon.activeTurns && (pokemon.moveThisTurnResult !== undefined || !this.queue.willMove(pokemon))) {
+				pokemon.addVolatile('lazy');
+			}
+		},
+		onBeforeMovePriority: 9,
+		onBeforeMove(pokemon) {
+			if (pokemon.removeVolatile('lazy')) {
+				this.add('cant', pokemon, 'ability: Lazy');
+				return false;
+			}
+			pokemon.addVolatile('lazy');
+		},
+		condition: {},
+		name: "Lazy",
+		rating: -1,
+		num: -1003,
+	},
+	stronggrip: {
+		onTakeItem(item, pokemon, source) {
+			if (!this.activeMove) throw new Error("Battle.activeMove is null");
+			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
+				this.add('-activate', pokemon, 'ability: Strong Grip');
+				return false;
+			}
+		},
+		isBreakable: true,
+		name: "Strong Grip",
+		rating: 1.5,
+		num: -1004,
+	},
+	healing: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.hp && pokemon.status && this.randomChance(33, 100)) {
+				this.debug('healing');
+				this.add('-activate', pokemon, 'ability: Healing');
+				pokemon.cureStatus();
+			}
+		},
+		name: "Healing",
+		rating: 3,
+		num: -1005,
+	},
+	marvelveil: {
+		onModifyDefPriority: 6,
+		onModifyDef(def, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		isBreakable: true,
+		name: "Marvel Veil",
+		rating: 2.5,
+		num: -1006,
+	},
+	manabarrier: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Mana Barrier", "[of] " + target);
+			}
+		},
+		isBreakable: true,
+		name: "Mana Barrier",
+		rating: 2,
+		num: -1007,
+	},
+	nyudo: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk) {
+			return this.chainModify(2);
+		},
+		name: "Nyudo",
+		rating: 5,
+		num: -1008,
+	},
+	wonderveil: {
+		onModifyAccuracyPriority: 10,
+		onModifyAccuracy(accuracy, target, source, move) {
+			if (move.category === 'Status' && typeof accuracy === 'number') {
+				this.debug('Wonder Veil - setting accuracy to 50');
+				return 50;
+			}
+		},
+		isBreakable: true,
+		name: "Wonder Veil",
+		rating: 2,
+		num: -1009,
+	},
+	multigraze: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.hp >= target.maxhp) {
+				this.debug('Multigraze weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		isBreakable: true,
+		name: "Multigraze",
+		rating: 3.5,
+		num: -1010,
+	},
+	consecrate: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && !noModifyType.includes(move.id) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Faith';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		name: "Consecrate",
+		rating: 4,
+		num: -1011,
+	},
+	floraabsorb: {
+		onTryHit(target, source, move) {
+			if ((target !== source && move.type === 'Grass')||(target !== source && move.type === 'Nature')) {
+				if (!this.heal(target.baseMaxhp / 4)) {
+					this.add('-immune', target, '[from] ability: Flora Absorb');
+				}
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Flora Absorb",
+		rating: 3.5,
+		num: -1012,
+	},
+	unwavering: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(spa, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Unwavering",
+		rating: 3.5,
+		num: -1013,
+	},
+	fascinate: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Fascinate', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spa: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Fascinate",
+		rating: 3.5,
+		num: -1014,
+	},
+	coldheart: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if ((move.type === 'Ice' && attacker.hp <= attacker.maxhp / 3) || (move.type === 'Frost' && attacker.hp <= attacker.maxhp / 3)) {
+				this.debug('Cold Heart boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if ((move.type === 'Ice' && attacker.hp <= attacker.maxhp / 3) || (move.type === 'Frost' && attacker.hp <= attacker.maxhp / 3)) {
+				this.debug('Cold Heart boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Cold Heart",
+		rating: 2,
+		num: -1015,
+	},
+	ambition: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({spa: length}, source);
+			}
+		},
+		name: "Ambition",
+		rating: 3,
+		num: -1016,
+	},
+	occultboost: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				const bestStat = source.getBestStat(true, true);
+				this.boost({[bestStat]: length}, source);
+			}
+		},
+		name: "Occult Boost",
+		rating: 3.5,
+		num: -1017,
+	},
+	
+	//illegal abils
 	playwarrior: {
 		onTryHit(target, source, move) {
 			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
