@@ -15870,7 +15870,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		delete this.modData('Learnsets', '2hu').learnset.attract2;
 		delete this.modData('Learnsets', '2hu').learnset.steelwing2;
 		delete this.modData('Learnsets', '2hu').learnset.snatch2;
-		delete this.modData('Learnsets', '2hu'').learnset.mindbomb;
+		delete this.modData('Learnsets', '2hu').learnset.mindbomb;
 		delete this.modData('Learnsets', '2hu').learnset.strength2;
 		delete this.modData('Learnsets', '2hu').learnset.flash2;
 		delete this.modData('Learnsets', '2hu').learnset.rocksmash2;
