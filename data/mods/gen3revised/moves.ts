@@ -347,10 +347,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		pp: 10,
 		target: "normal",
 	},
-	minimize: {
-		inherit: true,
-		pp: 30,
-	},
 	lightscreen: {
 		inherit: true,
 		pp: 20,

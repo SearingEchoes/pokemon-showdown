@@ -181,7 +181,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Ice", "Rock"],
 		abilities: {0: "Cold Heart", 1: "Ice Wall"},
-		baseStats: {hp: , atk: , def: , spa: , spd: , spe: },
+		baseStats: {hp: 75, atk: 50, def: 65, spa: 95, spd: 65, spe: 50},
 	},
 	adventletty: {
 		inherit: true,
