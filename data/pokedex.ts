@@ -24454,7 +24454,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Benben",
 		types: ["Ghost", "Fire"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: , atk: , def: , spa: , spd: , spe: },
+		baseStats: {hp: 60, atk: 30, def: 75, spa: 90, spd: 85, spe: 60},
 		abilities: {0: "Synchronize", 1: "Soundproof"},
 		heightm: 9001,
 		weightkg: 25.0,
