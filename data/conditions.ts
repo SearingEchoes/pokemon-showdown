@@ -464,7 +464,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock') || source?.hasItem('scarletrock')) {
+			if (source?.hasItem('damprock')) {
 				return 8;
 			}
 			return 5;
@@ -534,7 +534,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock') || source?.hasItem('scarletrock')) {
+			if (source?.hasItem('heatrock')) {
 				return 8;
 			}
 			return 5;
@@ -616,7 +616,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock') || source?.hasItem('scarletrock')) {
+			if (source?.hasItem('smoothrock')) {
 				return 8;
 			}
 			return 5;
@@ -654,7 +654,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock') || source?.hasItem('scarletrock')) {
+			if (source?.hasItem('icyrock')) {
 				return 8;
 			}
 			return 5;
@@ -684,7 +684,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock') || source?.hasItem('scarletrock')) {
+			if (source?.hasItem('icyrock')) {
 				return 8;
 			}
 			return 5;
