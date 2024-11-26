@@ -1645,7 +1645,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  chibisatsuki: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	  satsuki: {
