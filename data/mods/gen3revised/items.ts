@@ -76,6 +76,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	airlineuniform: {
 		inherit: true,
 		isNonstandard: "Unobtainable",
+		gen: 4,
 	},
 	bunnycostume: {
 		inherit: true,
