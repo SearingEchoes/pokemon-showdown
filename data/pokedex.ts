@@ -25032,7 +25032,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "EX Tewi",
 		types: ["Normal"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 75, atk: 95, def: ,70 spa: 90, spd: 80, spe: 120},
+		baseStats: {hp: 75, atk: 95, def: 70, spa: 90, spd: 80, spe: 120},
 		abilities: {0: "Serene Grace", 1: "Prankster"},
 		heightm: 9001,
 		weightkg: 25.0,
