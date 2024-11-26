@@ -84,18 +84,11 @@ export const Formats: FormatList = [
 		section: "Touhoumon 1.5",
 	},
 	{
-		name: "[Gen 3] Touhoumon Revised OU",
+		name: "[Gen 3] Touhoumon Revised",
 
 		mod: 'gen3revised',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
-		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Double Soul'],
-	},
-	{
-		name: "[Gen 3] Touhoumon Revised AG",
-
-		mod: 'gen3purple',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['King\'s Rock', 'Sand Veil'],
+		debug: true,
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
 	},
 	
 	{
