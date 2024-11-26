@@ -1,13 +1,2214 @@
 export const FormatsData: {[k: string]: SpeciesFormatsData} = {
-	chibireimu: {
+	chibisanae: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	sanae: {
 		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibialice: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	alice: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibireisen: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	reisen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibililywhite: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	lilywhite: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibililyblack: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	lilyblack: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimomiji: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	momiji: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibishizuha: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	shizuha: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimedicine: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	medicine: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikoakuma: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	koakuma: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibinazrin: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	nazrin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibitokiko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	tokiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiremilia: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	remilia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibicirno: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	cirno: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibirumia: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	rumia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	shanghai: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibiflandre: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	flandre: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	hourai: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibiyoumu: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	youmu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyukari: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yukari: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibisuika: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	suika: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimystia: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	mystia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiminoriko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	minoriko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikeine: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	keine: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	attackkeine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibiiku: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	iku: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikoishi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	koishi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyamame: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yamame: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibichen: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	chen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyorihime: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	yorihime: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikaguya: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kaguya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimokou: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	mokou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibihatate: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	hatate: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiletty: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	letty: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibipatchouli: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	patchouli: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyuugi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yuugi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibitenshi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	tenshi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiparsee: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	parsee: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimurasa: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	murasa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikisume: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kisume: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikogasa: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kogasa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibisatori: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	satori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibieirin: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	eirin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiran: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	ran: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibidaiyousei: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	daiyousei: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibinitori: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	nitori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibihina: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	hina: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikomachi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	komachi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyuyuko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yuyuko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimeiling: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	meiling: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibisakuya: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	sakuya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibilunasa: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	lunasa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimerlin: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	merlin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibilyrica: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	lyrica: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibilayla: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	layla: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikanako: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kanako: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibirin: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	rin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiutsuho: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	utsuho: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiichirin: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	ichirin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibisunnymilk: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	sunnymilk: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibilunachild: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	lunachild: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibistarsapphire: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	starsapphire: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyuuka: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yuuka: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiaya: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	aya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibieiki: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	eiki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibishou: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	shou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiwriggle: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	wriggle: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibitewi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	tewi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	kedama: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	chibinue: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	nue: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibisuwako: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	suwako: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	reisenii: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimarisa: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	marisa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibireimu: {
+		tier: "LC",
 		doublesTier: "DOU",
 	  },
 	reimu: {
 		tier: "OU",
 		doublesTier: "DOU",
 	  },
-	  
+	chibibyakuren: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	byakuren: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	konngara: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	kikuri: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	yuugenmagan: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibitoyohime: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	toyohime: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	goliathdoll: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	sariel: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	akyuu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	genji: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	tori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	namazu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibielly: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	elly: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiorange: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	orange: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	youki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibichiyuri: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	chiyuri: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyumemi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yumemi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiellen: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	ellen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikazami: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	kazami: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibimeira: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	meira: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibisara: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	sara: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibilouise: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	louise: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimargatroid: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	margatroid: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikana: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kana: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibihakurei: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	hakurei: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikirisame: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kirisame: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikotohime: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kotohime: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyumeko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yumeko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibishinki: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	shinki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	mimichan: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	ruukoto: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibirika: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	rika: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimugetsu: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	mugetsu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibigengetsu: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	gengetsu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikurumi: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kurumi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibirikako: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	rikako: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyuki: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yuki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimai: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	mai: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	defensesunnymilk: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicallunachild: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperstarsapphire: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacknitori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalnitori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackmokou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensemokou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensereisen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalreisen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalsakuya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helpersakuya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackrumia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedrumia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helpermystia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackmystia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackchen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalchen: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseyoumu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedyoumu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackyuuka: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalyuuka: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedaya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalaya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacktenshi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensetenshi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseparsee: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalparsee: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackkoishi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedkoishi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensebyakuren: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalbyakuren: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseichirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalichirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackkanako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensekanako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackkaguya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensekaguya: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	shingyokuorb: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	shingyokupriest: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	shingyokupriestess: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackutsuho: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedutsuho: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensemomiji: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	elis: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	mima: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	speedkomachi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackkomachi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackeirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helpereirin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseyukari: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalyukari: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackalice: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalalice: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackreimu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensereimu: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedcirno: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalcirno: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseyuyuko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackyuyuko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperlunasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helpermerlin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperlyrica: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackran: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperran: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackmedicine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalmedicine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackhina: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensehina: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedshizuha: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedrin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackrin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	zombiefairy: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	helpershizuha: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacksuwako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackshou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalshou: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacktokiko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensesuwako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedyamame: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedkogasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalkogasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseremilia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedflandre: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensewriggle: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensemeiling: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	tensoku: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	attacksunnymilk: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacklunachild: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedwriggle: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperkoakuma: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedmeiling: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibielis: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibisariel: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	adventmystia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalhatate: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensehatate: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	akisisters: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenselayla: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensekeine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackremilia: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensetewi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacktewi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseeiki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseminoriko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalsuika: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacksanae: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalsanae: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackflandre: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackdaiyousei: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackeiki: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicaltoyohime: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibikonngara: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibiyuugenmagan: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacksuika: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperlilywhite: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedlilyblack: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacknue: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalnue: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensepatchouli: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseletty: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperletty: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedyorihime: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibishingyoku: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacklilyblack: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseyuugi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalnazrin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helpernazrin: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalkisume: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackyuugi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	helperkeine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defenseiku: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicaliku: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackminoriko: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	rinnosuke: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventcirno: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventreisen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	speedsariel: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attacklilywhite: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibimima: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	chibikikuri: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	adventmeiling: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	attackpatchouli: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedmarisa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackmarisa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensemurasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackmurasa: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackstarsapphire: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	attackkazami: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	speedmedicine: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensedaiyousei: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalyamame: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	technicalsatori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	defensesatori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	adventletty: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventtewi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventmarisa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventalice: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventmokou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventyukari: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventran: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	adventchen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	darkalice: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	tenma: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	sendai: {
+		tier: "UUber",
+		doublesTier: "DOU",
+	  },
+	chibikyouko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kyouko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiyoshika: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	yoshika: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibiseiga: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	seiga: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibitojiko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	tojiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibifuto: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	futo: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimiko: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	miko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibimamizou: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	mamizou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	"2hu": {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	jksanae: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	magicstones: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	chibikasen: {
+		tier: "LC",
+		doublesTier: "DOU",
+	  },
+	kasen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	scarletwitch: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	swordmaster: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	tinyghost: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	xsuwako: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	xutsuho: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	xtenshi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	basiney: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	blissea: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	//1.5r
+	  exreimu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  adventreimu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmarisa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsakuya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  koumajousakuya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsanae: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exrumia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exdaiyousei: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  excirno: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmeiling: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkoakuma: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  expatchouli: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exremilia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastremilia: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  adventremilia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exflandre: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastflandre: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  chibisatsuki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  satsuki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exletty: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  dolls: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exalice: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exlilywhite: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exlilyblack: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exlunasa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exlyrica: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmerlin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyoumu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyuyuko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastyuyuko: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exchen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exran: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastran: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exyukari: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastyukari: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exwriggle: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmystia: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkeine: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  hakutakukeine: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  extewi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exreisen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  spacelunatic: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exeirin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lasteirin: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  adventeirin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkaguya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastkaguya: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exmokou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastmokou: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exaya: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  chibihimawari: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  himawari: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmedicine: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyuuka: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkomachi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exeiki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lasteiki: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exshizuha: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exminoriko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exhina: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exnitori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmomiji: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkanako: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastkanako: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exsuwako: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastsuwako: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exkisume: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyamame: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exparsee: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyuugi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exrin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exutsuho: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastutsuho: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exsatori: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	  },
+	  exkoishi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastkoishi: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exnazrin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkogasa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exichirin: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  unzan: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmurasa: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exshou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exbyakuren: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exnue: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  shingyoku: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exrika: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  noroiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmeira: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  matenshi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exellen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkotohime: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkana: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exrikako: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exchiyuri: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyumemi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exorange: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkurumi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  ungaikyodevil: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exelly: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  hikariko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmugetsu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exgengetsu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  wayousei: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsara: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  ungaikyoangel: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exlouise: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyuki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmai: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  ayana: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyumeko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exshinki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsuika: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lastsuika: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exiku: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  extenshi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  lasttenshi: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  exhatate: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsunnymilk: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exlunachild: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exstarsapphire: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkasen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  extokiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  kosuzu: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsendai: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  chibimitori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  mitori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmitori: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  chibisasha: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  sasha: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsasha: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  chibikaren: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  isami: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  vivit: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  angelvivit: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkyouko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyoshika: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exseiga: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  extojiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exfuto: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exmamizou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exwakasagi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsekibanki: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkagerou: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exbenben: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exyatsuhashi: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exseija: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exsukuna: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exraiko: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  exkokoro: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  karen: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+	  xreimu: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  xmarisa: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  xsakuya: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  xsanae: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  xyoumu: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  xreisen: {
+		tier: "Uber",
+		doublesTier: "DOU",
+	  },
+	  chibisendai: {
+		tier: "OU",
+		doublesTier: "DOU",
+	  },
+
 	//BAN EVERYTHING FROM THE OUTSIDE
 	  
 	bulbasaur: {
@@ -5487,6 +7688,46 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
   },
    oblily: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   rubi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+   emmi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	saffi: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+ 	bellibolts: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+ 	meganiumg: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	houndoomz: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	beesiney: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	wesker: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	akuma: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+  },
+	koishixx: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
   },
