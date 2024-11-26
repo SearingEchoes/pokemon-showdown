@@ -1778,9 +1778,15 @@ export class BattleActions {
 		if (isCrit && !suppressMessages) this.battle.add('-crit', target);
 
 		if (pokemon.status === 'brn' && move.category === 'Physical' && !pokemon.hasAbility('guts')) {
-			if (this.battle.gen < 6 || move.id !== 'facade') {
+			//if (this.battle.gen < 6 || move.id !== 'facade') {
 				baseDamage = this.battle.modify(baseDamage, 0.5);
-			}
+			//}
+		}
+
+		if (pokemon.status === 'frz' && move.category === 'Special' && !pokemon.hasAbility('unwavering')) {
+			//if (this.battle.gen < 6 || move.id !== 'facade') {
+				baseDamage = this.battle.modify(baseDamage, 0.5);
+			//}
 		}
 
 		// Generation 5, but nothing later, sets damage to 1 before the final damage modifiers
