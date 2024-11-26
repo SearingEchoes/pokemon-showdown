@@ -30276,7 +30276,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
 	},
-	
+	hiddenpowerfaith: {
+		num: 237,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		realMove: "Hidden Power",
+		isNonstandard: "Past",
+		name: "Hidden Power Faith",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Faith",
+		contestType: "Clever",
+	},	
+
 	//super illegal customs
 	specialbeamcannon: {
 		num: 3000,
