@@ -789,11 +789,23 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	hiddenpower: {
 		inherit: true,
-		desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+		desc: "This move's type depends on the user's individual values (IVs), and can be any type but  Normal.",
 		shortDesc: "Varies in type based on the user's IVs.",
+		category: "Special",
+		onModifyMove(move, pokemon) {
+			move.type = pokemon.hpType || 'Dark';
+		},
 		basePower: 70,
 		basePowerCallback() {},
 		type: "???",
+	},
+	hiddenpowerfaith: {
+		inherit: true,
+		basePower: 70,
+	},
+	hiddenpowerdragon: {
+		inherit: true,
+		isNonstandard: "Future",
 	},
 	twister: {
 		inherit: true,

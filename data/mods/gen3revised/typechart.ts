@@ -473,6 +473,8 @@ export const TypeChart: {[k: string]: TypeData} = {
 
 			Faith: 1,
 		},
+		HPivs: {atk: 30},
+		HPdvs: {def: 14},
 	},
 	reason: {
 		inherit: true,

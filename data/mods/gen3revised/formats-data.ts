@@ -4,7 +4,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sanae: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibialice: {
@@ -12,7 +12,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	alice: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibireisen: {
@@ -20,7 +20,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	reisen: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibililywhite: {
@@ -28,7 +28,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	lilywhite: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibililyblack: {
@@ -36,7 +36,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	lilyblack: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimomiji: {
@@ -44,7 +44,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	momiji: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibishizuha: {
@@ -52,7 +52,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	shizuha: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimedicine: {
@@ -60,7 +60,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	medicine: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikoakuma: {
@@ -68,7 +68,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	koakuma: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibinazrin: {
@@ -76,7 +76,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	nazrin: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibitokiko: {
@@ -84,7 +84,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	tokiko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiremilia: {
@@ -92,7 +92,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	remilia: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibicirno: {
@@ -100,7 +100,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	cirno: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibirumia: {
@@ -108,7 +108,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	rumia: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	shanghai: {
@@ -120,7 +120,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	flandre: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	hourai: {
@@ -132,7 +132,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	youmu: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyukari: {
@@ -140,7 +140,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yukari: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibisuika: {
@@ -148,7 +148,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	suika: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimystia: {
@@ -156,7 +156,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	mystia: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiminoriko: {
@@ -164,7 +164,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	minoriko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikeine: {
@@ -172,7 +172,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	keine: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	attackkeine: {
@@ -184,7 +184,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	iku: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikoishi: {
@@ -192,7 +192,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	koishi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyamame: {
@@ -200,7 +200,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yamame: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibichen: {
@@ -208,7 +208,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chen: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyorihime: {
@@ -224,7 +224,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kaguya: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimokou: {
@@ -232,7 +232,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	mokou: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibihatate: {
@@ -240,7 +240,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	hatate: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiletty: {
@@ -248,7 +248,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	letty: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibipatchouli: {
@@ -256,7 +256,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	patchouli: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyuugi: {
@@ -264,7 +264,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yuugi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibitenshi: {
@@ -272,7 +272,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	tenshi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiparsee: {
@@ -280,7 +280,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	parsee: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimurasa: {
@@ -288,7 +288,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	murasa: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikisume: {
@@ -296,7 +296,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kisume: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikogasa: {
@@ -304,7 +304,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kogasa: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibisatori: {
@@ -312,7 +312,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	satori: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibieirin: {
@@ -320,7 +320,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	eirin: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiran: {
@@ -328,7 +328,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	ran: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibidaiyousei: {
@@ -336,7 +336,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	daiyousei: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibinitori: {
@@ -344,7 +344,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	nitori: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibihina: {
@@ -352,7 +352,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	hina: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikomachi: {
@@ -360,7 +360,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	komachi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyuyuko: {
@@ -368,7 +368,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yuyuko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimeiling: {
@@ -376,7 +376,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	meiling: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibisakuya: {
@@ -384,7 +384,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sakuya: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibilunasa: {
@@ -392,7 +392,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	lunasa: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimerlin: {
@@ -400,7 +400,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	merlin: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibilyrica: {
@@ -408,7 +408,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	lyrica: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibilayla: {
@@ -424,7 +424,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kanako: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibirin: {
@@ -432,7 +432,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	rin: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiutsuho: {
@@ -440,7 +440,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	utsuho: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiichirin: {
@@ -448,7 +448,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	ichirin: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibisunnymilk: {
@@ -456,7 +456,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sunnymilk: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibilunachild: {
@@ -464,7 +464,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	lunachild: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibistarsapphire: {
@@ -472,7 +472,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	starsapphire: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyuuka: {
@@ -480,7 +480,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yuuka: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiaya: {
@@ -488,7 +488,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	aya: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibieiki: {
@@ -496,7 +496,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	eiki: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibishou: {
@@ -504,7 +504,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	shou: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiwriggle: {
@@ -512,7 +512,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	wriggle: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibitewi: {
@@ -520,7 +520,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	tewi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	kedama: {
@@ -532,7 +532,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	nue: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibisuwako: {
@@ -540,7 +540,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	suwako: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	reisenii: {
@@ -552,7 +552,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	marisa: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibireimu: {
@@ -560,7 +560,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	reimu: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibibyakuren: {
@@ -568,7 +568,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	byakuren: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	konngara: {
@@ -620,7 +620,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	elly: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiorange: {
@@ -628,7 +628,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	orange: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	youki: {
@@ -640,7 +640,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	chiyuri: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyumemi: {
@@ -648,7 +648,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yumemi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiellen: {
@@ -656,7 +656,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	ellen: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikazami: {
@@ -672,7 +672,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	meira: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibisara: {
@@ -680,7 +680,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sara: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibilouise: {
@@ -688,11 +688,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	louise: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimargatroid: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	margatroid: {
@@ -704,7 +704,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kana: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibihakurei: {
@@ -728,7 +728,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kotohime: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyumeko: {
@@ -736,7 +736,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yumeko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibishinki: {
@@ -744,7 +744,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	shinki: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	mimichan: {
@@ -760,7 +760,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	rika: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimugetsu: {
@@ -768,7 +768,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	mugetsu: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibigengetsu: {
@@ -776,7 +776,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	gengetsu: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikurumi: {
@@ -784,7 +784,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kurumi: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibirikako: {
@@ -792,7 +792,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	rikako: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyuki: {
@@ -800,7 +800,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yuki: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimai: {
@@ -808,7 +808,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	mai: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	defensesunnymilk: {
@@ -1464,7 +1464,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	sendai: {
-		tier: "UUber",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibikyouko: {
@@ -1472,7 +1472,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kyouko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiyoshika: {
@@ -1480,7 +1480,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	yoshika: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibiseiga: {
@@ -1488,7 +1488,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	seiga: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibitojiko: {
@@ -1496,7 +1496,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	tojiko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibifuto: {
@@ -1504,7 +1504,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	futo: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimiko: {
@@ -1512,7 +1512,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	miko: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	chibimamizou: {
@@ -1520,7 +1520,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	mamizou: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	"2hu": {
@@ -1540,7 +1540,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	kasen: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	scarletwitch: {
@@ -1657,7 +1657,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  dolls: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	  exalice: {
@@ -2073,11 +2073,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  chibimitori: {
-		tier: "OU",
+		tier: "LC",
 		doublesTier: "DOU",
 	  },
 	  mitori: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	  exmitori: {
@@ -2085,11 +2085,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  chibisasha: {
-		tier: "OU",
+		tier: "LC",
 		doublesTier: "DOU",
 	  },
 	  sasha: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	  exsasha: {
@@ -2097,7 +2097,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  chibikaren: {
-		tier: "OU",
+		tier: "LC",
 		doublesTier: "DOU",
 	  },
 	  isami: {
@@ -2205,7 +2205,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  chibisendai: {
-		tier: "OU",
+		tier: "LC",
 		doublesTier: "DOU",
 	  },
 
