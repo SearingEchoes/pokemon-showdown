@@ -93,7 +93,7 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 3] Touhoumon Revised AG",
 
-		mod: 'gen3purple',
+		mod: 'gen3revised',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
 		banlist: ['King\'s Rock', 'Sand Veil'],
 	},
