@@ -792,7 +792,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		desc: "This move's type depends on the user's individual values (IVs), and can be any type but Normal.",
 		shortDesc: "Varies in type based on the user's IVs.",
 		category: "Special",
-		inherit: true,
 		basePower: 0,
 		basePowerCallback(pokemon) {
 			const bp = pokemon.hpPower || 70;
