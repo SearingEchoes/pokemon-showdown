@@ -1273,13 +1273,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Electric"],
 		abilities: {0: "Soundproof", 1: "Pickup"},
-		baseStats: {hp: 45, atk: 60, def: 30, spa: 60, spd: 30, spe: 75},
+		baseStats: {hp: 50, atk: 55, def: 30, spa: 75, spd: 30, spe: 60},
 	},
 	lunachild: {
 		inherit: true,
 		types: ["Electric", "Grass"],
 		abilities: {0: "Soundproof", 1: "Pickup"},
-		baseStats: {hp: 60, atk: 80, def: 45, spa: 80, spd: 45, spe: 90},
+		baseStats: {hp: 65, atk: 75, def: 45, spa: 90, spd: 45, spe: 80},
 	},
 	chibistarsapphire: {
 		inherit: true,

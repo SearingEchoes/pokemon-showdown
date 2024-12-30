@@ -14,6 +14,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 80,
 		pp: 10,
+		gen: 3,
+	},
+	acrobatics: {
+		inherit: true,
+		type: "Electric",
+		gen: 3,
 	},
 	firepunch: {
 		inherit: true,
@@ -102,6 +108,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	iceshard: {
 		inherit: true,
 		pp: 25,
+		gen: 3,
 	},
 	blackripple: {
 		inherit: true,
@@ -274,6 +281,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		shortDesc: "User takes 1/3 recoil. No burn chance.",
 		pp: 10,
 		secondary: null,
+		gen: 3,
 	},
 	firespin: {
 		inherit: true,
@@ -321,10 +329,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	incinerate: {
 		inherit: true,
 		pp: 20,
+		gen: 3,
 	},
 	feint: {
 		inherit: true,
 		basePower: 50,
+		gen: 3,
 	},
 	recover: {
 		inherit: true,
@@ -346,6 +356,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 120,
 		pp: 10,
 		target: "normal",
+		gen: 3,
 	},
 	lightscreen: {
 		inherit: true,
@@ -445,6 +456,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		pp: 10,
 		secondary: null,
 		target: "normal",
+		gen: 3,
 	},
 	leechlife: {
 		inherit: true,
@@ -510,6 +522,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	aquajet: {
 		inherit: true,
 		pp: 25,
+		gen: 3,
 	},
 	furyswipes: {
 		inherit: true,
@@ -588,6 +601,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	gunkshot: {
 		inherit: true,
 		accuracy: 85,
+		gen: 3,
 	},
 	mudshot: {
 		inherit: true,
@@ -613,10 +627,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		mindBlownRecoil: null,
 		onAfterMove() {},
 		recoil: [33, 100],
+		gen: 3,
 	},
 	suckerpunch: {
 		inherit: true,
 		basePower: 75,
+		gen: 3,
 	},
 	luckychant: {
 		inherit: true,
@@ -631,6 +647,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		},
 		target: "self",
 		type: "Faith",
+		gen: 3,
 	},
 	lockon: {
 		inherit: true,
@@ -776,6 +793,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 95,
 		basePower: 60,
 		type: "Faith",
+		gen: 3,
 	},
 	energylight: {
 		inherit: true,
@@ -786,103 +804,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		accuracy: 85,
 		type: "Normal",
-	},
-	hiddenpower: {
-		inherit: true,
-		desc: "This move's type depends on the user's individual values (IVs), and can be any type but Normal.",
-		shortDesc: "Varies in type based on the user's IVs.",
-		category: "Special",
-		basePower: 0,
-		basePowerCallback(pokemon) {
-			const bp = pokemon.hpPower || 70;
-			this.debug('BP: ' + bp);
-			return bp;
-		},
-		type: "???",
-	},
-	hiddenpowerfaith: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerdragon: {
-		inherit: true,
-		isNonstandard: "Future",
-	},
-	hiddenpowerbug: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerdark: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerelectric: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerfighting: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerfire: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerflying: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerghost: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowergrass: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerground: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerice: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerpoison: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerpsychic: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerrock: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowersteel: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
-	},
-	hiddenpowerwater: {
-		inherit: true,
-		category: "Special",
-		basePower: 70,
 	},
 	twister: {
 		inherit: true,
@@ -975,72 +896,94 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		onHit(target) {
 			if (target.status === 'par') target.cureStatus();
 		},
+		gen: 3,
 	},
 	accelerock: {
 		inherit: true,
 		pp: 25,
 		flags: {protect: 1, mirror: 1},
+		gen: 3,
 	},
 	voltswitch: {
 		inherit: true,
+		gen: 3,
 	},
 	closecombat: {
 		inherit: true,
+		gen: 3,
 	},
 	comeuppance: {
 		inherit: true,
+		gen: 3,
 	},
 	holdback: {
 		inherit: true,
+		gen: 3,
 	},
 	payback: {
 		inherit: true,
+		gen: 3,
 	},
 	quiverdance: {
 		inherit: true,
+		gen: 3,
 	},
 	flipturn: {
 		inherit: true,
+		gen: 3,
 	},
 	poisonbomb: {
 		inherit: true,
 		type: "Poison",
+		gen: 3,
 	},
 	tripleaxel: {
 		inherit: true,
+		gen: 3,
 	},
 	darkpulse: {
 		inherit: true,
+		gen: 3,
 	},
 	rockpolish: {
 		inherit: true,
+		gen: 3,
 	},
 	powerwhip: {
 		inherit: true,
+		gen: 3,
 	},
 	nastyplot: {
 		inherit: true,
+		gen: 3,
 	},
 	topsyturvy: {
 		inherit: true,
+		gen: 3,
 	},
 	aurasphere: {
 		inherit: true,
+		gen: 3,
 	},
 	bugbuzz: {
 		inherit: true,
+		gen: 3,
 	},
 	uturn: {
 		inherit: true,
+		gen: 3,
 	},
 	earthpower: {
 		inherit: true,
+		gen: 3,
 	},
 	poisonjab: {
 		inherit: true,
+		gen: 3,
 	},
 	noretreat: {
 		inherit: true,
+		gen: 3,
 	},
 	taunt: {
 		inherit: true,
@@ -1259,6 +1202,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {protect: 1, mirror: 1},
 		pp: 25,
+		gen: 3,
 	},
 	nightdaze: {
 		inherit: true,
@@ -1273,6 +1217,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				spe: -1,
 			},
 		},
+		gen: 3,
 	},
 	rockwrecker: {
 		inherit: true,
@@ -1289,6 +1234,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				},
 			},
 		},
+		gen: 3,
 	},
 	braver: {
 		inherit: true,
@@ -1318,6 +1264,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 50,
 		pp: 15,
+		gen: 3,
 	},
 	secretpower: {
 		inherit: true,
@@ -1387,6 +1334,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		pp: 10,
 		self: {},
 		condition: {},
+		gen: 3,
 	},
 	blazekick: {
 		inherit: true,
@@ -1436,6 +1384,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			chance: 20,
 			volatileStatus: 'flinch',
 		},
+		gen: 3,
 	},
 	overheat: {
 		inherit: true,
@@ -1444,6 +1393,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	bravebird: {
 		inherit: true,
 		pp: 10,
+		gen: 3,
 	},
 	rocktomb: {
 		inherit: true,
@@ -1478,6 +1428,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				spd: -1,
 			},
 		},
+		gen: 3,
 	},
 	shadowpunch: {
 		inherit: true,
@@ -1580,6 +1531,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		},
 		secondary: null,
 		target: "self",
+		gen: 3,
 	},
 	rockblast: {
 		inherit: true,
@@ -1626,5 +1578,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	mortalspin: {
 		inherit: true,
+		gen: 3,
 	},
 };

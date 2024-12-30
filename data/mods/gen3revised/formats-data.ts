@@ -1777,7 +1777,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  chibihimawari: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DOU",
 	  },
 	  himawari: {
