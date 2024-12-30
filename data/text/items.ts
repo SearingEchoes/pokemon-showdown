@@ -2577,17 +2577,38 @@ export const ItemsText: {[k: string]: ItemText} = {
 	rockofsaurian: {
 		name: "Rock of Saurian",
 		desc: "The user will Saurian Tribe On upon entry. This overwrites their types and makes them Fire, but they will have a 1.8x boost to both Fire and Pyro as if they had STAB with an additional +20% increase. Offensive charge moves will have their charge turn removed, but they now lower Speed per use. The user also becomes immune to flinching. The rock is lost if the user takes super-effective damage.",
-		shortDesc: "Become Fire, prevent flinch, and removes offensive charge move turns.",
+		shortDesc: "Prevent flinch, and removes offensive charge move turns.",
 	},
 	starofninja: {
 		name: "Star of Ninja",
 		desc: "The user will Ninja Tribe On upon entry. This overwrites their types and makes them Grass, but they will have a 1.8x boost to both Grass and Nature as if they had STAB with an additional +20% increase. Grass/Nature moves of all kinds will gain perfect accuracy if the holder is faster than the target. Additionally, if a move fails or misses against the holder for any reason, the holder will counter with AntiDamage, a 30BP Grass/Physical move. The star is lost if hit by super-effective damage.",
-		shortDesc: "Become Grass. Max out Grass/Nature move accuracy if faster, and counter misses.",
+		shortDesc: "Max out Grass/Nature move accuracy if faster, and counter misses.",
 	},
 	alicecard: {
 		name: "Alice Card",
 		desc: "Cuts all incoming direct damage from strong targets by 40%. A strong target is defined by something that possesses 550 or more BST. If the target has 549 or less, the holder of this item takes 40% more damage instead.",
 		shortDesc: "Decreases the damage from strong foes by 40%. Otherwise, take 40% more.",
 	},
+	cursedtag: {
+		name: "Cursed Tag",
+		desc: "Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.",
 
+		heal: "  [POKEMON] restored a little HP using its Cursed Tag!",
+	},
+	parasol: {
+		name: "Parasol",
+		desc: "Doubles Yuuka's Defense. (all forms)"
+	},
+	lunarvest: {
+		name: "Lunar Vest",
+		desc: "Doubles Reisen II's Defense."
+	},
+	iceburngem: {
+		name: "Iceburn Gem",
+		desc: "Doubles Yuki and Mai's Sp.Atk. (middle form only)"
+	},
+	scarletrock: {
+		name: "Scarlet Rock",
+		desc: "Weather effects from the holder last 8 turns instead of 5.",
+	},
 };

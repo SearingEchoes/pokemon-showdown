@@ -9480,6 +9480,11 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		start: "  [SOURCE] is cheering on [POKEMON]!",
 	},
+	eeriewave: {
+		name: "Eerie Wave",
+		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
 	
 	//super illegal stuff
 	specialbeamcannon: {

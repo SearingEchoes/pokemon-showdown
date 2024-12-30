@@ -179,11 +179,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	blaze: {
 		name: "Blaze",
-		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack.",
+		desc: "When at 1/3 or less of its maximum HP, rounded down, the offensive stat is multiplied by 1.5 while using a Fire-type attack.",
 		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks.",
 		gen4: {
-			desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its Fire-type attacks have their power multiplied by 1.5.",
-			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Fire-type attacks have 1.5x power.",
+			desc: "When at 1/3 or less of its maximum HP, rounded down, Fire-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/3 or less of its max HP, the user's Fire-type attacks have 1.5x power.",
 		},
 	},
 	bulletproof: {
@@ -488,8 +488,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	flareboost: {
 		name: "Flare Boost",
-		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.",
-		shortDesc: "While this Pokemon is burned, its special attacks have 1.5x power.",
+		desc: "While burned, the power of special attacks is multiplied by 1.5.",
+		shortDesc: "While  burned, special attacks have 1.5x power.",
 	},
 	flashfire: {
 		name: "Flash Fire",
@@ -567,7 +567,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	furcoat: {
 		name: "Fur Coat",
-		shortDesc: "This Pokemon's Defense is doubled.",
+		shortDesc: "This character's Defense is doubled.",
 	},
 	galewings: {
 		name: "Gale Wings",
@@ -624,8 +624,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	guts: {
 		name: "Guts",
-		desc: "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5. This Pokemon's physical attacks ignore the burn effect of halving damage.",
-		shortDesc: "If this Pokemon is statused, its Attack is 1.5x; ignores burn halving physical damage.",
+		desc: "With a non-volatile status condition, Attack is multiplied by 1.5. Physical attacks also are not weakened by being Burned.",
+		shortDesc: "If statused, Attack is 1.5x; ignores burn halving physical damage.",
 	},
 	hadronengine: {
 		name: "Hadron Engine",
@@ -782,7 +782,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	intimidate: {
 		name: "Intimidate",
 		desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
-		shortDesc: "On switch-in, this Pokemon lowers the Attack of opponents by 1 stage.",
+		shortDesc: "On switch-in, lowers the Attack of opponents by 1 stage.",
 		gen7: {
 			desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.",
 		},
@@ -1772,7 +1772,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	steelworker: {
 		name: "Steelworker",
-		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack.",
+		shortDesc: "Offensive stat is multiplied by 1.5 while using a Steel-type attack.",
 	},
 	steelyspirit: {
 		name: "Steely Spirit",
@@ -1985,8 +1985,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	toxicboost: {
 		name: "Toxic Boost",
-		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
-		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
+		desc: "While poisoned, the power of physical attacks is multiplied by 1.5.",
+		shortDesc: "While poisoned, physical attacks have 1.5x power.",
 	},
 	toxicchain: {
 		name: "Toxic Chain",
@@ -2430,5 +2430,92 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	gunteleport: {
 		name: "Gun Teleport",
 		shortdesc: "Fires one shot of Samurai Edge when switching in.",
+	},
+	satsuinohado: {
+		name: "Satsui no Hado",
+		desc: "At 50% or less HP, all attacks become super-effective. This also applies to attacks hitting the owner of this ability. Having this ability also allows almost any attack to bypass type immunities for normal 1x damage at all times.",
+		shortDesc: "All attacks become super-effective at 50% HP or less.",
+	},
+	blackbarrier: {
+		name: "Black Barrier",
+		desc: "The user gains a barrier that either reduces the damage of an incoming hit by 150 points, or by half - whichever is smaller. The barrier can be permanently removed by striking it with a move that is Flying, Aero, or some Wind moves.",
+		shortDesc: "Barrier greatly reduces damage. Weak to windy moves.",
+	},
+	photonzolplating: {
+		name: "Photonzol Plating",
+		shortdesc: "Null crits, NV statuses, and OHKOs.",
+	},
+	gap: {
+		name: "Gap",
+		shortDesc: "Prevents incoming critical hits.",
+	},
+	flameabsorb: {
+		name: "Flame Absorb",
+		desc: "Immunity to Fire-type moves and restores 1/4 of maximum HP, rounded down, when hit by a Fire-type move.",
+		shortDesc: "Heals 1/4 of max HP when hit by Fire moves; Fire immunity.",
+	},
+	marvelveil: {
+		name: "Marvel Veil",
+		shortDesc: "If this character has a non-volatile status condition, its Defense is multiplied by 1.5.",
+	},
+	manabarrier: {
+		name: "Mana Barrier",
+		shortDesc: "Prevents others from lowering this character's stat stages.",
+	},
+	wonderveil: {
+		name: "Wonder Veil",
+		desc: "Non-damaging moves that check accuracy have their accuracy changed to 50% when used against this target. This effect comes before other effects that modify accuracy.",
+		shortDesc: "Status moves with accuracy checks are 50% accurate when used on this  target.",
+	},
+	multigraze: {
+		name: "Multigraze",
+		shortDesc: "If this character is at full HP, damage taken from attacks is halved.",
+	},
+	consecrate: {
+		name: "Consecrate",
+		shortDesc: "Normal-type moves become Faith-type and have 1.3x power.",
+	},
+	floraabsorb: {
+		name: "Flora Absorb",
+		desc: "Immunity to Grass-type moves and restores 1/4 of maximum HP, rounded down, when hit by a Grass-type move.",
+		shortDesc: "Heals 1/4 of max HP when hit by Grass moves; Grass immunity.",
+	},
+	unwavering: {
+		name: "Unwavering",
+		desc: "With a non-volatile status condition, Sp. Attack is multiplied by 1.5. Special attacks also are not weakened by Frostbite/Freeze.",
+		shortDesc: "If statused, Sp. Attack is 1.5x; ignores freeze halving special damage.",
+	},
+	fascinate: {
+		name: "Fascinate",
+		desc: "On switch-in, lowers the Sp. Attack of opponents by 1 stage. Anyone with the Inner Focus, Oblivious, Own Tempo, or behind a substitute are immune.",
+		shortDesc: "On switch-in, lowers the Attack of opponents by 1 stage.",
+	},
+	coldheart: {
+		name: "Cold Heart",
+		desc: "When at 1/3 or less of its maximum HP, rounded down, the offensive stat is multiplied by 1.5 while using an Ice-type attack.",
+		shortDesc: "At 1/3 or less of its max HP, the user's offensive stat is 1.5x with Ice attacks.",
+		gen4: {
+			desc: "When at 1/3 or less of its maximum HP, rounded down, the user's Ice-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/3 or less of its max HP, the user's Ice-type attacks have 1.5x power.",
+		},
+	},
+	innerpower: {
+		name: "Inner Power",
+		desc: "When at 1/3 or less of its maximum HP, rounded down, the offensive stat is multiplied by 1.5 while using a Fighting-type attack.",
+		shortDesc: "At 1/3 or less of its max HP, the user's offensive stat is 1.5x with Fighting attacks.",
+		gen4: {
+			desc: "When at 1/3 or less of its maximum HP, rounded down, the user's Fighting-type attacks have their power multiplied by 1.5.",
+			shortDesc: "At 1/3 or less of its max HP, the user's Fighting-type attacks have 1.5x power.",
+		},
+	},
+	ambition: {
+		name: "Ambition",
+		desc: "User's Special Attack is raised by 1 stage if user attacks and knocks out another target.",
+		shortDesc: "User's Sp. Atk is raised by 1 stage if it attacks and KO's another target.",
+	},
+	occultboost: {
+		name: "Occult Boost",
+		desc: "User's highest stat is raised by 1 stage if it attacks and knocks out another target. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+		shortDesc: "The highest stat is raised by 1 if it attacks and KO's another target.",
 	},
 };
