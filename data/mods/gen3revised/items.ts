@@ -99,7 +99,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
-		desc: "Holder's Fire-type attacks have 1.2x power.",
+		shortDesc: "Holder's Fire-type attacks have 1.2x power.",
 	},
 	hardstone: {
 		inherit: true,
@@ -232,7 +232,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 		desc: "Holder's Psychic-type attacks have 1.2x power.",
 	},
 	
-	// dragonfang: null,
+	dragonfang: {
+		isNonstandard: "Unobtainable",
+	},
 	// doublesoul: null,
 	// bigcloud: null,
 	// darkribbon: null,
