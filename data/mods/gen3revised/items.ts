@@ -14,6 +14,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		itemUser: ["Cirno"],
+		desc: "Doubles regular Cirno's offensive stats.",
 	},
 	souldew: {
 		inherit: true,
@@ -32,104 +33,32 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		itemUser: ["Toyohime", "Yorihime"],
+		desc: "Increases Toyohime and Yorihime's offensive stats by 1.5x.",
 	},
-	elderpain: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	psychowand: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	vintotie: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	doublesoul: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bigcloud: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	darkribbon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	powerribbon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	staminaribbon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	chinesedress: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	kimono: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	airlineuniform: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-		gen: 4,
-	},
-	bunnycostume: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	nurseuniform: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	maiduniform: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	mistressoutfit: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	sportssweater: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	gothicoutfit: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	swimsuit: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	ninjacostume: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	camouflage: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	thickfur: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	witchcostume: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	blazer: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	weddingdress: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
+	elderpain: null,
+	psychowand: null,
+	vintotie: null,
+	doublesoul: null,
+	bigcloud: null,
+	darkribbon: null,
+	powerribbon: null,
+	staminaribbon: null,
+	chinesedress: null,
+	kimono: null,
+	airlineuniform: null,
+	bunnycostume: null,
+	nurseuniform: null,
+	maiduniform: null,
+	mistressoutfit: null,
+	sportssweater: null,
+	gothicoutfit: null,
+	swimsuit: null,
+	ninjacostume: null,
+	camouflage: null,
+	thickfur: null,
+	witchcostume: null,
+	blazer: null,
+	weddingdress: null,
 	powerherb: {
 		inherit: true,
 		isNonstandard: null,
@@ -173,6 +102,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Fighting-type attacks have 1.2x power.",
 	},
 	blackglasses: {
 		inherit: true,
@@ -182,6 +112,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Dark-type attacks have 1.2x power.",
 	},
 	charcoal: {
 		inherit: true,
@@ -191,6 +122,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		shortDesc: "Holder's Fire-type attacks have 1.2x power.",
 	},
 	dragonfang: {
 		inherit: true,
@@ -204,6 +136,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Rock-type attacks have 1.2x power.",
 	},
 	magnet: {
 		inherit: true,
@@ -213,6 +146,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Electric-type attacks have 1.2x power.",
 	},
 	metalcoat: {
 		inherit: true,
@@ -222,6 +156,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Steel-type attacks have 1.2x power.",
 	},
 	miracleseed: {
 		inherit: true,
@@ -231,6 +166,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Grass-type attacks have 1.2x power.",
 	},
 	mysticwater: {
 		inherit: true,
@@ -240,6 +176,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Water-type attacks have 1.2x power.",
 	},
 	nevermeltice: {
 		inherit: true,
@@ -249,6 +186,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Ice-type attacks have 1.2x power.",
 	},
 	poisonbarb: {
 		inherit: true,
@@ -258,6 +196,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Poison-type attacks have 1.2x power.",
 	},
 	sharpbeak: {
 		inherit: true,
@@ -267,6 +206,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Flying-type attacks have 1.2x power.",
 	},
 	silkscarf: {
 		inherit: true,
@@ -276,6 +216,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Normal-type attacks have 1.2x power.",
 	},
 	silverpowder: {
 		inherit: true,
@@ -285,6 +226,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Bug-type attacks have 1.2x power.",
 	},
 	softsand: {
 		inherit: true,
@@ -294,6 +236,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Ground-type attacks have 1.2x power.",
 	},
 	spelltag: {
 		inherit: true,
@@ -303,6 +246,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Ghost-type attacks have 1.2x power.",
 	},
 	twistedspoon: {
 		inherit: true,
@@ -312,5 +256,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		onModifyAtk() {},
+		desc: "Holder's Psychic-type attacks have 1.2x power.",
 	},
 };
