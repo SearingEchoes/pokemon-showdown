@@ -233,9 +233,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	
 	dragonfang: null,
-	elderpain: null,
-	psychowand: null,
-	vintotie: null,
 	doublesoul: null,
 	bigcloud: null,
 	darkribbon: null,
