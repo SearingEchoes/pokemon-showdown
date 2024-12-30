@@ -25980,7 +25980,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "EX Luna Child",
 		types: ["Electric", "Grass"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 75, atk: 105, def: 70, spa: 105, spd: 70, spe: 110},
+		baseStats: {hp: 80, atk: 90, def: 70, spa: 115, spd: 70, spe: 110},
 		abilities: {0: "Lightning Rod", 1: "Flora Absorb"},
 		heightm: 9001,
 		weightkg: 25.0,

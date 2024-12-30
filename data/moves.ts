@@ -30276,22 +30276,97 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
 	},
-	hiddenpowerfaith: {
-		num: 237,
+	multipulse: {
+		num: 2245,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 75,
 		category: "Special",
-		realMove: "Hidden Power",
-		isNonstandard: "Past",
-		name: "Hidden Power Faith",
-		pp: 15,
+		name: "Multi-Pulse",
+		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyType(move, pokemon, item) {
+			switch (item.name) {
+			case 'charcoal':
+				move.type = 'Fire';
+				break;
+			case 'mysticwater':
+				move.type = 'Water';
+				break;
+			case 'hardstone':
+				move.type = 'Rock';
+				break;
+			case 'nevermeltice':
+				move.type = 'Ice';
+				break;
+			case 'blackbelt':
+				move.type = 'Fighting';
+				break;
+			case 'blackglasses':
+				move.type = 'Dark';
+				break;
+			case 'magnet':
+				move.type = 'Electric';
+				break;
+			case 'metalcoat':
+				move.type = 'Steel';
+				break;
+			case 'miracleseed':
+				move.type = 'Grass';
+				break;
+			case 'silkscarf':
+				move.type = 'Normal';
+				break;
+			case 'poisonbarb':
+				move.type = 'Poison';
+				break;
+			case 'sharpbeak':
+				move.type = 'Flying';
+				break;
+			case 'silverpowder':
+				move.type = 'Bug';
+				break;
+			case 'softsand':
+				move.type = 'Ground';
+				break;
+			case 'spelltag':
+				move.type = 'Ghost';
+				break;
+			case 'twistedspoon':
+				move.type = 'Psychic';
+				break;
+			case 'priestgarb':
+				move.type = 'Faith';
+				break;
+			}			
+		},
+
 		secondary: null,
 		target: "normal",
-		type: "Faith",
-		contestType: "Clever",
-	},	
+		type: "???",
+		contestType: "Beautiful",
+	},
+	eeriewave: {
+		num: 2246,
+		accuracy: 100,
+		basePower: 50,
+		category: "Special",
+		name: "Eerie Wave",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Ghost",
+		contestType: "Cool",
+	},
 
 	//super illegal customs
 	specialbeamcannon: {
