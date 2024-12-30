@@ -2499,15 +2499,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "At 1/3 or less of its max HP, the user's Ice-type attacks have 1.5x power.",
 		},
 	},
-	innerpower: {
-		name: "Inner Power",
-		desc: "When at 1/3 or less of its maximum HP, rounded down, the offensive stat is multiplied by 1.5 while using a Fighting-type attack.",
-		shortDesc: "At 1/3 or less of its max HP, the user's offensive stat is 1.5x with Fighting attacks.",
-		gen4: {
-			desc: "When at 1/3 or less of its maximum HP, rounded down, the user's Fighting-type attacks have their power multiplied by 1.5.",
-			shortDesc: "At 1/3 or less of its max HP, the user's Fighting-type attacks have 1.5x power.",
-		},
-	},
 	ambition: {
 		name: "Ambition",
 		desc: "User's Special Attack is raised by 1 stage if user attacks and knocks out another target.",
