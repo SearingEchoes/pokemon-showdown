@@ -93,6 +93,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 		onEat(pokemon) {
 			this.heal(30);
 		},
+		desc: "gfhfghdsfvcbvcbvcgfdgh.",
 	},
 	starfberry: {
 		inherit: true,
