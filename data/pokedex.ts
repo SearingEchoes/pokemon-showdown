@@ -11822,8 +11822,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 1.2,
 		weightkg: 17,
 		color: "Black",
-		prevo: "Spewpa",
-		evoLevel: 12,
 		eggGroups: ["Bug"],
 	},
 	vivillonpokeball: {
