@@ -40,12 +40,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 	aguavberry: {
 		name: "Aguav Berry",
 		desc: "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
-		//gen7: {
-		//	desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
-		//},
-		//gen6: {
-		//	desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
-		//},
+		// gen7: {
+			// desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
+		// },
+		// gen6: {
+			// desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+		// },
 	},
 	airballoon: {
 		name: "Air Balloon",
@@ -140,9 +140,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	blackbelt: {
 		name: "Black Belt",
 		desc: "Holder's Fighting-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Fighting-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Fighting-type attacks have 1.1x power.",
+		// },
 	},
 	blacksludge: {
 		name: "Black Sludge",
@@ -153,9 +153,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	blackglasses: {
 		name: "Black Glasses",
 		desc: "Holder's Dark-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Dark-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Dark-type attacks have 1.1x power.",
+		// },
 	},
 	blastoisinite: {
 		name: "Blastoisinite",
@@ -222,9 +222,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	charcoal: {
 		name: "Charcoal",
 		desc: "Holder's Fire-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Fire-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Fire-type attacks have 1.1x power.",
+		// },
 	},
 	charizarditex: {
 		name: "Charizardite X",
@@ -544,12 +544,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 	figyberry: {
 		name: "Figy Berry",
 		desc: "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
-		gen7: {
-			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
-		},
-		gen6: {
-			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
-		},
+		// gen7: {
+			// desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
+		// },
+		// gen6: {
+			// desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
+		// },
 	},
 	firegem: {
 		name: "Fire Gem",
@@ -767,9 +767,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	hardstone: {
 		name: "Hard Stone",
 		desc: "Holder's Rock-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Rock-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Rock-type attacks have 1.1x power.",
+		// },
 	},
 	healball: {
 		name: "Heal Ball",
@@ -810,12 +810,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 	iapapaberry: {
 		name: "Iapapa Berry",
 		desc: "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
-		gen7: {
-			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
-		},
-		gen6: {
-			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
-		},
+		// gen7: {
+			// desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
+		// },
+		// gen6: {
+			// desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
+		// },
 	},
 	icegem: {
 		name: "Ice Gem",
@@ -1052,19 +1052,19 @@ export const ItemsText: {[k: string]: ItemText} = {
 	magnet: {
 		name: "Magnet",
 		desc: "Holder's Electric-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Electric-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Electric-type attacks have 1.1x power.",
+		// },
 	},
 	magoberry: {
 		name: "Mago Berry",
 		desc: "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
-		gen7: {
-			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
-		},
-		gen6: {
-			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
-		},
+		// gen7: {
+			// desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
+		// },
+		// gen6: {
+			// desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+		// },
 	},
 	magostberry: {
 		name: "Magost Berry",
@@ -1125,10 +1125,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Metal Coat",
 		desc: "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
 		shortDesc: "Holder's Steel-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Steel-type attacks have 1.1x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
-			shortDesc: "Holder's Steel-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Steel-type attacks have 1.1x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
+			// shortDesc: "Holder's Steel-type attacks have 1.1x power.",
+		// },
 	},
 	metalpowder: {
 		name: "Metal Powder",
@@ -1171,9 +1171,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	miracleseed: {
 		name: "Miracle Seed",
 		desc: "Holder's Grass-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Grass-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Grass-type attacks have 1.1x power.",
+		// },
 	},
 	mirrorherb: {
 		name: "Mirror Herb",
@@ -1201,9 +1201,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	mysticwater: {
 		name: "Mystic Water",
 		desc: "Holder's Water-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Water-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Water-type attacks have 1.1x power.",
+		// },
 	},
 	nanabberry: {
 		name: "Nanab Berry",
@@ -1220,9 +1220,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	nevermeltice: {
 		name: "Never-Melt Ice",
 		desc: "Holder's Ice-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Ice-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Ice-type attacks have 1.1x power.",
+		// },
 	},
 	nomelberry: {
 		name: "Nomel Berry",
@@ -1318,9 +1318,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	poisonbarb: {
 		name: "Poison Barb",
 		desc: "Holder's Poison-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Poison-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Poison-type attacks have 1.1x power.",
+		// },
 	},
 	poisongem: {
 		name: "Poison Gem",
@@ -1602,9 +1602,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	sharpbeak: {
 		name: "Sharp Beak",
 		desc: "Holder's Flying-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Flying-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Flying-type attacks have 1.1x power.",
+		// },
 	},
 	sharpedonite: {
 		name: "Sharpedonite",
@@ -1636,16 +1636,16 @@ export const ItemsText: {[k: string]: ItemText} = {
 	silkscarf: {
 		name: "Silk Scarf",
 		desc: "Holder's Normal-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Normal-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Normal-type attacks have 1.1x power.",
+		// },
 	},
 	silverpowder: {
 		name: "Silver Powder",
 		desc: "Holder's Bug-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Bug-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Bug-type attacks have 1.1x power.",
+		// },
 	},
 	sitrusberry: {
 		name: "Sitrus Berry",
@@ -1681,9 +1681,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	softsand: {
 		name: "Soft Sand",
 		desc: "Holder's Ground-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Ground-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Ground-type attacks have 1.1x power.",
+		// },
 	},
 	solganiumz: {
 		name: "Solganium Z",
@@ -1692,16 +1692,16 @@ export const ItemsText: {[k: string]: ItemText} = {
 	souldew: {
 		name: "Soul Dew",
 		desc: "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.",
-		gen6: {
-			desc: "If held by a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x.",
-		},
+		// gen6: {
+			// desc: "If held by a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x.",
+		// },
 	},
 	spelltag: {
 		name: "Spell Tag",
 		desc: "Holder's Ghost-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Ghost-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Ghost-type attacks have 1.1x power.",
+		// },
 	},
 	spelonberry: {
 		name: "Spelon Berry",
@@ -2236,9 +2236,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	twistedspoon: {
 		name: "Twisted Spoon",
 		desc: "Holder's Psychic-type attacks have 1.2x power.",
-		gen3: {
-			desc: "Holder's Psychic-type attacks have 1.1x power.",
-		},
+		// gen3: {
+			// desc: "Holder's Psychic-type attacks have 1.1x power.",
+		// },
 	},
 	tyranitarite: {
 		name: "Tyranitarite",
@@ -2333,12 +2333,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 	wikiberry: {
 		name: "Wiki Berry",
 		desc: "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
-		gen7: {
-			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
-		},
-		gen6: {
-			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
-		},
+		// gen7: {
+			// desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
+		// },
+		// gen6: {
+			// desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
+		// },
 	},
 	wiseglasses: {
 		name: "Wise Glasses",
