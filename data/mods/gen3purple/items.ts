@@ -144,4 +144,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: "Unobtainable",
 	},
+	lightclay: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
 };
