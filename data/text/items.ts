@@ -40,12 +40,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 	aguavberry: {
 		name: "Aguav Berry",
 		desc: "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
-		gen7: {
-			desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
-		},
-		gen6: {
-			desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
-		},
+		//gen7: {
+		//	desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
+		//},
+		//gen6: {
+		//	desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+		//},
 	},
 	airballoon: {
 		name: "Air Balloon",
