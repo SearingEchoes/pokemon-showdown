@@ -1,4 +1,4 @@
-export const Items: {[k: string]: ModdedItemData} = {
+export const Items: {[itemid: string]: ModdedItemData} = {
 	icyball: {
 		inherit: true,
 		onModifyAtkPriority: 1,
@@ -38,7 +38,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 
 	powerherb: {
 		inherit: true,
-		isNonstandard: null,
+		//isNonstandard: null,
 		gen: 3,
 	},
 	widelens: {
