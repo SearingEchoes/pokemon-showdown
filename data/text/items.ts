@@ -1653,6 +1653,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 		gen3: {
 			desc: "Restores 30 HP when at 1/2 max HP or less. Single use.",
 		},
+		gen3purple: {
+			desc: "Raises a random stat by 2 when at 1/2 max HP or less (not acc/eva). Single use.",
+		},
 	},
 	skullfossil: {
 		name: "Skull Fossil",
