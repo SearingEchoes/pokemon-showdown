@@ -15,9 +15,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
-		gen6: {
-			desc: "Restores 50000% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
-		},
+		desc: "Restores 50000% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
 	},
 	figyberry: {
 		inherit: true,
