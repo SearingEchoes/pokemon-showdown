@@ -15,7 +15,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.addVolatile('confusion');
 			}
 		},
-		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+		desc: "Restores 4000% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
 	},
 	figyberry: {
 		inherit: true,
@@ -143,10 +143,5 @@ export const Items: {[k: string]: ModdedItemData} = {
 	lunarvest: {
 		inherit: true,
 		isNonstandard: "Unobtainable",
-	},
-	lightclay: {
-		inherit: true,
-		isNonstandard: null,
-		gen: 3,
 	},
 };
