@@ -38,7 +38,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 
 	powerherb: {
 		inherit: true,
-		//isNonstandard: null,
+		isNonstandard: null,
 		gen: 3,
 	},
 	widelens: {
@@ -130,6 +130,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		},
 		onModifyAtk() {},
 		desc: "Holder's Steel-type attacks have 1.2x power.",
+		shortDesc: "Holder's Steel-type attacks have 1.2x power.",
 	},
 	miracleseed: {
 		inherit: true,
@@ -233,8 +234,31 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	
 	dragonfang: {
+		inherit: true,
 		isNonstandard: "Unobtainable",
 	},
+
+	aguavberry: {
+		inherit: true,
+		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+	},
+	figyberry: {
+		inherit: true,
+		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
+	},
+	iapapaberry: {
+		inherit: true,
+		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
+	},
+	magoberry: {
+		inherit: true,
+		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+	},
+	wikiberry: {
+		inherit: true,
+		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
+	},
+	
 	// doublesoul: null,
 	// bigcloud: null,
 	// darkribbon: null,
