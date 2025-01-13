@@ -261,7 +261,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	},
 	
 	// doublesoul: null,
-	// bigcloud: null,
+	 bigcloud: null,
 	// darkribbon: null,
 	// powerribbon: null,
 	// staminaribbon: null,
