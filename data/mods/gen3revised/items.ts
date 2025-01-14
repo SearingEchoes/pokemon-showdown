@@ -235,8 +235,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	
 	dragonfang: {
 		inherit: true,
-		isNonstandard: "Unobtainable",
-		gen: 4,
+		isNonstandard: "Past",
 	},
 
 	aguavberry: {
