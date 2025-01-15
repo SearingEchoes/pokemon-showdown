@@ -270,7 +270,10 @@ export const Items: {[k: string]: ModdedItemData} = {
 	polkadotbow: null,
 	przcureberry: null,
 	psncureberry: null,
-	//doublesoul: null,
+	doublesoul: {
+		inherit: true,
+		isNonstandard: 'Unobtainable',
+	},
 	//bigcloud: null,
 	//darkribbon: null,
 	//powerribbon: null,
