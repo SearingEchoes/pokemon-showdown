@@ -272,7 +272,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	psncureberry: null,
 	doublesoul: {
 		inherit: true,
-		isNonstandard: "Past",
+		isNonstandard: "Future",
 	},
 	//bigcloud: null,
 	//darkribbon: null,
