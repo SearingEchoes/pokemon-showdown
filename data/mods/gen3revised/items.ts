@@ -1,4 +1,4 @@
-export const Items: {[itemid: string]: ModdedItemData} = {
+export const Items: {[k: string]: ModdedItemData} = {
 	icyball: {
 		inherit: true,
 		onModifyAtkPriority: 1,
