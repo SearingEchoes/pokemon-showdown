@@ -275,7 +275,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	darkribbon: null,
 	powerribbon: null,
 	staminaribbon: null,
-	chinesedress: null,
+	//chinesedress: null,
 	//kimono: null,
 	//airlineuniform: null,
 	//bunnycostume: null,
