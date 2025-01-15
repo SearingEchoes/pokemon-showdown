@@ -256,7 +256,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 	},
 
-	//dragonfang: null,
+	dragonfang: null,
 	 //doublesoul: null,
 	 //bigcloud: null,
 	 //darkribbon: null,
