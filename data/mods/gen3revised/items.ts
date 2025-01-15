@@ -233,7 +233,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		desc: "Holder's Psychic-type attacks have 1.2x power.",
 	},
 	
-	dragonfang: null,
+
 
 	aguavberry: {
 		inherit: true,
@@ -255,7 +255,8 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 	},
-	
+
+	dragonfang: null,
 	 doublesoul: null,
 	 bigcloud: null,
 	 darkribbon: null,
