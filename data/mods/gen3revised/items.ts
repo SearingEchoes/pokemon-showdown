@@ -271,7 +271,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	przcureberry: null,
 	psncureberry: null,
 	doublesoul: null,
-	bigcloud: null,
+	//bigcloud: null,
 	//darkribbon: null,
 	//powerribbon: null,
 	//staminaribbon: null,
