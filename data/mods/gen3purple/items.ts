@@ -152,10 +152,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: "Unobtainable",
 	},
-	expertribbon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
 
 	dragonfang: null,
 	berserkgene: null,
