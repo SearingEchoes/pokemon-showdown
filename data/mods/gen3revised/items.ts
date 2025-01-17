@@ -260,22 +260,27 @@ export const Items: {[k: string]: ModdedItemData} = {
 
 	aguavberry: {
 		inherit: true,
+		rating: 1,
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
 	},
 	figyberry: {
 		inherit: true,
+		rating: 1,
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
 	},
 	iapapaberry: {
 		inherit: true,
+		rating: 1,
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
 	},
 	magoberry: {
 		inherit: true,
+		rating: 1,
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
 	},
 	wikiberry: {
 		inherit: true,
+		rating: 1,
 		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
 	},
 
@@ -627,10 +632,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: "Unobtainable",
 	},
-	aguavberry: {
-		inherit: true,
-		rating: 1,
-	},
 	apicotberry: {
 		inherit: true,
 		rating: 1,
@@ -643,23 +644,11 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		rating: 1,
 	},
-	figyberry: {
-		inherit: true,
-		rating: 1,
-	},
 	ganlonberry: {
 		inherit: true,
 		rating: 1,
 	},
-	iapapaberry: {
-		inherit: true,
-		rating: 1,
-	},
 	machobrace: {
-		inherit: true,
-		rating: 1,
-	},
-	magoberry: {
 		inherit: true,
 		rating: 1,
 	},
@@ -672,10 +661,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 		rating: 1,
 	},
 	rawstberry: {
-		inherit: true,
-		rating: 1,
-	},
-	wikiberry: {
 		inherit: true,
 		rating: 1,
 	},
