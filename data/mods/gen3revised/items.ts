@@ -430,6 +430,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	reapercloth: null,
 	repeatball: null,
 	rindoberry: null,
+	rockincense: null,
 	rootfossil: null,
 	roseincense: null,
 	rowapberry: null,
