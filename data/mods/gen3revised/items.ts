@@ -40,6 +40,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
+		rating: 3,
 	},
 	widelens: {
 		inherit: true,
@@ -56,20 +57,43 @@ export const Items: {[k: string]: ModdedItemData} = {
 		isNonstandard: null,
 		gen: 3,
 	},
+	choiceband: {
+		inherit: true,
+		rating: 3,
+	},
 	choicespecs: {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
+		rating: 3,
 	},
 	choicescarf: {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
+		rating: 3,
 	},
 	lightclay: {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
+		rating: 3,
+	},
+	leftovers: {
+		inherit: true,
+		rating: 3,
+	},
+	salacberry: {
+		inherit: true,
+		rating: 3,
+	},
+	scarletrock: {
+		inherit: true,
+		rating: 3,
+	},
+	lumberry: {
+		inherit: true,
+		rating: 3,
 	},
 	blackbelt: {
 		inherit: true,
