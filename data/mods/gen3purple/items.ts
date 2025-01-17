@@ -16,6 +16,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+		rating: 3,
 	},
 	figyberry: {
 		inherit: true,
@@ -34,6 +35,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
+		rating: 3,
 	},
 	iapapaberry: {
 		inherit: true,
@@ -52,6 +54,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
+		rating: 3,
 	},
 	magoberry: {
 		inherit: true,
@@ -70,6 +73,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+		rating: 3,
 	},
 	shellbell: {
 		inherit: true,
@@ -93,7 +97,8 @@ export const Items: {[k: string]: ModdedItemData} = {
 		onEat(pokemon) {
 			this.heal(30);
 		},
-		desc: "gfhfghdsfvcbvcbvcgfdgh.",
+		desc: "Restores 30 HP at 1/2 max HP or less.",
+		rating: 1,
 	},
 	starfberry: {
 		inherit: true,
@@ -105,7 +110,8 @@ export const Items: {[k: string]: ModdedItemData} = {
 				pokemon.eatItem();
 			}
 		},
-		desc: "Raises a random stat by 2 when at 1/2 max HP or less.",
+		desc: "Raises a random stat by 2 stages when at 1/2 max HP or less.",
+		rating: 3,
 	},
 	wikiberry: {
 		inherit: true,
@@ -124,6 +130,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 			}
 		},
 		desc: "Restores 50% max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
+		rating: 3,
 	},
 	cursedtag: {
 		inherit: true,
@@ -192,7 +199,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	//figyberry: null,
 	firestone: null,
 	//flameorb: null,
-	//focusband: null,
+	focusband: null,
 	friendball: null,
 	//ganlonberry: null,
 	greatball: null,
@@ -204,8 +211,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 	//iapapaberry: null,
 	kelpsyberry: null,
 	//kingsrock: null,
+	leafstone: null,
 	//lansatberry: null,
-	laxincense: null,
+	//laxincense: null,
 	leek: null,
 	//leftovers: null,
 	//leppaberry: null,
@@ -262,7 +270,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	silverpowder: null,
 	//sitrusberry: null,
 	softsand: null,
-	//souldew: null,
+	souldew: null,
 	spelltag: null,
 	spelonberry: null,
 	sportball: null,
@@ -281,4 +289,70 @@ export const Items: {[k: string]: ModdedItemData} = {
 	wepearberry: null,
 	//whiteherb: null,
 	//wikiberry: null,
+
+	apicotberry: {
+		inherit: true,
+		rating: 1,
+	},
+	aspearberry: {
+		inherit: true,
+		rating: 1,
+	},
+	cheriberry: {
+		inherit: true,
+		rating: 1,
+	},
+	ganlonberry: {
+		inherit: true,
+		rating: 1,
+	},
+	machobrace: {
+		inherit: true,
+		rating: 1,
+	},
+	oranberry: {
+		inherit: true,
+		rating: 1,
+	},
+	pechaberry: {
+		inherit: true,
+		rating: 1,
+	},
+	rawstberry: {
+		inherit: true,
+		rating: 1,
+	},
+	seaincense: {
+		inherit: true,
+		desc: "Holder's Aqua-type attacks have 1.05x power.",
+		rating: 1,
+	},
+	kingsrock: {
+		inherit: true,
+		rating: 0,
+	},
+	brightpowder: {
+		inherit: true,
+		rating: 0,
+	},
+	laxincense: {
+		inherit: true,
+		rating: 0,
+	},
+	choiceband: {
+		inherit: true,
+		rating: 3,
+	},
+	leftovers: {
+		inherit: true,
+		rating: 3,
+	},
+	salacberry: {
+		inherit: true,
+		rating: 3,
+	},
+	lumberry: {
+		inherit: true,
+		rating: 3,
+	},
 };
