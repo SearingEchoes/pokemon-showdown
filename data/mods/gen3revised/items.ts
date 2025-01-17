@@ -53,6 +53,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
+		desc: "Holder's attacks that are super effective against the target do 1.2x damage.",
 		gen: 3,
 		rating: 3,
 	},
