@@ -485,7 +485,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	
 	doublesoul: {
 		inherit: true,
-		isNonstandard: "Future",
+		isNonstandard: "Unobtainable",
 	},
 	//bigcloud: null,
 	//darkribbon: null,
