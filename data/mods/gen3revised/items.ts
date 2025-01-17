@@ -40,6 +40,11 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
+		rating: 3,
+	},
+	expertribbon: {
+		inherit: true,
+		rating: 3,
 	},
 	widelens: {
 		inherit: true,
@@ -55,6 +60,10 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
+	},
+	sitrusberry: {
+		inherit: true,
+		rating: 3,
 	},
 	choiceband: {
 		inherit: true,
