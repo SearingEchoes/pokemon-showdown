@@ -343,6 +343,10 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		rating: 3,
 	},
+	powerribbon: {
+		inherit: true,
+		rating: 3,
+	},
 	leftovers: {
 		inherit: true,
 		rating: 3,
