@@ -40,7 +40,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
-		rating: 3,
 	},
 	widelens: {
 		inherit: true,
@@ -627,5 +626,65 @@ export const Items: {[k: string]: ModdedItemData} = {
 	violetfear: {
 		inherit: true,
 		isNonstandard: "Unobtainable",
+	},
+	aguavberry: {
+		inherit: true,
+		rating: 1,
+	},
+	apicotberry: {
+		inherit: true,
+		rating: 1,
+	},
+	aspearberry: {
+		inherit: true,
+		rating: 1,
+	},
+	cheriberry: {
+		inherit: true,
+		rating: 1,
+	},
+	figyberry: {
+		inherit: true,
+		rating: 1,
+	},
+	ganlonberry: {
+		inherit: true,
+		rating: 1,
+	},
+	iapapaberry: {
+		inherit: true,
+		rating: 1,
+	},
+	machobrace: {
+		inherit: true,
+		rating: 1,
+	},
+	magoberry: {
+		inherit: true,
+		rating: 1,
+	},
+	oranberry: {
+		inherit: true,
+		rating: 1,
+	},
+	pechaberry: {
+		inherit: true,
+		rating: 1,
+	},
+	rawstberry: {
+		inherit: true,
+		rating: 1,
+	},
+	wikiberry: {
+		inherit: true,
+		rating: 1,
+	},
+	kingsrock: {
+		inherit: true,
+		rating: 0,
+	},
+	brightpowder: {
+		inherit: true,
+		rating: 0,
 	},
 };
