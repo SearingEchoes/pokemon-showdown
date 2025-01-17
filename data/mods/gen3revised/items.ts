@@ -373,7 +373,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	//magnet: null,
 	//magoberry: null,
 	magostberry: null,
-	//mail: null,
+	mail: null,
 	masterball: null,
 	meadowplate: null,
 	//mentalherb: null,
@@ -487,24 +487,120 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: "Unobtainable",
 	},
-	//bigcloud: null,
-	//darkribbon: null,
-	//powerribbon: null,
-	//staminaribbon: null,
-	//chinesedress: null,
-	//kimono: null,
-	//airlineuniform: null,
-	//bunnycostume: null,
-	//nurseuniform: null,
-	//maiduniform: null,
-	//mistressoutfit: null,
-	//sportssweater: null,
-	//gothicoutfit: null,
-	//swimsuit: null,
-	//ninjacostume: null,
-	//camouflage: null,
-	//thickfur: null,
-	//witchcostume: null,
-	//blazer: null,
-	//weddingdress: null,
+	bigcloud: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	darkribbon: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	powerribbon: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	staminaribbon: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	chinesedress: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	kimono: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	airlineuniform: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	bunnycostume: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	nurseuniform: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	maiduniform: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	mistressoutfit: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	sportssweater: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	gothicoutfit: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	swimsuit: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	ninjacostume: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	camouflage: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	thickfur: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	witchcostume: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	blazer: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	weddingdress: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	alicecard: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	bunnyamulet: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	dharoksgreataxe: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	honey: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	mixedherbs: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	rockofsaurian: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	starofninja: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	swordofzerker: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
+	violetfear: {
+		inherit: true,
+		isNonstandard: "Unobtainable",
+	},
 };
