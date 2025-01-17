@@ -43,7 +43,17 @@ export const Items: {[k: string]: ModdedItemData} = {
 		rating: 3,
 	},
 	expertribbon: {
-		inherit: true,
+		name: "Expert Ribbon",
+		spritenum: 811,
+		fling: {
+			basePower: 10,
+		},
+		onModifyDamage(damage, source, target, move) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		gen: 3,
 		rating: 3,
 	},
 	widelens: {
