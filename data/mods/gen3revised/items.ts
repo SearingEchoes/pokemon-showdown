@@ -76,7 +76,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 		gen: 3,
-		rating: 3,
 	},
 	leftovers: {
 		inherit: true,
