@@ -2,20 +2,16 @@ export const Scripts: ModdedBattleScriptsData = {
 	gen: 3,
 	inherit: 'gen3',
 	init() {
-		const specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Dark', 'Psychic', 'Dragon'];
-		let newCategory = '';
+		const originalMoves = this.mod().data.Moves;
+		let originalCategory = '';
 		for (const i in this.data.Moves) {
-			if (!this.data.Moves[i]) console.log(i);
-			if (
-				this.data.Moves[i].category === 'Status' || 
-				this.data.Moves[i].category === 'Physical' || 
-				this.data.Moves[i].category === 'Special' 
-				) continue; 
-			newCategory = specialTypes.includes(this.data.Moves[i].type) ? 'Special' : 'Physical';
-			if (newCategory !== this.data.Moves[i].category) {
-				this.modData('Moves', i).category = newCategory;
-			}
+				if (this.data.Moves[i].category === 'Status') continue;
+				originalCategory = originalMoves[i].category;
+				if (originalCategory !== this.data.Moves[i].category) {
+						this.modData('Moves', i).category = originalCategory;
+				}
 		}
+	},
 		
 		
 		this.modData("Learnsets", "chibireimu").learnset.pound = ["3L1"];
