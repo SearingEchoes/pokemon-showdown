@@ -11,7 +11,6 @@ export const Scripts: ModdedBattleScriptsData = {
 						this.modData('Moves', i).category = originalCategory;
 				}
 		}
-	},
 		
 		
 		this.modData("Learnsets", "chibireimu").learnset.pound = ["3L1"];
