@@ -1580,4 +1580,193 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	//legalize new moves
+	mineralpelt: {
+		inherit: true,
+		gen: 3,
+	},
+	laevatein: {
+		inherit: true,
+		gen: 3,
+	},
+	sandymash: {
+		inherit: true,
+		gen: 3,
+	},
+	boltkick: {
+		inherit: true,
+		gen: 3,
+	},
+	knifewave: {
+		inherit: true,
+		gen: 3,
+	},
+	onibinding: {
+		inherit: true,
+		gen: 3,
+	},
+	tenkolaser: {
+		inherit: true,
+		gen: 3,
+	},
+	coldinferno: {
+		inherit: true,
+		gen: 3,
+	},
+	hisousword: {
+		inherit: true,
+		gen: 3,
+	},
+	powertrance: {
+		inherit: true,
+		gen: 3,
+	},
+	mysticbomb: {
+		inherit: true,
+		gen: 3,
+	},
+	buggrip: {
+		inherit: true,
+		gen: 3,
+	},
+	holyneedle: {
+		inherit: true,
+		gen: 3,
+	},
+	shockabsorb: {
+		inherit: true,
+		gen: 3,
+	},
+	spectralray: {
+		inherit: true,
+		gen: 3,
+	},
+	subterraneansun: {
+		inherit: true,
+		gen: 3,
+	},
+	skitterrush: {
+		inherit: true,
+		gen: 3,
+	},
+	mindseye: {
+		inherit: true,
+		gen: 3,
+	},
+	manapunch: {
+		inherit: true,
+		gen: 3,
+	},
+	gapzone: {
+		inherit: true,
+		gen: 3,
+	},
+	powerdrum: {
+		inherit: true,
+		gen: 3,
+	},
+	draculacradle: {
+		inherit: true,
+		gen: 3,
+	},
+	sakedrink: {
+		inherit: true,
+		gen: 3,
+	},
+	butterfly: {
+		inherit: true,
+		gen: 3,
+	},
+	superego: {
+		inherit: true,
+		gen: 3,
+	},
+	zapflare: {
+		inherit: true,
+		gen: 3,
+	},
+	savagesting: {
+		inherit: true,
+		gen: 3,
+	},
+	divinepulse: {
+		inherit: true,
+		gen: 3,
+	},
+	holystrike: {
+		inherit: true,
+		gen: 3,
+	},
+	firebullets: {
+		inherit: true,
+		gen: 3,
+	},
+	aquaveil: {
+		inherit: true,
+		gen: 3,
+	},
+	fujiyamavolcano: {
+		inherit: true,
+		gen: 3,
+	},
+	corpserush: {
+		inherit: true,
+		gen: 3,
+	},
+	poisonclaw: {
+		inherit: true,
+		gen: 3,
+	},
+	ringoffire: {
+		inherit: true,
+		gen: 3,
+	},
+	suwadeluge: {
+		inherit: true,
+		gen: 3,
+	},
+	apollo13: {
+		inherit: true,
+		gen: 3,
+	},
+	bugwhistle: {
+		inherit: true,
+		gen: 3,
+	},
+	hourairend: {
+		inherit: true,
+		gen: 3,
+	},
+	watergeyser: {
+		inherit: true,
+		gen: 3,
+	},
+	rockgale: {
+		inherit: true,
+		gen: 3,
+	},
+	poisonwave: {
+		inherit: true,
+		gen: 3,
+	},
+	glacialbash: {
+		inherit: true,
+		gen: 3,
+	},
+	mysticfire: {
+		inherit: true,
+		gen: 3,
+	},
+	cheer: {
+		inherit: true,
+		gen: 3,
+	},
+	multipulse: {
+		inherit: true,
+		gen: 3,
+	},
+	eeriewave: {
+		inherit: true,
+		gen: 3,
+	},
 };
