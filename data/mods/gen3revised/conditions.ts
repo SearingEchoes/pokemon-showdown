@@ -36,7 +36,10 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 				this.add('-status', target, 'frz');
 			}
 		},
-
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 16);
+		},
 		onBeforeMove() {},
 		onModifyMove() {},
 		onAfterMoveSecondary() {},

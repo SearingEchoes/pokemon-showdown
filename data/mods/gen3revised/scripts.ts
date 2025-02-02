@@ -29862,6 +29862,13 @@ export const Scripts: ModdedBattleScriptsData = {
 			if (pokemon.status === 'brn' && baseDamage && move.category === 'Physical' && !pokemon.hasAbility('guts')) {
 				baseDamage = this.battle.modify(baseDamage, 0.5);
 			}
+			
+			// Frostbite
+			if (pokemon.status === 'frz' && move.category === 'Special' && !pokemon.hasAbility('unwavering')) {
+				//if (this.battle.gen < 6 || move.id !== 'facade') {
+					baseDamage = this.battle.modify(baseDamage, 0.5);
+				//}
+			}
 
 			// Other modifiers (Reflect/Light Screen/etc)
 			baseDamage = this.battle.runEvent('ModifyDamagePhase1', pokemon, target, move, baseDamage);
