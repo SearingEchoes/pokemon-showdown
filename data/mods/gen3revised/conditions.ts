@@ -29,6 +29,12 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 	},
 	frz: {
 		inherit: true,
+		start: "  [POKEMON] was frostbitten!",
+		startFromItem: "  [POKEMON] contracted frostbite from [ITEM]!",
+		alreadyStarted: "  [POKEMON] already has frostbite!",
+		end: "  [POKEMON]'s recovered from frostbite!",
+		endFromItem: "  [POKEMON]'s [ITEM] healed its frostbite!",
+		damage: "  [POKEMON] is suffering from frostbite!",
 		onStart(target, source, sourceEffect) {
 			if (sourceEffect && sourceEffect.effectType === 'Ability') {
 				this.add('-status', target, 'frz', '[from] ability: ' + sourceEffect.name, '[of] ' + source);
