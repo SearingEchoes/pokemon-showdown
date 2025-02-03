@@ -28,7 +28,8 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 		},
 	},
 	frz: {
-		inherit: true,
+		name: 'frz',
+		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
 			if (sourceEffect && sourceEffect.effectType === 'Ability') {
 				this.add('-status', target, 'frz', '[from] ability: ' + sourceEffect.name, '[of] ' + source);
