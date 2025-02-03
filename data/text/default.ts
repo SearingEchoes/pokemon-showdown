@@ -178,11 +178,13 @@ export const DefaultText: {[k: string]: DefaultText} = {
 	},
 	frz: {
 		start: "  [POKEMON] was frozen solid!",
+		startFromItem: "  [POKEMON] contracted frostbite from [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
 		endFromMove: "  [POKEMON]'s [MOVE] melted the ice!",
 		cant: "[POKEMON] is frozen solid!",
+		damage: "  [POKEMON] is suffering from frostbite!",
 	},
 	par: {
 		start: "  [POKEMON] is paralyzed! It may be unable to move!",
