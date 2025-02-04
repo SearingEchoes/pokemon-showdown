@@ -30355,7 +30355,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'priestgarb':
 				move.type = 'Faith';
 				break;
-			},
+			}
 		},
 
 		secondary: null,
