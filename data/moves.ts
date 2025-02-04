@@ -29992,11 +29992,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {snatch: 1},
 		volatileStatus: 'aquaveil',
+		onTry(source) {
+			if(source.volatiles['ingrain']) {
+				this.hint(source + " is already regenerating with Ingrain!");
+				return false;
+			}
+		},
 		condition: {
 			onStart(pokemon) {
-				if(!pokemon.volatiles['ingrain']) {
-					this.add('-start', pokemon, 'Aqua Veil');
-				}
+				this.add('-start', pokemon, 'Aqua Veil');
 			},
 			onResidualOrder: 6,
 			onResidual(pokemon) {
@@ -30348,6 +30352,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				break;
 			case 'priestgarb':
 				move.type = 'Faith';
+				break;
+			default:
+				this.add("-message", source.item);
 				break;
 			}			
 		},
