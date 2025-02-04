@@ -29994,13 +29994,24 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'aquaveil',
 		condition: {
 			onStart(pokemon) {
-				this.add('-start', pokemon, 'Aqua Veil');
+				if(!pokemon.volatiles['ingrain']) {
+					this.add('-start', pokemon, 'Aqua Veil');
+				}
 			},
 			onResidualOrder: 6,
 			onResidual(pokemon) {
 				this.heal(pokemon.baseMaxhp / 16);
 			},
+			onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+			},
+			// groundedness implemented in battle.engine.js:BattlePokemon#isGrounded
+			onDragOut(pokemon) {
+				this.add('-activate', pokemon, 'move: Aqua Veil');
+				return null;
+			},
 		},
+
 		secondary: null,
 		target: "self",
 		type: "Water",
@@ -30285,8 +30296,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onModifyType(move, pokemon, item) {
-			switch (item.name) {
+		onModifyType(move, source, item) {
+			switch (source.item) {
 			case 'charcoal':
 				move.type = 'Fire';
 				break;
