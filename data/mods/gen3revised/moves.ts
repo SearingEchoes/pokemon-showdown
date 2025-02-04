@@ -1771,11 +1771,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	ingrain: {
 		inherit: true,
+		onTry(source) {
+			if(source.volatiles['aquaveil']) {
+				this.add("-message", source + " is already regenerating with Aqua Veil!");
+				return false;
+			}
+		},
 		condition: {
 			onStart(pokemon) {
-				if(!pokemon.volatiles['aquaveil']) {
-					this.add('-start', pokemon, 'Ingrain');
-				}
+				this.add('-start', pokemon, 'move: Ingrain');
 			},
 			onResidualOrder: 10,
 			onResidualSubOrder: 1,
