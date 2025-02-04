@@ -88,6 +88,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3revised',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
+		debug: true,
 		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Double Soul'],
 	},
 	{
@@ -95,6 +96,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3revised',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		debug: true,
 		banlist: ['King\'s Rock', 'Sand Veil'],
 	},
 	
