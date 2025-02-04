@@ -1769,4 +1769,28 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	ingrain: {
+		inherit: true,
+		condition: {
+			onStart(pokemon) {
+				if(!pokemon.volatiles['aquaveil']) {
+					this.add('-start', pokemon, 'Ingrain');
+				}
+			},
+			onResidualOrder: 10,
+			onResidualSubOrder: 1,
+			onResidual(pokemon) {
+				this.heal(pokemon.baseMaxhp / 16);
+			},
+			onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+			},
+			// groundedness implemented in battle.engine.js:BattlePokemon#isGrounded
+			onDragOut(pokemon) {
+				this.add('-activate', pokemon, 'move: Ingrain');
+				return null;
+			},
+		},
+	},
+
 };
