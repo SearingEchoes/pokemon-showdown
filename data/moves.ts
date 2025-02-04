@@ -29994,7 +29994,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'aquaveil',
 		onTry(source) {
 			if(source.volatiles['ingrain']) {
-				this.hint(source + " is already regenerating with Ingrain!");
+				this.add("-message", source + " is already regenerating with Ingrain!");
 				return false;
 			}
 		},
@@ -30301,7 +30301,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyType(move, source, item) {
-			switch (source.item) {
+			this.add("-message", source.item);
+			this.add("-message", source.item.name);
+			switch (source.item.name) {
 			case 'charcoal':
 				move.type = 'Fire';
 				break;
@@ -30352,11 +30354,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				break;
 			case 'priestgarb':
 				move.type = 'Faith';
-				break;
-			default:
-				this.add("-message", source.item);
-				break;
-			}			
+				break;		
 		},
 
 		secondary: null,
