@@ -30303,7 +30303,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyType(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
 			const item = pokemon.getItem();
-			this.add("-message", item.id);
+			console.log(item.id);
+			this.debug(item.id);
 			if (item.id) {
 				switch (item.id) {
 				case 'charcoal':
