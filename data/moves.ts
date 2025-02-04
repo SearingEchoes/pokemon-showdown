@@ -30300,10 +30300,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onModifyType(move, source, item) {
-			this.add("-message", source.item);
-			this.add("-message", source.item.name);
-			switch (source.item.name) {
+		onModifyType(move, pokemon) {
+			if (pokemon.ignoringItem()) return;
+			const item = pokemon.getItem();
+			this.add("-message", item.id);
+			switch (item.id) {
 			case 'charcoal':
 				move.type = 'Fire';
 				break;
