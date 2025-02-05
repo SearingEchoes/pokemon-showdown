@@ -30301,11 +30301,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move, pokemon) {
-
 			if (pokemon.ignoringItem()) return;
 			const item = pokemon.getItem();
-			console.log(item.id);
-			this.debug(item.id);
 			if (item.id) {
 				switch (item.id) {
 				case 'charcoal':
