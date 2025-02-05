@@ -30301,7 +30301,66 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move, pokemon) {
-			move.type = 'Electric';
+
+			if (pokemon.ignoringItem()) return;
+			const item = pokemon.getItem();
+			console.log(item.id);
+			this.debug(item.id);
+			if (item.id) {
+				switch (item.id) {
+				case 'charcoal':
+					move.type = 'Fire';
+					break;
+				case 'mysticwater':
+					move.type = 'Water';
+					break;
+				case 'hardstone':
+					move.type = 'Rock';
+					break;
+				case 'nevermeltice':
+					move.type = 'Ice';
+					break;
+				case 'blackbelt':
+					move.type = 'Fighting';
+					break;
+				case 'blackglasses':
+					move.type = 'Dark';
+					break;
+				case 'magnet':
+					move.type = 'Electric';
+					break;
+				case 'metalcoat':
+					move.type = 'Steel';
+					break;
+				case 'miracleseed':
+					move.type = 'Grass';
+					break;
+				case 'silkscarf':
+					move.type = 'Normal';
+					break;
+				case 'poisonbarb':
+					move.type = 'Poison';
+					break;
+				case 'sharpbeak':
+					move.type = 'Flying';
+					break;
+				case 'silverpowder':
+					move.type = 'Bug';
+					break;
+				case 'softsand':
+					move.type = 'Ground';
+					break;
+				case 'spelltag':
+					move.type = 'Ghost';
+					break;
+				case 'twistedspoon':
+					move.type = 'Psychic';
+					break;
+				case 'priestgarb':
+					move.type = 'Faith';
+					break;
+				}
+			}
 		},
 
 		secondary: null,
