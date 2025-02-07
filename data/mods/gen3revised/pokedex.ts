@@ -773,15 +773,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	chibishou: {
 		inherit: true,
-		types: ["Rock", "Electric"],
+		types: ["Ground", "Electric"],
 		abilities: {0: "Strong Grip", 1: "Static"},
-		baseStats: {hp: 35, atk: 70, def: 45, spa: 60, spd: 40, spe: 50},
+		baseStats: {hp: 35, atk: 70, def: 45, spa: 50, spd: 45, spe: 55},
 	},
 	shou: {
 		inherit: true,
-		types: ["Rock", "Electric"],
+		types: ["Ground", "Electric"],
 		abilities: {0: "Strong Grip", 1: "Static"},
-		baseStats: {hp: 55, atk: 90, def: 65, spa: 80, spd: 50, spe: 60},
+		baseStats: {hp: 55, atk: 90, def: 65, spa: 60, spd: 55, spe: 75},
 	},
 	chibibyakuren: {
 		inherit: true,
