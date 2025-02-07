@@ -298,6 +298,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		accuracy: 100,
 	},
+	rockthrow: {
+		inherit: true,
+		accuracy: 100,
+	},
 	thunder: {
 		inherit: true,
 		accuracy: 70,
