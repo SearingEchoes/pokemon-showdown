@@ -25532,9 +25532,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	  exshou: {
 		num: -1080,
 		name: "EX Shou",
-		types: ["Rock", "Electric"],
+		types: ["Ground", "Electric"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 75, atk: 110, def: 85, spa: 105, spd: 70, spe: 85},
+		baseStats: {hp: 80, atk: 120, def: 85, spa: 75, spd: 70, spe: 100},
 		abilities: {0: "Consecrate", 1: "Motor Drive"},
 		heightm: 9001,
 		weightkg: 25.0,
