@@ -9480,6 +9480,11 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		start: "  [SOURCE] is cheering on [POKEMON]!",
 	},
+	multipulse: {
+		name: "Multi-Pulse",
+		desc: "Changes type when a type-boosting item is held. This counts all generic typeboosters like Charcoal, but not others like Sea Incense.",
+		shortDesc: "Changes type when a type-boosting item is held.",
+	},
 	eeriewave: {
 		name: "Eerie Wave",
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
@@ -9558,7 +9563,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	descentofdragons: {
 		name: "Descent of Dragons",
-		desc: "Shoots two dark arrows with perfect accuracy at the target. Has +1 Priority and cannot be used twice in a row. The attack also carries increased effectiveness against Dragon and Faith-types as if it was Dragon-type.",
+		desc: "Shoots two dark arrows with perfect accuracy at the target. Has +1 Priority and cannot be used twice in a row.",
 		shortDesc: "Hits twice, +1 Priority, and cannot miss. Cannot be used consecutively.",
 	},
 	iceblitz: {
