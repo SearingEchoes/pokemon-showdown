@@ -70,6 +70,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		onSwitchIn() {},
 		rating: 4.5,
+		isNonstandard: null,
+		gen: 3,
 	},
 	flashfire: {
 		inherit: true,
@@ -102,6 +104,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 				this.boost({atk: 1}, this.effectState.target);
 			}
 		},
+		isNonstandard: null,
+		gen: 3,
 	},
 	stormdrain: {
 		inherit: true,
@@ -124,6 +128,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 				return this.effectState.target;
 			}
 		},
+		isNonstandard: null,
+		gen: 3,
 	},
 	hustle: {
 		inherit: true,
@@ -133,6 +139,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 				return accuracy * 0.8;
 			}
 		},
+		isNonstandard: null,
+		gen: 3,
 	},
 	galewings: {
 		inherit: true,
@@ -140,6 +148,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			if (move && move.type === 'Flying') return priority + 1;
 		},
 		rating: 4,
+		isNonstandard: null,
+		gen: 3,
 	},
 	oblivious: {
 		inherit: true,
@@ -212,5 +222,90 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Oblivious', '[of] ' + target);
 			}
 		},
+	},
+	noguard: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	regenerator: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	superluck: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	toxicboost: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	flareboost: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	furcoat: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	gluttony: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	skilllink: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	steelworker: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	snowwarning: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	imposter: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	moxie: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	prankster: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	sandrush: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	slushrush: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	quickfeet: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
+	},
+	motordrive: {
+		inherit: true,
+		isNonstandard: null,
+		gen: 3,
 	},
 };

@@ -130,13 +130,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibipatchouli: {
 		inherit: true,
 		types: ["Psychic"],
-		abilities: {0: "Trace"},
+		abilities: {0: "Trace", 1: "Magic Armor"},
 		baseStats: {hp: 40, atk: 30, def: 35, spa: 80, spd: 70, spe: 45},
 	},
 	patchouli: {
 		inherit: true,
 		types: ["Psychic", "Ground"],
-		abilities: {0: "Trace"},
+		abilities: {0: "Trace", 1: "Magic Armor"},
 		baseStats: {hp: 60, atk: 40, def: 45, spa: 100, spd: 90, spe: 65},
 	},
 	chibiremilia: {
@@ -786,13 +786,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibibyakuren: {
 		inherit: true,
 		types: ["Psychic"],
-		abilities: {0: "Wonder Veil", 1: "Inner Focus"},
+		abilities: {0: "Magic Armor", 1: "Inner Focus"},
 		baseStats: {hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50},
 	},
 	byakuren: {
 		inherit: true,
 		types: ["Psychic", "Faith"],
-		abilities: {0: "Wonder Veil", 1: "Inner Focus"},
+		abilities: {0: "Magic Armor", 1: "Inner Focus"},
 		baseStats: {hp: 80, atk: 60, def: 60, spa: 60, spd: 60, spe: 80},
 	},
 	chibinue: {
@@ -980,6 +980,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	magicstones: {
 		inherit: true,
 		types: ["Psychic", "Rock"],
+		abilities: {0: "Gate Keeper", 1: "Solid Body"},
 		baseStats: {hp: 140, atk: 30, def: 100, spa: 120, spd: 100, spe: 30},
 	},
 	chibiellen: {
@@ -1057,7 +1058,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	ruukoto: {
 		inherit: true,
 		types: ["Steel"],
-		abilities: {0: "Own Tempo", 1: "Regenerator"},
+		abilities: {0: "Solid Body", 1: "Regenerator"},
 		baseStats: {hp: 100, atk: 65, def: 110, spa: 50, spd: 100, spe: 75},
 	},
 	mimichan: {
@@ -1236,7 +1237,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	tensoku: {
 		inherit: true,
 		types: ["Fire", "Steel"],
-		abilities: {0: "Drought", 1: "Flame Absorb"},
+		abilities: {0: "Drought", 1: "Solid Body"},
 		baseStats: {hp: 100, atk: 140, def: 110, spa: 80, spd: 80, spe: 70},
 	},
 	namazu: {
