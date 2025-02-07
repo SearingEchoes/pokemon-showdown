@@ -6007,6 +6007,55 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: -1017,
 	},
+	relentless: {
+		onModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod < 0) {
+				this.debug('Relentless boost');
+				return this.chainModify(2);
+			}
+		},
+		name: "Relentless",
+		rating: 4,
+		num: -1018,
+	},
+	magicarmor: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Magic Armor reduction');
+				return this.chainModify(0.75);
+			}
+		},
+		isBreakable: true,
+		name: "Magic Armor",
+		rating: 3,
+		num: -1019,
+	},
+	solidbody: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Solid Body reduction');
+				return this.chainModify(0.75);
+			}
+		},
+		isBreakable: true,
+		name: "Solid Body",
+		rating: 3,
+		num: -1020,
+	},
+	selfcare: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.hp && pokemon.status && this.randomChance(33, 100)) {
+				this.debug('self-care');
+				this.add('-activate', pokemon, 'ability: Self-Care');
+				pokemon.cureStatus();
+			}
+		},
+		name: "Self-Care",
+		rating: 3,
+		num: -1021,
+	},
 	
 	//illegal abils
 	playwarrior: {
