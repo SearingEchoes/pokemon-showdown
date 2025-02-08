@@ -5904,8 +5904,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -1010,
 	},
 	consecrate: {
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
+		onModifyMovePriority: -1,
+		onModifyMove(move, pokemon) {
 			const noModifyType = [
 				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
 			];
