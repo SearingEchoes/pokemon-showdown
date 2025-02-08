@@ -5910,7 +5910,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
 			];
 			if (move.type === 'Normal' && !noModifyType.includes(move.id) &&
-				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				!(move.isZ && move.category !== 'Status')) {
 				move.type = 'Faith';
 				move.typeChangerBoosted = this.effect;
 			}
@@ -5938,8 +5938,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -1012,
 	},
 	unwavering: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(spa, pokemon) {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
 			if (pokemon.status) {
 				return this.chainModify(1.5);
 			}

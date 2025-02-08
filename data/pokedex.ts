@@ -25859,7 +25859,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Ice", "Poison"],
 		genderRatio: {M: 0.5, F: 0.5},
 		baseStats: {hp: 75, atk: 80, def: 60, spa: 120, spd: 80, spe: 105},
-		abilities: {0: "Wall of Ice", 1: "Strange Mist"},
+		abilities: {0: "Ice Wall", 1: "Strange Mist"},
 		heightm: 9001,
 		weightkg: 25.0,
 		color: "Purple",
