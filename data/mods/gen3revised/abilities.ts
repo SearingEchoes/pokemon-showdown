@@ -203,7 +203,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			}
 			if (effect.name === 'Fascinate' && boost.spa) {
 				delete boost.spa;
-				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Oblivious', '[of] ' + target);
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Own Tempo', '[of] ' + target);
 			}
 		},
 	},
@@ -219,7 +219,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			}
 			if (effect.name === 'Fascinate' && boost.spa) {
 				delete boost.spa;
-				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Oblivious', '[of] ' + target);
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Inner Focus', '[of] ' + target);
 			}
 		},
 	},

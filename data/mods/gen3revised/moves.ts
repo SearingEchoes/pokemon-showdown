@@ -1461,7 +1461,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	soar: {
 		inherit: true,
-		type: "Faith",
+		type: "Flying",
 	},
 	bulletseed: {
 		inherit: true,
