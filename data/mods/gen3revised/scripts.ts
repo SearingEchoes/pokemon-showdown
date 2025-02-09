@@ -29721,7 +29721,7 @@ export const Scripts: ModdedBattleScriptsData = {
 	actions: {
 		inherit: true,
 		hitStepInvulnerabilityEvent(targets: Pokemon[], pokemon: Pokemon, move: ActiveMove) {
-			if (move.id === 'toxic' && pokemon.hasType('Poison'))) {
+			if (move.id === 'toxic' && pokemon.hasType('Poison')) {
 				return new Array(targets.length).fill(true);
 			}
 			const hitResults = this.battle.runEvent('Invulnerability', targets, pokemon, move);
