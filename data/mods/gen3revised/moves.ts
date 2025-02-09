@@ -1815,432 +1815,432 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			"Assist", "Chatter", "Copycat", "Counter", "Covet", "Destiny Bond", "Detect", "Endure", "Feint", "Focus Punch", "Follow Me", "Helping Hand", "Me First", "Metronome", "Mimic", "Mirror Coat", "Mirror Move", "Protect", "Sketch", "Sleep Talk", "Snatch", "Struggle", "Switcheroo", "Thief", "Trick", "Leaf Storm", "Psychic", "Attract", "Scald", "Hidden Power", "Dive",
 		],
 	},
-	acidarmor: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	aircutter: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	assist: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	barrage: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	beatup: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bellydrum: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bide: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bind: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bite: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	blastburn: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	boneclub: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bonerush: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bonemerang: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	bounce: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	clamp: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	cometpunch: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	cosmicpower: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	covet: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	crabhammer: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	crosschop: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	crushclaw: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	defensecurl: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	detect: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	disable: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	dizzypunch: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	doubleteam: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	doubleslap: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	dragonclaw: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	dragondance: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	dragonrage: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	dragonbreath: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	eggbomb: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	eruption: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	explosion: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	falseswipe: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	featherdance: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	fissure: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	followme: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	frustration: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	furyattack: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	grasswhistle: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	grudge: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	helpinghand: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	hornattack: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	horndrill: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	hydrocannon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	hyperfang: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	iceball: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	irontail: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	kinesis: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	meanlook: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	meditate: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	megakick: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	megapunch: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	megahorn: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	metalsound: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	meteormash: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	milkdrink: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	mindreader: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	mirrormove: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	mistball: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	moonlight: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	morningsun: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	mudslap: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	muddywater: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	naturepower: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	nightmare: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	octazooka: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	odorsleuth: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	payday: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	petaldance: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	pinmissile: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	poisonfang: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	poisontail: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	present: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	psywave: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	rage: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	reversal: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	roleplay: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	rollingkick: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	rollout: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	sandtomb: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	skyuppercut: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	slam: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	sludge: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	smellingsalt: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	spikecannon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	spitup: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	spite: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	splash: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	stockpile: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	stomp: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	stringshot: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	superpower: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	supersonic: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	swallow: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	tailglow: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	thrash: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	tickle: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	triplekick: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	twineedle: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	visegrip: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	vitalthrow: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	waterspout: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	withdraw: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	wrap: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
-	zapcannon: {
-		inherit: true,
-		isNonstandard: "Unobtainable",
-	},
+	// acidarmor: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// aircutter: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// assist: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// barrage: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// beatup: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bellydrum: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bide: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bind: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bite: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// blastburn: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// boneclub: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bonerush: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bonemerang: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// bounce: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// clamp: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// cometpunch: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// cosmicpower: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// covet: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// crabhammer: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// crosschop: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// crushclaw: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// defensecurl: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// detect: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// disable: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// dizzypunch: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// doubleteam: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// doubleslap: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// dragonclaw: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// dragondance: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// dragonrage: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// dragonbreath: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// eggbomb: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// eruption: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// explosion: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// falseswipe: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// featherdance: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// fissure: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// followme: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// frustration: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// furyattack: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// grasswhistle: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// grudge: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// helpinghand: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// hornattack: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// horndrill: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// hydrocannon: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// hyperfang: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// iceball: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// irontail: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// kinesis: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// meanlook: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// meditate: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// megakick: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// megapunch: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// megahorn: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// metalsound: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// meteormash: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// milkdrink: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// mindreader: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// mirrormove: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// mistball: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// moonlight: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// morningsun: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// mudslap: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// muddywater: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// naturepower: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// nightmare: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// octazooka: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// odorsleuth: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// payday: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// petaldance: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// pinmissile: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// poisonfang: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// poisontail: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// present: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// psywave: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// rage: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// reversal: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// roleplay: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// rollingkick: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// rollout: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// sandtomb: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// skyuppercut: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// slam: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// sludge: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// smellingsalt: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// spikecannon: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// spitup: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// spite: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// splash: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// stockpile: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// stomp: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// stringshot: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// superpower: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// supersonic: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// swallow: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// tailglow: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// thrash: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// tickle: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// triplekick: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// twineedle: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// visegrip: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// vitalthrow: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// waterspout: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// withdraw: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// wrap: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
+	// zapcannon: {
+		// inherit: true,
+		// isNonstandard: "Unobtainable",
+	// },
 };
