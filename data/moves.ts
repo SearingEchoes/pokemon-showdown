@@ -30303,6 +30303,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
 			const item = pokemon.getItem();
+			let wrongItem = false;
 			if (item.id) {
 				switch (item.id) {
 				case 'charcoal':
@@ -30356,7 +30357,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 				case 'priestgarb':
 					move.type = 'Faith';
 					break;
+				default:
+					wrongItem = true;
 				}
+			} else if (wrongItem == true && pokemon.hasType('???')) {
+			 forceSTAB = true;
 			}
 		},
 
