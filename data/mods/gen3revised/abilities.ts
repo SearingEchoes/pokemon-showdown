@@ -240,11 +240,35 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	toxicboost: {
 		inherit: true,
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if ((attacker.status === 'psn' || attacker.status === 'tox') && move.category === 'Physical') {
+				return this.chainModify(1.5);
+			}
+		},
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'psn' || effect.id === 'tox') {
+				return false;
+			}
+		},
 		isNonstandard: null,
 		gen: 3,
 	},
 	flareboost: {
 		inherit: true,
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.status === 'brn' && move.category === 'Special') {
+				return this.chainModify(1.5);
+			}
+		},
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'brn') {
+				return false;
+			}
+		},
 		isNonstandard: null,
 		gen: 3,
 	},
