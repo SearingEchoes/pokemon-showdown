@@ -27,7 +27,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3revised',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
-		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori'],
+		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Soul Dew'],
 	},
 	{
 		name: "[Gen 3] Touhoumon Revised AG",
