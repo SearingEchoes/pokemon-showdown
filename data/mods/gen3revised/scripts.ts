@@ -29720,6 +29720,19 @@ export const Scripts: ModdedBattleScriptsData = {
 	
 	actions: {
 		inherit: true,
+		hitStepInvulnerabilityEvent(targets: Pokemon[], pokemon: Pokemon, move: ActiveMove) {
+			if (move.id === 'toxic' && pokemon.hasType('Poison'))) {
+				return new Array(targets.length).fill(true);
+			}
+			const hitResults = this.battle.runEvent('Invulnerability', targets, pokemon, move);
+			for (const [i, target] of targets.entries()) {
+				if (hitResults[i] === false) {
+					if (!move.spreadHit) this.battle.attrLastMove('[miss]');
+					this.battle.add('-miss', pokemon, target);
+				}
+			}
+			return hitResults;
+		},
 		getDamage(source, target, move, suppressMessages) {
 			if (typeof move === 'string') move = this.dex.getActiveMove(move);
 
@@ -29904,7 +29917,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			baseDamage = Math.floor(this.battle.runEvent('ModifyDamagePhase2', pokemon, target, move, baseDamage));
 
 			// STAB
-			if (move.forceSTAB || type !== '???' && pokemon.hasType(type)) {
+			if (move.forceSTAB || move.id !== 'Struggle') {
 				// The "???" type never gets STAB
 				// Not even if you Roost in Gen 4 and somehow manage to use
 				// Struggle in the same turn.
