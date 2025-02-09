@@ -311,6 +311,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	toxic: {
 		inherit: true,
 		accuracy: 90,
+		onModifyMove(move, pokemon) {
+			if (pokemon.hasType('Poison')) {
+				move.accuracy = true;
+			}
+		},
 	},
 	manaburst: {
 		inherit: true,
