@@ -29904,7 +29904,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			baseDamage = Math.floor(this.battle.runEvent('ModifyDamagePhase2', pokemon, target, move, baseDamage));
 
 			// STAB
-			if (move.forceSTAB || move.id !== 'Struggle' || (pokemon.hasType(type)) ) {
+			if (move.forceSTAB || type !== '???' && pokemon.hasType(type)) {
 				// The "???" type never gets STAB
 				// Not even if you Roost in Gen 4 and somehow manage to use
 				// Struggle in the same turn.
