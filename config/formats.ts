@@ -20,6 +20,24 @@ The column value will be ignored for repeat sections.
 export const Formats: FormatList = [
 
 	{
+		section: "Touhoumon 1.5",
+	},
+	{
+		name: "[Gen 3] Touhoumon Revised OU",
+
+		mod: 'gen3revised',
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
+		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori'],
+	},
+	{
+		name: "[Gen 3] Touhoumon Revised AG",
+
+		mod: 'gen3revised',
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
+		banlist: ['King\'s Rock', 'Sand Veil'],
+	},
+
+	{
 		section: "Touhoumon 1.8",
 	},
 	
@@ -81,34 +99,13 @@ export const Formats: FormatList = [
 	},
 	
 	{
-		section: "Touhoumon 1.5",
+		section: "Extreme VR Training",
 	},
 	{
-		name: "[Gen 3] Touhoumon Revised OU",
-
-		mod: 'gen3revised',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
-		debug: true,
-		banlist: ['Uber', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Double Soul'],
-	},
-	{
-		name: "[Gen 3] Touhoumon Revised AG",
-
-		mod: 'gen3revised',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		debug: true,
-		banlist: ['King\'s Rock', 'Sand Veil'],
-	},
-	
-	{
-		section: "????",
-	},
-	{
-		name: "[Gen 3] Chaos, Render of Tranquility",
+		name: "[Gen 3] Towards The Future",
 
 		mod: 'gen3chaoticrift',
 		team: 'random',
-		debug: true,
 		ruleset: ['Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Freeze Clause Mod'],
 	},
 
