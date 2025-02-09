@@ -30361,7 +30361,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 					wrongItem = true;
 				}
 			} else if (wrongItem == true && pokemon.hasType('???')) {
-			 forceSTAB = true;
+			 move.forceSTAB = true;
 			}
 		},
 
