@@ -30360,8 +30360,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				default:
 					wrongItem = true;
 				}
-			} else if (wrongItem == true && pokemon.hasType('???')) {
-			 move.forceSTAB = true;
+			} else 	if (!item.id && pokemon.hasType('???')) {
+				move.forceSTAB = true;
+				this.debug("STAB for no item");
+			}
+			if (wrongItem === true && pokemon.hasType('???')) {
+				move.forceSTAB = true;
+				this.debug("Apply STAB");
 			}
 		},
 
