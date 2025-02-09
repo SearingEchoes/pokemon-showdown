@@ -27,6 +27,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen3revised',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
+		debug: true,
 		banlist: ['Uber', 'Bright Powder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Soul Dew'],
 	},
 	{
