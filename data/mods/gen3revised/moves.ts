@@ -287,7 +287,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		accuracy: 85,
 		basePower: 35,
-		type: "Steel",
 	},
 	thunderbolt: {
 		inherit: true,

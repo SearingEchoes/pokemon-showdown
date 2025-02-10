@@ -1184,8 +1184,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	  },
 	adventmystia: {
-		isNonstandard: "Unobtainable",
-		tier: "Illegal",
+		tier: "OU",
+		doublesTier: "DOU",
 	  },
 	technicalhatate: {
 		isNonstandard: "Unobtainable",

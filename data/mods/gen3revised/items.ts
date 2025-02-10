@@ -74,6 +74,18 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	sitrusberry: {
 		inherit: true,
+		onUpdate(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				pokemon.eatItem();
+			}
+		},
+		onTryEatItem(item, pokemon) {
+			if (!this.runEvent('TryHeal', pokemon)) return false;
+		},
+		onEat(pokemon) {
+			this.heal(pokemon.baseMaxhp / 4);
+		},
+		desc: "Restores 25% max HP at 1/2 max HP or less.",
 		rating: 3,
 	},
 	choiceband: {
