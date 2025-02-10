@@ -9243,6 +9243,255 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Maid's secret technique. Does not miss and ignores Protect.",
 		shortDesc: "Always hits and ignores Protect.",
 	},
+	//1.5r moves
+	
+	mineralpelt: {
+		name: "Mineral Pelt",
+		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "100% chance to lower the target's Attack by 1.",
+	},
+	laevatein: {
+		name: "Laevatein",
+		desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
+		shortDesc: "OHKOs the target. Fails if user is a lower level.",
+	},
+	sandymash: {
+		name: "Sandy Mash",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
+	},
+	boltkick: {
+		name: "Bolt Kick",
+		desc: "Has a 20% chance to paralyze the target.",
+		shortDesc: "20% chance to paralyze the target.",
+	},
+	knifewave: {
+		name: "Knife Wave",
+		desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
+	onibinding: {
+		name: "Oni Binding",
+		desc: "Prevents the target from switching for two to five turns (always five turns if the user is holding Grip Claw). Causes damage to the target equal to 1/16 of its maximum HP, rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass or U-turn. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 2-5 turns.",
+		
+		start: "  [POKEMON] was constricted by chains!",
+	},
+	tenkolaser: {
+		name: "Tenko Laser",
+		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
+	},
+	coldinferno: {
+		name: "Cold Inferno",
+			desc: "Has a 30% chance to burn the target.",
+			shortDesc: "30% chance to burn the target.",
+	},
+	hisousword: {
+		name: "Hisou Sword",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+		shortDesc: "User cannot move next turn.",
+	},
+	powertrance: {
+		name: "Power Trance",
+		desc: "Lowers the user's Defense and Special Defense by 1 stage. Raises the user's Attack, Special Attack, and Speed by 2 stages.",
+		shortDesc: "Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2.",
+	},
+	mysticbomb: {
+		name: "Mystic Bomb",
+		desc: "Has a 30% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "30% chance to lower the target's Sp. Atk by 1.",
+	},
+	buggrip: {
+		name: "Bug Grip",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
+	},
+	holyneedle: {
+		name: "Holy Needle",
+		desc: "Has a 30% chance to paralyze the target.",
+		shortDesc: "30% chance to paralyze the target.",
+	},
+	shockabsorb: {
+		name: "Shock Absorb",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	spectralray: {
+		name: "Spectral Ray",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
+	},
+	subterraneansun: {
+		name: "Subterranean Sun",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+		shortDesc: "User cannot move next turn.",
+	},
+	skitterrush: {
+		name: "Skitter Rush",
+		desc: "Fails unless it is the user's first turn on the field.",
+		shortDesc: "Hits first. First turn out only.",
+	},
+	mindseye: {
+		name: "Mind's Eye",
+		desc: "Raises the user's Attack by 2 stages.",
+		shortDesc: "Raises the user's Attack by 2.",
+	},
+	manapunch: {
+		name: "Mana Punch",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
+	},
+	gapzone: {
+		name: "Gap Zone",
+			desc: "A random move among those known by the user's party members is selected for use. Does not select Assist, Counter, Covet, Destiny Bond, Detect, Endure, Focus Punch, Follow Me, Helping Hand, Metronome, Mimic, Mirror Coat, Mirror Move, Protect, Sketch, Sleep Talk, Snatch, Struggle, Thief, or Trick.",
+		shortDesc: "Uses a random move known by a team member.",
+	},
+	powerdrum: {
+		name: "Power Drum",
+		desc: "Raises the user's Attack by 12 stages in exchange for the user losing 1/2 of its maximum HP, rounded down. Fails if the user would faint or if its Attack stat stage is 6.",
+		shortDesc: "User loses 50% max HP. Maximizes Attack.",
+
+		boost: "  [POKEMON] cut its own HP and maximized its Attack!",
+	},
+	draculacradle: {
+		name: "Dracula Cradle",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP.",
+		shortDesc: "Has 1/4 recoil.",
+	},
+	sakedrink: {
+		name: "Sake Drink",
+		desc: "The user restores 1/2 of its maximum HP, rounded down.",
+		shortDesc: "Heals the user by 50% of its max HP.",
+	},
+	butterfly: {
+		name: "Butterfly",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	superego: {
+		name: "Superego",
+		desc: "Has a 50% chance to confuse the target.",
+		shortDesc: "50% chance to confuse the target.",
+	},
+	zapflare: {
+		name: "Zap Flare",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+		shortDesc: "User cannot move next turn.",
+	},
+	savagesting: {
+		name: "Savage Sting",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
+	},
+	divinepulse: {
+		name: "Divine Pulse",
+		desc: "Has a 30% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "30% chance to lower the target's Sp. Def by 1.",
+	},
+	holystrike: {
+		name: "Holy Strike",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
+	},
+	firebullets: {
+		name: "Fire Bullets",
+		desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
+	aquaveil: {
+		name: "Aqua Veil",
+		desc: "The user has 1/16 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, and the replacement will remain trapped and still receive the healing effect.",
+		shortDesc: "User recovers 1/16 max HP per turn. Traps user.",
+		
+		start: "  [POKEMON] surrounded itself with a veil of water!",
+		block: "  [POKEMON] is trapped by its Aqua Veil!",
+		heal: "  [POKEMON] restored a bit of HP!",
+	},
+	fujiyamavolcano: {
+		name: "Fujiyama Volcano",
+		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
+	},
+	corpserush: {
+		name: "Corpse Rush",
+		desc: "Raises the user's Attack by 2 stages if this move knocks out the target.",
+		shortDesc: "Raises user's Attack by 2 if this KOes the target.",
+	},
+	poisonclaw: {
+		name: "Poison Claw",
+		desc: "Has a 30% chance to badly poison the target.",
+		shortDesc: "30% chance to badly poison the target.",
+	},
+	ringoffire: {
+		name: "Ring of Fire",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits adjacent Pokemon. The user faints.",
+	},
+	suwadeluge: {
+		name: "Suwa Deluge",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+		shortDesc: "User cannot move next turn.",
+	},
+	apollo13: {
+		name: "Apollo 13",
+		desc: "Has a 50% chance to badly poison the target. Has a heightened critical hit rate.",
+		shortDesc: "50% chance of Toxic. High crit ratio.",
+	},
+	bugwhistle: {
+		name: "Bug Whistle",
+		desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
+	},
+	hourairend: {
+		name: "Hourai Rend",
+		desc: "Power doubles if the user moves after the target this turn. Switching in counts as an action.",
+		shortDesc: "Power doubles if the user moves after the target.",
+	},
+	watergeyser: {
+		name: "Water Geyser",
+		desc: "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+		shortDesc: "Less power as user's HP decreases. Hits foe(s).",
+	},
+	rockgale: {
+		name: "Rock Gale",
+		desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "10% chance to lower the foe(s) Speed by 1.",
+	},
+	poisonwave: {
+		name: "Poison Wave",
+		desc: "Has a 20% chance to poison the target.",
+		shortDesc: "20% chance to poison adjacent Pokemon.",
+	},
+	glacialbash: {
+		name: "Glacial Bash",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "User takes 1/3 recoil.",
+	},
+	mysticfire: {
+		name: "Mystic Fire",
+		desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
+	},
+	cheer: {
+		name: "Cheer",
+		desc: "The power of the target's attack this turn is multiplied by 1.5 (this effect is stackable). Fails if there is no ally adjacent to the user or if the ally already moved this turn, but does not fail if the ally is using a two-turn move.",
+		shortDesc: "One adjacent ally's move power is 1.5x this turn.",
+
+		start: "  [SOURCE] is cheering on [POKEMON]!",
+	},
+	multipulse: {
+		name: "Multi-Pulse",
+		desc: "Changes type when a type-boosting item is held. This counts all generic typeboosters like Charcoal, but not others like Sea Incense.",
+		shortDesc: "Changes type when a type-boosting item is held.",
+	},
+	eeriewave: {
+		name: "Eerie Wave",
+		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
+	
+	//super illegal stuff
 	specialbeamcannon: {
 		name: "Special Beam Cannon",
 		desc: "An attack that requires focus. Will be stopped if hit mid-turn.",
@@ -9314,7 +9563,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	descentofdragons: {
 		name: "Descent of Dragons",
-		desc: "Shoots two dark arrows with perfect accuracy at the target. Has +1 Priority and cannot be used twice in a row. The attack also carries increased effectiveness against Dragon and Faith-types as if it was Dragon-type.",
+		desc: "Shoots two dark arrows with perfect accuracy at the target. Has +1 Priority and cannot be used twice in a row.",
 		shortDesc: "Hits twice, +1 Priority, and cannot miss. Cannot be used consecutively.",
 	},
 	iceblitz: {
