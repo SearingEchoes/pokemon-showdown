@@ -6056,6 +6056,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -1021,
 	},
+	gap: {
+		onCriticalHit: false,
+		isBreakable: true,
+		name: "Gap",
+		rating: 1,
+		num: -1022,
+	},
 	
 	//illegal abils
 	playwarrior: {
