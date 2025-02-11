@@ -1001,9 +1001,15 @@ export const Rulesets: {[k: string]: FormatData} = {
 		},
 		onValidateTeam(team) {
 			const boostingEffects = [
-				'acidarmor', 'agility', 'amnesia', 'apicotberry', 'barrier', 'bellydrum', 'bulkup', 'calmmind', 'cosmicpower', 'curse',
-				'defensecurl', 'dragondance', 'ganlonberry', 'growth', 'harden', 'howl', 'irondefense', 'liechiberry', 'meditate',
-				'petayaberry', 'salacberry', 'sharpen', 'speedboost', 'starfberry', 'swordsdance', 'tailglow', 'withdraw', 'agility2', 'amnesia2', 'curse2', 'barrier2', 'bulkup2', 'calmmind2', 'defensecurl2', 'disperse', 'growth2', 'harden2', 'howl2', 'irondefense2', 'lockon2', 'luckychant2', 'manacharge', 'manashield', 'nastyplot2', 'protect2', 'sharpen2', 'swordsdance2', 'tailwind2', 'withdraw2', 
+				'absorbbulb', 'acidarmor', 'acupressure', 'agility', 'amnesia', 'ancientpower', 'angerpoint', 'apicotberry', 'autotomize',
+				'barrier', 'bellydrum', 'bulkup', 'calmmind', 'cellbattery', 'chargebeam', 'coil', 'cosmicpower', 'cottonguard', 'curse',
+				'defendorder', 'defiant', 'download', 'dragondance', 'fierydance', 'flamecharge', 'ganlonberry', 'growth', 'harden',
+				'honeclaws', 'howl', 'irondefense', 'liechiberry', 'meditate', 'metalclaw', 'meteormash',
+				'moxie', 'nastyplot', 'ominouswind', 'petayaberry', 'quiverdance', 'rage', 'rattled', 'rockpolish',
+				'salacberry', 'sharpen', 'shellsmash', 'shiftgear', 'silverwind', 'skullbash', 'speedboost', 'starfberry',
+				'steadfast', 'steelwing', 'stockpile', 'swordsdance', 'tailglow', 'weakarmor', 'withdraw', 'workup',
+				'agility2', 'amnesia2', 'curse2', 'barrier2', 'bulkup2', 'calmmind2', 'defensecurl2', 'disperse', 'growth2', 'harden2', 'howl2', 'irondefense2', 'lockon2', 'luckychant2', 'manacharge', 'manashield', 'nastyplot2', 'protect2', 'sharpen2', 'swordsdance2', 'tailwind2', 'withdraw2',
+				'powertrance', 'powerdrum', 'luckychant', 'lockon', 'mindseye', 'tenkolaser', 'rockwrecker', 'mudsport', 'watersport', 'tailwind', 'strength', 'battlechant', 'skyattack', 'skullbash', 'outrage', 'rapidspin', 'charge',
 			];
 			let passers = 0;
 			for (const set of team) {
