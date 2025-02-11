@@ -617,7 +617,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	alicecard: {
 		inherit: true,
-		isNonstandard: "Unobtainable",
+//		isNonstandard: "Unobtainable",
+		isNonstandard: null,
+		gen: 3,
 	},
 	bunnyamulet: {
 		inherit: true,
