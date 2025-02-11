@@ -2590,7 +2590,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	alicecard: {
 		name: "Alice Card",
 		desc: "Cuts all incoming direct damage from strong targets by 40%. A strong target is defined by something that possesses 550 or more BST. If the target has 549 or less, the holder of this item takes 40% more damage instead.",
-		shortDesc: "Decreases the damage from strong foes by 40%. Otherwise, take 40% more.",
+		shortDesc: "Reduce damage from strong foes by 40%. Otherwise, take 40% more.",
 	},
 	cursedtag: {
 		name: "Cursed Tag",
@@ -2613,5 +2613,45 @@ export const ItemsText: {[k: string]: ItemText} = {
 	scarletrock: {
 		name: "Scarlet Rock",
 		desc: "Weather effects from the holder last 8 turns instead of 5.",
+	},
+	angelingcard: {
+		name: "Angeling Card",
+		shortDesc: "User becomes Faith-type.",
+	},
+	devilingcard: {
+		name: "Deviling Card",
+		shortDesc: "Halve damage from neutral hits. 1.5x from NVE/SE hits.",
+	},
+	ghostringcard: {
+		name: "Ghostring Card",
+		shortDesc: "User becomes Ghost-type.",
+	},
+	argiopecard: {
+		name: "Argiope Card",
+		shortDesc: "User becomes Poison-type.",
+	},
+	pasanacard: {
+		name: "Pasana Card",
+		shortDesc: "User becomes Fire-type.",
+	},
+	swordfishcard: {
+		name: "Swordfish Card",
+		shortDesc: "User becomes Water-type.",
+	},
+	dokebicard: {
+		name: "Dokebi Card",
+		shortDesc: "User becomes Flying-type.",
+	},
+	sandmancard: {
+		name: "Sandman Card",
+		shortDesc: "User becomes Ground-type.",
+	},
+	bathorycard: {
+		name: "Bathory Card",
+		shortDesc: "User becomes Dark-type.",
+	},
+	ladytaneecard: {
+		name: "Lady Tanee Card",
+		shortDesc: "Raise all non-HP stats and healing by 1.5x for Tropius.",
 	},
 };
