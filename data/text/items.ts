@@ -2590,7 +2590,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	alicecard: {
 		name: "Alice Card",
 		desc: "Cuts all incoming direct damage from strong targets by 40%. A strong target is defined by something that possesses 550 or more BST. If the target has 549 or less, the holder of this item takes 40% more damage instead.",
-		shortDesc: "Reduce damage from strong foes by 40%. Otherwise, take 40% more.",
+		shortDesc: "Reduces damage from strong foes by 40%. Otherwise, take 40% more.",
 	},
 	cursedtag: {
 		name: "Cursed Tag",
@@ -2620,7 +2620,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	devilingcard: {
 		name: "Deviling Card",
-		shortDesc: "Halve damage from neutral hits. 1.5x from NVE/SE hits.",
+		shortDesc: "Halve damage from neutral hits. Take 1.5x more damage from Super/Not-effective hits.",
 	},
 	ghostringcard: {
 		name: "Ghostring Card",
@@ -2652,6 +2652,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	ladytaneecard: {
 		name: "Lady Tanee Card",
-		shortDesc: "Raise all non-HP stats and healing by 1.5x for Tropius.",
+		shortDesc: "Raise all non-HP stats by 1.5x, and double healing received. Tropius only.",
 	},
 };
