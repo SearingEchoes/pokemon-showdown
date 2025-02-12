@@ -2616,39 +2616,39 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	angelingcard: {
 		name: "Angeling Card",
-		shortDesc: "User becomes Faith-type.",
+		shortDesc: "User becomes Faith-type. No effect with certain abilities.",
 	},
 	devilingcard: {
 		name: "Deviling Card",
-		shortDesc: "Halve damage from neutral hits. Take 1.5x more damage from Super/Not-effective hits.",
+		shortDesc: "Reduces damage from neutral hits, but 1.5x more from Super/Not-effective hits.",
 	},
 	ghostringcard: {
 		name: "Ghostring Card",
-		shortDesc: "User becomes Ghost-type.",
+		shortDesc: "User becomes Ghost-type. No effect with certain abilities.",
 	},
 	argiopecard: {
 		name: "Argiope Card",
-		shortDesc: "User becomes Poison-type.",
+		shortDesc: "User becomes Poison-type. No effect with certain abilities.",
 	},
 	pasanacard: {
 		name: "Pasana Card",
-		shortDesc: "User becomes Fire-type.",
+		shortDesc: "User becomes Fire-type. No effect with certain abilities.",
 	},
 	swordfishcard: {
 		name: "Swordfish Card",
-		shortDesc: "User becomes Water-type.",
+		shortDesc: "User becomes Water-type. No effect with certain abilities.",
 	},
 	dokebicard: {
 		name: "Dokebi Card",
-		shortDesc: "User becomes Flying-type.",
+		shortDesc: "User becomes Flying-type. No effect with certain abilities.",
 	},
 	sandmancard: {
 		name: "Sandman Card",
-		shortDesc: "User becomes Ground-type.",
+		shortDesc: "User becomes Ground-type. No effect with certain abilities.",
 	},
 	bathorycard: {
 		name: "Bathory Card",
-		shortDesc: "User becomes Dark-type.",
+		shortDesc: "User becomes Dark-type. No effect with certain abilities.",
 	},
 	ladytaneecard: {
 		name: "Lady Tanee Card",
