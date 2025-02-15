@@ -288,8 +288,10 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	luckypunch: {
 		inherit: true,
-		if (pokemon.baseSpecies.name === 'Chibi Orange' || pokemon.baseSpecies.name === 'Orange' || pokemon.baseSpecies.name === 'EX Orange') {
-			return critRatio + 2;
+		onModifyCritRatio(critRatio, user) {
+			if (user.baseSpecies.name === 'Chibi Orange' || user.baseSpecies.name === 'Orange' || user.baseSpecies.name === 'EX Orange') {
+				return critRatio + 2;
+			}
 		},
 		itemUser: ["Chibi Orange", "Orange", "EX Orange"],
 		desc: "If held by Orange(any form), critical hit ratio is raised by 2 stages.",
