@@ -74,6 +74,18 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	sitrusberry: {
 		inherit: true,
+		onUpdate(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				pokemon.eatItem();
+			}
+		},
+		onTryEatItem(item, pokemon) {
+			if (!this.runEvent('TryHeal', pokemon)) return false;
+		},
+		onEat(pokemon) {
+			this.heal(pokemon.baseMaxhp / 4);
+		},
+		desc: "Restores 25% max HP at 1/2 max HP or less.",
 		rating: 3,
 	},
 	choiceband: {
@@ -274,7 +286,58 @@ export const Items: {[k: string]: ModdedItemData} = {
 		onModifyAtk() {},
 		desc: "Holder's Psychic-type attacks have 1.2x power.",
 	},
+	luckypunch: {
+		inherit: true,
+			if ((pokemon.baseSpecies.name === 'Chibi Orange') ||
+			(pokemon.baseSpecies.name === 'Orange') ||
+			(pokemon.baseSpecies.name === 'EX Orange')) {
+				return critRatio + 2;
+			}
+		},
+		itemUser: ["Chibi Orange", "Orange", "EX Orange"],
+		desc: "If held by Orange(any form), critical hit ratio is raised by 2 stages.",
+	},
 	
+	kusanagi: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.baseSpecies.name === 'Rinnosuke') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(spa, pokemon) {
+			if (pokemon.baseSpecies.name === 'Kosuzu') {
+				return this.chainModify(2);
+			}
+		},
+		itemUser: ["Rinnosuke, Kosuzu"],
+		desc: "If held by Rinnosuke, doubles Atk. If held by Kosuzu, doubles SpAtk."
+	},
+	yatamirror: {
+		inherit: true,
+		fling: {
+			basePower: 90,
+		},
+		onModifyDefPriority: 1,
+		onModifyDef(def, pokemon) {
+			if (pokemon.baseSpecies.name === 'Rinnosuke') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpDPriority: 1,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.baseSpecies.name === 'Kosuzu') {
+				return this.chainModify(2);
+			}
+		},
+		itemUser: ["Rinnosuke, Kosuzu"],
+		desc: "If held by Rinnosuke, doubles Def. If held by Kosuzu, doubles SpDef."
+	},
 
 
 	aguavberry: {
@@ -410,7 +473,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	lifeorb: null,
 	lightball: null,
 	//lightclay: null,
-	luckypunch: null,
+	//luckypunch: null,
 	//lumberry: null,
 	lureball: null,
 	lustrousorb: null,
@@ -617,9 +680,7 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	alicecard: {
 		inherit: true,
-//		isNonstandard: "Unobtainable",
-		isNonstandard: null,
-		gen: 3,
+		isNonstandard: "Unobtainable",
 	},
 	bunnyamulet: {
 		inherit: true,
