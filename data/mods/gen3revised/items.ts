@@ -288,9 +288,9 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	luckypunch: {
 		inherit: true,
-			if ((pokemon.baseSpecies.name === 'Chibi Orange') ||
-			(pokemon.baseSpecies.name === 'Orange') ||
-			(pokemon.baseSpecies.name === 'EX Orange')) {
+			if (pokemon.baseSpecies.name === 'Chibi Orange' ||
+			pokemon.baseSpecies.name === 'Orange' ||
+			pokemon.baseSpecies.name === 'EX Orange') {
 				return critRatio + 2;
 			}
 		},
