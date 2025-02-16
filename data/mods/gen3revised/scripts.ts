@@ -26722,6 +26722,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "goliathdoll").learnset.doubleedge = ["3T"];
 		this.modData("Learnsets", "goliathdoll").learnset.furycutter = ["3T"];
 		this.modData("Learnsets", "goliathdoll").learnset.curse = ["3T"];
+		this.modData("Learnsets", "goliathdoll").learnset.tailwind = ["3T"];
 
 		this.modData("Learnsets", "sendai").learnset.decision = ["3L1"];
 		this.modData("Learnsets", "sendai").learnset.focusenergy = ["3L1"];
@@ -26896,6 +26897,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "margatroid").learnset.conversion2 = ["3T"];
 		this.modData("Learnsets", "margatroid").learnset.endure = ["3T"];
 		this.modData("Learnsets", "margatroid").learnset.imprison = ["3T"];
+		this.modData("Learnsets", "margatroid").learnset.manacharge = ["3T"];
 
 		this.modData("Learnsets", "adventchen").learnset.scratch = ["3L1"];
 		this.modData("Learnsets", "adventchen").learnset.powertrance = ["3L1"];
@@ -27854,6 +27856,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chibimargatroid").learnset.conversion2 = ["3T"];
 		this.modData("Learnsets", "chibimargatroid").learnset.endure = ["3T"];
 		this.modData("Learnsets", "chibimargatroid").learnset.imprison = ["3T"];
+		this.modData("Learnsets", "chibimargatroid").learnset.manacharge = ["3T"];
 
 		this.modData("Learnsets", "adventmystia").learnset.peck = ["3L1"];
 		this.modData("Learnsets", "adventmystia").learnset.sandattack = ["3L5"];

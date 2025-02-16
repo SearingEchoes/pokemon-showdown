@@ -38,6 +38,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 90,
 		type: "Steel",
 	},
+	selfdestruct: {
+		inherit: true,
+		basePower: 250,
+	},
 	razorwind: {
 		inherit: true,
 		desc: "Has a priority of +1. Does not have an increased crit rate.",
