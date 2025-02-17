@@ -8625,8 +8625,12 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 10,
 		},
 		onStart(pokemon) {
-				pokemon.addVolatile('lifeaura');
-				pokemon.item = '';
+		
+			if (!pokemon.ignoringItem()) {
+				this.add('-item', pokemon, 'Life Aura');
+			}
+			pokemon.addVolatile('lifeaura');
+			pokemon.item = '';
 		},
 
 		num: -151,
