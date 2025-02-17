@@ -924,7 +924,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 				this.add('-immune', target, '[from] Life Aura');
 				return null;
 			
-			},
+			}
 		},
 	},
 };
