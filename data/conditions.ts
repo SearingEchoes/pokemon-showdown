@@ -916,10 +916,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 		name: 'lifeaura',
 		duration: 4,
 		onTryHit(target, source, move) {
+
 		
-			const value = move.getMoveBasePower();
-		
-			if (value < 100 || move.category === 'Status' ) {
+			if (move.basepower < 100 || move.category === 'Status' ) {
 				this.debug('Aura immunity: ' + move.id);
 				this.add('-immune', target, '[from] Life Aura');
 				return null;
