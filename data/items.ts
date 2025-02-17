@@ -8618,4 +8618,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -150,
 		gen: 3,
 	},
+	bugfragment: {
+		name: "Bug Fragment",
+		spritenum: 822,
+		fling: {
+			basePower: 10,
+		},
+		onStart(pokemon) {
+				pokemon.addVolatile('lifeaura');
+				pokemon.item = '';
+		},
+
+		num: -151,
+		gen: 3,
+	},
 };

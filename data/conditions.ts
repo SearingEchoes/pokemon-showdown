@@ -912,4 +912,19 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-end', pokemon, 'bound');
 		},
 	},
+	lifeaura: {
+		name: 'lifeaura',
+		duration: 4,
+		onTryHit(target, source, move) {
+		
+			const value = move.getMoveBasePower();
+		
+			if (value < 100 || move.category === 'Status' ) {
+				this.debug('Aura immunity: ' + move.id);
+				this.add('-immune', target, '[from] Life Aura');
+				return null;
+			
+			},
+		},
+	},
 };
