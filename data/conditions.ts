@@ -915,17 +915,28 @@ export const Conditions: {[k: string]: ConditionData} = {
 	lifeaura: {
 		name: 'lifeaura',
 		duration: 4,
-		onTryHit(target, source, move) {
 		
-			this.debug(move.id);
-			this.debug(move.basepower);
-		
-			if (move.basepower < 100 || move.category === 'Status' ) {
-				this.debug('Aura immunity: ' + move.id);
-				this.add('-immune', target, '[from] Life Aura');
-				return null;
-			
+		onFoeBasePower(basePower, attacker, defender, move) {
+			const GossamerWingUsers = ["Advent Alice", "Masquerain", "Beautifly", "Mothim", "Vivillon"];
+			if (GossamerWingUsers.includes(defender.species.name)) {
+				if (['Rock', 'Electric', 'Ice'].includes(move.type)) {
+					this.add('-message', "The attack was weakened by GoassamerWing!");
+					return basePower / 2;
+				}
 			}
 		},
+		
+		// onTryHit(target, source, move) {
+		
+			// this.debug(move.id);
+			// this.debug(move.basepower);
+		
+			// if (move.basepower < 100 || move.category === 'Status' ) {
+				// this.debug('Aura immunity: ' + move.id);
+				// this.add('-immune', target, '[from] Life Aura');
+				// return null;
+			
+			// }
+		// },
 	},
 };
