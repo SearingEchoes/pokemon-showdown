@@ -922,7 +922,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 				if (['Rock', 'Electric', 'Ice'].includes(move.type)) {
 					this.add('-message', "The attack was weakened by GoassamerWing!");
 					this.debug(move.id);
-					this.debug(basepower);
+					this.debug(basePower);
 					return basePower / 2;
 				}
 			}
