@@ -921,6 +921,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (GossamerWingUsers.includes(defender.species.name)) {
 				if (['Rock', 'Electric', 'Ice'].includes(move.type)) {
 					this.add('-message', "The attack was weakened by GoassamerWing!");
+					this.debug(move.id);
+					this.debug(basepower);
 					return basePower / 2;
 				}
 			}
