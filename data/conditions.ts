@@ -916,15 +916,16 @@ export const Conditions: {[k: string]: ConditionData} = {
 		name: 'lifeaura',
 		duration: 4,
 		
+		onBasePowerPriority: 30,
 		onFoeBasePower(basePower, attacker, defender, move) {
 			const GossamerWingUsers = ["Advent Alice", "Masquerain", "Beautifly", "Mothim", "Vivillon"];
 			if (GossamerWingUsers.includes(defender.species.name)) {
-				if (['Rock', 'Electric', 'Ice'].includes(move.type)) {
+
 					this.add('-message', "The attack was weakened by GoassamerWing!");
 					this.debug(move.id);
 					this.debug(basePower);
 					return basePower / 2;
-				}
+
 			}
 		},
 		
