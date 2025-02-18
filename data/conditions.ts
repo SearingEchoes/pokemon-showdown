@@ -916,7 +916,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 		name: 'lifeaura',
 		duration: 4,
 		onTryHit(target, source, move) {
-			
+		
+			this.debug(move.id);
 			this.debug(move.basepower);
 		
 			if (move.basepower < 100 || move.category === 'Status' ) {
