@@ -2209,7 +2209,9 @@ export class Battle {
 
 	randomizer(baseDamage: number) {
 		const tr = this.trunc;
-		return tr(tr(baseDamage * (100 - this.random(16))) / 100);
+		//remove all variance for testing server
+		//return tr(tr(baseDamage * (100 - this.random(16))) / 100);
+		return 1;
 	}
 
 	/**
