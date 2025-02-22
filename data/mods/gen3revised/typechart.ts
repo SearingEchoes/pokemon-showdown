@@ -207,7 +207,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Dark: 0,
 			Electric: 3,
 			Fighting: 0,
-			Fire: 0,
+			Fire: 2,
 			Flying: 0,
 			Ghost: 0,
 			Grass: 1,

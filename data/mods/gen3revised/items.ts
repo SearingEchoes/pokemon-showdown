@@ -127,164 +127,287 @@ export const Items: {[k: string]: ModdedItemData} = {
 	},
 	blackbelt: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Fighting') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Fighting') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Fighting-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Fighting') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Fighting-type attacks deal 1.2x damage.",
 	},
 	blackglasses: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Dark') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Dark') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Dark-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Dark') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Dark-type attacks deal 1.2x damage.",
 	},
 	charcoal: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Fire') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Fire') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		shortDesc: "Holder's Fire-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Fire') {
+				return this.chainModify(1.2);
+			}
+		},
+		shortDesc: "Holder's Fire-type attacks deal 1.2x damage.",
 	},
 	hardstone: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Rock') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Rock') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Rock-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Rock') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Rock-type attacks deal 1.2x damage.",
 	},
 	magnet: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Electric') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Electric') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Electric-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Electric') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Electric-type attacks deal 1.2x damage.",
 	},
 	metalcoat: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Steel') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Steel') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Steel-type attacks have 1.2x power.",
-		shortDesc: "Holder's Steel-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Steel') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Steel-type attacks deal 1.2x damage.",
+		shortDesc: "Holder's Steel-type attacks deal 1.2x damage.",
 	},
 	miracleseed: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Grass') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Grass') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Grass-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Grass') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Grass-type attacks deal 1.2x damage.",
 	},
 	mysticwater: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Water') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Water') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Water-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Water') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Water-type attacks deal 1.2x damage.",
 	},
 	nevermeltice: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Ice') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Ice') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Ice-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Ice') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Ice-type attacks deal 1.2x damage.",
 	},
 	poisonbarb: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Poison') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Poison') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Poison-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Poison') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Poison-type attacks deal 1.2x damage.",
 	},
 	sharpbeak: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Flying') {
-				return this.chainModify([4915, 4096]);
+		onBasePower() {},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Flying') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Flying-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Flying') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Flying-type attacks deal 1.2x damage.",
 	},
 	silkscarf: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Normal') {
-				return this.chainModify([4915, 4096]);
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Normal') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Normal-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Normal') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Normal-type attacks deal 1.2x damage.",
 	},
 	silverpowder: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Bug') {
-				return this.chainModify([4915, 4096]);
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Bug') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Bug-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Bug') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Bug-type attacks deal 1.2x damage.",
 	},
 	softsand: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Ground') {
-				return this.chainModify([4915, 4096]);
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Ground') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Ground-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Ground') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Ground-type attacks deal 1.2x damage.",
 	},
 	spelltag: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Ghost') {
-				return this.chainModify([4915, 4096]);
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Ghost') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Ghost-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Ghost') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Ghost-type attacks deal 1.2x damage.",
 	},
 	twistedspoon: {
 		inherit: true,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.type === 'Psychic') {
-				return this.chainModify([4915, 4096]);
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Psychic') {
+				return this.chainModify(1.2);
 			}
 		},
-		onModifyAtk() {},
-		desc: "Holder's Psychic-type attacks have 1.2x power.",
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Psychic') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Psychic-type attacks deal 1.2x damage.",
+	},
+	priestgarb: {
+		inherit: true,
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk, user, target, move) {
+			if (move?.type === 'Faith') {
+				return this.chainModify(1.2);
+			}
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(spa, user, target, move) {
+			if (move?.type === 'Faith') {
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Holder's Faith-type attacks deal 1.2x damage.",
 	},
 	luckypunch: {
 		inherit: true,
