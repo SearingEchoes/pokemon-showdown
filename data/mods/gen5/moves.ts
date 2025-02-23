@@ -1014,7 +1014,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	whirlwind: {
 		inherit: true,
 		accuracy: 100,
-		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1},
 	},
 	wideguard: {
 		inherit: true,
