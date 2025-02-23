@@ -921,34 +921,37 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-start', pokemon, 'lifeaura');
 		},	
 		
-		onBasePowerPriority: 30,
-		onFoeBasePower(basePower, attacker, defender, move) {
+		// onBasePowerPriority: 30,
+		// onFoeBasePower(basePower, attacker, defender, move) {
+			// if (move.basePower < 100 || move.category === 'Status' ) {
+
+					// this.debug('Aura immunity: ' + move.id);
+					// this.add('-immune', target, '[from] Life Aura');
+					// this.debug(move.id);
+					// this.debug(basePower);
+					// return 0;
+
+			// }
+		// },
+		
+		onTryHit(basePower, target, source, move) {
+		
+			this.debug(move.id);
+			this.debug(move.basePower);
+		
 			if (move.basePower < 100 || move.category === 'Status' ) {
 
 					this.debug('Aura immunity: ' + move.id);
 					this.add('-immune', target, '[from] Life Aura');
-					this.debug(move.id);
-					this.debug(basePower);
 					return null;
 
 			}
-		},
+		},		
 		
 		onEnd(pokemon) {
 			this.add('-end', pokemon, 'lifeaura');
 		},
 		
-		// onTryHit(target, source, move) {
-		
-			// this.debug(move.id);
-			// this.debug(move.basepower);
-		
-			// if (move.basepower < 100 || move.category === 'Status' ) {
-				// this.debug('Aura immunity: ' + move.id);
-				// this.add('-immune', target, '[from] Life Aura');
-				// return null;
-			
-			// }
-		// },
+
 	},
 };
