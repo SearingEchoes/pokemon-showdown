@@ -916,9 +916,14 @@ export const Conditions: {[k: string]: ConditionData} = {
 		name: 'lifeaura',
 		duration: 4,
 		
+		
+		onStart(pokemon) {
+			this.add('-start', pokemon, 'lifeaura');
+		},	
+		
 		onBasePowerPriority: 30,
 		onFoeBasePower(basePower, attacker, defender, move) {
-			if (move.basepower < 100 || move.category === 'Status' ) {
+			if (move.basePower < 100 || move.category === 'Status' ) {
 
 					this.debug('Aura immunity: ' + move.id);
 					this.add('-immune', target, '[from] Life Aura');
@@ -927,6 +932,10 @@ export const Conditions: {[k: string]: ConditionData} = {
 					return null;
 
 			}
+		},
+		
+		onEnd(pokemon) {
+			this.add('-end', pokemon, 'lifeaura');
 		},
 		
 		// onTryHit(target, source, move) {
