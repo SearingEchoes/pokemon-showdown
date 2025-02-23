@@ -939,14 +939,25 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.debug(move.id);
 			this.debug(move.basePower);
 		
-			if (move.basePower < 100) {
+			if (move.basePower < 100 && !move.flags['wind']) {
 					if (target === source) return;
 					this.debug('Aura immunity: ' + move.id);
 					this.add("-message", source.name + "'s " + move.name + " is too weak to affect the Life Aura!");
 					return null;
 
+			} else {
+				if (move.flags['wind']) {
+					this.add("-message", source.name + "'s " + move.name + " blew away the Life Aura!");
+					target.removeVolatile('lifeaura');
+					return null;
+				}
+			
+				this.add("-message", source.name + "'s " + move.name + " broke the Life Aura!");
+				target.removeVolatile('lifeaura');
+				return null;
 			}
 		},		
+		
 		
 		onEnd(pokemon) {
 			this.add('-end', pokemon, 'lifeaura');
