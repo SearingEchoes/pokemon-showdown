@@ -918,13 +918,13 @@ export const Conditions: {[k: string]: ConditionData} = {
 		
 		onBasePowerPriority: 30,
 		onFoeBasePower(basePower, attacker, defender, move) {
-			const GossamerWingUsers = ["Advent Alice", "Masquerain", "Beautifly", "Mothim", "Vivillon"];
-			if (GossamerWingUsers.includes(defender.species.name)) {
+			if (move.basepower < 100 || move.category === 'Status' ) {
 
-					this.add('-message', "The attack was weakened by GoassamerWing!");
+					this.debug('Aura immunity: ' + move.id);
+					this.add('-immune', target, '[from] Life Aura');
 					this.debug(move.id);
 					this.debug(basePower);
-					return basePower / 2;
+					return null;
 
 			}
 		},
