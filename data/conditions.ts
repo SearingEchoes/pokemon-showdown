@@ -949,12 +949,12 @@ export const Conditions: {[k: string]: ConditionData} = {
 				if (move.flags['wind']) {
 					this.add("-message", source.name + "'s " + move.name + " blew away the Life Aura!");
 					target.removeVolatile('lifeaura');
-					return null;
+					return;
 				}
 			
 				this.add("-message", source.name + "'s " + move.name + " broke the Life Aura!");
 				target.removeVolatile('lifeaura');
-				return null;
+				return;
 			}
 		},		
 		
