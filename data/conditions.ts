@@ -939,10 +939,10 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.debug(move.id);
 			this.debug(move.basePower);
 		
-			if (move.basePower < 100 || (target !== source && move.category === 'Status') ) {
-
+			if (move.basePower < 100) {
+					if (target === source) return;
 					this.debug('Aura immunity: ' + move.id);
-					this.add("-message", target.name + "'s " + move.name + " is too weak to affect the Life Aura!");
+					this.add("-message", source.name + "'s " + move.name + " is too weak to affect the Life Aura!");
 					return null;
 
 			}
