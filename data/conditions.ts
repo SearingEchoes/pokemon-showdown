@@ -939,7 +939,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.debug(move.id);
 			this.debug(move.basePower);
 		
-			if (move.basePower < 100 || move.category === 'Status' ) {
+			if (move.basePower < 100 || (target !== source && move.category === 'Status') ) {
 
 					this.debug('Aura immunity: ' + move.id);
 					this.add('-immune', target, '[from] Life Aura');
