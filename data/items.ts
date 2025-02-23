@@ -8626,9 +8626,9 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onStart(pokemon) {
 		
-			if (!pokemon.ignoringItem()) {
-				this.add("-message", "aura test start");
-			}
+			// if (!pokemon.ignoringItem()) {
+				// this.add("-message", "aura test start");
+			// }
 			pokemon.addVolatile('lifeaura');
 			pokemon.item = '';
 		},

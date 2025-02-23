@@ -921,19 +921,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-start', pokemon, 'lifeaura');
 		},	
 		
-		// onBasePowerPriority: 30,
-		// onFoeBasePower(basePower, attacker, defender, move) {
-			// if (move.basePower < 100 || move.category === 'Status' ) {
-
-					// this.debug('Aura immunity: ' + move.id);
-					// this.add('-immune', target, '[from] Life Aura');
-					// this.debug(move.id);
-					// this.debug(basePower);
-					// return 0;
-
-			// }
-		// },
-		
 		onTryHit(target, source, move) {
 		
 			this.debug(move.id);
@@ -947,6 +934,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 
 			} else {
 				if (move.flags['wind']) {
+					if (move.id === 'tailwind') return;
 					this.add("-message", source.name + "'s " + move.name + " blew away the Life Aura!");
 					target.removeVolatile('lifeaura');
 					return;
