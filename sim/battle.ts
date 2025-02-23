@@ -2211,7 +2211,7 @@ export class Battle {
 		const tr = this.trunc;
 		//remove all variance for testing server
 		//return tr(tr(baseDamage * (100 - this.random(16))) / 100);
-		return 1;
+		return baseDamage;
 	}
 
 	/**
