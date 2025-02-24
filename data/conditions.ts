@@ -919,6 +919,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		
 		onStart(pokemon) {
 			this.add('-start', pokemon, 'lifeaura');
+			this.add('-anim', pokemon, "lifeaura", pokemon);
 		},	
 		
 		onTryHit(target, source, move) {
@@ -930,6 +931,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 					if (target === source) return;
 					this.debug('Aura immunity: ' + move.id);
 					this.add("-message", source.name + "'s " + move.name + " is too weak to affect the Life Aura!");
+					this.add('-anim', pokemon, "lifeaura", pokemon);
 					return null;
 
 			} else {
