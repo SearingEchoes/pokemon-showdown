@@ -1869,8 +1869,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  exsatori: {
-		tier:: "Uber",
-		tier: "DOU",
+		tier: "Uber",
+		doublesTier: "DOU",
 	  },
 	  exkoishi: {
 		tier: "OU",
