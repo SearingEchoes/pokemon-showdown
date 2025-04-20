@@ -5,7 +5,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		const originalMoves = this.mod().data.Moves;
 		let originalCategory = '';
 		for (const i in this.data.Moves) {
-				if (this.data.Moves[i].category === 'Status' || this.data.Moves[i].name === 'Land\'s Wrath') continue;
+				if (this.data.Moves[i].category === 'Status' || this.data.Moves[i].name === 'Land\'s Wrath' || this.data.Moves[i].name === 'Poison Gas' || this.data.Moves[i].name === 'Flash') continue;
 				originalCategory = originalMoves[i].category;
 				if (originalCategory !== this.data.Moves[i].category) {
 						this.modData('Moves', i).category = originalCategory;
