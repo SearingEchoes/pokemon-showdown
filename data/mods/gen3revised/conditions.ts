@@ -24,12 +24,13 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 		// Damage reduction is handled directly in the sim/battle.js damage function
 		onResidualOrder: 10,
 		onResidual(pokemon) {
-			this.damage(pokemon.baseMaxhp / 16);
+			if (!pokemon.hasAbility('flareboost')) {
+				this.damage(pokemon.baseMaxhp / 16);
+			}
 		},
 	},
 	frz: {
-		name: 'frz',
-		effectType: 'Status',
+		inherit: true,
 		onStart(target, source, sourceEffect) {
 			if (sourceEffect && sourceEffect.effectType === 'Ability') {
 				this.add('-status', target, 'frz', '[from] ability: ' + sourceEffect.name, '[of] ' + source);
