@@ -262,15 +262,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	growth: {
 		inherit: true,
-		desc: "Raises the user's Attack and Special Attack by 1 stage. No weather interactions.",
-		shortDesc: "Raises user's Attack and Sp. Atk by 1.",
+		desc: "Raises the user's Attack and Special Attack by 1 stage. Raises both stats by an additional stage in sunlight.",
+		shortDesc: "Raises user's Atk/Sp.Atk by +1 stage. +2 in sun.",
 		pp: 40,
-		secondary: {
-			chance: 100,
-				boosts: {
-					atk: 1,
-					spa: 1,
-				},
+		onModifyMove(move, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) move.boosts = {atk: 2, spa: 2};
+		},
+		boosts: {
+			atk: 1,
+			spa: 1,
 		},
 	},
 	battlechant: {
@@ -366,6 +366,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		shortDesc: "No additional effect. Hits one target.",
 		accuracy: 85,
 		basePower: 120,
+		category: "Special",
 		pp: 10,
 		target: "normal",
 		gen: 3,
@@ -648,8 +649,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	luckychant: {
 		inherit: true,
-		desc: "Raises the user's Special Defense by 2 stages.",
-		shortDesc: "Raises the user's Sp. Def by 2.",
+		desc: "Raises the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Raises the user's Def and Sp. Def by 1.",
 		pp: 20,
 		sideCondition: null,
 		condition: {},
