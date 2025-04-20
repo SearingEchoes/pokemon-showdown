@@ -2488,7 +2488,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	fascinate: {
 		name: "Fascinate",
 		desc: "On switch-in, lowers the Sp. Attack of opponents by 1 stage. Anyone with the Inner Focus, Oblivious, Own Tempo, or behind a substitute are immune.",
-		shortDesc: "On switch-in, lowers the Attack of opponents by 1 stage.",
+		shortDesc: "On switch-in, lowers the Sp. Attack of opponents by 1 stage.",
 	},
 	coldheart: {
 		name: "Cold Heart",
@@ -2534,6 +2534,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	solidbody: {
 		name: "Solid Body",
 		shortDesc: "User receives 3/4 damage from supereffective attacks.",
+	},
+	nyudo: {
+		name: "Nyudo",
+		shortDesc: "Doubles user's Attack.",
 	},
 	selfcare: {
 		name: "Self-Care",
