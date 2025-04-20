@@ -272,14 +272,6 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		start: "  [POKEMON] was bound to the spot!",
 		end: "  [POKEMON] was freed of its bindings!",
 	},
-	lifeaura: {
-		start: "  [POKEMON] is shielded by Life Aura!",
-		startFromItem: "  [POKEMON]'s Bug Fragment generated a Life Aura!",
-		end: "  [POKEMON]'s aura fades.",
-		endFromItem: "  [POKEMON]'s aura fades.",
-		endFromMove: "  [POKEMON]'s [MOVE] pierces the aura!",
-		activate: "  [POKEMON]'s aura blocked the attack!",
-	},
 	// weather
 	sandstorm: {
 		weatherName: "Sandstorm",
