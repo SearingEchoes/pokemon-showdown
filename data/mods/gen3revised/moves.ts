@@ -262,9 +262,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	growth: {
 		inherit: true,
-		desc: "Raises the user's Attack and Special Attack by 1 stage. No weather interactions.",
-		shortDesc: "Raises user's Attack and Sp. Atk by 1.",
+		desc: "Raises the user's Attack and Special Attack by 1 stage. Raises both stats by an additional stage in sunlight.",
+		shortDesc: "Raises user's Atk/Sp.Atk by +1 stage. +2 in sun.",
 		pp: 40,
+		onModifyMove(move, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) move.boosts = {atk: 2, spa: 2};
+		},
 		secondary: {
 			chance: 100,
 				boosts: {
@@ -367,6 +370,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 85,
 		basePower: 120,
 		pp: 10,
+		category: "Special",
 		target: "normal",
 		gen: 3,
 	},
@@ -648,8 +652,8 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	luckychant: {
 		inherit: true,
-		desc: "Raises the user's Special Defense by 2 stages.",
-		shortDesc: "Raises the user's Sp. Def by 2.",
+		desc: "Raises the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Raises the user's Def and Sp. Def by 1.",
 		pp: 20,
 		sideCondition: null,
 		condition: {},
@@ -1822,5 +1826,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		noMetronome: [
 			"Assist", "Chatter", "Copycat", "Counter", "Covet", "Destiny Bond", "Detect", "Endure", "Feint", "Focus Punch", "Follow Me", "Helping Hand", "Me First", "Metronome", "Mimic", "Mirror Coat", "Mirror Move", "Protect", "Sketch", "Sleep Talk", "Snatch", "Struggle", "Switcheroo", "Thief", "Trick", "Leaf Storm", "Psychic", "Attract", "Scald", "Hidden Power", "Dive", "Acid Armor", "Air Cutter", "Assist", "Attract", "Barrage", "Beat Up", "Belly Drum", "Bide", "Bind", "Bite", "Blast Burn", "Bone Club", "Bone Rush", "Bonemerang", "Bounce", "Clamp", "Comet Punch", "Cosmic Power", "Covet", "Crabhammer", "Cross Chop", "Crush Claw", "Defense Curl", "Detect", "Disable", "Dive", "Dizzy Punch", "Double Team", "DoubleSlap", "Dragon Claw", "Dragon Dance", "Dragon Rage", "DragonBreath", "Egg Bomb", "Eruption", "Explosion", "False Swipe", "FeatherDance", "Fissure", "Follow Me", "Frustration", "Fury Attack", "Grasswhistle", "Grudge", "Helping Hand", "Hidden Power", "Horn Attack", "Horn Drill", "Hydro Cannon", "Hyper Fang", "Ice Ball", "Iron Tail", "Kinesis", "Mean Look", "Meditate", "Mega Kick", "Mega Punch", "Megahorn", "Metal Sound", "Meteor Mash", "Milk Drink", "Mind Reader", "Mirror Move", "Mist Ball", "Moonlight", "Morning Sun", "Mud Slap", "Muddy Water", "Nature Power", "Nightmare", "Octazooka", "Odor Sleuth", "Pay Day", "Petal Dance", "Pin Missile", "Poison Fang", "Poison Tail", "Present", "Psychic", "Psywave", "Rage", "Reversal", "Role Play", "Rolling Kick", "Rollout", "Sand Tomb", "Sky Uppercut", "Slam", "Sludge", "Smellingsalt", "Spike Cannon", "Spit Up", "Spite", "Splash", "Stockpile", "Stomp", "String Shot", "Superpower", "Supersonic", "Swallow", "Tail Glow", "Thrash", "Tickle", "Triple Kick", "Twineedle", "Vise Grip", "Vital Throw", "Water Spout", "Withdraw", "Wrap", "Zap Cannon"
 		],
+	},
+	spikes: {
+		inherit: true,
+		flags: {reflectable: 1, mustpressure: 1},
 	},
 };
