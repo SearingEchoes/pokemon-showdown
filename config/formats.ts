@@ -26,14 +26,15 @@ export const Formats: FormatList = [
 		name: "[Gen 3] Touhoumon Revised OU",
 
 		mod: 'gen3revised',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Endless Battle Clause'],
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
 		banlist: ['Uber', 'Bright Powder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Soul Dew'],
 	},
 	{
 		name: "[Gen 3] Touhoumon Revised AG",
 
 		mod: 'gen3revised',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Endless Battle Clause'],
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
+		banlist: ['King\'s Rock', 'Sand Veil', 'Bright Powder'],
 	},
 
 	{
