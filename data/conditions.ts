@@ -912,47 +912,4 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-end', pokemon, 'bound');
 		},
 	},
-	lifeaura: {
-		name: 'lifeaura',
-		duration: 4,
-		
-		
-		onStart(pokemon) {
-			this.add('-start', pokemon, 'lifeaura');
-			this.add('-anim', pokemon, "lifeaura", pokemon);
-		},	
-		
-		onTryHit(target, source, move) {
-		
-			this.debug(move.id);
-			this.debug(move.basePower);
-		
-			if (move.basePower < 100 && !move.flags['wind']) {
-					if (target === source) return;
-					this.debug('Aura immunity: ' + move.id);
-					this.add("-message", source.name + "'s " + move.name + " is too weak to affect the Life Aura!");
-					this.add('-anim', target, "lifeaura", target);
-					return null;
-
-			} else {
-				if (move.flags['wind']) {
-					if (move.id === 'tailwind') return;
-					this.add("-message", source.name + "'s " + move.name + " blew away the Life Aura!");
-					target.removeVolatile('lifeaura');
-					return;
-				}
-			
-				this.add("-message", source.name + "'s " + move.name + " broke the Life Aura!");
-				target.removeVolatile('lifeaura');
-				return;
-			}
-		},		
-		
-		
-		onEnd(pokemon) {
-			this.add('-end', pokemon, 'lifeaura');
-		},
-		
-
-	},
 };
