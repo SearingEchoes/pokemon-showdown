@@ -34,7 +34,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen3revised',
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Endless Battle Clause'],
-		banlist: [],
 	},
 
 	{
