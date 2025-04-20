@@ -16949,8 +16949,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chibicirno").learnset.endure = ["3T"];
 		this.modData("Learnsets", "chibicirno").learnset.tripleaxel = ["3T"];
 		this.modData("Learnsets", "chibicirno").learnset.hydropump = ["3T"];
-		this.modData("Learnsets", "chibicirno").learnset.powertrance = ["3T"];
-		this.modData("Learnsets", "chibicirno").learnset.flipturn = ["3T"];
 
 		this.modData("Learnsets", "cirno").learnset.tackle = ["3L1"];
 		this.modData("Learnsets", "cirno").learnset.growl = ["3L5"];
@@ -17009,8 +17007,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "cirno").learnset.endure = ["3T"];
 		this.modData("Learnsets", "cirno").learnset.tripleaxel = ["3T"];
 		this.modData("Learnsets", "cirno").learnset.hydropump = ["3T"];
-		this.modData("Learnsets", "cirno").learnset.powertrance = ["3T"];
-		this.modData("Learnsets", "cirno").learnset.flipturn = ["3T"];
 
 		this.modData("Learnsets", "chibiaya").learnset.sandattack = ["3L1"];
 		this.modData("Learnsets", "chibiaya").learnset.peck = ["3L1"];
@@ -17058,8 +17054,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chibiaya").learnset.leafblade = ["3T"];
 		this.modData("Learnsets", "chibiaya").learnset.heatwave = ["3T"];
 		this.modData("Learnsets", "chibiaya").learnset.acrobatics = ["3T"];
-		this.modData("Learnsets", "chibiaya").learnset.volttackle = ["3T"];
-		this.modData("Learnsets", "chibiaya").learnset.tripleaxel = ["3T"];
 
 		this.modData("Learnsets", "aya").learnset.sandattack = ["3L1"];
 		this.modData("Learnsets", "aya").learnset.peck = ["3L1"];
@@ -17107,8 +17101,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "aya").learnset.leafblade = ["3T"];
 		this.modData("Learnsets", "aya").learnset.heatwave = ["3T"];
 		this.modData("Learnsets", "aya").learnset.acrobatics = ["3T"];
-		this.modData("Learnsets", "aya").learnset.volttackle = ["3T"];
-		this.modData("Learnsets", "aya").learnset.tripleaxel = ["3T"];
 
 		this.modData("Learnsets", "chibiminoriko").learnset.tackle = ["3L1"];
 		this.modData("Learnsets", "chibiminoriko").learnset.mudshot = ["3L1"];
@@ -18701,8 +18693,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chibichen").learnset.snatch = ["3T"];
 		this.modData("Learnsets", "chibichen").learnset.faketears = ["3T"];
 		this.modData("Learnsets", "chibichen").learnset.flail = ["3T"];
-		this.modData("Learnsets", "chibichen").learnset.shadowsneak = ["3T"];
-		this.modData("Learnsets", "chibichen").learnset.skitterrush = ["3T"];
 
 		this.modData("Learnsets", "chen").learnset.scratch = ["3L1"];
 		this.modData("Learnsets", "chen").learnset.tailwhip = ["3L1"];
@@ -18763,8 +18753,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chen").learnset.snatch = ["3T"];
 		this.modData("Learnsets", "chen").learnset.faketears = ["3T"];
 		this.modData("Learnsets", "chen").learnset.flail = ["3T"];
-		this.modData("Learnsets", "chen").learnset.shadowsneak = ["3T"];
-		this.modData("Learnsets", "chen").learnset.skitterrush = ["3T"];
 
 		this.modData("Learnsets", "chibimomiji").learnset.scratch = ["3L1"];
 		this.modData("Learnsets", "chibimomiji").learnset.howl = ["3L1"];
@@ -23600,8 +23588,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chibieiki").learnset.lusterpurge = ["3T"];
 		this.modData("Learnsets", "chibieiki").learnset.steelbeam = ["3T"];
 		this.modData("Learnsets", "chibieiki").learnset.skillswap = ["3T"];
-		this.modData("Learnsets", "chibieiki").learnset.manacharge = ["3T"];
-		this.modData("Learnsets", "chibieiki").learnset.recover = ["3T"];
 
 		this.modData("Learnsets", "eiki").learnset.confusion = ["3L1"];
 		this.modData("Learnsets", "eiki").learnset.foresight = ["3L5"];
@@ -23651,8 +23637,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "eiki").learnset.lusterpurge = ["3T"];
 		this.modData("Learnsets", "eiki").learnset.steelbeam = ["3T"];
 		this.modData("Learnsets", "eiki").learnset.skillswap = ["3T"];
-		this.modData("Learnsets", "eiki").learnset.manacharge = ["3T"];
-		this.modData("Learnsets", "eiki").learnset.recover = ["3T"];
 
 		this.modData("Learnsets", "chibiran").learnset.mudshot = ["3L1"];
 		this.modData("Learnsets", "chibiran").learnset.tailwhip = ["3L1"];
@@ -25191,8 +25175,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "tenma").learnset.tailwind = ["3L1"];
 		this.modData("Learnsets", "tenma").learnset.thief = ["3L1"];
 		this.modData("Learnsets", "tenma").learnset.wingattack = ["3L1"];
-		this.modData("Learnsets", "tenma").learnset.volttackle = ["3L1"];
-		this.modData("Learnsets", "tenma").learnset.tripleaxel = ["3L1"];
 
 		this.modData("Learnsets", "orange").learnset.pound = ["3L1"];
 		this.modData("Learnsets", "orange").learnset.sandattack = ["3L5"];
@@ -25539,8 +25521,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "chibinazrin").learnset.confuseray = ["3T"];
 		this.modData("Learnsets", "chibinazrin").learnset.foresight = ["3T"];
 		this.modData("Learnsets", "chibinazrin").learnset.batonpass = ["3T"];
-		this.modData("Learnsets", "chibinazrin").learnset.lockon = ["3T"];
-		this.modData("Learnsets", "chibinazrin").learnset.forcepalm = ["3T"];
 
 		this.modData("Learnsets", "nazrin").learnset.tackle = ["3L1"];
 		this.modData("Learnsets", "nazrin").learnset.tailwhip = ["3L5"];
@@ -25595,8 +25575,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "nazrin").learnset.confuseray = ["3T"];
 		this.modData("Learnsets", "nazrin").learnset.foresight = ["3T"];
 		this.modData("Learnsets", "nazrin").learnset.batonpass = ["3T"];
-		this.modData("Learnsets", "nazrin").learnset.lockon = ["3T"];
-		this.modData("Learnsets", "nazrin").learnset.forcepalm = ["3T"];
 
 		this.modData("Learnsets", "chibikogasa").learnset.leer = ["3L1"];
 		this.modData("Learnsets", "chibikogasa").learnset.astonish = ["3L3"];
@@ -26982,8 +26960,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "adventchen").learnset.snatch = ["3T"];
 		this.modData("Learnsets", "adventchen").learnset.faketears = ["3T"];
 		this.modData("Learnsets", "adventchen").learnset.flail = ["3T"];
-		this.modData("Learnsets", "adventchen").learnset.shadowsneak = ["3T"];
-		this.modData("Learnsets", "adventchen").learnset.skitterrush = ["3T"];
 
 		this.modData("Learnsets", "kasen").learnset.leer = ["3L1"];
 		this.modData("Learnsets", "kasen").learnset.magnitude = ["3L1"];
@@ -27998,8 +27974,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "adventcirno").learnset.endure = ["3T"];
 		this.modData("Learnsets", "adventcirno").learnset.tripleaxel = ["3T"];
 		this.modData("Learnsets", "adventcirno").learnset.hydropump = ["3T"];
-		this.modData("Learnsets", "adventcirno").learnset.powertrance = ["3T"];
-		this.modData("Learnsets", "adventcirno").learnset.flipturn = ["3T"];
 
 		this.modData("Learnsets", "adventmeiling").learnset.tackle = ["3L1"];
 		this.modData("Learnsets", "adventmeiling").learnset.leer = ["3L1"];
