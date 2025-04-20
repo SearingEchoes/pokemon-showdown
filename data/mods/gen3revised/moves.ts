@@ -268,12 +268,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		onModifyMove(move, pokemon) {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) move.boosts = {atk: 2, spa: 2};
 		},
-		secondary: {
-			chance: 100,
-				boosts: {
-					atk: 1,
-					spa: 1,
-				},
+		boosts: {
+			atk: 1,
+			spa: 1,
 		},
 	},
 	battlechant: {
