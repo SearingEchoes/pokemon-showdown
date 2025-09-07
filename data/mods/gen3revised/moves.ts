@@ -527,11 +527,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Faith",
 	},
-	disperse: {
-		inherit: true,
-		pp: 20,
-		type: "Rock",
-	},
 	aquajet: {
 		inherit: true,
 		pp: 25,
@@ -892,25 +887,25 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	willowisp: {
 		inherit: true,
-		accuracy: 75,
+		accuracy: 85,
 	},
-	bodypress: {
-		inherit: true,
-		desc: "Damage doubles if the target is paralyzed. If this move is successful, the target is cured of paralysis. Uses normal damage calculation.",
-		shortDesc: "2x damage if target is paralyzed. Uses Atk stat.",
-		overrideOffensiveStat: null,
-		basePowerCallback(pokemon, target, move) {
-			if (target.status === 'par') {
-				this.debug('BP doubled on paralyzed target');
-				return move.basePower * 2;
-			}
-			return move.basePower;
-		},
-		onHit(target) {
-			if (target.status === 'par') target.cureStatus();
-		},
-		gen: 3,
-	},
+	// bodypress: {
+		// inherit: true,
+		// desc: "Damage doubles if the target is paralyzed. If this move is successful, the target is cured of paralysis. Uses normal damage calculation.",
+		// shortDesc: "2x damage if target is paralyzed. Uses Atk stat.",
+		// overrideOffensiveStat: null,
+		// basePowerCallback(pokemon, target, move) {
+			// if (target.status === 'par') {
+				// this.debug('BP doubled on paralyzed target');
+				// return move.basePower * 2;
+			// }
+			// return move.basePower;
+		// },
+		// onHit(target) {
+			// if (target.status === 'par') target.cureStatus();
+		// },
+		// gen: 3,
+	// },
 	accelerock: {
 		inherit: true,
 		pp: 25,
@@ -956,6 +951,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	darkpulse: {
 		inherit: true,
+		basePower: 90,
 		gen: 3,
 	},
 	rockpolish: {
@@ -1315,6 +1311,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 25,
 		pp: 15,
+	},
+	nightshade: {
+		inherit: true,
+		pp: 20,
 	},
 	manacharge: {
 		inherit: true,
@@ -1782,6 +1782,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 3,
 	},
+	foulplay: {
+		inherit: true,
+		gen: 3,
+	},
 	ingrain: {
 		inherit: true,
 		onTry(source) {
@@ -1821,7 +1825,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {noassist: 1, failcopycat: 1, nosleeptalk: 1, failmimic: 1},
 		noMetronome: [
-			"Assist", "Chatter", "Copycat", "Counter", "Covet", "Destiny Bond", "Detect", "Endure", "Feint", "Focus Punch", "Follow Me", "Helping Hand", "Me First", "Metronome", "Mimic", "Mirror Coat", "Mirror Move", "Protect", "Sketch", "Sleep Talk", "Snatch", "Struggle", "Switcheroo", "Thief", "Trick", "Leaf Storm", "Psychic", "Attract", "Scald", "Hidden Power", "Dive", "Acid Armor", "Air Cutter", "Assist", "Attract", "Barrage", "Beat Up", "Belly Drum", "Bide", "Bind", "Bite", "Blast Burn", "Bone Club", "Bone Rush", "Bonemerang", "Bounce", "Clamp", "Comet Punch", "Cosmic Power", "Covet", "Crabhammer", "Cross Chop", "Crush Claw", "Defense Curl", "Detect", "Disable", "Dive", "Dizzy Punch", "Double Team", "DoubleSlap", "Dragon Claw", "Dragon Dance", "Dragon Rage", "DragonBreath", "Egg Bomb", "Eruption", "Explosion", "False Swipe", "FeatherDance", "Fissure", "Follow Me", "Frustration", "Fury Attack", "Grasswhistle", "Grudge", "Helping Hand", "Hidden Power", "Horn Attack", "Horn Drill", "Hydro Cannon", "Hyper Fang", "Ice Ball", "Iron Tail", "Kinesis", "Mean Look", "Meditate", "Mega Kick", "Mega Punch", "Megahorn", "Metal Sound", "Meteor Mash", "Milk Drink", "Mind Reader", "Mirror Move", "Mist Ball", "Moonlight", "Morning Sun", "Mud Slap", "Muddy Water", "Nature Power", "Nightmare", "Octazooka", "Odor Sleuth", "Pay Day", "Petal Dance", "Pin Missile", "Poison Fang", "Poison Tail", "Present", "Psychic", "Psywave", "Rage", "Reversal", "Role Play", "Rolling Kick", "Rollout", "Sand Tomb", "Sky Uppercut", "Slam", "Sludge", "Smellingsalt", "Spike Cannon", "Spit Up", "Spite", "Splash", "Stockpile", "Stomp", "String Shot", "Superpower", "Supersonic", "Swallow", "Tail Glow", "Thrash", "Tickle", "Triple Kick", "Twineedle", "Vise Grip", "Vital Throw", "Water Spout", "Withdraw", "Wrap", "Zap Cannon"
+			"Assist", "Chatter", "Copycat", "Counter", "Covet", "Destiny Bond", "Detect", "Endure", "Feint", "Focus Punch", "Follow Me", "Helping Hand", "Me First", "Metronome", "Mimic", "Mirror Coat", "Mirror Move", "Protect", "Sketch", "Sleep Talk", "Snatch", "Struggle", "Switcheroo", "Thief", "Trick", "Leaf Storm", "Psychic", "Attract", "Scald", "Hidden Power", "Dive", "Acid Armor", "Air Cutter", "Assist", "Attract", "Barrage", "Beat Up", "Belly Drum", "Bide", "Bind", "Bite", "Blast Burn", "Bone Club", "Bone Rush", "Bonemerang", "Bounce", "Clamp", "Comet Punch", "Cosmic Power", "Covet", "Crabhammer", "Cross Chop", "Crush Claw", "Defense Curl", "Detect", "Disable", "Dive", "Dizzy Punch", "Double Team", "DoubleSlap", "Dragon Claw", "Dragon Dance", "Dragon Rage", "DragonBreath", "Egg Bomb", "Eruption", "Explosion", "False Swipe", "FeatherDance", "Fissure", "Follow Me", "Frustration", "Fury Attack", "Grasswhistle", "Grudge", "Helping Hand", "Hidden Power", "Horn Attack", "Horn Drill", "Hydro Cannon", "Hyper Fang", "Ice Ball", "Iron Tail", "Kinesis", "Mean Look", "Meditate", "Mega Kick", "Mega Punch", "Megahorn", "Metal Sound", "Meteor Mash", "Milk Drink", "Mind Reader", "Mirror Move", "Mist Ball", "Moonlight", "Morning Sun", "Mud Slap", "Muddy Water", "Nature Power", "Nightmare", "Octazooka", "Odor Sleuth", "Pay Day", "Petal Dance", "Pin Missile", "Poison Fang", "Poison Tail", "Present", "Psychic", "Psywave", "Rage", "Reversal", "Role Play", "Rolling Kick", "Rollout", "Sand Tomb", "Sky Uppercut", "Slam", "Sludge", "Smellingsalt", "Spike Cannon", "Spit Up", "Spite", "Splash", "Stockpile", "Stomp", "String Shot", "Superpower", "Supersonic", "Swallow", "Tail Glow", "Thrash", "Tickle", "Triple Kick", "Twineedle", "Vise Grip", "Vital Throw", "Water Spout", "Withdraw", "Wrap", "Disperse", "Zap Cannon"
 		],
 	},
 	spikes: {
