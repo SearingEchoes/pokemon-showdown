@@ -9490,6 +9490,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "100% chance to raise the user's Speed by 1.",
 	},
+	nervepress: {
+		name: "Nerve Press",
+		desc: "Damage doubles if the target is paralyzed. If this move is successful, the target is cured of paralysis. Uses normal damage calculation.",
+		shortDesc: "2x damage if target is paralyzed. Uses Atk stat.",
+	},
 	
 	//super illegal stuff
 	specialbeamcannon: {
