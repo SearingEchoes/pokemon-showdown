@@ -41,7 +41,8 @@ export const Formats: FormatList = [
 
 		mod: 'gen3revised',
 		gameType: 'doubles',
-		banlist: ['DUber', 'King\'s Rock', 'Bright Powder', 'Sand Veil', 'Lax Incense'],
+		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		banlist: ['DUber', 'King\'s Rock', 'Bright Powder', 'Sand Veil'],
 	},
 	{
 		name: "[Gen 3] Touhoumon Revised LC",
