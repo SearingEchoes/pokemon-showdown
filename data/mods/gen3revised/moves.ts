@@ -1832,4 +1832,16 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {reflectable: 1, mustpressure: 1},
 	},
+	forcepalm: {
+		inherit: true,
+		desc: "Has a 20% chance to Paralyze.",
+		shortDesc: "20% chance to Paralyze.",
+		accuracy: 100,
+		basePower: 80,
+		secondary: {
+			chance: 20,
+			status: 'par',
+		},
+		type: "Faith",
+	},
 };

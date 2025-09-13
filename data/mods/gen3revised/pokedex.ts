@@ -30,7 +30,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventmarisa: {
 		inherit: true,
 		types: ["Electric", "Fighting"],
-		abilities: {0: "Advent"},
+		abilities: {0: "Prankster", 1: "Hustle"},
 		baseStats: {hp: 85, atk: 120, def: 70, spa: 60, spd: 70, spe: 130},
 	},	
 	chibisakuya: {
@@ -94,7 +94,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventcirno: {
 		inherit: true,
 		types: ["Ice", "Steel"],
-		abilities: {0: "Advent"},
+		abilities: {0: "Moxie", 1: "Fortified"},
 		baseStats: {hp: 70, atk: 140, def: 100, spa: 70, spd: 75, spe: 80},
 	},
 	chibimeiling: {
@@ -112,7 +112,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventmeiling: {
 		inherit: true,
 		types: ["Fighting", "Steel"],
-		abilities: {0: "Advent"},
+		abilities: {0: "Relentless", 1: "Inner Power"},
 		baseStats: {hp: 120, atk: 130, def: 110, spa: 40, spd: 50, spe: 60},
 	},
 	chibikoakuma: {
@@ -130,13 +130,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibipatchouli: {
 		inherit: true,
 		types: ["Psychic"],
-		abilities: {0: "Trace", 1: "Magic Armor"},
+		abilities: {0: "Trace", 1: "Insomnia"},
 		baseStats: {hp: 40, atk: 30, def: 35, spa: 80, spd: 70, spe: 45},
 	},
 	patchouli: {
 		inherit: true,
 		types: ["Psychic", "Ground"],
-		abilities: {0: "Trace", 1: "Magic Armor"},
+		abilities: {0: "Trace", 1: "Insomnia"},
 		baseStats: {hp: 60, atk: 40, def: 45, spa: 100, spd: 90, spe: 65},
 	},
 	chibiremilia: {
@@ -147,6 +147,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	remilia: {
 		inherit: true,
 		types: ["Dark", "Flying"],
+		abilities: {0: "Keen Eye", 1: "Relentless"},
 		baseStats: {hp: 40, atk: 80, def: 50, spa: 80, spd: 60, spe: 90},
 	},
 	chibiflandre: {
@@ -186,7 +187,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventletty: {
 		inherit: true,
 		types: ["Ice", "Steel"],
-		abilities: {0: "Advent"},
+		abilities: {0: "Relentless", 1: "Focus"},
 		baseStats: {hp: 85, atk: 100, def: 80, spa: 50, spd: 65, spe: 120},
 	},
 	goliathdoll: {
@@ -199,17 +200,18 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Psychic", "Normal"],
 		abilities: {0: "Doll Wall", 1: "Minus"},
-		baseStats: {hp: 55, atk: 30, def: 40, spa: 75, spd: 50, spe: 50},
+		baseStats: {hp: 55, atk: 25, def: 60, spa: 70, spd: 60, spe: 30},
 	},
 	alice: {
 		inherit: true,
 		types: ["Psychic", "Normal"],
 		abilities: {0: "Doll Wall", 1: "Minus"},
-		baseStats: {hp: 75, atk: 40, def: 60, spa: 85, spd: 70, spe: 70},
+		baseStats: {hp: 75, atk: 40, def: 80, spa: 85, spd: 80, spe: 40},
 	},
 	adventalice: {
 		inherit: true,
 		types: ["Psychic", "Water"],
+		abilities: {0: "Magic Armor"},
 		baseStats: {hp: 80, atk: 60, def: 60, spa: 110, spd: 120, spe: 105},
 	},
 	chibimargatroid: {
@@ -338,6 +340,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventchen: {
 		inherit: true,
 		types: ["Ground", "Rock"],
+		abilities: {0: "Strong Grip", 1: "Servant"},
 		baseStats: {hp: 90, atk: 90, def: 80, spa: 50, spd: 80, spe: 110},
 	},
 	chibiran: {
@@ -355,6 +358,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventran: {
 		inherit: true,
 		types: ["Ground", "Psychic"],
+		abilities: {0: "Super Luck", 1: "Servant"},
 		baseStats: {hp: 75, atk: 130, def: 60, spa: 90, spd: 80, spe: 115},
 	},
 	chibiyukari: {
@@ -372,6 +376,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventyukari: {
 		inherit: true,
 		types: ["Psychic"],
+		abilities: {0: "Flawless", 1: "Master"},
 		baseStats: {hp: 90, atk: 50, def: 110, spa: 105, spd: 110, spe: 90},
 	},
 	chibiwriggle: {
@@ -401,6 +406,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventmystia: {
 		inherit: true,
 		types: ["Steel", "Flying"],
+		abilities: {0: "Gale Wings"},
 		baseStats: {hp: 75, atk: 60, def: 80, spa: 110, spd: 90, spe: 85},
 	},
 	chibikeine: {
@@ -430,6 +436,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventtewi: {
 		inherit: true,
 		types: ["Normal"],
+		abilities: {0: "Self-Care"},
 		baseStats: {hp: 85, atk: 60, def: 85, spa: 110, spd: 90, spe: 110},
 	},
 	chibireisen: {
@@ -447,6 +454,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	adventreisen: {
 		inherit: true,
 		types: ["Psychic", "Electric"],
+		abilities: {0: "Focus", 1: "Insomnia"},
 		baseStats: {hp: 70, atk: 80, def: 50, spa: 120, spd: 80, spe: 135},
 	},
 	reisenii: {
@@ -458,12 +466,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibieirin: {
 		inherit: true,
 		types: ["Psychic", "Poison"],
-		baseStats: {hp: 70, atk: 40, def: 45, spa: 50, spd: 40, spe: 55},
+		baseStats: {hp: 70, atk: 30, def: 50, spa: 50, spd: 70, spe: 30},
 	},
 	eirin: {
 		inherit: true,
 		types: ["Psychic", "Poison"],
-		baseStats: {hp: 100, atk: 50, def: 60, spa: 70, spd: 45, spe: 75},
+		baseStats: {hp: 100, atk: 45, def: 60, spa: 60, spd: 90, spe: 45},
 	},
 	chibikaguya: {
 		inherit: true,
@@ -540,13 +548,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	chibieiki: {
 		inherit: true,
-		types: ["Psychic"],
-		baseStats: {hp: 45, atk: 20, def: 50, spa: 70, spd: 60, spe: 55},
+		types: ["Faith", "Psychic"],
+		abilities: {0: "Interdict", 1: "Pressure"},
+		baseStats: {hp: 55, atk: 30, def: 55, spa: 50, spd: 60, spe: 50},
 	},
 	eiki: {
 		inherit: true,
-		types: ["Psychic"],
-		baseStats: {hp: 65, atk: 30, def: 70, spa: 90, spd: 80, spe: 65},
+		types: ["Faith", "Psychic"],
+		abilities: {0: "Interdict", 1: "Pressure"},
+		baseStats: {hp: 75, atk: 45, def: 75, spa: 70, spd: 80, spe: 60},
 	},
 	chibishizuha: {
 		inherit: true,
@@ -786,13 +796,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibibyakuren: {
 		inherit: true,
 		types: ["Psychic"],
-		abilities: {0: "Magic Armor", 1: "Inner Focus"},
+		abilities: {0: "Mana Barrier", 1: "Inner Focus"},
 		baseStats: {hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50},
 	},
 	byakuren: {
 		inherit: true,
 		types: ["Psychic", "Faith"],
-		abilities: {0: "Magic Armor", 1: "Inner Focus"},
+		abilities: {0: "Mana Barrier", 1: "Inner Focus"},
 		baseStats: {hp: 80, atk: 60, def: 60, spa: 60, spd: 60, spe: 80},
 	},
 	chibinue: {
@@ -822,25 +832,25 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibiyoshika: {
 		inherit: true,
 		types: ["Poison"],
-		abilities: {0: "Gate Keeper", 1: "Own Tempo"},
+		abilities: {0: "Gate Keeper", 1: "Servant"},
 		baseStats: {hp: 70, atk: 45, def: 55, spa: 45, spd: 55, spe: 30},
 	},
 	yoshika: {
 		inherit: true,
 		types: ["Poison"],
-		abilities: {0: "Gate Keeper", 1: "Own Tempo"},
+		abilities: {0: "Gate Keeper", 1: "Servant"},
 		baseStats: {hp: 90, atk: 55, def: 75, spa: 65, spd: 75, spe: 40},
 	},
 	chibiseiga: {
 		inherit: true,
 		types: ["Dark"],
-		abilities: {0: "Inner Focus", 1: "Levitate"},
+		abilities: {0: "Inner Focus", 1: "Master"},
 		baseStats: {hp: 50, atk: 40, def: 40, spa: 65, spd: 50, spe: 55},
 	},
 	seiga: {
 		inherit: true,
 		types: ["Dark"],
-		abilities: {0: "Inner Focus", 1: "Levitate"},
+		abilities: {0: "Inner Focus", 1: "Master"},
 		baseStats: {hp: 70, atk: 50, def: 50, spa: 85, spd: 70, spe: 75},
 	},
 	chibitojiko: {
@@ -894,30 +904,32 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibihakurei: {
 		inherit: true,
 		types: ["Faith"],
+		abilities: {0: "Hakurei Miko", 1: "Focus"},
 		baseStats: {hp: 55, atk: 80, def: 60, spa: 85, spd: 60, spe: 60},
 	},
 	hakurei: {
 		inherit: true,
 		types: ["Faith"],
+		abilities: {0: "Hakurei Miko", 1: "Interdict"},
 		baseStats: {hp: 75, atk: 120, def: 70, spa: 120, spd: 70, spe: 80},
 	},
 	chibikirisame: {
 		inherit: true,
 		types: ["Psychic", "Electric"],
-		abilities: {0: "Vital Spirit"},
+		abilities: {0: "Static", 1: "Vital Spirit"},
 		baseStats: {hp: 50, atk: 60, def: 60, spa: 80, spd: 75, spe: 75},
 	},
 	kirisame: {
 		inherit: true,
 		types: ["Psychic", "Electric"],
-		abilities: {0: "Vital Spirit"},
+		abilities: {0: "Speed Boost", 1: "Ambition"},
 		baseStats: {hp: 60, atk: 80, def: 65, spa: 145, spd: 95, spe: 90},
 	},
 	mima: {
 		inherit: true,
 		types: ["Ghost", "Dark"],
 		abilities: {0: "Super Luck", 1: "Pressure"},
-		baseStats: {hp: 85, atk: 90, def: 95, spa: 150, spd: 95, spe: 75},
+		baseStats: {hp: 85, atk: 90, def: 95, spa: 140, spd: 95, spe: 75},
 	},
 	konngara: {
 		inherit: true,
@@ -970,11 +982,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chibimeira: {
 		inherit: true,
 		types: ["Steel"],
+		abilities: {0: "Inner Focus", 1: "Limber"},
 		baseStats: {hp: 35, atk: 80, def: 40, spa: 35, spd: 35, spe: 75},
 	},
 	meira: {
 		inherit: true,
 		types: ["Steel"],
+		abilities: {0: "Inner Focus", 1: "Limber"},
 		baseStats: {hp: 55, atk: 100, def: 60, spa: 45, spd: 45, spe: 95},
 	},
 	magicstones: {
