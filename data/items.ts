@@ -8530,15 +8530,13 @@ export const Items: {[itemid: string]: ItemData} = {
 
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if ((pokemon.baseSpecies.name === 'Chibi Yuki') ||
-			(pokemon.baseSpecies.name === 'Yuki') ||
-			(pokemon.baseSpecies.name === 'Chibi Mai') ||
+			if ((pokemon.baseSpecies.name === 'Yuki') ||
 			(pokemon.baseSpecies.name === 'Mai'))
 			{
 				return this.chainModify(2);
 			}
 		},
-		itemUser: ["Chibi Yuki", "Yuki", "Chibi Mai", "Mai"],
+		itemUser: ["Yuki", "Mai"],
 		num: -139,
 		gen: 3,
 	},
