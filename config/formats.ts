@@ -36,6 +36,13 @@ export const Formats: FormatList = [
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
 		banlist: ['King\'s Rock', 'Sand Veil', 'Bright Powder'],
 	},
+	{
+		name: "[Gen 3] Touhoumon Revised LC",
+
+		mod: 'gen3revised',
+		ruleset: ['Little Cup Limit', 'Inherit Move Rule', 'One Boost Passer Clause'],
+		banlist: ['Uber', 'OU', 'UU', 'NFE', 'Bright Powder', 'King\'s Rock', 'Sand Veil', 'Basiney', 'Blissea', 'EX Satori', 'Soul Dew'],
+	},
 
 	{
 		section: "Touhoumon 1.8",
