@@ -5351,13 +5351,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	
 	//Touhoumon 1.8 Abilities Start Here
 	
-	advent: {
+	flawless: {
 		onModifySecondaries(secondaries) {
-			this.debug('Advent prevent secondary');
+			this.debug('Flawless prevent secondary');
 			return secondaries.filter(effect => !!(effect.self || effect.dustproof));
 		},
 		isBreakable: true,
-		name: "Advent",
+		name: "Flawless",
 		rating: 2,
 		num: -99,
 	},
@@ -6062,6 +6062,109 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Gap",
 		rating: 1,
 		num: -1022,
+	},
+	gapblock: {
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Gap Block');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Gap Block",
+		rating: 5,
+		num: -1023,
+	},
+	innatedream: {
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Innate Dream');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Innate Dream",
+		rating: 5,
+		num: -1024,
+	},
+	interdict: {
+		onFoeTryMove(target, source, move) {
+			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
+			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
+				return;
+			}
+
+			const armorTailHolder = this.effectState.target;
+			if ((source.isAlly(armorTailHolder) || move.target === 'all') && move.priority > 0.1) {
+				this.attrLastMove('[still]');
+				this.add('cant', armorTailHolder, 'ability: Interdict', move, '[of] ' + target);
+				return false;
+			}
+		},
+		isBreakable: true,
+		name: "Interdict",
+		rating: 2.5,
+		num: -1025,
+	},
+	indignant: {
+		onAfterEachBoost(boost, target, source, effect) {
+			if (!source || target.isAlly(source)) {
+				if (effect.id === 'stickyweb') {
+					this.hint("Court Change Sticky Web counts as lowering your own Speed, and Indignant only affects stats lowered by foes.", true, source.side);
+				}
+				return;
+			}
+			let statsLowered = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					statsLowered = true;
+				}
+			}
+			if (statsLowered) {
+				this.boost({spa: 2}, target, target, null, false, true);
+			}
+		},
+		name: "Indignant",
+		rating: 2.5,
+		num: -1026,
+	},
+	fortified: {
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'recoil') {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
+			}
+		},
+		name: "Fortified",
+		rating: 3,
+		num: -1027,
+	},
+	master: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility(['master', 'servant'])) {
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		name: "Master",
+		rating: 0,
+		num: -1028,
+	},
+	servant: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility(['master', 'servant'])) {
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		name: "Servant",
+		rating: 0,
+		num: -1029,
 	},
 	
 	//illegal abils
