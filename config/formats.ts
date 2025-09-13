@@ -36,14 +36,14 @@ export const Formats: FormatList = [
 		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause'],
 		banlist: ['King\'s Rock', 'Sand Veil', 'Bright Powder'],
 	},
-	{
-		name: "[Gen 3] Touhoumon Revised Doubles OU",
+	// {
+		// name: "[Gen 3] Touhoumon Revised Doubles OU",
 
-		mod: 'gen3revised',
-		gameType: 'doubles',
-		ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
-		banlist: ['Uber', 'King\'s Rock', 'Bright Powder', 'Sand Veil', 'Lax Incense'],
-	},
+		// mod: 'gen3revised',
+		// gameType: 'doubles',
+		// ruleset: ['Inherit Move Rule', 'One Boost Passer Clause', 'Freeze Clause Mod'],
+		// banlist: ['Uber', 'King\'s Rock', 'Bright Powder', 'Sand Veil', 'Lax Incense'],
+	// },
 	{
 		name: "[Gen 3] Touhoumon Revised LC",
 
