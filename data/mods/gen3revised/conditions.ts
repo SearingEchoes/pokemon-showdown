@@ -107,4 +107,13 @@ export const Conditions: {[k: string]: ModdedConditionData} = {
 			}
 		},
 	},
+	partiallytrapped: {
+		inherit: true,
+		durationCallback(target, source) {
+			if (source.hasItem('gripclaw')) return 6;
+			return this.random(5, 7);
+		},
+		onResidualOrder: 10,
+		onResidualSubOrder: 9,
+	},
 };

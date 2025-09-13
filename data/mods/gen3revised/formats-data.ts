@@ -1569,11 +1569,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	  },
 	basiney: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	blissea: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	//1.5r
 	  exreimu: {
@@ -2182,27 +2182,27 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	  },
 	  xreimu: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	  xmarisa: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	  xsakuya: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	  xsanae: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	  xyoumu: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	  xreisen: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 	  },
 	  chibisendai: {
 		tier: "LC",
