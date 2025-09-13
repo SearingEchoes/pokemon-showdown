@@ -2223,8 +2223,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	
 	//Touhoumon 1.8 Abilities Start Here
 	
-	advent: {
-		name: "Advent",
+	flawless: {
+		name: "Flawless",
 		shortDesc: "Unaffected by the secondary effects of attacks.",
 	},
 	guardarmor: {
@@ -2543,5 +2543,60 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Self-Care",
 		desc: "User has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
 		shortDesc: "User has a 33% chance to have its status cured at the end of each turn.",
+	},
+	gapblock: {
+		name: "Gap Block",
+		shortDesc: "User is immune to Status moves.",
+	},
+	innatedream: {
+		name: "Innate Dream",
+		shortDesc: "User is immune to Status moves.",
+	},
+	interdict: {
+		name: "Interdict",
+		desc: "Priority moves used by opponents targeting this user or its allies are prevented from having an effect.",
+		shortDesc: "User and its allies are protected from opposing priority moves.",
+
+		block: "#damp",
+	},
+	indignant: {
+		name: "Indignant",
+		desc: "User's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opponent.",
+		shortDesc: "User's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe.",
+	},
+	fortified: {
+		name: "Fortified",
+		desc: "User does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
+		shortDesc: "User does not take recoil damage besides Struggle/Life Orb/crash damage.",
+		gen3: {
+			desc: "User does not take recoil damage, except Struggle. Does not affect crash damage.",
+			shortDesc: "User does not take recoil damage besides Struggle and crash damage.",
+		},
+	},
+	master: {
+		name: "Master",
+		desc: "If an active ally has this Ability or the Servant Ability, this user's Special Attack is multiplied by 1.5.",
+		shortDesc: "If an active ally has this Ability or the Servant Ability, this user's Sp. Atk is 1.5x.",
+		gen4: {
+			desc: "If an active ally has the Servant Ability, this user's Special Attack is multiplied by 1.5.",
+			shortDesc: "If an active ally has the Servant Ability, this user's Sp. Atk is 1.5x.",
+		},
+		gen3: {
+			desc: "If an active character has the Servant Ability, this user's Special Attack is multiplied by 1.5.",
+			shortDesc: "If an active character has the Servant Ability, this user's Sp. Atk is 1.5x.",
+		},
+	},
+	servant: {
+		name: "Servant",
+		desc: "If an active ally has this Ability or the Master Ability, this user's Special Attack is multiplied by 1.5.",
+		shortDesc: "If an active ally has this Ability or the Master Ability, this user's Sp. Atk is 1.5x.",
+		gen4: {
+			desc: "If an active ally has the Master Ability, this user's Special Attack is multiplied by 1.5.",
+			shortDesc: "If an active ally has the Master Ability, this user's Sp. Atk is 1.5x.",
+		},
+		gen3: {
+			desc: "If an active character has the Master Ability, this user's Special Attack is multiplied by 1.5.",
+			shortDesc: "If an active character has the Master Ability, this user's Sp. Atk is 1.5x.",
+		},
 	},
 };
