@@ -527,11 +527,6 @@ export const Items: {[k: string]: ModdedItemData} = {
 		isNonstandard: null,
 		gen: 3,
 	},
-	cheriberry: {
-		inherit: true,
-		isNonstandard: null,
-		gen: 3,
-	},
 	cherishball: null,
 	//chestoberry: null,
 	chilanberry: {
