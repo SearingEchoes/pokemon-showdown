@@ -26410,7 +26410,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "X Sanae",
 		types: ["Faith", "Flying"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 120, atk: 80, def: 125, spa: 130, spd: 125, spe: 100},
+		baseStats: {hp: 120, atk: 70, def: 125, spa: 140, spd: 125, spe: 100},
 		abilities: {0: "Marvel Veil", 1: "Occult Boost"},
 		heightm: 9001,
 		weightkg: 25.0,
