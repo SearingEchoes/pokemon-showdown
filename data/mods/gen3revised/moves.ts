@@ -1843,5 +1843,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			status: 'par',
 		},
 		type: "Faith",
+		gen: 3,
 	},
 };
