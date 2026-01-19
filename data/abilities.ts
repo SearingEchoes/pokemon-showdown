@@ -6095,9 +6095,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 
 			const armorTailHolder = this.effectState.target;
-			if ((source.isAlly(armorTailHolder) || move.target === 'all') && move.priority > 0.1) {
+			if ((source.isAlly(dazzlingHolder) || move.target === 'all') && move.priority > 0.1) {
 				this.attrLastMove('[still]');
-				this.add('cant', armorTailHolder, 'ability: Interdict', move, '[of] ' + target);
+				this.add('cant', dazzlingHolder, 'ability: Interdict', move, '[of] ' + target);
 				return false;
 			}
 		},
