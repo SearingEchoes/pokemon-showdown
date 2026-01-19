@@ -437,7 +437,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Normal"],
 		abilities: {0: "Self-Care"},
-		baseStats: {hp: 85, atk: 60, def: 85, spa: 110, spd: 90, spe: 110},
+		baseStats: {hp: 85, atk: 60, def: 85, spa: 110, spd: 90, spe: 100},
 	},
 	chibireisen: {
 		inherit: true,
