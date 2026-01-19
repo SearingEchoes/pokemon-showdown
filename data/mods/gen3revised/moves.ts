@@ -1235,6 +1235,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 85,
 		basePower: 120,
 		pp: 5,
+		self: {},
 		secondary: {
 			chance: 20,
 			self: {
