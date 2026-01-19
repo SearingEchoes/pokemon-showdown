@@ -2556,8 +2556,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Interdict",
 		desc: "Priority moves used by opponents targeting this user or its allies are prevented from having an effect.",
 		shortDesc: "User and its allies are protected from opposing priority moves.",
-
-		block: "#damp",
 	},
 	indignant: {
 		name: "Indignant",
