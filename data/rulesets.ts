@@ -751,6 +751,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 				propellertail: 'stalwart',
 				teravolt: 'moldbreaker',
 				turboblaze: 'moldbreaker',
+				interdict: 'queenlymajesty',
 			};
 			const num = parseInt(this.ruleTable.valueRules.get('abilityclause')!);
 			for (const set of team) {
