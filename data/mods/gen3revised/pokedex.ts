@@ -910,7 +910,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	hakurei: {
 		inherit: true,
 		types: ["Faith"],
-		abilities: {0: "Hakurei Miko", 1: "Interdict"},
+		abilities: {0: "Dazzling", 1: "Interdict"},
 		baseStats: {hp: 75, atk: 120, def: 70, spa: 120, spd: 70, spe: 80},
 	},
 	chibikirisame: {
