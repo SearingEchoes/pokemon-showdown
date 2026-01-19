@@ -26434,7 +26434,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "X Reisen",
 		types: ["Dark", "Psychic"],
 		genderRatio: {M: 0.5, F: 0.5},
-		baseStats: {hp: 100, atk: 115, def: 105, spa: 115, spd: 105, spe: 130},
+		baseStats: {hp: 110, atk: 115, def: 105, spa: 115, spd: 105, spe: 130},
 		abilities: {0: "Serene Grace", 1: "Occult Boost"},
 		heightm: 9001,
 		weightkg: 25.0,
