@@ -2552,11 +2552,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Innate Dream",
 		shortDesc: "User is immune to Status moves.",
 	},
-	interdict: {
-		name: "Interdict",
-		desc: "Priority moves used by opponents targeting this user or its allies are prevented from having an effect.",
-		shortDesc: "User and its allies are protected from opposing priority moves.",
-	},
 	indignant: {
 		name: "Indignant",
 		desc: "User's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opponent.",
