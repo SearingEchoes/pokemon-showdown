@@ -6094,10 +6094,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return;
 			}
 
-			const armorTailHolder = this.effectState.target;
-			if ((source.isAlly(armorTailHolder) || move.target === 'all') && move.priority > 0.1) {
+			const dazzlingHolder = this.effectState.target;
+			if ((source.isAlly(dazzlingHolder) || move.target === 'all') && move.priority > 0.1) {
 				this.attrLastMove('[still]');
-				this.add('cant', armorTailHolder, 'ability: Interdict', move, '[of] ' + target);
+				this.add('-ability', dazzlingHolder, 'Interdict');
+				this.add('cant', target, move, '[of] ' + dazzlingHolder);
 				return false;
 			}
 		},
