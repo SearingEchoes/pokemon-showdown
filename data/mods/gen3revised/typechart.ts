@@ -236,7 +236,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Fire: 1,
 			Flying: 0,
 			Ghost: 0,
-			Grass: 0,
+			Grass: 2,
 			Ground: 0,
 			Ice: 2,
 			Normal: 0,
@@ -244,7 +244,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Psychic: 0,
 			Rock: 1,
 			Steel: 1,
-			Water: 0,
+			Water: 2,
 			
 			Faith: 0,
 		},
