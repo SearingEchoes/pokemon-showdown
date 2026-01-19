@@ -2557,7 +2557,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "Priority moves used by opponents targeting this user or its allies are prevented from having an effect.",
 		shortDesc: "User and its allies are protected from opposing priority moves.",
 
-		block: "#damp",
+		block: "  [POKEMON] is protected by its ability!",
 	},
 	indignant: {
 		name: "Indignant",
