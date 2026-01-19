@@ -338,9 +338,24 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		gen: 3,
 	},
 	interdict: {
-		inherit: true,
-		isNonstandard: null,
-		gen: 3,
+		name: "Interdict",
+		desc: "Priority moves used by opponents targeting this user or its allies are prevented from having an effect.",
+		shortDesc: "User and its allies are protected from opposing priority moves.",
+		onFoeTryMove(target, source, move) {
+			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
+			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
+				return;
+			}
+
+			const dazzlingHolder = this.effectState.target;
+			if ((source.isAlly(dazzlingHolder) || move.target === 'all') && move.priority > 0.1) {
+				this.attrLastMove('[still]');
+				this.add('-ability', dazzlingHolder, 'Interdict');
+				this.add('cant', target, move, '[of] ' + dazzlingHolder);
+				return false;
+			}
+		},
+		isBreakable: true,
 	},
 	dazzling: {
 		inherit: true,
