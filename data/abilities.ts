@@ -6087,26 +6087,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: -1024,
 	},
-	interdict: {
-		onFoeTryMove(target, source, move) {
-			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
-			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
-				return;
-			}
 
-			const dazzlingHolder = this.effectState.target;
-			if ((source.isAlly(dazzlingHolder) || move.target === 'all') && move.priority > 0.1) {
-				this.attrLastMove('[still]');
-				this.add('-ability', dazzlingHolder, 'Interdict');
-				this.add('cant', target, move, '[of] ' + dazzlingHolder);
-				return false;
-			}
-		},
-		isBreakable: true,
-		name: "Interdict",
-		rating: 2.5,
-		num: -1025,
-	},
 	indignant: {
 		onAfterEachBoost(boost, target, source, effect) {
 			if (!source || target.isAlly(source)) {
