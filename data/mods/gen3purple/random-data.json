@@ -73,7 +73,7 @@
     },
     "attackdaiyousei": {
         "level": 100,
-        "moves": ["airslash2","blizzard2","gigadrain2","selfdestruct2","signalbeam2","silverwind2","sonicboom2","barrier2","batompass2","encore2","manacharge","mysticwater","perishsong2","smile","wish2"]
+        "moves": ["airslash2","blizzard2","gigadrain2","selfdestruct2","signalbeam2","silverwind2","sonicboom2","barrier2","batonpass2","encore2","manacharge","mysticwater","perishsong2","smile","wish2"]
     },
     "attackeiki": {
         "level": 100,
