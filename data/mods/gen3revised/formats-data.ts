@@ -216,8 +216,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	  },
 	yorihime: {
-		tier: "OU",
-		doublesTier: "DOU",
+		tier: "Uber",
+		doublesTier: "DUber",
 	  },
 	chibikaguya: {
 		tier: "LC",
@@ -1184,8 +1184,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	  },
 	adventmystia: {
-		tier: "OU",
-		doublesTier: "DOU",
+		tier: "Uber",
+		doublesTier: "DUber",
 	  },
 	technicalhatate: {
 		isNonstandard: "Unobtainable",
@@ -1821,15 +1821,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  exmomiji: {
-		tier: "OU",
-		doublesTier: "DOU",
+		tier: "Uber",
+		doublesTier: "DUber",
 	  },
 	  exkanako: {
 		tier: "OU",
 		doublesTier: "DOU",
 	  },
 	  lastkanako: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	  },
 	  exsuwako: {
@@ -1945,8 +1945,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  exrikako: {
-		tier: "OU",
-		doublesTier: "DOU",
+		tier: "Uber",
+		doublesTier: "DUber",
 	  },
 	  exchiyuri: {
 		tier: "OU",
@@ -2109,8 +2109,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	  },
 	  angelvivit: {
-		tier: "OU",
-		doublesTier: "DOU",
+		tier: "Uber",
+		doublesTier: "DUber",
 	  },
 	  exkyouko: {
 		tier: "OU",
