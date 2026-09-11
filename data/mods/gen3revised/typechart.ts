@@ -66,7 +66,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Poison: 0,
 			Psychic: 0,
 			Rock: 0,
-			Steel: 1,
+			Steel: 0,
 			Water: 0,
 			
 			Faith: 0,
