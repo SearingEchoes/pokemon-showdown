@@ -2685,4 +2685,11 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
+	trappingabilityban: {
+		effectType: 'ValidatorRule',
+		name: 'Trapping Ability Ban',
+		desc: "Bans Shadow Tag, etc.",
+		ruleset: [],
+		banlist: ['Shadow Tag',],
+	},
 };
