@@ -7,6 +7,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			'Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
 		],
 		banlist: [
+			'Shadow Tag'
 		//Tenma from Aya/Hatate
 			'Tenma + Acrobatics + Aura Sphere',
 			'Tenma + Acrobatics + Charm',
