@@ -2663,7 +2663,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 		},
 		onValidateTeam(team) {
 			const boostingEffects = [
-				'agility', 'dragondance', 'ancientpower', 'silverwind', 'salacberry', 'speedboost', 'starfberry',
+				'agility', 'dragondance', 'ancientpower', 'silverwind', 'salacberry', 'speedboost', 'starfberry', 'quiverdance', 'tailwind', 'skyattack', 'powertrance',
 			];
 			for (const set of team) {
 				const moves = set.moves.map(this.toID);
