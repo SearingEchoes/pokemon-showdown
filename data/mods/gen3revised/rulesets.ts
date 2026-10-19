@@ -4,7 +4,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 		name: 'Inherit Move Rule',
 		desc: "Rule for multiple characters that can produce the same result on evo. (Zombie Fairy, Tenma, etc.)",
 		ruleset: [
-			'Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
+			'Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod' ,'Speed Pass Clause', 'Trapping Ability Ban'
 		],
 		banlist: [
 		//Tenma from Aya/Hatate
