@@ -4,7 +4,7 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 		name: 'Inherit Move Rule',
 		desc: "Rule for multiple characters that can produce the same result on evo. (Zombie Fairy, Tenma, etc.)",
 		ruleset: [
-			'Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
+			'Obtainable', 'Sleep Clause Mod', 'Switch Priority Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod' ,'Speed Pass Clause',
 		],
 		banlist: [
 			'Shadow Tag',
@@ -385,5 +385,12 @@ export const Rulesets: {[k: string]: ModdedFormatData} = {
 			'Tenma + Triple Axel + Signal Beam',
 			'Tenma + Triple Axel + Trick',
 		],
+	},
+	trappingabilityban: {
+		effectType: 'ValidatorRule',
+		name: 'Trapping Ability Ban',
+		desc: "Bans Shadow Tag, etc.",
+		ruleset: [],
+		banlist: ['Shadow Tag',],
 	},
 };
