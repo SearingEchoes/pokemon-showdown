@@ -751,6 +751,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 				propellertail: 'stalwart',
 				teravolt: 'moldbreaker',
 				turboblaze: 'moldbreaker',
+				interdict: 'queenlymajesty',
 			};
 			const num = parseInt(this.ruleTable.valueRules.get('abilityclause')!);
 			for (const set of team) {
@@ -1001,15 +1002,9 @@ export const Rulesets: {[k: string]: FormatData} = {
 		},
 		onValidateTeam(team) {
 			const boostingEffects = [
-				'absorbbulb', 'acidarmor', 'acupressure', 'agility', 'amnesia', 'ancientpower', 'angerpoint', 'apicotberry', 'autotomize',
-				'barrier', 'bellydrum', 'bulkup', 'calmmind', 'cellbattery', 'chargebeam', 'coil', 'cosmicpower', 'cottonguard', 'curse',
-				'defendorder', 'defiant', 'download', 'dragondance', 'fierydance', 'flamecharge', 'ganlonberry', 'growth', 'harden',
-				'honeclaws', 'howl', 'irondefense', 'liechiberry', 'meditate', 'metalclaw', 'meteormash',
-				'moxie', 'nastyplot', 'ominouswind', 'petayaberry', 'quiverdance', 'rage', 'rattled', 'rockpolish',
-				'salacberry', 'sharpen', 'shellsmash', 'shiftgear', 'silverwind', 'skullbash', 'speedboost', 'starfberry',
-				'steadfast', 'steelwing', 'stockpile', 'swordsdance', 'tailglow', 'weakarmor', 'withdraw', 'workup',
-				'agility2', 'amnesia2', 'curse2', 'barrier2', 'bulkup2', 'calmmind2', 'defensecurl2', 'disperse', 'growth2', 'harden2', 'howl2', 'irondefense2', 'lockon2', 'luckychant2', 'manacharge', 'manashield', 'nastyplot2', 'protect2', 'sharpen2', 'swordsdance2', 'tailwind2', 'withdraw2',
-				'powertrance', 'powerdrum', 'luckychant', 'lockon', 'mindseye', 'tenkolaser', 'rockwrecker', 'mudsport', 'watersport', 'tailwind', 'strength', 'battlechant', 'skyattack', 'skullbash', 'outrage', 'rapidspin', 'charge',
+				'acidarmor', 'agility', 'amnesia', 'apicotberry', 'barrier', 'bellydrum', 'bulkup', 'calmmind', 'cosmicpower', 'curse',
+				'defensecurl', 'dragondance', 'ganlonberry', 'growth', 'harden', 'howl', 'irondefense', 'liechiberry', 'meditate',
+				'petayaberry', 'salacberry', 'sharpen', 'speedboost', 'starfberry', 'swordsdance', 'tailglow', 'withdraw', 'agility2', 'amnesia2', 'curse2', 'barrier2', 'bulkup2', 'calmmind2', 'defensecurl2', 'disperse', 'growth2', 'harden2', 'howl2', 'irondefense2', 'lockon2', 'luckychant2', 'manacharge', 'manashield', 'nastyplot2', 'protect2', 'sharpen2', 'swordsdance2', 'tailwind2', 'withdraw2', 
 			];
 			let passers = 0;
 			for (const set of team) {
@@ -2658,5 +2653,43 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 			return value;
 		},
+	},
+	speedpassclause: {
+		effectType: 'ValidatorRule',
+		name: 'Speed Pass Clause',
+		desc: "Stops teams from having a Pokemon with Baton Pass that can boost its Speed",
+		onBegin() {
+			this.add('rule', 'Baton Pass Stat Clause: No Baton Passer may have a way to boost its Speed');
+		},
+		onValidateTeam(team) {
+			const boostingEffects = [
+				'agility', 'dragondance', 'ancientpower', 'silverwind', 'salacberry', 'speedboost', 'starfberry', 'quiverdance', 'tailwind', 'skyattack', 'powertrance',
+			];
+			for (const set of team) {
+				const moves = set.moves.map(this.toID);
+				if (!moves.includes('batonpass' as ID)) continue;
+				let passableBoosts = false;
+				const item = this.toID(set.item);
+				const ability = this.toID(set.ability);
+				if (
+					moves.some(m => boostingEffects.includes(m)) || boostingEffects.includes(item) ||
+					boostingEffects.includes(ability)
+				) {
+					passableBoosts = true;
+				}
+				if (passableBoosts) {
+					return [
+						`${set.name || set.species} has Baton Pass and a way to boost its Speed, which is banned by Speed Pass Clause.`,
+					];
+				}
+			}
+		},
+	},
+	trappingabilityban: {
+		effectType: 'ValidatorRule',
+		name: 'Trapping Ability Ban',
+		desc: "Bans Shadow Tag, etc.",
+		ruleset: [],
+		banlist: ['Shadow Tag',],
 	},
 };
